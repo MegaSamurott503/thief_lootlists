@@ -1,7 +1,7 @@
 {
   "files": {
     "main.js": "/thief_lootlists/static/js/main.ee10d6c9.js",
-    "static/js/854.90f01b1a.js": "/thief_lootlists/static/js/854.90f01b1a.js",
+    "static/js/854.7eb28947.js": "/thief_lootlists/static/js/854.7eb28947.js",
     "static/media/fm_agenda_04.png": "/thief_lootlists/static/media/fm_agenda_04.3d8c85bd615b8005af1f.png",
     "static/media/t2_shipping_02.png": "/thief_lootlists/static/media/t2_shipping_02.752e9fc75d1a3b73d068.png",
     "static/media/t2_framed_01a.png": "/thief_lootlists/static/media/t2_framed_01a.fda72f0c5a892e3e1703.png",
@@ -492,10 +492,10 @@
     "manifest.json": "/thief_lootlists/manifest.json",
     "serve.json": "/thief_lootlists/serve.json",
     "main.ee10d6c9.js.map": "/thief_lootlists/static/js/main.ee10d6c9.js.map",
-    "854.90f01b1a.js.map": "/thief_lootlists/static/js/854.90f01b1a.js.map"
+    "854.7eb28947.js.map": "/thief_lootlists/static/js/854.7eb28947.js.map"
   },
   "entrypoints": [
-    "static/js/854.90f01b1a.js",
+    "static/js/854.7eb28947.js",
     "static/js/main.ee10d6c9.js"
   ]
 }
