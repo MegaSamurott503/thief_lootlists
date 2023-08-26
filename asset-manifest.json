@@ -491,6 +491,7 @@
     "favicon-16.png": "/thief_lootlists/favicon-16.png",
     "manifest.json": "/thief_lootlists/manifest.json",
     "serve.json": "/thief_lootlists/serve.json",
+    "_redirects": "/thief_lootlists/_redirects",
     "main.ba22393f.js.map": "/thief_lootlists/static/js/main.ba22393f.js.map",
     "854.7eb28947.js.map": "/thief_lootlists/static/js/854.7eb28947.js.map"
   },
