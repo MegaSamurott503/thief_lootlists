@@ -8,4 +8,7 @@
 /favicon-32.png                       /favicon-32.png                       200
 /manifest.json                        /manifest.json                        200
 /serve.json                           /serve.json                           200
-/*                                    /index.html                           200
+/settings                             /index.html                           200
+/select/*                             /index.html                           200
+/list/*                               /index.html                           200
+#/*                                    /index.html                           200

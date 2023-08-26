@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/thief_lootlists/static/js/main.495db8be.js",
+    "main.js": "/thief_lootlists/static/js/main.bed4487c.js",
     "static/js/854.7eb28947.js": "/thief_lootlists/static/js/854.7eb28947.js",
     "static/media/fm_agenda_04.png": "/thief_lootlists/static/media/fm_agenda_04.3d8c85bd615b8005af1f.png",
     "static/media/t2_shipping_02.png": "/thief_lootlists/static/media/t2_shipping_02.752e9fc75d1a3b73d068.png",
@@ -175,7 +175,6 @@
     "static/media/oldcrate.png": "/thief_lootlists/static/media/oldcrate.bfdfcc88ab873e6e599a.png",
     "static/media/banner_globe.png": "/thief_lootlists/static/media/banner_globe.a8b67c711c38470eb282.png",
     "static/media/normalcrate.png": "/thief_lootlists/static/media/normalcrate.d1834c14f195a7b62caf.png",
-    "favicon.ico": "/thief_lootlists/favicon.ico",
     "static/media/precursormask_wood.png": "/thief_lootlists/static/media/precursormask_wood.c9a85345a45827554b6a.png",
     "static/media/precursormask_brass.png": "/thief_lootlists/static/media/precursormask_brass.ae91a1b8688dae680277.png",
     "static/media/talismanofearth.png": "/thief_lootlists/static/media/talismanofearth.d132f530b6bf41259e2c.png",
@@ -480,23 +479,21 @@
     "static/media/key_gold.png": "/thief_lootlists/static/media/key_gold.22bb5bfbbc78ea7d67c9.png",
     "static/media/weddingrings.png": "/thief_lootlists/static/media/weddingrings.74f0ab70182004c06717.png",
     "static/media/readingglasses.png": "/thief_lootlists/static/media/readingglasses.e15bcc1ac21b8dc5d1fe.png",
-    "index.html": "/thief_lootlists/index.html",
     "static/media/silverfirepoker.png": "/thief_lootlists/static/media/silverfirepoker.938fa04c2556e2ebd5f2.png",
-    "favicon-32.png": "/thief_lootlists/favicon-32.png",
+    "index.html": "/thief_lootlists/index.html",
     "static/media/icon_gold.png": "/thief_lootlists/static/media/icon_gold.3fc0a79ec9d207846e11.png",
     "static/media/icon_gems.png": "/thief_lootlists/static/media/icon_gems.c628282bed7991c22815.png",
     "static/media/icon_goods.png": "/thief_lootlists/static/media/icon_goods.725f05d20a6dcef89bc3.png",
     "static/media/signetring.png": "/thief_lootlists/static/media/signetring.2320c622f4c8c86c0e5f.png",
     "static/media/goldring.png": "/thief_lootlists/static/media/goldring.3bb9004caeec750ff240.png",
     "_redirects": "/thief_lootlists/_redirects",
-    "favicon-16.png": "/thief_lootlists/favicon-16.png",
     "manifest.json": "/thief_lootlists/manifest.json",
     "serve.json": "/thief_lootlists/serve.json",
-    "main.495db8be.js.map": "/thief_lootlists/static/js/main.495db8be.js.map",
+    "main.bed4487c.js.map": "/thief_lootlists/static/js/main.bed4487c.js.map",
     "854.7eb28947.js.map": "/thief_lootlists/static/js/854.7eb28947.js.map"
   },
   "entrypoints": [
     "static/js/854.7eb28947.js",
-    "static/js/main.495db8be.js"
+    "static/js/main.bed4487c.js"
   ]
 }
