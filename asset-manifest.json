@@ -488,10 +488,10 @@
     "static/media/icon_goods.png": "/thief_lootlists/static/media/icon_goods.725f05d20a6dcef89bc3.png",
     "static/media/signetring.png": "/thief_lootlists/static/media/signetring.2320c622f4c8c86c0e5f.png",
     "static/media/goldring.png": "/thief_lootlists/static/media/goldring.3bb9004caeec750ff240.png",
+    "_redirects": "/thief_lootlists/_redirects",
     "favicon-16.png": "/thief_lootlists/favicon-16.png",
     "manifest.json": "/thief_lootlists/manifest.json",
     "serve.json": "/thief_lootlists/serve.json",
-    "_redirects": "/thief_lootlists/_redirects",
     "main.495db8be.js.map": "/thief_lootlists/static/js/main.495db8be.js.map",
     "854.7eb28947.js.map": "/thief_lootlists/static/js/854.7eb28947.js.map"
   },
