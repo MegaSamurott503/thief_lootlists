@@ -1,7 +1,7 @@
 {
   "files": {
     "main.js": "/static/js/main.3c594b4d.js",
-    "static/js/854.82af965f.js": "/static/js/854.82af965f.js",
+    "static/js/854.fd2d6c0a.js": "/static/js/854.fd2d6c0a.js",
     "static/media/fm_agenda_04.png": "/static/media/fm_agenda_04.3d8c85bd615b8005af1f.png",
     "static/media/t2_shipping_02.png": "/static/media/t2_shipping_02.752e9fc75d1a3b73d068.png",
     "static/media/t2_framed_01a.png": "/static/media/t2_framed_01a.fda72f0c5a892e3e1703.png",
@@ -493,10 +493,10 @@
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
     "main.3c594b4d.js.map": "/static/js/main.3c594b4d.js.map",
-    "854.82af965f.js.map": "/static/js/854.82af965f.js.map"
+    "854.fd2d6c0a.js.map": "/static/js/854.fd2d6c0a.js.map"
   },
   "entrypoints": [
-    "static/js/854.82af965f.js",
+    "static/js/854.fd2d6c0a.js",
     "static/js/main.3c594b4d.js"
   ]
 }
