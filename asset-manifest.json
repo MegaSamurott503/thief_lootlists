@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.441c44a6.js",
+    "main.js": "/static/js/main.3c594b4d.js",
     "static/js/854.82af965f.js": "/static/js/854.82af965f.js",
     "static/media/fm_agenda_04.png": "/static/media/fm_agenda_04.3d8c85bd615b8005af1f.png",
     "static/media/t2_shipping_02.png": "/static/media/t2_shipping_02.752e9fc75d1a3b73d068.png",
@@ -492,11 +492,11 @@
     "favicon-16.png": "/favicon-16.png",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "main.441c44a6.js.map": "/static/js/main.441c44a6.js.map",
+    "main.3c594b4d.js.map": "/static/js/main.3c594b4d.js.map",
     "854.82af965f.js.map": "/static/js/854.82af965f.js.map"
   },
   "entrypoints": [
     "static/js/854.82af965f.js",
-    "static/js/main.441c44a6.js"
+    "static/js/main.3c594b4d.js"
   ]
 }
