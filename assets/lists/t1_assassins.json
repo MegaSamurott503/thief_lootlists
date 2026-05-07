@@ -1,0 +1,1807 @@
+{
+  "id": "t1_assassins",
+  "title": "Assassins",
+  "screens": [
+    "MIS_t1_assassins_A",
+    "MIS_t1_assassins_B"
+  ],
+  "goToPrev": "t1_bonehoard",
+  "goToNext": "t1_guild",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [1800,250,655,0,2705],
+    [1800,250,655,0,2705],
+    [1800,250,655,0,2705]
+  ],
+  "lootCount": [48,48,48],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [1000,1500,2000]
+  },
+  "pocketCount": [9,9,9],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Farkus Functionals"},
+    {"key": "3", "value": "Northeast Plaza"},
+    {"key": "4", "value": "North Street"},
+    {"key": "5", "value": "West Street"},
+    {"key": "6", "value": "Mansion Grounds"},
+    {"key": "7", "value": "Ramirez's Quarters"},
+    {"key": "8", "value": "2F Hall"},
+    {"key": "9", "value": "Guest Rooms"},
+    {"key": "10", "value": "Glass Roof Room"},
+    {"key": "11", "value": "Living Room"},
+    {"key": "12", "value": "Library"},
+    {"key": "13", "value": "Electrics Room"},
+    {"key": "14", "value": "Waiting Rooms"},
+    {"key": "15", "value": "Entrance Hall"},
+    {"key": "16", "value": "Courtyard"},
+    {"key": "17", "value": "Servants' Quarters"},
+    {"key": "18", "value": "Guards' Quarters"},
+    {"key": "19", "value": "Kitchen"},
+    {"key": "20", "value": "Basement"},
+    {"key": "21", "value": "Counting Room"},
+    {"key": "22", "value": "South Street"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_1",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "t1_assassins_loot_2",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "near fireplace",
+              "findCount": [2,2,2],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "t1_assassins_loot_3",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "t1_assassins_loot_4",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "yellow room",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_5",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "south bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            },
+            {
+              "id": "t1_assassins_loot_6",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "attic",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_7",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "fireplace",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_8",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [4,4,4],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "t1_assassins_loot_9",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "attic",
+              "findExact": "desk",
+              "findCount": [2,2,2],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_10",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "by turbine",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "t1_assassins_loot_11",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "desk",
+              "findCount": [6,6,6],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "t1_assassins_loot_12",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findExact": "east counter",
+              "findCount": [2,2,2],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "t1_assassins_loot_13",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "north counter",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_14",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "near fireplace",
+              "findCount": [2,2,2],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "t1_assassins_loot_15",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "t1_assassins_loot_16",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "yellow room",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_17",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "near fireplace",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            },
+            {
+              "id": "t1_assassins_loot_18",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_19",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "south bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_20",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "north bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_21",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_22",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "orange room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_23",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [2,2,2],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "t1_assassins_loot_24",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "shelf",
+              "findCount": [5,5,5],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_25",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "hidden passage",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "250gold",
+          "value": [250,0,0,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_26",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findExact": "on Ramirez",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_27",
+              "findSimple": "findH",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "near footlocker",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverfirepoker",
+      "name": "Silver Fire Poker",
+      "img": [
+        "IMG_SilverFirePoker"
+      ],
+      "values": [
+        {
+          "id": "100gold100goods",
+          "value": [100,0,100,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_28",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "hidden passage",
+              "findExact": "niche",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_SilverFirePoker"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "t1_assassins_loot_29",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [40,40,40],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_assassins_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [20,20,20],
+              "loadout": "store",
+              "price": 25
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [4,4,4],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_assassins_item_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [11,11,11],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_7",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_assassins_item_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [8,8,8],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_10",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "under counter",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_11",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "under counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_12",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "northwest shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_assassins_item_13",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "table",
+              "findCount": [6,6,6]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_14",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_item_15",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "northwest shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_16",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "northwest shelf",
+              "findCount": [4,3,2]
+            },
+            {
+              "id": "t1_assassins_item_17",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "table",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_18",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_item_19",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "under counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_assassins_item_20",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "west tower",
+              "findExact": "1F",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_item_21",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "by desk",
+              "findExact": "blue chest",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "t1_assassins_item_22",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "north counter",
+              "findExact": "by bookshelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_23",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "west tower",
+              "findExact": "1F",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_24",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 250
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_25",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "t1_assassins_item_26",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "north counter",
+              "findExact": "by bookshelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_27",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_28",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Basement Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_29",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "t1_assassins_item_30",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "on Ramirez swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_assassins_item_31",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "on Ramirez swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_assassins_item_32",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "on male servant",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Courtyard Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_33",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "on Ramirez swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_assassins_item_34",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "on male servant",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_assassins_item_35",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "on Ramirez swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_assassins_item_36",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Storage Room Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_37",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "on Ramirez swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_assassins_item_38",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "on Ramirez swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Ramirez's Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_39",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "north counter",
+              "findExact": "by bookshelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_40",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_41",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_item_42",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "northeast counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_assassins_item_43",
+              "findSimple": "find",
+              "findArea": 19,
+              "findCount": [1,1,1],
+              "findRecipe": "x1 per alerted servant with tray"
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_44",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "southwest counter",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_45",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "northeast counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_46",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "fountain",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_item_47",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "northeast counter",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_48",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "fountain",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_item_49",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "northeast counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_50",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "southwest counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_item_51",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_assassins_item_52",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "stool",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_item_53",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "fountain",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_item_54",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "behind counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_assassins_junk_2",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "by tan brick building",
+              "findCount": [7,7,7]
+            },
+            {
+              "id": "t1_assassins_junk_3",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "near brown brick building",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_assassins_junk_4",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "by red brick arch",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_assassins_junk_5",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "west tower",
+              "findExact": "1F",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_assassins_junk_6",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "west tower",
+              "findExact": "2F",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_assassins_junk_7",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "near alarm button",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_assassins_junk_8",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "northeast dungeon",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t1_assassins_junk_9",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "by canal",
+              "findExact": "wharf",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_utensils",
+      "category": "Utensils",
+      "catJunk": [
+        {
+          "id": "junk_knife",
+          "name": "Knife",
+          "img": [
+            "IMG_Knife"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_10",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "southeast counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_cleaver",
+          "name": "Cleaver",
+          "img": [
+            "IMG_Cleaver"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_11",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "southeast counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_12",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "northeast shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_13",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "northwest counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_14",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "southeast counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_15",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "kitchen",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_junk_16",
+              "findSimple": "find",
+              "findArea": 19,
+              "findCount": [1,1,1],
+              "findRecipe": "x1 per alerted servant with tray"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "Wooden Goblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_17",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "northeast shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_junk_18",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "fountain",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_19",
+              "findSimple": "find",
+              "findArea": 19,
+              "findCount": [1,1,1],
+              "findRecipe": "x1 per alerted servant with tray"
+            },
+            {
+              "id": "t1_assassins_junk_20",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "west hall",
+              "findExact": "near stairs",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_21",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "northeast counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_assassins_junk_22",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "west hall",
+              "findExact": "near stairs",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_skillet",
+          "name": "Skillet",
+          "img": [
+            "IMG_Skillet"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_23",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "southwest counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_Flour",
+            "IMG_Canister_Sugar",
+            "IMG_Canister_UnmarkedLarge",
+            "IMG_Canister_UnmarkedSmall"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_24",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "counters",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_assassins_junk_25",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "shelf",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_26",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "east shelves",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_27",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "by table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_junk_28",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "north bedroom",
+              "findExact": "by door",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_junk_29",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "south bedroom",
+              "findExact": "by door",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "t1_assassins_junk_30",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "southeast shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_junk_31",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_junk_32",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "north bedroom",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_assassins_junk_33",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "south bedroom",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

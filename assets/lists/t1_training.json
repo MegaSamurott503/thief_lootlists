@@ -1,0 +1,289 @@
+{
+  "id": "t1_training",
+  "title": "A Keeper's Training",
+  "screens": [
+    "MIS_t1_training_A",
+    "MIS_t1_training_B"
+  ],
+  "goToNext": "t1_bafford",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": false,
+  "totals": [
+    [0,0,50,0,50],
+    [0,0,50,0,50],
+    [0,0,50,0,50]
+  ],
+  "lootCount": [1,1,1],
+  "lootChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Courtyard"},
+    {"key": "2", "value": "Basketball Court"},
+    {"key": "3", "value": "Exit Hall"}
+  ],
+  "notes": [
+    {
+      "id": "note_0",
+      "delimiter": "  ",
+      "icon": "[A]",
+      "desc": "treated as an inventory item in the AM16 patch",
+      "show": true
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_training_loot_1",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t1_training_item_1",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "porch",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_training_item_2",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "porch",
+              "findExact": "quiver",
+              "findCountBox": [30,30,30],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_training_item_3",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findRecipe": "after sparring match"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_key",
+          "name": "Courtyard Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "t1_training_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findRecipe": "after sparring match"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t1_training_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "t1_training_item_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findRecipe": "after sparring match"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "t1_training_junk_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "northwest corner",
+              "findCount": [0,0,1],
+              "findNote": 0,
+              "findEaster": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_basketball",
+          "name": "Basketball",
+          "img": [
+            "IMG_Basketball"
+          ],
+          "locations": [
+            {
+              "id": "t1_training_junk_2",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "center",
+              "findCount": [0,0,1],
+              "findEaster": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "t1_training_junk_3",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "by first door",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "t1_training_junk_4",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3046 @@
+{
+  "id": "t2_shipping",
+  "title": "Shipping ... and Receiving",
+  "screens": [
+    "MIS_t2_shipping_A",
+    "MIS_t2_shipping_B"
+  ],
+  "goToPrev": "t2_interference",
+  "goToNext": "t2_framed",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [831,225,755,0,1811],
+    [685,225,755,0,1665],
+    [685,225,755,0,1665]
+  ],
+  "lootCount": [70,62,62],
+  "lootChanges": [0,1,1],
+  "goal1": {
+    "total": [500,650,850]
+  },
+  "pocketCount": [11,14,18],
+  "pocketChanges": [0,1,2],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Building A Exterior"},
+    {"key": "3", "value": "Building A 1F"},
+    {"key": "4", "value": "Main Office"},
+    {"key": "5", "value": "Building A 2F"},
+    {"key": "6", "value": "Capezza's Space"},
+    {"key": "7", "value": "Lady Angelica's Space"},
+    {"key": "8", "value": "Bramrich's Space"},
+    {"key": "9", "value": "Lord Porter's Space"},
+    {"key": "10", "value": "Jerm's Space"},
+    {"key": "11", "value": "Selentura's Space"},
+    {"key": "12", "value": "Gilver's Space"},
+    {"key": "13", "value": "Blackheart's Space"},
+    {"key": "14", "value": "Mynell's Space"},
+    {"key": "15", "value": "Kilgor's Space"},
+    {"key": "16", "value": "Conference Room"},
+    {"key": "17", "value": "Pres. Rampone's Office"},
+    {"key": "18", "value": "Building B 2F"},
+    {"key": "19", "value": "Mechanist Project Bay"},
+    {"key": "20", "value": "Rare Artifact Bay"},
+    {"key": "21", "value": "Building B 1F"},
+    {"key": "22", "value": "Mechanist Packaging Bay"},
+    {"key": "23", "value": "Building B Exterior"},
+    {"key": "24", "value": "Cpt. Davidson's Ship"}
+  ],
+  "notes": [
+    {
+      "id": "null",
+      "delimiter": "  ",
+      "icon": "[X]",
+      "desc": "treated as a stationary object in the AM16 patch",
+      "show": false
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_addoniziocrystal",
+      "name": "Addonizio Crystal",
+      "img": [
+        "IMG_AddonizioCrystal"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_1",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findExact": "east shelf",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_2",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "shelves",
+              "findCount": [2,2,2],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coin",
+      "name": "Coin",
+      "img": [
+        "IMG_Coin"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_3",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "brothel",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_collectionplate",
+      "name": "Collection Plate",
+      "img": [
+        "IMG_CollectionPlate"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_4",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "2F",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_CollectionPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_5",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "card table",
+              "findCount": [2,2,2],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Pink",
+        "IMG_DecorativePlate_Red",
+        "IMG_DecorativePlate_Orange",
+        "IMG_DecorativePlate_Gold",
+        "IMG_DecorativePlate_Aqua",
+        "IMG_DecorativePlate_Blue"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_6",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "2F",
+              "findExact": "shelves",
+              "findCount": [6,6,6],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink",
+                "IMG_DecorativePlate_Red",
+                "IMG_DecorativePlate_Orange",
+                "IMG_DecorativePlate_Gold",
+                "IMG_DecorativePlate_Aqua",
+                "IMG_DecorativePlate_Blue"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_7",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_DecorativePlate_Orange"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_8",
+              "findSimple": "findM",
+              "findArea": 24,
+              "findNarrow": "cabin",
+              "findExact": "locked crate",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_9",
+              "findSimple": "findM",
+              "findArea": 24,
+              "findNarrow": "cabin",
+              "findExact": "sea chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_10",
+              "findSimple": "findM",
+              "findArea": 24,
+              "findNarrow": "hold",
+              "findExact": "wine stash",
+              "findCount": [1,1,1],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "50gems",
+          "value": [0,50,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_11",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findNarrow": "crate pile",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_12",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findNarrow": "office",
+              "findExact": "behind chart",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_13",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "cabin",
+              "findExact": "crate",
+              "findCount": [1,1,1],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_14",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "bedroom",
+              "findExact": "by crate",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_15",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "hidden room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_16",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "city planner's office",
+              "findExact": "desk",
+              "findCount": [2,0,0],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "Gold Dice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_17",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "bedroom",
+              "findExact": "safe",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_18",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "office",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_19",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findNarrow": "crate pile",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_20",
+              "findSimple": "findM",
+              "findArea": 15,
+              "findNarrow": "crate pile",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_21",
+              "findSimple": "findM",
+              "findArea": 24,
+              "findNarrow": "cabin",
+              "findExact": "sea chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_22",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "J. Rampone's office",
+              "findExact": "square table",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_23",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "table",
+              "findCount": [4,4,4],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_24",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "hallway storage",
+              "findExact": "coin box",
+              "findCountBox": [3,0,0],
+              "findBox": true,
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_25",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "storefront",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ornateplate",
+      "name": "Ornate Plate",
+      "img": [
+        "IMG_OrnatePlate"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_26",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "2F",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_OrnatePlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_27",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "east shelf",
+              "findCount": [1,1,1],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Tall",
+        "IMG_PrecursorJar_Pointed"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_28",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "by drilling machine",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_29",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_PrecursorJar_Pointed"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_30",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "west shelves",
+              "findCount": [2,2,2],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_31",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "brothel",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_32",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "brothel",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_33",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "mailboxes",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_rarespicebag",
+      "name": "Rare Spice Bag",
+      "img": [
+        "IMG_RareSpiceBag"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_34",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "Osterlind's office",
+              "findExact": "locked crate",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_RareSpiceBag"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_35",
+              "findSimple": "findM",
+              "findArea": 21,
+              "findNarrow": "west crate pile",
+              "findExact": "locked crate",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_RareSpiceBag"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_36",
+              "findSimple": "findM",
+              "findArea": 21,
+              "findNarrow": "northeast crate pile",
+              "findExact": "locked crate",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_RareSpiceBag"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_37",
+              "findSimple": "findM",
+              "findArea": 21,
+              "findNarrow": "southeast crate pile",
+              "findExact": "locked crate",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_RareSpiceBag"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_38",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "main deck",
+              "findExact": "on thief swordsman",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_RareSpiceBag"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_39",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "main deck",
+              "findExact": "food crate",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_RareSpiceBag"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_40",
+              "findSimple": "findM",
+              "findArea": 24,
+              "findNarrow": "cabin",
+              "findExact": "locked crate",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_RareSpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_scroll",
+      "name": "Scroll",
+      "img": [
+        "IMG_UnrolledScroll"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_41",
+              "findSimple": "findM",
+              "findArea": 14,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_UnrolledScroll"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_42",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "table",
+              "findCount": [3,0,0],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverflute",
+      "name": "Silver Flute",
+      "img": [
+        "IMG_Flute"
+      ],
+      "values": [
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_43",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "recording studio",
+              "findExact": "west table",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_Flute"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_44",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findExact": "east shelf",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_45",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "spider cage",
+              "findExact": "northwest corner",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Nobleman",
+        "IMG_Statuette_Noblewoman",
+        "IMG_Statuette_Monk",
+        "IMG_Statuette_Nun",
+        "IMG_Statuette_Mage",
+        "IMG_Statuette_Muse"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_46",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "northwest crate wall",
+              "findExact": "crate",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Statuette_Noblewoman"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_47",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "storefront",
+              "findExact": "shelves",
+              "findCount": [3,3,3],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_Statuette_Nobleman",
+                "IMG_Statuette_Noblewoman",
+                "IMG_Statuette_Monk"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_48",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "storefront",
+              "findExact": "under counter",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_Statuette_Mage"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_49",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "gallery",
+              "findExact": "behind west painting",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_Statuette_Muse"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_50",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "1F",
+              "findExact": "behind crates",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_Statuette_Nun"
+              ]
+            },
+            {
+              "id": "t2_shipping_loot_51",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "northeast crate pile",
+              "findExact": "open crate",
+              "findCount": [1,1,1],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_Statuette_Muse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_waxcylinder",
+      "name": "Wax Cylinder",
+      "img": [
+        "IMG_WaxCylinder"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t2_shipping_loot_52",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "recording studio",
+              "findExact": "north table",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_WaxCylinder"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [35,20,20],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_shipping_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [15,15,15],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "t2_shipping_item_5",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "front door",
+              "findExact": "on purple archer",
+              "findCountBox": [0,3,3],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_6",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west catwalk",
+              "findExact": "on red archer",
+              "findCountBox": [0,0,3],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_7",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "front desk",
+              "findExact": "on purple archer",
+              "findCountBox": [0,0,3],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_8",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "halls",
+              "findExact": "on purple archer",
+              "findCountBox": [0,3,3],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_9",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west control shed",
+              "findExact": "SW corner",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t2_shipping_item_10",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "south side",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_11",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "south side",
+              "findExact": "on purple archer",
+              "findCountBox": [0,3,3],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_12",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "south side",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_13",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "central control shed",
+              "findExact": "SW corner",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t2_shipping_item_14",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "central yard",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_15",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "east side",
+              "findExact": "on purple archer",
+              "findCountBox": [3,0,0],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_16",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "east control shed",
+              "findExact": "SW corner",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t2_shipping_item_17",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "east catwalk",
+              "findExact": "on red archer",
+              "findCountBox": [0,0,3],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_18",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "workshop",
+              "findExact": "shelf",
+              "findCount": [9,5,5]
+            },
+            {
+              "id": "t2_shipping_item_19",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "on purple archer",
+              "findCountBox": [0,3,3],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_20",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "north side",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_21",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "west side",
+              "findExact": "on red archer",
+              "findCountBox": [0,0,3],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_22",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "south side",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_23",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_shipping_item_24",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_25",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_26",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west crate pile",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true
+            },
+            {
+              "id": "t2_shipping_item_27",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "southeast crate pile",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_28",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_shipping_item_29",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "SSW crate pile",
+              "findExact": "open crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_30",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "workshop",
+              "findExact": "shelf",
+              "findCount": [3,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_31",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "basin",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_32",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "northeast crate pile",
+              "findExact": "open crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_33",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "1F",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_34",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storefront",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_35",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t2_shipping_item_36",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "near NW crate pile",
+              "findExact": "crate",
+              "findCount": [2,1,0]
+            },
+            {
+              "id": "t2_shipping_item_37",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "northeast shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_38",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "footlocker",
+              "findCountBox": [1,0,0],
+              "findBox": true
+            },
+            {
+              "id": "t2_shipping_item_39",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "southwest crate pile",
+              "findExact": "open crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_40",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "SSW crate pile",
+              "findExact": "open crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_41",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,0,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_shipping_item_42",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "t2_shipping_item_43",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "1F",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_44",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "southwest crate pile",
+              "findExact": "open crate",
+              "findCount": [1,0,0]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_45",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,0,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_shipping_item_46",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,1,1],
+              "findCountActual": [2,-1,-1],
+              "loadout": "store",
+              "price": 600
+            },
+            {
+              "id": "t2_shipping_item_47",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "1F",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_48",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "hidden loft",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true
+            },
+            {
+              "id": "t2_shipping_item_49",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "west crate pile",
+              "findExact": "locked crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_50",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_shipping_item_51",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 150
+            },
+            {
+              "id": "t2_shipping_item_52",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "1F",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_53",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "southwest crate pile",
+              "findExact": "open crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_54",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_55",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Building A Key",
+          "img": [
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_56",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "front desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_57",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "halls",
+              "findExact": "on yellow swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t2_shipping_item_58",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "north side",
+              "findExact": "on yellow swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Control Shed Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_59",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "control room",
+              "findExact": "keypad",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Selentura's Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_60",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "shelf",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_gearkey",
+          "name": "Blackheart's Gear",
+          "img": [
+            "IMG_GearKey_Metal"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_61",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "soundboard",
+              "findExact": "by window",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Mynell's Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_62",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "spider cage",
+              "findExact": "coin box",
+              "findCountBox": [1,0,0],
+              "findBox": true
+            },
+            {
+              "id": "t2_shipping_item_63",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "cold storage",
+              "findExact": "north ceiling vent",
+              "findCount": [0,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Building B Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_64",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "on yellow swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Davidson's Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_65",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "on Cpt. Davidson",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_66",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,0,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_shipping_item_67",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "t2_shipping_item_68",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "near NW crate pile",
+              "findExact": "crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_69",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "northwest crate wall",
+              "findExact": "crate",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_shipping_item_70",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "northeast shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_71",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "southwest crate pile",
+              "findExact": "open crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_72",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "SSW crate pile",
+              "findExact": "open crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_73",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "west crate pile",
+              "findExact": "locked crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_74",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_75",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "near Capezza's space",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "t2_shipping_item_76",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "east shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_77",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "workbench",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_78",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "southwest crate pile",
+              "findExact": "open crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_79",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "hidden loft",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_80",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "main deck",
+              "findExact": "food crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_81",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "table",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_shipping_item_82",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "elevator controls",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_item_83",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "main deck",
+              "findExact": "food crate",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_84",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "cold storage",
+              "findExact": "north shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_85",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "findNoteX": 0
+            },
+            {
+              "id": "t2_shipping_item_86",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "brothel",
+              "findCount": [1,1,1],
+              "findRecipe": "enter code '7002'",
+              "findSecret": true,
+              "findEaster": true
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_87",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_musical",
+      "category": "Musical Items",
+      "catItems": [
+        {
+          "id": "item_horn",
+          "name": "Horn",
+          "img": [
+            "IMG_HornOfQuintus"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_88",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "recording studio",
+              "findExact": "north table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_shippinglabel",
+          "name": "Shipping Label",
+          "img": [
+            "IMG_ShippingLabel"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_item_89",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "desk",
+              "findObj": true,
+              "findCount": [0,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "near front gate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_junk_2",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "1F",
+              "findExact": "near bay door",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_shipping_junk_3",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "S side",
+              "findExact": "near Selentura's space",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_shipping_junk_4",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "SW hall",
+              "findExact": "near Porter's space",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_shipping_junk_5",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "by northeast crate pile",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t2_shipping_junk_6",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "hallway storage",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_shipping_junk_7",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "wood piles",
+              "findCount": [10,10,10]
+            },
+            {
+              "id": "t2_shipping_junk_8",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "east side",
+              "findExact": "cart",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_junk_9",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "hold",
+              "findCount": [15,15,15]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_10",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "main entrance",
+              "findExact": "near staircase",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_shipping_junk_11",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "hold",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_12",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "2F",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_13",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "northeast shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_14",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "hold",
+              "findExact": "wine stash",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "t2_shipping_junk_15",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "hold",
+              "findExact": "by large crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_junk_16",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "berth deck",
+              "findExact": "by northeast bunk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_17",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "1F",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_shipping_junk_18",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "cabinet table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_shipping_junk_19",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "hold",
+              "findExact": "wine stash",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_setofbottles",
+          "name": "Set of Bottles",
+          "img": [
+            "IMG_SetOfBottles"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_20",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "hold",
+              "findExact": "wine stash",
+              "findCount": [2,2,2],
+              "findNoteX": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_21",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "card table",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_nautical",
+      "category": "Nautical Tools",
+      "catJunk": [
+        {
+          "id": "junk_anchor",
+          "name": "Anchor",
+          "img": [
+            "IMG_Anchor"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_22",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "east side",
+              "findExact": "between crate piles",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_warhammer",
+          "name": "Warhammer",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_23",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "workshop",
+              "findExact": "near elevator",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_shipping_junk_24",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "workshop",
+              "findExact": "workbench",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_shipping_junk_25",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "workshop",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_holyhammer",
+          "name": "Holy Hammer",
+          "img": [
+            "IMG_HolyHammer"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_26",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "workshop",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_stonehammer",
+          "name": "Stone Hammer",
+          "img": [
+            "IMG_StoneHammer"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_27",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "workshop",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ancienthammer",
+          "name": "Ancient Hammer",
+          "img": [
+            "IMG_AncientHammer"
+          ],
+          "locations": [
+            {
+              "id": "t2_shipping_junk_28",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "workshop",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "t2_shipping_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_t2_shipping_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 2,
+          "findNarrow": "west crate pile",
+          "findDiff": [1,1,1],
+          "method": "Climb into the open crate"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardItem": "Rope Arrow",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_t2_shipping_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 9,
+          "findNarrow": "gallery",
+          "findDiff": [1,1,1],
+          "method": "Shoot the west painting's crystal ball"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardLoot": "Statuette",
+          "value": [0,0,15,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_t2_shipping_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 9,
+          "findNarrow": "elevator",
+          "findDiff": [1,1,1],
+          "method": "Shoot the lower elevator button on the second floor"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardRoute": [
+            "Lord Porter's space",
+            "Building A's 2nd floor"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_2",
+          "rewardLoot": "Coin",
+          "value": [5,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_3",
+          "rewardLoot": "Purse",
+          "value": [50,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_4",
+          "rewardLoot": "Purple Vase",
+          "value": [0,0,25,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_5",
+          "rewardItem": "Scroll",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_t2_shipping_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 11,
+          "findNarrow": "bedroom",
+          "findDiff": [1,1,1],
+          "method": "Unlock the safe with the key from the shelf"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardLoot": "Gold Dice",
+          "value": [50,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_5",
+      "number": 5,
+      "img": [
+        "SEC_t2_shipping_05"
+      ],
+      "triggers": [
+        {
+          "id": "sec_5_a",
+          "findArea": 12,
+          "findNarrow": "office",
+          "findDiff": [1,1,1],
+          "method": "Cut the chart near the door"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_5_1",
+          "rewardLoot": "Gemstone",
+          "value": [0,100,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_6",
+      "number": 6,
+      "img": [
+        "SEC_t2_shipping_06a",
+        "SEC_t2_shipping_06b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_6_a",
+          "findArea": 14,
+          "findNarrow": "office",
+          "findDiff": [1,0,0],
+          "method": "Unlock the safe with the key from the spider cage"
+        },
+        {
+          "id": "sec_6_b",
+          "findArea": 14,
+          "findNarrow": "office",
+          "findDiff": [0,1,1],
+          "method": "Unlock the safe with the key from the cold storage"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_6_1",
+          "rewardLoot": "Scroll",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_7",
+      "number": 7,
+      "img": [
+        "SEC_t2_shipping_07"
+      ],
+      "triggers": [
+        {
+          "id": "sec_7_a",
+          "findArea": 15,
+          "findNarrow": "crate pile",
+          "findDiff": [1,1,1],
+          "method": "Climb on top of the crate pile"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_7_1",
+          "rewardLoot": "Gold Hammer",
+          "value": [25,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_8",
+      "number": 8,
+      "img": [
+        "SEC_t2_shipping_08"
+      ],
+      "triggers": [
+        {
+          "id": "sec_8_a",
+          "findArea": 17,
+          "findNarrow": "bookcase",
+          "findDiff": [1,1,1],
+          "method": "Pull the book on the fourth shelf"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_8_1",
+          "rewardLoot": "Gold Candlestick",
+          "value": [50,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_9",
+      "number": 9,
+      "img": [
+        "SEC_t2_shipping_09"
+      ],
+      "triggers": [
+        {
+          "id": "sec_9_a",
+          "findArea": 21,
+          "findNarrow": "hallway storage",
+          "findDiff": [1,1,1],
+          "method": "Shoot a rope arrow at the hole in the ceiling"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_9_1",
+          "rewardItem": "Invisibility Potion",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_9_2",
+          "rewardItem": "Scouting Orb",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_10",
+      "number": 10,
+      "img": [
+        "SEC_t2_shipping_10"
+      ],
+      "triggers": [
+        {
+          "id": "sec_10_a",
+          "findArea": 21,
+          "findNarrow": "southeast crate pile",
+          "findDiff": [1,1,1],
+          "method": "Unlock the footlocker by the south wall"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_10_1",
+          "rewardItem": "Rope Arrow",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_11",
+      "number": 11,
+      "img": [
+        "SEC_t2_shipping_11"
+      ],
+      "triggers": [
+        {
+          "id": "sec_11_a",
+          "findArea": 24,
+          "findNarrow": "poop deck",
+          "findDiff": [1,1,1],
+          "method": "Spin the wheel and frob the telescope"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_11_1",
+          "rewardLoot": "Rare Spice Bag",
+          "value": [0,0,20,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_11_2",
+          "rewardLoot": "Fine Wine",
+          "value": [0,0,25,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_12",
+      "number": 12,
+      "img": [
+        "SEC_t2_shipping_12"
+      ],
+      "triggers": [
+        {
+          "id": "sec_12_a",
+          "findArea": 24,
+          "findNarrow": "main deck",
+          "findDiff": [1,1,1],
+          "method": "Look among the food in the food crate"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_12_1",
+          "rewardLoot": "Rare Spice Bag",
+          "value": [0,0,20,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_13",
+      "number": 13,
+      "img": [
+        "SEC_t2_shipping_13"
+      ],
+      "triggers": [
+        {
+          "id": "sec_13_a",
+          "findArea": 24,
+          "findNarrow": "cabin",
+          "findDiff": [1,1,1],
+          "method": "Cut the banner in the south corner"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_13_1",
+          "rewardLoot": "Gold Nugget",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_shipping_sec_14",
+      "number": 14,
+      "img": [
+        "SEC_t2_shipping_14"
+      ],
+      "triggers": [
+        {
+          "id": "sec_14_a",
+          "findArea": 24,
+          "findNarrow": "cabin",
+          "findDiff": [1,1,1],
+          "method": "Cut the banner in the north corner"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_14_1",
+          "rewardLoot": "Fine Wine",
+          "value": [0,0,25,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2107 @@
+{
+  "id": "fm_forces-invitation",
+  "title": "Mysterious Invitation",
+  "author": [
+    "auth_psymh"
+  ],
+  "screens": [
+    "MIS_fm_forces-invitation_A",
+    "MIS_fm_forces-invitation_B"
+  ],
+  "firstRelease": "November 2005",
+  "latestVersion": "2.0",
+  "goToNext": "fm_forces-ultima",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [2300,525,320,0,3145],
+    [2400,525,320,0,3245],
+    [2400,525,320,0,3245]
+  ],
+  "lootCount": [60,61,61],
+  "lootChanges": [0,1,1],
+  "goal1": {
+    "total": [1000,1500,2000]
+  },
+  "pocketCount": [8,9,9],
+  "pocketChanges": [0,1,1],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Courtyard"},
+    {"key": "2", "value": "Lord Duncan's Manor"},
+    {"key": "3", "value": "Northeast Wing 1F"},
+    {"key": "4", "value": "Prison Outpost"},
+    {"key": "5", "value": "Caves"},
+    {"key": "6", "value": "Basement"},
+    {"key": "7", "value": "Green Hall"},
+    {"key": "8", "value": "West Wing 1F"},
+    {"key": "9", "value": "Kitchen"},
+    {"key": "10", "value": "Servants' Quarters"},
+    {"key": "11", "value": "Southeast Wing 1F"},
+    {"key": "12", "value": "Locker Room"},
+    {"key": "13", "value": "Swimming Hall"},
+    {"key": "14", "value": "Foyer"},
+    {"key": "15", "value": "West Wing 2F"},
+    {"key": "16", "value": "East Guest Room"},
+    {"key": "17", "value": "North Bathroom"},
+    {"key": "18", "value": "Cpt. Gregor's Quarters"},
+    {"key": "19", "value": "Lord Duncan's Bedroom"},
+    {"key": "20", "value": "Housekeeper's Office"},
+    {"key": "21", "value": "Guards' Room"},
+    {"key": "22", "value": "Training Room"},
+    {"key": "23", "value": "Offices"},
+    {"key": "24", "value": "Library"},
+    {"key": "25", "value": "Dining Room"},
+    {"key": "26", "value": "Toilets"},
+    {"key": "27", "value": "Gambling Room"},
+    {"key": "28", "value": "Living Room"},
+    {"key": "29", "value": "Lord Duncan's Office"},
+    {"key": "30", "value": "Music Room"},
+    {"key": "31", "value": "South Gallery"},
+    {"key": "32", "value": "Nestor's Guest Room"},
+    {"key": "33", "value": "Cenry's Guest Room"},
+    {"key": "34", "value": "Cripplewood's Guest Room"},
+    {"key": "35", "value": "Courtyard Barracks"},
+    {"key": "36", "value": "Sewers"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coin",
+      "name": "Coin",
+      "img": [
+        "IMG_Coin"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_1",
+              "findSimple": "findH",
+              "findArea": 6,
+              "findNarrow": "north storage",
+              "findExact": "behind N crates",
+              "findCount": [3,3,3],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_2",
+              "findSimple": "findH",
+              "findArea": 13,
+              "findNarrow": "pool",
+              "findExact": "northwest corner",
+              "findCount": [5,5,5],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_3",
+              "findSimple": "findH",
+              "findArea": 26,
+              "findExact": "east basin",
+              "findCount": [4,4,4],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_4",
+              "findSimple": "findH",
+              "findArea": 26,
+              "findExact": "middle basin",
+              "findCount": [3,3,3],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack_NV"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_5",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_CopperCoinStack_NV"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_6",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findExact": "card table",
+              "findCount": [2,2,2],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_CopperCoinStack_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine_NV"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_7",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findExact": "north table",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_FineWine_NV"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_8",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [3,3,3],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_FineWine_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone_NV"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_9",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "bridge cavern",
+              "findExact": "north beam",
+              "findCount": [1,1,1],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_Gemstone_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldankh",
+      "name": "Gold Ankh",
+      "img": [
+        "IMG_GoldAnkh"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_10",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findExact": "east pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_GoldAnkh"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldbracelet",
+      "name": "Gold Bracelet",
+      "img": [
+        "IMG_GoldBracelet"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_11",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findExact": "southeast pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_GoldBracelet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick_NV"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_12",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "north nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_GoldCandlestick_NV"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_13",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findExact": "south ledges",
+              "findCount": [2,2,2],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_GoldCandlestick_NV"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_14",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "east room",
+              "findExact": "west table",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_GoldCandlestick_NV"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_15",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_GoldCandlestick_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack_NV"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_16",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldCoinStack_NV"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_17",
+              "findSimple": "findE",
+              "findArea": 34,
+              "findExact": "desk",
+              "findCount": [3,3,3],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_GoldCoinStack_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer_NV"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_18",
+              "findSimple": "findE",
+              "findArea": 32,
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_GoldHammer_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget_NV"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_19",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "electrics room",
+              "findExact": "behind turbines",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_GoldNugget_NV"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_20",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "aquifer",
+              "findExact": "by NE pillar",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_GoldNugget_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate_NV"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_21",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findExact": "dining table",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GoldPlate_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing_EP"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_22",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findExact": "locker 1",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_GoldRing_EP"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_23",
+              "findSimple": "findH",
+              "findArea": 29,
+              "findExact": "under desk",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_GoldRing_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase_NV"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_24",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findExact": "round table",
+              "findCount": [1,1,1],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_GoldVase_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_jewelrybox",
+      "name": "Jewelry Box",
+      "img": [
+        "IMG_JewelryBox"
+      ],
+      "values": [
+        {
+          "id": "200gems",
+          "value": [0,200,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_25",
+              "findSimple": "findM",
+              "findArea": 31,
+              "findNarrow": "behind gate",
+              "findExact": "pedestal",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_JewelryBox"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_orbandcross",
+      "name": "Orb and Cross",
+      "img": [
+        "IMG_OrbAndCross_Green"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_26",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findExact": "southwest pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_OrbAndCross_Green"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ornateplate",
+      "name": "Ornate Plate",
+      "img": [
+        "IMG_OrnatePlate"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_27",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "mess hall",
+              "findExact": "south dining table",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_OrnatePlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet_NV"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_28",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_PurpleGoblet_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse_NV"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_29",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "cellar",
+              "findExact": "on John Osgood",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_Purse_NV"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_30",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "halls",
+              "findExact": "on Ramirez sergeant",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_Purse_NV"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_31",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "halls",
+              "findExact": "on Ramirez sergeant",
+              "findCountBox": [0,1,1],
+              "findPick": true,
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Purse_NV"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_32",
+              "findSimple": "findM",
+              "findArea": 28,
+              "findExact": "on bookcase",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_Purse_NV"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "200gold",
+          "value": [200,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_33",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findExact": "under dining table",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_Purse_NV"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_34",
+              "findSimple": "findE",
+              "findArea": 34,
+              "findExact": "wardrobe",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_Purse_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_sapphirevase",
+      "name": "Sapphire Vase",
+      "img": [
+        "IMG_SapphireVase"
+      ],
+      "values": [
+        {
+          "id": "50gold75gems",
+          "value": [50,75,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_35",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "mezzanine",
+              "findExact": "north table",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_SapphireVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverflute",
+      "name": "Silver Flute",
+      "img": [
+        "IMG_Flute"
+      ],
+      "values": [
+        {
+          "id": "10gold50goods",
+          "value": [10,0,50,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_36",
+              "findSimple": "findE",
+              "findArea": 30,
+              "findNarrow": "stage",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_Flute"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget_NV"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_37",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "electrics room",
+              "findExact": "behind water tank",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_SilverNugget_NV"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_38",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "aquifer",
+              "findExact": "by pillars",
+              "findCount": [2,2,2],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_SilverNugget_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Nobleman",
+        "IMG_Statuette_Noblewoman",
+        "IMG_Statuette_Muse"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_39",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "south storage",
+              "findExact": "behind crates",
+              "findCount": [2,2,2],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_Statuette_Nobleman",
+                "IMG_Statuette_Muse"
+              ]
+            },
+            {
+              "id": "fm_forces-invitation_loot_40",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "south storage",
+              "findExact": "crate",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_Statuette_Noblewoman"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara_NV"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_loot_41",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "bathtub",
+              "findExact": "underwater",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_Tiara_NV"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_constantinessword",
+          "name": "Constantine's Sword",
+          "img": [
+            "IMG_ConstantinesSword_NV"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Lucky Club",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_2",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "barracks",
+              "findExact": "near key rack",
+              "findCount": [1,1,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [32,32,32],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_forces-invitation_item_4",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "spider cave",
+              "findExact": "quiver",
+              "findCountBox": [4,4,4],
+              "findBox": true
+            },
+            {
+              "id": "fm_forces-invitation_item_5",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "S guard post",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_forces-invitation_item_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "2F ledge",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_forces-invitation_item_7",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "arena",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_forces-invitation_item_8",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "N guard post",
+              "findExact": "footlocker",
+              "findCountBox": [5,2,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_9",
+              "findSimple": "find",
+              "findArea": 33,
+              "findExact": "hope chest",
+              "findCountBox": [5,5,5],
+              "findBox": true
+            },
+            {
+              "id": "fm_forces-invitation_item_10",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "bridge cavern",
+              "findExact": "north beam",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_item_11",
+              "findSimple": "find",
+              "findArea": 36,
+              "findNarrow": "north ledge",
+              "findExact": "by Cenry",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_12",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "cold storage",
+              "findExact": "middle shelf",
+              "findCount": [8,8,8]
+            },
+            {
+              "id": "fm_forces-invitation_item_13",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "sink",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_forces-invitation_item_14",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "locker 3",
+              "findCount": [4,4,0]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_15",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "south storage",
+              "findExact": "crate",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "fm_forces-invitation_item_16",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "locker 8",
+              "findCount": [5,5,0]
+            },
+            {
+              "id": "fm_forces-invitation_item_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "foyer terrace",
+              "findExact": "between trees",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_18",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "locker 6",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_item_19",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "bedroom",
+              "findExact": "dresser",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_20",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "south storage",
+              "findExact": "crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_21",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "south storage",
+              "findExact": "crate",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "fm_forces-invitation_item_22",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "east bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion_NV"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_23",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_forces-invitation_item_24",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "locker 9",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "fm_forces-invitation_item_25",
+              "findSimple": "find",
+              "findArea": 33,
+              "findExact": "hope chest",
+              "findCountBox": [1,0,0],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion_NV"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_26",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "locker 5",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_breathpotion",
+          "name": "Breath Potion",
+          "img": [
+            "IMG_BreathPotion_NV"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_27",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "locker 7",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_28",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "locker 11",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_item_29",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "east bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_30",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_31",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Cell Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_32",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "hallway",
+              "findExact": "on thief swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Prison Gate Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_33",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "barracks",
+              "findExact": "key rack",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Foyer Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_34",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "north plant stand",
+              "findExact": "by flowerpot",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Captain's Office Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_35",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "foyer terrace",
+              "findCount": [1,1,1],
+              "findRecipe": "kill frogbeast"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Sleeping Room Key",
+          "img": [
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_36",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "bedroom",
+              "findExact": "wardrobe",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Security Room Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_37",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "bedroom",
+              "findExact": "dresser",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_forces-invitation_item_38",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "office",
+              "findExact": "on bookshelf",
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_forces-invitation_item_39",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "office",
+              "findExact": "under stairs",
+              "findCount": [0,0,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Cripplewood's Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_40",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "on Orin Cripplewood",
+              "findCountBox": [1,1,1],
+              "findRecipe": "after reading Duncan's letter to Cripplewood",
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Window Key",
+          "img": [
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_41",
+              "findSimple": "find",
+              "findArea": 29,
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Nestor's Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_42",
+              "findSimple": "find",
+              "findArea": 32,
+              "findExact": "on High Priest Nestor",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_43",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [6,3,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_44",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_45",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "locker 4",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_46",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_item_47",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "counter",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple_NV"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_48",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "cold storage",
+              "findExact": "west shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_forces-invitation_item_49",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "counter",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_forces-invitation_item_50",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "west room",
+              "findExact": "west shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_item_51",
+              "findSimple": "find",
+              "findArea": 33,
+              "findExact": "hope chest",
+              "findCountBox": [0,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_52",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_53",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "spider cave",
+              "findExact": "by Bruno Petelein",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_item_54",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "west hall",
+              "findExact": "by cold storage",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_55",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "west cell",
+              "findCount": [1,1,1],
+              "findRecipe": "placed by male servant"
+            },
+            {
+              "id": "fm_forces-invitation_item_56",
+              "findSimple": "find",
+              "findArea": 32,
+              "findExact": "nightstand",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_item_57",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_item_58",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "corner table",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "after reading Cpt. Gregor's journal"
+            },
+            {
+              "id": "fm_forces-invitation_item_59",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "card table",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "after reading Cpt. Gregor's journal"
+            },
+            {
+              "id": "fm_forces-invitation_item_60",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "table",
+              "findCount": [0,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_item_61",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "east desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_item_62",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "west room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_item_63",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "S guard post",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_item_64",
+              "findSimple": "find",
+              "findArea": 34,
+              "findExact": "hope chest",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate_NV"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_junk_1",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "barracks",
+              "findExact": "southeast corner",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_forces-invitation_junk_2",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "exterior",
+              "findExact": "by gate",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_forces-invitation_junk_3",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "north storage",
+              "findExact": "by north crate",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate_NV"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_junk_4",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "cellar",
+              "findExact": "north shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_junk_5",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "dining table",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_junk_6",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "Wooden Goblet",
+          "img": [
+            "IMG_WoodenGoblet_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_junk_7",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "mess hall",
+              "findExact": "central dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_junk_8",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "S guard post",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_junk_9",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "north table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_junk_10",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle_NV"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_junk_11",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_junk_12",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "N guard post",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_forces-invitation_junk_13",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_junk_14",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "cellar",
+              "findExact": "near John Osgood",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_forces-invitation_junk_15",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "mess hall",
+              "findExact": "north dining table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_forces-invitation_junk_16",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "north table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_junk_17",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_forces-invitation_junk_18",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "S guard post",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_setofbottles",
+          "name": "Set of Bottles",
+          "img": [
+            "IMG_SetOfBottles"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_junk_19",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [9,9,9]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_spectacles",
+          "name": "Spectacles",
+          "img": [
+            "IMG_ReadingGlasses"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_junk_20",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "south nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase_NV"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_junk_21",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "north hall",
+              "findExact": "southeast cabinet table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-invitation_junk_22",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "south hall",
+              "findExact": "NNE cabinet table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_levers",
+      "category": "Levers and Knobs",
+      "catJunk": [
+        {
+          "id": "junk_doorknob",
+          "name": "Doorknob",
+          "img": [
+            "IMG_Doorknob"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-invitation_junk_23",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "cellar",
+              "findExact": "south shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

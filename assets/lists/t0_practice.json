@@ -1,0 +1,718 @@
+{
+  "id": "t0_test",
+  "title": "App Test",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [250,800,50,0,1100],
+    [700,800,50,0,1550],
+    [950,800,100,0,1850]
+  ],
+  "lootCount": [16,22,24],
+  "lootChanges": [0,1,2],
+  "goal1": {
+    "total": [500,800,1200],
+    "gold": [50,50,50],
+    "info": "optional"
+  },
+  "goal2": {
+    "total": [800,1200,1400],
+    "info": "bonus"
+  },
+  "pocketCount": [1,2,3],
+  "pocketChanges": [0,1,2],
+  "carryLoot": true,
+  "carryItems": false,
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Southeast Dayport"},
+    {"key": "3", "value": "Star Gazer's House"},
+    {"key": "4", "value": "Shemenov Estate"},
+    {"key": "5", "value": "Southwest Dayport"},
+    {"key": "6", "value": "Castle van Vernon"},
+    {"key": "7", "value": "Fieldstone Estate"},
+    {"key": "8", "value": "Necromancer's Spire"},
+    {"key": "9", "value": "Castle Carlysle"},
+    {"key": "10", "value": "Sir Cullen's Keep"},
+    {"key": "11", "value": "Northwest Dayport"},
+    {"key": "12", "value": "Greenhouse"},
+    {"key": "13", "value": "Dayport Trader's Bank"},
+    {"key": "14", "value": "Angelwatch 8F"},
+    {"key": "15", "value": "Angelwatch 9F"}
+  ],
+  "notes": [
+    {
+      "id": "note_0",
+      "delimiter": " x",
+      "icon": "M",
+      "desc": "carries over from the previous Mission",
+      "show": true
+    },
+    {
+      "id": "note_1",
+      "delimiter": "  ",
+      "icon": "[1]",
+      "desc": "unavailable in v1.18",
+      "show": true
+    },
+    {
+      "id": "note_2",
+      "icon": "+",
+      "desc": "respawns 1 item (or 2 crystals) every 3 minutes if your supply of that item is too low",
+      "show": true
+    },
+    {
+      "id": "note_3",
+      "icon": "++",
+      "desc": "respawns 1 item (or 2 crystals) every 3 minutes if your supply of that item is too low",
+      "show": false
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t0_test_loot_5",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "dining room",
+              "findExact": "serving table",
+              "findCount": [1,1,1],
+              "findNote": 1,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "t0_test_loot_6",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "ballroom",
+              "findExact": "serving table",
+              "findCount": [0,0,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "t0_test_loot_7",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "employee office",
+              "findExact": "safe",
+              "findObj": true,
+              "findCount": [8,8,8],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t0_test_loot_9",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "spider's den",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "t0_test_loot_10",
+                  "value": [50,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            },
+            {
+              "id": "t0_test_loot_10",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "spider's den",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "t0_test_loot_9",
+                  "value": [50,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t0_test_loot_1",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "tower",
+              "findExact": "on red archer",
+              "findCountBox": [1,0,0],
+              "findPick": true,
+              "findLink": [
+                {
+                  "id": "t0_test_loot_4",
+                  "value": [100,0,0,0],
+                  "findCount": [0,5,0],
+                  "findPick": true
+                }
+              ],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t0_test_loot_2",
+              "findSimple": "findM",
+              "findArea": 8,
+              "findNarrow": "4F",
+              "findExact": "altar",
+              "findCount": [0,2,2],
+              "findSecret": true,
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t0_test_loot_3",
+              "findSimple": "findH",
+              "findArea": 4,
+              "findNarrow": "chandelier hall",
+              "findExact": "blue chest",
+              "findCount": [2,0,5],
+              "findCountBox": [1,0,3],
+              "findBox": true,
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t0_test_loot_4",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "north guest room",
+              "findExact": "on nobleman",
+              "findObj": true,
+              "findCountBox": [0,5,0],
+              "findPick": true,
+              "findLink": [
+                {
+                  "id": "t0_test_loot_1",
+                  "value": [50,0,0,0],
+                  "findCount": [1,0,0],
+                  "findPick": true
+                }
+              ],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "carryover",
+          "value": [0,0,0,0],
+          "carryValue": [-1,0,0,0],
+          "locations": [
+            {
+              "id": "t0_test_loot_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "loadout": "start"
+            }
+          ],
+          "orderNum": 0,
+          "orderImg": [
+            "IMG_Purse"
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t0_test_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t0_test_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t0_test_item_3",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [30,30,30],
+              "findCountActual": [25,25,25],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "t0_test_item_4",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "guard barracks",
+              "findExact": "footlocker",
+              "findCountBox": [5,5,5],
+              "findBox": true
+            },
+            {
+              "id": "t0_test_item_5",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findCount": [10,10,8]
+            },
+            {
+              "id": "t0_test_item_6",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "south roof",
+              "findExact": "on archer",
+              "findCountBox": [0,0,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t0_test_item_7",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "loadout": "store",
+              "price": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t0_test_item_8",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "water pump",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t0_test_item_9",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "SE apartment",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,0]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t0_test_item_10",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "attic",
+              "findExact": "hidden closet",
+              "findCount": [2,2,2],
+              "findSecret": true
+            },
+            {
+              "id": "t0_test_item_11",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "tower",
+              "findExact": "battlement",
+              "findCount": [0,0,2]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t0_test_item_12",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "spider's den",
+              "findExact": "rafters",
+              "findCount": [0,2,0]
+            },
+            {
+              "id": "t0_test_item_13",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "counter",
+              "findExact": "by sink",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t0_test_item_14",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "counter",
+              "findExact": "by sink",
+              "findCount": [1,0,0]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "t0_test_junk_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "guard post",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t0_test_junk_2",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "attic",
+              "findExact": "north crawlspace",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t0_test_junk_3",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "chandelier hall",
+              "findExact": "closet",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t0_test_junk_4",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "pantry",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "t0_test_junk_5",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "near water pump",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t0_test_junk_6",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "spider's den",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "t0_test_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_t2_guest_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 3,
+          "findNarrow": "attic",
+          "findDiff": [1,1,1],
+          "method": "Frob the telescope by the window"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardItem": "Fire Crystal",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_1_2",
+          "rewardItem": "Sunburst Device",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t0_test_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_t2_guest_02",
+        "SEC_t2_party_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 4,
+          "findNarrow": "chandelier hall",
+          "findDiff": [1,1,1],
+          "method": "Cut down the banner above the door"
+        },
+        {
+          "id": "sec_2_b",
+          "findArea": 4,
+          "findNarrow": "chandelier hall",
+          "findDiff": [1,1,1],
+          "method": "Frob the torch in the closet"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardLoot": "Necklace",
+          "value": [30,30,30,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t0_test_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_t2_guest_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 8,
+          "findNarrow": "2F",
+          "findDiff": [1,1,1],
+          "method": "Pull the book on the north bookcase"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardLoot": "Gold Coin Stack",
+          "value": [100,0,0,0],
+          "findCount": [1,2,3]
+        },
+        {
+          "id": "sec_3_2",
+          "rewardItem": "Healing Potion",
+          "findCount": [1,1,0]
+        },
+        {
+          "id": "sec_3_3",
+          "rewardItem": "Speed Potion",
+          "findCount": [1,0,0]
+        },
+        {
+          "id": "sec_3_4",
+          "rewardItem": "Papyrus",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t0_test_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_t2_guest_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 14,
+          "findNarrow": "west hallway",
+          "findDiff": [1,1,1],
+          "method": "Push the button on the statue"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardRoute": [
+            "the 8F hallway",
+            "the roof"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_4_2",
+          "rewardItem": "Healing Potion",
+          "findCount": [2,1,0]
+        },
+        {
+          "id": "sec_4_3",
+          "rewardItem": "Speed Potion",
+          "findCount": [0,1,2]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4073 @@
+{
+  "id": "fm_artthievery",
+  "title": "The Art of Thievery",
+  "author": [
+    "auth_rich"
+  ],
+  "screens": [
+    "MIS_fm_artthievery_A",
+    "MIS_fm_artthievery_B"
+  ],
+  "firstRelease": "December 2001",
+  "latestVersion": "1.0",
+  "diffNames": ["EaSy","HaRd","GhOsT"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [2495,400,2565,0,5460],
+    [2945,400,3340,0,6685],
+    [2795,415,3775,0,6985]
+  ],
+  "lootCount": [113,131,131],
+  "lootChanges": [0,1,2],
+  "goal1": {
+    "total": [3500,4500,5500]
+  },
+  "pocketCount": [20,30,31],
+  "pocketChanges": [0,1,2],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Streets"},
+    {"key": "3", "value": "Angel Hall"},
+    {"key": "4", "value": "Shrine Room"},
+    {"key": "5", "value": "West Camera Control Room"},
+    {"key": "6", "value": "Third Floor"},
+    {"key": "7", "value": "West Library"},
+    {"key": "8", "value": "Relic Hall"},
+    {"key": "9", "value": "Water Pool Room"},
+    {"key": "10", "value": "Aquarium"},
+    {"key": "11", "value": "Main Staircase"},
+    {"key": "12", "value": "Bradford's Bedroom"},
+    {"key": "13", "value": "Display Case Room"},
+    {"key": "14", "value": "Hidden Passage"},
+    {"key": "15", "value": "Garden"},
+    {"key": "16", "value": "Second Floor West"},
+    {"key": "17", "value": "Central Guest Hall"},
+    {"key": "18", "value": "Second Floor East"},
+    {"key": "19", "value": "Central Library"},
+    {"key": "20", "value": "First Floor South"},
+    {"key": "21", "value": "Glass House"},
+    {"key": "22", "value": "South Staircase"},
+    {"key": "23", "value": "Gambling Room"},
+    {"key": "24", "value": "South Guest Hall"},
+    {"key": "25", "value": "Music Room"},
+    {"key": "26", "value": "White Sitting Room"},
+    {"key": "27", "value": "First Floor West"},
+    {"key": "28", "value": "Main Dining Room"},
+    {"key": "29", "value": "Servants' Quarters"},
+    {"key": "30", "value": "Kitchen"},
+    {"key": "31", "value": "First Floor East"},
+    {"key": "32", "value": "Captain's Bedroom"},
+    {"key": "33", "value": "North Wing 1F"},
+    {"key": "34", "value": "Great Mechanist Church"},
+    {"key": "35", "value": "North Wing 2F"},
+    {"key": "36", "value": "Bathing Pool"},
+    {"key": "37", "value": "North Camera Control Room"},
+    {"key": "38", "value": "Lord's Library"},
+    {"key": "39", "value": "Northeast House"},
+    {"key": "40", "value": "Lord's Study"},
+    {"key": "41", "value": "Bradford's Vault"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_1",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findExact": "card tables",
+              "findCount": [4,4,4],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Monster",
+        "IMG_DecorativeMask_Bugaku",
+        "IMG_DecorativeMask_Inuit",
+        "IMG_DecorativeMask_White"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_2",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "fireplace room",
+              "findExact": "above mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_DecorativeMask_Inuit"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_3",
+              "findSimple": "findE",
+              "findArea": 22,
+              "findNarrow": "mezzanine",
+              "findExact": "mask stand",
+              "findCount": [1,1,1],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_DecorativeMask_Monster"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_4",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "side door hall",
+              "findExact": "mask stand",
+              "findCount": [1,1,1],
+              "orderNum": 74,
+              "orderImg": [
+                "IMG_DecorativeMask_White"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_5",
+              "findSimple": "findM",
+              "findArea": 32,
+              "findExact": "under bed",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 86,
+              "orderImg": [
+                "IMG_DecorativeMask_White"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_6",
+              "findSimple": "findE",
+              "findArea": 33,
+              "findNarrow": "statue hall",
+              "findExact": "mask stands",
+              "findCount": [0,2,2],
+              "orderNum": 93,
+              "orderImg": [
+                "IMG_DecorativeMask_Bugaku",
+                "IMG_DecorativeMask_Inuit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Pink",
+        "IMG_DecorativePlate_Red",
+        "IMG_DecorativePlate_Orange",
+        "IMG_DecorativePlate_Gold",
+        "IMG_DecorativePlate_Aqua",
+        "IMG_DecorativePlate_Blue"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_7",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "dining room anteroom",
+              "findExact": "west table",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_DecorativePlate_Blue"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_8",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "dining room",
+              "findExact": "walls",
+              "findCount": [4,4,4],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink",
+                "IMG_DecorativePlate_Red",
+                "IMG_DecorativePlate_Orange",
+                "IMG_DecorativePlate_Gold"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_9",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "east end",
+              "findExact": "tables",
+              "findCount": [3,3,3],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink",
+                "IMG_DecorativePlate_Orange",
+                "IMG_DecorativePlate_Blue"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_10",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "teal guest room",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_DecorativePlate_Red",
+                "IMG_DecorativePlate_Orange"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_11",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "water pillar room",
+              "findExact": "east wall",
+              "findCount": [2,2,2],
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_DecorativePlate_Gold",
+                "IMG_DecorativePlate_Aqua"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_12",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "2F alcove",
+              "findExact": "west table",
+              "findCount": [1,1,1],
+              "orderNum": 62,
+              "orderImg": [
+                "IMG_DecorativePlate_Gold"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_13",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "unlit sitting room",
+              "findExact": "southeast wall",
+              "findCount": [2,2,2],
+              "orderNum": 71,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink",
+                "IMG_DecorativePlate_Orange"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_diamonddrillbit",
+      "name": "Diamond Drill Bit",
+      "img": [
+        "IMG_DiamondDrillbit"
+      ],
+      "values": [
+        {
+          "id": "250gems",
+          "value": [0,250,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_14",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "near corner",
+              "findExact": "pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_DiamondDrillbit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_15",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_16",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "anteroom",
+              "findExact": "wardrobe",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_17",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "water pillar room",
+              "findExact": "north cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_18",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "near garden door",
+              "findExact": "southwest table",
+              "findCount": [1,1,1],
+              "orderNum": 80,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_19",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "statue hall",
+              "findExact": "side table",
+              "findCount": [1,1,1],
+              "orderNum": 83,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_20",
+              "findSimple": "findE",
+              "findArea": 36,
+              "findNarrow": "1F",
+              "findExact": "west coffee table",
+              "findCount": [0,1,1],
+              "orderNum": 94,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_21",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_22",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "pillar guest room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_23",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "cross table room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_24",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "white dining room",
+              "findExact": "dining table",
+              "findCount": [1,1,1],
+              "orderNum": 68,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_25",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "dining table",
+              "findCount": [3,3,3],
+              "orderNum": 77,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_26",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "sitting room",
+              "findExact": "desk",
+              "findCount": [3,3,2],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_27",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "teal guest room",
+              "findExact": "south nightstand",
+              "findCount": [2,2,2],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_28",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "brown guest room",
+              "findExact": "nightstand",
+              "findCount": [2,2,2],
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_29",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "pink guest room",
+              "findExact": "nightstand",
+              "findCount": [2,2,2],
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_30",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 81,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_31",
+              "findSimple": "findM",
+              "findArea": 19,
+              "findNarrow": "lower level",
+              "findExact": "middle round table",
+              "findCount": [2,2,2],
+              "orderNum": 88,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_32",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "stage",
+              "findExact": "conductor's stand",
+              "findCount": [1,1,1],
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_33",
+              "findSimple": "findE",
+              "findArea": 40,
+              "findExact": "desk",
+              "findCount": [0,1,1],
+              "orderNum": 102,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_34",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_35",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "nightstand",
+              "findCount": [1,1,0],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_36",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "water pillar room",
+              "findExact": "north cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_37",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "near garden door",
+              "findExact": "southwest table",
+              "findCount": [1,1,1],
+              "orderNum": 79,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_38",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "statue hall",
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "orderNum": 84,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_39",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "camera hall",
+              "findExact": "pedestals",
+              "findCount": [2,2,2],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_40",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findNarrow": "1F",
+              "findExact": "NNE round table",
+              "findCount": [1,1,1],
+              "orderNum": 64,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_41",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "side door hall",
+              "findExact": "north table",
+              "findCount": [1,1,1],
+              "orderNum": 67,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_42",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "unlit sitting room",
+              "findExact": "south table",
+              "findCount": [1,1,1],
+              "orderNum": 70,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_43",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "northwest cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 78,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_44",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "anteroom",
+              "findExact": "round table",
+              "findCount": [1,1,0],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_45",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "lower level",
+              "findExact": "on west bookcase",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_46",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "vase hall",
+              "findExact": "east cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_47",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "side door hall",
+              "findExact": "south table",
+              "findCount": [1,1,1],
+              "orderNum": 72,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_48",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "southeast cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 76,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_49",
+              "findSimple": "findE",
+              "findArea": 38,
+              "findNarrow": "1F",
+              "findExact": "southeast cabinet table",
+              "findCount": [0,1,1],
+              "orderNum": 101,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_50",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "3F",
+              "findExact": "west table",
+              "findCount": [1,1,0],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_51",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "lower level",
+              "findExact": "east cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_52",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "vase hall",
+              "findExact": "west cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_53",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "2F alcove",
+              "findExact": "south table",
+              "findCount": [1,1,1],
+              "orderNum": 61,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_54",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "near front door",
+              "findExact": "south table",
+              "findCount": [1,1,1],
+              "orderNum": 66,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_55",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findNarrow": "northwest hall",
+              "findExact": "cabinet table",
+              "findCount": [0,1,1],
+              "orderNum": 95,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_56",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findNarrow": "exit hall",
+              "findExact": "northwest table",
+              "findCount": [0,1,1],
+              "orderNum": 96,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_57",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findNarrow": "green guest room",
+              "findExact": "mantelpiece",
+              "findCount": [0,1,1],
+              "orderNum": 98,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_58",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findNarrow": "lilac guest room",
+              "findExact": "mantelpiece",
+              "findCount": [0,1,1],
+              "orderNum": 99,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_59",
+              "findSimple": "findE",
+              "findArea": 38,
+              "findNarrow": "1F",
+              "findExact": "west cabinet table",
+              "findCount": [0,1,1],
+              "orderNum": 100,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_60",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "pillar guest room",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "0goods",
+          "value": [0,0,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_61",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "east end",
+              "findExact": "middle pedestal",
+              "findCount": [0,0,1],
+              "findUnable": true,
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_62",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "east end",
+              "findExact": "middle pedestal",
+              "findCount": [1,1,0],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_63",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "display cases",
+              "findCount": [4,4,4],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_64",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findExact": "behind banner",
+              "findCount": [0,0,1],
+              "findSecret": true,
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_65",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findNarrow": "2F",
+              "findExact": "pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 63,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_66",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findNarrow": "1F",
+              "findExact": "pedestal",
+              "findCount": [1,0,1],
+              "orderNum": 65,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_67",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "treasure room",
+              "findExact": "middle shelf",
+              "findCount": [0,0,1],
+              "findSecret": true,
+              "orderNum": 104,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorgem",
+      "name": "Precursor Gem",
+      "img": [
+        "IMG_PrecursorGem"
+      ],
+      "values": [
+        {
+          "id": "15gems",
+          "value": [0,15,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_68",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "rafters",
+              "findExact": "between cameras",
+              "findCount": [0,0,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_PrecursorGem"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Tall",
+        "IMG_PrecursorJar_Pointed"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_69",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "north tank",
+              "findExact": "pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_PrecursorJar_Small"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_70",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "middle tank",
+              "findExact": "pedestal",
+              "findCount": [1,1,0],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_PrecursorJar_Pointed"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_71",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "south tank",
+              "findExact": "pedestals",
+              "findCount": [3,4,4],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_PrecursorJar_Small",
+                "IMG_PrecursorJar_Tall",
+                "IMG_PrecursorJar_Pointed"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_72",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "banner hall",
+              "findExact": "round table",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_73",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findNarrow": "sitting room",
+              "findExact": "northeast ledge",
+              "findCount": [1,1,1],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_74",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "gallery hall",
+              "findExact": "south square table",
+              "findCount": [1,1,1],
+              "orderNum": 87,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_75",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "treasure room",
+              "findExact": "top shelf",
+              "findCount": [0,0,1],
+              "findSecret": true,
+              "orderNum": 105,
+              "orderImg": [
+                "IMG_PrecursorJar_Pointed"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_76",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "treasure room",
+              "findExact": "bottom shelf",
+              "findCount": [0,0,3],
+              "findSecret": true,
+              "orderNum": 103,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_77",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "dining room",
+              "findExact": "east cabinet table",
+              "findCount": [2,2,2],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_78",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_79",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findNarrow": "staircase hall",
+              "findExact": "north cabinet table",
+              "findCount": [0,2,2],
+              "orderNum": 92,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_80",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "gallery hall",
+              "findExact": "southeast cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_81",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "planter hall",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_82",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "burrick guest room",
+              "findExact": "dresser",
+              "findCount": [1,1,1],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_83",
+              "findSimple": "findM",
+              "findArea": 27,
+              "findNarrow": "unlit sitting room",
+              "findExact": "archway",
+              "findCount": [1,1,1],
+              "orderNum": 69,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_84",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "side door hall",
+              "findExact": "east cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 73,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_85",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "southwest cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 75,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_86",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findNarrow": "staircase hall",
+              "findExact": "south table",
+              "findCount": [0,1,1],
+              "orderNum": 91,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_87",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findNarrow": "exit hall",
+              "findExact": "northeast table",
+              "findCount": [0,1,1],
+              "orderNum": 97,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_88",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "dining room",
+              "findExact": "on nobleman",
+              "findCountBox": [0,1,1],
+              "findPick": true,
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_89",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "dining room",
+              "findExact": "on noblewoman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_90",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "sitting room",
+              "findExact": "on noblewoman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_91",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "sitting room",
+              "findExact": "on nobleman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_92",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findExact": "roulette table",
+              "findCount": [1,1,1],
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_93",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "balcony",
+              "findExact": "on Mechanist arbalist",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_94",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "water pillar room",
+              "findExact": "on nobleman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_95",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "seating area",
+              "findExact": "on nobleman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 59,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_96",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "seating area",
+              "findExact": "on noblewoman",
+              "findCountBox": [0,1,1],
+              "findPick": true,
+              "orderNum": 60,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_97",
+              "findSimple": "findH",
+              "findArea": 30,
+              "findNarrow": "fireplace",
+              "findExact": "chimney",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 82,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_98",
+              "findSimple": "findE",
+              "findArea": 32,
+              "findExact": "on guard captain",
+              "findCountBox": [1,1,0],
+              "findPick": true,
+              "orderNum": 85,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_99",
+              "findSimple": "findE",
+              "findArea": 34,
+              "findNarrow": "nave",
+              "findExact": "on Mechanist priest",
+              "findCountBox": [0,1,1],
+              "findPick": true,
+              "orderNum": 89,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_100",
+              "findSimple": "findE",
+              "findArea": 34,
+              "findNarrow": "by lectern",
+              "findExact": "on Mechanist priest",
+              "findCountBox": [0,1,1],
+              "findPick": true,
+              "orderNum": 90,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverflute",
+      "name": "Silver Flute",
+      "img": [
+        "IMG_SilverFlute"
+      ],
+      "values": [
+        {
+          "id": "25gold25goods",
+          "value": [25,0,25,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_101",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "stage",
+              "findExact": "east pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_SilverFlute"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Noblewoman",
+        "IMG_Statuette_Mage",
+        "IMG_Statuette_Muse"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_102",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "fireplace room",
+              "findExact": "round table",
+              "findCount": [1,1,0],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_Statuette_Noblewoman"
+              ]
+            },
+            {
+              "id": "fm_artthievery_loot_103",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "by middle tank",
+              "findExact": "pedestals",
+              "findCount": [2,2,2],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_Statuette_Mage",
+                "IMG_Statuette_Muse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_104",
+              "findSimple": "findM",
+              "findArea": 24,
+              "findNarrow": "pink guest room",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_treebeastmask",
+      "name": "Treebeast Mask",
+      "img": [
+        "IMG_TreebeastMask"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_105",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findNarrow": "upper level",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_TreebeastMask"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_vase",
+      "name": "Vase",
+      "img": [
+        "IMG_Vase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_artthievery_loot_106",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "vase hall",
+              "findExact": "pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_Vase"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_jeweledsword",
+          "name": "Sword of Chaos",
+          "img": [
+            "IMG_JeweledSword"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_2",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "south tank",
+              "findExact": "south pedestal",
+              "findObj": true,
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_artthievery_item_3",
+              "findSimple": "find",
+              "findArea": 40,
+              "findExact": "safe",
+              "findObj": true,
+              "findCountBox": [0,1,0],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_artthievery_item_83",
+                  "findCount": [0,0,1]
+                }
+              ]
+            },
+            {
+              "id": "fm_artthievery_item_4",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "treasure room",
+              "findExact": "sea chest",
+              "findObj": true,
+              "findCountBox": [0,0,1],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [25,25,25],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_artthievery_item_7",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [25,25,25],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "fm_artthievery_item_8",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "south street",
+              "findExact": "on Watch archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_artthievery_item_9",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west street",
+              "findExact": "on Watch archer",
+              "findCountBox": [0,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_10",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [17,17,17],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_artthievery_item_11",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [12,12,12],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_12",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_artthievery_item_13",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_14",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_artthievery_item_15",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [7,7,7],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_gasarrow",
+          "name": "Gas Arrow",
+          "img": [
+            "IMG_GasArrow_TMA"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_16",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_artthievery_item_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,0],
+              "loadout": "store",
+              "price": 500
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_18",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_artthievery_item_19",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "fm_artthievery_item_20",
+              "findSimple": "find",
+              "findArea": 39,
+              "findNarrow": "attic",
+              "findExact": "footlocker",
+              "findCountBox": [0,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_artthievery_item_30",
+                  "findCount": [0,2,2]
+                },
+                {
+                  "id": "fm_artthievery_item_51",
+                  "findCount": [0,1,1]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_21",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_artthievery_item_22",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_23",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "3F",
+              "findExact": "west table",
+              "findCount": [0,0,2]
+            },
+            {
+              "id": "fm_artthievery_item_24",
+              "findSimple": "find",
+              "findArea": 37,
+              "findExact": "south shelf",
+              "findCount": [0,3,3]
+            },
+            {
+              "id": "fm_artthievery_item_25",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "elemental room",
+              "findExact": "by W waterfall",
+              "findCount": [0,0,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_26",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "storage",
+              "findExact": "footlocker",
+              "findCountBox": [3,3,0],
+              "findBox": true
+            },
+            {
+              "id": "fm_artthievery_item_27",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "elemental room",
+              "findExact": "by W waterfall",
+              "findCount": [0,0,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_28",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "by east tree",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_artthievery_item_29",
+              "findSimple": "find",
+              "findArea": 37,
+              "findExact": "middle shelf",
+              "findCount": [0,3,3]
+            },
+            {
+              "id": "fm_artthievery_item_30",
+              "findSimple": "find",
+              "findArea": 39,
+              "findNarrow": "attic",
+              "findExact": "footlocker",
+              "findCountBox": [0,2,2],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_artthievery_item_20",
+                  "findCount": [0,1,1]
+                },
+                {
+                  "id": "fm_artthievery_item_51",
+                  "findCount": [0,1,1]
+                }
+              ]
+            },
+            {
+              "id": "fm_artthievery_item_31",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "elemental room",
+              "findExact": "by E waterfall",
+              "findCount": [0,0,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_32",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "pitcher plant",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_artthievery_item_33",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "elemental room",
+              "findExact": "by E waterfall",
+              "findCount": [0,0,2],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_34",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_artthievery_item_35",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "fm_artthievery_item_36",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "brown guest room",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_37",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 500
+            },
+            {
+              "id": "fm_artthievery_item_38",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "storage",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_artthievery_item_39",
+              "findSimple": "find",
+              "findArea": 38,
+              "findNarrow": "3F",
+              "findExact": "hope chest",
+              "findCountBox": [0,1,1],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "Flash Mine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_40",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "storage",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_41",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_artthievery_item_42",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "fm_artthievery_item_43",
+              "findSimple": "find",
+              "findArea": 37,
+              "findExact": "north shelf",
+              "findCount": [0,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_44",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 300
+            },
+            {
+              "id": "fm_artthievery_item_45",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "teal guest room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,0],
+              "findBox": true
+            },
+            {
+              "id": "fm_artthievery_item_46",
+              "findSimple": "find",
+              "findArea": 37,
+              "findExact": "north shelf",
+              "findCount": [0,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_breathpotion",
+          "name": "Breath Potion",
+          "img": [
+            "IMG_BreathPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_47",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "pink guest room",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_48",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "behind banner",
+              "findCount": [1,1,0],
+              "findSecret": true
+            },
+            {
+              "id": "fm_artthievery_item_49",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "water pillar room",
+              "findExact": "safe",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true
+            },
+            {
+              "id": "fm_artthievery_item_50",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "staircase hall rafters",
+              "findExact": "hope chest",
+              "findCountBox": [0,1,1],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_51",
+              "findSimple": "find",
+              "findArea": 39,
+              "findNarrow": "attic",
+              "findExact": "footlocker",
+              "findCountBox": [0,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_artthievery_item_20",
+                  "findCount": [0,1,1]
+                },
+                {
+                  "id": "fm_artthievery_item_30",
+                  "findCount": [0,2,2]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_52",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_53",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Main Door Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_54",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "side door",
+              "findExact": "on elite Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Window Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_55",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "side door",
+              "findExact": "on elite Mechanist",
+              "findCountBox": [1,1,0],
+              "findPick": true
+            },
+            {
+              "id": "fm_artthievery_item_56",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "front door",
+              "findExact": "on elite Mechanist",
+              "findCountBox": [0,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Camera Room Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_57",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "3F",
+              "findExact": "on masked Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_artthievery_item_58",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "2F",
+              "findExact": "on elite Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_artthievery_item_59",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "2F",
+              "findExact": "on Mechanist arbalist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_artthievery_item_60",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "1F",
+              "findExact": "on Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Water Pool Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_61",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "on Mechanist diver",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_artthievery_item_62",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "ramp hall",
+              "findExact": "on Mechanist diver",
+              "findCountBox": [0,0,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Display Case Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_63",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "on Mechanist diver",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "North Wing Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_64",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "nightstand",
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_artthievery_item_65",
+              "findSimple": "find",
+              "findArea": 32,
+              "findExact": "on guard captain",
+              "findCountBox": [0,0,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Water Chest Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_66",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "nightstand",
+              "findCount": [0,0,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Central Library Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_67",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "camera hall",
+              "findExact": "on Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_artthievery_item_68",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "lower level",
+              "findExact": "on Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Glass House Balcony Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_69",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "on Mechanist priest",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Tool Box Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_70",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "balcony",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Sitting Room Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_71",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "1F",
+              "findExact": "on Mechanist",
+              "findCountBox": [0,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Lord's Safe Key",
+          "img": [
+            "IMG_Key_Red",
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_72",
+              "findSimple": "find",
+              "findArea": 32,
+              "findExact": "on Lord Bradford",
+              "findCountBox": [0,0,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_artthievery_item_73",
+              "findSimple": "find",
+              "findArea": 40,
+              "findExact": "on Lord Bradford",
+              "findCountBox": [0,1,0],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Lord's Library & Study Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_74",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "tree hall",
+              "findExact": "on Mechanist",
+              "findCountBox": [0,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_artthievery_item_75",
+              "findSimple": "find",
+              "findArea": 36,
+              "findExact": "underwater",
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_artthievery_item_76",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "exit hall",
+              "findExact": "on Mechanist",
+              "findCountBox": [0,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_artthievery_item_77",
+              "findSimple": "find",
+              "findArea": 38,
+              "findNarrow": "1F",
+              "findExact": "on Mechanist",
+              "findCountBox": [0,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_78",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [7,7,7],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_79",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_80",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_81",
+              "findSimple": "find",
+              "findArea": 30,
+              "findExact": "west table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_82",
+              "findSimple": "find",
+              "findArea": 32,
+              "findExact": "dresser",
+              "findCount": [0,0,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Book of Combinations",
+          "img": [
+            "IMG_Book_Ash"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_83",
+              "findSimple": "find",
+              "findArea": 40,
+              "findExact": "safe",
+              "findCountBox": [0,0,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_artthievery_item_3",
+                  "findCount": [0,1,0]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_levers",
+      "category": "Levers and Knobs",
+      "catItems": [
+        {
+          "id": "item_wheelpeg",
+          "name": "Wheel Peg",
+          "img": [
+            "IMG_WheelPeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_84",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "vase hall",
+              "findExact": "on Mechanist",
+              "findCountBox": [0,0,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_hammerite",
+      "category": "Hammerite Items",
+      "catItems": [
+        {
+          "id": "item_rosarybeads",
+          "name": "Rosary Beads",
+          "img": [
+            "IMG_RosaryBeads"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_85",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "on Lord Bradford",
+              "findObj": true,
+              "findCountBox": [1,0,0],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_hornofquintus",
+          "name": "Horn of Quintus",
+          "img": [
+            "IMG_HornOfQuintus"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_86",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "treasure room",
+              "findExact": "middle shelf",
+              "findCount": [0,0,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_painting",
+          "name": "Painting",
+          "img": [
+            "IMG_Painting_ArtThievery1",
+            "IMG_Painting_ArtThievery2",
+            "IMG_Painting_ArtThievery3",
+            "IMG_Painting_ArtThievery4",
+            "IMG_Painting_ArtThievery5",
+            "IMG_Painting_ArtThievery6",
+            "IMG_Painting_ArtThievery7",
+            "IMG_Painting_ArtThievery8",
+            "IMG_Painting_ArtThievery9"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_87",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "rafters",
+              "findExact": "east side",
+              "findObj": true,
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_artthievery_item_88",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "upper level",
+              "findExact": "east wall",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_artthievery_item_89",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "rafters",
+              "findExact": "east side",
+              "findObj": true,
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_artthievery_item_90",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "mezzanine",
+              "findExact": "under railing",
+              "findObj": true,
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_artthievery_item_91",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "1F",
+              "findExact": "north wall",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_artthievery_item_92",
+              "findSimple": "find",
+              "findArea": 28,
+              "findExact": "above mantelpiece",
+              "findObj": true,
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_artthievery_item_93",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "gallery hall",
+              "findExact": "above north paintings",
+              "findObj": true,
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_artthievery_item_94",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "statue hall",
+              "findExact": "south wall",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_artthievery_item_95",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "exit hall",
+              "findExact": "above front door",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_theeye",
+          "name": "The Eye",
+          "img": [
+            "IMG_TheEye"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_96",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "treasure room",
+              "findExact": "top shelf",
+              "findCount": [0,0,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_talismans",
+      "category": "Talismans",
+      "catItems": [
+        {
+          "id": "item_talismanofearth",
+          "name": "Talisman of Earth",
+          "img": [
+            "IMG_TalismanOfEarth"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_97",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "under Mechanist statue",
+              "findCount": [0,0,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_talismanoffire",
+          "name": "Talisman of Fire",
+          "img": [
+            "IMG_TalismanOfFire"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_98",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "cage",
+              "findCount": [0,0,1],
+              "findRecipe": "shoot Water Arrow at flame",
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_talismanofwater",
+          "name": "Talisman of Water",
+          "img": [
+            "IMG_TalismanOfWater"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_99",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "middle tank",
+              "findExact": "Precursor chest",
+              "findCountBox": [0,0,1],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_talismanofair",
+          "name": "Talisman of Air",
+          "img": [
+            "IMG_TalismanOfAir"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_100",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "chancel",
+              "findExact": "window",
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_junk_1",
+              "findSimple": "find",
+              "findArea": 39,
+              "findNarrow": "attic",
+              "findCount": [0,6,6]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_junk_2",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "water pillar room",
+              "findExact": "central table",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_artthievery_junk_3",
+              "findSimple": "find",
+              "findArea": 36,
+              "findNarrow": "1F",
+              "findExact": "east coffee table",
+              "findCount": [0,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_junk_4",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "water pillar room",
+              "findExact": "central table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_artthievery_junk_5",
+              "findSimple": "find",
+              "findArea": 36,
+              "findNarrow": "1F",
+              "findExact": "east coffee table",
+              "findCount": [0,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_barrel",
+          "name": "Barrel",
+          "img": [
+            "IMG_Barrel"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_junk_6",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "storage",
+              "findExact": "near powderkegs",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Playing Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_junk_7",
+              "findSimple": "find",
+              "findArea": 29,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_junk_8",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "trophy hall",
+              "findExact": "round tables",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_artthievery_junk_9",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "2F",
+              "findExact": "round tables",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_artthievery_junk_10",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "1F",
+              "findExact": "round tables",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_artthievery_junk_11",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "lower level",
+              "findExact": "round tables",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_junk_12",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "water pillar room",
+              "findExact": "east tables",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_artthievery_junk_13",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "statue hall",
+              "findExact": "cabinet table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_artthievery_junk_14",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "near front door",
+              "findExact": "north table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_artthievery_junk_15",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "near garden door",
+              "findExact": "north tables",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_artthievery_junk_16",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "lilac guest room",
+              "findExact": "mantelpiece",
+              "findCount": [0,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_nautical",
+      "category": "Nautical Tools",
+      "catJunk": [
+        {
+          "id": "junk_sextant",
+          "name": "Sextant",
+          "img": [
+            "IMG_Sextant"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_junk_17",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north end",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_drillingmachine",
+          "name": "Drilling Machine",
+          "img": [
+            "IMG_DrillingMachine"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_junk_18",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north end",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_divinghelmet",
+          "name": "Diving Helmet",
+          "img": [
+            "IMG_DivingHelmet"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_junk_19",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north end",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_artthievery_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_artthievery_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 3,
+          "findNarrow": "3F",
+          "findDiff": [0,0,1],
+          "method": "Pull the lever under the west table"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardItem": "Talisman of Fire",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_artthievery_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 9,
+          "findNarrow": "rafters",
+          "findDiff": [0,0,1],
+          "method": "Pull the lever above the Mechanist statue"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardItem": "Talisman of Water",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_artthievery_03a",
+        "SEC_fm_artthievery_03b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 12,
+          "findNarrow": "near bed",
+          "findDiff": [1,1,0],
+          "method": "Frob the coat hook on the southeast support beam"
+        },
+        {
+          "id": "sec_3_b",
+          "findArea": 12,
+          "findNarrow": "fireplace",
+          "findDiff": [0,0,1],
+          "method": "Pull the lever under the mantelpiece"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardLoot": "Precursor Canopic Jar",
+          "value": [0,0,75,0],
+          "findCount": [0,0,1]
+        },
+        {
+          "id": "sec_3_2",
+          "rewardItem": "Invisibility Potion",
+          "findCount": [1,1,0]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_fm_artthievery_04a",
+        "SEC_fm_artthievery_04b",
+        "SEC_fm_artthievery_04c"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 6,
+          "findNarrow": "planter hall",
+          "findDiff": [1,1,0],
+          "method": "Flip the switch behind the middle planter"
+        },
+        {
+          "id": "sec_4_b",
+          "findArea": 6,
+          "findNarrow": "planter hall",
+          "findDiff": [0,0,1],
+          "method": "Flip the switch behind the west planter"
+        },
+        {
+          "id": "sec_4_c",
+          "findArea": 14,
+          "findNarrow": "third level",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever by the ceiling panel"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardRoute": [
+            "the planter hall",
+            "the hidden passage"
+          ],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_5",
+      "number": 5,
+      "img": [
+        "SEC_fm_artthievery_05a",
+        "SEC_fm_artthievery_05b",
+        "SEC_fm_artthievery_05c",
+        "SEC_fm_artthievery_05d"
+      ],
+      "triggers": [
+        {
+          "id": "sec_5_a",
+          "findArea": 16,
+          "findNarrow": "trophy hall",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever on the north doorframe"
+        },
+        {
+          "id": "sec_5_b",
+          "findArea": 17,
+          "findNarrow": "by wardrobe",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever on the beam south of the wardrobe"
+        },
+        {
+          "id": "sec_5_c",
+          "findArea": 14,
+          "findNarrow": "second level",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever by the west doorway"
+        },
+        {
+          "id": "sec_5_d",
+          "findArea": 14,
+          "findNarrow": "second level",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever by the east doorway"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_5_1",
+          "rewardRoute": [
+            "the 2F trophy hall",
+            "the central guest hall",
+            "the hidden passage"
+          ],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_6",
+      "number": 6,
+      "img": [
+        "SEC_fm_artthievery_06a",
+        "SEC_fm_artthievery_06b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_6_a",
+          "findArea": 15,
+          "findNarrow": "northwest corner",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch behind the northwest bush"
+        },
+        {
+          "id": "sec_6_b",
+          "findArea": 14,
+          "findNarrow": "first level",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch by the door"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_6_1",
+          "rewardRoute": [
+            "the garden",
+            "the hidden passage"
+          ],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_7",
+      "number": 7,
+      "img": [
+        "SEC_fm_artthievery_07a",
+        "SEC_fm_artthievery_07b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_7_a",
+          "findArea": 7,
+          "findNarrow": "fireplace room",
+          "findDiff": [1,1,0],
+          "method": "Pull the book on the east third shelf"
+        },
+        {
+          "id": "sec_7_b",
+          "findArea": 7,
+          "findNarrow": "fireplace room",
+          "findDiff": [0,0,1],
+          "method": "Pull the lever under the table"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_7_1",
+          "rewardRoute": [
+            "the west library",
+            "the central guest hall"
+          ],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_8",
+      "number": 8,
+      "img": [
+        "SEC_fm_artthievery_08a",
+        "SEC_fm_artthievery_08b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_8_a",
+          "findArea": 17,
+          "findNarrow": "burrick guest room",
+          "findDiff": [1,1,0],
+          "method": "Pull the lever on the northeast support beam"
+        },
+        {
+          "id": "sec_8_b",
+          "findArea": 17,
+          "findNarrow": "burrick guest room",
+          "findDiff": [0,0,1],
+          "method": "Pull the lever on the southeast support beam"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_8_1",
+          "rewardOther": "A lever that controls the watcher in the second floor's east camera hall",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_9",
+      "number": 9,
+      "img": [
+        "SEC_fm_artthievery_09"
+      ],
+      "triggers": [
+        {
+          "id": "sec_9_a",
+          "findArea": 21,
+          "findNarrow": "balcony",
+          "findDiff": [0,0,1],
+          "method": "Frob the torch north of the door"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_9_1",
+          "rewardItem": "Talisman of Earth",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_10",
+      "number": 10,
+      "img": [
+        "SEC_fm_artthievery_10a",
+        "SEC_fm_artthievery_10b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_10_a",
+          "findArea": 24,
+          "findNarrow": "pink guest room",
+          "findDiff": [1,1,0],
+          "method": "Frob the two torches by the banners"
+        },
+        {
+          "id": "sec_10_b",
+          "findArea": 24,
+          "findNarrow": "pink guest room",
+          "findDiff": [0,0,1],
+          "method": "Push the buttons on the mantelpiece, dresser, and wardrobe"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_10_1",
+          "rewardLoot": "Tiara",
+          "value": [75,50,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_11",
+      "number": 11,
+      "img": [
+        "SEC_fm_artthievery_11a",
+        "SEC_fm_artthievery_11b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_11_a",
+          "findArea": 16,
+          "findNarrow": "water pillar room",
+          "findDiff": [1,1,0],
+          "method": "Spin the wheel on the north wall"
+        },
+        {
+          "id": "sec_11_b",
+          "findArea": 16,
+          "findNarrow": "water pillar room",
+          "findDiff": [0,0,1],
+          "method": "Spin the wheel on the north wall after inserting the wheel peg"
+        }
+      ],
+      "rewards": [
+      {
+          "id": "sec_11_1",
+          "rewardItem": "Invisibility Potion",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_12",
+      "number": 12,
+      "img": [
+        "SEC_fm_artthievery_12"
+      ],
+      "triggers": [
+        {
+          "id": "sec_12_a",
+          "findArea": 30,
+          "findNarrow": "fireplace",
+          "findDiff": [1,1,1],
+          "method": "Look in the chimney"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_12_1",
+          "rewardLoot": "Purse",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_13",
+      "number": 13,
+      "img": [
+        "SEC_fm_artthievery_13a",
+        "SEC_fm_artthievery_13b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_13_a",
+          "findArea": 32,
+          "findNarrow": "fireplace",
+          "findDiff": [1,1,0],
+          "method": "Pull the lever on the mantelpiece"
+        },
+        {
+          "id": "sec_13_b",
+          "findArea": 32,
+          "findNarrow": "armoire",
+          "findDiff": [0,0,1],
+          "method": "Pull the lever on the armoire"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_13_1",
+          "rewardLoot": "Decorative Mask",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_14",
+      "number": 14,
+      "img": [
+        "SEC_fm_artthievery_14"
+      ],
+      "triggers": [
+        {
+          "id": "sec_14_a",
+          "findArea": 35,
+          "findNarrow": "staircase hall",
+          "findDiff": [0,1,1],
+          "method": "Shoot a rope arrow at the rafters"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_14_1",
+          "rewardItem": "Invisibility Potion",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_15",
+      "number": 15,
+      "img": [
+        "SEC_fm_artthievery_15"
+      ],
+      "triggers": [
+        {
+          "id": "sec_15_a",
+          "findArea": 38,
+          "findNarrow": "3F",
+          "findDiff": [0,1,1],
+          "method": "Shoot a rope arrow at the west tall bookcase"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_15_1",
+          "rewardItem": "Gas Mine",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_16",
+      "number": 16,
+      "img": [
+        "SEC_fm_artthievery_16"
+      ],
+      "triggers": [
+        {
+          "id": "sec_16_a",
+          "findArea": 40,
+          "findNarrow": "desk",
+          "findDiff": [0,0,1],
+          "method": "Pull the lever under the chair"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_16_1",
+          "rewardOther": "The number for the combination lock that opens the treasure room",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_artthievery_sec_17",
+      "number": 17,
+      "img": [
+        "SEC_fm_artthievery_17"
+      ],
+      "triggers": [
+        {
+          "id": "sec_17_a",
+          "findArea": 22,
+          "findNarrow": "grandfather clock",
+          "findDiff": [0,0,1],
+          "method": "Flip the switch behind the clock"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_17_1",
+          "rewardLoot": "Precursor Jar",
+          "value": [0,0,20,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_17_2",
+          "rewardLoot": "Precursor Canopic Jar",
+          "value": [0,0,75,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_17_3",
+          "rewardLoot": "Precursor Tapestry",
+          "value": [0,0,150,0],
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_17_4",
+          "rewardItem": "Sword of Chaos",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_17_5",
+          "rewardItem": "Water Crystal",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_17_6",
+          "rewardItem": "Fire Crystal",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_17_7",
+          "rewardItem": "Earth Crystal",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_17_8",
+          "rewardItem": "Air Crystal",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_17_9",
+          "rewardItem": "Horn of Quintus",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_17_10",
+          "rewardItem": "The Eye",
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

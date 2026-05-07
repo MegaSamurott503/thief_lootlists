@@ -1,0 +1,2755 @@
+{
+  "id": "fm_calendra-cistern",
+  "title": "Calendra's Cistern",
+  "author": [
+    "auth_purah",
+    "auth_team_calendra"
+  ],
+  "screens": [
+    "MIS_fm_calendra-cistern_A",
+    "MIS_fm_calendra-cistern_B"
+  ],
+  "firstRelease": "August 2000",
+  "latestVersion": "2.0c",
+  "goToNext": "fm_calendra-basso",
+  "diffNames": ["Footpad","Thief","Garrett"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [2747,460,1690,0,4897],
+    [2747,460,1690,0,4897],
+    [2747,460,1690,0,4897]
+  ],
+  "lootCount": [80,80,80],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [800,1400,2000]
+  },
+  "pocketCount": [9,9,9],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Farkus Outfitters"},
+    {"key": "2", "value": "Lord Alharzad's House"},
+    {"key": "3", "value": "Old Lich Gate"},
+    {"key": "4", "value": "River District"},
+    {"key": "5", "value": "River District Inn"},
+    {"key": "6", "value": "Lord Wimple's House"},
+    {"key": "7", "value": "City Park"},
+    {"key": "8", "value": "Torvald's Feasthall"},
+    {"key": "9", "value": "Weeping Angel Tavern"},
+    {"key": "10", "value": "Pagan Cathedral"},
+    {"key": "11", "value": "Observatory"},
+    {"key": "12", "value": "Pagan Cathedral Basement"},
+    {"key": "13", "value": "Sewers"},
+    {"key": "14", "value": "Old Explosive Shop"},
+    {"key": "15", "value": "Lady Calendra's House"},
+    {"key": "16", "value": "Deep Sewers"},
+    {"key": "17", "value": "Sewer Vaults"},
+    {"key": "18", "value": "Cylix Shrine"},
+    {"key": "19", "value": "Old Witch House"},
+    {"key": "20", "value": "Highwatch Gate"},
+    {"key": "21", "value": "Whitman Mansion"},
+    {"key": "22", "value": "Mercedes's Apartment"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_1",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_cthulhustatuette",
+      "name": "Cthulhu Statuette",
+      "img": [
+        "IMG_CthulhuStatue"
+      ],
+      "values": [
+        {
+          "id": "10gems10goods",
+          "value": [0,10,10,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_2",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "gallery",
+              "findExact": "southwest pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_CthulhuStatue"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "16goods",
+          "value": [0,0,16,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_3",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "well room",
+              "findExact": "attic",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_4",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_5",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "tower",
+              "findExact": "northwest side",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_6",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "near bridge",
+              "findExact": "north window",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_7",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "well room",
+              "findExact": "well",
+              "findCount": [1,1,1],
+              "orderNum": 59,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_8",
+              "findSimple": "findH",
+              "findArea": 10,
+              "findNarrow": "attic",
+              "findExact": "east rafter",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_9",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "gallery",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_10",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [5,5,5],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_11",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "west rooftops",
+              "findExact": "open window",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_12",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "bar",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_13",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_14",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findNarrow": "west tower",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 61,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "500gold",
+          "value": [500,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_15",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findExact": "door",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_16",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "cemetery",
+              "findExact": "southeast headstone",
+              "findCount": [1,1,1],
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_17",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "cemetery",
+              "findExact": "by Count Drachenkald",
+              "findCount": [1,1,1],
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_18",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "bell tower",
+              "findExact": "belfry",
+              "findCount": [1,1,1],
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "500gold",
+          "value": [500,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_19",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "attic",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_20",
+              "findSimple": "findH",
+              "findArea": 17,
+              "findExact": "floor crack",
+              "findCount": [1,1,1],
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_21",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "west living room",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_22",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "east living room",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_23",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "crypt",
+              "findExact": "by southeast casket",
+              "findCount": [1,1,1],
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_24",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "gallery",
+              "findExact": "north niche",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_25",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "bedroom",
+              "findExact": "east nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_26",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "crypt",
+              "findExact": "by southeast casket",
+              "findCount": [1,1,1],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_27",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "gallery",
+              "findExact": "south niche",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_28",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "dining room",
+              "findExact": "corner table",
+              "findCount": [1,1,1],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_29",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "bedroom",
+              "findExact": "west nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_painting",
+      "name": "Painting",
+      "img": [
+        "IMG_Painting_Cistern1",
+        "IMG_Painting_Cistern2",
+        "IMG_Painting_Cistern3",
+        "IMG_Painting_Cistern4",
+        "IMG_Painting_Cistern5"
+      ],
+      "values": [
+        {
+          "id": "10gold150goods",
+          "value": [10,0,150,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_30",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "bath",
+              "findExact": "above bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_Painting_Cistern1"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_31",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "gallery",
+              "findExact": "northwest corner",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Painting_Cistern2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "70goods",
+          "value": [0,0,70,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_32",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "fireplace room",
+              "findExact": "west wall",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_Painting_Cistern3"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_33",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "dining room",
+              "findExact": "north wall",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_Painting_Cistern4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "90goods",
+          "value": [0,0,90,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_34",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "bedroom",
+              "findExact": "by east nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_Painting_Cistern5"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorgem",
+      "name": "Precursor Gem",
+      "img": [
+        "IMG_PrecursorGem"
+      ],
+      "values": [
+        {
+          "id": "50gems",
+          "value": [0,50,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_35",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "crypt",
+              "findExact": "central caskets",
+              "findCount": [2,2,2],
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_PrecursorGem"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Tall",
+        "IMG_PrecursorJar_Pointed"
+      ],
+      "values": [
+        {
+          "id": "10gold10goods",
+          "value": [10,0,10,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_36",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "gallery",
+              "findExact": "WSW pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_PrecursorJar_Pointed"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_37",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "crypt",
+              "findExact": "by south casket",
+              "findCount": [1,1,1],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_PrecursorJar_Small"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_38",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "crypt",
+              "findExact": "by east casket",
+              "findCount": [1,1,1],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_39",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "gallery",
+              "findExact": "hidden room",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_40",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [8,8,8],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_41",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "NW sitting room",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_42",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "SW sitting room",
+              "findExact": "tables",
+              "findCount": [3,3,3],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_43",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "meeting hall",
+              "findExact": "table",
+              "findCount": [4,4,4],
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_44",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "well room",
+              "findCount": [1,1,1],
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_45",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "trophy room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_46",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 60,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_47",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "on Bradly Whitman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_48",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "on James Whitman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_49",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "on Burgomaster Theedsblot",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_50",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "on Master Gershaw",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_51",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loft",
+              "findExact": "on Brother Taitar",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_52",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "on Lord Whitman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "500gold",
+          "value": [500,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_53",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "meeting hall",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_54",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "well room",
+              "findExact": "on Illveld Snyd",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_sapphirevase",
+      "name": "Sapphire Vase",
+      "img": [
+        "IMG_SapphireVase"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_55",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "attic",
+              "findExact": "safe",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_SapphireVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_56",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "bedroom",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_57",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "north tower",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_calendra-cistern_loot_58",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "guest room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "36gold",
+          "value": [36,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_59",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "tavern stairs",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuefragment",
+      "name": "Statue Fragment",
+      "img": [
+        "IMG_StatueFragment_Head"
+      ],
+      "values": [
+        {
+          "id": "4goods",
+          "value": [0,0,4,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_60",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "gallery",
+              "findExact": "northeast pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_StatueFragment_Head"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "25gold50gems",
+          "value": [25,50,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_61",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "bath",
+              "findExact": "by bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_vase",
+      "name": "Vase",
+      "img": [
+        "IMG_Vase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_loot_62",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "gallery",
+              "findExact": "middle niche",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Vase"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_1",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "east tower",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_3",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "quiver",
+              "findCount": [4,4,4],
+              "findCountBox": [5,5,5],
+              "findBox": true,
+              "value": [-25,0,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_4",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "archer's terrace",
+              "findExact": "footlocker",
+              "findCountBox": [5,5,5],
+              "findBox": true
+            },
+            {
+              "id": "fm_calendra-cistern_item_5",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "ramp",
+              "findCount": [1,1,1],
+              "findRecipe": "shot by thief archer"
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_7",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_calendra-cistern_item_8",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "arrow rack",
+              "findCount": [4,4,4],
+              "value": [-200,0,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_9",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "archer's terrace",
+              "findExact": "by footlocker",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_calendra-cistern_item_10",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "central cistern",
+              "findExact": "underwater",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_11",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "back alley",
+              "findExact": "under crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_12",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_13",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "water shelf",
+              "findCount": [12,12,12],
+              "value": [-50,0,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_14",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "aqueduct",
+              "findExact": "underwater",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_15",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "water tank",
+              "findCount": [2,2,2],
+              "findRecipe": "pull fourth lever"
+            },
+            {
+              "id": "fm_calendra-cistern_item_16",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "east cistern",
+              "findExact": "underwater",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "value": [-300,0,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_18",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "fireplace room",
+              "findExact": "fireplace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_19",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "behind wall panel",
+              "findCount": [2,2,2],
+              "findRecipe": "pull second lever"
+            },
+            {
+              "id": "fm_calendra-cistern_item_20",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "living rooms",
+              "findExact": "fireplace",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_21",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "moss shelf",
+              "findCount": [5,5,5],
+              "value": [-125,0,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_22",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "attic",
+              "findExact": "southeast corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_23",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "central cistern",
+              "findExact": "rafters",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_24",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "east cistern",
+              "findExact": "above ladder",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_25",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "courtyard",
+              "findExact": "northeast corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_26",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "moss shelf",
+              "findCount": [1,1,1],
+              "value": [-500,0,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_27",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "east rooftops",
+              "findExact": "behind blue roof",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_28",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "sconce",
+              "findCount": [1,1,1],
+              "findRecipe": "pull first lever"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_29",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "counter",
+              "findCount": [4,4,4],
+              "value": [-200,0,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_30",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "attic",
+              "findExact": "footlocker",
+              "findCountBox": [0,0,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_calendra-cistern_item_33",
+                  "findCount": [1,1,0]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_31",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "shelf",
+              "findCount": [1,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_32",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "value": [-625,0,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_33",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "attic",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,0],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_calendra-cistern_item_30",
+                  "findCount": [0,0,1]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item_explosivecharge",
+          "name": "Explosive Charge",
+          "img": [
+            "IMG_ExplosiveCharge"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_34",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_35",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "value": [-250,0,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_36",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "south tower",
+              "findExact": "by chair",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_37",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_38",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "bedroom",
+              "findExact": "by east nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_39",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "value": [-500,0,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_40",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "south tower",
+              "findExact": "by chair",
+              "findCount": [0,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_breathpotion",
+          "name": "Breath Potion",
+          "img": [
+            "IMG_BreathPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_41",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "Bartholomew's attic",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_42",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "value": [-650,0,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_43",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "red circle",
+              "findCount": [1,1,1],
+              "findRecipe": "trade Adrius's Head, Torso, Arm, Waist, & Leg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_poisonvial",
+          "name": "Poison Vial",
+          "img": [
+            "IMG_PoisonVial"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_44",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "study",
+              "findExact": "behind painting",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_45",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_46",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Alharzad's Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_47",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "bedroom",
+              "findExact": "behind banner",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Tavern Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_48",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "Bartholomew's room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Calendra's Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_49",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "NW sitting room",
+              "findExact": "on Lady Calendra",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_calendra-cistern_item_50",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "bedroom",
+              "findExact": "east nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Front Door Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_51",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "on Gilgalen",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Shrine Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_52",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "bedroom",
+              "findExact": "west nightstand",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_magical",
+      "category": "Magical Tools",
+      "catItems": [
+        {
+          "id": "item_summonersstone",
+          "name": "Summoner's Stone",
+          "img": [
+            "IMG_SummonersStone"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_53",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_54",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_driedfrog",
+          "name": "Dried Frog",
+          "img": [
+            "IMG_GreenHerbs"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_55",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "value": [-125,0,0,0]
+            },
+            {
+              "id": "fm_calendra-cistern_item_56",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "kitchen",
+              "findExact": "by cellar door",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_57",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "living room",
+              "findExact": "by bathtub",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_58",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "living room",
+              "findExact": "by bathtub",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_59",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "bedroom",
+              "findExact": "near bed",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_60",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_61",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "loft",
+              "findExact": "north pew",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_62",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "NW sitting room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_63",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "nave",
+              "findExact": "between back pews",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_64",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_65",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "east living room",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_calendra-cistern_item_66",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "study",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_calendra-cistern_item_67",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "red circle",
+              "findCount": [1,1,1],
+              "findRecipe": "trade Adrius's Head, Torso, Arm, Waist, & Leg"
+            },
+            {
+              "id": "fm_calendra-cistern_item_68",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "west passage",
+              "findCount": [1,1,1],
+              "findRecipe": "after taking Cylix of Jortul"
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_69",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_calendra-cistern_item_70",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "Bartholomew's room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_precursorscroll",
+          "name": "Precursor Scroll",
+          "img": [
+            "IMG_PrecursorScroll_Flat",
+            "IMG_PrecursorScroll_Round"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_71",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "well room",
+              "findExact": "chair",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_72",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "meeting hall",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_item_73",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "glowing altar",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Diary",
+          "img": [
+            "IMG_Book_Green"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_74",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_grisly",
+      "category": "Grisly Objects",
+      "catItems": [
+        {
+          "id": "item_hammeritezombiehead",
+          "name": "Brother Adrius's Head",
+          "img": [
+            "IMG_HammeriteZombieHead"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_75",
+              "findSimple": "find",
+              "findArea": 10,
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "place Dried Frog by Adrius's Head"
+            }
+          ]
+        },
+        {
+          "id": "item_hammeritezombietorso",
+          "name": "Brother Adrius's Torso",
+          "img": [
+            "IMG_HammeriteZombieTorso"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_76",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "west rooftops",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "use Summoner's Stone near skywalk"
+            }
+          ]
+        },
+        {
+          "id": "item_hammeritezombiearm",
+          "name": "Brother Adrius's Arm",
+          "img": [
+            "IMG_HammeriteZombieArm"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_77",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "furnaces",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "use Summoner's Stone by lit furnace"
+            }
+          ]
+        },
+        {
+          "id": "item_hammeritezombiewaist",
+          "name": "Brother Adrius's Waist",
+          "img": [
+            "IMG_HammeriteZombieWaist"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_78",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "aqueduct",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "use Summoner's Stone at south end"
+            }
+          ]
+        },
+        {
+          "id": "item_hammeritezombieleg",
+          "name": "Brother Adrius's Leg",
+          "img": [
+            "IMG_HammeriteZombieLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_79",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "back alley",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "use Summoner's Stone by crates"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_cylixofjortul",
+          "name": "Cylix of Jortul",
+          "img": [
+            "IMG_CylixOfJortul"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_item_80",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "deep grotto",
+              "findExact": "purple stalagmite",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_1",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "attic",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_calendra-cistern_junk_2",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "attic",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_3",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "Bartholomew's attic",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_calendra-cistern_junk_4",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "crypt",
+              "findExact": "near ladder",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_calendra-cistern_junk_5",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "back alley",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_6",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_7",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_ornateplate",
+          "name": "Ornate Plate",
+          "img": [
+            "IMG_OrnatePlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_8",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_9",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_calendra-cistern_junk_10",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_11",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "by beggar",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_junk_12",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "SW sitting room",
+              "findExact": "tables",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_calendra-cistern_junk_13",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "well room",
+              "findExact": "well",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_14",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "by beggar",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_15",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "bedroom",
+              "findExact": "west nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_16",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "bedroom",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_junk_17",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "west living room",
+              "findExact": "window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-cistern_junk_18",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "living room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_19",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "near iron gate",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_calendra-cistern_junk_20",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "cistern",
+              "findCountRecipe": [3,3,3],
+              "findRecipe": "rolling boulder trap"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_hammeritezombiehead",
+          "name": "Brother Adrius's Head",
+          "img": [
+            "IMG_HammeriteZombieHead"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_21",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "chancel",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-cistern_junk_22",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "crypt",
+              "findExact": "by central casket",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

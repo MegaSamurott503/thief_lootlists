@@ -1,0 +1,2357 @@
+{
+  "id": "fm_spirit-resurrection",
+  "title": "Cult of the Resurrection",
+  "author": [
+    "auth_sledge"
+  ],
+  "screens": [
+    "MIS_fm_spirit-resurrection_A",
+    "MIS_fm_spirit-resurrection_B"
+  ],
+  "firstRelease": "May 2000",
+  "latestVersion": "2.2",
+  "goToNext": "fm_spirit-manse",
+  "diffNames": ["Burglar","Assassin","Thief"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [1308,610,320,0,2238],
+    [1308,610,320,0,2238],
+    [1308,610,320,0,2238]
+  ],
+  "lootCount": [39,39,39],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [1000,1400,0],
+    "gold": [0,0,1308],
+    "gems": [0,0,610]
+  },
+  "pocketCount": [3,4,4],
+  "pocketChanges": [0,1,1],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Old City"},
+    {"key": "3", "value": "Hammer Temple"},
+    {"key": "4", "value": "Cult Fortress"},
+    {"key": "5", "value": "Rathis's Quarters"},
+    {"key": "6", "value": "Lower Depths"},
+    {"key": "7", "value": "Lady Katrina's Quarters"},
+    {"key": "8", "value": "Resurrection Chapel"},
+    {"key": "9", "value": "Exit Cave"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_1",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "E guard post",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_2",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "power station",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_spirit-resurrection_loot_3",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "sanctuary",
+              "findExact": "altar",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_4",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "bedroom",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "150gems",
+          "value": [0,150,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_5",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "toilets",
+              "findExact": "south basin",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "fm_spirit-resurrection_loot_6",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "backyard",
+              "findExact": "behind barrel",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_7",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_8",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "Thulus's bedroom",
+              "findExact": "desk",
+              "findCount": [3,3,3],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_spirit-resurrection_loot_9",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "treasury",
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_10",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "laboratory",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_11",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "dining room",
+              "findExact": "niche",
+              "findCount": [2,2,2],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_spirit-resurrection_loot_12",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "living room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_13",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "dining room",
+              "findExact": "niche",
+              "findCount": [2,2,2],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_14",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_15",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "treasury",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            },
+            {
+              "id": "fm_spirit-resurrection_loot_16",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_17",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "well hut",
+              "findExact": "by table",
+              "findCount": [1,1,1],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorgem",
+      "name": "Precursor Gem",
+      "img": [
+        "IMG_PrecursorGem"
+      ],
+      "values": [
+        {
+          "id": "60gems",
+          "value": [0,60,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_18",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "living room",
+              "findExact": "fireplace niche",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_PrecursorGem"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursormask",
+      "name": "Precursor Mask",
+      "img": [
+        "IMG_PrecursorMask_Bare"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_19",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "bedroom",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_PrecursorMask_Bare"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_20",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "sink",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_spirit-resurrection_loot_21",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "dining room",
+              "findExact": "niche",
+              "findCount": [2,2,2],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_22",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "E guard post",
+              "findExact": "on thief swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "80gold",
+          "value": [80,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_23",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "treasury",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_24",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "on thief archer",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_readingglasses",
+      "name": "Reading Glasses",
+      "img": [
+        "IMG_ReadingGlasses"
+      ],
+      "values": [
+        {
+          "id": "25gold25gems",
+          "value": [25,25,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_25",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "priest's bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_ReadingGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_sapphirevase",
+      "name": "Sapphire Vase",
+      "img": [
+        "IMG_SapphireVase"
+      ],
+      "values": [
+        {
+          "id": "75gold25gems",
+          "value": [75,25,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_26",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "living room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_SapphireVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_27",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_loot_28",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "E guard post",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_spirit-resurrection_loot_29",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "treasury",
+              "findExact": "shelf",
+              "findCount": [3,3,3],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [0,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_jeweledsword",
+          "name": "Saint Edgar's Sword",
+          "img": [
+            "IMG_JeweledSword"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_2",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "pedestal",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [0,0,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_spirit-resurrection_item_4",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findCount": [1,0,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [10,10,10],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_spirit-resurrection_item_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [30,30,30],
+              "findCountActual": [26,26,26],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "fm_spirit-resurrection_item_7",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "roofless house",
+              "findExact": "footlocker",
+              "findCountBox": [10,10,10],
+              "findBox": true
+            },
+            {
+              "id": "fm_spirit-resurrection_item_8",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "game room",
+              "findExact": "footlocker",
+              "findCountBox": [10,10,0],
+              "findBox": true
+            },
+            {
+              "id": "fm_spirit-resurrection_item_9",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_10",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "treasury",
+              "findExact": "footlocker",
+              "findCountBox": [0,5,0],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_11",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [8,8,8],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_spirit-resurrection_item_12",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,10,10],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_13",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_spirit-resurrection_item_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        },
+        {
+          "id": "item_gasarrow",
+          "name": "Gas Arrow",
+          "img": [
+            "IMG_GasArrow_TDP"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_15",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,0,1],
+              "loadout": "store",
+              "price": 500
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_16",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "fm_spirit-resurrection_item_17",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "cellar",
+              "findExact": "south storage",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_18",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "Thulus's bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            },
+            {
+              "id": "fm_spirit-resurrection_item_19",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "nursery",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_20",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_21",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "well",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_22",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "treasury",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_23",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "W guard post",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "fm_spirit-resurrection_item_24",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "washroom",
+              "findExact": "water mirror",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_25",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "treasury",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_26",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "on Robert",
+              "findCountBox": [0,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_27",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "near temple",
+              "findExact": "by secluded tower",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_28",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "northwest tower",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_29",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_30",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "lower hall",
+              "findExact": "near barrel",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_31",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "fm_spirit-resurrection_item_32",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "by skeletal remains",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_33",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "under collapsed tower",
+              "findExact": "on corpse",
+              "findCount": [1,0,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_34",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "laboratory",
+              "findExact": "west shelf",
+              "findCount": [1,0,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_35",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_spirit-resurrection_item_36",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "priest's bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_37",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "laboratory",
+              "findExact": "east shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_38",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 500
+            },
+            {
+              "id": "fm_spirit-resurrection_item_39",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "laboratory",
+              "findExact": "east shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_40",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_41",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Thulus's Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_42",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "game room",
+              "findExact": "on Cpt. Thulus",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Chamber Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_43",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "Thulus's bedroom",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Chapel Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_44",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bath",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_45",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_46",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "sanctuary",
+              "findExact": "altar",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_47",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_48",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "living room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_49",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_50",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_51",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_52",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "game room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_53",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "living room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_54",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_55",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_spirit-resurrection_item_56",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "oven",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_57",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "acolytes' bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_58",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "barracks",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Katrina's Diary",
+          "img": [
+            "IMG_Book_Pagan"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_59",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_grisly",
+      "category": "Grisly Objects",
+      "catItems": [
+        {
+          "id": "item_hammeritezombiehead",
+          "name": "Rotted Head",
+          "img": [
+            "IMG_HammeriteZombieHead"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_60",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "armory",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_hammeritezombietorso",
+          "name": "Decayed Torso",
+          "img": [
+            "IMG_HammeriteZombieTorso"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_61",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "armory",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_skeletalarm",
+          "name": "Skeletal Arm",
+          "img": [
+            "IMG_SkeletalArm"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_62",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "armory",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_mysticsheart",
+          "name": "Spirit Stone",
+          "img": [
+            "IMG_MysticsHeart"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_item_63",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "behind altar",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_1",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_2",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "pantry",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_3",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "cellar",
+              "findExact": "south storage",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_4",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "cellar",
+              "findExact": "north storage",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_5",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "1F",
+              "findExact": "storage",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_utensils",
+      "category": "Utensils",
+      "catJunk": [
+        {
+          "id": "junk_woodenspoon",
+          "name": "Wooden Spoon",
+          "img": [
+            "IMG_WoodenSpoon"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_6",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_7",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "well hut",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_knife",
+          "name": "Knife",
+          "img": [
+            "IMG_Knife"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_8",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_9",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_10",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "well hut",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_cleaver",
+          "name": "Cleaver",
+          "img": [
+            "IMG_Cleaver"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_11",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_12",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "game room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_13",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalplate",
+          "name": "Metal Plate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_14",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_15",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "Thulus's bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ornateplate",
+          "name": "Ornate Plate",
+          "img": [
+            "IMG_OrnatePlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_16",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "living room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_17",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "living room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "Wooden Goblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_18",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_19",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_20",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "Thulus's bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_21",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_22",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_23",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "living room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_24",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "Thulus's bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_25",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_cookingpot",
+          "name": "Cooking Pot",
+          "img": [
+            "IMG_CookingPot"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_26",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "well hut",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_Flour",
+            "IMG_Canister_Sugar",
+            "IMG_Canister_Salt"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_27",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_28",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_sandbag",
+          "name": "Sandbag",
+          "img": [
+            "IMG_SpiceBag"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_29",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "cellar",
+              "findExact": "north storage",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_30",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage area",
+              "findExact": "upper level",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_31",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "treasury",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_32",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage area",
+              "findExact": "lower level",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_33",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_34",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "nursery",
+              "findExact": "shelves",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_35",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "northwest hall",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_36",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "priest's bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_37",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_38",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage area",
+              "findExact": "lower level",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_pick",
+          "name": "Pick",
+          "img": [
+            "IMG_Pick"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_39",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage area",
+              "findExact": "lower level",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_40",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "nursery",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_warhammer",
+          "name": "Cudgel",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_41",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "roofless house",
+              "findExact": "by footlocker",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_smallhammer",
+          "name": "Small Hammer",
+          "img": [
+            "IMG_SmallHammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_42",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "cellar",
+              "findExact": "south storage",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_43",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "tomb",
+              "findExact": "by hole",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_statuefragment",
+          "name": "Statue Fragment",
+          "img": [
+            "IMG_StatueFragment_Head",
+            "IMG_StatueFragment_LeftTorso"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_44",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "cellar",
+              "findExact": "north storage",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_45",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "1F",
+              "findExact": "storage",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_46",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "bedroom",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_47",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "washroom",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_spirit-resurrection_junk_48",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bath",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_theeye",
+          "name": "Trinket",
+          "img": [
+            "IMG_TheEye"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_49",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_lantern",
+          "name": "Broken Lantern",
+          "img": [
+            "IMG_Lantern"
+          ],
+          "locations": [
+            {
+              "id": "fm_spirit-resurrection_junk_50",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "1F",
+              "findCount": [1,1,1],
+              "findRecipe": "dropped by thief swordsman"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

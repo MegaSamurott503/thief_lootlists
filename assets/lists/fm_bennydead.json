@@ -1,0 +1,2432 @@
+{
+  "id": "fm_bennydead",
+  "title": "Benny's Dead",
+  "author": [
+    "auth_gingerbreadman"
+  ],
+  "screens": [
+    "MIS_fm_bennydead_A",
+    "MIS_fm_bennydead_B"
+  ],
+  "firstRelease": "July 2000",
+  "latestVersion": "1.0",
+  "diffNames": ["Cakewalk","Normal","Extra Spicy"],
+  "diffChanges": false,
+  "markObj": false,
+  "totals": [
+    [1164,250,795,0,2209],
+    [1164,250,795,0,2209],
+    [1164,250,795,0,2209]
+  ],
+  "lootCount": [65,65,65],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [800,1200,2000]
+  },
+  "pocketCount": [11,11,11],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "South Streets"},
+    {"key": "3", "value": "Man's Apartment"},
+    {"key": "4", "value": "Weapon Store"},
+    {"key": "5", "value": "Sewerman's Tower"},
+    {"key": "6", "value": "Mechanist Recruiting Station"},
+    {"key": "7", "value": "Hostel"},
+    {"key": "8", "value": "Sewers"},
+    {"key": "9", "value": "East Streets"},
+    {"key": "10", "value": "Watch Substation"},
+    {"key": "11", "value": "MacHinery's Restaurant"},
+    {"key": "12", "value": "Lower Hotel"},
+    {"key": "13", "value": "Upper Hotel"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_addoniziocrystal",
+      "name": "Addonizio Crystal",
+      "img": [
+        "IMG_AddonizioCrystal"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_1",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "hallway",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_2",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "Devices and the Like",
+              "findExact": "toolbox",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_3",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "bedroom",
+              "findExact": "safe",
+              "findCount": [2,2,2],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_4",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "money exchange",
+              "findExact": "safe 3",
+              "findCount": [5,5,5],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_5",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "south barracks",
+              "findExact": "table",
+              "findCount": [3,3,3],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Monster",
+        "IMG_DecorativeMask_Demon",
+        "IMG_DecorativeMask_Bugaku",
+        "IMG_DecorativeMask_Alt1"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_6",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "suite",
+              "findExact": "support beam",
+              "findCount": [4,4,4],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_DecorativeMask_Monster",
+                "IMG_DecorativeMask_Demon",
+                "IMG_DecorativeMask_Bugaku",
+                "IMG_DecorativeMask_Alt1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Pink",
+        "IMG_DecorativePlate_Blue"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_7",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "gift shoppe",
+              "findExact": "west shelf",
+              "findCount": [2,2,2],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink",
+                "IMG_DecorativePlate_Blue"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_8",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_9",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "rec. director's balcony",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_10",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_11",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_12",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "library",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_13",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "main office",
+              "findExact": "north desk",
+              "findCount": [2,2,2],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_14",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "Lt. Torrion's office",
+              "findExact": "safe",
+              "findCount": [3,3,3],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_15",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "Gold Dice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_16",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "guest room 3",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_17",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "reception desk",
+              "findExact": "under counter",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_18",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "guest room 1",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_19",
+              "findSimple": "findH",
+              "findArea": 13,
+              "findNarrow": "suite",
+              "findExact": "sink",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_20",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "sitting room",
+              "findExact": "corner table",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_21",
+              "findSimple": "findH",
+              "findArea": 13,
+              "findNarrow": "lobby",
+              "findExact": "fountain",
+              "findCount": [2,2,2],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_22",
+              "findSimple": "findH",
+              "findArea": 13,
+              "findNarrow": "mezzanine",
+              "findExact": "elevator window",
+              "findCount": [2,2,2],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_23",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "money exchange",
+              "findExact": "safe 3",
+              "findCount": [2,2,2],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_24",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "sitting room",
+              "findExact": "corner table",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_25",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "money exchange",
+              "findExact": "safe 1",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Tall"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_26",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "north office",
+              "findExact": "bookcase",
+              "findCount": [2,2,2],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_27",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "reception desk",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_PrecursorJar_Small"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_28",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "money exchange",
+              "findExact": "safe 1",
+              "findCount": [3,3,3],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_PrecursorJar_Small",
+                "IMG_PrecursorJar_Tall"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_29",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [2,2,2],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_30",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "rec. director's balcony",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_31",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_32",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_33",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_34",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "bedroom",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_35",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "takeout window",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_36",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "bedroom",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_37",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_38",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "north shelf",
+              "findCount": [2,2,2],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Nobleman",
+        "IMG_Statuette_Noblewoman",
+        "IMG_Statuette_Mage"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_bennydead_loot_39",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "gift shoppe",
+              "findExact": "shelves",
+              "findCount": [3,3,3],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_Statuette_Nobleman",
+                "IMG_Statuette_Noblewoman",
+                "IMG_Statuette_Mage"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_40",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "reception desk",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_Statuette_Noblewoman"
+              ]
+            },
+            {
+              "id": "fm_bennydead_loot_41",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "guest room 1",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_Statuette_Mage"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [6,6,6],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_bennydead_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,10,10],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "fm_bennydead_item_5",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "on Watch archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_bennydead_item_6",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storefront",
+              "findExact": "footlocker",
+              "findCountBox": [6,6,6],
+              "findBox": true
+            },
+            {
+              "id": "fm_bennydead_item_7",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "statue plaza",
+              "findExact": "on Watch archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_bennydead_item_8",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "bogeys' lair",
+              "findExact": "on Watch archer",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_bennydead_item_9",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "near offices",
+              "findExact": "on Watch archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_bennydead_item_10",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "on Watch archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_bennydead_item_11",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "guard post",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_bennydead_item_12",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "mezzanine",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_13",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [6,6,6],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_bennydead_item_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [6,6,6],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_15",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_16",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_bennydead_item_17",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "roof",
+              "findExact": "footlocker",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_18",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "findCountActual": [1,1,1],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "fm_bennydead_item_19",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_20",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storefront",
+              "findExact": "east table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_bennydead_item_21",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "Cpt. Benny's office",
+              "findExact": "safe",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_bennydead_item_22",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "steward's quarters",
+              "findExact": "hope chest",
+              "findCountBox": [5,5,5],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_23",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "turbine room",
+              "findExact": "southeast corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_24",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storefront",
+              "findExact": "east table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_bennydead_item_25",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "tapestry shop",
+              "findExact": "hope chest",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_26",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "findCountActual": [2,2,2],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "fm_bennydead_item_27",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "guard post",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_28",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "turbine room",
+              "findExact": "southeast corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_item_29",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "Devices and the Like",
+              "findExact": "SE shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "Flash Mine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_30",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "bedroom",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_item_31",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "Devices and the Like",
+              "findExact": "SE shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_32",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "findCountActual": [1,1,1],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "fm_bennydead_item_33",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storefront",
+              "findExact": "west table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_item_34",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "mezzanine",
+              "findExact": "elevator window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_item_35",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "pantry",
+              "findExact": "behind canisters",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_36",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "under southeast hatch",
+              "findExact": "east room",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_item_37",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_38",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_39",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Sewer Hatch Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_40",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "bedroom",
+              "findExact": "on Sewerman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Sewer Gate Key 1",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_41",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "bogeys' lair",
+              "findExact": "on Louise the bogey",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Sewer Gate Key 2",
+          "img": [
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_42",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north cistern",
+              "findExact": "on Gibby the bogey",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Hotel Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_43",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "Cpt. Benny's office",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Benny's Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_44",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "suite",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_bennydead_item_45",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "SE guest room",
+              "findExact": "on Cpt. Benny",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_46",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_bennydead_item_47",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,4],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "fm_bennydead_item_48",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_bennydead_item_49",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "under southeast hatch",
+              "findExact": "east room",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_50",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_51",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storefront",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_item_52",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "Devices and the Like",
+              "findExact": "NE shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_frogbeastegg",
+          "name": "Frogbeast Egg",
+          "img": [
+            "IMG_FrogbeastEgg"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_53",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "bedroom",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_54",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_bennydead_item_55",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_56",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "south counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_57",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "rec. director's quarters",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_58",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "south counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_59",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_crumpledpaper",
+          "name": "Crumpled Paper",
+          "img": [
+            "IMG_CrumpledPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_60",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "jail",
+              "findExact": "west cell",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_61",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "bogeys' lair",
+              "findExact": "by south campfire",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_item_62",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "northwest hallway",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_63",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "tapestry shop",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_item_64",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "guest room 3",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_65",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "rec. director's balcony",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_item_66",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "money exchange",
+              "findExact": "safe 4",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_precursorscroll",
+          "name": "Precursor Scroll",
+          "img": [
+            "IMG_PrecursorScroll_Flat",
+            "IMG_PrecursorScroll_Round"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_67",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "north office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_item_68",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "Lt. Torrion's office",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_item_69",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "money exchange",
+              "findExact": "safe 1",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "Dewdrop",
+          "img": [
+            "IMG_Dewdrop"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_70",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "gift shoppe",
+              "findExact": "east shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_hammerite",
+      "category": "Hammerite Items",
+      "catItems": [
+        {
+          "id": "item_rosarybeads",
+          "name": "Rosary Beads",
+          "img": [
+            "IMG_RosaryBeads"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_item_71",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "gift shoppe",
+              "findExact": "west shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_1",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "bedroom",
+              "findExact": "near table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_junk_2",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "near takeout window",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_bennydead_junk_3",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "mall",
+              "findExact": "vent",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_bennydead_junk_4",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "pantry",
+              "findExact": "shelves",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray",
+            "IMG_MetalTray_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_5",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "south counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_6",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_7",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "behind gate",
+              "findExact": "by sleeping nobleman",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_junk_8",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_9",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_skillet",
+          "name": "Skillet",
+          "img": [
+            "IMG_Skillet"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_10",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "north counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_junk_11",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_saucepan",
+          "name": "Saucepan",
+          "img": [
+            "IMG_Saucepan"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_12",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_cookingpot",
+          "name": "Cooking Pot",
+          "img": [
+            "IMG_CookingPot"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_13",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "north counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_UnmarkedLarge",
+            "IMG_Canister_UnmarkedSmall"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_14",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "north shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_bennydead_junk_15",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [6,6,6]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_hairbrush",
+          "name": "Hair Brush",
+          "img": [
+            "IMG_HairBrush"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_16",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "gift shoppe",
+              "findExact": "east shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_handmirror",
+          "name": "Hand Mirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_17",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "gift shoppe",
+              "findExact": "east shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_spectacles",
+          "name": "Spectacles",
+          "img": [
+            "IMG_ReadingGlasses"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_18",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "rec. director's quarters",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_19",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storefront",
+              "findExact": "west table",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_20",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "gift shoppe",
+              "findExact": "east shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_21",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "sitting room",
+              "findExact": "west table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_junk_22",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "steward's balcony",
+              "findExact": "railing",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_23",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "guard post",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_bennydead_junk_24",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "gift shoppe",
+              "findExact": "west shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_nautical",
+      "category": "Nautical Tools",
+      "catJunk": [
+        {
+          "id": "junk_navigatorscompass",
+          "name": "Navigator's Compass",
+          "img": [
+            "IMG_NavigatorsCompass"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_25",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "Devices and the Like",
+              "findExact": "SE shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_sextant",
+          "name": "Sextant",
+          "img": [
+            "IMG_Sextant"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_26",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "Devices and the Like",
+              "findExact": "SE shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_drillingmachine",
+          "name": "Drilling Machine",
+          "img": [
+            "IMG_DrillingMachine"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_27",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "Devices and the Like",
+              "findExact": "NE shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_levers",
+      "category": "Levers and Knobs",
+      "catJunk": [
+        {
+          "id": "junk_doorknob",
+          "name": "Doorknob",
+          "img": [
+            "IMG_Doorknob"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_28",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "hallway",
+              "findExact": "west door",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_junk_29",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "sitting room",
+              "findExact": "doors",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_bennydead_junk_30",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "dining room",
+              "findExact": "northwest door",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_warhammer",
+          "name": "Warhammer",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_31",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_bennydead_junk_32",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "gift shoppe",
+              "findExact": "east shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_bennydead_junk_33",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "money exchange",
+              "findExact": "safe 6",
+              "findCount": [6,6,6]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

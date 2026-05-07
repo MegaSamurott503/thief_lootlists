@@ -1,0 +1,446 @@
+/*
+// cd Documents/thief_lootlists
+// npx expo start
+*/
+
+
+/*
+// Packages installed to my project
+// npx expo install [...]
+    @react-navigation/drawer
+    react-native-reanimated
+    react-native-worklets
+    expo-system-ui
+    expo-font
+    @react-native-async-storage/async-storage
+    react-native-dropdown-select-list
+*/
+
+
+/* ============ FILE STRUCTURE ============ */
+
+
+/*
+  'app' folder
+      App navigation, determined by file structure.
+      Routes defined by files, e.g. 'app/(tabs)/index.tsx' & 'app/(tabs)/explore.tsx'.
+      Tab navigator defined in layout file 'app/(tabs)/_layout.tsx'.
+  'assets' folder
+      Contains images.
+      'icon.png' is iOS app icon.
+      'android-icon-<X>.png' is Android app adaptive icon.
+      'favicon.png' is web browser icon.
+      'splash-icon.png' is image for project's splash screen.
+  'components' folder
+      Contains React Native components.
+      e.g. 'themed-text.tsx' creates text elements that adapt to light/dark mode.
+  'constants' folder
+      Define elements which remain constant throughout the app, like stylesheets.
+      'theme.ts' defines colors for light/dark mode, as well as fonts.
+  'hooks' folder
+      Contains React Hooks, which share common behavior between components.
+      e.g. 'use-theme-color.ts' returns a color based on current theme.
+  'scripts' folder
+      Contains scripts to run in command window.
+      e.g. 'reset-project.js' script changes 'app' to 'app-example' & makes new 'app'
+  app.json
+      App config, contains configuration options.
+      These change app behavior while developing, building, submitting, & updating.
+  package.json
+      Contains project's dependencies, scripts, & metadata.
+      New dependencies added to the project will be added to this file.
+  tsconfig.json
+      Contains rules TypeScript uses to enforce type safety throughout project.
+*/
+
+
+/* ============ EXPO ROUTER ============ */
+
+
+/*
+// NOTE: Navigation routes are defined by files in the 'app' folder.
+// NOTE: Each file (besides '_layout') has a default export defining a page.
+// NOTE: Subfolders define groups of related screens, like stacks or tabs.
+
+// NOTE: All pages have a URL matching their location in the folder.
+// NOTE: The initial route is always the 'index' file.
+// NOTE: A folder whose name is in parentheses won't be part of the URL string.
+// NOTE: So you can put 'index' in a subfolder to make the initial page there.
+
+// NOTE: The app folder must have a '_layout' file.
+// NOTE: This is where all the initialization code goes, like loading fonts.
+
+// NOTE: The 'app' folder is only for defining your app's routes.
+// NOTE: Components, hooks, etc. belong in their own folders.
+*/
+
+
+/* ============ ROUTE NOTATION ============ */
+
+
+/*
+// NOTE: Notations in file & folder names allow for more complex navigation.
+// NOTE: Static routes use no notation; the URL exactly matches their location.
+// NOTE: So a URL of '/feed/favorites' would be found here:
+app
+  home.tsx
+  feed
+    favorites.tsx  <--
+*/
+
+
+/*
+// NOTE: Dynamic routes have square brackets around their names.
+// NOTE: These routes include a parameter to use when rendering the page.
+// NOTE: So 'userName.tsx' could match '/evanbacon' or 'expo'.
+// NOTE: The 'useLocalSearchParams' hook will load data for that parameter.
+app
+  [userName].tsx
+  products
+    [productId]
+      index.tsx
+*/
+
+
+/*
+// NOTE: Route groups have parentheses around their names.
+// NOTE: They let you organize routes without affecting the URL.
+// NOTE: So 'app/(tabs)/settings.tsx' has a URL of '/settings'.
+// NOTE: This matters when defining complex relationships between routes.
+app
+  (tabs)
+    index.tsx
+    settings.tsx
+*/
+
+
+/*
+// NOTE: An 'index.tsx' file is the default route for a folder.
+// NOTE: So 'profile/index.tsx' has a URL of '/profile'.
+// NOTE: '(tabs)/index.tsx' has a URL of '/', becoming the app's default route.
+app
+  (tabs)
+    index.tsx
+  profile
+    index.tsx
+*/
+
+
+/*
+// NOTE: '_layout.tsx' files define how other routes in a folder are related.
+// NOTE: Use them to arrange routes into stack / tab navigators.
+// NOTE: Layout routes are rendered before their page routes.
+// NOTE: 'app/_layout.tsx' renders first, so put initialization code here.
+app
+  _layout.tsx
+  (tabs)
+    _layout.tsx
+  feed
+    _layout.tsx
+*/
+
+
+/*
+// NOTE: Special routes with a + (plus) have specific purposes.
+// NOTE: Some examples:
+// NOTE: '+not-found' catches any requests that don't match a route.
+// NOTE: '+html' is used to customize the HTML boilerplate used on the web.
+// NOTE: '+native-intent' handles links from elsewhere that don't match a route.
+// NOTE: '+middleware' runs code before rendering, e.g. authentication or redirection.
+app
+  +not-found.tsx
+  +html.tsx
+  +native-intent.tsx
+  +middleware.ts
+*/
+
+
+/* ============ ROUTING AND NAVIGATING ============ */
+
+
+/*
+// NOTE: The 'Link' component lets you move between routes, like an '<a>' tag.
+// NOTE: Import from the Expo Router library.
+// NOTE: Then pass the 'href' prop with the route to navigate to.
+// NOTE: By default, 'Link' puts its children in a 'Text' component.
+// NOTE: Make anything a link by wrapping it with 'Link' with 'asChild' prop.
+import { Link } from 'expo-router';
+import { View, Text, StyleSheet } from 'react-native';
+
+export default function HomeScreen() {
+  return (
+    <View style={styles.container}>
+      <Text>Home</Text>
+      <Link href="/details">View details</Link>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+*/
+
+
+/*
+// NOTE: The special file '+not-found.tsx' handles 404 routes.
+// NOTE: It catches all unmatched routes from a nested level.
+import { Link, Stack } from 'expo-router';
+import { View, StyleSheet } from 'react-native';
+
+export default function NotFoundScreen() {
+  return (
+    <>
+      <Stack.Screen options={{ title: "Oops! This screen doesn't exist." }} />
+      <View style={styles.container}>
+        <Link href="/">Go to home screen</Link>
+      </View>
+    </>
+  );
+}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+*/
+
+
+/*
+// NOTE: Dynamic routes match one or more paths based on dynamic part of URL.
+// NOTE: But your app doesn't know the dynamic part ahead of time.
+// NOTE: Mark a dynamic segment by wrapping the file's name in square brackets.
+// NOTE: So 'details/[id].tsx' matches '/details/1' and '/details/2'.
+// NOTE: The same route displays different info based on the value of 'id'.
+*/
+
+
+/*
+// NOTE: Navigate to a dynamic route via query parameters in a 'Link' component.
+// NOTE: One way to do so is define the query param statically.
+export default function HomeScreen() {
+  return (
+    <View style={styles.container}>
+      <Text>Home</Text>
+      <Link href="/details/1">View first user details</Link>
+      <Link href="/details/2">View second user details</Link>
+    </View>
+  );
+}
+// NOTE: Another way is to provide a 'pathname' prop and pass 'params'.
+export default function HomeScreen() {
+  return (
+    <View style={styles.container}>
+      <Text>Home</Text>
+      <Link
+        href={{
+          pathname: '/details/[id]',
+          params: { id: 'bacon' },
+        }}>
+        View user details
+      </Link>
+    </View>
+  );
+}
+*/
+
+
+/*
+// NOTE: Access the dynamic segment of a URL with a route parameter.
+// NOTE: e.g. 'useLocalSearchParams' hook returns URL parameters for this route.
+// NOTE: For 'details/[id].tsx', pushing '/details/1' returns "{ id: '1' }".
+import { useLocalSearchParams } from 'expo-router';
+import { View, Text, StyleSheet } from 'react-native';
+
+export default function DetailsScreen() {
+  const { id } = useLocalSearchParams();
+
+  return (
+    <View style={styles.container}>
+      <Text>Details of user {id} </Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+*/
+
+
+/* ============ NAVIGATION LAYOUTS ============ */
+
+
+/*
+// NOTE: A layout file defines how the other files in their folder are arranged.
+// NOTE: Such as via a stack navigator, tab navigator, or drawer navigator.
+// NOTE: This file exports a default component that renders before the page.
+*/
+
+
+/*
+// NOTE: Every app has a root layout file in the 'app' folder.
+// NOTE: This describes the top-level navigator and has initialization code.
+// NOTE: Such as for loading fonts or adding context providers.
+// NOTE: You can initially show a splash screen until everything loads.
+import { useFonts } from 'expo-font';
+import { Stack } from 'expo-router';
+import * as SplashScreen from 'expo-splash-screen';
+import { useEffect } from 'react';
+
+SplashScreen.preventAutoHideAsync();
+
+export default function RootLayout() {
+  const [loaded] = useFonts({
+    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+  });
+
+  useEffect(() => {
+    if (loaded) {
+      SplashScreen.hide();
+    }
+  }, [loaded]);
+
+  if (!loaded) {
+    return null;
+  }
+
+  return <Stack />;
+}
+*/
+
+
+/*
+// NOTE: You can arrange a folder's files into a stack relationship.
+app
+  products
+    _layout.tsx
+    index.tsx
+    [productId].tsx
+    accessories
+      index.tsx
+// NOTE: Do this by returning a 'Stack' component in the layout file.
+import { Stack } from 'expo-router';
+
+export default function StackLayout() {
+  return <Stack />;
+}
+// NOTE: When navigating to '/products', it will default to 'products/index.tsx'.
+// NOTE: If you then go to '/products/123', the new page is pushed onto the stack.
+// NOTE: By default, the header will show a back button.
+// NOTE: This pops the page off the stack and returns you to the previous page.
+// NOTE: Pages in the stack are still rendered, even if they're not visible.
+// NOTE: A stack automatically treats other files in the folder as eligible routes.
+// NOTE: To define screen options, add a 'Stack.Screen' component into 'Stack'.
+// NOTE: The 'name' prop must match the route name.
+// NOTE: Add a 'screenOptions' prop to 'Stack' to set options for all its routes.
+import { Stack } from 'expo-router';
+
+export default function StackLayout() {
+  return (
+    <Stack>
+      <Stack.Screen name="[productId]" options={{ headerShown: false }} />
+    </Stack>
+  );
+}
+// NOTE: You can nest navigators, but only do so if necessary.
+// NOTE: 'products/accessories/index.tsx' wouldn't need its own stack navigator.
+// NOTE: It's fine to add folders that affect the URL.
+*/
+
+
+/*
+// NOTE: Adding a tab navigator will treat the folder's files as tabs.
+app
+  (tabs)
+    _layout.tsx
+    index.tsx
+    feed.tsx
+    profile.tsx
+// NOTE: Do this by returning a 'Tabs' component in the layout file.
+import { Tabs } from 'expo-router';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+
+export default function TabLayout() {
+  return (
+    <Tabs>
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: 'Home',
+          tabBarIcon: ({ color }) => <MaterialIcons size={28} name="house.fill" color={color} />,
+        }}
+      />
+      <!-- Add more tabs here -->
+    </Tabs>
+  );
+}
+// NOTE: 'index', 'feed', and 'profile' will appear on the bottom tabs navigator.
+// NOTE: Define the tabs in the navigator to choose their title, order, and icon.
+// NOTE: The index route will be the default selected tab.
+*/
+
+/*
+// NOTE: Sometimes, you may want a layout without a navigator.
+// NOTE: Such as for adding a header or footer, or for displaying a modal.
+// NOTE: Use the 'Slot' component, which is a placeholder for current child route.
+// NOTE: e.g. you want routes in 'social' folder wrapped in header and footer,
+// NOTE: but navigating should replace current page and not push onto a stack.
+// NOTE: So in the layout file, return 'Slot' surrounded by header and footer.
+import { Slot } from 'expo-router';
+
+export default function Layout() {
+  return (
+    <>
+      <Header />
+      <Slot />
+      <Footer />
+    </>
+  );
+}
+*/
+
+/*
+// NOTE: Navigation drawers let you open a menu of navigation options.
+// NOTE: To use, install drawer navigator and its animation dependencies.
+npx expo install @react-navigation/drawer react-native-reanimated react-native-worklets
+// NOTE: Now you're able to create navigator with 'Drawer' layout.
+import { Drawer } from 'expo-router/drawer';
+
+export default function Layout() {
+  return <Drawer />;
+}
+// NOTE: Edit the drawer menu labels and titles as follows.
+import { Drawer } from 'expo-router/drawer';
+
+export default function Layout() {
+  return (
+    <Drawer>
+      <Drawer.Screen
+        name="index" // This is the name of the page and must match the url from root
+        options={{
+          drawerLabel: 'Home',
+          title: 'overview',
+        }}
+      />
+      <Drawer.Screen
+        name="user/[id]" // This is the name of the page and must match the url from root
+        options={{
+          drawerLabel: 'User',
+          title: 'overview',
+        }}
+      />
+    </Drawer>
+  );
+}
+*/

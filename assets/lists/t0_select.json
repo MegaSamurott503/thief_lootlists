@@ -1,0 +1,842 @@
+{
+  "id": "t0_select",
+  "title": "Select Test",
+  "diffNames": ["Easy","Medium","Garrett"],
+  "modeNames": [
+    {
+      "name": "Garrett",
+      "icon": "G"
+    },
+    {
+      "name": "Duke Nukem",
+      "icon": "D"
+    },
+    {
+      "name": "Suicidal",
+      "icon": "S"
+    }
+  ],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [100,200,300,300,600],
+    [200,400,600,300,1200],
+    [300,600,900,300,1800]
+  ],
+  "lootCount": [20,20,20],
+  "lootChanges": [0,1,2],
+  "goal1": {
+    "total": [500,800,1200]
+  },
+  "pocketCount": [1,1,0],
+  "pocketChanges": [0,0,1],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Southeast Dayport"},
+    {"key": "3", "value": "Star Gazer's House"},
+    {"key": "4", "value": "Shemenov Estate"},
+    {"key": "5", "value": "Southwest Dayport"},
+    {"key": "6", "value": "Castle van Vernon"},
+    {"key": "7", "value": "Fieldstone Estate"},
+    {"key": "8", "value": "Necromancer's Spire"},
+    {"key": "9", "value": "Castle Carlysle"},
+    {"key": "10", "value": "Sir Cullen's Keep"},
+    {"key": "11", "value": "Northwest Dayport"},
+    {"key": "12", "value": "Greenhouse"},
+    {"key": "13", "value": "Dayport Trader's Bank"},
+    {"key": "14", "value": "Angelwatch 8F"},
+    {"key": "15", "value": "Angelwatch 9F"},
+    {"key": "16", "value": "Angelwatch Roof"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t0_select_loot_1",
+              "findSimple": "findM",
+              "findArea": 14,
+              "findNarrow": "kitchen",
+              "findExact": "serving table",
+              "findCount": [2,2,2],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "t0_select_loot_2",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "crib room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursormask",
+      "name": "Precursor Mask",
+      "img": [
+        "IMG_PrecursorMask_Bare",
+        "IMG_PrecursorMask_Fading",
+        "IMG_PrecursorMask_Green"
+      ],
+      "values": [
+        {
+          "id": "120goods",
+          "value": [0,0,120,0],
+          "locations": [
+            {
+              "id": "t0_select_loot_3",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "castle",
+              "findExact": "statue niche",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_PrecursorMask_Bare"
+
+
+              ]
+            },
+            {
+              "id": "t0_select_loot_4",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "west room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_PrecursorMask_Fading"
+              ]
+            },
+            {
+              "id": "t0_select_loot_5",
+              "findSimple": "findH",
+              "findArea": 14,
+              "findNarrow": "Karras's quarters",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_PrecursorMask_Green"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverscepter",
+      "name": "Silver Scepter",
+      "img": [
+        "IMG_SilverScepter"
+      ],
+      "values": [
+        {
+          "id": "300special",
+          "value": [0,0,0,300],
+          "locations": [
+            {
+              "id": "t0_select_loot_8",
+              "findSimple": "findH",
+              "findArea": 16,
+              "findNarrow": "inner room",
+              "findExact": "pedestal",
+              "findCount": [1,1,1],
+              "findEaster": true,
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_SilverScepter"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "t0_select_loot_6",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "north room",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_weddingrings",
+      "name": "Wedding Rings",
+      "img": [
+        "IMG_WeddingRings"
+      ],
+      "values": [
+        {
+          "id": "10gold",
+          "value": [10,0,0,0],
+          "locations": [
+            {
+              "id": "t0_select_loot_7",
+              "findSimple": "findE",
+              "findArea": 0,
+              "findExact": "a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u -v-w-x-y-z",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_WeddingRings"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_constantinessword",
+          "name": "Constantine's Sword",
+          "img": [
+            "IMG_ConstantinesSword"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_35",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u -v-w-x-y-z",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_17",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCountMode": [1,0,0]
+            },
+            {
+              "id": "t0_select_item_18",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCountMode": [0,3,0]
+            },
+            {
+              "id": "t0_select_item_19",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCountMode": [2,0,2]
+            },
+            {
+              "id": "t0_select_item_20",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCountMode": [0,4,8]
+            },
+            {
+              "id": "t0_select_item_21",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCountMode": [5,10,15]
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_22",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCountMode": [5,25,0]
+            },
+            {
+              "id": "t0_select_item_23",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCountMode": [2,2,0]
+            },
+            {
+              "id": "t0_select_item_24",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCountMode": [4,0,0]
+            },
+            {
+              "id": "t0_select_item_25",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCountMode": [1,2,0]
+            },
+            {
+              "id": "t0_select_item_26",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCountMode": [1,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_vinearrow",
+          "name": "Vine Arrow",
+          "img": [
+            "IMG_VineArrow"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_27",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCountMode": [3,20,0]
+            },
+            {
+              "id": "t0_select_item_28",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCount": [2,1,1],
+              "findCountMode": [1,1,0]
+            },
+            {
+              "id": "t0_select_item_29",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "somewhere",
+              "findCountMode": [1,5,0]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_30",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCountMode": [1,0,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t0_select_item_31",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCountMode": [0,1,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t0_select_item_32",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCountMode": [4,0,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t0_select_item_33",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCountMode": [0,5,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t0_select_item_34",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,1,2],
+              "findCountMode": [0,1,0],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_3",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,2,1],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t0_select_item_4",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "guard barracks",
+              "findExact": "shelf",
+              "findCount": [2,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_5",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_explosivecharge",
+          "name": "Sunburst Device",
+          "img": [
+            "IMG_ExplosiveCharge"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_6",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "hidden closet",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "findEaster": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_7",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t0_select_item_8",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "t0_select_item_9",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "1F",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "t0_select_item_10",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "castle",
+              "findExact": "on green swordsman",
+              "findCountBox": [1,1,0],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_11",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "1F",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "t0_select_item_12",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "west hallway",
+              "findExact": "hidden closet",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_breathpotion",
+          "name": "Breath Potion",
+          "img": [
+            "IMG_BreathPotion"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_36",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "value": [-10,0,0,0]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_37",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "here",
+              "findCount": [3,3,3],
+              "value": [-100,0,0,0]
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_38",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "here",
+              "findCount": [5,0,0],
+              "value": [-25,0,0,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_13",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "north room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t0_select_item_14",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "employee office",
+              "findExact": "northwest desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_15",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "1F",
+              "findExact": "by Azaran's skeleton",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_blueprints",
+          "name": "Mechanist Schematics",
+          "img": [
+            "IMG_Blueprints"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_item_16",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "Karras's office",
+              "findExact": "behind painting",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "Wooden Goblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_junk_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "NE apartment",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "t0_test_junk_2",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [7,7,7]
+            },
+            {
+              "id": "t0_test_junk_3",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "ballroom",
+              "findExact": "serving table",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "t0_select_junk_4",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "NE apartment",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t0_select_junk_5",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t0_select_junk_6",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "ballroom",
+              "findExact": "serving table",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "t0_test_junk_7",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "attic",
+              "findExact": "box",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

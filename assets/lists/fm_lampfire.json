@@ -1,0 +1,2635 @@
+{
+  "id": "fm_lampfire",
+  "title": "Autumn in Lampfire Hills",
+  "author": [
+    "auth_purah"
+  ],
+  "screens": [
+    "MIS_fm_lampfire_A",
+    "MIS_fm_lampfire_B"
+  ],
+  "firstRelease": "October 1999",
+  "latestVersion": "2.1a",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [2906,250,750,0,3906],
+    [3006,250,750,0,4006],
+    [3206,250,750,0,4206]
+  ],
+  "lootCount": [60,61,63],
+  "lootChanges": [0,1,2],
+  "goal1": {
+    "total": [1500,2500,3500]
+  },
+  "pocketCount": [8,9,11],
+  "pocketChanges": [0,1,2],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Cottage"},
+    {"key": "3", "value": "Lampfire Hills"},
+    {"key": "4", "value": "Psychic of the Two Moons"},
+    {"key": "5", "value": "Market"},
+    {"key": "6", "value": "Beak's Grocer"},
+    {"key": "7", "value": "Jovall's Furnishings"},
+    {"key": "8", "value": "Keeper Library"},
+    {"key": "9", "value": "Succubus' Kiss"},
+    {"key": "10", "value": "Brimstone Inn"},
+    {"key": "11", "value": "Weapon Outlet"},
+    {"key": "12", "value": "Alarus House"},
+    {"key": "13", "value": "Sewers"},
+    {"key": "14", "value": "Keeper Vaults"},
+    {"key": "15", "value": "Hammer Church"},
+    {"key": "16", "value": "Riverside House"},
+    {"key": "17", "value": "Old Hammer Shrine"},
+    {"key": "18", "value": "Ancient Vaults"},
+    {"key": "19", "value": "Vault of Sorrows"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_1",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "3F guest room",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_2",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [2,2,2],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_3",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "wine cellar",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_4",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "Deddoc Thool's tomb",
+              "findExact": "on skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_5",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "barracks",
+              "findExact": "by third bunkbed",
+              "findCount": [1,1,1],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_6",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "living quarters",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_7",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [2,2,2],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_8",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_9",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "guest room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_10",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "office",
+              "findExact": "desk",
+              "findCount": [2,2,2],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_11",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "storefront",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_12",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "3F guest room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_13",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "bedroom",
+              "findExact": "nightstand",
+              "findCount": [3,3,3],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_14",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "study",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_15",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "master bedroom",
+              "findExact": "nightstand",
+              "findCount": [4,4,4],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "125gold",
+          "value": [125,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_16",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "storefront",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_17",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "Sorrack's hidden room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_18",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "sanctuary",
+              "findExact": "altar",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_19",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "west cistern",
+              "findExact": "underwater",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "400gold",
+          "value": [400,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_20",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "library",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_21",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_22",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_23",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "hallway",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_24",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "entrance hall",
+              "findExact": "southwest railing",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_25",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "Deddoc Thool's tomb",
+              "findExact": "on skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_26",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findNarrow": "deep pit",
+              "findExact": "by brazier",
+              "findCount": [6,6,6],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_27",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findExact": "on Bafford sergeant",
+              "findCountBox": [0,0,1],
+              "findPick": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_28",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "terrace",
+              "findExact": "on Ramirez archer",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_29",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "bedroom",
+              "findExact": "on female servant",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_30",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "lobby",
+              "findExact": "on thief swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_31",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "bedroom",
+              "findExact": "on Hammerite",
+              "findCountBox": [0,1,1],
+              "findPick": true,
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_32",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "master bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_33",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "master bedroom",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_34",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "sanctuary",
+              "findExact": "on Hammerite",
+              "findCountBox": [0,0,1],
+              "findPick": true,
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_35",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "Sorrack's hidden room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_36",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "east fire trap room",
+              "findExact": "on Talbot",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_37",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "stairs room",
+              "findExact": "Precursor chest",
+              "findCount": [2,2,2],
+              "findBox": true,
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_38",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "bedroom",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_39",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "southeast apartment",
+              "findExact": "nightstand",
+              "findCount": [3,3,3],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_40",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "3F guest room",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_lampfire_loot_41",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "storefront",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_lampfire_item_9",
+                  "findCount": [3,3,3]
+                }
+              ],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_42",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "priest's bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_lampfire_junk_58",
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_lampfire_loot_43",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "Deddoc Thool's tomb",
+              "findExact": "on skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_constantinessword",
+          "name": "Constantine's Sword",
+          "img": [
+            "IMG_ConstantinesSword"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "attic",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_jeweledsword",
+          "name": "Bejeweled Sword",
+          "img": [
+            "IMG_JeweledSword"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_2",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "sealed tomb",
+              "findExact": "casket",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_jeweleddagger",
+          "name": "Bejeweled Dagger",
+          "img": [
+            "IMG_JeweledDagger"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_3",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "master bedroom",
+              "findExact": "nightstand",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_4",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "sitting room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_5",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "sitting room",
+              "findExact": "shelf",
+              "findCount": [10,10,10]
+            },
+            {
+              "id": "fm_lampfire_item_6",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "storefront",
+              "findExact": "footlocker",
+              "findCountBox": [25,25,25],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_7",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "sitting room",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_lampfire_item_8",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "storefront",
+              "findExact": "table",
+              "findCount": [6,6,6]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_9",
+              "value": [0,0,0,0],
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "storefront",
+              "findExact": "footlocker",
+              "findCountBox": [3,3,3],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_lampfire_loot_41",
+                  "value": [12,0,0,0],
+                  "findCount": [2,2,2]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_10",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "well",
+              "findExact": "underwater",
+              "findCount": [12,12,12]
+            },
+            {
+              "id": "fm_lampfire_item_11",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "central well",
+              "findExact": "underwater",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_lampfire_item_12",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "sealed tomb",
+              "findExact": "casket",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_13",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "fireplace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_14",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "sealed tomb",
+              "findExact": "casket",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_15",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "wine cellar",
+              "findExact": "shelf",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_16",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "storefront",
+              "findExact": "table",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_17",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "sitting room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_18",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_19",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "sitting room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_breathpotion",
+          "name": "Breath Potion",
+          "img": [
+            "IMG_BreathPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_20",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "sitting room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_21",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storefront",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_holywatervial",
+          "name": "Holy Water Vial",
+          "img": [
+            "IMG_HolyWaterVial"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_23",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "barracks",
+              "findExact": "on Hammerite novice",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_lampfire_item_22",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "font",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_24",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "sitting room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_25",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "sitting room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Cottage Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_26",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Psychic's Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_27",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "bedroom",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Weapon Outlet Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_28",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "storefront",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Alarus House Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_29",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "front door",
+              "findExact": "on maroon swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_lampfire_item_30",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "on female servant",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_lampfire_item_31",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "master bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Hammerite Shrine Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_33",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_lampfire_item_32",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Riverside House Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_35",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "near shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Sorrack's Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_34",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "Sorrack's hidden room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_36",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_37",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "loadout": "store",
+              "price": 5
+            },
+            {
+              "id": "fm_lampfire_item_38",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_39",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "storefront",
+              "findExact": "south table",
+              "findCount": [12,12,12]
+            },
+            {
+              "id": "fm_lampfire_item_40",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "lobby",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_41",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_42",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_43",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_44",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [18,18,18],
+              "loadout": "store",
+              "price": 3
+            },
+            {
+              "id": "fm_lampfire_item_45",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "storefront",
+              "findExact": "south table",
+              "findCount": [21,21,21]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_46",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [15,15,15],
+              "loadout": "store",
+              "price": 2
+            },
+            {
+              "id": "fm_lampfire_item_47",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "storefront",
+              "findExact": "north table",
+              "findCount": [23,23,23]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_48",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [20,20,20],
+              "loadout": "store",
+              "price": 1
+            },
+            {
+              "id": "fm_lampfire_item_49",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_50",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "storefront",
+              "findExact": "north table",
+              "findCount": [34,34,34]
+            },
+            {
+              "id": "fm_lampfire_item_51",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_52",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_lampfire_item_53",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "south table",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_lampfire_item_54",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "front yard",
+              "findExact": "chair",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_55",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "storefront",
+              "findExact": "northeast barrel",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_56",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "loadout": "store",
+              "price": 10
+            },
+            {
+              "id": "fm_lampfire_item_57",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_58",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_59",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_60",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_61",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_62",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "3F guest room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_63",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "chimney",
+              "findExact": "hidden doorway",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_item_64",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "east fire trap room",
+              "findExact": "by Talbot",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_precursorscroll",
+          "name": "Precursor Scroll",
+          "img": [
+            "IMG_PrecursorScroll_Round"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_65",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storefront",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Garrett's Journal",
+          "img": [
+            "IMG_Book_Purple"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_66",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "sitting room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "City Records",
+          "img": [
+            "IMG_Book_Green"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_67",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "near entrance",
+              "findExact": "west bookshelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Book of Levitation",
+          "img": [
+            "IMG_Book_Pagan"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_68",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "stairs room",
+              "findExact": "Precursor chest",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_jewelry",
+      "category": "Jewelry",
+      "catItems": [
+        {
+          "id": "item_keepermedallion",
+          "name": "Gold Keeper Medallion",
+          "img": [
+            "IMG_KeeperMedallion"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_item_69",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "library",
+              "findExact": "by table",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_1",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "terrace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_2",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "staircase",
+              "findExact": "under stairs",
+              "findCount": [14,14,14]
+            },
+            {
+              "id": "fm_lampfire_junk_3",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storefront",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_lampfire_junk_4",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "2F",
+              "findExact": "near window",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_5",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storefront",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_6",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "back alley",
+              "findExact": "above trapdoor",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_utensils",
+      "category": "Utensils",
+      "catJunk": [
+        {
+          "id": "junk_woodenspoon",
+          "name": "Wooden Spoon",
+          "img": [
+            "IMG_WoodenSpoon"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_7",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "north table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_8",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_knife",
+          "name": "Knife",
+          "img": [
+            "IMG_Knife"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_9",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_10",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "north table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_11",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "mantelpiece",
+              "findCount": [6,6,6]
+            }
+          ]
+        },
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_12",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "Wooden Goblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_13",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "lobby",
+              "findExact": "table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_lampfire_junk_14",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_15",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [11,11,11]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_16",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "sitting room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_17",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "lobby",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_lampfire_junk_18",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_19",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [11,11,11]
+            },
+            {
+              "id": "fm_lampfire_junk_20",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "wine cellar",
+              "findExact": "shelf",
+              "findCount": [11,11,11]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_21",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "sitting room",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_lampfire_junk_22",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "bedroom",
+              "findExact": "window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_23",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_24",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_skillet",
+          "name": "Skillet",
+          "img": [
+            "IMG_Skillet"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_25",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "fireplace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_26",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "north table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_27",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_saucepan",
+          "name": "Saucepan",
+          "img": [
+            "IMG_Saucepan"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_28",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "north table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_cookingpot",
+          "name": "Cooking Pot",
+          "img": [
+            "IMG_CookingPot"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_29",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_30",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "north table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_Sugar",
+            "IMG_Canister_UnmarkedLarge"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_31",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_lampfire_junk_32",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "south table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_33",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "3F guest room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_lampfire_junk_34",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "2f guest room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_lampfire_junk_35",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "front yard",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_36",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "balcony",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_37",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "porch",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_38",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "living quarters",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_39",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storefront",
+              "findExact": "railing",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_40",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "porch",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_41",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "entrance hall",
+              "findExact": "corner table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_42",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "sitting room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_43",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "lobby",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_44",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "hallway",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_45",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_46",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "yard",
+              "findExact": "by chimney",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_warhammer",
+          "name": "Warhammer",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_47",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "storefront",
+              "findExact": "near table",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_holyhammer",
+          "name": "Holy Hammer",
+          "img": [
+            "IMG_HolyHammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_48",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "sanctuary",
+              "findExact": "altar",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ancienthammer",
+          "name": "Ancient Hammer",
+          "img": [
+            "IMG_AncientHammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_49",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "sanctuary",
+              "findExact": "altar",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_50",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "tile room",
+              "findExact": "southwest corner",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_lampfire_junk_51",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "pillar room",
+              "findExact": "northeast corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_lampfire_junk_52",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "west fire trap room",
+              "findCount": [8,8,8]
+            },
+            {
+              "id": "fm_lampfire_junk_53",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "stairs room",
+              "findExact": "by north wall",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_54",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "tile room",
+              "findExact": "near bone piles",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_lampfire_junk_55",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "spike trap",
+              "findCount": [1,1,1],
+              "findUnable": true
+            },
+            {
+              "id": "fm_lampfire_junk_56",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "stairs room",
+              "findExact": "midair",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_lampfire_junk_57",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "sealed tomb",
+              "findExact": "casket",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_rosarybeads",
+          "name": "Rosary Beads",
+          "img": [
+            "IMG_RosaryBeads"
+          ],
+          "locations": [
+            {
+              "id": "fm_lampfire_junk_58",
+              "value": [0,0,0,0],
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "priest's bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_lampfire_loot_42",
+                  "value": [50,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ]
+            },
+            {
+              "id": "fm_lampfire_junk_59",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCount": [3,3,3],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

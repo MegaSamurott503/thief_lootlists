@@ -1,0 +1,3645 @@
+{
+  "id": "fm_ashton-visit",
+  "title": "A Visit to Lord Ashton's",
+  "author": [
+    "auth_christine"
+  ],
+  "screens": [
+    "MIS_fm_ashton-visit_A",
+    "MIS_fm_ashton-visit_B"
+  ],
+  "firstRelease": "May 2002",
+  "latestVersion": "2.0",
+  "goToNext": "fm_ashton-stroll",
+  "diffNames": ["Easy","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [7412,1680,4585,0,13677],
+    [7412,1680,4585,0,13677],
+    [7412,1680,4585,0,13677]
+  ],
+  "lootCount": [260,260,260],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [8000,8000,8000]
+  },
+  "pocketCount": [13,13,13],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Grounds"},
+    {"key": "2", "value": "Greenhouses"},
+    {"key": "3", "value": "Game Room"},
+    {"key": "4", "value": "Power Supply Shed"},
+    {"key": "5", "value": "Music Room"},
+    {"key": "6", "value": "Pool"},
+    {"key": "7", "value": "Attic Terrace"},
+    {"key": "8", "value": "Gym"},
+    {"key": "9", "value": "West Attic"},
+    {"key": "10", "value": "Carla's Bedroom"},
+    {"key": "11", "value": "West Bedroom"},
+    {"key": "12", "value": "Bath"},
+    {"key": "13", "value": "Mask Room"},
+    {"key": "14", "value": "Ballroom"},
+    {"key": "15", "value": "Ballroom Terrace"},
+    {"key": "16", "value": "Dining Room"},
+    {"key": "17", "value": "Entrance Hall"},
+    {"key": "18", "value": "Library"},
+    {"key": "19", "value": "South Guest Room"},
+    {"key": "20", "value": "Central Accounting Office"},
+    {"key": "21", "value": "Central Guest Room"},
+    {"key": "22", "value": "North Accounting Office"},
+    {"key": "23", "value": "North Guest Room"},
+    {"key": "24", "value": "Freemann's Quarters"},
+    {"key": "25", "value": "Cpl. Shepherd's Quarters"},
+    {"key": "26", "value": "Kitchen"},
+    {"key": "27", "value": "Guard Barracks"},
+    {"key": "28", "value": "Servants' Quarters"},
+    {"key": "29", "value": "Lord Ashton's Quarters"},
+    {"key": "30", "value": "Vault"},
+    {"key": "31", "value": "Safe"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_addoniziocrystal",
+      "name": "Addonizio Crystal",
+      "img": [
+        "IMG_AddonizioCrystal"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_1",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findExact": "shelf",
+              "findCount": [10,10,10],
+              "orderNum": 86,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_chest",
+      "name": "Chest",
+      "img": [
+        "IMG_Chest_Precursor"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_2",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findExact": "shelf",
+              "findCount": [6,6,6],
+              "orderNum": 90,
+              "orderImg": [
+                "IMG_Chest_Precursor"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_cigarettebox",
+      "name": "Cigarette Box",
+      "img": [
+        "IMG_CigaretteBox"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_3",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "SE guard post",
+              "findExact": "north ledge",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_4",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "changing room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_5",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findExact": "piano",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_6",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [1,1,1],
+              "orderNum": 68,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_7",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "game room",
+              "findExact": "card table",
+              "findCount": [1,1,1],
+              "orderNum": 70,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coin",
+      "name": "Coin",
+      "img": [
+        "IMG_Coin"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_8",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findExact": "fountain",
+              "findCount": [2,2,2],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_9",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findExact": "roulette table",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_10",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "game room",
+              "findExact": "card table",
+              "findCount": [2,2,2],
+              "orderNum": 71,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_11",
+              "findSimple": "findH",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "treasury",
+              "findCount": [10,10,10],
+              "findSecret": true,
+              "orderNum": 80,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Monster",
+        "IMG_DecorativeMask_Demon",
+        "IMG_DecorativeMask_Bugaku",
+        "IMG_DecorativeMask_Noh",
+        "IMG_DecorativeMask_Inuit",
+        "IMG_DecorativeMask_White"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_12",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "display case",
+              "findCount": [6,6,6],
+              "findSecret": true,
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_DecorativeMask_Monster",
+                "IMG_DecorativeMask_Demon",
+                "IMG_DecorativeMask_Bugaku",
+                "IMG_DecorativeMask_Noh",
+                "IMG_DecorativeMask_Inuit",
+                "IMG_DecorativeMask_White"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Pink",
+        "IMG_DecorativePlate_Red",
+        "IMG_DecorativePlate_Gold",
+        "IMG_DecorativePlate_Aqua",
+        "IMG_DecorativePlate_Blue"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_13",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "chimney",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_DecorativePlate_Red"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_14",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "chimney",
+              "findCount": [1,1,1],
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_DecorativePlate_Aqua"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_15",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [3,3,3],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink",
+                "IMG_DecorativePlate_Red",
+                "IMG_DecorativePlate_Blue"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_16",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findExact": "chimney",
+              "findCount": [1,1,1],
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_DecorativePlate_Red"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_17",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findExact": "sink",
+              "findCount": [1,1,1],
+              "orderNum": 67,
+              "orderImg": [
+                "IMG_DecorativePlate_Gold"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_18",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findExact": "coffee table",
+              "findCount": [2,2,2],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_19",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_20",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "bathtub",
+              "findCount": [2,2,2],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_21",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_22",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [8,8,8],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_23",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "2F",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_24",
+              "findSimple": "findH",
+              "findArea": 1,
+              "findNarrow": "NE yard",
+              "findExact": "under southwest bush",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_25",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 75,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_26",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_27",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_28",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "changing room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_29",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_30",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_31",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_32",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "bathtub",
+              "findCount": [2,2,2],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_33",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_34",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_35",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_36",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_37",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_38",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_39",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_40",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 60,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_41",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 61,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_42",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findNarrow": "anteroom",
+              "findExact": "corner table",
+              "findCount": [1,1,1],
+              "orderNum": 65,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_43",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 72,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_44",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findNarrow": "bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 83,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_45",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findExact": "card table",
+              "findCount": [2,2,2],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_46",
+              "findSimple": "findH",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "treasury",
+              "findCount": [10,10,10],
+              "findSecret": true,
+              "orderNum": 78,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "Gold Dice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_47",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findExact": "behind banner",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_48",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 74,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_49",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findExact": "coffee table",
+              "findCount": [2,2,2],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_50",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_51",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "bathtub",
+              "findCount": [2,2,2],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_52",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [4,4,4],
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_53",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "2F",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_54",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "southwest corner",
+              "findExact": "toolbox",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_55",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "exterior",
+              "findExact": "under large flowers",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_56",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findExact": "shelf",
+              "findCount": [10,10,10],
+              "orderNum": 88,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_57",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_58",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "bathtub",
+              "findCount": [2,2,2],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_59",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_60",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "dining table",
+              "findCount": [1,1,1],
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_largegemstone",
+      "name": "Large Gemstone",
+      "img": [
+        "IMG_LargeGemstone_Ruby",
+        "IMG_LargeGemstone_Sapphire",
+        "IMG_LargeGemstone_Emerald",
+        "IMG_LargeGemstone_Amethyst"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_61",
+              "findSimple": "findH",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "treasury",
+              "findCount": [10,10,10],
+              "findSecret": true,
+              "orderNum": 81,
+              "orderImg": [
+                "IMG_LargeGemstone_Ruby",
+                "IMG_LargeGemstone_Sapphire",
+                "IMG_LargeGemstone_Emerald",
+                "IMG_LargeGemstone_Amethyst"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_62",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findExact": "shelf",
+              "findCount": [10,10,10],
+              "orderNum": 85,
+              "orderImg": [
+                "IMG_LargeGemstone_Ruby",
+                "IMG_LargeGemstone_Sapphire",
+                "IMG_LargeGemstone_Emerald",
+                "IMG_LargeGemstone_Amethyst"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_63",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findExact": "fountain",
+              "findCount": [3,3,3],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_64",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findExact": "roulette table",
+              "findCount": [3,3,3],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_65",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findExact": "card table",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_66",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "middle desk",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_67",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "north bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 69,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mechaniststatuette",
+      "name": "Mechanist Statuette",
+      "img": [
+        "IMG_MechanistStatuette"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_68",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 76,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_69",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_painting",
+      "name": "Painting",
+      "img": [
+        "IMG_Painting_Abduction",
+        "IMG_Painting_Lachrymae",
+        "IMG_Painting_Lizotte4",
+        "IMG_Painting_Margaret",
+        "IMG_Painting_Comparisons"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_70",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findExact": "walls",
+              "findCount": [5,5,5],
+              "orderNum": 92,
+              "orderImg": [
+                "IMG_Painting_Abduction",
+                "IMG_Painting_Lachrymae",
+                "IMG_Painting_Lizotte4",
+                "IMG_Painting_Margaret",
+                "IMG_Painting_Comparisons"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_71",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findExact": "shelf",
+              "findCount": [3,3,3],
+              "orderNum": 91,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorgem",
+      "name": "Precursor Gem",
+      "img": [
+        "IMG_PrecursorGem"
+      ],
+      "values": [
+        {
+          "id": "15gems",
+          "value": [0,15,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_72",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findExact": "east wall",
+              "findCount": [12,12,12],
+              "orderNum": 93,
+              "orderImg": [
+                "IMG_PrecursorGem"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Tall",
+        "IMG_PrecursorJar_Pointed"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_73",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findExact": "shelves",
+              "findCount": [15,15,15],
+              "orderNum": 87,
+              "orderImg": [
+                "IMG_PrecursorJar_Small",
+                "IMG_PrecursorJar_Tall",
+                "IMG_PrecursorJar_Pointed"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursormask",
+      "name": "Precursor Mask",
+      "img": [
+        "IMG_PrecursorMask_Brass"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_74",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_PrecursorMask_Brass"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_75",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "bedroom",
+              "findExact": "chimney",
+              "findCount": [1,1,1],
+              "orderNum": 59,
+              "orderImg": [
+                "IMG_PrecursorMask_Brass"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_76",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "orderNum": 77,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_77",
+              "findSimple": "findH",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "treasury",
+              "findCount": [4,4,4],
+              "findSecret": true,
+              "orderNum": 82,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_78",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findExact": "shelf",
+              "findCount": [3,3,3],
+              "orderNum": 84,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_79",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [4,4,4],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_80",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "SE guard post",
+              "findExact": "on red archer",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_81",
+              "findSimple": "findH",
+              "findArea": 17,
+              "findNarrow": "under stairs",
+              "findExact": "west table",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 63,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_serpentyletorc",
+      "name": "Serpentyle Torc",
+      "img": [
+        "IMG_SerpentyleTorc"
+      ],
+      "values": [
+        {
+          "id": "300gold50gems",
+          "value": [300,50,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_82",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "hidden attic",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_SerpentyleTorc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_83",
+              "findSimple": "findH",
+              "findArea": 12,
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_84",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findExact": "roulette table",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_85",
+              "findSimple": "findH",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "treasury",
+              "findCount": [10,10,10],
+              "findSecret": true,
+              "orderNum": 79,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverfirepoker",
+      "name": "Silver Fire Poker",
+      "img": [
+        "IMG_SilverFirePoker"
+      ],
+      "values": [
+        {
+          "id": "100gold100goods",
+          "value": [100,0,100,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_86",
+              "findSimple": "findH",
+              "findArea": 17,
+              "findNarrow": "under stairs",
+              "findExact": "west table",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 62,
+              "orderImg": [
+                "IMG_SilverFirePoker"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverflute",
+      "name": "Silver Flute",
+      "img": [
+        "IMG_SilverFlute"
+      ],
+      "values": [
+        {
+          "id": "25gold25goods",
+          "value": [25,0,25,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_87",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findExact": "west table",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_SilverFlute"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_88",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findExact": "shelf",
+              "findCount": [10,10,10],
+              "orderNum": 89,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_89",
+              "findSimple": "findM",
+              "findArea": 26,
+              "findExact": "shelf",
+              "findCount": [4,4,4],
+              "orderNum": 66,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Nobleman",
+        "IMG_Statuette_Muse"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_90",
+              "findSimple": "findH",
+              "findArea": 17,
+              "findNarrow": "under stairs",
+              "findExact": "west table",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 64,
+              "orderImg": [
+                "IMG_Statuette_Nobleman",
+                "IMG_Statuette_Muse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_91",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findExact": "underwater",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            },
+            {
+              "id": "fm_ashton-visit_loot_92",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_treebeastmask",
+      "name": "Treebeast Mask",
+      "img": [
+        "IMG_TreebeastMask"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_93",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "chimney",
+              "findCount": [1,1,1],
+              "orderNum": 73,
+              "orderImg": [
+                "IMG_TreebeastMask"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_waxcylinder",
+      "name": "Wax Cylinder",
+      "img": [
+        "IMG_WaxCylinder"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_loot_94",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "east table",
+              "findExact": "by victrola",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_WaxCylinder"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [30,30,30],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_ashton-visit_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "SE guard post",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_ashton-visit_item_5",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "SE guard post",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_ashton-visit_item_6",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_ashton-visit_item_7",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "south bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [10,10,10],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [12,12,12],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_9",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [6,6,6],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_10",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_ashton-visit_item_11",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_12",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "office",
+              "findExact": "armory",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_13",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "office",
+              "findExact": "armory",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_14",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "office",
+              "findExact": "armory",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_ashton-visit_item_15",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "under stairs",
+              "findExact": "north table",
+              "findCount": [10,10,10],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_16",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "W greenhouse",
+              "findExact": "by pitcher plant",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-visit_item_17",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "office",
+              "findExact": "armory",
+              "findCount": [2,1,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_18",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_ashton-visit_item_19",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "office",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_ashton-visit_item_20",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "north bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_21",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "office",
+              "findExact": "armory",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_22",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "office",
+              "findExact": "armory",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "Flash Mine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_23",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "office",
+              "findExact": "armory",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_24",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_25",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "west bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_26",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_27",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Shepherd's Office Key",
+          "img": [
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_28",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "by fountain",
+              "findExact": "on Cpl. Shepherd",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Attic Key",
+          "img": [
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_29",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "changing room",
+              "findExact": "behind screen",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Cemetery Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_30",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "office",
+              "findExact": "bookcase niche",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Safe Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_31",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Vault Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_32",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "bedroom",
+              "findExact": "behind painting",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_33",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_shield",
+          "name": "Shield",
+          "img": [
+            "IMG_Shield_Red",
+            "IMG_Shield_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_34",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "on red swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_ashton-visit_item_35",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "SW yard",
+              "findExact": "on yellow swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_ashton-visit_item_36",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "front door",
+              "findExact": "on yellow swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_ashton-visit_item_37",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "front door",
+              "findExact": "on yellow swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_ashton-visit_item_38",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "east yard",
+              "findExact": "on yellow swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_ashton-visit_item_39",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "NE yard",
+              "findExact": "on yellow swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_ashton-visit_item_40",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "hallway",
+              "findExact": "on yellow swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_ashton-visit_item_41",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "hallway",
+              "findExact": "on yellow swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_42",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_ashton-visit_item_43",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-visit_item_44",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "bedroom",
+              "findExact": "coffee table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_item_45",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-visit_item_46",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "north bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_47",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_ashton-visit_item_48",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "west bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_49",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_50",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_item_51",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-visit_item_52",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "bedroom",
+              "findExact": "coffee table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_53",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "exterior",
+              "findExact": "behind west greenhouse",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_item_54",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "north greenhouse",
+              "findExact": "by flowers",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-visit_item_55",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "shelf",
+              "findCount": [6,6,6]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_56",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_ashton-visit_item_57",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_item_58",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "bedroom",
+              "findExact": "coffee table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_letter",
+          "name": "Letter",
+          "img": [
+            "IMG_Letter"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_59",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_ashton-visit_item_60",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "north bunkroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_item_61",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_crumpledpaper",
+          "name": "Crumpled Paper",
+          "img": [
+            "IMG_CrumpledPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_62",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "office",
+              "findExact": "wastebasket",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_63",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_64",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Diary",
+          "img": [
+            "IMG_Book_Purple"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_65",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_musical",
+      "category": "Musical Items",
+      "catItems": [
+        {
+          "id": "item_horn",
+          "name": "Horn",
+          "img": [
+            "IMG_HornOfQuintus"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_66",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "southwest table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_flute",
+          "name": "Flute",
+          "img": [
+            "IMG_Flute"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_67",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "west table",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "Dewdrop",
+          "img": [
+            "IMG_Dewdrop"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_68",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_navigationglobe",
+          "name": "Navigation Globe",
+          "img": [
+            "IMG_NavigationGlobe_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_69",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "4F",
+              "findExact": "Precursor chest",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_precursormask",
+          "name": "Mask of the Elders",
+          "img": [
+            "IMG_PrecursorMask_Wood"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_70",
+              "findSimple": "find",
+              "findArea": 31,
+              "findExact": "east wall",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_handofglory",
+          "name": "Hand of Glory",
+          "img": [
+            "IMG_HandOfGlory"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_71",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "under stairs",
+              "findExact": "Precursor chest",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_goldenbone",
+          "name": "Golden Bone",
+          "img": [
+            "IMG_GoldenBone_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_item_72",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "hidden room",
+              "findExact": "sea chest",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_1",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-visit_junk_2",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "in female servant's hand",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_3",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_4",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "bedroom",
+              "findExact": "coffee table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_5",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_6",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "in Benny's hand",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_7",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "by Benny",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-visit_junk_8",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "bedroom",
+              "findExact": "coffee table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_9",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-visit_junk_10",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "game room",
+              "findExact": "card table",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_basket",
+          "name": "Basket",
+          "img": [
+            "IMG_Basket"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_11",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "closet",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_12",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "by fireplace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_13",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "west bunkroom",
+              "findExact": "between bunks",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_woodenbucket",
+          "name": "Wooden Bucket",
+          "img": [
+            "IMG_WoodenBucket"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_14",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "near stove",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_bucketofwater",
+          "name": "Bucket of Water",
+          "img": [
+            "IMG_BucketOfWater"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_15",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "near stove",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_dress",
+          "name": "Dress",
+          "img": [
+            "IMG_Dress"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_16",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "near south doors",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "junk_hairbrush",
+          "name": "Hair Brush",
+          "img": [
+            "IMG_HairBrush"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_17",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "coffee table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_18",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "bathtub",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_19",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_handmirror",
+          "name": "Hand Mirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_20",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "coffee table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_21",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "bathtub",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_22",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_spectacles",
+          "name": "Spectacles",
+          "img": [
+            "IMG_ReadingGlasses"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_23",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "coffee table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_24",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "near sofa",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_25",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "card table",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_pairofdice",
+          "name": "Pair of Dice",
+          "img": [
+            "IMG_PairOfDice"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_26",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "card table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_27",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "game room",
+              "findExact": "card table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_basketball",
+          "name": "Basketball",
+          "img": [
+            "IMG_Basketball"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_28",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "near changing room",
+              "findExact": "by screens",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_29",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "exterior",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_ashton-visit_junk_30",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "corner table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_31",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "bedroom",
+              "findExact": "corner table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_32",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_33",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_redjar",
+          "name": "Red Jar",
+          "img": [
+            "IMG_RedJar"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_34",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "above fireplace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_35",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "bookcase",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_36",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "exterior",
+              "findExact": "behind west greenhouse",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_handsaw",
+          "name": "Handsaw",
+          "img": [
+            "IMG_Handsaw"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_37",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "workbench",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_hourglass",
+          "name": "Hourglass",
+          "img": [
+            "IMG_Hourglass"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-visit_junk_38",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "bookcase",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-visit_junk_39",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_ashton-visit_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_ashton-visit_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 3,
+          "findNarrow": "west wall",
+          "findDiff": [1,1,1],
+          "method": "Cut down the banner"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "Gold Dice",
+          "value": [50,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-visit_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_ashton-visit_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 7,
+          "findNarrow": "north ledge",
+          "findDiff": [1,1,1],
+          "method": "Frob the telescope"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardItem": "Golden Bone",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-visit_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_ashton-visit_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 10,
+          "findNarrow": "near stairs",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch behind the south pillar"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardLoot": "Serpentyle Torc",
+          "value": [300,50,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-visit_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_fm_ashton-visit_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 13,
+          "findNarrow": "northeast corner",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch behind the potted plant"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardLoot": "Decorative Mask",
+          "value": [0,0,50,0],
+          "findCount": [6,6,6]
+        },
+        {
+          "id": "sec_4_2",
+          "rewardLoot": "Precursor Mask",
+          "value": [0,0,120,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-visit_sec_5",
+      "number": 5,
+      "img": [
+        "SEC_fm_ashton-visit_05"
+      ],
+      "triggers": [
+        {
+          "id": "sec_5_a",
+          "findArea": 24,
+          "findNarrow": "bedroom",
+          "findDiff": [1,1,1],
+          "method": "Frob the coat hook near the bed"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_5_1",
+          "rewardItem": "Cemetery Key",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-visit_sec_6",
+      "number": 6,
+      "img": [
+        "SEC_fm_ashton-visit_06"
+      ],
+      "triggers": [
+        {
+          "id": "sec_6_a",
+          "findArea": 17,
+          "findNarrow": "east planter",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch under the east bush"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_6_1",
+          "rewardLoot": "Purse",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_2",
+          "rewardLoot": "Silver Fire Poker",
+          "value": [100,0,100,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_3",
+          "rewardLoot": "Statuette",
+          "value": [0,0,15,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_6_4",
+          "rewardItem": "Earth Crystal",
+          "findCount": [10,10,10]
+        },
+        {
+          "id": "sec_6_5",
+          "rewardItem": "Hand of Glory",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-visit_sec_7",
+      "number": 7,
+      "img": [
+        "SEC_fm_ashton-visit_07"
+      ],
+      "triggers": [
+        {
+          "id": "sec_7_a",
+          "findArea": 29,
+          "findNarrow": "office",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch on the mantelpiece"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_7_1",
+          "rewardLoot": "Copper Coin Stack",
+          "value": [5,0,0,0],
+          "findCount": [10,10,10]
+        },
+        {
+          "id": "sec_7_2",
+          "rewardLoot": "Silver Coin Stack",
+          "value": [12,0,0,0],
+          "findCount": [10,10,10]
+        },
+        {
+          "id": "sec_7_3",
+          "rewardLoot": "Gold Coin Stack",
+          "value": [25,0,0,0],
+          "findCount": [10,10,10]
+        },
+        {
+          "id": "sec_7_4",
+          "rewardLoot": "Large Gemstone",
+          "value": [100,0,0,0],
+          "findCount": [10,10,10]
+        },
+        {
+          "id": "sec_7_5",
+          "rewardLoot": "Precursor Tapestry",
+          "value": [0,0,150,0],
+          "findCount": [4,4,4]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-visit_sec_8",
+      "number": 8,
+      "img": [
+        "SEC_fm_ashton-visit_08"
+      ],
+      "triggers": [
+        {
+          "id": "sec_8_a",
+          "findArea": 29,
+          "findNarrow": "bedroom",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch behind the south curtain"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_8_1",
+          "rewardItem": "Vault Key",
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

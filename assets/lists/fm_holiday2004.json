@@ -1,0 +1,646 @@
+{
+  "id": "fm_holiday2004",
+  "title": "A Thief's Holiday 2004",
+  "author": [
+    "auth_yandros"
+  ],
+  "screens": [
+    "MIS_fm_holiday2004_A",
+    "MIS_fm_holiday2004_B"
+  ],
+  "firstRelease": "December 2004",
+  "latestVersion": "3.0",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "areas": [
+    {"key": "0", "value": "Kitchen"},
+    {"key": "1", "value": "Closet"},
+    {"key": "2", "value": "Loft"},
+    {"key": "3", "value": "Living Room"},
+    {"key": "4", "value": "Front Porch"},
+    {"key": "5", "value": "Yard"},
+    {"key": "6", "value": "Shed"},
+    {"key": "7", "value": "Back Porch"},
+    {"key": "8", "value": "Roof"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "items": [
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+      {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "north ledge",
+              "findExact": "by fireplace",
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_carafeofmulledwine",
+          "name": "Carafe of Mulled Wine",
+          "img": [
+            "IMG_CarafeOfMulledWine"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "fireplace",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_holiday2004_item_3",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "east chimney",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_key",
+          "name": "Front Door Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_4",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "near front door",
+              "findExact": "window",
+              "findObj": true,
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_holiday2004_item_5",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "grandfather clock",
+              "findExact": "door",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_holiday2004_item_6",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "rafters",
+              "findExact": "northeast corner",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Back Door Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_7",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "near Christmas tree",
+              "findExact": "south window",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_holiday2004_item_8",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "south shelf",
+              "findExact": "pail",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_broom",
+          "name": "Trusty Broom",
+          "img": [
+            "IMG_Broom"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "by door",
+              "findObj": true,
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_holiday2004_item_10",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "by north shelf",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_holiday2004_item_11",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "by west chimney",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        },
+        {
+          "id": "item_matchbox",
+          "name": "Matchbox",
+          "img": [
+            "IMG_Matchbox"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_12",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "by fireplace",
+              "findExact": "square table",
+              "findObj": true,
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_holiday2004_item_13",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "lower west cabinet",
+              "findExact": "behind pots",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_holiday2004_item_14",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "under porch",
+              "findExact": "by southwest post",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_utensils",
+      "category": "Utensils",
+      "catItems": [
+        {
+          "id": "item_ornateknife",
+          "name": "Nice Knife",
+          "img": [
+            "IMG_OrnateKnife"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_15",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "counter",
+              "findExact": "by cabbages",
+              "findObj": true,
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_holiday2004_item_16",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "south wall",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_holiday2004_item_17",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "east gate",
+              "findExact": "upper corner",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_18",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "counter",
+              "findExact": "middle tray",
+              "findObj": true,
+              "findCount": [0,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_christmascookie",
+          "name": "Christmas Cookie",
+          "img": [
+            "IMG_ChristmasCookie"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_19",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "counter",
+              "findExact": "by canisters",
+              "findObj": true,
+              "findCount": [5,2,0]
+            },
+            {
+              "id": "fm_holiday2004_item_20",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "upper east cabinet",
+              "findExact": "by goblets",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_holiday2004_item_21",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "southeast upper shelf",
+              "findExact": "corner",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_holiday2004_item_22",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "behind victrola",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_holiday2004_item_23",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "rafters",
+              "findExact": "north beam",
+              "findObj": true,
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_holiday2004_item_24",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "west bookcase",
+              "findExact": "top",
+              "findObj": true,
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_holiday2004_item_25",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "rafters",
+              "findExact": "above coffee table",
+              "findObj": true,
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_holiday2004_item_26",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "south gate",
+              "findExact": "behind doorframe",
+              "findObj": true,
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_holiday2004_item_27",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "northeast tree",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_musical",
+      "category": "Musical Items",
+      "catItems": [
+        {
+          "id": "item_record",
+          "name": "Record",
+          "img": [
+            "IMG_Record"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_28",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "by victrola",
+              "findObj": true,
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_holiday2004_item_29",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "near victrola",
+              "findExact": "coffee table",
+              "findObj": true,
+              "findCount": [2,0,0]
+            },
+            {
+              "id": "fm_holiday2004_item_30",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "crawlspace",
+              "findExact": "table",
+              "findObj": true,
+              "findCount": [0,4,0]
+            },
+            {
+              "id": "fm_holiday2004_item_31",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "rafters",
+              "findExact": "south wall",
+              "findObj": true,
+              "findCount": [0,0,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_snowball",
+          "name": "Snowball",
+          "img": [
+            "IMG_Snowball"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_32",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "by steps",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_holiday2004_item_33",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "by southwest lamppost",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_holiday2004_item_34",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "by west dividing wall",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_holiday2004_item_35",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "by shed",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_holiday2004_item_36",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "railing",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_holiday2004_item_37",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "east dividing wall",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_painting",
+          "name": "Holiday Artwork",
+          "img": [
+            "IMG_Painting_Holiday1",
+            "IMG_Painting_Holiday2",
+            "IMG_Painting_Holiday3",
+            "IMG_Painting_Holiday4",
+            "IMG_Painting_Holiday5",
+            "IMG_Painting_Holiday6"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_38",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "fireplace",
+              "findExact": "chimney",
+              "findObj": true,
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_holiday2004_item_39",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "crawlspace",
+              "findObj": true,
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_holiday2004_item_40",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "behind south bookcase",
+              "findObj": true,
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_holiday2004_item_41",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "rafters",
+              "findExact": "above Christmas tree",
+              "findObj": true,
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_holiday2004_item_42",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "roof",
+              "findObj": true,
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_holiday2004_item_43",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "under porch",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_diamond",
+          "name": "Holiday Diamond",
+          "img": [
+            "IMG_LargeGemstone_Diamond"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_44",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "east dividing wall",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_holiday2004_item_45",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "north apex",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        },
+        {
+          "id": "item_ruby",
+          "name": "Holiday Ruby",
+          "img": [
+            "IMG_LargeGemstone_Ruby"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_46",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "counter",
+              "findObj": true,
+              "findCount": [0,1,0],
+              "findRecipe": "take Apple"
+            },
+            {
+              "id": "fm_holiday2004_item_47",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "fireplace",
+              "findObj": true,
+              "findCount": [0,0,1],
+              "findRecipe": "use Matchbox on logs"
+            }
+          ]
+        },
+        {
+          "id": "item_emerald",
+          "name": "Holiday Emerald",
+          "img": [
+            "IMG_LargeGemstone_Emerald"
+          ],
+          "locations": [
+            {
+              "id": "fm_holiday2004_item_48",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "behind northeast potted plant",
+              "findObj": true,
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "fm_holiday2004_item_49",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "counter",
+              "findObj": true,
+              "findCount": [0,0,1],
+              "findRecipe": "use Nice Knife on cabbage"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

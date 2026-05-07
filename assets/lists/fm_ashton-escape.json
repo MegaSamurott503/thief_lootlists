@@ -1,0 +1,3886 @@
+{
+  "id": "fm_ashton-escape",
+  "title": "Escape!",
+  "author": [
+    "auth_christine"
+  ],
+  "screens": [
+    "MIS_fm_ashton-escape_A",
+    "MIS_fm_ashton-escape_B"
+  ],
+  "firstRelease": "May 2002",
+  "latestVersion": "2.0",
+  "goToPrev": "fm_ashton-stroll",
+  "goToNext": "fm_ashton-revenge",
+  "diffNames": ["Easy","Hard","Expert"],
+  "markObj": true,
+  "totals": [
+    [5129,625,2010,0,7764],
+    [5129,625,2010,0,7764],
+    [5129,625,2010,0,7764]
+  ],
+  "lootCount": [143,143,143],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [5000,5000,5000]
+  },
+  "pocketCount": [14,14,14],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "West Prison Tract"},
+    {"key": "2", "value": "East Prison Tract"},
+    {"key": "3", "value": "Sewer"},
+    {"key": "4", "value": "Forensics Room"},
+    {"key": "5", "value": "Interrogation Room"},
+    {"key": "6", "value": "Prison Guard Posts"},
+    {"key": "7", "value": "Police Station B1F"},
+    {"key": "8", "value": "Men's Showers"},
+    {"key": "9", "value": "Men's Toilets"},
+    {"key": "10", "value": "Sparring Room"},
+    {"key": "11", "value": "Sgt. Bronson's Quarters"},
+    {"key": "12", "value": "Servants' Quarters"},
+    {"key": "13", "value": "Women's Crew Quarters"},
+    {"key": "14", "value": "Men's Crew Quarters"},
+    {"key": "15", "value": "Women's Showers"},
+    {"key": "16", "value": "Kitchen"},
+    {"key": "17", "value": "Canteen"},
+    {"key": "18", "value": "Police Station 1F"},
+    {"key": "19", "value": "Theft Division"},
+    {"key": "20", "value": "Vice Division"},
+    {"key": "21", "value": "Sgt. Bronson's Office"},
+    {"key": "22", "value": "Files Office"},
+    {"key": "23", "value": "Lobby"},
+    {"key": "24", "value": "Unisex Toilets"},
+    {"key": "25", "value": "Officers' Mess Hall"},
+    {"key": "26", "value": "Dining Hall"},
+    {"key": "27", "value": "Sheriff Truart's Quarters"},
+    {"key": "28", "value": "Evidence Room"},
+    {"key": "29", "value": "Police Station Front Yard"},
+    {"key": "30", "value": "Harbor"},
+    {"key": "31", "value": "Ashton's Ship"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_addoniziocrystal",
+      "name": "Addonizio Crystal",
+      "img": [
+        "IMG_AddonizioCrystal"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_1",
+              "findSimple": "findE",
+              "findArea": 22,
+              "findExact": "file cabinet",
+              "findCount": [1,1,1],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_antiqueclock",
+      "name": "Antique Clock",
+      "img": [
+        "IMG_AntiqueClock"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_2",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "cabin",
+              "findExact": "near bed",
+              "findCount": [1,1,1],
+              "orderNum": 106,
+              "orderImg": [
+                "IMG_AntiqueClock"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_bluebottle",
+      "name": "Blue Bottle",
+      "img": [
+        "IMG_BlueBottle"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_3",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "east wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 83,
+              "orderImg": [
+                "IMG_BlueBottle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_chest",
+      "name": "Chest",
+      "img": [
+        "IMG_Chest_Blue"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_4",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "file room",
+              "findExact": "on file cabinet",
+              "findCount": [1,1,1],
+              "orderNum": 65,
+              "orderImg": [
+                "IMG_Chest_Blue"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold100goods",
+          "value": [100,0,100,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_5",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "east wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 99,
+              "orderImg": [
+                "IMG_Chest_Blue"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_cigarettebox",
+      "name": "Cigarette Box",
+      "img": [
+        "IMG_CigaretteBox"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_6",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "upper post",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_7",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_8",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_9",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findExact": "east table",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_10",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "east guard post",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_11",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "west guard post",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_12",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_13",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findNarrow": "south office",
+              "findExact": "locker 4",
+              "findCount": [3,3,3],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_14",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "north desk",
+              "findCount": [1,1,1],
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_15",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_16",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findNarrow": "front desk",
+              "findCount": [1,1,1],
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_17",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "north stall",
+              "findExact": "by toilet",
+              "findCount": [1,1,1],
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_18",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "file room",
+              "findExact": "file cabinet",
+              "findCount": [1,1,1],
+              "orderNum": 67,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_19",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "south guard post",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 79,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_collectionplate",
+      "name": "Collection Plate",
+      "img": [
+        "IMG_CollectionPlate"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_20",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findExact": "east table",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_CollectionPlate"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_21",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_CollectionPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_22",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_23",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findNarrow": "front desk",
+              "findCount": [1,1,1],
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Demon"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_24",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "chimney",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_DecorativeMask_Demon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Pink",
+        "IMG_DecorativePlate_Gold",
+        "IMG_DecorativePlate_Aqua",
+        "IMG_DecorativePlate_Blue"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_25",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findExact": "west sink",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_DecorativePlate_Gold"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_26",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "shelves",
+              "findCount": [3,3,3],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink",
+                "IMG_DecorativePlate_Aqua"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_27",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findExact": "shelves",
+              "findCount": [2,2,2],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink",
+                "IMG_DecorativePlate_Blue"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativevase",
+      "name": "Decorative Vase",
+      "img": [
+        "IMG_DecorativeVase_Neck"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_28",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "west wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 91,
+              "orderImg": [
+                "IMG_DecorativeVase_Neck"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_29",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_30",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_31",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_32",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findExact": "west cabinet",
+              "findCount": [3,3,3],
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_33",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findExact": "wine cabinet",
+              "findCount": [4,4,4],
+              "orderNum": 61,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_34",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "living room",
+              "findExact": "near fireplace",
+              "findCount": [2,2,2],
+              "orderNum": 68,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_35",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 76,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_36",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "cabin",
+              "findExact": "by bed",
+              "findCount": [1,1,1],
+              "orderNum": 107,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_37",
+              "findSimple": "findH",
+              "findArea": 28,
+              "findNarrow": "south wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 94,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_glasschalice",
+      "name": "Glass Chalice",
+      "img": [
+        "IMG_GlassChalice"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_38",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "north wall",
+              "findExact": "niches",
+              "findCount": [3,3,3],
+              "orderNum": 85,
+              "orderImg": [
+                "IMG_GlassChalice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_39",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_40",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "living room",
+              "findExact": "piano",
+              "findCount": [1,1,1],
+              "orderNum": 71,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_41",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 77,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "Gold Dice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_42",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findExact": "east cabinet",
+              "findCount": [1,1,1],
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_43",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_44",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findExact": "wine cabinet",
+              "findCount": [2,2,2],
+              "orderNum": 62,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_45",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "living room",
+              "findExact": "near fireplace",
+              "findCount": [2,2,2],
+              "orderNum": 69,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_46",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 74,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_47",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "cabin",
+              "findExact": "by bed",
+              "findCount": [1,1,1],
+              "orderNum": 108,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_48",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "living room",
+              "findExact": "near fireplace",
+              "findCount": [2,2,2],
+              "orderNum": 70,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_49",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 75,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_50",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "cabin",
+              "findExact": "by bed",
+              "findCount": [1,1,1],
+              "orderNum": 109,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_51",
+              "findSimple": "findH",
+              "findArea": 15,
+              "findNarrow": "bathtub",
+              "findExact": "by plant",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldtrophy",
+      "name": "Gold Trophy",
+      "img": [
+        "IMG_GoldTrophy"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_52",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findExact": "east cabinet",
+              "findCount": [1,1,1],
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_GoldTrophy"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_53",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "south wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 93,
+              "orderImg": [
+                "IMG_GoldTrophy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_54",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_55",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "cabin",
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "orderNum": 105,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldenbone",
+      "name": "Golden Bone",
+      "img": [
+        "IMG_GoldenBone_Skull"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_56",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "east wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 80,
+              "orderImg": [
+                "IMG_GoldenBone_Skull"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_57",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findExact": "dining table",
+              "findCount": [1,1,1],
+              "orderNum": 59,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_jeweleddagger",
+      "name": "Jeweled Dagger",
+      "img": [
+        "IMG_JeweledDagger"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_58",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_59",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "south wall",
+              "findExact": "niche",
+              "findCount": [2,2,2],
+              "orderNum": 97,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_jeweledsword",
+      "name": "Jeweled Sword",
+      "img": [
+        "IMG_JeweledSword"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_60",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "on elite Watch swordsman",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_JeweledSword"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_61",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "south wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 96,
+              "orderImg": [
+                "IMG_JeweledSword"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_largegemstone",
+      "name": "Large Gemstone",
+      "img": [
+        "IMG_LargeGemstone_Diamond",
+        "IMG_LargeGemstone_Ruby",
+        "IMG_LargeGemstone_Sapphire",
+        "IMG_LargeGemstone_Emerald",
+        "IMG_LargeGemstone_Amethyst"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_62",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "cold storage",
+              "findExact": "behind burricks",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_LargeGemstone_Diamond"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_63",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "south wall",
+              "findExact": "niche",
+              "findCount": [3,3,3],
+              "orderNum": 92,
+              "orderImg": [
+                "IMG_LargeGemstone_Ruby",
+                "IMG_LargeGemstone_Sapphire",
+                "IMG_LargeGemstone_Amethyst"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_64",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findNarrow": "shoreline",
+              "findExact": "west rocks",
+              "findCount": [1,1,1],
+              "orderNum": 104,
+              "orderImg": [
+                "IMG_LargeGemstone_Emerald"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_65",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findExact": "sink",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_66",
+              "findSimple": "findM",
+              "findArea": 15,
+              "findNarrow": "bathtub",
+              "findExact": "by plant",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mechaniststatuette",
+      "name": "Mechanist Statuette",
+      "img": [
+        "IMG_MechanistStatuette"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_67",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "storeroom",
+              "findExact": "between barrels",
+              "findCount": [1,1,1],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_68",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "east guard post",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_69",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "west wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 90,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_operaglasses",
+      "name": "Opera Glasses",
+      "img": [
+        "IMG_OperaGlasses"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_70",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "east wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 101,
+              "orderImg": [
+                "IMG_OperaGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ornateplate",
+      "name": "Ornate Plate",
+      "img": [
+        "IMG_OrnatePlate"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_71",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_OrnatePlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_painting",
+      "name": "Painting",
+      "img": [
+        "IMG_Painting_Lizotte4",
+        "IMG_Painting_Lizotte5",
+        "IMG_Painting_Truart"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_72",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "office",
+              "findExact": "by flowerpot",
+              "findCount": [1,1,1],
+              "orderNum": 63,
+              "orderImg": [
+                "IMG_Painting_Truart"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_73",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "north wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 86,
+              "orderImg": [
+                "IMG_Painting_Lizotte4"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_74",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "south wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 98,
+              "orderImg": [
+                "IMG_Painting_Lizotte5"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_playbill",
+      "name": "Playbill",
+      "img": [
+        "IMG_Playbill"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_75",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "east wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 102,
+              "orderImg": [
+                "IMG_Playbill"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_76",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "bedroom",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 73,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_77",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_78",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findExact": "wine cabinet",
+              "findCount": [4,4,4],
+              "orderNum": 60,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplemedallion",
+      "name": "Purple Medallion",
+      "img": [
+        "IMG_PurpleMedallion_Purple"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_79",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "north wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 84,
+              "orderImg": [
+                "IMG_PurpleMedallion_Purple"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_80",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "cell blocks",
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_81",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "cell blocks",
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_82",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "cell blocks",
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_83",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "east hall",
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_84",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "upper post",
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_85",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "hall",
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_86",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "hall",
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_87",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "on elite Watch swordsman",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_88",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "hall",
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_89",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "west wall",
+              "findExact": "Precursor chest",
+              "findCount": [2,2,2],
+              "findBox": true,
+              "orderNum": 89,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_rarespicebag",
+      "name": "Rare Spice Bag",
+      "img": [
+        "IMG_RareSpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_90",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "cabinets",
+              "findCount": [3,3,3],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_RareSpiceBag"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_91",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "on male servant",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_RareSpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_sapphirevase",
+      "name": "Sapphire Vase",
+      "img": [
+        "IMG_SapphireVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_92",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "north wall",
+              "findExact": "niche",
+              "findCount": [3,3,3],
+              "orderNum": 87,
+              "orderImg": [
+                "IMG_SapphireVase"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_93",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "file room",
+              "findExact": "on file cabinet",
+              "findCount": [2,2,2],
+              "orderNum": 66,
+              "orderImg": [
+                "IMG_SapphireVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_94",
+              "findSimple": "findH",
+              "findArea": 2,
+              "findNarrow": "northwest cell",
+              "findExact": "by bones",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_95",
+              "findSimple": "findM",
+              "findArea": 27,
+              "findNarrow": "office",
+              "findExact": "by flowerpot",
+              "findCount": [1,1,1],
+              "orderNum": 64,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverbracelet",
+      "name": "Silver Bracelet",
+      "img": [
+        "IMG_SilverBracelet"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_96",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "east wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 81,
+              "orderImg": [
+                "IMG_SilverBracelet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_97",
+              "findSimple": "findE",
+              "findArea": 22,
+              "findExact": "file cabinet",
+              "findCount": [1,1,1],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_98",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findNarrow": "front desk",
+              "findCount": [1,1,1],
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverfirepoker",
+      "name": "Silver Fire Poker",
+      "img": [
+        "IMG_SilverFirePoker"
+      ],
+      "values": [
+        {
+          "id": "100gold100goods",
+          "value": [100,0,100,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_99",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "east wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 100,
+              "orderImg": [
+                "IMG_SilverFirePoker"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverscepter",
+      "name": "Silver Scepter",
+      "img": [
+        "IMG_SilverScepter"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_100",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "east wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 82,
+              "orderImg": [
+                "IMG_SilverScepter"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_101",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "north counter",
+              "findCount": [2,2,2],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_102",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findNarrow": "gatehouse 2F",
+              "findExact": "sea chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 103,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Nobleman",
+        "IMG_Statuette_Monk",
+        "IMG_Statuette_Nun"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_103",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_Statuette_Nobleman"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_104",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "south desk",
+              "findCount": [1,1,1],
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_Statuette_Monk"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_105",
+              "findSimple": "findE",
+              "findArea": 22,
+              "findExact": "file cabinet",
+              "findCount": [1,1,1],
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_Statuette_Nun"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_106",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "bedroom",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 72,
+              "orderImg": [
+                "IMG_Statuette_Monk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_107",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "bath",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 78,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            },
+            {
+              "id": "fm_ashton-escape_loot_108",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "south wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 95,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_treebeastmask",
+      "name": "Treebeast Mask",
+      "img": [
+        "IMG_TreebeastMask"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_109",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "west wall",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 88,
+              "orderImg": [
+                "IMG_TreebeastMask"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_waxcylinder",
+      "name": "Wax Cylinder",
+      "img": [
+        "IMG_WaxCylinder"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_loot_110",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "table",
+              "findExact": "by victrola",
+              "findCount": [1,1,1],
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_WaxCylinder"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_1",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "middle counter",
+              "findExact": "on burrick",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_2",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "west table",
+              "findExact": "on male thief",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_3",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "footlocker",
+              "findCountBox": [12,12,12],
+              "findBox": true
+            },
+            {
+              "id": "fm_ashton-escape_item_4",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_ashton-escape_item_5",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "S guard post",
+              "findExact": "on Watch archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_ashton-escape_item_6",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "N guard post",
+              "findExact": "on Watch archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_7",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "passageways",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_ashton-escape_item_8",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "dump pit",
+              "findExact": "by female thief",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_9",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "near handcuffs",
+              "findExact": "water bucket",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_ashton-escape_item_10",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "counter",
+              "findCount": [10,10,10]
+            },
+            {
+              "id": "fm_ashton-escape_item_11",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "bathtub",
+              "findExact": "underwater",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-escape_item_12",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "outdoor pond",
+              "findExact": "near chest",
+              "findCount": [6,6,6],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_13",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "behind banner",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_14",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "east post",
+              "findExact": "under stairs",
+              "findCount": [23,23,23]
+            },
+            {
+              "id": "fm_ashton-escape_item_15",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "counter",
+              "findCount": [6,6,6]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_16",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "middle stove",
+              "findExact": "cooking pot",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_17",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "west post",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_ashton-escape_item_18",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "east post",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_ashton-escape_item_19",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_20",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "south office",
+              "findExact": "locker 3",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_21",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "file room",
+              "findExact": "file cabinet",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_22",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "south guard post",
+              "findExact": "file cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "Flash Mine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_23",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "file cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_24",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "behind banner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_25",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_26",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "behind banner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_27",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_28",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "behind banner",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_29",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "Garrett's cell",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Prison Tract Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_30",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "cell blocks",
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_ashton-escape_item_31",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "east post",
+              "findExact": "on Watch sergeant",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_gearkey",
+          "name": "Bronson's Wheel",
+          "img": [
+            "IMG_GearKey_Bronze"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_32",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "safe",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Front Door Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_33",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "front desk",
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_gearkey",
+          "name": "Truart's Wheel",
+          "img": [
+            "IMG_GearKey_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_34",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "office",
+              "findExact": "behind painting",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_lantern",
+          "name": "Lantern",
+          "img": [
+            "IMG_Lantern_Alt1",
+            "IMG_Lantern_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_35",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "storage",
+              "findExact": "niche",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_36",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "passageways",
+              "findExact": "niches",
+              "findCount": [9,9,9]
+            },
+            {
+              "id": "fm_ashton-escape_item_37",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "dump pit",
+              "findExact": "niche",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_38",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "S guard post",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_39",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "N guard post",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_40",
+              "findSimple": "find",
+              "findArea": 30,
+              "findNarrow": "gatehouse 2F",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_41",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_42",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_frogbeastegg",
+          "name": "Frogbeast Egg",
+          "img": [
+            "IMG_FrogbeastEgg"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_43",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "south office",
+              "findExact": "locker 5",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_44",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "courtyard",
+              "findExact": "behind table",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_ashton-escape_item_45",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "south guard post",
+              "findExact": "file cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_46",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "north counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_ashton-escape_item_47",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_ashton-escape_item_48",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_49",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "living room",
+              "findExact": "near fireplace",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_50",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "north counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_51",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "north counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_52",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "north counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_53",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "dining table",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_ashton-escape_item_54",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "living room",
+              "findExact": "near fireplace",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-escape_item_55",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "north guard post",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_56",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_ashton-escape_item_57",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "north counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese",
+            "IMG_Cheese_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_58",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_ashton-escape_item_59",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_60",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_61",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "living room",
+              "findExact": "near fireplace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_62",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "N guard post",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_fish",
+          "name": "Sushi",
+          "img": [
+            "IMG_Sushi_Green"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_63",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "west post",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_64",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "north counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-escape_item_65",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "counter",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_ashton-escape_item_66",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "dining table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-escape_item_67",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "outdoor pond",
+              "findCount": [1,1,1],
+              "findRecipe": "x1 per killed fish",
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_chips",
+          "name": "Chips",
+          "img": [
+            "IMG_Chips"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_68",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "upper post",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_69",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_ashton-escape_item_70",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "south guard post",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_letter",
+          "name": "Letter",
+          "img": [
+            "IMG_Letter"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_71",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "Garrett's cell",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_crumpledpaper",
+          "name": "Crumpled Paper",
+          "img": [
+            "IMG_CrumpledPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_72",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "berth deck",
+              "findExact": "near ladder",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_73",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "middle counter",
+              "findExact": "by burricks",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_74",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "south office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_75",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "east table",
+              "findExact": "by male thief",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_76",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "west guard post",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_77",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "north office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_78",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_item_79",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "living room",
+              "findExact": "under piano seat",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Diary",
+          "img": [
+            "IMG_Book_Purple"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_80",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_teddybear",
+          "name": "Teddy Bear",
+          "img": [
+            "IMG_TeddyBear"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_81",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "bedroom",
+              "findExact": "bed",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_lootpurse",
+          "name": "Loot Purse",
+          "img": [
+            "IMG_Purse"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_item_82",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "outdoor pond",
+              "findExact": "Precursor chest",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_1",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "storeroom",
+              "findExact": "by large crate",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-escape_junk_2",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "berth deck",
+              "findExact": "by cargo hold door",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_3",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "shelves",
+              "findCount": [6,6,6]
+            }
+          ]
+        },
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_4",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "north counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_5",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_ashton-escape_junk_6",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "dining table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-escape_junk_7",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "living room",
+              "findExact": "near fireplace",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_mug",
+          "name": "Mug",
+          "img": [
+            "IMG_Mug"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_8",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "north office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_9",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "north guard post",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_10",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "west post",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_champagnebottle",
+          "name": "Champagne Bottle",
+          "img": [
+            "IMG_ChampagneBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_11",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_liquorbottle",
+          "name": "Liquor Bottle",
+          "img": [
+            "IMG_LiquorBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_12",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "west table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_13",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "west guard post",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_14",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-escape_junk_15",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "south office",
+              "findExact": "locker 1",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_16",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "living room",
+              "findExact": "piano",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_17",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "south guard post",
+              "findExact": "file cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_vodkabottle",
+          "name": "Vodka Bottle",
+          "img": [
+            "IMG_VodkaBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_18",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_19",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-escape_junk_20",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "south office",
+              "findExact": "locker 1",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_21",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "south office",
+              "findExact": "locker 6",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_22",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "south guard post",
+              "findExact": "file cabinet",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_23",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "north guard post",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_orangejuicebottle",
+          "name": "Orange Juice Bottle",
+          "img": [
+            "IMG_OrangeJuiceBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_24",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_25",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-escape_junk_26",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "south office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_27",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "file room",
+              "findExact": "file cabinet",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_28",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "south guard post",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_bucketofwater",
+          "name": "Bucket of Water",
+          "img": [
+            "IMG_BucketOfWater"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_29",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "near handcuffs",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-escape_junk_30",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "near oven",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_dress",
+          "name": "Dress",
+          "img": [
+            "IMG_Dress"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_31",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "junk_hairbrush",
+          "name": "Hair Brush",
+          "img": [
+            "IMG_HairBrush"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_32",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_handmirror",
+          "name": "Hand Mirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_33",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_spectacles",
+          "name": "Spectacles",
+          "img": [
+            "IMG_ReadingGlasses"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_34",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "east desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_pairofdice",
+          "name": "Pair of Dice",
+          "img": [
+            "IMG_PairOfDice"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_35",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "west table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_36",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_nautical",
+      "category": "Nautical Tools",
+      "catJunk": [
+        {
+          "id": "junk_navigatorscompass",
+          "name": "Navigator's Compass",
+          "img": [
+            "IMG_NavigatorsCompass"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_37",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "berth deck",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_sextant",
+          "name": "Sextant",
+          "img": [
+            "IMG_Sextant"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_38",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "berth deck",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_39",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "dump pit",
+              "findExact": "by female servant",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ribcage",
+          "name": "Ribcage",
+          "img": [
+            "IMG_Ribcage"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_40",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "dump pit",
+              "findExact": "by female Pagan",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_laboratoryequipment",
+          "name": "Laboratory Equipment",
+          "img": [
+            "IMG_LaboratoryEquipment"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_41",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_bunsenburner",
+          "name": "Bunsen Burner",
+          "img": [
+            "IMG_BunsenBurner"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_42",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_divinghelmet",
+          "name": "Diving Helmet",
+          "img": [
+            "IMG_DivingHelmet"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-escape_junk_43",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "berth deck",
+              "findExact": "between bunks",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_ashton-escape_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_ashton-escape_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 27,
+          "findNarrow": "office",
+          "findDiff": [1,1,1],
+          "method": "Frob the small painting north of the flowerpot"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardItem": "Truart's Wheel",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-escape_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_ashton-escape_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 27,
+          "findNarrow": "file room",
+          "findDiff": [1,1,1],
+          "method": "Pull the book on the fifth shelf"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardItem": "Water Crystal",
+          "findCount": [6,6,6]
+        },
+        {
+          "id": "sec_2_2",
+          "rewardItem": "Frogbeast Egg",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_3",
+          "rewardItem": "Sushi",
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_2_4",
+          "rewardItem": "Loot Purse",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-escape_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_ashton-escape_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 27,
+          "findNarrow": "living room",
+          "findDiff": [1,1,1],
+          "method": "Frob the angel statue on the mantelpiece"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardItem": "Papyrus",
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1885 @@
+{
+  "id": "t2_casing",
+  "title": "Casing the Joint",
+  "screens": [
+    "MIS_t2_casing_A",
+    "MIS_t2_casing_B"
+  ],
+  "goToPrev": "t2_kidnap",
+  "goToNext": "t2_masks",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [2455,0,230,0,2685],
+    [2455,0,230,0,2685],
+    [2455,0,230,0,2685]
+  ],
+  "lootCount": [73,73,73],
+  "lootChanges": [0,0,0],
+  "pocketCount": [9,9,9],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Garden"},
+    {"key": "3", "value": "Courtyard"},
+    {"key": "4", "value": "Manor of Clan Gervaisius 1F"},
+    {"key": "5", "value": "Chapel"},
+    {"key": "6", "value": "Priest's Quarters"},
+    {"key": "7", "value": "South Storage"},
+    {"key": "8", "value": "Gardener's Office"},
+    {"key": "9", "value": "Workshop"},
+    {"key": "10", "value": "Foreman Hobart's Office"},
+    {"key": "11", "value": "1F Southeast Hall"},
+    {"key": "12", "value": "Ballroom"},
+    {"key": "13", "value": "Main Foyer"},
+    {"key": "14", "value": "Northeast Staircase"},
+    {"key": "15", "value": "1F Northeast Hall"},
+    {"key": "16", "value": "Bathroom"},
+    {"key": "17", "value": "Servants' Quarters"},
+    {"key": "18", "value": "Kitchen"},
+    {"key": "19", "value": "1F North Control Room"},
+    {"key": "20", "value": "North Storage"},
+    {"key": "21", "value": "Manor of Clan Gervaisius 2F"},
+    {"key": "22", "value": "2F North Hall"},
+    {"key": "23", "value": "2F North Control Room"},
+    {"key": "24", "value": "Guest Room"},
+    {"key": "25", "value": "2F Northwest Hall"},
+    {"key": "26", "value": "Trophy Room"},
+    {"key": "27", "value": "Dining Room"},
+    {"key": "28", "value": "2F Northeast Hall"},
+    {"key": "29", "value": "Steward Duma's Office"},
+    {"key": "30", "value": "2F South Hall"},
+    {"key": "31", "value": "2F South Control Room"},
+    {"key": "32", "value": "Librarian's Office"},
+    {"key": "33", "value": "Sgt. Porter's Office"},
+    {"key": "34", "value": "Conservatory"},
+    {"key": "35", "value": "Bar"},
+    {"key": "36", "value": "Terrace"},
+    {"key": "37", "value": "Library"},
+    {"key": "38", "value": "2F Southeast Hall"},
+    {"key": "39", "value": "3F Southeast Hall"},
+    {"key": "40", "value": "Southeast Exhibition Room"},
+    {"key": "41", "value": "Southwest Exhibition Room"},
+    {"key": "42", "value": "North Exhibition Room"},
+    {"key": "43", "value": "Northwest Exhibition Room"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t2_casing_loot_1",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t2_casing_loot_2",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findExact": "table",
+              "findCount": [3,3,3],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_casing_loot_3",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "1F",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_4",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "2F",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_5",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findNarrow": "2F",
+              "findExact": "behind crate",
+              "findCount": [2,2,2],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t2_casing_loot_6",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "1F",
+              "findExact": "crate pile",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_7",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findNarrow": "1F",
+              "findExact": "behind sofa",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_8",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "1F",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t2_casing_loot_9",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "1F",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "150gold",
+          "value": [150,0,0,0],
+          "locations": [
+            {
+              "id": "t2_casing_loot_10",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "1F",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "t2_casing_loot_11",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findExact": "pool",
+              "findCount": [3,3,3],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_12",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findExact": "altar",
+              "findCount": [2,2,2],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_13",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findExact": "southeast window",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_14",
+              "findSimple": "findH",
+              "findArea": 6,
+              "findExact": "tables",
+              "findCount": [3,3,3],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_15",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findExact": "east plant stand",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_16",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "desk",
+              "findCount": [2,2,2],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_17",
+              "findSimple": "findH",
+              "findArea": 10,
+              "findNarrow": "control panel",
+              "findExact": "east railing",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_18",
+              "findSimple": "findH",
+              "findArea": 11,
+              "findNarrow": "south end",
+              "findExact": "south window",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_19",
+              "findSimple": "findH",
+              "findArea": 15,
+              "findNarrow": "guard post",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_20",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "sink",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_21",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findExact": "west railing",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_22",
+              "findSimple": "findM",
+              "findArea": 23,
+              "findExact": "behind east sofa",
+              "findCount": [1,1,1],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_23",
+              "findSimple": "findM",
+              "findArea": 23,
+              "findNarrow": "control panel",
+              "findExact": "east railing",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_24",
+              "findSimple": "findM",
+              "findArea": 24,
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_25",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findExact": "nightstand",
+              "findCount": [2,2,2],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_26",
+              "findSimple": "findH",
+              "findArea": 22,
+              "findNarrow": "west end",
+              "findExact": "north window",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_27",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findExact": "northwest corner table",
+              "findCount": [2,2,2],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_28",
+              "findSimple": "findM",
+              "findArea": 27,
+              "findExact": "northwest corner table",
+              "findCount": [2,2,2],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_29",
+              "findSimple": "findM",
+              "findArea": 28,
+              "findNarrow": "guard post",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_30",
+              "findSimple": "findM",
+              "findArea": 29,
+              "findExact": "desk",
+              "findCount": [2,2,2],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_31",
+              "findSimple": "findM",
+              "findArea": 31,
+              "findNarrow": "control panel",
+              "findExact": "east railing",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_32",
+              "findSimple": "findM",
+              "findArea": 32,
+              "findExact": "corner table",
+              "findCount": [3,3,3],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_33",
+              "findSimple": "findH",
+              "findArea": 33,
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_34",
+              "findSimple": "findM",
+              "findArea": 33,
+              "findExact": "by south low table",
+              "findCount": [1,1,1],
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_35",
+              "findSimple": "findH",
+              "findArea": 30,
+              "findNarrow": "west end",
+              "findExact": "watcher niche",
+              "findCount": [1,1,1],
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_36",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findExact": "northeast plant stand",
+              "findCount": [2,2,2],
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_37",
+              "findSimple": "findH",
+              "findArea": 35,
+              "findExact": "north counter",
+              "findCount": [2,2,2],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_38",
+              "findSimple": "findM",
+              "findArea": 35,
+              "findExact": "north window",
+              "findCount": [2,2,2],
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_39",
+              "findSimple": "findM",
+              "findArea": 37,
+              "findNarrow": "V-stacks",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_40",
+              "findSimple": "findM",
+              "findArea": 37,
+              "findNarrow": "near fireplace",
+              "findExact": "coffee table",
+              "findCount": [2,2,2],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_41",
+              "findSimple": "findE",
+              "findArea": 37,
+              "findNarrow": "near M-stacks",
+              "findExact": "pedestal",
+              "findCount": [2,2,2],
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t2_casing_loot_42",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "south door",
+              "findExact": "on green swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_43",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "north door",
+              "findExact": "on green swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_44",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "hallways",
+              "findExact": "on green swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_45",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "hallways",
+              "findExact": "on green swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_46",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "by front door",
+              "findExact": "on Sgt. Porter",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_47",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "ledge",
+              "findExact": "on green swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_48",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "hallways",
+              "findExact": "on green swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_49",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "hallways",
+              "findExact": "on green swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_casing_loot_50",
+              "findSimple": "findE",
+              "findArea": 36,
+              "findNarrow": "near doors",
+              "findExact": "on green swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "45gold",
+          "value": [45,0,0,0],
+          "locations": [
+            {
+              "id": "t2_casing_loot_51",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "t2_casing_loot_52",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findExact": "west shelf",
+              "findCount": [2,2,2],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [15,10,5],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_casing_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [15,15,15],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "t2_casing_item_5",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "2F",
+              "findExact": "footlocker",
+              "findCountBox": [11,11,11],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [15,15,15],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_casing_item_7",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,10,10],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [8,6,4],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_casing_item_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,5,5],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_vinearrow",
+          "name": "Vine Arrow",
+          "img": [
+            "IMG_VineArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_10",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,2,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_11",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_casing_item_12",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [6,3,3],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "t2_casing_item_13",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_14",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,0,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_casing_item_15",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [8,4,4],
+              "loadout": "store",
+              "price": 200
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "Flash Mine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_16",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storage",
+              "findExact": "hope chest",
+              "findCountBox": [4,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_17",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "east closet",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_18",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,0,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_casing_item_19",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_20",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,0,0],
+              "loadout": "store",
+              "price": 600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_21",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_22",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_23",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,10,10],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "t2_casing_item_24",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "1F",
+              "findExact": "footlocker",
+              "findCountBox": [5,5,5],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_25",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_26",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_casing_item_27",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_frogbeastegg",
+          "name": "Frogbeast Egg",
+          "img": [
+            "IMG_FrogbeastEgg"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_28",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [11,6,3],
+              "loadout": "store",
+              "price": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_29",
+              "findSimple": "find",
+              "findArea": 37,
+              "findNarrow": "M-stacks",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "find 5 clues about Giles's and Lorna's deaths"
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_30",
+              "findSimple": "find",
+              "findArea": 37,
+              "findNarrow": "M-stacks",
+              "findCount": [1,1,1],
+              "findRecipe": "find 5 clues about Giles's and Lorna's deaths"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_cuckoo",
+          "name": "Cuckoo",
+          "img": [
+            "IMG_Cuckoo"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_31",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "workbench",
+              "findExact": "toolbox",
+              "findObj": true,
+              "findCountBox": [1,0,0],
+              "findBox": true
+            },
+            {
+              "id": "t2_casing_item_32",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "north workbench",
+              "findExact": "toolbox",
+              "findObj": true,
+              "findCountBox": [0,0,1],
+              "findBox": true
+            },
+            {
+              "id": "t2_casing_item_33",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "mezzanine",
+              "findExact": "toolbox",
+              "findObj": true,
+              "findCountBox": [0,1,0],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_precursormask",
+          "name": "Precursor Mask",
+          "img": [
+            "IMG_PrecursorMask_Bare",
+            "IMG_PrecursorMask_Brass"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_item_34",
+              "findSimple": "find",
+              "findArea": 40,
+              "findNarrow": "middle pedestal",
+              "findExact": "mask stand",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_casing_item_35",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "middle pedestal",
+              "findExact": "mask stand",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_casing_item_36",
+              "findSimple": "find",
+              "findArea": 42,
+              "findNarrow": "middle pedestal",
+              "findExact": "mask stand",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_casing_item_37",
+              "findSimple": "find",
+              "findArea": 43,
+              "findNarrow": "middle pedestal",
+              "findExact": "mask stand",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_junk_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "by lean-to",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_casing_junk_2",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "1F",
+              "findExact": "near barrels",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_casing_junk_3",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "1F",
+              "findExact": "under stairs",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "t2_casing_junk_4",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "1F",
+              "findExact": "crate pile",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "t2_casing_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_t2_casing_01a",
+        "SEC_t2_casing_01b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 2,
+          "findNarrow": "lean-to",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch above the lean-to"
+        },
+        {
+          "id": "sec_1_b",
+          "findArea": 5,
+          "findNarrow": "closet",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch in the southeast corner"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardRoute": [
+            "the garden",
+            "the chapel"
+          ],
+          "findCount": [1,1,1]
+        }
+      ],
+      "findLink": [
+        {
+          "id": "t2_masks_sec_1"
+        }
+      ]
+    },
+    {
+      "id": "t2_casing_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_t2_casing_02a",
+        "SEC_t2_casing_02b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 8,
+          "findNarrow": "south wall",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch east of the banner"
+        },
+        {
+          "id": "sec_2_b",
+          "findArea": 9,
+          "findNarrow": "north wall",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch above the sofa"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardRoute": [
+            "the gardener's office",
+            "the workshop"
+          ],
+          "findCount": [1,1,1]
+        }
+      ],
+      "findLink": [
+        {
+          "id": "t2_masks_sec_2"
+        }
+      ]
+    },
+    {
+      "id": "t2_casing_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_t2_casing_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 14,
+          "findNarrow": "north pillar",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch on the base of the pillar"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardOther": "None",
+          "findCount": [1,1,1]
+        }
+      ],
+      "findLink": [
+        {
+          "id": "t2_masks_sec_3"
+        }
+      ]
+    },
+    {
+      "id": "t2_casing_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_t2_casing_04a",
+        "SEC_t2_casing_04b",
+        "SEC_t2_casing_04c",
+        "SEC_t2_casing_04d",
+        "SEC_t2_casing_04e"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 15,
+          "findNarrow": "near guard post",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch behind the banner"
+        },
+        {
+          "id": "sec_4_b",
+          "findArea": 16,
+          "findNarrow": "north wall",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch east of the tub"
+        },
+        {
+          "id": "sec_4_c",
+          "findArea": 17,
+          "findNarrow": "south closet",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch on the ceiling"
+        },
+        {
+          "id": "sec_4_d",
+          "findArea": 18,
+          "findNarrow": "south closet",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch on the ceiling"
+        },
+        {
+          "id": "sec_4_e",
+          "findArea": 19,
+          "findNarrow": "west archway",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch on the north side of the archway"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardRoute": [
+            "the 1st floor's northeast hall",
+            "the bathroom",
+            "the servants' quarters",
+            "the kitchen",
+            "the 1st floor's northwest hall"
+          ],
+          "findCount": [1,1,1]
+        }
+      ],
+      "findLink": [
+        {
+          "id": "t2_masks_sec_4"
+        }
+      ]
+    },
+    {
+      "id": "t2_casing_sec_5",
+      "number": 5,
+      "img": [
+        "SEC_t2_casing_05a",
+        "SEC_t2_casing_05b",
+        "SEC_t2_casing_05c",
+        "SEC_t2_casing_05d",
+        "SEC_t2_casing_05e"
+      ],
+      "triggers": [
+        {
+          "id": "sec_5_a",
+          "findArea": 25,
+          "findNarrow": "south archway",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch on the east side of the archway"
+        },
+        {
+          "id": "sec_5_b",
+          "findArea": 23,
+          "findNarrow": "east wall",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch in the southeast corner"
+        },
+        {
+          "id": "sec_5_c",
+          "findArea": 26,
+          "findNarrow": "northwest corner",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch behind the banner"
+        },
+        {
+          "id": "sec_5_d",
+          "findArea": 27,
+          "findNarrow": "closet",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the north switch on the ceiling"
+        },
+        {
+          "id": "sec_5_e",
+          "findArea": 22,
+          "findNarrow": "east end",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch in the watcher niche"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_5_1",
+          "rewardRoute": [
+            "the 2nd floor's northwest hall",
+            "the 2nd floor's north control room",
+            "the trophy room",
+            "the dining room",
+            "the 2nd floor's north hall"
+          ],
+          "findCount": [1,1,1]
+        }
+      ],
+      "findLink": [
+        {
+          "id": "t2_masks_sec_5"
+        }
+      ]
+    },
+    {
+      "id": "t2_casing_sec_6",
+      "number": 6,
+      "img": [
+        "SEC_t2_casing_06a",
+        "SEC_t2_casing_06b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_6_a",
+          "findArea": 26,
+          "findNarrow": "closet",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch on the ceiling"
+        },
+        {
+          "id": "sec_6_b",
+          "findArea": 27,
+          "findNarrow": "closet",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the south switch on the ceiling"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_6_1",
+          "rewardRoute": [
+            "the trophy room",
+            "the dining room"
+          ],
+          "findCount": [1,1,1]
+        }
+      ],
+      "findLink": [
+        {
+          "id": "t2_masks_sec_6"
+        }
+      ]
+    },
+    {
+      "id": "t2_casing_sec_7",
+      "number": 7,
+      "img": [
+        "SEC_t2_casing_07a",
+        "SEC_t2_casing_07b",
+        "SEC_t2_casing_07c",
+        "SEC_t2_casing_07d"
+      ],
+      "triggers": [
+        {
+          "id": "sec_7_a",
+          "findArea": 32,
+          "findNarrow": "middle closet",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch on the south wall"
+        },
+        {
+          "id": "sec_7_b",
+          "findArea": 34,
+          "findNarrow": "south wall",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch east of the armchair"
+        },
+        {
+          "id": "sec_7_c",
+          "findArea": 35,
+          "findNarrow": "near backstage",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch north of the lamp"
+        },
+        {
+          "id": "sec_7_d",
+          "findArea": 37,
+          "findNarrow": "near T-stacks",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch by the north pedestal"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_7_1",
+          "rewardRoute": [
+            "the librarian's office",
+            "the conservatory",
+            "the bar",
+            "the library"
+          ],
+          "findCount": [1,1,1]
+        }
+      ],
+      "findLink": [
+        {
+          "id": "t2_masks_sec_7"
+        }
+      ]
+    },
+    {
+      "id": "t2_casing_sec_8",
+      "number": 8,
+      "img": [
+        "SEC_t2_casing_08"
+      ],
+      "triggers": [
+        {
+          "id": "sec_8_a",
+          "findArea": 37,
+          "findNarrow": "P-stacks",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Pull the book in the northwest corner"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_8_1",
+          "rewardOther": "A clue about Giles's and Lorna's deaths",
+          "findCount": [1,1,1]
+        }
+      ],
+      "findLink": [
+        {
+          "id": "t2_masks_sec_8"
+        }
+      ]
+    },
+    {
+      "id": "t2_casing_sec_9",
+      "number": 9,
+      "img": [
+        "SEC_t2_casing_09a",
+        "SEC_t2_casing_09b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_9_a",
+          "findArea": 38,
+          "findNarrow": "cuckoo clock",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Insert the cuckoo and set the hands to 12:00"
+        },
+        {
+          "id": "sec_9_b",
+          "findArea": 39,
+          "findNarrow": "south end",
+          "findDiff": [1,1,1],
+          "findObj": true,
+          "method": "Flip the switch on the south wall"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_9_1",
+          "rewardRoute": [
+            "the 2nd floor's southeast hall",
+            "the 3rd floor's southeast hall"
+          ],
+          "findCount": [1,1,1]
+        }
+      ],
+      "findLink": [
+        {
+          "id": "t2_masks_sec_9"
+        }
+      ]
+    }
+  ]
+}

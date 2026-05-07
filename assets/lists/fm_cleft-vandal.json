@@ -1,0 +1,2971 @@
+{
+  "id": "fm_cleft-vandal",
+  "title": "Tales from the Cleft",
+  "subtitle": "Vandal",
+  "author": [
+    "auth_balboa"
+  ],
+  "screens": [
+    "MIS_fm_cleft-vandal_A",
+    "MIS_fm_cleft-vandal_B"
+  ],
+  "firstRelease": "February 2009",
+  "latestVersion": "1.1",
+  "goToNext": "fm_cleft-ladytaker",
+  "diffNames": ["Normal","Hard","Expert"],
+  "markObj": true,
+  "totals": [
+    [2706,390,1775,0,4871],
+    [2706,390,1775,0,4871],
+    [2706,390,1775,0,4871]
+  ],
+  "lootCount": [92,92,92],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [3000,4000,4750]
+  },
+  "pocketCount": [5,5,5],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Workshop"},
+    {"key": "3", "value": "Grounds"},
+    {"key": "4", "value": "Boathouse"},
+    {"key": "5", "value": "East Basement"},
+    {"key": "6", "value": "South Basement"},
+    {"key": "7", "value": "Kitchen"},
+    {"key": "8", "value": "West Basement"},
+    {"key": "9", "value": "Gallery"},
+    {"key": "10", "value": "Entrance Hall"},
+    {"key": "11", "value": "Office"},
+    {"key": "12", "value": "Library"},
+    {"key": "13", "value": "Dining Room"},
+    {"key": "14", "value": "Occult Room"},
+    {"key": "15", "value": "Southeast Terrace"},
+    {"key": "16", "value": "Guard Barracks"},
+    {"key": "17", "value": "Rupert's Bedroom"},
+    {"key": "18", "value": "Arboretum"},
+    {"key": "19", "value": "Guest Bedroom"},
+    {"key": "20", "value": "East Dressing Room"},
+    {"key": "21", "value": "East Attic"},
+    {"key": "22", "value": "Lord Robert's Bedroom"},
+    {"key": "23", "value": "2F East Bathroom"},
+    {"key": "24", "value": "Music Room"},
+    {"key": "25", "value": "Northeast Terrace"},
+    {"key": "26", "value": "2F North Closet"},
+    {"key": "27", "value": "North Attic"},
+    {"key": "28", "value": "Northwest Terrace"},
+    {"key": "29", "value": "Stephanie's Bedroom"},
+    {"key": "30", "value": "West Dressing Room"},
+    {"key": "31", "value": "West Attic"},
+    {"key": "32", "value": "Lucy's Bedroom"},
+    {"key": "33", "value": "2F West Bathroom"},
+    {"key": "34", "value": "Living Room"},
+    {"key": "35", "value": "North Basement"},
+    {"key": "36", "value": "South Attic"},
+    {"key": "37", "value": "Cook's Bedroom"},
+    {"key": "38", "value": "Underwater Tunnel"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_addoniziocrystal",
+      "name": "Addonizio Crystal",
+      "img": [
+        "IMG_AddonizioCrystal"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_1",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findExact": "dresser",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_brandyvial",
+      "name": "Brandy Vial",
+      "img": [
+        "IMG_HolyWaterVial"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_2",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "wine cellar",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_HolyWaterVial"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_3",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "locker room",
+              "findExact": "locker 3",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "17gold",
+          "value": [17,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_4",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "Dorcas's bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Demon"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_5",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "south wall",
+              "findExact": "by door",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_DecorativeMask_Demon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Gold",
+        "IMG_DecorativePlate_Aqua"
+      ],
+      "values": [
+        {
+          "id": "5goods",
+          "value": [0,0,5,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_6",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_DecorativePlate_Gold"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_7",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findNarrow": "south wall",
+              "findExact": "above beds",
+              "findCount": [2,2,2],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_DecorativePlate_Aqua"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_8",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "dining table",
+              "findCount": [1,1,1],
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_DecorativePlate_Gold"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_9",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "wine cellar",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_10",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findExact": "serving table",
+              "findCount": [1,1,1],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_11",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "dining table",
+              "findCount": [1,1,1],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_12",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findNarrow": "table",
+              "findExact": "behind potted plant",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_13",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldbook",
+      "name": "Gold Book",
+      "img": [
+        "IMG_GoldBook"
+      ],
+      "values": [
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_14",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findExact": "music stand",
+              "findCount": [1,1,1],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_GoldBook"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_15",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findExact": "music stand",
+              "findCount": [1,1,1],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_GoldBook"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_16",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "dining table",
+              "findCount": [3,3,3],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_17",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_18",
+              "findSimple": "findE",
+              "findArea": 32,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_19",
+              "findSimple": "findE",
+              "findArea": 34,
+              "findExact": "west table",
+              "findCount": [2,2,2],
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_20",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findExact": "square table",
+              "findCount": [1,1,1],
+              "orderNum": 60,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_21",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_22",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_23",
+              "findSimple": "findH",
+              "findArea": 4,
+              "findNarrow": "attic",
+              "findExact": "barrel",
+              "findCount": [1,1,1],
+              "orderNum": 65,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "Gold Dice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_24",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "locker room",
+              "findExact": "locker 1",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_25",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findExact": "dresser",
+              "findCount": [1,1,1],
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_26",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findExact": "serving table",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_27",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findExact": "by west chairs",
+              "findCount": [1,1,1],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_28",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_29",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findExact": "square table",
+              "findCount": [1,1,1],
+              "orderNum": 61,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_30",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 63,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_31",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findExact": "dining table",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_32",
+              "findSimple": "findE",
+              "findArea": 34,
+              "findExact": "west table",
+              "findCount": [1,1,1],
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "150gold",
+          "value": [150,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_33",
+              "findSimple": "findM",
+              "findArea": 27,
+              "findNarrow": "painting room",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_34",
+              "findSimple": "findE",
+              "findArea": 22,
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_35",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findExact": "square table",
+              "findCount": [1,1,1],
+              "orderNum": 59,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_36",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "east small table",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_37",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "vanity",
+              "findCount": [1,1,1],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_38",
+              "findSimple": "findE",
+              "findArea": 34,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_jeweledsword",
+      "name": "Jeweled Sword",
+      "img": [
+        "IMG_JeweledSword"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_39",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "sarcophagus",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_JeweledSword"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_40",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "locker room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_41",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mechaniststatuette",
+      "name": "Mechanist Statuette",
+      "img": [
+        "IMG_MechanistStatuette"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_42",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_navigationglobe",
+      "name": "Navigation Globe",
+      "img": [
+        "IMG_NavigationGlobe"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_43",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "stargazing room",
+              "findExact": "under table",
+              "findCount": [1,1,1],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_NavigationGlobe"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_44",
+              "findSimple": "findE",
+              "findArea": 32,
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_pocketwatch",
+      "name": "Pocket Watch",
+      "img": [
+        "IMG_PocketWatch"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_45",
+              "findSimple": "findH",
+              "findArea": 2,
+              "findNarrow": "rafters",
+              "findExact": "turbine",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_PocketWatch"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "5goods",
+          "value": [0,0,5,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_46",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findExact": "writing desk",
+              "findCount": [4,4,4],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorgem",
+      "name": "Precursor Gem",
+      "img": [
+        "IMG_PrecursorGem"
+      ],
+      "values": [
+        {
+          "id": "15gems",
+          "value": [0,15,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_47",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findExact": "Precursor chest",
+              "findCount": [1,1,1],
+              "orderNum": 64,
+              "orderImg": [
+                "IMG_PrecursorGem"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Pointed"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_48",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "winch",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_PrecursorJar_Small"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_49",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "vanity",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_PrecursorJar_Pointed"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursormask",
+      "name": "Precursor Mask",
+      "img": [
+        "IMG_PrecursorMask_Bare",
+        "IMG_PrecursorMask_Brass",
+        "IMG_PrecursorMask_Wood",
+        "IMG_PrecursorMask_Sun"
+      ],
+      "values": [
+        {
+          "id": "120goods",
+          "value": [0,0,120,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_50",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "pedestal",
+              "findExact": "mask stands",
+              "findCount": [2,2,2],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_PrecursorMask_Wood",
+                "IMG_PrecursorMask_Sun"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_51",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "pedestals",
+              "findExact": "mask stands",
+              "findCount": [2,2,2],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_PrecursorMask_Bare",
+                "IMG_PrecursorMask_Brass"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_52",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_53",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findExact": "north table",
+              "findCount": [1,1,1],
+              "orderNum": 62,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_54",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "attic",
+              "findExact": "east bedroll",
+              "findCount": [1,1,1],
+              "orderNum": 66,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_55",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "plate room",
+              "findExact": "west shelf",
+              "findCount": [3,3,3],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_56",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "west small table",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_57",
+              "findSimple": "findE",
+              "findArea": 22,
+              "findExact": "by nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_58",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findExact": "on Terrence",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "200gold50gems",
+          "value": [200,50,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_59",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "freezer",
+              "findCount": [1,1,1],
+              "findRecipe": "break north crate",
+              "orderNum": 67,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_60",
+              "findSimple": "findE",
+              "findArea": 22,
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_61",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_62",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_63",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findExact": "east bin",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_64",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_65",
+              "findSimple": "findE",
+              "findArea": 38,
+              "findExact": "floor",
+              "findCount": [6,6,6],
+              "orderNum": 68,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Muse"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_66",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "south table",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_Statuette_Muse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_vase",
+      "name": "Vase",
+      "img": [
+        "IMG_Vase"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_67",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_Vase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_winegoblet",
+      "name": "Wine Goblet",
+      "img": [
+        "IMG_WineGoblet"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_loot_68",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findExact": "serving table",
+              "findCount": [2,2,2],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_WineGoblet"
+              ]
+            },
+            {
+              "id": "fm_cleft-vandal_loot_69",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_WineGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [6,6,6],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_cleft-vandal_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [12,12,12],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "fm_cleft-vandal_item_5",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "on Joseph",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cleft-vandal_item_6",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "mezzanine",
+              "findExact": "on Ezra",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cleft-vandal_item_7",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "mezzanine",
+              "findExact": "on Eric",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_cleft-vandal_item_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [6,6,6],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_11",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_12",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "west bin",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-vandal_item_13",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "laundry room",
+              "findExact": "south sink",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_14",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "west bin",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_15",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "fm_cleft-vandal_item_16",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "guard post",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "fm_cleft-vandal_item_18",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "guard post",
+              "findExact": "on purple swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_cleft-vandal_item_19",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "medicine cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_breathpotion",
+          "name": "Breath Potion",
+          "img": [
+            "IMG_BreathPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_20",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "medicine cabinet",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_item_21",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "water pump room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_22",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_23",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Elevator Key",
+          "img": [
+            "IMG_Key_MX4"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_25",
+              "findSimple": "find",
+              "findArea": 29,
+              "findExact": "by east nightstand",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "take Stephanie's Diary"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Roof Key",
+          "img": [
+            "IMG_Key_MX1"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_26",
+              "findSimple": "find",
+              "findArea": 35,
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "findRecipe": "take Robert's Journal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_27",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "rafters",
+              "findExact": "toolbox",
+              "findCountBox": [6,6,6],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_28",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_29",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_tierope",
+          "name": "Tie Rope",
+          "img": [
+            "IMG_TieRope"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_30",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "dock",
+              "findExact": "by rowboat",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_31",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "northwest oven",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cleft-vandal_item_32",
+              "findSimple": "find",
+              "findArea": 28,
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_33",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "side room",
+              "findExact": "table",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_cleft-vandal_item_34",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "stove",
+              "findExact": "pot",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_35",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "exterior",
+              "findExact": "barrel",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-vandal_item_36",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "table",
+              "findExact": "bowl",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_37",
+              "findSimple": "find",
+              "findArea": 28,
+              "findExact": "dining table",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_letter",
+          "name": "Letter",
+          "img": [
+            "IMG_Letter"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_38",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_crumpledpaper",
+          "name": "Crumpled Paper",
+          "img": [
+            "IMG_CrumpledPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_39",
+              "findSimple": "find",
+              "findArea": 36,
+              "findExact": "fireplace",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_map",
+          "name": "Map",
+          "img": [
+            "IMG_Map_Vandal"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_40",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_41",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "desk",
+              "findExact": "paper tray",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_item_42",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "Dorcas's bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_43",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_item_44",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "safe",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_item_45",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_item_46",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_item_47",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "Carina's bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_cleft-vandal_item_48",
+              "findSimple": "find",
+              "findArea": 37,
+              "findExact": "under nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_49",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_cleft-vandal_item_50",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_item_51",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "locker room",
+              "findExact": "Benny's locker",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_item_52",
+              "findSimple": "find",
+              "findArea": 32,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_item_53",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "attic",
+              "findExact": "by north window",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Bart's Peerages",
+          "img": [
+            "IMG_Book_Vandal1"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_54",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Stephanie's Diary",
+          "img": [
+            "IMG_Book_Vandal2"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_55",
+              "findSimple": "find",
+              "findArea": 29,
+              "findExact": "by east nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Robert's Journal",
+          "img": [
+            "IMG_Book_Green"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_56",
+              "findSimple": "find",
+              "findArea": 35,
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_rarebook",
+          "name": "Rare Book",
+          "img": [
+            "IMG_RareBook_1",
+            "IMG_RareBook_2",
+            "IMG_RareBook_3",
+            "IMG_RareBook_4",
+            "IMG_RareBook_5"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_57",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "basement collection",
+              "findExact": "lecterns",
+              "findObj": true,
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "Dewdrop",
+          "img": [
+            "IMG_Dewdrop"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_58",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "laundry room",
+              "findExact": "washing machine",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_levers",
+      "category": "Levers and Knobs",
+      "catItems": [
+        {
+          "id": "item_valveknob",
+          "name": "Pipe Valve Knob",
+          "img": [
+            "IMG_ValveKnob"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_59",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "wine cellar",
+              "findExact": "under elevator",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_doorknob",
+          "name": "Broken Knob",
+          "img": [
+            "IMG_Doorknob"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_item_60",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "west river",
+              "findExact": "by south gate",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "winch",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_2",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "storage",
+              "findExact": "crate piles",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_3",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "by curtain",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_4",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "crate piles",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_5",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "storage",
+              "findExact": "central crate pile",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_6",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "freezer",
+              "findExact": "southwest corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_7",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "painting room",
+              "findExact": "by crib",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_8",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "crate piles",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_9",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "airlock",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_10",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "plate room",
+              "findExact": "west shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_11",
+              "findSimple": "find",
+              "findArea": 32,
+              "findExact": "vanity",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalplate",
+          "name": "Metal Plate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_12",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "plate room",
+              "findExact": "west shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_13",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "south table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_14",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "serving table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_15",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "by south chairs",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_16",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "servants' dining room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_17",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "plate room",
+              "findExact": "west shelf",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "Wooden Goblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_18",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "locker room",
+              "findExact": "table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_19",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "servants' dining room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_20",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "wine cellar",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_21",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "serving table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_22",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "serving table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_23",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "locker room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_24",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "wine cellar",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_25",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "medicine cabinet",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_26",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "serving table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_27",
+              "findSimple": "find",
+              "findArea": 33,
+              "findExact": "medicine cabinet",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_quicklimemixture",
+          "name": "Quicklime Mixture",
+          "img": [
+            "IMG_Mixture"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_28",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "wine cellar",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_hairbrush",
+          "name": "Hair Brush",
+          "img": [
+            "IMG_HairBrush"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_29",
+              "findSimple": "find",
+              "findArea": 30,
+              "findExact": "vanity",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_30",
+              "findSimple": "find",
+              "findArea": 32,
+              "findExact": "vanity",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_31",
+              "findSimple": "find",
+              "findArea": 35,
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_handmirror",
+          "name": "Hand Mirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_32",
+              "findSimple": "find",
+              "findArea": 30,
+              "findExact": "vanity",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_33",
+              "findSimple": "find",
+              "findArea": 35,
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_34",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_cleft-vandal_junk_35",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "attic",
+              "findExact": "by north window",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_36",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "locker room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-vandal_junk_37",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "locker room",
+              "findExact": "locker 3",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_pairofdice",
+          "name": "Pair of Dice",
+          "img": [
+            "IMG_PairOfDice"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_38",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_leafyplant",
+          "name": "Leafy Plant",
+          "img": [
+            "IMG_LeafyPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_39",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "railing",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_nautical",
+      "category": "Nautical Tools",
+      "catJunk": [
+        {
+          "id": "junk_chartcompass",
+          "name": "Chart Compass",
+          "img": [
+            "IMG_ChartCompass"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_40",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "stargazing room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_sextant",
+          "name": "Sextant",
+          "img": [
+            "IMG_Sextant"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_41",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "stargazing room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_42",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "coal room",
+              "findExact": "southwest corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_warhammer",
+          "name": "Warhammer",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_43",
+              "findSimple": "find",
+              "findArea": 36,
+              "findNarrow": "northwest bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "junk_smallhammer",
+          "name": "Small Hammer",
+          "img": [
+            "IMG_SmallHammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_44",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "wine cellar",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_statuefragment",
+          "name": "Statue Fragment",
+          "img": [
+            "IMG_StatueFragment_Head"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_45",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "mezzanine",
+              "findExact": "east pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_animals",
+      "category": "Animals",
+      "catJunk": [
+        {
+          "id": "junk_bugnest",
+          "name": "Bug Nest",
+          "img": [
+            "IMG_BugNest"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_46",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "mantelpiece",
+              "findExact": "terrarium",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_monkeyhead",
+          "name": "Monkey Head",
+          "img": [
+            "IMG_MonkeyHead"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-vandal_junk_47",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

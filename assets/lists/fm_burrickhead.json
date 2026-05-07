@@ -1,0 +1,2218 @@
+{
+  "id": "fm_burrickhead",
+  "title": "The Burrick's Head Inn",
+  "author": [
+    "auth_yandros"
+  ],
+  "screens": [
+    "MIS_fm_burrickhead_A",
+    "MIS_fm_burrickhead_B"
+  ],
+  "firstRelease": "January 2003",
+  "latestVersion": "2.0",
+  "contest": "con_komag4",
+  "diffNames": ["Easy","Normal","Hard"],
+  "markObj": true,
+  "totals": [
+    [2900,400,1155,0,4455],
+    [2900,400,1155,0,4455],
+    [2900,400,1155,0,4455]
+  ],
+  "lootCount": [106,106,106],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [3000,3500,4000]
+  },
+  "pocketCount": [4,4,4],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Lobby"},
+    {"key": "2", "value": "Innkeep's Quarters"},
+    {"key": "3", "value": "Basement"},
+    {"key": "4", "value": "Guest Room 2"},
+    {"key": "5", "value": "Guest Room 3"},
+    {"key": "6", "value": "Guest Room 5"},
+    {"key": "7", "value": "Guest Room 4"},
+    {"key": "8", "value": "Penthouse"},
+    {"key": "9", "value": "Courtyard"},
+    {"key": "10", "value": "Sewers"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coin",
+      "name": "Coin",
+      "img": [
+        "IMG_Coin"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_1",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "bedroom",
+              "findExact": "nightstand",
+              "findCount": [2,2,2],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_2",
+              "findSimple": "findH",
+              "findArea": 3,
+              "findExact": "west turbine",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_3",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findExact": "fountain",
+              "findCount": [7,7,7],
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Monster"
+      ],
+      "values": [
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_4",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "south table",
+              "findExact": "mask stand",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_DecorativeMask_Monster"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Pink",
+        "IMG_DecorativePlate_Red",
+        "IMG_DecorativePlate_Aqua"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_5",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "living room",
+              "findExact": "dining table",
+              "findCount": [4,4,4],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_DecorativePlate_Red"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_6",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "living room",
+              "findExact": "dining table",
+              "findCount": [3,3,3],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_DecorativePlate_Aqua"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_7",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "living room",
+              "findExact": "dining table",
+              "findCount": [3,3,3],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_DecorativePlate_Aqua"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_8",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "living room",
+              "findExact": "dining table",
+              "findCount": [4,4,4],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativevase",
+      "name": "Decorative Vase",
+      "img": [
+        "IMG_DecorativeVase_Neck"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_9",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "south table",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_DecorativeVase_Neck"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_10",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "bar",
+              "findExact": "under counter",
+              "findCount": [2,2,2],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_11",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "loft",
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_12",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [3,3,3],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "250gems",
+          "value": [0,250,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_13",
+              "findSimple": "findM",
+              "findArea": 8,
+              "findNarrow": "loft",
+              "findExact": "behind south painting",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "30gold",
+          "value": [30,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_14",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_15",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_16",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "living room",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_17",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "office",
+              "findExact": "desk",
+              "findCount": [3,3,3],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_18",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "living room",
+              "findExact": "northwest table",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_19",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "front desk",
+              "findExact": "under counter",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_20",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "bedroom",
+              "findExact": "writing desk",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_21",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "living room",
+              "findExact": "dining table",
+              "findCount": [6,6,6],
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_22",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [3,3,3],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_23",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "living room",
+              "findExact": "dining table",
+              "findCount": [6,6,6],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenbottle",
+      "name": "Green Bottle",
+      "img": [
+        "IMG_GreenBottle"
+      ],
+      "values": [
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_24",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "bar",
+              "findExact": "under counter",
+              "findCount": [3,3,3],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GreenBottle"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_25",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "front desk",
+              "findExact": "under counter",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_GreenBottle"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_26",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [3,3,3],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_GreenBottle"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_27",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_GreenBottle"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_28",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_GreenBottle"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_29",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_GreenBottle"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_30",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "nightstand",
+              "findCount": [2,2,2],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_GreenBottle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_31",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "loft",
+              "findExact": "north table",
+              "findCount": [2,2,2],
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_locket",
+      "name": "Locket",
+      "img": [
+        "IMG_Locket"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_32",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_Locket"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_33",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [4,4,4],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_34",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "living room",
+              "findExact": "northwest table",
+              "findCount": [2,2,2],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_35",
+              "findSimple": "findH",
+              "findArea": 10,
+              "findExact": "near east door",
+              "findCount": [1,1,1],
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "250gold",
+          "value": [250,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_36",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "front desk",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_pocketwatch",
+      "name": "Pocket Watch",
+      "img": [
+        "IMG_PocketWatch"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_37",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_PocketWatch"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_38",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "north table",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_39",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [2,2,2],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_40",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "loft",
+              "findExact": "coffee table",
+              "findCount": [2,2,2],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_41",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "loft",
+              "findExact": "north table",
+              "findCount": [1,1,1],
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_42",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "living room",
+              "findExact": "on Lord Fauntleroy",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_43",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findExact": "on Stewart Duncan",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "150gold",
+          "value": [150,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_44",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "bar",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "175gold",
+          "value": [175,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_45",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "closet",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "300gold",
+          "value": [300,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_46",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "office",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "500gold",
+          "value": [500,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_47",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_48",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "front desk",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverfirepoker",
+      "name": "Silver Fire Poker",
+      "img": [
+        "IMG_SilverFirePoker"
+      ],
+      "values": [
+        {
+          "id": "10gold",
+          "value": [10,0,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_49",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findExact": "fireplace",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_SilverFirePoker"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Monk",
+        "IMG_Statuette_Mage",
+        "IMG_Statuette_Muse"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_50",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_Statuette_Mage"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_51",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findExact": "behind broken table",
+              "findCount": [2,2,2],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_Statuette_Mage"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_52",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "bedroom",
+              "findExact": "writing desk",
+              "findCount": [1,1,1],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_Statuette_Monk"
+              ]
+            },
+            {
+              "id": "fm_burrickhead_loot_53",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "loft",
+              "findExact": "corner table",
+              "findCount": [1,1,1],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_Statuette_Muse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_burrickhead_loot_54",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "closet",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [10,10,10],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_burrickhead_item_4",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "closet",
+              "findExact": "footlocker",
+              "findCountBox": [5,5,5],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_7",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "behind painting",
+              "findCount": [2,2,2],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_8",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "behind painting",
+              "findCount": [2,2,2],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_9",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "behind painting",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_10",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "behind painting",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_11",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "behind painting",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_12",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_13",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Room 2 Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "front desk",
+              "findExact": "key rack",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Room 3 Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_15",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "front desk",
+              "findExact": "key rack",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Room 5 Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_16",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "front desk",
+              "findExact": "key rack",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Basement Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_17",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "bedroom",
+              "findExact": "behind painting",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Office Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_18",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "behind west turbine",
+              "findExact": "strongbox",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Room 4 Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_19",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "office",
+              "findExact": "key rack",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Back Door Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_20",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "living room",
+              "findExact": "on Geoffrey O'Brien",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Sewer Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_21",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "loft",
+              "findExact": "on Ravik",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Room 6 Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_22",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "loft",
+              "findExact": "on Abby Lingstrom",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_23",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_24",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Baguette",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_25",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_burrickhead_item_26",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "serving table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_27",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_burrickhead_item_28",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_burrickhead_item_29",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cabbage",
+          "name": "Green Cabbage",
+          "img": [
+            "IMG_Cabbage"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_30",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_burrickhead_item_31",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_32",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_burrickhead_item_33",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_34",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_burrickhead_item_35",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_burrickhead_item_36",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_burrickhead_item_37",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "table",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese",
+            "IMG_Cheese_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_38",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_burrickhead_item_39",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_burrickhead_item_40",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_burrickhead_item_41",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_burrickhead_item_42",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "serving table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Roast Mutton",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_43",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "serving table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_sausage",
+          "name": "Kielbasa",
+          "img": [
+            "IMG_Sausage"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_44",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_burrickhead_item_45",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "serving table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_crumpledpaper",
+          "name": "Crumpled Paper",
+          "img": [
+            "IMG_CrumpledPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_46",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "office",
+              "findExact": "wastebasket",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_47",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "office",
+              "findExact": "file cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_sapphire",
+          "name": "Angel's Tear",
+          "img": [
+            "IMG_LargeGemstone_Sapphire"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_item_48",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "loft",
+              "findExact": "behind south painting",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_junk_1",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_burrickhead_junk_2",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_junk_3",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_burrickhead_junk_4",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_burrickhead_junk_5",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_junk_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_burrickhead_junk_7",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_burrickhead_junk_8",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "living room",
+              "findExact": "dining table",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_burrickhead_junk_9",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "living room",
+              "findExact": "dining table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_burrickhead_junk_10",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "living room",
+              "findExact": "dining table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_burrickhead_junk_11",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "living room",
+              "findExact": "dining table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_burrickhead_junk_12",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_junk_13",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [7,7,7]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_junk_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "north table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_junk_15",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "living room",
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_burrickhead_junk_16",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "living room",
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_glasstools",
+          "name": "Glass Tools",
+          "img": [
+            "IMG_GlassTools"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_junk_17",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "office",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_scissors",
+          "name": "Shears",
+          "img": [
+            "IMG_Scissors"
+          ],
+          "locations": [
+            {
+              "id": "fm_burrickhead_junk_18",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "office",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_burrickhead_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_burrickhead_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 2,
+          "findNarrow": "living room",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever under the table by the sofa"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardOther": "None",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_burrickhead_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_burrickhead_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 3,
+          "findNarrow": "office",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch under the desk"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardLoot": "Purse",
+          "value": [300,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_burrickhead_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_burrickhead_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 7,
+          "findNarrow": "bedroom",
+          "findDiff": [1,1,1],
+          "method": "Push the small button by the window"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardItem": "Water Crystal",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_3_2",
+          "rewardItem": "Earth Crystal",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_3_3",
+          "rewardItem": "Air Crystal",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_4",
+          "rewardItem": "Healing Potion",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_5",
+          "rewardItem": "Slow-fall Potion",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_burrickhead_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_fm_burrickhead_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 8,
+          "findNarrow": "loft",
+          "findDiff": [1,1,1],
+          "method": "Push the small button above the desk"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardLoot": "Gem Ring",
+          "value": [0,150,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_4_2",
+          "rewardItem": "Angel's Tear",
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1846 @@
+{
+  "id": "t1_cragscleft",
+  "title": "Break from Cragscleft Prison",
+  "screens": [
+    "MIS_t1_cragscleft_A",
+    "MIS_t1_cragscleft_B"
+  ],
+  "goToPrev": "t1_bafford",
+  "goToNext": "t1_bonehoard",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [1553,385,0,0,1938],
+    [1353,385,0,0,1738],
+    [1153,385,150,0,1688]
+  ],
+  "lootCount": [29,27,27],
+  "lootChanges": [0,1,2],
+  "goal1": {
+    "total": [0,500,1000]
+  },
+  "pocketCount": [12,12,11],
+  "pocketChanges": [0,1,2],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Quarry"},
+    {"key": "3", "value": "Mine 2F"},
+    {"key": "4", "value": "Mine 1F"},
+    {"key": "5", "value": "Mine 3F"},
+    {"key": "6", "value": "Mine 4F"},
+    {"key": "7", "value": "Factory Level"},
+    {"key": "8", "value": "Factory"},
+    {"key": "9", "value": "Guard Stations"},
+    {"key": "10", "value": "Sewers"},
+    {"key": "11", "value": "Cragscleft Prison"},
+    {"key": "12", "value": "Cell Block 4"},
+    {"key": "13", "value": "Cell Block 3"},
+    {"key": "14", "value": "Cell Block 2"},
+    {"key": "15", "value": "Cell Block 1"},
+    {"key": "16", "value": "Barracks"},
+    {"key": "17", "value": "Cragscleft Shrine"},
+    {"key": "18", "value": "Officers' Quarters"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_1",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "south ledge",
+              "findExact": "by Nammon",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_2",
+              "findSimple": "findM",
+              "findArea": 18,
+              "findNarrow": "prayer room",
+              "findExact": "behind S banner",
+              "findCount": [0,0,3],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "35gems",
+          "value": [0,35,0,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_3",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "flooded tunnel",
+              "findExact": "near first corner",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_4",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "prayer room",
+              "findExact": "evidence box",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t1_cragscleft_loot_5",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "office",
+              "findExact": "evidence box",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_6",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "chapel",
+              "findExact": "collapsed wall",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "t1_cragscleft_loot_7",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findExact": "stained glass window",
+              "findCount": [2,2,2],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_8",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "south ledge",
+              "findExact": "by Nammon",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_9",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "chapel",
+              "findExact": "collapsed wall",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            },
+            {
+              "id": "t1_cragscleft_loot_10",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findExact": "pedestals",
+              "findCount": [2,2,2],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            },
+            {
+              "id": "t1_cragscleft_loot_11",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "chancel",
+              "findExact": "altar",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_12",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "northeast tunnel",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "t1_cragscleft_loot_13",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "east chasm",
+              "findExact": "east ledge",
+              "findCount": [1,0,0],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "t1_cragscleft_loot_14",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "south lake tunnel",
+              "findCount": [1,1,0],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "t1_cragscleft_loot_15",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "coal deposit",
+              "findExact": "upper cave",
+              "findCount": [2,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_16",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "prayer room",
+              "findExact": "evidence box",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_17",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "north bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_18",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "south ledge",
+              "findExact": "by Nammon",
+              "findCount": [4,4,4],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_19",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "northeast tunnel",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t1_cragscleft_loot_20",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "east chasm",
+              "findExact": "east ledge",
+              "findCount": [0,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t1_cragscleft_loot_21",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "south lake tunnel",
+              "findCount": [2,1,0],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t1_cragscleft_loot_22",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "coal deposit",
+              "findExact": "upper cave",
+              "findCount": [2,2,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "t1_cragscleft_loot_23",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "office",
+              "findExact": "evidence box",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [20,20,20],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_cragscleft_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [20,20,20],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "t1_cragscleft_item_5",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "center tunnel",
+              "findExact": "by table",
+              "findCount": [10,5,0]
+            },
+            {
+              "id": "t1_cragscleft_item_6",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "south bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [10,10,10],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_7",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [15,10,5],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_cragscleft_item_8",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [15,15,15],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_9",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [4,2,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_cragscleft_item_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_11",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [4,2,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_12",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "chapel",
+              "findExact": "by west font",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_item_13",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "south ledge",
+              "findExact": "by Nammon",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_cragscleft_item_14",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "north counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_15",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "track",
+              "findExact": "cave-in",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_cragscleft_item_16",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "south ledge",
+              "findExact": "by Nammon",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_17",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,0,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_cragscleft_item_18",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "t1_cragscleft_item_19",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "chapel",
+              "findExact": "behind SE pillar",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_item_20",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "near stairwell",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,0],
+              "findPick": true
+            },
+            {
+              "id": "t1_cragscleft_item_21",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "on Hammerite",
+              "findCountBox": [1,0,0],
+              "findPick": true
+            },
+            {
+              "id": "t1_cragscleft_item_22",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "prayer room",
+              "findExact": "evidence box",
+              "findCount": [1,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_23",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,2],
+              "findCountActual": [2,2,-1],
+              "loadout": "store",
+              "price": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_holywatervial",
+          "name": "Holy Water Vial",
+          "img": [
+            "IMG_HolyWaterVial"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_24",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "chapel",
+              "findExact": "by east font",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_item_25",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "chapel",
+              "findExact": "behind NW pillar",
+              "findCount": [2,1,1]
+            },
+            {
+              "id": "t1_cragscleft_item_26",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "chancel",
+              "findExact": "altar",
+              "findCount": [2,1,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_key",
+          "name": "Prison Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_27",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "by south station",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_cragscleft_item_28",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "south station",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_cragscleft_item_29",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "east station",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_cragscleft_item_30",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "west station",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_cragscleft_item_31",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "on Hammerite",
+              "findCountBox": [0,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_cragscleft_item_32",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "guard post",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_cragscleft_item_33",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "guard post",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_cragscleft_item_34",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "guard post",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_cragscleft_item_35",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "guard post",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Evidence Box Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_36",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "south ledge",
+              "findExact": "on Nammon",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_item_37",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "chancel",
+              "findExact": "on Hammerite priest",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_cragscleft_item_38",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "office",
+              "findExact": "desk drawer",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_cragscleft_item_39",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "office",
+              "findExact": "east bookshelf",
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "t1_cragscleft_item_40",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "exterior",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_41",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_42",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "mess hall",
+              "findExact": "west dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_item_43",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "south counter",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_44",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "south counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_45",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "south counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_46",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "south counter",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_47",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "south counter",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_48",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "north counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_49",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "office",
+              "findExact": "east bookshelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_50",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 100
+            },
+            {
+              "id": "t1_cragscleft_item_51",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 300
+            },
+            {
+              "id": "t1_cragscleft_item_52",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "south ledge",
+              "findExact": "by Nammon",
+              "findObj": true,
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "t1_cragscleft_item_53",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "office",
+              "findExact": "evidence box",
+              "findObj": true,
+              "findCount": [1,1,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_handofglory",
+          "name": "Hand of Glory",
+          "img": [
+            "IMG_HandOfGlory"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_item_54",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "cell 9",
+              "findExact": "by Issyt's skeleton",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_1",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "northeast tunnel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_2",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "center tunnel",
+              "findExact": "near sign",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_cragscleft_junk_3",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "near elevator shaft",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_4",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "west track",
+              "findExact": "south end",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_5",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "east chasm",
+              "findExact": "between transformers",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_6",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "west chasm",
+              "findExact": "near broken bridge",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_7",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "center tunnel",
+              "findExact": "by table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_cragscleft_junk_8",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "near freight elevator",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_cragscleft_junk_9",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "east storeroom",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_cragscleft_junk_10",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "east storeroom",
+              "findExact": "hall",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_cragscleft_junk_11",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "hammer storage",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_utensils",
+      "category": "Utensils",
+      "catJunk": [
+        {
+          "id": "junk_woodenspoon",
+          "name": "Wooden Spoon",
+          "img": [
+            "IMG_WoodenSpoon"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_12",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "south counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_knife",
+          "name": "Knife",
+          "img": [
+            "IMG_Knife"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_13",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "mess hall",
+              "findExact": "west dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_14",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "counters",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_cleaver",
+          "name": "Cleaver",
+          "img": [
+            "IMG_Cleaver"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_15",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "north counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_16",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "mess hall",
+              "findExact": "west dining table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_17",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "pedestals",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalplate",
+          "name": "Metal Plate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_18",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "mess hall",
+              "findExact": "west dining table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_19",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "mess hall",
+              "findExact": "west dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_20",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "prayer room",
+              "findExact": "behind S banner",
+              "findCount": [0,0,2]
+            },
+            {
+              "id": "t1_cragscleft_junk_21",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "office",
+              "findExact": "west bookshelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_22",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "mess hall",
+              "findExact": "west dining table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_saucepan",
+          "name": "Saucepan",
+          "img": [
+            "IMG_Saucepan"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_23",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "south counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_cookingpot",
+          "name": "Cooking Pot",
+          "img": [
+            "IMG_CookingPot"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_24",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "south counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_Flour",
+            "IMG_Canister_Sugar",
+            "IMG_Canister_Salt"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_25",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "kitchen",
+              "findExact": "north counter",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_26",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "near minecart",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_27",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "flooded tunnel",
+              "findExact": "first corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_28",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "east chasm",
+              "findExact": "near transformers",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_29",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "dead miners room",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_cragscleft_junk_30",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "south tunnel",
+              "findExact": "near barrels",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_cragscleft_junk_31",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "stairwell",
+              "findExact": "under stairs",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_32",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "coal deposit",
+              "findExact": "upper cave",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_pick",
+          "name": "Pick",
+          "img": [
+            "IMG_Pick"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_33",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "near minecart",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_34",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "flooded tunnel",
+              "findExact": "second corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_35",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "west chasm",
+              "findExact": "between bumpers",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_36",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "dead miners room",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_37",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "south tunnel",
+              "findExact": "near coal pile",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_38",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "south tunnel",
+              "findExact": "near barrels",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_39",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "stairwell",
+              "findExact": "under stairs",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_warhammer",
+          "name": "Warhammer",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_40",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "power station",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "t1_cragscleft_junk_41",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "east foundry",
+              "findCountRecipe": [-1,-1,-1],
+              "findRecipe": "from crucible"
+            },
+            {
+              "id": "t1_cragscleft_junk_42",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "south foundry",
+              "findCountRecipe": [-1,-1,-1],
+              "findRecipe": "from crucible"
+            },
+            {
+              "id": "t1_cragscleft_junk_43",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "west foundry",
+              "findCountRecipe": [-1,-1,-1],
+              "findRecipe": "from crucible"
+            },
+            {
+              "id": "t1_cragscleft_junk_44",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_45",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "near bumper",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_46",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "near minecart",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_47",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "underwater",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_48",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "flooded tunnel",
+              "findExact": "first corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_49",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "cell 2",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_cragscleft_junk_50",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "cell 9",
+              "findExact": "Issyt's skeleton",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ribcage",
+          "name": "Ribcage",
+          "img": [
+            "IMG_Ribcage"
+          ],
+          "locations": [
+            {
+              "id": "t1_cragscleft_junk_51",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "cell 2",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

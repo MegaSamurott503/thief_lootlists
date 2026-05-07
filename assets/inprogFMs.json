@@ -1,0 +1,96 @@
+{
+  "wipFMs": [
+    {
+      "id": "t0_test",
+      "name": "App Test",
+      "subName": "",
+      "game": "",
+      "year": "",
+      "authors": [
+        ""
+      ],
+      "protagonist": [
+        ""
+      ],
+      "campaign": "",
+      "contest": "",
+      "genres": [
+        ""
+      ],
+      "locations": [
+        ""
+      ],
+      "enemies": [
+        ""
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        ""
+      ]
+    },
+    {
+      "id": "t0_select",
+      "name": "Select Test",
+      "subName": "",
+      "game": "",
+      "year": "",
+      "authors": [
+        ""
+      ],
+      "protagonist": [
+        ""
+      ],
+      "campaign": "",
+      "contest": "",
+      "genres": [
+        ""
+      ],
+      "locations": [
+        ""
+      ],
+      "enemies": [
+        ""
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        ""
+      ]
+    },
+    {
+      "id": "t0_template12",
+      "name": "Template 1/2",
+      "subName": "",
+      "game": "",
+      "year": "",
+      "authors": [
+        ""
+      ],
+      "protagonist": [
+        ""
+      ],
+      "campaign": "",
+      "contest": "",
+      "genres": [
+        ""
+      ],
+      "locations": [
+        ""
+      ],
+      "enemies": [
+        ""
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        ""
+      ],
+      "imgAB": "",
+      "boxSize": ""
+    }
+  ]
+}

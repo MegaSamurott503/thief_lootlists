@@ -1,0 +1,1238 @@
+{
+  "id": "fm_maelstrom",
+  "title": "Into the Maelstrom",
+  "author": [
+    "auth_morrgan",
+    "auth_vigil"
+  ],
+  "screens": [
+    "MIS_fm_maelstrom_A",
+    "MIS_fm_maelstrom_B"
+  ],
+  "firstRelease": "February 2004",
+  "latestVersion": "1.0",
+  "contest": "con_komag5",
+  "diffNames": ["Normal","Hard","Expert"],
+  "markObj": true,
+  "totals": [
+    [565,225,555,0,1345],
+    [565,225,555,0,1345],
+    [565,225,555,0,1345]
+  ],
+  "lootCount": [24,24,24],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [600,850,850]
+  },
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Inigo"},
+    {"key": "2", "value": "Cave"},
+    {"key": "3", "value": "Maelstrom"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Demon"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_1",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "Assizi's cabin",
+              "findExact": "above bed",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_DecorativeMask_Demon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_2",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "Cpt. Tomlin's cabin",
+              "findExact": "behind bed",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_3",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "northeast area",
+              "findExact": "Assizi's skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_4",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "berth deck",
+              "findExact": "sea chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_5",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "Cpt. Marrik's cabin",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "Gold Dice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_6",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "crew cabins",
+              "findExact": "by southeast bunk",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_7",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "hold",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_jeweleddagger",
+      "name": "Jeweled Dagger",
+      "img": [
+        "IMG_JeweledDagger"
+      ],
+      "values": [
+        {
+          "id": "40gold25gems",
+          "value": [40,25,0,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_8",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "hold",
+              "findExact": "by skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_9",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "northeast area",
+              "findExact": "cave-in",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_10",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "northeast area",
+              "findExact": "cave-in",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Tall"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_11",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "Assizi's cabin",
+              "findExact": "under shelf",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_12",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "Maelstrom bow",
+              "findExact": "by footlocker",
+              "findCount": [2,2,2],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_13",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "northeast area",
+              "findExact": "cave-in",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_14",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "poop deck",
+              "findExact": "on Tenny",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_readingglasses",
+      "name": "Reading Glasses",
+      "img": [
+        "IMG_ReadingGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_15",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "poop deck",
+              "findExact": "by Christopher",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_ReadingGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_16",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "main hold",
+              "findExact": "hidden stash",
+              "findCount": [4,4,4],
+              "findSecret": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            },
+            {
+              "id": "fm_maelstrom_loot_17",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "Assizi's cabin",
+              "findExact": "north shelf",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Monk",
+        "IMG_Statuette_Nun"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_maelstrom_loot_18",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "Cpt. Marrik's cabin",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_Statuette_Monk"
+              ]
+            },
+            {
+              "id": "fm_maelstrom_loot_19",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "Cpt. Marrik's cabin",
+              "findExact": "by bed",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_Statuette_Nun"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_1",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "Cpt. Tomlin's cabin",
+              "findExact": "sea chest",
+              "findCountB": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_2",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "workshop",
+              "findExact": "by west shelf",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_3",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Cpt. Marrik's cabin",
+              "findExact": "SE corner",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "workshop",
+              "findExact": "pail",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_5",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Assizi's cabin",
+              "findExact": "blue chest",
+              "findCountBox": [2,2,2],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_6",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "between ships",
+              "findExact": "vine",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_maelstrom_item_7",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "southwest area",
+              "findExact": "hanging grass",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_8",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "crew cabins",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "crew cabins",
+              "findExact": "by northeast bunk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_10",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Assizi's cabin",
+              "findExact": "bookshelf",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_11",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_12",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_moonblackcandle",
+          "name": "Moonblack Candle",
+          "img": [
+            "IMG_MoonblackCandle"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_13",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Assizi's cabin",
+              "findExact": "southwest shelf",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "crew cabins",
+              "findExact": "footlocker",
+              "findCountBox": [4,4,4],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_magical",
+      "category": "Magical Tools",
+      "catItems": [
+        {
+          "id": "item_staffofassizi",
+          "name": "Staff of Assizi",
+          "img": [
+            "IMG_StaffOfAssizi"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_15",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "northeast area",
+              "findExact": "by Assizi's skeleton",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_16",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "precious cargo hold",
+              "findExact": "large crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_18",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "precious cargo hold",
+              "findExact": "large crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_19",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Assizi's cabin",
+              "findExact": "shelves",
+              "findCount": [2,2,2],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_20",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Assizi's cabin",
+              "findExact": "behind bed",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_precursortapestry",
+          "name": "Navigation Charts",
+          "img": [
+            "IMG_PrecursorTapestry"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_item_21",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "northwest area",
+              "findExact": "by Cpt. Tomlin",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_junk_1",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "Cpt. Tomlin's cabin",
+              "findExact": "behind bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_junk_2",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "precious cargo hold",
+              "findExact": "large crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_nautical",
+      "category": "Nautical Tools",
+      "catJunk": [
+        {
+          "id": "junk_rowboat",
+          "name": "Rowboat",
+          "img": [
+            "IMG_Rowboat"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_junk_3",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "forecastle deck",
+              "findExact": "by mast",
+              "findObj": true,
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_anchor",
+          "name": "Anchor",
+          "img": [
+            "IMG_Anchor"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_junk_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "forecastle deck",
+              "findExact": "by trapdoor",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_chartcompass",
+          "name": "Chart Compass",
+          "img": [
+            "IMG_ChartCompass"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_junk_5",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "Cpt. Tomlin's cabin",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_sextant",
+          "name": "Sextant",
+          "img": [
+            "IMG_Sextant"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_junk_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "poop deck",
+              "findExact": "by wheel",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_maelstrom_junk_7",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "northeast area",
+              "findExact": "Assizi's skeleton",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_maelstrom_junk_8",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "southwest area",
+              "findExact": "by skeleton",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_maelstrom_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_maelstrom_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 1,
+          "findNarrow": "main hold",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch at the north end of the crate shelf"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "Spice Bag",
+          "value": [0,0,40,0],
+          "findCount": [4,4,4]
+        }
+      ]
+    },
+    {
+      "id": "fm_maelstrom_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_maelstrom_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 2,
+          "findNarrow": "northeast area",
+          "findDiff": [1,1,1],
+          "method": "Shoot a rope arrow at the support beams"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardLoot": "Purse",
+          "value": [50,0,0,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_2_2",
+          "rewardLoot": "Necklace",
+          "value": [100,100,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_3",
+          "rewardLoot": "Precursor Canopic Jar",
+          "value": [0,0,75,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_maelstrom_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_maelstrom_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 3,
+          "findNarrow": "hold",
+          "findDiff": [1,1,1],
+          "method": "Approach the glyph with the Staff of Assizi"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardLoot": "Precursor Jar",
+          "value": [0,0,20,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_2",
+          "rewardLoot": "Spice Bag",
+          "value": [0,0,40,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_3",
+          "rewardLoot": "Decorative Mask",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_4",
+          "rewardItem": "Fire Crystal",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_3_5",
+          "rewardItem": "Invisibility Potion",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_6",
+          "rewardItem": "Moonblack Candle",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_7",
+          "rewardItem": "Scroll",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_3_8",
+          "rewardItem": "Papyrus",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_9",
+          "rewardHint": [
+            "how to end Assizi's curse"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_10",
+          "rewardBonus": true,
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

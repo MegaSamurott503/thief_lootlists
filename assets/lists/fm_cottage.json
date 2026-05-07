@@ -1,0 +1,602 @@
+{
+  "id": "fm_cottage",
+  "title": "Rose Cottage",
+  "author": [
+    "auth_saturnine"
+  ],
+  "screens": [
+    "MIS_fm_cottage_A",
+    "MIS_fm_cottage_B"
+  ],
+  "firstRelease": "October 2009",
+  "latestVersion": "1.0",
+  "diffNames": ["Normal","Hard","Expert"],
+  "markObj": true,
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Conservatory"},
+    {"key": "2", "value": "Dining Room"},
+    {"key": "3", "value": "Library"},
+    {"key": "4", "value": "Thomas Blackwood's Bedroom"},
+    {"key": "5", "value": "Study"},
+    {"key": "6", "value": "Guest Bedroom"},
+    {"key": "7", "value": "Caitlin's Bedroom"},
+    {"key": "8", "value": "Bathroom"},
+    {"key": "9", "value": "Veranda Roof"},
+    {"key": "10", "value": "Chapel"},
+    {"key": "11", "value": "Morgue"},
+    {"key": "12", "value": "Crematorium"},
+    {"key": "13", "value": "Attic"},
+    {"key": "14", "value": "Kitchen"},
+    {"key": "15", "value": "Fountain"},
+    {"key": "16", "value": "West Crypt"},
+    {"key": "17", "value": "Wine Cellar"},
+    {"key": "18", "value": "Cemetery"},
+    {"key": "19", "value": "Collapsing Tunnel"},
+    {"key": "20", "value": "Circular Crypt"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "items": [
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_hairpin",
+          "name": "Hairpin",
+          "img": [
+            "IMG_Hairpin"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_1",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "sink",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Mansion Key",
+          "img": [
+            "IMG_Key_RC_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_2",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Loft Key",
+          "img": [
+            "IMG_Key_RC_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_3",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Chapel Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_4",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "near south window",
+              "findExact": "small table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Wine Cellar Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_5",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "behind shelf",
+              "findExact": "box",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Kitchen Key",
+          "img": [
+            "IMG_Key_RC_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_6",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "south cabinet",
+              "findExact": "under cup rack",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Cemetery Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_7",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "hidden room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_uvlamp",
+          "name": "UV Lamp",
+          "img": [
+            "IMG_UVLamp"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_8",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "window",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_firstaidkit",
+          "name": "First Aid Kit",
+          "img": [
+            "IMG_FirstAidKit"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_9",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_cottage_item_10",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "office",
+              "findExact": "tool cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_crowbar",
+          "name": "Crowbar",
+          "img": [
+            "IMG_Crowbar"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_11",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "east wall",
+              "findExact": "center shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_12",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "dining table",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_13",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "dining table",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_14",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_cottage_item_15",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "hidden room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_personal",
+      "category": "Personal Items",
+      "catItems": [
+        {
+          "id": "item_tshirt",
+          "name": "Halloween Egg",
+          "img": [
+            "IMG_TShirt"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_16",
+              "findSimple": "find",
+              "findArea": 18,
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "use Shovel on marked grave",
+              "findEaster": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_tarotcard",
+          "name": "Tarot Card",
+          "img": [
+            "IMG_TarotCard_01",
+            "IMG_TarotCard_02",
+            "IMG_TarotCard_03",
+            "IMG_TarotCard_04",
+            "IMG_TarotCard_05",
+            "IMG_TarotCard_06",
+            "IMG_TarotCard_07",
+            "IMG_TarotCard_08",
+            "IMG_TarotCard_09",
+            "IMG_TarotCard_10",
+            "IMG_TarotCard_11",
+            "IMG_TarotCard_12",
+            "IMG_TarotCard_13",
+            "IMG_TarotCard_14",
+            "IMG_TarotCard_15",
+            "IMG_TarotCard_16",
+            "IMG_TarotCard_17",
+            "IMG_TarotCard_18",
+            "IMG_TarotCard_19",
+            "IMG_TarotCard_20"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "ledge",
+              "findExact": "under northwest flowerpot",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_18",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "south doorway",
+              "findExact": "under rug",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_19",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "model ship",
+              "findExact": "north side",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_20",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "south-southeast bookcase",
+              "findExact": "fifth shelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_21",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "west wall",
+              "findExact": "behind photo",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_22",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "pull string",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_23",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "easel",
+              "findExact": "behind canvas",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_24",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "toilet tank",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_25",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "autopsy room",
+              "findExact": "west scale",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_26",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "rafters",
+              "findExact": "above furnace",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_27",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "triple window",
+              "findExact": "behind east shutter",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_28",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "dollhouse",
+              "findExact": "behind front doors",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_29",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "behind shelf",
+              "findExact": "under box",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_30",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "behind southwest cabinet",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_31",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "drain",
+              "findExact": "above doorway",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_32",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "stairwell",
+              "findExact": "hourglass",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_33",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "under open coffin",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_34",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "2F",
+              "findExact": "south casket niche",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_35",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "2F",
+              "findExact": "central platform",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cottage_item_36",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "north window",
+              "findExact": "above coffins",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_planchette",
+          "name": "Planchette",
+          "img": [
+            "IMG_Planchette"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_37",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_digging",
+      "category": "Digging Tools",
+      "catItems": [
+        {
+          "id": "item_shovel",
+          "name": "Shovel",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_38",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "under furnace",
+              "findExact": "ash pile",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_battery",
+          "name": "Battery",
+          "img": [
+            "IMG_Battery"
+          ],
+          "locations": [
+            {
+              "id": "fm_cottage_item_39",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "staircase",
+              "findExact": "niche",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

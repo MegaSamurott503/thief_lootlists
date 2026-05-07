@@ -1,0 +1,1737 @@
+{
+  "id": "t1_escape",
+  "title": "Escape!",
+  "screens": [
+    "MIS_t1_escape_A",
+    "MIS_t1_escape_B"
+  ],
+  "goToPrev": "t1_return",
+  "goToNext": "t1_bedfellows",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [1250,600,130,0,1980],
+    [1250,600,130,0,1980],
+    [1250,600,130,0,1980]
+  ],
+  "lootCount": [28,28,28],
+  "lootChanges": [0,1,2],
+  "carryLoot": true,
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Garden Chapel"},
+    {"key": "2", "value": "Entrance Chamber"},
+    {"key": "3", "value": "North Beast Caves"},
+    {"key": "4", "value": "North Spider Caves"},
+    {"key": "5", "value": "North Treehouse Chamber"},
+    {"key": "6", "value": "Central Beast Caves"},
+    {"key": "7", "value": "South Spider Caves"},
+    {"key": "8", "value": "South Beast Caves"},
+    {"key": "9", "value": "Central Treehouse Chamber"},
+    {"key": "10", "value": "Fire Chamber"},
+    {"key": "11", "value": "South Treehouse Chamber"},
+    {"key": "12", "value": "Basement"},
+    {"key": "13", "value": "East Staircase"},
+    {"key": "14", "value": "1F East Hall"},
+    {"key": "15", "value": "East Waiting Room"},
+    {"key": "16", "value": "Front Guard Post"},
+    {"key": "17", "value": "Bar"},
+    {"key": "18", "value": "Grand Staircase"},
+    {"key": "19", "value": "Dining Room"},
+    {"key": "20", "value": "Kitchen"},
+    {"key": "21", "value": "1F West Hall"},
+    {"key": "22", "value": "West Staircase"},
+    {"key": "23", "value": "West Waiting Room"},
+    {"key": "24", "value": "West Guard Barracks"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_escape_loot_1",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findExact": "wine shelf",
+              "findCount": [2,2,2],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "t1_escape_loot_2",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "upper tunnel",
+              "findExact": "near 3rd opening",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_3",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "central tunnel",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_4",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findExact": "steps",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_5",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findExact": "under dining table",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_6",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "northwest dead-end",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_7",
+              "findSimple": "findE",
+              "findArea": 22,
+              "findNarrow": "2F landing",
+              "findExact": "behind tree",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_escape_loot_8",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "niche",
+              "findExact": "skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_9",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "NW tunnel",
+              "findExact": "near bone piles",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_10",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "east spider den",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_11",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "northeast spider den",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_12",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "2F landing",
+              "findExact": "near tree",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_13",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "tower",
+              "findExact": "2F",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_escape_loot_14",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findExact": "behind counter",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "t1_escape_loot_15",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findExact": "behind wine shelf",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_16",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findExact": "wine shelf",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_escape_loot_17",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "north chamber",
+              "findExact": "by bones",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "carryover",
+          "value": [0,0,0,0],
+          "carryValue": [-1,0,0,0],
+          "locations": [
+            {
+              "id": "t1_escape_loot_18",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findExact": "behind altar",
+              "findCount": [1,0,0],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_19",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "by ritual star",
+              "findCount": [0,1,0],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_20",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "1F",
+              "findExact": "tile floor",
+              "findCount": [0,0,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t1_escape_loot_21",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "treehouse",
+              "findExact": "near table",
+              "findCount": [3,3,3],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_22",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "south tunnel",
+              "findExact": "southwest exit",
+              "findCount": [2,2,2],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_23",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "under southeast spider den",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_24",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "near east crevice",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t1_escape_loot_25",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findExact": "by bedrolls",
+              "findCount": [2,2,2],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_constantinessword",
+          "name": "Constantine's Sword",
+          "img": [
+            "IMG_ConstantinesSword"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_2",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "behind altar",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_3",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "niche",
+              "findCount": [20,12,6]
+            },
+            {
+              "id": "t1_escape_item_4",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "treehouse",
+              "findExact": "near table",
+              "findCount": [5,5,0]
+            },
+            {
+              "id": "t1_escape_item_5",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north chamber",
+              "findExact": "by bones",
+              "findCount": [9,0,0]
+            },
+            {
+              "id": "t1_escape_item_6",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "treehouse",
+              "findExact": "near table",
+              "findCount": [10,10,10]
+            },
+            {
+              "id": "t1_escape_item_7",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "treehouse",
+              "findExact": "near gargoyle",
+              "findCount": [18,18,0]
+            },
+            {
+              "id": "t1_escape_item_8",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "near spider caves",
+              "findExact": "metal floor",
+              "findCount": [10,10,10]
+            },
+            {
+              "id": "t1_escape_item_9",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "closet room",
+              "findExact": "closet 3",
+              "findCount": [6,6,6]
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "behind altar",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_escape_item_11",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "treehouse",
+              "findExact": "near bush",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_12",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "treehouse",
+              "findCount": [2,2,0]
+            },
+            {
+              "id": "t1_escape_item_13",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "south exit",
+              "findCount": [3,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "behind altar",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_escape_item_15",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "niche",
+              "findCount": [2,1,2]
+            },
+            {
+              "id": "t1_escape_item_16",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "treehouse",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_17",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "treehouse",
+              "findExact": "near gargoyle",
+              "findCount": [0,0,2]
+            },
+            {
+              "id": "t1_escape_item_18",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "green carpet hall",
+              "findExact": "dead-end",
+              "findCount": [0,2,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_19",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "upper level",
+              "findExact": "railing",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_escape_item_20",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "south ramp",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_escape_item_21",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "upper tunnel",
+              "findExact": "by 2nd opening",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_22",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "northeast tunnel",
+              "findExact": "wall pool",
+              "findCount": [5,4,2]
+            },
+            {
+              "id": "t1_escape_item_23",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "northwest tunnel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_24",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "west spider den",
+              "findCount": [2,1,1]
+            },
+            {
+              "id": "t1_escape_item_25",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "east spider den",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_26",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "south tunnel",
+              "findExact": "wall pool",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_escape_item_27",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "tree chamber",
+              "findExact": "by tree",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_escape_item_28",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "tree chamber",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_29",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "south tunnel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_30",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "southeast spider den",
+              "findCount": [2,1,1]
+            },
+            {
+              "id": "t1_escape_item_31",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north chamber",
+              "findExact": "wall pool",
+              "findCount": [4,3,2]
+            },
+            {
+              "id": "t1_escape_item_32",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "north ledge",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_escape_item_33",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "central tunnel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_34",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "near spider caves",
+              "findExact": "metal floor",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_35",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "sinks",
+              "findCount": [2,2,0]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_36",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "stairway",
+              "findExact": "south fire",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_escape_item_37",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "north ramp",
+              "findExact": "fire",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_38",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "tree chamber",
+              "findExact": "by tree",
+              "findCount": [2,1,1]
+            },
+            {
+              "id": "t1_escape_item_39",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "south spider den",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_40",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "ritual star",
+              "findExact": "fires",
+              "findCount": [2,2,1]
+            },
+            {
+              "id": "t1_escape_item_41",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "barrel room",
+              "findExact": "behind powderkegs",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_escape_item_42",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "alcove",
+              "findCount": [2,1,1]
+            },
+            {
+              "id": "t1_escape_item_43",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "2F",
+              "findExact": "east doorway",
+              "findCount": [2,1,0]
+            },
+            {
+              "id": "t1_escape_item_44",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "dining table",
+              "findCount": [1,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_45",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "stairway",
+              "findExact": "by gargoyle",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_escape_item_46",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "south exit",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_escape_item_47",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "north ramp",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_48",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "upper tunnel",
+              "findExact": "1st opening",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_escape_item_49",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "central tunnel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_50",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "north tunnel",
+              "findExact": "upper ledge",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_51",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "south tunnel",
+              "findExact": "near skeleton",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_52",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "central tunnel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_53",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "south tunnel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_54",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "central tunnel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_55",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north chamber",
+              "findExact": "southwest exit",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_56",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "by tree",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_57",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "south tunnel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_58",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "green carpet hall",
+              "findExact": "near dead-end",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_59",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "near bar",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_60",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "1F landing",
+              "findCount": [2,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_61",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "near double doors",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_escape_item_62",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "near niche",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_63",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "north chamber",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_escape_item_64",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "treehouse",
+              "findCount": [3,2,1]
+            },
+            {
+              "id": "t1_escape_item_65",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "south tunnel",
+              "findExact": "near tree",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_escape_item_66",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "near south ledge",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_67",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "near north tree",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_escape_item_68",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "near window",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_escape_item_69",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "2F",
+              "findExact": "near skylight",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_70",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "by altar",
+              "findCount": [2,0,0]
+            },
+            {
+              "id": "t1_escape_item_71",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "niche",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_escape_item_72",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "treehouse",
+              "findCount": [1,2,1]
+            },
+            {
+              "id": "t1_escape_item_73",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "treehouse",
+              "findExact": "near gargoyle",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_74",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "treehouse",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_75",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "niche",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_76",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "treehouse",
+              "findExact": "by bush",
+              "findCount": [2,2,1]
+            },
+            {
+              "id": "t1_escape_item_77",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "treehouse",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_escape_item_78",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "treehouse",
+              "findExact": "under table",
+              "findCount": [2,0,1]
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_79",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "niche",
+              "findCount": [3,2,2]
+            },
+            {
+              "id": "t1_escape_item_80",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "treehouse",
+              "findExact": "near chair",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_escape_item_81",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "treehouse",
+              "findExact": "near gargoyle",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_escape_item_82",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "treehouse",
+              "findExact": "by rubble",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_83",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "niche",
+              "findCount": [1,0,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_84",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_85",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_86",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_item_87",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "upper level",
+              "findExact": "wall relief",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_escape_item_88",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "north chamber",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_89",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "near tree",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_escape_item_90",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "tree chamber",
+              "findExact": "by tree",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_91",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "tree chamber",
+              "findExact": "by tree",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_92",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "treehouse ledge",
+              "findExact": "north side",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_escape_item_93",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "near tree",
+              "findCount": [3,2,1]
+            },
+            {
+              "id": "t1_escape_item_94",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "by north tree",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_escape_item_95",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "near tree",
+              "findCount": [3,2,2]
+            },
+            {
+              "id": "t1_escape_item_96",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "barrel room",
+              "findExact": "between powderkegs",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_97",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "brown carpet hall",
+              "findExact": "behind barrels",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_98",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "1F landing",
+              "findExact": "under tree",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_99",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_100",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "2F",
+              "findExact": "west grass patch",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_101",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "near north counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_item_102",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "2F landing",
+              "findExact": "near tree",
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_junk_1",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "near void room",
+              "findCount": [7,7,7]
+            },
+            {
+              "id": "t1_escape_junk_2",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "closet room",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_utensils",
+      "category": "Utensils",
+      "catJunk": [
+        {
+          "id": "junk_woodenspoon",
+          "name": "Wooden Spoon",
+          "img": [
+            "IMG_WoodenSpoon"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_junk_3",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "southeast counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_cleaver",
+          "name": "Cleaver",
+          "img": [
+            "IMG_Cleaver"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_junk_4",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "fireplace",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_junk_5",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "near counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_6",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_7",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "wine shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_junk_8",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "by counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_9",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "wine shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_saucepan",
+          "name": "Saucepan",
+          "img": [
+            "IMG_Saucepan"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_junk_10",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "near east door",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_Flour",
+            "IMG_Canister_Sugar",
+            "IMG_Canister_Salt"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_junk_11",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "southwest counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_12",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "between pillars",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_13",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "near west door",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_junk_14",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "treehouse",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_15",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "treehouse",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_16",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "1F landing",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_17",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "near tree",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_18",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "near window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_19",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "1F",
+              "findExact": "by tile floor",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_20",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "2F",
+              "findExact": "west grass patch",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_21",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "near kitchen",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_22",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "1F landing",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_escape_junk_23",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "near fireplace",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_junk_24",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "NW tunnel",
+              "findExact": "near bone piles",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_escape_junk_25",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "south tunnel",
+              "findExact": "skeleton",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ribcage",
+          "name": "Ribcage",
+          "img": [
+            "IMG_Ribcage"
+          ],
+          "locations": [
+            {
+              "id": "t1_escape_junk_26",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "niche",
+              "findExact": "skeleton",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

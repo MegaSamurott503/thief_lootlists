@@ -1,0 +1,3361 @@
+{
+  "id": "fm_calendra-winter",
+  "title": "Calendra's Legacy",
+  "subtitle": "A Winter's Eve",
+  "author": [
+    "auth_purah",
+    "auth_team_calendra"
+  ],
+  "screens": [
+    "MIS_fm_calendra-winter_A",
+    "MIS_fm_calendra-winter_B"
+  ],
+  "firstRelease": "April 2002",
+  "latestVersion": "1.a",
+  "goToPrev": "fm_calendra-murkbell",
+  "diffNames": ["Footpad","Thief","Garrett"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [3881,1250,1515,0,6646],
+    [3882,1250,1515,0,6647],
+    [3893,1250,1515,0,6658]
+  ],
+  "lootCount": [102,104,108],
+  "lootChanges": [0,1,2],
+  "goal1": {
+    "total": [0,0,5500]
+  },
+  "pocketCount": [25,27,31],
+  "pocketChanges": [0,1,2],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "North Alley"},
+    {"key": "3", "value": "West Alley"},
+    {"key": "4", "value": "North Hammer Warehouse"},
+    {"key": "5", "value": "South Hammer Warehouse"},
+    {"key": "6", "value": "Northeast Warehouse"},
+    {"key": "7", "value": "Hammer Seminary"},
+    {"key": "8", "value": "Old Factory Line"},
+    {"key": "9", "value": "South Alley"},
+    {"key": "10", "value": "Deepshine Thieves' Guild"},
+    {"key": "11", "value": "Builder's Chapel"},
+    {"key": "12", "value": "Grindle & Boggs"},
+    {"key": "13", "value": "Darkwatch Sanctuary"},
+    {"key": "14", "value": "Darkwatch Courtyard"},
+    {"key": "15", "value": "Darkwatch Library"},
+    {"key": "16", "value": "Pawnshop"},
+    {"key": "17", "value": "South Grotto"},
+    {"key": "18", "value": "Phantromas's Vault"}
+  ],
+  "notes": [
+    {
+      "id": "note_0",
+      "delimiter": "  ",
+      "icon": "[T]",
+      "desc": "only available if you buy and read the loadout tip",
+      "show": true
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_1",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "storeroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_2",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_3",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Demon"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_4",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "above southeast cave",
+              "findCount": [1,1,1],
+              "orderNum": 79,
+              "orderImg": [
+                "IMG_DecorativeMask_Demon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Red",
+        "IMG_DecorativePlate_Aqua"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_5",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "north shelf",
+              "findCount": [2,2,2],
+              "orderNum": 66,
+              "orderImg": [
+                "IMG_DecorativePlate_Red",
+                "IMG_DecorativePlate_Aqua"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativevase",
+      "name": "Decorative Vase",
+      "img": [
+        "IMG_DecorativeVase_Wide"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_6",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "office",
+              "findExact": "railing",
+              "findCount": [2,2,2],
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_DecorativeVase_Wide"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_7",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findExact": "by campfire",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_8",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_9",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "near fireplace",
+              "findExact": "SW square table",
+              "findCount": [1,1,1],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_10",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "office",
+              "findExact": "desks",
+              "findCount": [2,2,2],
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_11",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "lounge",
+              "findExact": "NNW square table",
+              "findCount": [1,1,1],
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone_Alt1"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_12",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_Gemstone_Alt1"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_13",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "pillar",
+              "findExact": "relief",
+              "findCount": [2,2,2],
+              "orderNum": 82,
+              "orderImg": [
+                "IMG_Gemstone_Alt1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_14",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "Gaston's bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_15",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "office",
+              "findExact": "window",
+              "findCount": [2,2,2],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_16",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "north shelf",
+              "findCount": [1,1,1],
+              "orderNum": 67,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_17",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "window counter",
+              "findCount": [1,1,1],
+              "orderNum": 70,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_18",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "attic",
+              "findExact": "square table",
+              "findCount": [1,1,1],
+              "orderNum": 74,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_19",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 83,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_20",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "black chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_21",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_22",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 59,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "Gold Dice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_23",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_24",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [3,3,3],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "15gold",
+          "value": [15,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_25",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "exterior",
+              "findExact": "on Hammerite priest",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_26",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "front door",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "51gold",
+          "value": [51,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_27",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "front door",
+              "findCount": [2,2,2],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "200gold",
+          "value": [200,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_28",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "by armory",
+              "findExact": "black safe",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_29",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "dining hall",
+              "findExact": "mantelpiece",
+              "findCount": [3,3,3],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_30",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "black chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_31",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_32",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "lounge",
+              "findExact": "square tables",
+              "findCount": [2,2,2],
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_33",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "staircase",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 69,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_holyhammer",
+      "name": "Holy Hammer",
+      "img": [
+        "IMG_HolyHammer"
+      ],
+      "values": [
+        {
+          "id": "5gold5goods",
+          "value": [5,0,5,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_34",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 63,
+              "orderImg": [
+                "IMG_HolyHammer"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5goods",
+          "value": [0,0,5,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_35",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 64,
+              "orderImg": [
+                "IMG_HolyHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_36",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "lounge",
+              "findExact": "east ledge",
+              "findCount": [2,2,2],
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_jeweleddagger",
+      "name": "Jeweled Dagger",
+      "img": [
+        "IMG_JeweledDagger"
+      ],
+      "values": [
+        {
+          "id": "2gold",
+          "value": [2,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_37",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findNarrow": "drainage",
+              "findExact": "on murderer",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_38",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "factory entrance",
+              "findExact": "on Keeper",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_39",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "on Keeper",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_40",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "on Keeper",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_41",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "on Keeper",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_42",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "on Keeper",
+              "findCountBox": [0,1,1],
+              "findPick": true,
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_43",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "dining hall",
+              "findExact": "on Keeper elder",
+              "findCountBox": [0,1,1],
+              "findPick": true,
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_44",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "courtyard hall",
+              "findExact": "on Keeper",
+              "findCountBox": [0,0,1],
+              "findPick": true,
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_45",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "courtyard hall",
+              "findExact": "on Keeper",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_46",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "lounge",
+              "findExact": "on Keeper",
+              "findCountBox": [0,1,1],
+              "findPick": true,
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_47",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "by bridge",
+              "findExact": "on Keeper",
+              "findCountBox": [0,0,1],
+              "findPick": true,
+              "orderNum": 77,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_48",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "by grotto gate",
+              "findExact": "on Keeper",
+              "findCountBox": [0,0,1],
+              "findPick": true,
+              "orderNum": 78,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_49",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_50",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "east alley",
+              "findExact": "on thief swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_jeweledsword",
+      "name": "Jeweled Sword",
+      "img": [
+        "IMG_JeweledSword"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_51",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "lounge",
+              "findExact": "on Keeper swordsman",
+              "findCountBox": [1,0,1],
+              "findPick": true,
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_JeweledSword"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25gold25gems25goods",
+          "value": [25,25,25,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_52",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "east wall",
+              "findCount": [1,1,1],
+              "orderNum": 68,
+              "orderImg": [
+                "IMG_JeweledSword"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_53",
+              "findSimple": "findH",
+              "findArea": 4,
+              "findNarrow": "near door",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_54",
+              "findSimple": "findH",
+              "findArea": 5,
+              "findNarrow": "stairwell",
+              "findExact": "rafters",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_55",
+              "findSimple": "findH",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "behind southwest barrel",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_56",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [3,3,3],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_57",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "square table",
+              "findCount": [1,1,1],
+              "orderNum": 73,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_58",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "attic",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 75,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "25gold25gems",
+          "value": [25,25,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_59",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 62,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_60",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findExact": "behind north crates",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_61",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "large crate",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_62",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "rotunda",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_63",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "near fireplace",
+              "findExact": "SW square table",
+              "findCount": [1,1,1],
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_64",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "office",
+              "findExact": "desks",
+              "findCount": [2,2,2],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_65",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "lounge",
+              "findExact": "square tables",
+              "findCount": [2,2,2],
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_66",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "north shelf",
+              "findCount": [4,4,4],
+              "orderNum": 65,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_67",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 71,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_68",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "south alcove",
+              "findExact": "on thief swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "15gold",
+          "value": [15,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_69",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "north alcove",
+              "findExact": "on thief swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "66gold",
+          "value": [66,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_70",
+              "findSimple": "findH",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "under bed",
+              "findCount": [1,1,1],
+              "orderNum": 76,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "200gold",
+          "value": [200,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_71",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "Gaston's bedroom",
+              "findExact": "behind grate",
+              "findCount": [1,1,1],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1000gold",
+          "value": [1000,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_72",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "attic",
+              "findExact": "gray chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_rubycrystalvase",
+      "name": "Ruby Crystal Vase",
+      "img": [
+        "IMG_RubyCrystalVase"
+      ],
+      "values": [
+        {
+          "id": "300gold800gems200goods",
+          "value": [300,800,200,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_73",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "Gaston's bedroom",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_RubyCrystalVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_74",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 61,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_75",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_76",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_77",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 60,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_78",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "chasm",
+              "findExact": "by skeleton",
+              "findCount": [2,2,2],
+              "orderNum": 80,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_79",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Monk",
+        "IMG_Statuette_Muse_Alt1"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_80",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_Statuette_Muse_Alt1"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_81",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "lounge",
+              "findExact": "WNW square table",
+              "findCount": [1,1,1],
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_Statuette_Monk"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_82",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "square table",
+              "findCount": [1,1,1],
+              "orderNum": 72,
+              "orderImg": [
+                "IMG_Statuette_Muse_Alt1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_83",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "sea chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_loot_84",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findExact": "black chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 84,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_treebeastmask",
+      "name": "Treebeast Mask",
+      "img": [
+        "IMG_TreebeastMask"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_loot_85",
+              "findSimple": "findH",
+              "findArea": 17,
+              "findNarrow": "above vault",
+              "findCount": [1,1,1],
+              "orderNum": 81,
+              "orderImg": [
+                "IMG_TreebeastMask"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_kharrasdrahg",
+          "name": "Kharras Drahg",
+          "img": [
+            "IMG_KharrasDrahg"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [0,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_3",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,10,0],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "fm_calendra-winter_item_4",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "by shed",
+              "findExact": "on thief archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_calendra-winter_item_5",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "quiver",
+              "findCount": [0,2,2],
+              "findCountBox": [0,5,5],
+              "findBox": true
+            },
+            {
+              "id": "fm_calendra-winter_item_6",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "W guard post",
+              "findExact": "on thief archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_calendra-winter_item_7",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "on thief archer",
+              "findCountBox": [3,3,3],
+              "findRecipe": "after Mercedes reaches the fire barrel",
+              "findPick": true
+            },
+            {
+              "id": "fm_calendra-winter_item_8",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            },
+            {
+              "id": "fm_calendra-winter_item_9",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "E guard post",
+              "findExact": "on thief archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_calendra-winter_item_10",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "on thief archer",
+              "findCountBox": [3,3,3],
+              "findRecipe": "after seeing guild's front door",
+              "findPick": true
+            },
+            {
+              "id": "fm_calendra-winter_item_11",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "courtyard hall",
+              "findExact": "footlocker",
+              "findCountBox": [2,0,0],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_calendra-winter_item_38",
+                  "findCount": [0,0,1]
+                },
+                {
+                  "id": "fm_calendra-winter_item_58",
+                  "findCount": [0,1,0]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_12",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,0],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_13",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,1,0],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_calendra-winter_item_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,0],
+              "loadout": "store",
+              "price": 300
+            },
+            {
+              "id": "fm_calendra-winter_item_15",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "by workbench",
+              "findCount": [100,100,100],
+              "findRecipe": "after using Complete Zjilich Amulet on sign & frobbing gear",
+              "findEaster": true
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_16",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [6,2,0],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_calendra-winter_item_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [0,5,5],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_gasarrow",
+          "name": "Gas Arrow",
+          "img": [
+            "IMG_GasArrow_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_18",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,1,0],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_calendra-winter_item_19",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,0,1],
+              "loadout": "store",
+              "price": 500
+            },
+            {
+              "id": "fm_calendra-winter_item_20",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "under bed",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_21",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_calendra-winter_item_22",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,4],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "fm_calendra-winter_item_23",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "behind gate",
+              "findExact": "toolbox",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_24",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "footlocker",
+              "findCountBox": [0,2,2],
+              "findBox": true
+            },
+            {
+              "id": "fm_calendra-winter_item_25",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "north pipe room",
+              "findExact": "pool",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-winter_item_26",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "drainage",
+              "findExact": "northeast corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-winter_item_27",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "sinks",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_calendra-winter_item_28",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "frozen pool",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_calendra-winter_item_29",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-winter_item_30",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "black chest",
+              "findCountBox": [5,5,5],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_31",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "by font",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-winter_item_32",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findCount": [0,2,2]
+            },
+            {
+              "id": "fm_calendra-winter_item_33",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "attic",
+              "findExact": "behind couch",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-winter_item_34",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "pillar",
+              "findExact": "niche",
+              "findCount": [9,9,9]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_35",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "stairwell",
+              "findExact": "rafters",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-winter_item_36",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findCount": [0,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_37",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "exterior",
+              "findExact": "pipe ledge",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-winter_item_38",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "courtyard hall",
+              "findExact": "footlocker",
+              "findCountBox": [0,0,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_calendra-winter_item_11",
+                  "findCount": [2,0,0]
+                },
+                {
+                  "id": "fm_calendra-winter_item_58",
+                  "findCount": [0,1,0]
+                }
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_item_39",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "attic",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_40",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,0,0],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "fm_calendra-winter_item_41",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findCount": [0,2,2]
+            },
+            {
+              "id": "fm_calendra-winter_item_42",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_43",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [0,2,0],
+              "loadout": "store",
+              "price": 350
+            },
+            {
+              "id": "fm_calendra-winter_item_44",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findCount": [0,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_45",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,0,0],
+              "loadout": "store",
+              "price": 500
+            },
+            {
+              "id": "fm_calendra-winter_item_46",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "Flash Mine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_47",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [0,0,2],
+              "loadout": "store",
+              "price": 350
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_48",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [0,0,1],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "fm_calendra-winter_item_49",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_calendra-winter_item_50",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_calendra-winter_item_51",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "on Gaston the Red",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "findUnable": true
+            },
+            {
+              "id": "fm_calendra-winter_item_52",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "under bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_potionofblacklotusnectar",
+          "name": "Black Lotus Nectar",
+          "img": [
+            "IMG_PotionOfBlackLotusNectar"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_53",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 3000
+            },
+            {
+              "id": "fm_calendra-winter_item_54",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "attic",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_55",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [0,1,1],
+              "loadout": "store",
+              "price": 300
+            },
+            {
+              "id": "fm_calendra-winter_item_56",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "by campfire",
+              "findExact": "on thief swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_calendra-winter_item_57",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_58",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "courtyard hall",
+              "findExact": "footlocker",
+              "findCountBox": [0,1,0],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_calendra-winter_item_11",
+                  "findCount": [2,0,0]
+                },
+                {
+                  "id": "fm_calendra-winter_item_38",
+                  "findCount": [0,0,1]
+                }
+              ]
+            },
+            {
+              "id": "fm_calendra-winter_item_59",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "attic",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_calendra-winter_item_60",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "under bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_holywatervial",
+          "name": "Holy Water Vial",
+          "img": [
+            "IMG_HolyWaterVial"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_61",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findCount": [0,1,1]
+            },
+            {
+              "id": "fm_calendra-winter_item_62",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "table",
+              "findCount": [10,10,10]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_63",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_64",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Skeleton Key",
+          "img": [
+            "IMG_Key_Skeleton"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_65",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [0,1,1],
+              "loadout": "store",
+              "price": 2000
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Warehouse- man Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_66",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storeroom",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Misplaced Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_67",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Boggs Factory Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_68",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "drainage",
+              "findExact": "on murderer",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "South Grotto Gate Key",
+          "img": [
+            "IMG_Key_Gold",
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_69",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "on Keeper translator",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_calendra-winter_item_70",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "tower",
+              "findExact": "black chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Loren's Statue Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_71",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "lounge",
+              "findExact": "on Keeper Loren",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Pawnshop Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_72",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "attic",
+              "findExact": "square table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_73",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_magical",
+      "category": "Magical Tools",
+      "catItems": [
+        {
+          "id": "item_completezjilichamulet",
+          "name": "Complete Zjilich Amulet",
+          "img": [
+            "IMG_CompleteZjilichAmulet"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_74",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_75",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_76",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [0,0,2],
+              "loadout": "store",
+              "price": 300
+            },
+            {
+              "id": "fm_calendra-winter_item_77",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "under bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_78",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_calendra-winter_item_79",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "island",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_calendra-winter_item_80",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "lounge",
+              "findExact": "NNW square table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_81",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "island",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_82",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "island",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_83",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "fm_calendra-winter_item_84",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "island",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_85",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_calendra-winter_item_86",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "island",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_calendra-winter_item_87",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "lounge",
+              "findExact": "NNW square table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_88",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_calendra-winter_item_89",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "kitchen",
+              "findExact": "island",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_90",
+              "findSimple": "find",
+              "findArea": 8,
+              "findCount": [1,1,1],
+              "findRecipe": "upon enchanted scroll hitting a surface"
+            },
+            {
+              "id": "fm_calendra-winter_item_91",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "north ledge",
+              "findCount": [1,1,1],
+              "findRecipe": "before reading enchanted scroll"
+            },
+            {
+              "id": "fm_calendra-winter_item_92",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "window ledge",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_93",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "front door",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_94",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,0,0],
+              "loadout": "store",
+              "price": 100
+            },
+            {
+              "id": "fm_calendra-winter_item_95",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [0,1,0],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "fm_calendra-winter_item_96",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [0,0,1],
+              "loadout": "store",
+              "price": 300
+            },
+            {
+              "id": "fm_calendra-winter_item_97",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "office",
+              "findExact": "east desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_precursorscroll",
+          "name": "Precursor Scroll",
+          "img": [
+            "IMG_PrecursorScroll_Flat",
+            "IMG_PrecursorScroll_Round"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_98",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_calendra-winter_item_99",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "office",
+              "findExact": "north desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Gaston the Red's Diary",
+          "img": [
+            "IMG_Book_Calendra3"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_100",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "Gaston's bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_hammerite",
+      "category": "Hammerite Items",
+      "catItems": [
+        {
+          "id": "item_hammerofthebuilder",
+          "name": "Hammer of the Builder",
+          "img": [
+            "IMG_HammerOfTheBuilder"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_101",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storeroom",
+              "findExact": "pedestal",
+              "findObj": true,
+              "findCount": [1,0,0],
+              "findNote": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_handofglory",
+          "name": "True Hand of Glory",
+          "img": [
+            "IMG_HandOfGlory"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_102",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "Gaston's bedroom",
+              "findExact": "safe",
+              "findObj": true,
+              "findCount": [0,1,0],
+              "findNote": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_amethyst",
+          "name": "Night Jewel",
+          "img": [
+            "IMG_LargeGemstone_Amethyst"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_item_103",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "tower",
+              "findExact": "black chest",
+              "findObj": true,
+              "findCountBox": [0,0,1],
+              "findBox": true,
+              "findNote": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_1",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "loot room",
+              "findExact": "by large crate",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_calendra-winter_junk_2",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "attic",
+              "findExact": "by large crates",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_calendra-winter_junk_3",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "south shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_4",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "by south alcove",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_5",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "lounge",
+              "findExact": "NNW square table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_handmirror",
+          "name": "Hand Mirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_6",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "Gaston's bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_7",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "by campfire",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_8",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "lounge",
+              "findExact": "WNW square table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_basketball",
+          "name": "Basketball",
+          "img": [
+            "IMG_Basketball"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_9",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "south shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_drillingmachine",
+          "name": "Drilling Machine",
+          "img": [
+            "IMG_DrillingMachine"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_10",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "by north crates",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-winter_junk_11",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "by sealed doors",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_warhammer",
+          "name": "Warhammer",
+          "img": [
+            "IMG_Warhammer_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_12",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "by pews",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_ancienthammer",
+          "name": "Ancient Hammer",
+          "img": [
+            "IMG_AncientHammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_13",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "near pews",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_14",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "electrics room",
+              "findExact": "bone crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_calendra-winter_junk_15",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "office",
+              "findExact": "window",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_crumpledpaper",
+          "name": "Crumpled Paper",
+          "img": [
+            "IMG_CrumpledPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_16",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "second desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_divinghelmet",
+          "name": "Diving Helmet",
+          "img": [
+            "IMG_DivingHelmet"
+          ],
+          "locations": [
+            {
+              "id": "fm_calendra-winter_junk_17",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "storefront",
+              "findExact": "by rowboat",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

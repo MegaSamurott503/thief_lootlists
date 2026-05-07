@@ -1,0 +1,2192 @@
+{
+  "id": "t2_kidnap",
+  "title": "Kidnap",
+  "screens": [
+    "MIS_t2_kidnap_A",
+    "MIS_t2_kidnap_B"
+  ],
+  "goToPrev": "t2_cargo",
+  "goToNext": "t2_casing",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [861,200,300,0,1361],
+    [861,200,300,0,1361],
+    [861,200,300,0,1361]
+  ],
+  "lootCount": [28,28,28],
+  "lootChanges": [0,1,1],
+  "pocketCount": [11,10,10],
+  "pocketChanges": [0,1,1],
+  "carryLoot": true,
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Base Camp"},
+    {"key": "3", "value": "K-D Site"},
+    {"key": "4", "value": "Southwest Residential District"},
+    {"key": "5", "value": "Site 7"},
+    {"key": "6", "value": "North Residential District"},
+    {"key": "7", "value": "Site 8"},
+    {"key": "8", "value": "Site 4"},
+    {"key": "9", "value": "Necropolis"},
+    {"key": "10", "value": "Site 3"},
+    {"key": "11", "value": "East Central Cave"},
+    {"key": "12", "value": "Site 2"},
+    {"key": "13", "value": "Marketplace"},
+    {"key": "14", "value": "Site 5"},
+    {"key": "15", "value": "West Cave"},
+    {"key": "16", "value": "Site 6"},
+    {"key": "17", "value": "Site 1"},
+    {"key": "18", "value": "Northeast Cave"},
+    {"key": "19", "value": "Site 9"}
+  ],
+  "notes": [
+    {
+      "id": "note_0",
+      "delimiter": "  ",
+      "icon": "*",
+      "desc": "vine arrows that carry over become rope arrows (w/o the AM16 patch)",
+      "show": true
+    },
+    {
+      "id": "note_1",
+      "delimiter": "  ",
+      "icon": "[A]",
+      "desc": "only available in the AM16 patch",
+      "show": true
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_diamonddrillbit",
+      "name": "Diamond Drill Bit",
+      "img": [
+        "IMG_DiamondDrillbit"
+      ],
+      "values": [
+        {
+          "id": "150gems",
+          "value": [0,150,0,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_1",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "staircase",
+              "findExact": "near balcony",
+              "findObj": true,
+              "findCount": [1,0,0],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_DiamondDrillbit"
+              ]
+            },
+            {
+              "id": "t2_kidnap_loot_2",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "gatehouse",
+              "findExact": "terrace",
+              "findObj": true,
+              "findCount": [0,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_DiamondDrillbit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_3",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "camp house",
+              "findExact": "southwest corner",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "50gems",
+          "value": [0,50,0,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_4",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findNarrow": "exterior",
+              "findExact": "west corner",
+              "findCount": [1,1,1],
+              "findNote": 1,
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_5",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "Cavador's bedroom",
+              "findExact": "windows",
+              "findCount": [2,2,2],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_6",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "south house",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "t2_kidnap_loot_7",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "northeast house",
+              "findExact": "by bucket",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_8",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "north house",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "t2_kidnap_loot_9",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "2F east bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_10",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "auditorium",
+              "findExact": "top bench",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Tall",
+        "IMG_PrecursorJar_Pointed"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_11",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "west storage",
+              "findExact": "north table",
+              "findCount": [2,2,2],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_PrecursorJar_Small",
+                "IMG_PrecursorJar_Tall"
+              ]
+            },
+            {
+              "id": "t2_kidnap_loot_12",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_PrecursorJar_Small"
+              ]
+            },
+            {
+              "id": "t2_kidnap_loot_13",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "1F northwest bedroom",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall",
+                "IMG_PrecursorJar_Pointed"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_14",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "west open tomb",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            },
+            {
+              "id": "t2_kidnap_loot_15",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "west ledge",
+              "findExact": "by barrels",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_16",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "S caves",
+              "findExact": "on Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_17",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "NE caves",
+              "findExact": "on Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_kidnap_loot_18",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "S caves",
+              "findExact": "on Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_kidnap_loot_19",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "S caves",
+              "findExact": "on Mechanist arbalist",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_kidnap_loot_20",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "S caves",
+              "findExact": "on Mechanist priestess",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_kidnap_loot_21",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "1F corridor",
+              "findExact": "on Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_22",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "1F southeast bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "carryover",
+          "value": [0,0,0,0],
+          "carryValue": [-1,0,0,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_23",
+              "findSimple": "findE",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_24",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "south house",
+              "findExact": "above doorway",
+              "findCount": [3,3,3],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_kidnap_loot_25",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "east bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_kidnap_item_4",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "southeast bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [10,10,10],
+              "findBox": true
+            },
+            {
+              "id": "t2_kidnap_item_5",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "southwest bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [8,8,8],
+              "findBox": true
+            },
+            {
+              "id": "t2_kidnap_item_6",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "sealed tomb",
+              "findCount": [5,4,3],
+              "findCountActual": [-1,0,0],
+              "findSecret": true
+            },
+            {
+              "id": "t2_kidnap_item_7",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "east open tomb",
+              "findCount": [4,4,4],
+              "findUnable": true
+            },
+            {
+              "id": "t2_kidnap_item_8",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "auditorium",
+              "findExact": "bottom bench",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_kidnap_item_9",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "Cavador's bedroom",
+              "findExact": "ledge",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t2_kidnap_item_10",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "south ledge",
+              "findExact": "by archway",
+              "findCount": [6,6,6]
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_11",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_12",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_13",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            }
+          ]
+        },
+        {
+          "id": "item_gasarrow",
+          "name": "Gas Arrow",
+          "img": [
+            "IMG_GasArrow_TDP",
+            "IMG_GasArrow_TMA"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_14",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_15",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true,
+              "findNote": 0
+            }
+          ]
+        },
+        {
+          "id": "item_vinearrow",
+          "name": "Vine Arrow",
+          "img": [
+            "IMG_VineArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_16",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "armory",
+              "findExact": "table",
+              "findCount": [3,2,1]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_17",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "throne room",
+              "findExact": "dais",
+              "findCount": [3,2,1]
+            },
+            {
+              "id": "t2_kidnap_item_18",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "ramp house",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_19",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west storage",
+              "findExact": "footlocker",
+              "findCountBox": [4,3,2],
+              "findBox": true
+            },
+            {
+              "id": "t2_kidnap_item_20",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "SW machine room",
+              "findExact": "sink",
+              "findCount": [5,5,5],
+              "findCountActual": [10,10,10]
+            },
+            {
+              "id": "t2_kidnap_item_21",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "SE machine room",
+              "findExact": "sink",
+              "findCount": [4,4,4],
+              "findCountActual": [8,8,8]
+            },
+            {
+              "id": "t2_kidnap_item_22",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "turbine tomb",
+              "findExact": "roof",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_kidnap_item_23",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "east open tomb",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_kidnap_item_24",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "1F",
+              "findExact": "southeast room",
+              "findCount": [4,3,2]
+            },
+            {
+              "id": "t2_kidnap_item_25",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "1F",
+              "findExact": "arena window",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_kidnap_item_26",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "north ledge",
+              "findExact": "behind tank",
+              "findCount": [4,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_27",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "2F",
+              "findExact": "west furnace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_28",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "2F",
+              "findExact": "east furnace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_29",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "north lava house",
+              "findExact": "by lava",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_30",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "northeast house",
+              "findExact": "by lava",
+              "findCount": [2,1,0]
+            },
+            {
+              "id": "t2_kidnap_item_31",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "gatehouse",
+              "findExact": "terrace",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_kidnap_item_32",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "bottom level",
+              "findExact": "by turbine",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_33",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "near entrance",
+              "findExact": "by east slope",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_kidnap_item_34",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "north house",
+              "findCount": [3,3,2]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_35",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "armory",
+              "findExact": "footlocker",
+              "findCountBox": [2,0,2],
+              "findBox": true
+            },
+            {
+              "id": "t2_kidnap_item_36",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "east open tomb",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_37",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "2F southeast room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_38",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_kidnap_item_39",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "armory",
+              "findExact": "footlocker",
+              "findCountBox": [2,1,1],
+              "findBox": true
+            },
+            {
+              "id": "t2_kidnap_item_40",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "ramp house",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_41",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "t2_kidnap_item_42",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "1F southeast bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_43",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_kidnap_item_44",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west storage",
+              "findExact": "footlocker",
+              "findCountBox": [2,0,0],
+              "findBox": true
+            },
+            {
+              "id": "t2_kidnap_item_45",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "armory",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_kidnap_item_46",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "S tilted house",
+              "findExact": "northwest corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_47",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "1F",
+              "findExact": "southeast room",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t2_kidnap_item_48",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "bottom level",
+              "findExact": "by robot parts",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_49",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_kidnap_item_50",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west storage",
+              "findExact": "footlocker",
+              "findCountBox": [0,1,0],
+              "findBox": true
+            },
+            {
+              "id": "t2_kidnap_item_51",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "middle level",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "Flash Mine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_52",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west storage",
+              "findExact": "footlocker",
+              "findCountBox": [0,0,2],
+              "findBox": true
+            },
+            {
+              "id": "t2_kidnap_item_53",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "S tilted house",
+              "findExact": "northwest corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_54",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "sealed tomb",
+              "findCount": [2,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "t2_kidnap_item_55",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bottom level",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_56",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_kidnap_item_57",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "great hall",
+              "findExact": "on Mechanist",
+              "findCountBox": [1,0,0],
+              "findPick": true
+            },
+            {
+              "id": "t2_kidnap_item_58",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "armory",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_59",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west suite",
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_60",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "NE caves",
+              "findExact": "on Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t2_kidnap_item_61",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "ramp house",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_62",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "south end",
+              "findExact": "on Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_63",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_kidnap_item_64",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "east suite",
+              "findExact": "by dresser",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t2_kidnap_item_65",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "2F west bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_breathpotion",
+          "name": "Breath Potion",
+          "img": [
+            "IMG_BreathPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_66",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_67",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_kidnap_item_68",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "armory",
+              "findExact": "table",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t2_kidnap_item_69",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "camp house",
+              "findExact": "southeast corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_70",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "auditorium",
+              "findExact": "stage",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_71",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "gatehouse",
+              "findExact": "terrace",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_72",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "S tilted house",
+              "findExact": "northwest corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_73",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_74",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Base Camp Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_75",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "2F",
+              "findExact": "on Mechanist arbalist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Cavador's Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_76",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "on Cavador",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_77",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_kidnap_item_78",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "northeast bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [4,4,4],
+              "findBox": true
+            },
+            {
+              "id": "t2_kidnap_item_79",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "t2_kidnap_item_80",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "armory",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_kidnap_item_81",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "open tomb",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_kidnap_item_82",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "auditorium",
+              "findExact": "bottom bench",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_kidnap_item_83",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "north ledge",
+              "findExact": "behind tank",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_84",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_85",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_kidnap_item_86",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west storage",
+              "findExact": "near south table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_87",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "south house",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "t2_kidnap_item_88",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "sealed tomb",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "t2_kidnap_item_89",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "east open tomb",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_frogbeastegg",
+          "name": "Frogbeast Egg",
+          "img": [
+            "IMG_FrogbeastEgg"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_90",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_91",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "throne room",
+              "findExact": "dais",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_92",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west suite",
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_item_93",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west suite",
+              "findExact": "southwest table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Cavador's Diary",
+          "img": [
+            "IMG_Book_Red"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_item_94",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "Cavador's bedroom",
+              "findExact": "north desk",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west storage",
+              "findExact": "by footlockers",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_kidnap_junk_2",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "throne room",
+              "findExact": "dais",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_junk_3",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "east storage",
+              "findExact": "by north doorway",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_kidnap_junk_4",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "camp house",
+              "findExact": "southwest corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_junk_5",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "under ramp",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_junk_6",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "north house",
+              "findExact": "2F",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_kidnap_junk_7",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "by north house",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_kidnap_junk_8",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "west open tomb",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_kidnap_junk_9",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "southwest ledge",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_kidnap_junk_10",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "near wooden ramp",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_kidnap_junk_11",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "near ramp",
+              "findExact": "by floodlight",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_kidnap_junk_12",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "near obelisk",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_kidnap_junk_13",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "north ledge",
+              "findExact": "near tank",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_kidnap_junk_14",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "bottom level",
+              "findExact": "by east archway",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_junk_15",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "near Site 1",
+              "findExact": "by ledge",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_kidnap_junk_16",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "2F southeast room",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_17",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "entrance",
+              "findExact": "by barrels",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_junk_18",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "entrance",
+              "findExact": "by crates",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_kidnap_junk_19",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "2F",
+              "findExact": "northeast room",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metalplate",
+          "name": "Metal Plate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_20",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "northeast house",
+              "findExact": "by bucket",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_junk_21",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north open tomb",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_22",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north open tomb",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "Wooden Goblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_23",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "northeast house",
+              "findExact": "south window",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_24",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "camp house",
+              "findExact": "southeast corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_junk_25",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north open tomb",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_26",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "camp house",
+              "findExact": "southeast corner",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_UnmarkedLarge"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_27",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "east open tomb",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_28",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "camp house",
+              "findExact": "southeast corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_29",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "by north house",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_junk_30",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "by northeast open tomb",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_junk_31",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "near obelisk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_junk_32",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "middle level",
+              "findExact": "near SW ladder",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_pick",
+          "name": "Pick",
+          "img": [
+            "IMG_Pick"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_33",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "near north open tomb",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_kidnap_junk_34",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "near obelisk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_kidnap_junk_35",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bottom level",
+              "findExact": "near turbine",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_drillingmachine",
+          "name": "Drilling Machine",
+          "img": [
+            "IMG_DrillingMachine"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_36",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "by north house",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "t2_kidnap_junk_37",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "near north open tomb",
+              "findExact": "bone pile",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "t2_kidnap_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_t2_kidnap_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 8,
+          "findNarrow": "under catwalk",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever on the tomb east of the ramp"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardItem": "Broadhead Arrow",
+          "findCount": [5,0,0]
+        },
+        {
+          "id": "sec_1_2",
+          "rewardItem": "Flash Mine",
+          "findCount": [2,1,1]
+        },
+        {
+          "id": "sec_1_3",
+          "rewardItem": "Scouting Orb",
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

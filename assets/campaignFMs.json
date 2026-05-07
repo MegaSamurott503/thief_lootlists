@@ -1,0 +1,806 @@
+{
+  "camFMs": [
+    {
+      "note": "~~~~~~~~~~~~~~~~~~~~ May 2000 ~~~~~~~~~~~~~~~~~~~~",
+      "id": "fm_spirit-resurrection",
+      "name": "Cult of the Resurrection",
+      "game": "game_t1",
+      "year": "y2000",
+      "authors": [
+        "auth_sledge"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_spirit",
+      "genres": [
+        "genre_assassin",
+        "genre_heist",
+        "genre_burglar",
+        "genre_sabotage"
+      ],
+      "locations": [
+        "loc_cityruins",
+        "loc_church",
+        "loc_hideout",
+        "loc_cave"
+      ],
+      "enemies": [
+        "npc_thieves",
+        "npc_zombies",
+        "npc_undead"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_eye",
+        "item_sapphirevase",
+        "item_heartsoul"
+      ],
+      "imgAB": "B"
+    },
+    {
+      "id": "fm_spirit-manse",
+      "name": "The Inverted Manse",
+      "game": "game_t2",
+      "year": "y2001",
+      "authors": [
+        "auth_sledge"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_spirit",
+      "genres": [
+        "genre_salvage",
+        "genre_investigate",
+        "genre_horror"
+      ],
+      "locations": [
+        "loc_mountain",
+        "loc_church",
+        "loc_river",
+        "loc_factory",
+        "loc_cave",
+        "loc_forest",
+        "loc_mansion"
+      ],
+      "enemies": [
+        "npc_zombies",
+        "npc_haunts",
+        "npc_ghosts",
+        "npc_hammerites",
+        "npc_undead",
+        "npc_spiders",
+        "npc_burricks"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_heartsoul",
+        "item_hand",
+        "item_scepter",
+        "item_torc"
+      ],
+      "imgAB": "B"
+    },
+    {
+      "note": "~~~~~~~~~~~~~~~~~~~~ Aug 2000 ~~~~~~~~~~~~~~~~~~~~",
+      "id": "fm_calendra-cistern",
+      "name": "Calendra's Cistern",
+      "game": "game_t1",
+      "year": "y2000",
+      "authors": [
+        "auth_purah",
+        "auth_team_calendra"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_calendra",
+      "genres": [
+        "genre_rendezvous",
+        "genre_heist",
+        "genre_frame"
+      ],
+      "locations": [
+        "loc_streets",
+        "loc_mansion",
+        "loc_river",
+        "loc_tavern",
+        "loc_church",
+        "loc_sewers",
+        "loc_cemetery",
+        "loc_cave"
+      ],
+      "enemies": [
+        "npc_guards",
+        "npc_nobles",
+        "npc_servants",
+        "npc_thieves",
+        "npc_spiders",
+        "npc_zombies",
+        "npc_haunts",
+        "npc_monsters",
+        "npc_beasts"
+      ],
+      "characters": [
+        "char_downwind"
+      ],
+      "items": [
+        "item_sapphirevase",
+        "item_sunburst",
+        "item_quintus"
+      ],
+      "imgAB": "A"
+    },
+    {
+      "id": "fm_calendra-basso",
+      "name": "Calendra's Legacy",
+      "subName": "A Meeting with Basso",
+      "game": "game_t2",
+      "year": "y2002",
+      "authors": [
+        "auth_purah",
+        "auth_team_calendra"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_calendra",
+      "genres": [
+        "genre_rendezvous",
+        "genre_ghost",
+        "genre_daytime"
+      ],
+      "locations": [
+        "loc_streets",
+        "loc_river",
+        "loc_docks",
+        "loc_police",
+        "loc_prison",
+        "loc_sewers",
+        "loc_mountain",
+        "loc_catacombs",
+        "loc_hotel"
+      ],
+      "enemies": [
+        "npc_watch",
+        "npc_nobles",
+        "npc_pagans",
+        "npc_servants",
+        "npc_guards",
+        "npc_thieves",
+        "npc_spiders"
+      ],
+      "characters": [
+        "char_basso"
+      ],
+      "items": [
+        ""
+      ],
+      "imgAB": "B",
+      "boxSize": "1"
+    },
+    {
+      "id": "fm_calendra-murkbell",
+      "name": "Calendra's Legacy",
+      "subName": "Midnight in Murkbell",
+      "game": "game_t2",
+      "year": "y2002",
+      "authors": [
+        "auth_purah",
+        "auth_team_calendra"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_calendra",
+      "genres": [
+        "genre_deliver",
+        "genre_timed",
+        "genre_heist",
+        "genre_sabotage",
+        "genre_ghost"
+      ],
+      "locations": [
+        "loc_tavern",
+        "loc_streets",
+        "loc_river",
+        "loc_church",
+        "loc_island",
+        "loc_museum",
+        "loc_tower",
+        "loc_hotel",
+        "loc_police",
+        "loc_cemetery",
+        "loc_catacombs",
+        "loc_factory"
+      ],
+      "enemies": [
+        "npc_nobles",
+        "npc_servants",
+        "npc_watch",
+        "npc_guards",
+        "npc_mages",
+        "npc_zombies",
+        "npc_haunts",
+        "npc_undead",
+        "npc_monsters"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_keepermedal",
+        "item_scepter"
+      ],
+      "imgAB": "A",
+      "boxSize": "1"
+    },
+    {
+      "id": "fm_calendra-winter",
+      "name": "Calendra's Legacy",
+      "subName": "A Winter's Eve",
+      "game": "game_t2",
+      "year": "y2002",
+      "authors": [
+        "auth_purah",
+        "auth_team_calendra"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_calendra",
+      "genres": [
+        "genre_rendezvous",
+        "genre_assassin",
+        "genre_mystery",
+        "genre_heist"
+      ],
+      "locations": [
+        "loc_streets",
+        "loc_warehouse",
+        "loc_hideout",
+        "loc_factory",
+        "loc_library"
+      ],
+      "enemies": [
+        "npc_hammerites",
+        "npc_thieves",
+        "npc_servants",
+        "npc_nobles",
+        "npc_spiders",
+        "npc_keepers",
+        "npc_monsters"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_holysymbol",
+        "item_dice",
+        "item_hand",
+        "item_talisman",
+        "item_holyhammer",
+        "item_basketball",
+        "item_globe"
+      ],
+      "imgAB": "A",
+      "boxSize": "1"
+    },
+    {
+      "note": "~~~~~~~~~~~~~~~~~~~~ Nov 2001 ~~~~~~~~~~~~~~~~~~~~",
+      "id": "fm_seventh-2",
+      "name": "The Seventh Crystal",
+      "subName": "Act 2",
+      "game": "game_t2",
+      "year": "y2001",
+      "authors": [
+        "auth_saturnine"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_seventh",
+      "genres": [
+        "genre_heist"
+      ],
+      "locations": [
+        "loc_mansion"
+      ],
+      "enemies": [
+        "npc_guards",
+        "npc_servants"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_poker",
+        "item_flute",
+        "item_rosary",
+        "item_basketball"
+      ],
+      "imgAB": "A",
+      "boxSize": "1"
+    },
+    {
+      "id": "fm_seventh-3",
+      "name": "The Seventh Crystal",
+      "subName": "Act 3",
+      "game": "game_t2",
+      "year": "y2001",
+      "authors": [
+        "auth_saturnine"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_seventh",
+      "genres": [
+        "genre_salvage",
+        "genre_horror"
+      ],
+      "locations": [
+        "loc_catacombs"
+      ],
+      "enemies": [
+        "npc_spiders"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_rosary"
+      ],
+      "imgAB": "B",
+      "boxSize": "1"
+    },
+    {
+      "note": "~~~~~~~~~~~~~~~~~~~~ May 2002 ~~~~~~~~~~~~~~~~~~~~",
+      "id": "fm_ashton-visit",
+      "name": "A Visit to Lord Ashton's",
+      "game": "game_t2",
+      "year": "y2002",
+      "authors": [
+        "auth_christine"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_ashton",
+      "genres": [
+        "genre_burglar",
+        "genre_heist"
+      ],
+      "locations": [
+        "loc_mansion",
+        "loc_cemetery"
+      ],
+      "enemies": [
+        "npc_guards",
+        "npc_servants",
+        "npc_nobles",
+        "npc_beasts"
+      ],
+      "characters": [
+        "char_benny"
+      ],
+      "items": [
+        "item_dice",
+        "item_flute",
+        "item_cylinder",
+        "item_basketball",
+        "item_goldbone",
+        "item_dewdrop",
+        "item_torc",
+        "item_globe",
+        "item_hand",
+        "item_poker",
+        "item_premask"
+      ],
+      "imgAB": "A"
+    },
+    {
+      "id": "fm_ashton-stroll",
+      "name": "A Night's Stroll",
+      "game": "game_t2",
+      "year": "y2002",
+      "authors": [
+        "auth_christine"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_ashton",
+      "genres": [
+        "genre_burglar",
+        "genre_heist",
+        "genre_rendezvous"
+      ],
+      "locations": [
+        "loc_cemetery",
+        "loc_mountain",
+        "loc_cottage",
+        "loc_village",
+        "loc_brothel",
+        "loc_hideout",
+        "loc_church",
+        "loc_works",
+        "loc_tavern"
+      ],
+      "enemies": [
+        "npc_burricks",
+        "npc_guards",
+        "npc_pagans",
+        "npc_watch",
+        "npc_servants",
+        "npc_nobles",
+        "npc_thieves",
+        "npc_beasts",
+        "npc_hammerites"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_rosary",
+        "item_drillbit",
+        "item_rarespice",
+        "item_torc",
+        "item_dice",
+        "item_magemedal",
+        "item_basketball",
+        "item_sapphirevase",
+        "item_flute",
+        "item_poker",
+        "item_holyhammer",
+        "item_holysymbol"
+      ],
+      "imgAB": "B"
+    },
+    {
+      "id": "fm_ashton-escape",
+      "name": "Escape!",
+      "game": "game_t2",
+      "year": "y2002",
+      "authors": [
+        "auth_christine"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_ashton",
+      "genres": [
+        "genre_escape",
+        "genre_investigate",
+        "genre_heist"
+      ],
+      "locations": [
+        "loc_prison",
+        "loc_police",
+        "loc_docks",
+        "loc_ship"
+      ],
+      "enemies": [
+        "npc_watch",
+        "npc_pagans",
+        "npc_thieves",
+        "npc_servants",
+        "npc_spiders",
+        "npc_robots"
+      ],
+      "characters": [
+        "char_benny"
+      ],
+      "items": [
+        "item_rarespice",
+        "item_cylinder",
+        "item_dice",
+        "item_goldbone",
+        "item_bracelet",
+        "item_sapphirevase",
+        "item_magemedal",
+        "item_scepter",
+        "item_poker"
+      ],
+      "imgAB": "A"
+    },
+    {
+      "id": "fm_ashton-revenge",
+      "name": "Revenge",
+      "game": "game_t2",
+      "year": "y2002",
+      "authors": [
+        "auth_christine"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_ashton",
+      "genres": [
+        "genre_assassin"
+      ],
+      "locations": [
+        "loc_streets",
+        "loc_hotel",
+        "loc_tower",
+        "loc_mansion"
+      ],
+      "enemies": [
+        "npc_watch",
+        "npc_guards",
+        "npc_nobles",
+        "npc_servants",
+        "npc_thieves",
+        "npc_burricks",
+        "npc_mechanists",
+        "npc_robots"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_dice",
+        "item_rarespice",
+        "item_consword",
+        "item_sapphirevase",
+        "item_bracelet",
+        "item_torc",
+        "item_poker"
+      ],
+      "imgAB": "B"
+    },
+    {
+      "note": "~~~~~~~~~~~~~~~~~~~~ Nov 2005 ~~~~~~~~~~~~~~~~~~~~",
+      "id": "fm_forces-invitation",
+      "name": "Mysterious Invitation",
+      "game": "game_t2",
+      "year": "y2005",
+      "authors": [
+        "auth_psymh"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_forces",
+      "genres": [
+        "genre_rescue",
+        "genre_escape",
+        "genre_investigate",
+        "genre_heist",
+        "genre_ghost",
+        "genre_daytime"
+      ],
+      "locations": [
+        "loc_mansion",
+        "loc_prison",
+        "loc_cave",
+        "loc_ancient",
+        "loc_river",
+        "loc_sewers"
+      ],
+      "enemies": [
+        "npc_guards",
+        "npc_servants",
+        "npc_thieves",
+        "npc_spiders",
+        "npc_beasts",
+        "npc_robots",
+        "npc_hammerites",
+        "npc_monsters"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_consword",
+        "item_sapphirevase",
+        "item_flute"
+      ],
+      "imgAB": "A"
+    },
+    {
+      "id": "fm_forces-ultima",
+      "name": "Ultima Ratio",
+      "game": "game_t2",
+      "year": "y2007",
+      "authors": [
+        "auth_psymh"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_forces",
+      "genres": [
+        "genre_rendezvous",
+        "genre_trail",
+        "genre_investigate",
+        "genre_assassin",
+        "genre_salvage",
+        "genre_heist",
+        "genre_sabotage",
+        "genre_dusk"
+      ],
+      "locations": [
+        "loc_sewers",
+        "loc_streets",
+        "loc_hotel",
+        "loc_cemetery",
+        "loc_tavern",
+        "loc_restaurant",
+        "loc_police",
+        "loc_river",
+        "loc_hospital",
+        "loc_cave",
+        "loc_castle",
+        "loc_church",
+        "loc_factory",
+        "loc_docks"
+      ],
+      "enemies": [
+        "npc_watch",
+        "npc_nobles",
+        "npc_thieves",
+        "npc_spiders",
+        "npc_guards",
+        "npc_servants",
+        "npc_hammerites",
+        "npc_zombies",
+        "npc_ghosts",
+        "npc_haunts",
+        "npc_undead"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_goldbone",
+        "item_sunburst"
+      ],
+      "imgAB": "A"
+    },
+    {
+      "note": "~~~~~~~~~~~~~~~~~~~~ FEB 2009 ~~~~~~~~~~~~~~~~~~~~",
+      "id": "fm_cleft-vandal",
+      "name": "Tales from the Cleft",
+      "subName": "Vandal",
+      "game": "game_t2",
+      "year": "y2009",
+      "authors": [
+        "auth_balboa"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_cleft",
+      "genres": [
+        "genre_heist",
+        "genre_investigate",
+        "genre_mystery",
+        "genre_ghost"
+      ],
+      "locations": [
+        "loc_mountain",
+        "loc_river",
+        "loc_mansion",
+        "loc_docks"
+      ],
+      "enemies": [
+        "npc_mechanists",
+        "npc_robots",
+        "npc_guards",
+        "npc_servants",
+        "npc_nobles",
+        "npc_beasts",
+        "npc_hammerites"
+      ],
+      "characters": [
+        "char_benny"
+      ],
+      "items": [
+        "item_dice",
+        "item_dewdrop",
+        "item_premask",
+        "item_hand",
+        "item_globe"
+      ],
+      "imgAB": "A",
+      "boxSize": "1"
+    },
+    {
+      "id": "fm_cleft-ladytaker",
+      "name": "Tales from the Cleft",
+      "subName": "Ladytaker",
+      "game": "game_t2",
+      "year": "y2010",
+      "authors": [
+        "auth_balboa"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_cleft",
+      "genres": [
+        "genre_rescue",
+        "genre_heist",
+        "genre_mystery",
+        "genre_deliver"
+      ],
+      "locations": [
+        "loc_streets",
+        "loc_river",
+        "loc_brothel",
+        "loc_tavern",
+        "loc_police",
+        "loc_cemetery",
+        "loc_catacombs",
+        "loc_sewers",
+        "loc_bank",
+        "loc_hotel"
+      ],
+      "enemies": [
+        "npc_nobles",
+        "npc_watch",
+        "npc_guards",
+        "npc_spiders",
+        "npc_hammerites",
+        "npc_servants",
+        "npc_pagans",
+        "npc_beasts",
+        "npc_ghosts",
+        "npc_mechanists",
+        "npc_elementals"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_sunburst",
+        "item_ruby",
+        "item_holyhammer",
+        "item_dewdrop",
+        "item_rosary",
+        "item_dice"
+      ],
+      "imgAB": "A",
+      "boxSize": "1"
+    },
+    {
+      "note": "~~~~~~~~~~~~~~~~~~~~ CAMPAIGN ~~~~~~~~~~~~~~~~~~~~",
+      "id": "t0_template12",
+      "name": "Template 1/2",
+      "subName": "",
+      "game": "",
+      "year": "",
+      "authors": [
+        ""
+      ],
+      "protagonist": [
+        ""
+      ],
+      "campaign": "",
+      "contest": "",
+      "genres": [
+        ""
+      ],
+      "locations": [
+        ""
+      ],
+      "enemies": [
+        ""
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        ""
+      ],
+      "imgAB": "",
+      "boxSize": ""
+    }
+  ]
+}

@@ -1,0 +1,1639 @@
+{
+  "id": "t2_blood",
+  "title": "Trail of Blood",
+  "screens": [
+    "MIS_t2_blood_A",
+    "MIS_t2_blood_B"
+  ],
+  "goToPrev": "t2_courier",
+  "goToNext": "t2_party",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [1000,400,100,0,1500],
+    [1000,400,100,0,1500],
+    [1000,400,100,0,1500]
+  ],
+  "lootCount": [26,26,26],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [500,700,900],
+    "info": "bonus"
+  },
+  "pocketCount": [2,3,3],
+  "pocketChanges": [0,1,1],
+  "carryLoot": true,
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Beck o' the Wills"},
+    {"key": "2", "value": "Gathering Place"},
+    {"key": "3", "value": "Portal Chamber"},
+    {"key": "4", "value": "Eyeball Plant Cave"},
+    {"key": "5", "value": "Swamp"},
+    {"key": "6", "value": "Upper Cliffs"},
+    {"key": "7", "value": "Spring Village"},
+    {"key": "8", "value": "Summer Village"},
+    {"key": "9", "value": "Fall Village"},
+    {"key": "10", "value": "Winter Village"},
+    {"key": "11", "value": "Treebeast Forest"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_addoniziocrystal",
+      "name": "Addonizio Crystal",
+      "img": [
+        "IMG_AddonizioCrystal"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "t2_blood_loot_1",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "east ledge",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            },
+            {
+              "id": "t2_blood_loot_2",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "east ledge",
+              "findExact": "boulder",
+              "findCount": [2,2,2],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            },
+            {
+              "id": "t2_blood_loot_3",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "west ledge",
+              "findExact": "by boulder",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "t2_blood_loot_4",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "southeast tree",
+              "findExact": "ground",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t2_blood_loot_5",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "northeast tree",
+              "findExact": "upper ledge",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t2_blood_loot_6",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "northeast side",
+              "findExact": "by boulder",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t2_blood_loot_7",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "west side",
+              "findExact": "by boulders",
+              "findCount": [3,3,3],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "t2_blood_loot_8",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "south side",
+              "findExact": "by west boulder",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t2_blood_loot_9",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "northeast tree",
+              "findExact": "by bones",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "t2_blood_loot_10",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "northeast hut",
+              "findExact": "near table",
+              "findCount": [3,3,3],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "t2_blood_loot_11",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "SW shore",
+              "findExact": "by pitcher plants",
+              "findCount": [2,2,2],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t2_blood_loot_12",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "west bridge",
+              "findExact": "on Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "carryover",
+          "value": [0,0,0,0],
+          "carryValue": [-1,0,0,0],
+          "locations": [
+            {
+              "id": "t2_blood_loot_13",
+              "findSimple": "findE",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_blood_loot_14",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "SE shore",
+              "findExact": "by pitcher plant",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t2_blood_loot_15",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "north bridge",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t2_blood_loot_16",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "south side",
+              "findExact": "by west boulder",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t2_blood_loot_17",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "east side",
+              "findExact": "by log",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t2_blood_loot_18",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "under northeast bridge",
+              "findExact": "by boulder",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t2_blood_loot_19",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "south side",
+              "findExact": "by boulder",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_treebeastmask",
+      "name": "Treebeast Mask",
+      "img": [
+        "IMG_TreebeastMask"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t2_blood_loot_20",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "south side",
+              "findExact": "boulder",
+              "findCount": [2,2,2],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_TreebeastMask"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_blood_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northeast hut",
+              "findExact": "chair",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_blood_item_5",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "barn",
+              "findExact": "bin",
+              "findCount": [8,6,4]
+            },
+            {
+              "id": "t2_blood_item_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "southeast hut",
+              "findExact": "table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_blood_item_7",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "SE shore",
+              "findExact": "by pitcher plant",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t2_blood_item_8",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "NW shore",
+              "findExact": "by east pitcher plants",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t2_blood_item_9",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "central tree",
+              "findExact": "central stump",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_10",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_11",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_12",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            }
+          ]
+        },
+        {
+          "id": "item_vinearrow",
+          "name": "Vine Arrow",
+          "img": [
+            "IMG_VineArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_13",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "NW shore",
+              "findExact": "west pitcher plants",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_14",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "magic bridge",
+              "findExact": "vine",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_blood_item_15",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "west side",
+              "findExact": "near boulders",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_16",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_blood_item_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "silo",
+              "findExact": "by window",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_blood_item_18",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "west ledge",
+              "findExact": "by boulder",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_19",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "west side",
+              "findExact": "near boulders",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_20",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "waterfall",
+              "findExact": "mouth",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_blood_item_21",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "river",
+              "findExact": "near northeast hut",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t2_blood_item_22",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "pools",
+              "findCount": [4,3,2]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_23",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northwest hut",
+              "findExact": "fireplace",
+              "findCount": [2,2,1]
+            },
+            {
+              "id": "t2_blood_item_24",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "east stalagnate",
+              "findExact": "crevices",
+              "findCount": [2,2,1]
+            },
+            {
+              "id": "t2_blood_item_25",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "west stalagnate",
+              "findExact": "southwest crevice",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_26",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "campfire",
+              "findCount": [2,2,1]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_27",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "by southwest cliff",
+              "findExact": "under plant",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_28",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "by river",
+              "findExact": "west central copse",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_29",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "SW shore",
+              "findExact": "near pitcher plants",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t2_blood_item_30",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "south shore",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_31",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_blood_item_32",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "northeast copse",
+              "findCount": [3,3,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_33",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_blood_item_34",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "near northwest hut",
+              "findExact": "by male Pagan",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_35",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "near southeast pool",
+              "findExact": "on Mechanist",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_36",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "SE shore",
+              "findExact": "by pitcher plant",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_37",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_blood_item_38",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "silo",
+              "findExact": "window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_39",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "northeast tree",
+              "findExact": "by bones",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_40",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_blood_item_41",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "southeast hut",
+              "findExact": "by male Pagan",
+              "findCount": [1,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_42",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "by female Pagan",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_43",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_blood_item_44",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "near east bridge",
+              "findExact": "by Mechanist",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_45",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "exterior",
+              "findExact": "on Mechanist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t2_blood_item_46",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "exterior",
+              "findExact": "on Mechanist",
+              "findCountBox": [0,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t2_blood_item_47",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "by Mechanist",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_48",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_49",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start",
+              "carryover": true
+            },
+            {
+              "id": "t2_blood_item_50",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "near big farm",
+              "findExact": "northwest copse",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_51",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "southwest hut",
+              "findExact": "by fireplace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_52",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northeast hut",
+              "findExact": "southeast corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_53",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northeast hut",
+              "findExact": "southeast corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_54",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "barn loft",
+              "findExact": "bin",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_blood_item_55",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "northeast tree",
+              "findExact": "stool",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t2_blood_item_56",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "central tree",
+              "findExact": "north stump",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_blood_item_57",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "northwest tree",
+              "findExact": "stool",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_58",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "by entrance tree",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_59",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "northeast bridge",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_60",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "under central bridge",
+              "findExact": "fairy ring",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_blood_item_61",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "northwest tree",
+              "findExact": "by stool",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_letter",
+          "name": "Letter",
+          "img": [
+            "IMG_Letter"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_62",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "entrance tree",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_63",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "northeast tree",
+              "findExact": "by stool",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_64",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "northwest tree",
+              "findExact": "by stool",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_65",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "central tree",
+              "findExact": "by icicles",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_item_66",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "west end",
+              "findExact": "by male Pagan",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_67",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "near waterfall",
+              "findExact": "by Mechanist",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_68",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "silo",
+              "findExact": "behind pails",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "Dewdrop",
+          "img": [
+            "IMG_Dewdrop"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_69",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "southwest hut",
+              "findExact": "by Lily",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_rubystone",
+          "name": "Ruby Stone",
+          "img": [
+            "IMG_RubyStone"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_item_70",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "near waterfall",
+              "findExact": "behind plant",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t2_blood_item_71",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northwest hut",
+              "findExact": "bin",
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "t2_blood_item_72",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "by river",
+              "findExact": "east central copse",
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "t2_blood_item_73",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "barn loft",
+              "findExact": "bin",
+              "findCount": [0,1,0]
+            },
+            {
+              "id": "t2_blood_item_74",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "silo",
+              "findExact": "under stairs",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t2_blood_item_75",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "near barn",
+              "findExact": "behind silo",
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_junk_1",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "southwest hut",
+              "findExact": "near fallen table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_blood_junk_2",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northeast hut",
+              "findExact": "southwest corner",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_blood_junk_3",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "southeast hut",
+              "findExact": "near stool",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_junk_4",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "northeast tree",
+              "findExact": "by stool",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "Wooden Goblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_junk_5",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northeast hut",
+              "findExact": "near chair",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_spectacles",
+          "name": "Spectacles",
+          "img": [
+            "IMG_ReadingGlasses"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_junk_6",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "northwest tree",
+              "findExact": "by bones",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_junk_7",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "near northeast hut",
+              "findExact": "farm",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_junk_8",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "barn",
+              "findExact": "southeast corner",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_blood_junk_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "southeast hut",
+              "findExact": "near stool",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_pick",
+          "name": "Pick",
+          "img": [
+            "IMG_Pick"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_junk_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "barn",
+              "findExact": "southeast corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_junk_11",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "exterior",
+              "findExact": "by Birch",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_junk_12",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "south side",
+              "findExact": "by boulder",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_mechanistmace",
+          "name": "Mechanist Mace",
+          "img": [
+            "IMG_MechanistMace"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_junk_13",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "near big farm",
+              "findExact": "northwest copse",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_blood_junk_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "northeast copse",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_junk_15",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "NW shore",
+              "findExact": "by west pitcher plants",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_junk_16",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "SW shore",
+              "findExact": "by pitcher plants",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_junk_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "near barn",
+              "findExact": "northwest copse",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "t2_blood_junk_18",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "southwest pool",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_junk_19",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "SE shore",
+              "findExact": "by pitcher plant",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_junk_20",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "NW shore",
+              "findExact": "by east pitcher plants",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_junk_21",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "SW shore",
+              "findExact": "by pitcher plants",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_blood_junk_22",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "northeast tree",
+              "findExact": "by bones",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_blood_junk_23",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "central tree",
+              "findExact": "south stump",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_blood_junk_24",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "northwest tree",
+              "findExact": "by bones",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

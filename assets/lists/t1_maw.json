@@ -1,0 +1,526 @@
+{
+  "id": "t1_maw",
+  "title": "Into the Maw of Chaos",
+  "screens": [
+    "MIS_t1_maw_A",
+    "MIS_t1_maw_B"
+  ],
+  "goToPrev": "t1_bedfellows",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Stairway"},
+    {"key": "2", "value": "Crystal Caves"},
+    {"key": "3", "value": "Giant Tree"},
+    {"key": "4", "value": "Ritual Chamber"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_constantinessword",
+          "name": "Constantine's Sword",
+          "img": [
+            "IMG_ConstantinesSword"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [40,30,20],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_4",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,0,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,0,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,0,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_gasarrow",
+          "name": "Gas Arrow",
+          "img": [
+            "IMG_GasArrow_TDP"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_7",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,0,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,3,2],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_9",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,3,2],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_10",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "1st cavern",
+              "findExact": "by crystals",
+              "findCount": [7,7,7]
+            },
+            {
+              "id": "t1_maw_item_11",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "2nd cavern",
+              "findExact": "by north crystals",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_12",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "lava river",
+              "findExact": "ledge",
+              "findCount": [6,5,3]
+            },
+            {
+              "id": "t1_maw_item_13",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "by lava pool",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t1_maw_item_14",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "lower slope",
+              "findExact": "east stone bridge",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_15",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "interior",
+              "findExact": "1st ledge",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_maw_item_16",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "interior",
+              "findExact": "3rd ledge",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_maw_item_17",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "interior",
+              "findExact": "4th ledge",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_maw_item_18",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "interior",
+              "findExact": "5th ledge",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_19",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "1st purple tunnel",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_maw_item_20",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "2nd purple tunnel",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_maw_item_21",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "3rd purple tunnel",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_maw_item_22",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "4th purple tunnel",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_23",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,1,0],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_24",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,1,0],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_25",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,1,0],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_26",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,1,0],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_27",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_28",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "lower slope",
+              "findExact": "south stone bridge",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_maw_item_29",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "interior",
+              "findExact": "base",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_30",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_maw_item_31",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [0,0,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_fakeeye",
+          "name": "Fake Eye",
+          "img": [
+            "IMG_TheEye"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_32",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_theeye",
+          "name": "The Eye",
+          "img": [
+            "IMG_TheEye"
+          ],
+          "locations": [
+            {
+              "id": "t1_maw_item_33",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "central pedestal",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

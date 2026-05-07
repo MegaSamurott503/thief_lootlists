@@ -1,0 +1,2762 @@
+{
+  "id": "fm_highway",
+  "title": "Thieves' Highway",
+  "author": [
+    "auth_uncadonego"
+  ],
+  "screens": [
+    "MIS_fm_highway_A",
+    "MIS_fm_highway_B"
+  ],
+  "firstRelease": "October 2005",
+  "latestVersion": "1.0",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "totals": [
+    [1969,100,1875,0,3944],
+    [1969,100,1875,0,3944],
+    [1969,100,1875,0,3944]
+  ],
+  "lootCount": [92,92,92],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [2800,3200,3600]
+  },
+  "pocketCount": [14,14,17],
+  "pocketChanges": [0,0,1],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Garrett's Tenement"},
+    {"key": "2", "value": "North Central Area"},
+    {"key": "3", "value": "North Mechanist Building"},
+    {"key": "4", "value": "Central Office Building"},
+    {"key": "5", "value": "South Central Area"},
+    {"key": "6", "value": "Inn"},
+    {"key": "7", "value": "Carpenter's Building"},
+    {"key": "8", "value": "Southeast Area"},
+    {"key": "9", "value": "South Castle"},
+    {"key": "10", "value": "Condominiums"},
+    {"key": "11", "value": "Factory"},
+    {"key": "12", "value": "Fancy Apartment Building"},
+    {"key": "13", "value": "North Castle"},
+    {"key": "14", "value": "Guard Spire"},
+    {"key": "15", "value": "North Office Building"},
+    {"key": "16", "value": "West Mechanist Building"},
+    {"key": "17", "value": "Northwest Area"},
+    {"key": "18", "value": "West Office Building"},
+    {"key": "19", "value": "Southwest Area"},
+    {"key": "20", "value": "Fembound Gallery"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_ancienthammer",
+      "name": "Ancient Hammer",
+      "img": [
+        "IMG_AncientHammer"
+      ],
+      "values": [
+        {
+          "id": "400gold",
+          "value": [400,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_1",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "crawlspace",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_AncientHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Monster",
+        "IMG_DecorativeMask_Demon",
+        "IMG_DecorativeMask_Bugaku",
+        "IMG_DecorativeMask_Noh",
+        "IMG_DecorativeMask_Inuit",
+        "IMG_DecorativeMask_White"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_2",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "storage",
+              "findCount": [6,6,6],
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_DecorativeMask_Monster",
+                "IMG_DecorativeMask_Demon",
+                "IMG_DecorativeMask_Bugaku",
+                "IMG_DecorativeMask_Noh",
+                "IMG_DecorativeMask_Inuit",
+                "IMG_DecorativeMask_White"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_3",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "bathroom",
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_4",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "upper office",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_5",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "dining room",
+              "findExact": "ledge",
+              "findCount": [1,1,1],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_6",
+              "findSimple": "findM",
+              "findArea": 19,
+              "findNarrow": "red apartment",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_7",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "square table",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_8",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "blue apartment",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_10",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "storage",
+              "findCount": [1,1,1],
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_11",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_12",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "green apartment",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_13",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_14",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_15",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "study",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_16",
+              "findSimple": "findM",
+              "findArea": 15,
+              "findNarrow": "lower office",
+              "findExact": "behind vase",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgear",
+      "name": "Gold Gear",
+      "img": [
+        "IMG_GoldGear"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_17",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "hallway",
+              "findExact": "pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_GoldGear"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_18",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "pink apartment",
+              "findExact": "window table",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_19",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "sitting room",
+              "findExact": "round table",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_20",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findNarrow": "orange apartment",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_21",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "Figalily's bedroom",
+              "findExact": "N nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "10gold",
+          "value": [10,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_22",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "serving table",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_23",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "15gold",
+          "value": [15,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_24",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "bathroom",
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_25",
+              "findSimple": "findM",
+              "findArea": 19,
+              "findNarrow": "red apartment",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_26",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "dining room",
+              "findExact": "ledge",
+              "findCount": [1,1,1],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_27",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "dining room",
+              "findExact": "ledge",
+              "findCount": [1,1,1],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_28",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "storage",
+              "findCount": [1,1,1],
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_horn",
+      "name": "Horn",
+      "img": [
+        "IMG_HornOfQuintus"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_29",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "upper hallway",
+              "findExact": "pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_HornOfQuintus"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_30",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "dining room",
+              "findExact": "ledge",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_31",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "storage",
+              "findCount": [1,1,1],
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_32",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "Figalily's apartment",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_33",
+              "findSimple": "findH",
+              "findArea": 13,
+              "findNarrow": "barracks",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mechaniststatuette",
+      "name": "Mechanist Statuette",
+      "img": [
+        "IMG_MechanistStatuette"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_34",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "storage",
+              "findCount": [1,1,1],
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_painting",
+      "name": "Painting",
+      "img": [
+        "IMG_Painting_Highway1",
+        "IMG_Painting_Highway2"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_35",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "3F",
+              "findExact": "corners",
+              "findCount": [2,2,2],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_Painting_Highway1",
+                "IMG_Painting_Highway2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_36",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "storage",
+              "findCount": [1,1,1],
+              "orderNum": 62,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Tall",
+        "IMG_PrecursorJar_Pointed"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_37",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "brown apartment",
+              "findExact": "upper ledge",
+              "findCount": [6,6,6],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_PrecursorJar_Small",
+                "IMG_PrecursorJar_Tall",
+                "IMG_PrecursorJar_Pointed"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_38",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "storage",
+              "findCount": [3,3,3],
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_PrecursorJar_Small",
+                "IMG_PrecursorJar_Tall",
+                "IMG_PrecursorJar_Pointed"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursormask",
+      "name": "Precursor Mask",
+      "img": [
+        "IMG_PrecursorMask_Brass",
+        "IMG_PrecursorMask_Sun"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_39",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "office",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_PrecursorMask_Sun"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_40",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "storage",
+              "findCount": [1,1,1],
+              "orderNum": 59,
+              "orderImg": [
+                "IMG_PrecursorMask_Brass"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_41",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "storage",
+              "findCount": [1,1,1],
+              "orderNum": 61,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_42",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "living room",
+              "findExact": "cabinet table",
+              "findCount": [2,2,2],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_43",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "dining room",
+              "findExact": "ledge",
+              "findCount": [8,8,8],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_44",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "dining room",
+              "findExact": "ledge",
+              "findCount": [1,1,1],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_45",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "storage",
+              "findCount": [1,1,1],
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "10gold",
+          "value": [10,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_46",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "on nobleman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "15gold",
+          "value": [15,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_47",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_48",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "on nobleman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_49",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "roof",
+              "findExact": "on purple archer",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_50",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "lower roof",
+              "findExact": "on yellow swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_51",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_52",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "green apartment",
+              "findExact": "under bed",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_53",
+              "findSimple": "findM",
+              "findArea": 8,
+              "findNarrow": "guards' attic",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_54",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "on noblewoman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "30gold",
+          "value": [30,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_55",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "on nobleman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "35gold",
+          "value": [35,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_56",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "on noblewoman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_57",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "square table",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_58",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "crawlspace",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_59",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "bedroom closet",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_60",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findNarrow": "Figalily's bedroom",
+              "findExact": "armoire",
+              "findCount": [1,1,1],
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverfirepoker",
+      "name": "Silver Fire Poker",
+      "img": [
+        "IMG_SilverFirePoker"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_61",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "living room",
+              "findExact": "fireplace hearth",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_SilverFirePoker"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Nobleman",
+        "IMG_Statuette_Noblewoman",
+        "IMG_Statuette_Monk",
+        "IMG_Statuette_Nun",
+        "IMG_Statuette_Mage",
+        "IMG_Statuette_Muse"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_62",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "cartographer's room",
+              "findExact": "N bookshelf",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_Statuette_Nobleman"
+              ]
+            },
+            {
+              "id": "fm_highway_loot_63",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "storage",
+              "findCount": [6,6,6],
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_Statuette_Nobleman",
+                "IMG_Statuette_Noblewoman",
+                "IMG_Statuette_Monk",
+                "IMG_Statuette_Nun",
+                "IMG_Statuette_Mage",
+                "IMG_Statuette_Muse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_treebeastmask",
+      "name": "Treebeast Mask",
+      "img": [
+        "IMG_TreebeastMask"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_highway_loot_64",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "storage",
+              "findCount": [1,1,1],
+              "orderNum": 60,
+              "orderImg": [
+                "IMG_TreebeastMask"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_1",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "behind bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_2",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "hidden closet",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_3",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "barracks",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_highway_item_4",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "roof",
+              "findExact": "on purple archer",
+              "findCountBox": [0,0,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_highway_item_5",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "hallway",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_highway_item_6",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "pipe roof",
+              "findExact": "on red archer",
+              "findCountBox": [0,0,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_highway_item_7",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            },
+            {
+              "id": "fm_highway_item_8",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "barracks",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_highway_item_9",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "roof",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_highway_item_10",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "roof",
+              "findExact": "on red archer",
+              "findCountBox": [0,0,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_highway_item_11",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "barracks",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_highway_item_12",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "roof",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_highway_item_13",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "barracks",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "hidden closet",
+              "findExact": "shelf",
+              "findCount": [4,4,2]
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_15",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "fm_highway_item_16",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "guards' attic",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_highway_item_17",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_18",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "hidden closet",
+              "findExact": "shelf",
+              "findCount": [9,7,5]
+            },
+            {
+              "id": "fm_highway_item_19",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "green apartment",
+              "findExact": "toilet",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_highway_item_20",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "plant pots",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_highway_item_21",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "north sink",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_item_22",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "toilet",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_23",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "living room",
+              "findExact": "fireplace",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_24",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "pipe roof",
+              "findExact": "under stairs",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_highway_item_25",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "vines",
+              "findCount": [9,8,6]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_26",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "roof",
+              "findExact": "vent pipe",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_item_27",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "west ledge",
+              "findExact": "vent pipe",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_item_28",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "ledge",
+              "findExact": "vent pipe",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_29",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "ledge",
+              "findExact": "above bed",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_item_30",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_highway_item_31",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "third machine",
+              "findCount": [1,1,1],
+              "findRecipe": "place Flux Spheroid & Steel Plate in chute"
+            },
+            {
+              "id": "fm_highway_item_32",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_33",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "first machine",
+              "findCount": [1,1,1],
+              "findRecipe": "place Mine Bulb & Steel Plate in chutes"
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_34",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "Flash Mine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_35",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "fourth machine",
+              "findCount": [1,1,1],
+              "findRecipe": "place Flare Mixture & Iron Chassis in chute"
+            }
+          ]
+        },
+        {
+          "id": "item_explosivecharge",
+          "name": "Explosive Charge",
+          "img": [
+            "IMG_ExplosiveCharge"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_36",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "first machine",
+              "findCount": [1,1,1],
+              "findRecipe": "place Bantam Node & Mine Bulb in chutes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_37",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "stairway",
+              "findExact": "behind potted plant",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_38",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_39",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_40",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "hidden closet",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_41",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_42",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "second machine",
+              "findCount": [1,1,1],
+              "findRecipe": "place Bantam Node & Flux Spheroid in chute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_43",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "serving table",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_44",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "ledge",
+              "findExact": "above table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_highway_item_45",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "south hall",
+              "findExact": "southwest open window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_item_46",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "serving table",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_47",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "serving table",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_letter",
+          "name": "Letter",
+          "img": [
+            "IMG_Letter"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_48",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "Figalily's apartment",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crafting",
+      "category": "Crafting Materials",
+      "catItems": [
+        {
+          "id": "item_acidicmixture",
+          "name": "Acidic Mixture",
+          "img": [
+            "IMG_Mixture"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_49",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "shelves",
+              "findCount": [9,9,9]
+            }
+          ]
+        },
+        {
+          "id": "item_quicklimemixture",
+          "name": "Quicklime Mixture",
+          "img": [
+            "IMG_Mixture"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_50",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "shelves",
+              "findCount": [8,8,8]
+            }
+          ]
+        },
+        {
+          "id": "item_flaremixture",
+          "name": "Flare Mixture",
+          "img": [
+            "IMG_Mixture"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_51",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "fourth machine",
+              "findCount": [1,1,1],
+              "findRecipe": "place Acidic Mixture & Quicklime Mixture in chute"
+            }
+          ]
+        },
+        {
+          "id": "item_steelplate",
+          "name": "Steel Plate",
+          "img": [
+            "IMG_SteelPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_52",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "workshop",
+              "findExact": "metal shelves",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_highway_item_53",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "shelves",
+              "findCount": [6,6,6]
+            }
+          ]
+        },
+        {
+          "id": "item_ironchassis",
+          "name": "Iron Chassis",
+          "img": [
+            "IMG_IronChassis"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_54",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "workshop",
+              "findExact": "metal shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_highway_item_55",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "shelves",
+              "findCount": [10,10,10]
+            }
+          ]
+        },
+        {
+          "id": "item_springwiring",
+          "name": "Spring Wiring",
+          "img": [
+            "IMG_SpringWiring"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_56",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "shelves",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "item_bantamnode",
+          "name": "Bantam Node",
+          "img": [
+            "IMG_BantamNode"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_57",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "workshop",
+              "findExact": "metal shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_item_58",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "second shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_minebulb",
+          "name": "Mine Bulb",
+          "img": [
+            "IMG_MineBulb"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_59",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "second shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_highway_item_60",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "fourth machine",
+              "findCount": [1,1,1],
+              "findRecipe": "place Iron Chassis & Quicklime Mixture in chute"
+            }
+          ]
+        },
+        {
+          "id": "item_fluxspheroid",
+          "name": "Flux Spheroid",
+          "img": [
+            "IMG_FluxSpheroid"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_item_61",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "second shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_item_62",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "third machine",
+              "findCount": [1,1,1],
+              "findRecipe": "place Acidic Mixture & Spring Wiring in chute"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_1",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "dining room",
+              "findExact": "corner table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_2",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "pink apartment",
+              "findExact": "by couch",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_3",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "pink apartment",
+              "findExact": "cabinet table",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_highway_junk_4",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "sitting room",
+              "findExact": "serving table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_5",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "south sink",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_6",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "pink apartment",
+              "findExact": "by couch",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_7",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "pink apartment",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_8",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "sitting room",
+              "findExact": "serving table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_9",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "living room",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_10",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "serving table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_highway_junk_11",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "dining room",
+              "findExact": "ledge",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_12",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "serving table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_highway_junk_13",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "lower roof",
+              "findExact": "ledge",
+              "findCount": [7,7,7]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_hairbrush",
+          "name": "Hair Brush",
+          "img": [
+            "IMG_HairBrush"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_14",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "green apartment",
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_15",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bedroom closet",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_16",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bathroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_handmirror",
+          "name": "Hand Mirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_17",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "Figalily's apartment",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_18",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bathroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_19",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "closet",
+              "findExact": "south shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_20",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "behind beds",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_highway_junk_21",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bedroom closet",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_22",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "basement",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_23",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "guards' attic",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_pairofdice",
+          "name": "Pair of Dice",
+          "img": [
+            "IMG_PairOfDice"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_24",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "guards' attic",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_25",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "ballroom",
+              "findExact": "round tables",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_highway_junk_26",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "barracks",
+              "findExact": "east window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_27",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "lower hall",
+              "findExact": "by window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_28",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "stairway",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_highway_junk_29",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "3F",
+              "findExact": "corner tables",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_nautical",
+      "category": "Nautical Tools",
+      "catJunk": [
+        {
+          "id": "junk_chartcompass",
+          "name": "Chart Compass",
+          "img": [
+            "IMG_ChartCompass"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_30",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "cartographer's room",
+              "findExact": "easel",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_sextant",
+          "name": "Sextant",
+          "img": [
+            "IMG_Sextant"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_31",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "cartographer's room",
+              "findExact": "N bookshelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_statuefragment",
+          "name": "Statue Fragment",
+          "img": [
+            "IMG_StatueFragment_Head",
+            "IMG_StatueFragment_RightTorso",
+            "IMG_StatueFragment_LeftTorso"
+          ],
+          "locations": [
+            {
+              "id": "fm_highway_junk_47",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "attic",
+              "findExact": "southwest corner",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_highway_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_highway_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 8,
+          "findNarrow": "guards' attic",
+          "findDiff": [1,1,1],
+          "method": "Open the window by the bed"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "Purse",
+          "value": [25,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_highway_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_highway_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 15,
+          "findNarrow": "lower office",
+          "findDiff": [1,1,1],
+          "method": "Look behind the vase"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardLoot": "Gold Coin Stack",
+          "value": [25,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_highway_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_highway_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 2,
+          "findNarrow": "red building",
+          "findDiff": [1,1,1],
+          "method": "Open the west window along the yellow pipe"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardLoot": "Gem Ring",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_highway_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_fm_highway_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 18,
+          "findNarrow": "stairway",
+          "findDiff": [1,1,1],
+          "method": "Look behind the potted plant"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardItem": "Healing Potion",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_highway_sec_5",
+      "number": 5,
+      "img": [
+        "SEC_fm_highway_05"
+      ],
+      "triggers": [
+        {
+          "id": "sec_5_a",
+          "findArea": 20,
+          "findNarrow": "Figalily's bedroom",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch under the north nightstand"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_5_1",
+          "rewardLoot": "Purse",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_2",
+          "rewardLoot": "Ancient Hammer",
+          "value": [400,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

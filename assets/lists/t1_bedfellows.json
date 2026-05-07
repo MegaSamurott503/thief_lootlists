@@ -1,0 +1,1275 @@
+{
+  "id": "t1_bedfellows",
+  "title": "Strange Bedfellows",
+  "screens": [
+    "MIS_t1_bedfellows_A",
+    "MIS_t1_bedfellows_B"
+  ],
+  "goToPrev": "t1_escape",
+  "goToNext": "t1_maw",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [100,0,0,0,100],
+    [100,0,0,0,100],
+    [100,0,0,0,100]
+  ],
+  "lootCount": [1,1,1],
+  "lootChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Streets"},
+    {"key": "3", "value": "Front Gate"},
+    {"key": "4", "value": "Upper Floor"},
+    {"key": "5", "value": "West Barracks"},
+    {"key": "6", "value": "East Barracks"},
+    {"key": "7", "value": "East Balcony"},
+    {"key": "8", "value": "Reliquary"},
+    {"key": "9", "value": "Novices' Quarters"},
+    {"key": "10", "value": "Sparring Room"},
+    {"key": "11", "value": "Priests' Quarters"},
+    {"key": "12", "value": "High Priest's Quarters"},
+    {"key": "13", "value": "Dining Room"},
+    {"key": "14", "value": "Kitchen"},
+    {"key": "15", "value": "Basement Storage"},
+    {"key": "16", "value": "Inquisitor's Quarters"},
+    {"key": "17", "value": "Washroom"},
+    {"key": "18", "value": "Armory"},
+    {"key": "19", "value": "West Balcony"},
+    {"key": "20", "value": "Library"},
+    {"key": "21", "value": "Sanctuary"},
+    {"key": "22", "value": "South Trickster Temple"},
+    {"key": "23", "value": "Elemental Shrines"},
+    {"key": "24", "value": "Hammerite Bastion"},
+    {"key": "25", "value": "North Trickster Temple"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_bedfellows_loot_1",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "southeast bedroom",
+              "findExact": "by wood stand",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_constantinessword",
+          "name": "Constantine's Sword",
+          "img": [
+            "IMG_ConstantinesSword"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_3",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "by Bafford archer",
+              "findExact": "quiver",
+              "findCountBox": [15,15,15],
+              "findBox": true
+            },
+            {
+              "id": "t1_bedfellows_item_4",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "near fallen banner",
+              "findCount": [12,8,6]
+            },
+            {
+              "id": "t1_bedfellows_item_5",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "near fallen banners",
+              "findCount": [14,10,6]
+            },
+            {
+              "id": "t1_bedfellows_item_6",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "south hall",
+              "findExact": "near south door",
+              "findCount": [4,2,0]
+            },
+            {
+              "id": "t1_bedfellows_item_7",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "east hall",
+              "findExact": "near door",
+              "findCount": [10,8,6]
+            },
+            {
+              "id": "t1_bedfellows_item_8",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "by door",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bedfellows_item_9",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "by fallen hammer",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bedfellows_item_10",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "behind crate",
+              "findCount": [12,12,12]
+            },
+            {
+              "id": "t1_bedfellows_item_11",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "near window",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bedfellows_item_12",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "near banner",
+              "findCount": [2,0,0]
+            },
+            {
+              "id": "t1_bedfellows_item_13",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "private study",
+              "findCount": [4,2,2]
+            },
+            {
+              "id": "t1_bedfellows_item_14",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "narthex",
+              "findCount": [4,2,0]
+            },
+            {
+              "id": "t1_bedfellows_item_15",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "nave",
+              "findExact": "by Bafford archer",
+              "findCount": [10,10,10]
+            },
+            {
+              "id": "t1_bedfellows_item_16",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "southwest chamber",
+              "findExact": "near barrel",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bedfellows_item_17",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "west chamber",
+              "findExact": "near pillars",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_bedfellows_item_18",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "north chamber",
+              "findExact": "by east statue",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bedfellows_item_19",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "north chamber",
+              "findExact": "near west pillar",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_20",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [8,8,5],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_bedfellows_item_21",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [15,15,15],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_22",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_bedfellows_item_23",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_gasarrow",
+          "name": "Gas Arrow",
+          "img": [
+            "IMG_GasArrow_TDP"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_24",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_bedfellows_item_25",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 500
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_26",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,1],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t1_bedfellows_item_27",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "near banner",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_bedfellows_item_28",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "narthex",
+              "findExact": "near west door",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_29",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,2],
+              "loadout": "store",
+              "price": 250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_30",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "west sink",
+              "findCount": [3,3,1]
+            },
+            {
+              "id": "t1_bedfellows_item_31",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "water shrine",
+              "findExact": "well",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_32",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "north chamber",
+              "findExact": "burning banner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_item_33",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "fire shrine",
+              "findExact": "brazier",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_34",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "central chamber",
+              "findExact": "debris pile",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_item_35",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "earth shrine",
+              "findExact": "pedestal",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_36",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "air shrine",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_37",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,1],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_bedfellows_item_38",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t1_bedfellows_item_39",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "between north bunkbeds",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_item_40",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "southwest room",
+              "findExact": "near barrels",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_item_41",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "west bedroom",
+              "findExact": "by shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_item_42",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "private study",
+              "findExact": "by footlocker",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_43",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "t1_bedfellows_item_44",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "behind crates",
+              "findCount": [3,2,1]
+            },
+            {
+              "id": "t1_bedfellows_item_45",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "northwest bedroom",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_item_46",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "west hall",
+              "findExact": "behind pew",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_47",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_bedfellows_item_48",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 650
+            },
+            {
+              "id": "t1_bedfellows_item_49",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "near collapsed stairs",
+              "findCount": [1,0,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_50",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,1],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "t1_bedfellows_item_51",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "study",
+              "findExact": "behind fallen bookcase",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_item_52",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "behind east pillar",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_item_53",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "under shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_item_54",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "west hall",
+              "findExact": "by pew",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_55",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_56",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_57",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Trickster Temple Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_58",
+              "findSimple": "find",
+              "findArea": 24,
+              "findExact": "south window",
+              "findCount": [1,1,1],
+              "findRecipe": "placed by Hammerite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_59",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_60",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "northwest bedroom",
+              "findExact": "near table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_61",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_62",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "southeast bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_item_63",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_64",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "near pedestals",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_item_65",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "behind fallen barrel",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_66",
+              "findSimple": "find",
+              "findArea": 24,
+              "findExact": "south window",
+              "findCount": [1,1,1],
+              "findRecipe": "placed by Hammerite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_hammerite",
+      "category": "Hammerite Items",
+      "catItems": [
+        {
+          "id": "item_builderschisel",
+          "name": "Builder's Chisel",
+          "img": [
+            "IMG_BuildersChisel"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_item_67",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "southeast cave",
+              "findExact": "behind pew",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_1",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "northwest room",
+              "findCount": [7,7,7]
+            },
+            {
+              "id": "t1_bedfellows_junk_2",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "southwest room",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_bedfellows_junk_3",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "near banners",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_utensils",
+      "category": "Utensils",
+      "catJunk": [
+        {
+          "id": "junk_cleaver",
+          "name": "Cleaver",
+          "img": [
+            "IMG_Cleaver"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_4",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_5",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "west bunkroom",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ornateplate",
+          "name": "Ornate Plate",
+          "img": [
+            "IMG_OrnatePlate"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_6",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "by dining table",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "t1_bedfellows_junk_7",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "west bunkroom",
+              "findExact": "drink shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_8",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "west bunkroom",
+              "findExact": "drink shelves",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_9",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "near shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bedfellows_junk_10",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "southeast bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_skillet",
+          "name": "Skillet",
+          "img": [
+            "IMG_Skillet"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_11",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_Salt"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_12",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "northwest bedroom",
+              "findExact": "near table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_13",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "southeast bedroom",
+              "findExact": "wood stand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_14",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "near pedestals",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_warhammer",
+          "name": "Warhammer",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_15",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "lower floor",
+              "findExact": "north central room",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_16",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "south street",
+              "findExact": "near temple archway",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_17",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "near pedestals",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_junk_18",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "fireplace",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bedfellows_junk_19",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "upper floor",
+              "findExact": "entrance room",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_junk_20",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "upper floor",
+              "findExact": "south hall",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_junk_21",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "upper floor",
+              "findExact": "northwest room",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_bedfellows_junk_22",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "upper floor",
+              "findExact": "southeast room",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_junk_23",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "lower floor",
+              "findExact": "north central room",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bedfellows_junk_24",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "lower floor",
+              "findExact": "east central room",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ribcage",
+          "name": "Ribcage",
+          "img": [
+            "IMG_Ribcage"
+          ],
+          "locations": [
+            {
+              "id": "t1_bedfellows_junk_25",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "upper floor",
+              "findExact": "southeast room",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

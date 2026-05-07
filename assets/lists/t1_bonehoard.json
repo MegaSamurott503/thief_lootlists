@@ -1,0 +1,1461 @@
+{
+  "id": "t1_bonehoard",
+  "title": "Down in the Bonehoard",
+  "screens": [
+    "MIS_t1_bonehoard_A",
+    "MIS_t1_bonehoard_B"
+  ],
+  "goToPrev": "t1_cragscleft",
+  "goToNext": "t1_assassins",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [975,800,490,0,2265],
+    [625,1200,390,0,2215],
+    [425,1800,225,0,2450]
+  ],
+  "lootCount": [31,26,18],
+  "lootChanges": [0,1,2],
+  "goal1": {
+    "total": [0,1000,2000]
+  },
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Bonehoard Entrance"},
+    {"key": "3", "value": "South Upper Vaults"},
+    {"key": "4", "value": "North Upper Vaults"},
+    {"key": "5", "value": "South Burrick Tunnels"},
+    {"key": "6", "value": "Lowest Oubliette"},
+    {"key": "7", "value": "Burrick Cavern"},
+    {"key": "8", "value": "East Burrick Tunnels"},
+    {"key": "9", "value": "East Statue Crypt"},
+    {"key": "10", "value": "West Burrick Tunnels"},
+    {"key": "11", "value": "Halls of Echoing Repose"},
+    {"key": "12", "value": "Northwest Crypt"},
+    {"key": "13", "value": "Mystic's Heart Vault"},
+    {"key": "14", "value": "Marad Family Tomb"},
+    {"key": "15", "value": "Face Tomb"},
+    {"key": "16", "value": "Hammerite Crypts"},
+    {"key": "17", "value": "Mystic's Soul Vault"},
+    {"key": "18", "value": "Quintus Family Tomb"}
+  ],
+  "notes": [
+    {
+      "id": "note_0",
+      "delimiter": "  ",
+      "icon": "[X]",
+      "desc": "not obtainable in the AM16 patch",
+      "show": true
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_1",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "southeast vault",
+              "findExact": "behind casket",
+              "findCount": [1,1,0],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_2",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "green hall",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_3",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "near Dranko",
+              "findCount": [1,1,0],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_4",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "wall relief",
+              "findExact": "eye sockets",
+              "findCount": [2,2,2],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_5",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findExact": "middle caskets",
+              "findCount": [2,2,0],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_6",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "fireball tomb 1F",
+              "findExact": "W top casket",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_7",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "trapped crypt",
+              "findExact": "SE upper niche",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_8",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "gold crypt",
+              "findExact": "west niche",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_9",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "southwest vault",
+              "findExact": "top casket",
+              "findCount": [1,0,0],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_10",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "south large crypt",
+              "findExact": "casket",
+              "findCount": [1,0,0],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_11",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "bridge tomb",
+              "findExact": "top caskets",
+              "findCount": [2,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_12",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "shrine",
+              "findExact": "altar",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mysticsheart",
+      "name": "Mystic's Heart",
+      "img": [
+        "IMG_MysticsHeart"
+      ],
+      "values": [
+        {
+          "id": "1000gems",
+          "value": [0,1000,0,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_13",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "haunt room",
+              "findExact": "blue chest",
+              "findObj": true,
+              "findCountBox": [0,0,1],
+              "findBox": true,
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_MysticsHeart"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mysticssoul",
+      "name": "Mystic's Soul",
+      "img": [
+        "IMG_MysticsSoul"
+      ],
+      "values": [
+        {
+          "id": "500gems",
+          "value": [0,500,0,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_14",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "trapped room",
+              "findExact": "weighted pedestal",
+              "findObj": true,
+              "findCount": [0,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_MysticsSoul"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_15",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "fireball tomb 1F",
+              "findExact": "N middle casket",
+              "findCount": [1,1,0],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_16",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "west tomb",
+              "findExact": "by casket",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_17",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "near green hall",
+              "findExact": "casket",
+              "findCount": [1,1,0],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_18",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findExact": "2nd west niche",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_19",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "upper level",
+              "findExact": "caskets",
+              "findCount": [3,3,3],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_20",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "caskets",
+              "findCount": [2,2,0],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_21",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "tile crypt",
+              "findExact": "by Sutter",
+              "findCount": [1,1,0],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_22",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findExact": "near Adolpho",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_23",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "near Dranko",
+              "findCount": [1,0,0],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_24",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findExact": "dead end",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_25",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "south vault",
+              "findExact": "south wall relief",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "t1_bonehoard_loot_26",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findExact": "near Adolpho",
+              "findCount": [1,0,0],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            },
+            {
+              "id": "t1_bonehoard_loot_27",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "near surface exit",
+              "findExact": "statue",
+              "findCount": [1,0,0],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [50,50,50],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_4",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [12,12,12],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_bonehoard_item_5",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [12,12,12],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [8,8,8],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_bonehoard_item_7",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [6,6,6],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t1_bonehoard_item_8",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "behind south pillar",
+              "findExact": "blue chest",
+              "findCountBox": [4,4,4],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [6,6,6],
+              "loadout": "store",
+              "price": 250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_10",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "south large crypt",
+              "findExact": "blue chest",
+              "findCountBox": [8,8,8],
+              "findBox": true
+            },
+            {
+              "id": "t1_bonehoard_item_11",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "by Dranko",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "t1_bonehoard_item_12",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "flooded crypt",
+              "findExact": "north wall relief",
+              "findCount": [2,2,2],
+              "findNote": 0
+            },
+            {
+              "id": "t1_bonehoard_item_13",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "lower level",
+              "findCount": [8,8,8],
+              "findRecipe": "trade Golden Bone x5"
+            },
+            {
+              "id": "t1_bonehoard_item_14",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "torch room",
+              "findExact": "circular ledge",
+              "findCount": [0,3,2]
+            },
+            {
+              "id": "t1_bonehoard_item_15",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "water passage",
+              "findCount": [0,2,0]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_16",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "trapped chest room",
+              "findExact": "blue chest",
+              "findCountBox": [6,6,6],
+              "findBox": true
+            },
+            {
+              "id": "t1_bonehoard_item_17",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "ledge",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "t1_bonehoard_item_18",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "lower level",
+              "findCount": [4,4,4],
+              "findRecipe": "trade Golden Bone x5"
+            },
+            {
+              "id": "t1_bonehoard_item_19",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "torch room",
+              "findCount": [0,1,1],
+              "findRecipe": "x1 per defeated fire shadow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_20",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_bonehoard_item_21",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "t1_bonehoard_item_22",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Alarus Extension",
+              "findExact": "by stone plaque",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_item_23",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "font room",
+              "findExact": "by font",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_bonehoard_item_24",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "trapped crypt",
+              "findExact": "SE lower niche",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_bonehoard_item_25",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "entrance vault",
+              "findExact": "behind north statue",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_bonehoard_item_26",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "shrine",
+              "findExact": "altar",
+              "findCount": [2,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_27",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "trapped chest room",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_holywatervial",
+          "name": "Holy Water Vial",
+          "img": [
+            "IMG_HolyWaterVial"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_28",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_bonehoard_item_29",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t1_bonehoard_item_30",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "font room",
+              "findExact": "by font",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_bonehoard_item_31",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "3rd east niche",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "t1_bonehoard_item_32",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "lower level",
+              "findCount": [1,1,1],
+              "findRecipe": "trade Golden Bone x5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_33",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_34",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "by Adolpho",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_item_35",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "northeast vault",
+              "findExact": "near Felix",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_36",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "by Adolpho",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_37",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "by Adolpho",
+              "findCount": [0,1,1]
+            },
+            {
+              "id": "t1_bonehoard_item_38",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "by Dranko",
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_hornofquintus",
+          "name": "Horn of Quintus",
+          "img": [
+            "IMG_HornOfQuintus"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_39",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "tower",
+              "findExact": "pedestal",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_goldenbone",
+          "name": "Golden Bone",
+          "img": [
+            "IMG_GoldenBone_Skull",
+            "IMG_GoldenBone_RightArm",
+            "IMG_GoldenBone_LeftArm",
+            "IMG_GoldenBone_RightLeg",
+            "IMG_GoldenBone_LeftLeg"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_item_40",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "southeast vault",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_item_41",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "bridge tomb",
+              "findExact": "water surface",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_item_42",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "shrine",
+              "findExact": "ground floor",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_item_43",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "lower level",
+              "findExact": "by coffin",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_junk_1",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "northeast vault",
+              "findExact": "near Felix",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_junk_2",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "tile crypt",
+              "findExact": "near Sutter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_3",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "near Adolpho",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_4",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "by Dranko",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_5",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "chasm",
+              "findExact": "near Marcus",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_6",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "northeast vault",
+              "findExact": "near Felix",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_pick",
+          "name": "Pick",
+          "img": [
+            "IMG_Pick"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_junk_7",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "chasm",
+              "findExact": "by Marcus",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_warhammer",
+          "name": "Warhammer",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_junk_8",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "tile crypt",
+              "findExact": "near gargoyle",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_junk_9",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "collapsed hall",
+              "findCountRecipe": [1,1,1],
+              "findRecipe": "rockfall trap"
+            },
+            {
+              "id": "t1_bonehoard_junk_10",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "red tunnel",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bonehoard_junk_11",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "gold crypt",
+              "findCountRecipe": [3,3,3],
+              "findRecipe": "rockfall trap"
+            },
+            {
+              "id": "t1_bonehoard_junk_12",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "gold crypt",
+              "findExact": "west niche",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_junk_13",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "south large crypt",
+              "findExact": "under rope",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_14",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "green hall",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_15",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "center",
+              "findExact": "bone pile",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_16",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "dead end",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_17",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "entrance vault",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_18",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "southeast vault",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_19",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "south vault",
+              "findExact": "ground floor",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_20",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "southwest vault",
+              "findExact": "ground floor",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_21",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "west vault",
+              "findExact": "ground floor",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_22",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "north vault",
+              "findExact": "2F mezzanine",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_23",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "northeast vault",
+              "findExact": "2F bridge",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_24",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "east niches",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bonehoard_junk_25",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "lower level",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t1_bonehoard_junk_26",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "upper level",
+              "findExact": "caskets",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bonehoard_junk_27",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "torch room",
+              "findExact": "circular ledge",
+              "findCount": [0,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_28",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "trapped room",
+              "findExact": "stairs",
+              "findCount": [0,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_ribcage",
+          "name": "Ribcage",
+          "img": [
+            "IMG_Ribcage"
+          ],
+          "locations": [
+            {
+              "id": "t1_bonehoard_junk_29",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "dead end",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bonehoard_junk_30",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "1st east niche",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

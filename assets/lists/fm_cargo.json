@@ -1,0 +1,3587 @@
+{
+  "id": "fm_cargo",
+  "title": "Complicated Cargo",
+  "author": [
+    "auth_intruder"
+  ],
+  "screens": [
+    "MIS_fm_cargo_A",
+    "MIS_fm_cargo_B"
+  ],
+  "firstRelease": "February 2011",
+  "latestVersion": "1.0",
+  "contest": "con_reload1",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [2269,575,430,0,3274],
+    [2269,575,430,0,3274],
+    [2304,575,430,0,3309]
+  ],
+  "lootCount": [105,105,106],
+  "lootChanges": [0,0,1],
+  "goal1": {
+    "total": [1000,1800,2500]
+  },
+  "pocketCount": [26,28,29],
+  "pocketChanges": [0,1,2],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Serenity"},
+    {"key": "2", "value": "Southeast Dayport"},
+    {"key": "3", "value": "Bell Tower"},
+    {"key": "4", "value": "Star Gazer's House"},
+    {"key": "5", "value": "Master Willey's Manor"},
+    {"key": "6", "value": "Castle van Vernon"},
+    {"key": "7", "value": "Fieldstone Estate"},
+    {"key": "8", "value": "Thieves' Hideout"},
+    {"key": "9", "value": "Central West Dayport"},
+    {"key": "10", "value": "Necromancer's Spire"},
+    {"key": "11", "value": "Dayport Apartments"},
+    {"key": "12", "value": "Sir Cullen's Keep"},
+    {"key": "13", "value": "Central East Dayport"},
+    {"key": "14", "value": "Shemenov Estate"},
+    {"key": "15", "value": "Northeast Dayport"},
+    {"key": "16", "value": "Dayport Trader's Bank"},
+    {"key": "17", "value": "Lady Louisa's Suite"},
+    {"key": "18", "value": "Northwest Dayport"},
+    {"key": "19", "value": "Dayport Greenhouse"},
+    {"key": "20", "value": "Castle Carlysle"},
+    {"key": "21", "value": "Inn"},
+    {"key": "22", "value": "South High Towne"},
+    {"key": "23", "value": "High Towne Apartments"},
+    {"key": "24", "value": "Bafford's House"},
+    {"key": "25", "value": "North High Towne"},
+    {"key": "26", "value": "Power Station"},
+    {"key": "27", "value": "Greenhouse Apartment"},
+    {"key": "28", "value": "Hammer Clocktower"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_addoniziocrystal",
+      "name": "Addonizio Crystal",
+      "img": [
+        "IMG_AddonizioCrystal"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_1",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "northeast building",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_2",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "blue apartment",
+              "findExact": "under east table",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_3",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "tower",
+              "findExact": "card table",
+              "findCount": [2,2,2],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_4",
+              "findSimple": "findH",
+              "findArea": 9,
+              "findNarrow": "red brick building",
+              "findExact": "under elevator",
+              "findCount": [2,2,2],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_5",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "tower",
+              "findExact": "by stool",
+              "findCount": [2,2,2],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_6",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "employee office",
+              "findExact": "northeast desk",
+              "findCount": [1,1,1],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_7",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "employee office",
+              "findExact": "safe",
+              "findCount": [36,36,36],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_8",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "guest room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_9",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findNarrow": "upper apartment",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_diamonddrillbit",
+      "name": "Diamond Drill Bit",
+      "img": [
+        "IMG_DiamondDrillbit"
+      ],
+      "values": [
+        {
+          "id": "250gems",
+          "value": [0,250,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_10",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "workshop",
+              "findExact": "middle rafter",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_DiamondDrillbit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_11",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "castle",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_12",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "2F",
+              "findExact": "by north bookcase",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_13",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "vault",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 60,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_14",
+              "findSimple": "findM",
+              "findArea": 23,
+              "findNarrow": "lower apartment",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_15",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "gray building",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_16",
+              "findSimple": "findM",
+              "findArea": 15,
+              "findNarrow": "stone apartment",
+              "findExact": "bedroom",
+              "findCount": [1,1,1],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_17",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "castle",
+              "findExact": "guard post",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_18",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_19",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "guard barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_20",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "Gold Dice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_21",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "northeast apartment",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_22",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "man's apartment",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_23",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "gray building",
+              "findExact": "east rafters",
+              "findCount": [2,2,2],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_24",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "kitchen",
+              "findExact": "north shelf",
+              "findCount": [1,1,1],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_25",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "skylight apartment",
+              "findExact": "west room",
+              "findCount": [2,2,2],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_26",
+              "findSimple": "findM",
+              "findArea": 18,
+              "findNarrow": "City Watch building",
+              "findExact": "west window",
+              "findCount": [1,1,1],
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_27",
+              "findSimple": "findM",
+              "findArea": 25,
+              "findNarrow": "northeast building",
+              "findExact": "by shelf",
+              "findCount": [1,1,1],
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_28",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "lobby",
+              "findExact": "gear shaft",
+              "findCount": [1,1,1],
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_29",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "upper E apartment",
+              "findExact": "safe",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_30",
+              "findSimple": "findM",
+              "findArea": 14,
+              "findNarrow": "pantry",
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_31",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "lower west apartment",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_32",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "brick apartment",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_33",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "skylight apartment",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_34",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "lower floor",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_35",
+              "findSimple": "findH",
+              "findArea": 24,
+              "findNarrow": "servant's bedroom",
+              "findExact": "by bed",
+              "findCount": [1,1,1],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_36",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "gray building",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_37",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "gray building",
+              "findExact": "behind banner",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_38",
+              "findSimple": "findM",
+              "findArea": 18,
+              "findNarrow": "skylight apartment",
+              "findExact": "behind painting",
+              "findCount": [1,1,1],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Tall"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_39",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "man's apartment",
+              "findExact": "corner table",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_PrecursorJar_Small"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_40",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "main bedroom",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_41",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "2F",
+              "findExact": "by north bookcase",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_42",
+              "findSimple": "findM",
+              "findArea": 18,
+              "findNarrow": "stone apartment",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "35gold",
+          "value": [35,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_43",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "west roof",
+              "findExact": "on purple swordsman",
+              "findCountBox": [0,0,1],
+              "findPick": true,
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "40gold",
+          "value": [40,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_44",
+              "findSimple": "findE",
+              "findArea": 22,
+              "findNarrow": "east roof",
+              "findExact": "on purple swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_45",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "castle",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_46",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findNarrow": "front door",
+              "findExact": "on purple swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_47",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "blue apartment",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_48",
+              "findSimple": "findH",
+              "findArea": 28,
+              "findNarrow": "basement",
+              "findExact": "under elevator",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 59,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_49",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "blue apartment",
+              "findExact": "under east table",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_50",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "tower",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_51",
+              "findSimple": "findH",
+              "findArea": 9,
+              "findNarrow": "red brick building",
+              "findExact": "under elevator",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_52",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "middle floor",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_53",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findNarrow": "east room",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverflute",
+      "name": "Silver Flute",
+      "img": [
+        "IMG_SilverFlute"
+      ],
+      "values": [
+        {
+          "id": "25gold25goods",
+          "value": [25,0,25,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_54",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "south room",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_SilverFlute"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_55",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findExact": "planter",
+              "findCount": [2,2,2],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_56",
+              "findSimple": "findM",
+              "findArea": 25,
+              "findNarrow": "workshop",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_57",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "red brick building",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Mage"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_58",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "skywalk",
+              "findExact": "under south chair",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_Statuette_Mage"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_59",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "hallway",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_Statuette_Mage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_cargo_loot_60",
+              "findSimple": "findM",
+              "findArea": 14,
+              "findNarrow": "chandelier hall",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            },
+            {
+              "id": "fm_cargo_loot_61",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "bedroom",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Bolt",
+          "img": [
+            "IMG_BroadheadArrow_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [10,10,10],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_cargo_item_4",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "castle",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_5",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "lower roof",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_6",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "tower",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_7",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "east roof",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_8",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "roof",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_9",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "roof",
+              "findExact": "on red archer",
+              "findCountBox": [0,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_10",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "balcony",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_11",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "on reaver archer",
+              "findCountBox": [3,3,3],
+              "findRecipe": "after placing Cargo No. 3 aboard Serenity",
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_12",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "on reaver archer",
+              "findCountBox": [3,3,3],
+              "findRecipe": "after placing Cargo No. 3 aboard Serenity",
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_13",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "on reaver archer",
+              "findCountBox": [3,3,3],
+              "findRecipe": "after placing Cargo No. 3 aboard Serenity",
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_14",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "on reaver archer",
+              "findCountBox": [3,3,3],
+              "findRecipe": "after placing Cargo No. 3 aboard Serenity",
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_15",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "chandelier hall",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_16",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "terrace",
+              "findExact": "on Watch archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_17",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "balcony",
+              "findExact": "on Watch archer",
+              "findCountBox": [0,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_18",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "on Watch archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_19",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "on reaver archer",
+              "findCountBox": [3,3,3],
+              "findRecipe": "after placing Cargo No. 3 aboard Serenity",
+              "findPick": true,
+              "findUnable": true
+            },
+            {
+              "id": "fm_cargo_item_20",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "on reaver archer",
+              "findCountBox": [3,3,3],
+              "findRecipe": "after placing Cargo No. 3 aboard Serenity",
+              "findPick": true,
+              "findUnable": true
+            },
+            {
+              "id": "fm_cargo_item_21",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "on reaver archer",
+              "findCountBox": [3,3,3],
+              "findRecipe": "after placing Cargo No. 3 aboard Serenity",
+              "findPick": true,
+              "findUnable": true
+            },
+            {
+              "id": "fm_cargo_item_22",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "flue roof",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_23",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "streets",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true,
+              "findUnable": true
+            },
+            {
+              "id": "fm_cargo_item_24",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "west roof",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_25",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "on reaver archer",
+              "findCountBox": [3,3,3],
+              "findRecipe": "after placing Cargo No. 3 aboard Serenity",
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_26",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "hallway",
+              "findExact": "on thief archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_27",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "on reaver archer",
+              "findCountBox": [3,3,3],
+              "findRecipe": "after placing Cargo No. 3 aboard Serenity",
+              "findPick": true
+            },
+            {
+              "id": "fm_cargo_item_28",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "by front door",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Aquatic Bolt",
+          "img": [
+            "IMG_WaterArrow_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_29",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Climbing Bolt",
+          "img": [
+            "IMG_RopeArrow_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_30",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [6,6,6],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_cargo_item_31",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "east roof",
+              "findExact": "tower",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Blank Bolt",
+          "img": [
+            "IMG_NoisemakerArrow_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_32",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "guard barracks",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_33",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "blue apartment",
+              "findExact": "pail",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_item_34",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "cistern",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_35",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north bedroom",
+              "findExact": "blue chest",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "fm_cargo_item_36",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "fireplace",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_37",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "rat den",
+              "findExact": "footlocker",
+              "findCountBox": [4,4,4],
+              "findBox": true
+            },
+            {
+              "id": "fm_cargo_item_38",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "tower",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_item_39",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "southeast planter",
+              "findExact": "bush",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_40",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "blue apartment",
+              "findExact": "behind tree",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_41",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "roof access",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_42",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "armory",
+              "findExact": "by door",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_item_43",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_44",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "guard barracks",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "Flash Mine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_45",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_46",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "berth deck",
+              "findExact": "dining table",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_cargo_item_47",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "tower",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_item_48",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "chandelier hall",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_49",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "attic",
+              "findExact": "hidden closet",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_50",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "attic",
+              "findExact": "hidden closet",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_cargo_item_51",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "stone apartment",
+              "findExact": "hidden closet",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_cargo_item_52",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "crawlspace",
+              "findExact": "safe",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_53",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "attic",
+              "findExact": "hidden closet",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_containers",
+      "category": "Containers",
+      "catItems": [
+        {
+          "id": "item_foodbag",
+          "name": "Cargo No. 3",
+          "img": [
+            "IMG_SpiceBag"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_54",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "kitchen",
+              "findExact": "by island",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_powderkeg",
+          "name": "Cargo No. 5",
+          "img": [
+            "IMG_PowderKeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_55",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "armory",
+              "findExact": "under shelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_toolcrate",
+          "name": "Cargo No. 2",
+          "img": [
+            "IMG_ToolCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_56",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "red brick building",
+              "findExact": "lower floor",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_footlocker",
+          "name": "Cargo No. 6",
+          "img": [
+            "IMG_Footlocker"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_57",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "vault",
+              "findExact": "below banner",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_chest",
+          "name": "Cargo No. 1",
+          "img": [
+            "IMG_Chest_Precursor"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_58",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "safe room",
+              "findExact": "safe",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_safe",
+          "name": "Cargo No. 4",
+          "img": [
+            "IMG_Safe"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_59",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "Tuttleshank's office",
+              "findExact": "near planter",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_60",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_61",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Van Vernon Safe Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_62",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "bedroom",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Fieldstone Estate Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_63",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "roof",
+              "findExact": "on yellow swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Bank Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_64",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Bank Safe Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_65",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "employee office",
+              "findExact": "behind flowerpot",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Castle Carlysle Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_66",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "hallway",
+              "findExact": "on purple swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Bafford's Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_67",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "main bedroom",
+              "findExact": "on Lord Bafford",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Apartment Chest Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_68",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Vault Control Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_69",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "lobby",
+              "findExact": "on Hammerite priest",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_70",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "guard barracks",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_flare",
+          "name": "Beacon",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_71",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_cargo_item_72",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "glass roof",
+              "findCount": [1,1,1],
+              "findRecipe": "place Cargo No. 1 aboard Serenity"
+            },
+            {
+              "id": "fm_cargo_item_73",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "flue roof",
+              "findCount": [1,1,1],
+              "findRecipe": "place Cargo No. 2 aboard Serenity"
+            },
+            {
+              "id": "fm_cargo_item_74",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "south roof",
+              "findCount": [1,1,1],
+              "findRecipe": "place Cargo No. 3 aboard Serenity"
+            },
+            {
+              "id": "fm_cargo_item_75",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "flue roof",
+              "findCount": [1,1,1],
+              "findRecipe": "place Cargo No. 4 aboard Serenity"
+            },
+            {
+              "id": "fm_cargo_item_76",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "flue roof",
+              "findCount": [1,1,1],
+              "findRecipe": "place Cargo No. 5 aboard Serenity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_77",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_78",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "1F",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_79",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "berth deck",
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_item_80",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "brick apartment",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_cargo_item_81",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "kitchen",
+              "findExact": "southwest counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_item_82",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_83",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "northeast apartment",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_item_84",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_85",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "berth deck",
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_item_86",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "employee office",
+              "findExact": "northwest desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_item_87",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "east room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "Dewdrop",
+          "img": [
+            "IMG_Dewdrop"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_item_88",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "bedroom",
+              "findExact": "by crib",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_1",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "belfry",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_2",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "castle",
+              "findExact": "hallway",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_3",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "tower",
+              "findExact": "near card table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_4",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "ladder room",
+              "findExact": "by door",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_5",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "near cistern",
+              "findExact": "upper ledge",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_6",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "1F",
+              "findExact": "by front door",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cargo_junk_7",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "roof",
+              "findExact": "under stairs",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_8",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "south roof",
+              "findExact": "by chimney",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_9",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "pantry",
+              "findExact": "under shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_10",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "chandelier hall",
+              "findExact": "closet",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_11",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "west roof",
+              "findExact": "near door",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_12",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "east roof",
+              "findExact": "by barrel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_13",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "crawlspace",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cargo_junk_14",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "workshop",
+              "findExact": "corners",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_15",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "roof access",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_16",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "basement",
+              "findExact": "near gear shaft",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "hold",
+              "findExact": "starboard shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_18",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "belfry",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_19",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "castle",
+              "findExact": "guard post",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_20",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "castle",
+              "findExact": "workshop",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_21",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "attic",
+              "findExact": "near wardrobe",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cargo_junk_22",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "workshop",
+              "findExact": "by machinery",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_23",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "tower",
+              "findExact": "near card table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_24",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "rat den",
+              "findExact": "snowpile",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_25",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "hallway",
+              "findExact": "by pipes",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_26",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "ladder room",
+              "findExact": "by barrel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_27",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north bedroom",
+              "findExact": "by barrel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_28",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "1F",
+              "findExact": "by front door",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_29",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "red brick building",
+              "findExact": "upper floor",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_30",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "red brick building",
+              "findExact": "lower floor",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_31",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "lower floor",
+              "findExact": "under stairs",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_cargo_junk_32",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "hallway",
+              "findExact": "by south window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_33",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "pantry",
+              "findExact": "under shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_34",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "streets",
+              "findExact": "under west roof",
+              "findCount": [1,1,1],
+              "findUnable": true
+            },
+            {
+              "id": "fm_cargo_junk_35",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "west roof",
+              "findExact": "near door",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_36",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "east roof",
+              "findExact": "tower",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_37",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "streets",
+              "findExact": "under east roof",
+              "findCount": [1,1,1],
+              "findUnable": true
+            },
+            {
+              "id": "fm_cargo_junk_38",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "terrace",
+              "findExact": "by barrel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_39",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "crawlspace",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cargo_junk_40",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "workshop",
+              "findExact": "near corners",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_41",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "terrace",
+              "findExact": "by chair",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_42",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "sitting room",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_43",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "streets",
+              "findExact": "by Hammer clocktower",
+              "findCount": [1,1,1],
+              "findUnable": true
+            },
+            {
+              "id": "fm_cargo_junk_44",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "roof access",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_45",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "basement",
+              "findExact": "near gear shaft",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_46",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "vault control room",
+              "findExact": "by barrel",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_47",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "berth deck",
+              "findExact": "dining table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_48",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "northeast apartment",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_49",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "kitchen",
+              "findExact": "south shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_50",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "crib room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalplate",
+          "name": "Metal Plate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_51",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "kitchen",
+              "findExact": "south shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_52",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "berth deck",
+              "findExact": "dining table",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_53",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "berth deck",
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_54",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "brick apartment",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_cargo_junk_55",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "skylight apartment",
+              "findExact": "west room",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_56",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "Wooden Goblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_57",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "berth deck",
+              "findExact": "dining table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_58",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "northeast apartment",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_59",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "kitchen",
+              "findExact": "north shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_60",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "skywalk",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_61",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "brick apartment",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "findSecret": true
+            },
+            {
+              "id": "fm_cargo_junk_62",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_63",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "berth deck",
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_64",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "northeast apartment",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_65",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "by south window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_66",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_67",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "by south window",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_hairbrush",
+          "name": "Hair Brush",
+          "img": [
+            "IMG_HairBrush"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_68",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "lower apartment",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_handmirror",
+          "name": "Hand Mirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_69",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "lower apartment",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_spectacles",
+          "name": "Spectacles",
+          "img": [
+            "IMG_ReadingGlasses"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_70",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "bedroom",
+              "findExact": "low table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_71",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "middle floor",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_72",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "servant's bedroom",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_73",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "upper E apartment",
+              "findExact": "corner table",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_cargo_junk_74",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "hallway",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_75",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "greenhouse",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_76",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "blue apartment",
+              "findExact": "low table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cargo_junk_77",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "man's apartment",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_78",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "near furnace",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cargo_junk_79",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "furnace room",
+              "findExact": "west coal pile",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_pick",
+          "name": "Pick",
+          "img": [
+            "IMG_Pick"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_80",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "lower roof",
+              "findExact": "by thieves",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_statuefragment",
+          "name": "Statue Fragment",
+          "img": [
+            "IMG_StatueFragment_Head",
+            "IMG_StatueFragment_RightTorso",
+            "IMG_StatueFragment_LeftTorso"
+          ],
+          "locations": [
+            {
+              "id": "fm_cargo_junk_81",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "roof access",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_cargo_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_cargo_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 2,
+          "findNarrow": "castle",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever behind the statue in the guard post"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "Purse",
+          "value": [50,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_cargo_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_cargo_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 4,
+          "findNarrow": "attic",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever on the wardrobe"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardItem": "Speed Potion",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_2",
+          "rewardItem": "Invisibility Potion",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_3",
+          "rewardItem": "Slow-fall Potion",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_cargo_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_cargo_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 2,
+          "findNarrow": "gray building",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever in the rafters above the stairs"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardLoot": "Necklace",
+          "value": [100,100,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_2",
+          "rewardLoot": "Precursor Canopic Jar",
+          "value": [0,0,75,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_cargo_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_fm_cargo_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 13,
+          "findNarrow": "near cistern",
+          "findDiff": [1,1,1],
+          "method": "Shoot a climbing bolt to reach the window with the ledge"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardLoot": "Gold Ring",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_cargo_sec_5",
+      "number": 5,
+      "img": [
+        "SEC_fm_cargo_05"
+      ],
+      "triggers": [
+        {
+          "id": "sec_5_a",
+          "findArea": 9,
+          "findNarrow": "near Dayport Apartments",
+          "findDiff": [1,1,1],
+          "method": "Open the window with the planter"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_5_1",
+          "rewardLoot": "Gold Vase",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_2",
+          "rewardItem": "Loaf",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_cargo_sec_6",
+      "number": 6,
+      "img": [
+        "SEC_fm_cargo_06"
+      ],
+      "triggers": [
+        {
+          "id": "sec_6_a",
+          "findArea": 13,
+          "findNarrow": "near Shemenov Estate",
+          "findDiff": [1,1,1],
+          "method": "Shoot a climbing bolt to reach the window with the ledge"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_6_1",
+          "rewardLoot": "Gold Nugget",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_cargo_sec_7",
+      "number": 7,
+      "img": [
+        "SEC_fm_cargo_07"
+      ],
+      "triggers": [
+        {
+          "id": "sec_7_a",
+          "findArea": 14,
+          "findNarrow": "chandelier hall",
+          "findDiff": [1,1,1],
+          "method": "Frob the torch in the closet"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_7_1",
+          "rewardLoot": "Tiara",
+          "value": [75,50,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_cargo_sec_8",
+      "number": 8,
+      "img": [
+        "SEC_fm_cargo_08"
+      ],
+      "triggers": [
+        {
+          "id": "sec_8_a",
+          "findArea": 15,
+          "findNarrow": "stone apartment",
+          "findDiff": [1,1,1],
+          "method": "Frob the torch in the hallway"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_8_1",
+          "rewardItem": "Invisibility Potion",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_cargo_sec_9",
+      "number": 9,
+      "img": [
+        "SEC_fm_cargo_09"
+      ],
+      "triggers": [
+        {
+          "id": "sec_9_a",
+          "findArea": 28,
+          "findNarrow": "furnace room",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch behind the furnace"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_9_1",
+          "rewardLoot": "Purse",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

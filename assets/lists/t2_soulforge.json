@@ -1,0 +1,1751 @@
+{
+  "id": "t2_soulforge",
+  "title": "Sabotage at Soulforge",
+  "screens": [
+    "MIS_t2_soulforge_A",
+    "MIS_t2_soulforge_B"
+  ],
+  "goToPrev": "t2_masks",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Factory Bay A"},
+    {"key": "3", "value": "Southern Apse"},
+    {"key": "4", "value": "East Hall"},
+    {"key": "5", "value": "Plans Room"},
+    {"key": "6", "value": "Factory Bay C"},
+    {"key": "7", "value": "Factory Bay B"},
+    {"key": "8", "value": "West Hall"},
+    {"key": "9", "value": "Factory Bay D"},
+    {"key": "10", "value": "Font Hall"},
+    {"key": "11", "value": "Factory Bay E"},
+    {"key": "12", "value": "Northern Apse"},
+    {"key": "13", "value": "North Hall"},
+    {"key": "14", "value": "South Generator Room"},
+    {"key": "15", "value": "Basement"},
+    {"key": "16", "value": "Exploratory Inventing Workshop"},
+    {"key": "17", "value": "Cooling Tank Room"},
+    {"key": "18", "value": "Pipe Hall"},
+    {"key": "19", "value": "Computer Rooms"},
+    {"key": "20", "value": "Turret Production"},
+    {"key": "21", "value": "North Generator Room"},
+    {"key": "22", "value": "Barracks"},
+    {"key": "23", "value": "Forge Hall"},
+    {"key": "24", "value": "Scrap Metal Room"}
+  ],
+  "notes": [
+    {
+      "id": "note_0",
+      "icon": "+",
+      "desc": "respawns 1 item (or 2 crystals) every 3 minutes if your supply of that item is too low",
+      "show": true
+    },
+    {
+      "id": "note_1",
+      "icon": "++",
+      "desc": "respawns 1 item (or 2 crystals) every 3 minutes if your supply of that item is too low",
+      "show": false
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [40,40,40],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_soulforge_item_4",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "by east bunkbeds",
+              "findExact": "footlocker",
+              "findCountBox": [8,8,8],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [7,7,7],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_soulforge_item_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,6,3],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_7",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_soulforge_item_8",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,0],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_9",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [6,6,6],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_soulforge_item_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,10,10],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_gasarrow",
+          "name": "Gas Arrow",
+          "img": [
+            "IMG_GasArrow_TMA"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_11",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,2,2],
+              "loadout": "store",
+              "price": 500
+            }
+          ]
+        },
+        {
+          "id": "item_vinearrow",
+          "name": "Vine Arrow",
+          "img": [
+            "IMG_VineArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_12",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_soulforge_item_13",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "vine",
+              "findExact": "by north bush",
+              "findCount": [2,2,2],
+              "findNote": 0
+            },
+            {
+              "id": "t2_soulforge_item_14",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north end",
+              "findExact": "near ladder",
+              "findCount": [2,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_15",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "vine",
+              "findExact": "by bush",
+              "findCount": [2,2,2],
+              "findNote": 0
+            },
+            {
+              "id": "t2_soulforge_item_16",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "sewer hatch room",
+              "findExact": "upper ledge",
+              "findCount": [2,2,2],
+              "findCountActual": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_17",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_18",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "near plans room",
+              "findExact": "vine",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_soulforge_item_19",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "pool",
+              "findCount": [5,4,3],
+              "findNote": 0
+            },
+            {
+              "id": "t2_soulforge_item_20",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "2F northwest ledge",
+              "findExact": "pool",
+              "findCount": [3,2,1]
+            },
+            {
+              "id": "t2_soulforge_item_21",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "sewers",
+              "findExact": "cisterns",
+              "findCount": [8,7,6],
+              "findNote": 1
+            },
+            {
+              "id": "t2_soulforge_item_22",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "south tank",
+              "findCount": [6,5,4],
+              "findNote": 0
+            },
+            {
+              "id": "t2_soulforge_item_23",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "northeast side",
+              "findExact": "pool",
+              "findCount": [3,2,1]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_24",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "west upper room",
+              "findExact": "vine clump",
+              "findCount": [4,3,2]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_25",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "circular hall",
+              "findExact": "vine clump",
+              "findCount": [5,5,5],
+              "findNote": 1
+            },
+            {
+              "id": "t2_soulforge_item_26",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "near factory bay D",
+              "findExact": "vine",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_27",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "northwest corner",
+              "findExact": "by elevator",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_soulforge_item_28",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "west side",
+              "findExact": "vine",
+              "findCount": [3,3,3],
+              "findNote": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_29",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,2,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_soulforge_item_30",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [0,5,5],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t2_soulforge_item_31",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "fusing machine",
+              "findRecipe": "place Steel Plate & Flux Spheroid in chute",
+              "findCountRecipe": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "t2_soulforge_item_32",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "east upper room",
+              "findExact": "northeast corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_33",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "by west bunkbeds",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_34",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 1",
+              "findExact": "shelf",
+              "findCount": [3,2,1]
+            },
+            {
+              "id": "t2_soulforge_item_35",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "sealing machine",
+              "findRecipe": "place Steel Plate & Mine Bulb in chutes",
+              "findCountRecipe": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_36",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,4],
+              "loadout": "store",
+              "price": 500
+            },
+            {
+              "id": "t2_soulforge_item_37",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "by east bunkbeds",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "Flash Mine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_38",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 2",
+              "findExact": "north shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_39",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "amalgamating machine",
+              "findRecipe": "place  Flare Mixture & Iron Chassis in chutes",
+              "findCountRecipe": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_explosivecharge",
+          "name": "Explosive Charge",
+          "img": [
+            "IMG_ExplosiveCharge"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_40",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "sealing machine",
+              "findRecipe": "place Bantam Node & Mine Bulb in chutes",
+              "findCountRecipe": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "t2_soulforge_item_41",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "west upper room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_42",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "southeast workbench",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_43",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_soulforge_item_44",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "by west bunkbeds",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_45",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_46",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 600
+            },
+            {
+              "id": "t2_soulforge_item_47",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "supply room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_48",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "loadout": "store",
+              "price": 150
+            },
+            {
+              "id": "t2_soulforge_item_49",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "by west bunkbeds",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_50",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_51",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Plans Room Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_52",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "atrium",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Bay D Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_53",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "behind west door",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_54",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "hidden office",
+              "findExact": "by desk",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "t2_soulforge_item_55",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 2",
+              "findExact": "south shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_soulforge_item_56",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "rolling machine",
+              "findRecipe": "place Flare Mixture & Steel Plate in chutes",
+              "findCountRecipe": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_57",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storage room 3",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_soulforge_item_58",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "south hall",
+              "findExact": "footlocker",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            },
+            {
+              "id": "t2_soulforge_item_59",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "near west exit",
+              "findExact": "toolbox",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_60",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_61",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_soulforge_item_62",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "north ledge",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_63",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 1",
+              "findExact": "shelf",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t2_soulforge_item_64",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "bellowing machine",
+              "findRecipe": "place Bantam Node & Flux Spheroid in chute",
+              "findCountRecipe": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_frogbeastegg",
+          "name": "Frogbeast Egg",
+          "img": [
+            "IMG_FrogbeastEgg"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_65",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_soulforge_item_66",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t2_soulforge_item_67",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "above west machine",
+              "findExact": "catwalk",
+              "findCount": [1,1,1],
+              "findNote": 0
+            },
+            {
+              "id": "t2_soulforge_item_68",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "north office",
+              "findExact": "vine clump",
+              "findCount": [1,1,1],
+              "findNote": 0
+            },
+            {
+              "id": "t2_soulforge_item_69",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "near large archway",
+              "findExact": "vine",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_70",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "vine clump",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_soulforge_item_71",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "near south exit",
+              "findExact": "vine",
+              "findCount": [2,2,1],
+              "findNote": 1
+            },
+            {
+              "id": "t2_soulforge_item_72",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "west side",
+              "findExact": "vine",
+              "findCount": [2,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_73",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "atrium",
+              "findExact": "counter",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_74",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "rolling machine",
+              "findRecipe": "place Steel Plate & Combat Bot Boiler in chutes 5 times",
+              "findCountRecipe": [1,1,1],
+              "findEaster": true
+            }
+          ]
+        },
+        {
+          "id": "item_blueprints",
+          "name": "Blueprints",
+          "img": [
+            "IMG_Blueprints"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_75",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "atrium",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_76",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "atrium",
+              "findExact": "safes",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crafting",
+      "category": "Crafting Materials",
+      "catItems": [
+        {
+          "id": "item_acidicmixture",
+          "name": "Acidic Mixture",
+          "img": [
+            "IMG_Mixture"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_77",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 2",
+              "findExact": "middle shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_soulforge_item_78",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 1",
+              "findExact": "shelf",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "t2_soulforge_item_79",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storage room 3",
+              "findExact": "under shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_soulforge_item_80",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "near west exit",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_quicklimemixture",
+          "name": "Quicklime Mixture",
+          "img": [
+            "IMG_Mixture"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_81",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 2",
+              "findExact": "middle shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_soulforge_item_82",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 1",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_soulforge_item_83",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storage room 3",
+              "findExact": "under shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_soulforge_item_84",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "west upper room",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_flaremixture",
+          "name": "Flare Mixture",
+          "img": [
+            "IMG_Mixture"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_85",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 1",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_86",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "attic",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_87",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "amalgamating machine",
+              "findRecipe": "place Acidic Mixture & Quicklime Mixture in chutes",
+              "findCountRecipe": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_88",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "supply room",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_soulforge_item_89",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "southeast side",
+              "findExact": "near piston",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_steelplate",
+          "name": "Steel Plate",
+          "img": [
+            "IMG_SteelPlate"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_90",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 2",
+              "findExact": "north shelf",
+              "findCount": [7,7,7],
+              "findNote": 0
+            },
+            {
+              "id": "t2_soulforge_item_91",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 1",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_soulforge_item_92",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storage room 3",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_soulforge_item_93",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "southeast workbench",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_ironchassis",
+          "name": "Iron Chassis",
+          "img": [
+            "IMG_IronChassis"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_94",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 1",
+              "findExact": "shelf",
+              "findCount": [7,6,4]
+            },
+            {
+              "id": "t2_soulforge_item_95",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storage room 3",
+              "findExact": "shelf",
+              "findCount": [7,5,3]
+            },
+            {
+              "id": "t2_soulforge_item_96",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "supply room",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_soulforge_item_97",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "south workbench",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_gauge",
+          "name": "Gauge",
+          "img": [
+            "IMG_Gauge"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_98",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 2",
+              "findExact": "south shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_soulforge_item_99",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 1",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_soulforge_item_100",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storage room 3",
+              "findExact": "shelf",
+              "findCount": [4,4,4],
+              "findNote": 0
+            }
+          ]
+        },
+        {
+          "id": "item_springwiring",
+          "name": "Spring Wiring",
+          "img": [
+            "IMG_SpringWiring"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_101",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 2",
+              "findExact": "north shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_soulforge_item_102",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 1",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_soulforge_item_103",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storage room 3",
+              "findExact": "shelf",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t2_soulforge_item_104",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "north hall",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "t2_soulforge_item_105",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "electric coils room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_106",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "supply room",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_soulforge_item_107",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "north workbench",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_bantamnode",
+          "name": "Bantam Node",
+          "img": [
+            "IMG_BantamNode"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_108",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 2",
+              "findExact": "middle shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_109",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 1",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_soulforge_item_110",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storage room 3",
+              "findExact": "shelf",
+              "findCount": [5,5,5],
+              "findNote": 0
+            },
+            {
+              "id": "t2_soulforge_item_111",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "office",
+              "findExact": "toolbox",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "t2_soulforge_item_112",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "supply room",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_minebulb",
+          "name": "Mine Bulb",
+          "img": [
+            "IMG_MineBulb"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_113",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "amalgamating machine",
+              "findRecipe": "place Quicklime Mixture & Iron Chassis in chutes",
+              "findCountRecipe": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_fluxspheroid",
+          "name": "Flux Spheroid",
+          "img": [
+            "IMG_FluxSpheroid"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_114",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storage room 3",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_115",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "fusing machine",
+              "findRecipe": "place Acidic Mixture & Spring Wiring in chute",
+              "findCountRecipe": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_116",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "electric coils room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_soulforge_item_117",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "supply room",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_regulatinground",
+          "name": "Regulating Round",
+          "img": [
+            "IMG_RegulatingRound"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_118",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "linking machine",
+              "findRecipe": "place Gauge & Bantam Node in chute",
+              "findCountRecipe": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_mechanist",
+      "category": "Mechanist Items",
+      "catItems": [
+        {
+          "id": "item_signalbolt",
+          "name": "Signal Bolt",
+          "img": [
+            "IMG_SignalBolt"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_119",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "storage room 2",
+              "findExact": "shelves",
+              "findCount": [2,2,2],
+              "findNote": 0
+            }
+          ]
+        },
+        {
+          "id": "item_stage1piece",
+          "name": "Stage 1 Piece",
+          "img": [
+            "IMG_Stage1Piece"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_120",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "bellowing machine",
+              "findRecipe": "place Signal Bolt in chute",
+              "findCountRecipe": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_stage2piece",
+          "name": "Stage 2 Piece",
+          "img": [
+            "IMG_Stage2Piece"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_121",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "rolling machine",
+              "findRecipe": "place Stage 1 Piece & Steel Plate in chutes",
+              "findCountRecipe": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_stage3piece",
+          "name": "Stage 3 Piece",
+          "img": [
+            "IMG_Stage3Piece"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_122",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "sealing machine",
+              "findRecipe": "place Stage 2 Piece & Regulating Round in chutes",
+              "findCountRecipe": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_guidingbeacon",
+          "name": "Guiding Beacon",
+          "img": [
+            "IMG_GuidingBeacon"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_item_123",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "fusing machine",
+              "findRecipe": "place Stage 3 Piece in chute",
+              "findObj": true,
+              "findCountRecipe": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_levers",
+      "category": "Levers and Knobs",
+      "catJunk": [
+        {
+          "id": "junk_leverhandle",
+          "name": "Lever Handle",
+          "img": [
+            "IMG_LeverHandle"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_junk_1",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "southeast side",
+              "findExact": "conveyor belts",
+              "findCount": [-1,-1,-1]
+            }
+          ]
+        },
+        {
+          "id": "junk_doorknob",
+          "name": "Doorknob",
+          "img": [
+            "IMG_Doorknob"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_junk_2",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "southeast side",
+              "findExact": "conveyor belts",
+              "findCount": [-1,-1,-1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_swordhilt",
+          "name": "Sword Hilt",
+          "img": [
+            "IMG_SwordHilt"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_junk_3",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "southeast side",
+              "findExact": "conveyor belts",
+              "findCount": [-1,-1,-1]
+            }
+          ]
+        },
+        {
+          "id": "junk_mechanistmace",
+          "name": "Mechanist Mace",
+          "img": [
+            "IMG_MechanistMace"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_junk_4",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "by east bunkbeds",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "t2_soulforge_junk_5",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "disposal chute",
+              "findCount": [-1,-1,-1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "t2_soulforge_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_t2_soulforge_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 5,
+          "findNarrow": "atrium",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever by the north window"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardRoute": [
+            "the plans room atrium",
+            "the north office"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_2",
+          "rewardItem": "Flare",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_3",
+          "rewardOther": "A lever that controls the gate on the northern apse's 3rd floor",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_soulforge_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_t2_soulforge_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 7,
+          "findNarrow": "amalgamating machine",
+          "findDiff": [1,1,1],
+          "method": "Insert a flare mixture and an iron chassis"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardItem": "Flash Mine",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_soulforge_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_t2_soulforge_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 9,
+          "findNarrow": "sealing machine",
+          "findDiff": [1,1,1],
+          "method": "Insert a bantam node on the left and a mine bulb on the right"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardItem": "Explosive Charge",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "t2_soulforge_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_t2_soulforge_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 11,
+          "findNarrow": "fusing machine",
+          "findDiff": [1,1,1],
+          "method": "Insert a steel plate and a flux spheroid"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardItem": "Flash Bomb",
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2531 @@
+{
+  "id": "fm_cleft-ladytaker",
+  "title": "Tales from the Cleft",
+  "subtitle": "Ladytaker",
+  "author": [
+    "auth_balboa"
+  ],
+  "screens": [
+    "MIS_fm_cleft-ladytaker_A",
+    "MIS_fm_cleft-ladytaker_B"
+  ],
+  "firstRelease": "December 2010",
+  "latestVersion": "1.0",
+  "goToPrev": "fm_cleft-vandal",
+  "diffNames": ["Normal","Hard","Expert"],
+  "markObj": true,
+  "totals": [
+    [1693,548,535,0,2776],
+    [1693,548,535,0,2776],
+    [1693,548,535,0,2776]
+  ],
+  "lootCount": [46,46,46],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [800,1200,1600]
+  },
+  "pocketCount": [5,5,5],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Upton District"},
+    {"key": "2", "value": "Canal"},
+    {"key": "3", "value": "Shantytown"},
+    {"key": "4", "value": "Bartlett's Brothel"},
+    {"key": "5", "value": "Bartlett's Fresh Fish"},
+    {"key": "6", "value": "The Lions"},
+    {"key": "7", "value": "Bloated Burrick"},
+    {"key": "8", "value": "Upton Precinct"},
+    {"key": "9", "value": "High Street"},
+    {"key": "10", "value": "Secluded Grove"},
+    {"key": "11", "value": "Ladywalke"},
+    {"key": "12", "value": "Dayside Apothecary"},
+    {"key": "13", "value": "Verminatrix"},
+    {"key": "14", "value": "Market"},
+    {"key": "15", "value": "Great Tree Shrubbery"},
+    {"key": "16", "value": "Tomb of the Unknown Hammer"},
+    {"key": "17", "value": "Sewers"},
+    {"key": "18", "value": "The Anvil"},
+    {"key": "19", "value": "Ursula's Visions"},
+    {"key": "20", "value": "Upton Trust"},
+    {"key": "21", "value": "West Market Building"},
+    {"key": "22", "value": "Northwestern Street"},
+    {"key": "23", "value": "Knight's Repose"},
+    {"key": "24", "value": "Shrine of Blessing"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_addoniziocrystal",
+      "name": "Addonizio Crystal",
+      "img": [
+        "IMG_AddonizioCrystal"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_1",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "storefront",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coin",
+      "name": "Coin",
+      "img": [
+        "IMG_Coin"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_2",
+              "findSimple": "findM",
+              "findArea": 19,
+              "findNarrow": "storefront",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_3",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "custodian's bedroom",
+              "findExact": "behind bed",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cleft-ladytaker_loot_4",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findNarrow": "bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Red"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_5",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "Hobart apartment",
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_DecorativePlate_Red"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_6",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findExact": "behind bed",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_cleft-ladytaker_loot_7",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "novice quarters",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_8",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "lower vent",
+              "findExact": "under north grate",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_9",
+              "findSimple": "findH",
+              "findArea": 6,
+              "findNarrow": "Rutherwood apartment",
+              "findExact": "safe",
+              "findObj": true,
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_10",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "Foggbottom apartment",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cleft-ladytaker_loot_11",
+              "findSimple": "findH",
+              "findArea": 6,
+              "findNarrow": "Rutherwood apartment",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "497gold23gems45goods",
+          "value": [497,23,45,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_12",
+              "findSimple": "findH",
+              "findArea": 20,
+              "findNarrow": "lobby",
+              "findExact": "safe",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "Gold Dice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_13",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findNarrow": "Hobart guest room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_14",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "apebeast's cistern",
+              "findExact": "by bedroll",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "15gold",
+          "value": [15,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_15",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "Hobart apartment",
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_16",
+              "findSimple": "findH",
+              "findArea": 24,
+              "findNarrow": "SW prayer room",
+              "findExact": "above altar",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            },
+            {
+              "id": "fm_cleft-ladytaker_loot_17",
+              "findSimple": "findH",
+              "findArea": 24,
+              "findNarrow": "NW prayer room",
+              "findExact": "above altar",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            },
+            {
+              "id": "fm_cleft-ladytaker_loot_18",
+              "findSimple": "findH",
+              "findArea": 24,
+              "findNarrow": "NE prayer room",
+              "findExact": "above altar",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            },
+            {
+              "id": "fm_cleft-ladytaker_loot_19",
+              "findSimple": "findH",
+              "findArea": 24,
+              "findNarrow": "SE prayer room",
+              "findExact": "above altar",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_20",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "Foggbottom apartment",
+              "findExact": "round table",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_21",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "Hobart apartment",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_22",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "Osterlind apartment",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_23",
+              "findSimple": "findH",
+              "findArea": 12,
+              "findExact": "by west broken chair",
+              "findCount": [2,2,2],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mechaniststatuette",
+      "name": "Mechanist Statuette",
+      "img": [
+        "IMG_MechanistStatuette"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_24",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "Bassal apartment",
+              "findExact": "pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace",
+        "IMG_Necklace_EP_Alt1"
+      ],
+      "values": [
+        {
+          "id": "50gold50gems",
+          "value": [50,50,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_25",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "Foggbottom apartment",
+              "findExact": "coin box",
+              "findCount": [1,1,1],
+              "findLink": [
+                {
+                  "id": "fm_cleft-ladytaker_item_50",
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_Necklace_EP_Alt1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50gold200gems",
+          "value": [50,200,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_26",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "middle cistern",
+              "findExact": "on Ginnie",
+              "findCount": [1,1,1],
+              "findLink": [
+                {
+                  "id": "fm_cleft-ladytaker_item_51",
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Tall"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_27",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "Foggbottom apartment",
+              "findExact": "dresser",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_28",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "Foggbottom apartment",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_29",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findExact": "west window",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_30",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findNarrow": "storefront",
+              "findExact": "writing desk",
+              "findCount": [2,2,2],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_31",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findNarrow": "Rutherwood guest room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_32",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "storefront",
+              "findExact": "fish barrel",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cleft-ladytaker_loot_33",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "Foggbottom apartment",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_cleft-ladytaker_loot_34",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "storefront",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_35",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "east alley",
+              "findExact": "behind white building",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "fm_cleft-ladytaker_loot_36",
+              "findSimple": "findM",
+              "findArea": 8,
+              "findNarrow": "cell",
+              "findCount": [2,2,2],
+              "findRecipe": "shoot Water Arrow at conduit",
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "fm_cleft-ladytaker_loot_37",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findNarrow": "bunkroom",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_38",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "apebeast's cistern",
+              "findExact": "by staff",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_39",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findNarrow": "storefront",
+              "findExact": "behind mirror",
+              "findCount": [1,1,1],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_treebeastmask",
+      "name": "Treebeast Mask",
+      "img": [
+        "IMG_TreebeastMask"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_loot_40",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "Bassal apartment",
+              "findExact": "bedroom",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_TreebeastMask"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [8,8,8],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_4",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "evidence room",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_5",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "on Watch archer",
+              "findCountBox": [3,3,3],
+              "findRecipe": "after placing Evidence in Truart's crate",
+              "findPick": true
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_6",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "bunkroom",
+              "findExact": "on male Pagan",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_7",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [6,6,6],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [4,4,4],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_9",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "cell",
+              "findExact": "pail",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_10",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "footlocker",
+              "findCount": [4,4,4],
+              "findRecipe": "after shooting Water Arrow at conduit"
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_11",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "novice quarters",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashmine",
+          "name": "Flash Mine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_12",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "novice quarters",
+              "findExact": "under SW bed",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_verminbuster",
+          "name": "Vermin Buster",
+          "img": [
+            "IMG_VerminBuster"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_13",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "lower vent",
+              "findExact": "by Clark",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_14",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "storefront",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_breathpotion",
+          "name": "Breath Potion",
+          "img": [
+            "IMG_BreathPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_15",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "storefront",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_16",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "footlocker",
+              "findCount": [1,1,1],
+              "findRecipe": "after shooting Water Arrow at conduit"
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_17",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "fallen barrel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_18",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "novice quarters",
+              "findExact": "under SW bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_buildersblessing",
+          "name": "The Builder's Blessing",
+          "img": [
+            "IMG_GoldGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_19",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "central room",
+              "findExact": "above font",
+              "findObj": true,
+              "findCount": [5,5,5],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_20",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_21",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Upton Gate Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_22",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "bridge",
+              "findExact": "on Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Upton Precinct Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_23",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "on elite Watch swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Shrubbery Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_24",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "north potted tree",
+              "findCount": [1,1,1],
+              "findRecipe": "after taking Vermin Buster scroll & Vermin Buster, & unlocking canal drain"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "UPW Sewer Access Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_25",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "on Mechanist worker",
+              "findCount": [1,1,1],
+              "findRecipe": "after exiting Tomb of the Unknown Hammer"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Upton Trust Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_26",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "middle cistern",
+              "findExact": "underwater",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Hammer Suite Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_27",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "2F hall",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_28",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "elevator shaft",
+              "findExact": "niche",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_29",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "attic",
+              "findExact": "by south trapdoor",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_30",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_31",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "footlocker",
+              "findCount": [1,1,1],
+              "findRecipe": "after shooting Water Arrow at conduit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_32",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_33",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "Osterlind apartment",
+              "findExact": "bowl",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_34",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "basement",
+              "findExact": "toolbox",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_fritter",
+          "name": "Tasty Fritter",
+          "img": [
+            "IMG_Fritter"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_35",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_crumpledpaper",
+          "name": "Crumpled Paper",
+          "img": [
+            "IMG_CrumpledPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_36",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "behind footlocker",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_37",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "storefront",
+              "findExact": "crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_38",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "Foggbottom apartment",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_39",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "lobby",
+              "findExact": "front desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_40",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "novice quarters",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_41",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_42",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "Foggbottom apartment",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_43",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findRecipe": "after shooting Water Arrow at conduit",
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Ursula's Visions",
+          "img": [
+            "IMG_Book_Green"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_44",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "near Shantytown",
+              "findExact": "on Ursula",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "Dewdrop",
+          "img": [
+            "IMG_Dewdrop_Alt3"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_45",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "attic",
+              "findExact": "crib",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_hammerite",
+      "category": "Hammerite Items",
+      "catItems": [
+        {
+          "id": "item_holyhammer",
+          "name": "Mallet of the Righteous",
+          "img": [
+            "IMG_HolyHammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_46",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "glass casket",
+              "findExact": "in Hammerite's hand",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_novicehammer",
+          "name": "Novice Hammer",
+          "img": [
+            "IMG_NoviceHammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_47",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "on Bramrich",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_rosarybeads",
+          "name": "Evidence",
+          "img": [
+            "IMG_RosaryBeads"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_48",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "evidence room",
+              "findExact": "safe",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_scarecrow",
+          "name": "Pagan Doll",
+          "img": [
+            "IMG_Scarecrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_49",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "elevator shaft",
+              "findExact": "by Ralph",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_jewelry",
+      "category": "Jewelry",
+      "catItems": [
+        {
+          "id": "item_necklace",
+          "name": "Necklace",
+          "img": [
+            "IMG_Necklace",
+            "IMG_Necklace_EP_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_50",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "Foggbottom apartment",
+              "findExact": "coin box",
+              "findCount": [1,1,1],
+              "findLink": [
+                {
+                  "id": "fm_cleft-ladytaker_loot_25",
+                  "value": [50,50,0,0],
+                  "findCount": [1,1,1]
+                }
+              ]
+            },
+            {
+              "id": "fm_cleft-ladytaker_item_51",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "middle cistern",
+              "findExact": "on Ginnie",
+              "findCount": [1,1,1],
+              "findLink": [
+                {
+                  "id": "fm_cleft-ladytaker_loot_26",
+                  "value": [50,200,0,0],
+                  "findCount": [1,1,1]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_rubystone",
+          "name": "Fist-Sized Ruby",
+          "img": [
+            "IMG_RubyStone"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_item_52",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "temple",
+              "findExact": "wall relief",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_1",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_2",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_3",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "Benny's bedroom",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalplate",
+          "name": "Metal Plate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_4",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_5",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "novice quarters",
+              "findExact": "dining table",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_6",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "kitchen",
+              "findExact": "south sink",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_7",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "Benny's bedroom",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_8",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "custodian's bedroom",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "Wooden Goblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_9",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_10",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_11",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_12",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "balcony",
+              "findExact": "crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_13",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "Benny's bedroom",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_14",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "bunkroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_15",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "custodian's bedroom",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_16",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "kitchen",
+              "findExact": "south sink",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_17",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "custodian's bedroom",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_18",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_19",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "bar",
+              "findExact": "middle table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_20",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_21",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "balcony",
+              "findExact": "crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_setofbottles",
+          "name": "Set of Bottles",
+          "img": [
+            "IMG_SetOfBottles"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_22",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_trickstersownhotsauce",
+          "name": "Trickster's Hot Sauce",
+          "img": [
+            "IMG_TrickstersOwnHotSauce"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_23",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "novice quarters",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "junk_potionbottle",
+          "name": "Potion Bottle",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_24",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "Foggbottom apartment",
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_handmirror",
+          "name": "Hand Mirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_25",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "Foggbottom apartment",
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_26",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "storefront",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_27",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "bunkroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_28",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "Benny's bedroom",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_29",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "east alley",
+              "findExact": "behind white building",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_30",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "by workbench",
+              "findExact": "barrel",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_pick",
+          "name": "Pick",
+          "img": [
+            "IMG_Pick"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_31",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "by workbench",
+              "findExact": "barrel",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_levers",
+      "category": "Levers and Knobs",
+      "catJunk": [
+        {
+          "id": "junk_doorknob",
+          "name": "Doorknob",
+          "img": [
+            "IMG_Doorknob"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_32",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "apebeast's cistern",
+              "findExact": "by staff",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_33",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "middle cistern",
+              "findExact": "on Ginnie",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_statuefragment",
+          "name": "Statue Fragment",
+          "img": [
+            "IMG_StatueFragment_Head",
+            "IMG_StatueFragment_RightTorso",
+            "IMG_StatueFragment_LeftTorso"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_34",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "by broken statues",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_animals",
+      "category": "Animals",
+      "catJunk": [
+        {
+          "id": "junk_frozenfish",
+          "name": "Frozen Fish",
+          "img": [
+            "IMG_FrozenFish"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_35",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_cleft-ladytaker_junk_36",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storefront",
+              "findExact": "fish barrel",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_37",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "apebeast's cistern",
+              "findExact": "by bones",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ribcage",
+          "name": "Ribcage",
+          "img": [
+            "IMG_Ribcage"
+          ],
+          "locations": [
+            {
+              "id": "fm_cleft-ladytaker_junk_38",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "apebeast's cistern",
+              "findExact": "by bedroll",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_cleft-ladytaker_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_cleft-ladytaker_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 6,
+          "findNarrow": "Rutherwood apartment",
+          "findDiff": [1,1,1],
+          "method": "Shoot a water arrow at the wallpaper on the northwest wall"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "Gold Coin Stack",
+          "value": [25,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_2",
+          "rewardLoot": "Gemstone",
+          "value": [0,100,0,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_1_3",
+          "rewardBonus": true,
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_cleft-ladytaker_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_cleft-ladytaker_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 3,
+          "findNarrow": "Pagan camp",
+          "findDiff": [1,1,1],
+          "method": "Open the brown shack while holding the Pagan doll"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardItem": "Fist-Sized Ruby",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_2",
+          "rewardBonus": true,
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_cleft-ladytaker_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_cleft-ladytaker_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 1,
+          "findNarrow": "Hammer stations",
+          "findDiff": [1,1,1],
+          "method": "Use the novice hammer on all sixteen Builder's sigils (High Street: Knight's Repose, by tomb gate - Upton Street: by Bloated Burrick bridge, behind The Lions - Shantytown: bridge, east alley - Ladywalke: behind The Lions, behind headstone - Park Street: by Dayside Apothecary - market: Eversharp Blades, Great Tree Shrubbery roof - canal: under tomb bridge, southwest end - High Ende: behind Nilsson Building x2, behind Ursula's visions)"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardRoute": [
+            "Upton District",
+            "the Tomb of the Unknown Hammer"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_2",
+          "rewardLoot": "Gold Hammer",
+          "value": [75,0,0,0],
+          "findCount": [4,4,4]
+        },
+        {
+          "id": "sec_3_3",
+          "rewardItem": "The Builder's Blessing",
+          "findCount": [5,5,5]
+        },
+        {
+          "id": "sec_3_4",
+          "rewardBonus": true,
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

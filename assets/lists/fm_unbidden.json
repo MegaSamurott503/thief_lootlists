@@ -1,0 +1,2127 @@
+{
+  "id": "fm_unbidden",
+  "title": "Unbidden Guest",
+  "author": [
+    "auth_melan"
+  ],
+  "screens": [
+    "MIS_fm_unbidden_A",
+    "MIS_fm_unbidden_B"
+  ],
+  "firstRelease": "September 2008",
+  "latestVersion": "1.0",
+  "contest": "con_cte",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [1416,450,1125,0,2991],
+    [1416,450,1125,0,2991],
+    [1416,450,1125,0,2991]
+  ],
+  "lootCount": [64,64,64],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [1200,1600,2200]
+  },
+  "pocketCount": [1,2,1],
+  "pocketChanges": [0,1,2],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loft House"},
+    {"key": "2", "value": "Nursery"},
+    {"key": "3", "value": "Lady van Vernon's House"},
+    {"key": "4", "value": "Master Willey's House"},
+    {"key": "5", "value": "Power Station"},
+    {"key": "6", "value": "Guard Tower"},
+    {"key": "7", "value": "Lady Louisa's Salon"},
+    {"key": "8", "value": "Candlemaker's House"},
+    {"key": "9", "value": "Goldsmith's Tavern"},
+    {"key": "10", "value": "Rooftop Barracks"},
+    {"key": "11", "value": "Diamond Cutter's House"},
+    {"key": "12", "value": "Mechanist Seminary"},
+    {"key": "13", "value": "Rotting House"},
+    {"key": "14", "value": "Keeper Book Storage"},
+    {"key": "15", "value": "Northeast House"},
+    {"key": "16", "value": "Autumnal Spire"},
+    {"key": "17", "value": "Catacombs"},
+    {"key": "18", "value": "Striding Stalker's Lair"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coin",
+      "name": "Coin",
+      "img": [
+        "IMG_Coin"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_1",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "storefront",
+              "findExact": "deal tray",
+              "findCount": [4,4,4],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_2",
+              "findSimple": "findM",
+              "findArea": 8,
+              "findNarrow": "workshop",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_cthulhustatuette",
+      "name": "Cthulhu Statuette",
+      "img": [
+        "IMG_CthulhuStatue"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_3",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "lab",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_CthulhuStatue"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_dress",
+      "name": "Dress",
+      "img": [
+        "IMG_Dress"
+      ],
+      "values": [
+        {
+          "id": "30goods",
+          "value": [0,0,30,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_4",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "east guest room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_Dress"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_5",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_6",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "table",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_unbidden_loot_7",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "attic",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_unbidden_loot_8",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findExact": "by couch",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_9",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "Rudolphus's bedroom",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "50gold50gems",
+          "value": [50,50,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_10",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "lab",
+              "findExact": "by levitating skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_11",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "storefront",
+              "findExact": "safe",
+              "findCount": [8,8,8],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldbook",
+      "name": "Gold Book",
+      "img": [
+        "IMG_GoldBook"
+      ],
+      "values": [
+        {
+          "id": "250goods",
+          "value": [0,0,250,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_12",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "above tower",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_GoldBook"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_13",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "near floor hole",
+              "findExact": "by pews",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_unbidden_loot_14",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "near floor hole",
+              "findExact": "behind door",
+              "findCount": [1,1,1],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_15",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "study",
+              "findExact": "desk",
+              "findCount": [2,2,2],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_unbidden_loot_16",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "west guest room",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgear",
+      "name": "Gold Gear",
+      "img": [
+        "IMG_GoldGear"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_17",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "Rudolphus's bedroom",
+              "findExact": "safe",
+              "findCount": [3,3,3],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_GoldGear"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_18",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_unbidden_loot_19",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "couch",
+              "findExact": "north armrest",
+              "findCount": [1,1,1],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_20",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "attic",
+              "findExact": "by statue",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            },
+            {
+              "id": "fm_unbidden_loot_21",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "Skynes's bedroom",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_22",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "basement",
+              "findExact": "by north barrel",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_23",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "upper room",
+              "findExact": "corner table",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_24",
+              "findSimple": "findH",
+              "findArea": 4,
+              "findNarrow": "study",
+              "findExact": "bookshelf",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_25",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "trophy room",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_unbidden_loot_26",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "chapel",
+              "findExact": "altar",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldenbone",
+      "name": "Golden Bone",
+      "img": [
+        "IMG_GoldenBone_Skull"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_27",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "lab",
+              "findExact": "by levitating skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_GoldenBone_Skull"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_28",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "basement",
+              "findExact": "northeast rafter",
+              "findCount": [2,2,2],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_jeweleddagger",
+      "name": "Jeweled Dagger",
+      "img": [
+        "IMG_JeweledDagger"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_29",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "under bed",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            },
+            {
+              "id": "fm_unbidden_loot_30",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "study",
+              "findExact": "south window",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_keepermedallion",
+      "name": "Keeper Medallion",
+      "img": [
+        "IMG_KeeperMedallion"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_31",
+              "findSimple": "findM",
+              "findArea": 14,
+              "findNarrow": "south book crate",
+              "findExact": "behind board",
+              "findCount": [1,1,1],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_KeeperMedallion"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_32",
+              "findSimple": "findH",
+              "findArea": 17,
+              "findNarrow": "Alraune family tomb",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursormask",
+      "name": "Precursor Mask",
+      "img": [
+        "IMG_PrecursorMask_Green",
+        "IMG_PrecursorMask_Fading",
+        "IMG_PrecursorMask_Bare"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_33",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "lab",
+              "findExact": "near ceiling",
+              "findCount": [4,4,4],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_PrecursorMask_Green",
+                "IMG_PrecursorMask_Fading",
+                "IMG_PrecursorMask_Bare"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_34",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "table",
+              "findCount": [4,4,4],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_unbidden_loot_35",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_unbidden_loot_36",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "Rudolphus's bedroom",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_rarewine",
+      "name": "Rare Wine",
+      "img": [
+        "IMG_RareWine"
+      ],
+      "values": [
+        {
+          "id": "200goods",
+          "value": [0,0,200,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_37",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "pedestal",
+              "findExact": "coin box",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_RareWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "50gold50gems",
+          "value": [50,50,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_38",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "lab",
+              "findExact": "by levitating skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_39",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "study",
+              "findExact": "desk",
+              "findCount": [3,3,3],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "30gold",
+          "value": [30,0,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_40",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "hallway",
+              "findExact": "behind upper door",
+              "findCount": [1,1,1],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Mage"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_41",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "lab",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_Statuette_Mage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_unbidden_loot_42",
+              "findSimple": "findH",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "behind painting",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_1",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "rooftop entrance",
+              "findExact": "by footlocker",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_3",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "terrace",
+              "findExact": "near archers",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_unbidden_item_4",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "rooftop entrance",
+              "findExact": "by footlocker",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_unbidden_item_5",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "on red archer",
+              "findCountBox": [0,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [4,4,4],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_7",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "lab",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_8",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "planter",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_unbidden_item_9",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "garden",
+              "findExact": "southeast corner",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_10",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "upper floor",
+              "findExact": "brazier",
+              "findCount": [1,0,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_11",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_unbidden_item_12",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "rooftop entrance",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_explosivecharge",
+          "name": "Explosive Charge",
+          "img": [
+            "IMG_ExplosiveCharge_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_13",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "rooftop entrance",
+              "findExact": "footlocker",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_14",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,0,0],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_unbidden_item_15",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "rooftop entrance",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_unbidden_item_16",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "Skynes's bedroom",
+              "findExact": "blue chest",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_17",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_18",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Master Willey's Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_19",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "study",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Power Station Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_20",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "east entrance",
+              "findExact": "key rack",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Workshop Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_21",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "bedroom",
+              "findExact": "crib",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_unbidden_item_22",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "chapel",
+              "findExact": "on Mechanist priest",
+              "findCountBox": [1,1,0],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Diamond Cutter's Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_23",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "Skynes's bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "East Gate Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_24",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "Rudolphus's bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_25",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_26",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "west serving table",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_27",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "upper room",
+              "findExact": "corner table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_unbidden_item_28",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "table",
+              "findExact": "bowl",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_29",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "table",
+              "findExact": "bowl",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_30",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "west serving table",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_31",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "west serving table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_letter",
+          "name": "Letter",
+          "img": [
+            "IMG_Letter"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_32",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_unbidden_item_33",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "study",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_playbill",
+          "name": "Playbill",
+          "img": [
+            "IMG_CrumpledPlaybill"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_34",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "by table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_35",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "study",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_unbidden_item_36",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "west guest room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_37",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "rooftop entrance",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_38",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "study",
+              "findExact": "wastebasket",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_unbidden_item_39",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "Rudolphus's bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_unbidden_item_40",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "storefront",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_precursorscroll",
+          "name": "Precursor Scroll",
+          "img": [
+            "IMG_PrecursorScroll_Round"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_41",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "south cushion",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Dusty Notes",
+          "img": [
+            "IMG_Book_Keeper"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_42",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "book pile",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Worm-Eaten Book",
+          "img": [
+            "IMG_Book_Green"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_43",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "book pile",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Moldy Book",
+          "img": [
+            "IMG_Book_Purple"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_44",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "northeast book crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Rotten Book",
+          "img": [
+            "IMG_Book_Hammerite"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_45",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "northwest book crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "Dewdrop",
+          "img": [
+            "IMG_Dewdrop"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_46",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "bedroom",
+              "findExact": "crib",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_mechanist",
+      "category": "Mechanist Items",
+      "catItems": [
+        {
+          "id": "item_puttyknife",
+          "name": "Chisel",
+          "img": [
+            "IMG_PuttyKnife"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_item_47",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "workshop",
+              "findExact": "table",
+              "findCount": [0,0,1]
+            },
+            {
+              "id": "fm_unbidden_item_48",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "storefront",
+              "findExact": "table",
+              "findCount": [1,1,0]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "Wooden Goblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_1",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "table",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_2",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "north table",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_unbidden_junk_3",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "serving tables",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "by shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_unbidden_junk_5",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "bedroom",
+              "findExact": "by bed",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_unbidden_junk_6",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "under north table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_unbidden_junk_7",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "east serving table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_unbidden_junk_8",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_unbidden_junk_9",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "by shelf",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_unbidden_junk_11",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_unbidden_junk_12",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_potionbottle",
+          "name": "Potion Bottle",
+          "img": [
+            "IMG_SpeedPotion",
+            "IMG_BreathPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_13",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "table",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_hairbrush",
+          "name": "Hair Brush",
+          "img": [
+            "IMG_HairBrush"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_14",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_handmirror",
+          "name": "Hand Mirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_15",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_spectacles",
+          "name": "Spectacles",
+          "img": [
+            "IMG_ReadingGlasses"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_16",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "bedroom",
+              "findExact": "crib",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_17",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "by pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_leafyplant",
+          "name": "Leafy Plant",
+          "img": [
+            "IMG_LeafyPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_18",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "by pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_levers",
+      "category": "Levers and Knobs",
+      "catJunk": [
+        {
+          "id": "junk_updownswitch",
+          "name": "Up/Down Switch",
+          "img": [
+            "IMG_UpDownSwitch"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_19",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "basement",
+              "findExact": "by sealed door",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_smallhammer",
+          "name": "Small Hammer",
+          "img": [
+            "IMG_SmallHammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_20",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "storage",
+              "findExact": "metal crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_woodenboard",
+          "name": "Wooden Board",
+          "img": [
+            "IMG_WoodenBoard"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_21",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "south book crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_glasstools",
+          "name": "Glass Tools",
+          "img": [
+            "IMG_GlassTools"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_22",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "storefront",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_wax",
+          "name": "Junk Wax",
+          "img": [
+            "IMG_JunkWax"
+          ],
+          "locations": [
+            {
+              "id": "fm_unbidden_junk_23",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "workshop",
+              "findExact": "wax machine",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

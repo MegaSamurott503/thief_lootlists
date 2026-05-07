@@ -1,0 +1,3290 @@
+{
+  "id": "fm_ashton-revenge",
+  "title": "Revenge",
+  "author": [
+    "auth_christine"
+  ],
+  "screens": [
+    "MIS_fm_ashton-revenge_A",
+    "MIS_fm_ashton-revenge_B"
+  ],
+  "firstRelease": "July 2002",
+  "latestVersion": "2.0",
+  "goToPrev": "fm_ashton-escape",
+  "goToNext": "",
+  "diffNames": ["Easy","Hard","Expert"],
+  "markObj": true,
+  "totals": [
+    [3533,250,3175,0,6958],
+    [3533,250,3175,0,6958],
+    [3533,250,3175,0,6958]
+  ],
+  "lootCount": [174,174,174],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [5000,5000,5000]
+  },
+  "pocketCount": [5,5,5],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Bookstore"},
+    {"key": "2", "value": "City Streets"},
+    {"key": "3", "value": "Hotel Maritime 2F"},
+    {"key": "4", "value": "Hotel Maritime 1F"},
+    {"key": "5", "value": "Hotel Maritime B1F"},
+    {"key": "6", "value": "Hotel Maritime 3F Suite"},
+    {"key": "7", "value": "Helena's Estate Grounds"},
+    {"key": "8", "value": "Helena's Estate Entrance Hall"},
+    {"key": "9", "value": "Helena's Estate 1F"},
+    {"key": "10", "value": "Helena's Estate 2F"},
+    {"key": "11", "value": "Helena's Estate Vault"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_antiqueclock",
+      "name": "Antique Clock",
+      "img": [
+        "IMG_AntiqueClock"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_1",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_AntiqueClock"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_champagnebottle",
+      "name": "Champagne Bottle",
+      "img": [
+        "IMG_ChampagneBottle"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_2",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [6,6,6],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_ChampagneBottle"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_3",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 79,
+              "orderImg": [
+                "IMG_ChampagneBottle"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_4",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 87,
+              "orderImg": [
+                "IMG_ChampagneBottle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_chest",
+      "name": "Chest",
+      "img": [
+        "IMG_Chest_Blue",
+        "IMG_Chest_Precursor"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_5",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 74,
+              "orderImg": [
+                "IMG_Chest_Precursor"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_6",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_Chest_Blue"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_cigarettebox",
+      "name": "Cigarette Box",
+      "img": [
+        "IMG_CigaretteBox"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_7",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "mezzanine",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_8",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [2,2,2],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_9",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "barracks",
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_10",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "sergeant's bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_11",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "orderNum": 66,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_12",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "southeast room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 83,
+              "orderImg": [
+                "IMG_CigaretteBox"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_13",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "sergeant's bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_cuckooclock",
+      "name": "Cuckoo Clock",
+      "img": [
+        "IMG_CuckooClock"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_14",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "chimney",
+              "findCount": [1,1,1],
+              "orderNum": 65,
+              "orderImg": [
+                "IMG_CuckooClock"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Noh"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_15",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "bath",
+              "findExact": "chimney",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_DecorativeMask_Noh"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Pink",
+        "IMG_DecorativePlate_Red",
+        "IMG_DecorativePlate_Orange",
+        "IMG_DecorativePlate_Gold",
+        "IMG_DecorativePlate_Aqua",
+        "IMG_DecorativePlate_Blue"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_16",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "dining room",
+              "findExact": "dining tables",
+              "findCount": [3,3,3],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_DecorativePlate_Orange",
+                "IMG_DecorativePlate_Aqua"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_17",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "southwest guest room",
+              "findExact": "chimney",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_18",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_DecorativePlate_Aqua"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_19",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "sink",
+              "findCount": [1,1,1],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_DecorativePlate_Blue"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_20",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "east shelf",
+              "findCount": [2,2,2],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink",
+                "IMG_DecorativePlate_Red"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_21",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "shelves",
+              "findCount": [7,7,7],
+              "orderNum": 72,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink",
+                "IMG_DecorativePlate_Red",
+                "IMG_DecorativePlate_Orange",
+                "IMG_DecorativePlate_Gold",
+                "IMG_DecorativePlate_Aqua",
+                "IMG_DecorativePlate_Blue"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativevase",
+      "name": "Decorative Vase",
+      "img": [
+        "IMG_DecorativeVase_Neck"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_22",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 78,
+              "orderImg": [
+                "IMG_DecorativeVase_Neck"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_23",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [2,2,2],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_24",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [2,2,2],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_25",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "balcony room",
+              "findExact": "low table",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_26",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "library office",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_27",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [9,9,9],
+              "orderNum": 80,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_28",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "southeast room",
+              "findExact": "under table",
+              "findCount": [1,1,1],
+              "orderNum": 84,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_29",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 67,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_glasschalice",
+      "name": "Glass Chalice",
+      "img": [
+        "IMG_GlassChalice"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_30",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [3,3,3],
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_GlassChalice"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_31",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "ledge",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 94,
+              "orderImg": [
+                "IMG_GlassChalice"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_32",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 59,
+              "orderImg": [
+                "IMG_GlassChalice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_globe",
+      "name": "Globe",
+      "img": [
+        "IMG_Globe"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_33",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_Globe"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_34",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "southwest guest room",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_35",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "lounge",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_36",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "east guest room",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_37",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "dining room",
+              "findExact": "dining tables",
+              "findCount": [3,3,3],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_38",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "waiting room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_39",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "coatroom",
+              "findExact": "wardrobe",
+              "findCount": [1,1,1],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_40",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "by grand staircase",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_41",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 64,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_42",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 68,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_43",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "master bedroom",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 89,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_44",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "ledge",
+              "findCount": [3,3,3],
+              "findSecret": true,
+              "orderNum": 97,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_45",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "under counter",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "Gold Dice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_46",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "reception desk",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_47",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "under counter",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_48",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_49",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [5,5,5],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_50",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "library office",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_51",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [10,10,10],
+              "orderNum": 70,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_52",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "southeast room",
+              "findExact": "under table",
+              "findCount": [1,1,1],
+              "orderNum": 85,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_53",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "library office",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_54",
+              "findSimple": "findH",
+              "findArea": 10,
+              "findNarrow": "toilet",
+              "findExact": "north window",
+              "findCount": [1,1,1],
+              "orderNum": 86,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldtrophy",
+      "name": "Gold Trophy",
+      "img": [
+        "IMG_GoldTrophy"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_55",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "display case",
+              "findCount": [2,2,2],
+              "orderNum": 76,
+              "orderImg": [
+                "IMG_GoldTrophy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_56",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "northwest guest room",
+              "findExact": "by fireplace",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_57",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 61,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_58",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "ledge",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 101,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_59",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "reception desk",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_60",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "dining room",
+              "findExact": "south dining table",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_61",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "library office",
+              "findExact": "ledge",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_62",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_63",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "ledge",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 95,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_largegemstone",
+      "name": "Large Gemstone",
+      "img": [
+        "IMG_LargeGemstone_Sapphire",
+        "IMG_LargeGemstone_Amethyst"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_64",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 75,
+              "orderImg": [
+                "IMG_LargeGemstone_Amethyst"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_65",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 63,
+              "orderImg": [
+                "IMG_LargeGemstone_Sapphire"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_66",
+              "findSimple": "findH",
+              "findArea": 9,
+              "findNarrow": "servants' quarters",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mechaniststatuette",
+      "name": "Mechanist Statuette",
+      "img": [
+        "IMG_MechanistStatuette"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_67",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "reception desk",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_68",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "grand staircase",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_69",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "chimney",
+              "findCount": [1,1,1],
+              "orderNum": 69,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_70",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "master bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 90,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_71",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "ledge",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 102,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_metalplate",
+      "name": "Metal Plate",
+      "img": [
+        "IMG_MetalPlate"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_72",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "southwest guest room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_MetalPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_operaglasses",
+      "name": "Opera Glasses",
+      "img": [
+        "IMG_OperaGlasses"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_73",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_OperaGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_painting",
+      "name": "Painting",
+      "img": [
+        "IMG_Painting_Lizotte4",
+        "IMG_Painting_Pheasant"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_74",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 77,
+              "orderImg": [
+                "IMG_Painting_Pheasant"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_75",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 60,
+              "orderImg": [
+                "IMG_Painting_Lizotte4"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_playbill",
+      "name": "Playbill",
+      "img": [
+        "IMG_Playbill"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_76",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 73,
+              "orderImg": [
+                "IMG_Playbill"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursormask",
+      "name": "Precursor Mask",
+      "img": [
+        "IMG_PrecursorMask_Brass"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_77",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "master bedroom",
+              "findExact": "chimney",
+              "findCount": [1,1,1],
+              "orderNum": 91,
+              "orderImg": [
+                "IMG_PrecursorMask_Brass"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_78",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "ledge",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 92,
+              "orderImg": [
+                "IMG_PrecursorMask_Brass"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_79",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [2,2,2],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_80",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [4,4,4],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_81",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "northwest guest room",
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_82",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "balcony room",
+              "findExact": "low table",
+              "findCount": [1,1,1],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_83",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "north shelf",
+              "findCount": [2,2,2],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_84",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [10,10,10],
+              "orderNum": 71,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_85",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "reception desk",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_86",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [2,2,2],
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_87",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "ledge",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 99,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_88",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "bedroom",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_89",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "near grand staircase",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_90",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 81,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_91",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "master bedroom",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 88,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_rarespicebag",
+      "name": "Rare Spice Bag",
+      "img": [
+        "IMG_RareSpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_92",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_RareSpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_rubycrystalvase",
+      "name": "Ruby Crystal Vase",
+      "img": [
+        "IMG_RubyCrystalVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_93",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 103,
+              "orderImg": [
+                "IMG_RubyCrystalVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_sapphirevase",
+      "name": "Sapphire Vase",
+      "img": [
+        "IMG_SapphireVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_94",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 62,
+              "orderImg": [
+                "IMG_SapphireVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_serpentyletorc",
+      "name": "Serpentyle Torc",
+      "img": [
+        "IMG_SerpentyleTorc"
+      ],
+      "values": [
+        {
+          "id": "300gold50gems",
+          "value": [300,50,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_95",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 98,
+              "orderImg": [
+                "IMG_SerpentyleTorc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverbracelet",
+      "name": "Silver Bracelet",
+      "img": [
+        "IMG_SilverBracelet"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_96",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "living room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_SilverBracelet"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_97",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "ledge",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 93,
+              "orderImg": [
+                "IMG_SilverBracelet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverfirepoker",
+      "name": "Silver Fire Poker",
+      "img": [
+        "IMG_SilverFirePoker"
+      ],
+      "values": [
+        {
+          "id": "100gold100goods",
+          "value": [100,0,100,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_98",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 100,
+              "orderImg": [
+                "IMG_SilverFirePoker"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_99",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_100",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_101",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "east cabinets",
+              "findCount": [2,2,2],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_102",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "office",
+              "findExact": "north bookcase",
+              "findCount": [1,1,1],
+              "orderNum": 82,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            },
+            {
+              "id": "fm_ashton-revenge_loot_103",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 96,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_vodkabottle",
+      "name": "Vodka Bottle",
+      "img": [
+        "IMG_VodkaBottle"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_loot_104",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [4,4,4],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_VodkaBottle"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_constantinessword",
+          "name": "Constantine's Sword",
+          "img": [
+            "IMG_ConstantinesSword"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_1",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "library office",
+              "findExact": "Precursor chest",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_3",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "under stairs",
+              "findExact": "footlocker",
+              "findCountBox": [12,12,12],
+              "findBox": true,
+              "findSecret": true
+            },
+            {
+              "id": "fm_ashton-revenge_item_4",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "by Helena's front gate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-revenge_item_5",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "yard",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_7",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_8",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "behind banner",
+              "findCount": [4,4,4],
+              "findSecret": true
+            },
+            {
+              "id": "fm_ashton-revenge_item_9",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "bathroom",
+              "findExact": "bathtub",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-revenge_item_10",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "sinks",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_ashton-revenge_item_11",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_12",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "behind banner",
+              "findCount": [2,2,2],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_13",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "living room",
+              "findExact": "behind couch",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-revenge_item_14",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "yard",
+              "findExact": "by east bushes",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-revenge_item_15",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "terrarium",
+              "findExact": "by red flowers",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_16",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "sergeant's bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_17",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "under stairs",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true
+            },
+            {
+              "id": "fm_ashton-revenge_item_18",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "sergeant's bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_19",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "watchtower",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_20",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "east cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_21",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "north cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_22",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_23",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Hotel Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_24",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "on nobleman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Front Door Key",
+          "img": [
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_25",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "gambling room",
+              "findExact": "on Lord Harold",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Library Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_26",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "on Tom",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Side Entrance Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_27",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "on Lady Helena",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_lantern",
+          "name": "Lantern",
+          "img": [
+            "IMG_Lantern_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_28",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "southeast tunnel",
+              "findExact": "niches",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_ashton-revenge_item_29",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "gate tunnel",
+              "findExact": "niches",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_writingquill",
+          "name": "Feather",
+          "img": [
+            "IMG_Feather"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_30",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "library office",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_31",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_ashton-revenge_item_32",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_33",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "southwest guest room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-revenge_item_34",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_35",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_ashton-revenge_item_36",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_37",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_fish",
+          "name": "Sushi",
+          "img": [
+            "IMG_GreenFish",
+            "IMG_Sushi_Green"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_38",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-revenge_item_39",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-revenge_item_40",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-revenge_item_41",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bath",
+              "findCount": [1,1,1],
+              "findRecipe": "x1 per killed fish"
+            }
+          ]
+        },
+        {
+          "id": "item_chips",
+          "name": "Chips",
+          "img": [
+            "IMG_Chips"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_42",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_crumpledpaper",
+          "name": "Crumpled Paper",
+          "img": [
+            "IMG_CrumpledPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_43",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "office",
+              "findExact": "wastebasket",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_44",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "behind banner",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Diary",
+          "img": [
+            "IMG_Book_Purple"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_item_45",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_1",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "east shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_2",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-revenge_junk_3",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "dining room",
+              "findExact": "shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_4",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-revenge_junk_5",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "east shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_mug",
+          "name": "Mug",
+          "img": [
+            "IMG_Mug"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_6",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "shelves",
+              "findCount": [6,6,6]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_7",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "servants' quarters",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_liquorbottle",
+          "name": "Liquor Bottle",
+          "img": [
+            "IMG_LiquorBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_8",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_ashton-revenge_junk_9",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "barracks",
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-revenge_junk_10",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "barracks",
+              "findExact": "in Kyle's hand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_vodkabottle",
+          "name": "Vodka Bottle",
+          "img": [
+            "IMG_VodkaBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_11",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_ashton-revenge_junk_12",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "barracks",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_orangejuicebottle",
+          "name": "Orange Juice Bottle",
+          "img": [
+            "IMG_OrangeJuiceBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_13",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_ashton-revenge_junk_14",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_ashton-revenge_junk_15",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [6,6,6]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_basket",
+          "name": "Basket",
+          "img": [
+            "IMG_Basket"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_16",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "servants' quarters",
+              "findExact": "east bedroom",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_spectacles",
+          "name": "Spectacles",
+          "img": [
+            "IMG_ReadingGlasses"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_17",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "servants' quarters",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_18",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_pairofdice",
+          "name": "Pair of Dice",
+          "img": [
+            "IMG_PairOfDice"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_19",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "bar",
+              "findExact": "wine shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_20",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "kitchen",
+              "findExact": "north shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_redjar",
+          "name": "Red Jar",
+          "img": [
+            "IMG_RedJar"
+          ],
+          "locations": [
+            {
+              "id": "fm_ashton-revenge_junk_21",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "southeast room",
+              "findExact": "wardrobe",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_ashton-revenge_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_ashton-revenge_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 1,
+          "findNarrow": "by north ladder",
+          "findDiff": [1,1,1],
+          "method": "Pull the book on the fourteenth shelf"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardItem": "Water Crystal",
+          "findCount": [4,4,4]
+        },
+        {
+          "id": "sec_1_2",
+          "rewardItem": "Fire Crystal",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_1_3",
+          "rewardItem": "Papyrus",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-revenge_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_ashton-revenge_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 4,
+          "findNarrow": "reception desk",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch behind the desk"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardItem": "Broadhead Arrow",
+          "findCount": [12,12,12]
+        },
+        {
+          "id": "sec_2_2",
+          "rewardItem": "Flash Bomb",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-revenge_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_ashton-revenge_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 2,
+          "findNarrow": "burrick pen",
+          "findDiff": [1,1,1],
+          "method": "Frob the torch on the watchtower"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardItem": "Gas Mine",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-revenge_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_fm_ashton-revenge_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 9,
+          "findNarrow": "library",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch by the west table"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardLoot": "Gold Goblet",
+          "value": [25,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_4_2",
+          "rewardLoot": "Gold Plate",
+          "value": [50,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_4_3",
+          "rewardLoot": "Fine Wine",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_4_4",
+          "rewardLoot": "Indigo Vase",
+          "value": [0,0,100,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_4_5",
+          "rewardItem": "Constantine's Sword",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_4_6",
+          "rewardItem": "Feather",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_ashton-revenge_sec_5",
+      "number": 5,
+      "img": [
+        "SEC_fm_ashton-revenge_05"
+      ],
+      "triggers": [
+        {
+          "id": "sec_5_a",
+          "findArea": 10,
+          "findNarrow": "master bedroom",
+          "findDiff": [1,1,1],
+          "method": "Frob the small painting on the mantelpiece"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_5_1",
+          "rewardLoot": "Gold Candlestick",
+          "value": [50,0,0,0],
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_5_2",
+          "rewardLoot": "Tiara",
+          "value": [50,75,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_3",
+          "rewardLoot": "Gold Vase",
+          "value": [100,0,0,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_5_4",
+          "rewardLoot": "Silver Fire Poker",
+          "value": [100,0,100,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_5",
+          "rewardLoot": "Serpentyle Torc",
+          "value": [300,50,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_6",
+          "rewardLoot": "Mechanist Statuette",
+          "value": [0,0,15,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_7",
+          "rewardLoot": "Glass Chalice",
+          "value": [0,0,50,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_5_8",
+          "rewardLoot": "Precursor Mask",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_9",
+          "rewardLoot": "Purple Vase",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_10",
+          "rewardLoot": "Ruby Crystal Vase",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_11",
+          "rewardLoot": "Silver Bracelet",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_12",
+          "rewardLoot": "Indigo Vase",
+          "value": [0,0,100,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_13",
+          "rewardItem": "Side Entrance Key",
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

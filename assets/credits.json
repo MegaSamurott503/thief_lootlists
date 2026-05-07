@@ -1,0 +1,168 @@
+{
+  "api": [
+    {
+      "name": "Expo",
+      "link": "https://docs.expo.dev/"
+    },
+    {
+      "name": "Expo Router",
+      "link": "https://https://docs.expo.dev/versions/latest/sdk/router/"
+    },
+    {
+      "name": "React Native",
+      "link": "https://reactnative.dev/"
+    },
+    {
+      "name": "React Navigation",
+      "link": "https://reactnavigation.org/"
+    },
+    {
+      "name": "Async Storage",
+      "link": "https://react-native-async-storage.github.io/async-storage/"
+    },
+    {
+      "name": "Dropdown Select List",
+      "link": "https://www.npmjs.com/package/react-native-dropdown-select-list"
+    },
+    {
+      "name": "IonIcons",
+      "link": "https://ionic.io/ionicons"
+    }
+  ],
+  "thanks": [
+    {
+      "name": "Matt Raner",
+      "reason": "image tweaks"
+    },
+    {
+      "name": "The Riddler",
+      "reason": "THIEF font"
+    },
+    {
+      "name": "Daft Mugi",
+      "reason": "web assistance"
+    },
+    {
+      "name": "Marzec",
+      "reason": "testing"
+    },
+    {
+      "name": "Family and Friends",
+      "reason": "love and support!"
+    },
+    {
+      "name": "THIEF developers",
+      "reason": "creating such fantastic games"
+    },
+    {
+      "name": "THIEF fan community",
+      "reason": "keeping these games alive"
+    }
+  ],
+  "changelog": [
+    {
+      "version": "Alpha v0.0.9",
+      "date": "Jan 21, 2026",
+      "changes": [
+        "Added 4 TDP, 3 TMA, and 6 FM lootlists.",
+        "Reorganized code to utilize Expo Router.",
+        "Added more UI explanations and moved them to a new home page.",
+        "Consolidated various common strings into one reference file.",
+        "Added filters to the FM selection screen.",
+        "Added dynamic descriptions for each option on the settings page.",
+        "Added option to sort loot items in the order they're found.",
+        "Added option to hide locations of Easter Egg items.",
+        "Added loading wheels to some buttons.",
+        "Updated code to account for special loot (future-proofing).",
+        "Totals window now also displays total number of loot pieces.",
+        "Carryover loot that changes per difficulty now updates correctly.",
+        "Cross-mission secrets now update each other when selected.",
+        "Fixed issue with some elements using the wrong color theme.",
+        "Fixed transparency issue with secret image pop-up.",
+        "Various other fixes and corrections to several lootlists.",
+        "Updated credits."
+      ]
+    },
+    {
+      "version": "Alpha v0.0.8",
+      "date": "Mar 15, 2024",
+      "changes": [
+        "Added 2 TDP, 2 TMA, and 6 FM lootlists.",
+        "Selecting an item purchased with loot correctly updates loot totals.",
+        "Added a pop-up window to indicate how many items are purchased.",
+        "Improved formatting for missions with subtitles.",
+        "Tweaked the text of filter buttons and spoiler covers.",
+        "Added a section to the credits page explaining certain UI elements."
+      ]
+    },
+    {
+      "version": "Alpha v0.0.7",
+      "date": "Feb 4, 2024",
+      "changes": [
+        "Added 2 TDP, 2 TMA, and 6 FM lootlists.",
+        "Improved formatting for total loot/pickpocket boxes.",
+        "Totals window is hidden from missions w/o loot & pickpockets.",
+        "Filter buttons no longer show on missions when unneeded.",
+        "Added options to set global difficulty filter & hide some elements.",
+        "Changed objective, difficulty, secret, and pickpocket indicators."
+      ]
+    },
+    {
+      "version": "Alpha v0.0.6",
+      "date": "Dec 16, 2023",
+      "changes": [
+        "Added 2 TDP, 2 TMA, and 8 FM lootlists.",
+        "Added buttons to go to previous/next missions.",
+        "Loot total carries over when navigating to next mission.",
+        "Item boxes indicate if stack count comes from previous mission.",
+        "Added filters to only show objectives, pickpockets, or secrets.",
+        "Changed the font color for secret location text."
+      ]
+    },
+    {
+      "version": "Alpha v0.0.5",
+      "date": "Nov 5, 2023",
+      "changes": [
+        "Added 2 TDP, 2 TMA, and 4 FM lootlists.",
+        "Total loot/pickpocket boxes are now always visible.",
+        "Loot totals update correctly if a container has both loot & items.",
+        "Added background patterns to location & total boxes.",
+        "Improved text & element resizing based on screen size.",
+        "Updated credits."
+      ]
+    },
+    {
+      "version": "Alpha v0.0.4",
+      "date": "Aug 28, 2023",
+      "changes": [
+        "Web version now hosted on Netlify.",
+        "Added credits/changelog page.",
+        "Improved box resizing when filtered on web version."
+      ]
+    },
+    {
+      "version": "Pre-Alpha v0.0.3",
+      "date": "Aug 17, 2023",
+      "changes": [
+        "Web version hosted on GitHub Pages."
+      ]
+    },
+    {
+      "version": "Pre-Alpha v0.0.2",
+      "date": "Aug 10, 2023",
+      "changes": [
+        "Added web support.",
+        "Added dark theme.",
+        "Increased image sizes for web viewing."
+      ]
+    },
+    {
+      "version": "Pre-Alpha v0.0.1",
+      "date": "Jun 25, 2023",
+      "changes": [
+        "Initial build.",
+        "Includes 4 TDP, 4 TMA, and 4 FM lootlists."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1600 @@
+{
+  "id": "fm_nightchristmas",
+  "title": "The Night Before Christmas",
+  "author": [
+    "auth_darkshadow"
+  ],
+  "screens": [
+    "MIS_fm_nightchristmas_A",
+    "MIS_fm_nightchristmas_B"
+  ],
+  "firstRelease": "November 2009",
+  "latestVersion": "1.1",
+  "diffNames": ["Santa Claus","Santa Claus","Santa Claus"],
+  "markObj": true,
+  "totals": [
+    [1466,100,390,0,1956],
+    [1466,100,390,0,1956],
+    [1466,100,390,0,1956]
+  ],
+  "lootCount": [51,51,51],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [800,800,800]
+  },
+  "pocketCount": [7,7,7],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Garrett's Apartment"},
+    {"key": "2", "value": "South Streets"},
+    {"key": "3", "value": "Hector's Beer Pub"},
+    {"key": "4", "value": "Green Apartment"},
+    {"key": "5", "value": "Thief's Hideout"},
+    {"key": "6", "value": "Cathedral"},
+    {"key": "7", "value": "Watch Station"},
+    {"key": "8", "value": "Zur Rabenmutter"},
+    {"key": "9", "value": "Florentine Square"},
+    {"key": "10", "value": "Van Deyke's House"},
+    {"key": "11", "value": "Puppets & More"},
+    {"key": "12", "value": "Toni's House"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coin",
+      "name": "Coin",
+      "img": [
+        "IMG_Coin"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_1",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findExact": "card table",
+              "findCount": [4,4,4],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Pink",
+        "IMG_DecorativePlate_Red"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_2",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "kitchen",
+              "findExact": "west shelf",
+              "findCount": [2,2,2],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_3",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "kitchen",
+              "findExact": "west shelf",
+              "findCount": [2,2,2],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_DecorativePlate_Red"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_4",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "Jonas's bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_nightchristmas_loot_5",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_nightchristmas_loot_6",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "study",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_7",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "Van Deyke's bedroom",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_8",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "loot hoard",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_9",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "loot hoard",
+              "findExact": "shelf",
+              "findCount": [3,3,3],
+              "findSecret": true,
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_nightchristmas_loot_10",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "north hall",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_nightchristmas_loot_11",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "lobby",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_12",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "loot hoard",
+              "findExact": "shelf",
+              "findCount": [8,8,8],
+              "findSecret": true,
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_nightchristmas_loot_13",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "150gold",
+          "value": [150,0,0,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_14",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "lobby",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_15",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "loot hoard",
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_nightchristmas_loot_16",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "Jonas's bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_nightchristmas_loot_17",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_nightchristmas_loot_18",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "study",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_19",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "Jonas's bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "70gold",
+          "value": [70,0,0,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_20",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "Jonas's bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_21",
+              "findSimple": "findH",
+              "findArea": 7,
+              "findNarrow": "south cell",
+              "findCount": [3,3,3],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Pointed"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_22",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "belfry",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_PrecursorJar_Pointed"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_23",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "Jonas's bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_24",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "loot hoard",
+              "findExact": "shelf",
+              "findCount": [8,8,8],
+              "findSecret": true,
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_loot_25",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "loot hoard",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_2",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "on Watch archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_nightchristmas_item_3",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "near tree",
+              "findExact": "on Watch archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_nightchristmas_item_4",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "yard",
+              "findExact": "on Bafford archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [4,4,4],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_gasarrow",
+          "name": "Gas Arrow",
+          "img": [
+            "IMG_GasArrow_TMA"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_7",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_9",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "Jonas's bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_10",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "footlocker",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_11",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "Jonas's bedroom",
+              "findExact": "lab table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_12",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "Jonas's bedroom",
+              "findExact": "lab table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_13",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_14",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_15",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Thief's Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_16",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "machine room",
+              "findExact": "on male thief",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Garden Door Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_17",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "garden",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Watch Station Key",
+          "img": [
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_18",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "lobby",
+              "findExact": "on Watch sergeant",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Front Door Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_19",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "kitchen",
+              "findExact": "on male servant",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Van Deyke's Chest Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_20",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "Van Deyke's bedroom",
+              "findExact": "fern pot",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_21",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "machine room",
+              "findExact": "toolbox",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Brown Bread",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_22",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "kitchen",
+              "findExact": "east shelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_23",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_24",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "lobby",
+              "findExact": "front desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_nightchristmas_item_25",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_26",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_27",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_28",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_crumpledpaper",
+          "name": "Crumpled Paper",
+          "img": [
+            "IMG_CrumpledPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_29",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_nightchristmas_item_30",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "servant's bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_31",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_nightchristmas_item_32",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "cook's bedroom",
+              "findExact": "bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_33",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "hall",
+              "findExact": "by door",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_34",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "Jonas's bedroom",
+              "findExact": "wastebasket",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_musical",
+      "category": "Musical Items",
+      "catItems": [
+        {
+          "id": "item_victrola",
+          "name": "Gramophone",
+          "img": [
+            "IMG_Victrola_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_35",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "table",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "Doll",
+          "img": [
+            "IMG_Dewdrop_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_36",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "toy shelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_teddybear",
+          "name": "Teddy Bear",
+          "img": [
+            "IMG_TeddyBear_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_37",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "toy shelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_toyball",
+          "name": "Toy Ball",
+          "img": [
+            "IMG_ToyBall"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_38",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "toy shelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_lootpurse",
+          "name": "Red Purse",
+          "img": [
+            "IMG_Purse_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_item_39",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "Van Deyke's bedroom",
+              "findExact": "fern pot",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_junk_1",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "basement",
+              "findExact": "near lobby stairs",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_junk_2",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "southeast table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalplate",
+          "name": "Metal Plate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_junk_3",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "northwest table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_junk_4",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_junk_5",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "northeast table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_nightchristmas_junk_6",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_nightchristmas_junk_7",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "tables",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_nightchristmas_junk_8",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "1F",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_junk_9",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "north table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_nightchristmas_junk_10",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_nightchristmas_junk_11",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_nightchristmas_junk_12",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "1F",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_setofbottles",
+          "name": "Set of Bottles",
+          "img": [
+            "IMG_SetOfBottles"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_junk_13",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_junk_14",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "card table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_pairofdice",
+          "name": "Pair of Dice",
+          "img": [
+            "IMG_PairOfDice"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_junk_15",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "card table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_nightchristmas_junk_16",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "bedroom",
+              "findExact": "by table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_nightchristmas_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_nightchristmas_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 5,
+          "findNarrow": "machine room",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch behind the leaning door"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "Silver Coin Stack",
+          "value": [12,0,0,0],
+          "findCount": [8,8,8]
+        },
+        {
+          "id": "sec_1_2",
+          "rewardLoot": "Gold Coin Stack",
+          "value": [25,0,0,0],
+          "findCount": [8,8,8]
+        },
+        {
+          "id": "sec_1_3",
+          "rewardLoot": "Silver Nugget",
+          "value": [50,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_4",
+          "rewardLoot": "Gold Goblet",
+          "value": [50,0,0,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_1_5",
+          "rewardLoot": "Gold Candlestick",
+          "value": [50,0,0,0],
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_1_6",
+          "rewardLoot": "Gemstone",
+          "value": [0,100,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

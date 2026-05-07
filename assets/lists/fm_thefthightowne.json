@@ -1,0 +1,1692 @@
+{
+  "id": "fm_thefthightowne",
+  "title": "A Theft in High Towne",
+  "author": [
+    "auth_intruder"
+  ],
+  "screens": [
+    "MIS_fm_thefthightowne_A",
+    "MIS_fm_thefthightowne_B"
+  ],
+  "firstRelease": "December 2009",
+  "latestVersion": "1.0",
+  "contest": "con_unpc",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [656,125,410,0,1191],
+    [656,125,410,0,1191],
+    [656,125,410,0,1191]
+  ],
+  "lootCount": [35,35,35],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [400,650,950]
+  },
+  "pocketCount": [5,5,5],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Inn"},
+    {"key": "2", "value": "Streets"},
+    {"key": "3", "value": "West Wooden Roof"},
+    {"key": "4", "value": "East Wooden Roof"},
+    {"key": "5", "value": "Apartment Building"},
+    {"key": "6", "value": "Bafford's House"},
+    {"key": "7", "value": "Mage's Tower"},
+    {"key": "8", "value": "Workshop"},
+    {"key": "9", "value": "Northeast Building"},
+    {"key": "10", "value": "Hammer Clocktower"},
+    {"key": "11", "value": "Tramport's Apartment"},
+    {"key": "12", "value": "Power Station"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_addoniziocrystal",
+      "name": "Addonizio Crystal",
+      "img": [
+        "IMG_AddonizioCrystal"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_1",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coin",
+      "name": "Coin",
+      "img": [
+        "IMG_Coin"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_2",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "tower",
+              "findExact": "by upper crate",
+              "findCount": [2,2,2],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "fm_thefthightowne_loot_3",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "dressing room",
+              "findExact": "dresser",
+              "findCount": [3,3,3],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_4",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "tower",
+              "findExact": "by upper crate",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_thefthightowne_loot_5",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findNarrow": "office",
+              "findExact": "by stool",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_thefthightowne_loot_6",
+              "findSimple": "findH",
+              "findArea": 10,
+              "findNarrow": "basement",
+              "findExact": "under elevator",
+              "findCount": [3,3,3],
+              "findSecret": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_7",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findExact": "by crate",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_thefthightowne_loot_8",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "sitting room",
+              "findExact": "by couch",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_9",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "by furnace",
+              "findExact": "coal pile",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_10",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "bedroom",
+              "findExact": "altar",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_11",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "guest room",
+              "findExact": "behind shelf",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_thefthightowne_loot_12",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findNarrow": "office",
+              "findExact": "by stool",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_13",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_14",
+              "findSimple": "findH",
+              "findArea": 10,
+              "findNarrow": "basement",
+              "findExact": "under elevator",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_15",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "crawlspace",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Pointed"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_16",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "main bedroom",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_PrecursorJar_Pointed"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_17",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "office",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_18",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [2,2,2],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_19",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "hallway",
+              "findExact": "on thief swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_thefthightowne_loot_20",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "office",
+              "findExact": "under desk",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_21",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "lower apartment",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_22",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "guest room",
+              "findExact": "behind shelf",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_thefthightowne_loot_23",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "tower",
+              "findExact": "by upper crate",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_thefthightowne_loot_24",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "bedroom",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_25",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "greenhouse",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_26",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            },
+            {
+              "id": "fm_thefthightowne_loot_27",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Monk",
+        "IMG_Statuette_Nun"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_loot_28",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "servant's bedroom",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_Statuette_Monk"
+              ]
+            },
+            {
+              "id": "fm_thefthightowne_loot_29",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "roof access",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_Statuette_Nun"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [9,9,9],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_thefthightowne_item_4",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "under inn",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true,
+              "findUnable": true
+            },
+            {
+              "id": "fm_thefthightowne_item_5",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_thefthightowne_item_6",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "terrace",
+              "findExact": "on thief archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_thefthightowne_item_7",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "by front door",
+              "findExact": "on red archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_9",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "guest room",
+              "findExact": "behind shelf",
+              "findCount": [4,4,4],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_11",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "guest room",
+              "findExact": "behind shelf",
+              "findCount": [6,4,2],
+              "findSecret": true
+            },
+            {
+              "id": "fm_thefthightowne_item_12",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "terrace",
+              "findExact": "planter",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_13",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "guest room",
+              "findExact": "behind shelf",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "guest room",
+              "findExact": "behind shelf",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_15",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_16",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Bafford's Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_17",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "main bedroom",
+              "findExact": "under bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Vault Control Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_18",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "lobby",
+              "findExact": "on Hammerite priest",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Power Station Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_19",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "bedroom",
+              "findCount": [1,1,1],
+              "findRecipe": "after entering clocktower lobby"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_20",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_21",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_22",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_crumpledpaper",
+          "name": "Crumpled Paper",
+          "img": [
+            "IMG_CrumpledPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_23",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "guest room",
+              "findExact": "wastebasket",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_24",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "guest room",
+              "findExact": "bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_25",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "Clive's apartment",
+              "findExact": "by door",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_hammerite",
+      "category": "Hammerite Items",
+      "catItems": [
+        {
+          "id": "item_holyhammer",
+          "name": "St. Tenor's Hammer",
+          "img": [
+            "IMG_HolyHammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_26",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "vault",
+              "findExact": "pedestal",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_fakeholyhammer",
+          "name": "Hammer Copy",
+          "img": [
+            "IMG_HolyHammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_item_27",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "crawlspace",
+              "findExact": "Precursor chest",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_1",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "near door",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_thefthightowne_junk_2",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "by barrel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_thefthightowne_junk_3",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "crawlspace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_thefthightowne_junk_4",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "corners",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_thefthightowne_junk_5",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "roof access",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_thefthightowne_junk_6",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "basement",
+              "findExact": "by tool crates",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_7",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "under west wooden roof",
+              "findExact": "south side",
+              "findCount": [1,1,1],
+              "findUnable": true
+            },
+            {
+              "id": "fm_thefthightowne_junk_8",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "near door",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_thefthightowne_junk_9",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "tower",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_thefthightowne_junk_10",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "under east wooden roof",
+              "findExact": "east side",
+              "findCount": [1,1,1],
+              "findUnable": true
+            },
+            {
+              "id": "fm_thefthightowne_junk_11",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "terrace",
+              "findExact": "by barrel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_thefthightowne_junk_12",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "crawlspace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_thefthightowne_junk_13",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "near corners",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_thefthightowne_junk_14",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "by Hammer clocktower",
+              "findExact": "east side",
+              "findCount": [1,1,1],
+              "findUnable": true
+            },
+            {
+              "id": "fm_thefthightowne_junk_15",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "roof access",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_thefthightowne_junk_16",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "terrace",
+              "findExact": "by chair",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_thefthightowne_junk_17",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "storage",
+              "findExact": "northwest corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_thefthightowne_junk_18",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "basement",
+              "findExact": "by tool crates",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_thefthightowne_junk_19",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "vault control room",
+              "findExact": "by barrel",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_20",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_21",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_22",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "by crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_thefthightowne_junk_23",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_24",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "by crate",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_hairbrush",
+          "name": "Hair Brush",
+          "img": [
+            "IMG_HairBrush"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_25",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "lower apartment",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_handmirror",
+          "name": "Hand Mirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_26",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "lower apartment",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_spectacles",
+          "name": "Spectacles",
+          "img": [
+            "IMG_ReadingGlasses"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_27",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "bedroom",
+              "findExact": "low table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_28",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "by crate",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_29",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "hallway",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_thefthightowne_junk_30",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "greenhouse",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_31",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "near furnace",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_thefthightowne_junk_32",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "furnace room",
+              "findExact": "west coal pile",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_statuefragment",
+          "name": "Statue Fragment",
+          "img": [
+            "IMG_StatueFragment_Head",
+            "IMG_StatueFragment_RightTorso",
+            "IMG_StatueFragment_LeftTorso"
+          ],
+          "locations": [
+            {
+              "id": "fm_thefthightowne_junk_33",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "roof access",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_thefthightowne_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_thefthightowne_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 1,
+          "findNarrow": "guest room",
+          "findDiff": [1,1,1],
+          "method": "Shoot the painting's crystal ball"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "Silver Coin Stack",
+          "value": [12,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_2",
+          "rewardLoot": "Gold Coin Stack",
+          "value": [25,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_3",
+          "rewardItem": "Water Crystal",
+          "findCount": [4,4,4]
+        },
+        {
+          "id": "sec_1_4",
+          "rewardItem": "Earth Crystal",
+          "findCount": [6,4,2]
+        },
+        {
+          "id": "sec_1_5",
+          "rewardItem": "Flash Bomb",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_6",
+          "rewardItem": "Healing Potion",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_thefthightowne_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_thefthightowne_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 10,
+          "findNarrow": "furnace room",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch behind the furnace"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardLoot": "Copper Coin Stack",
+          "value": [5,0,0,0],
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_2_2",
+          "rewardLoot": "Gold Hammer",
+          "value": [75,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

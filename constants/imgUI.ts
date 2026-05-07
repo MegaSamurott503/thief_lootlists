@@ -1,0 +1,29 @@
+// Add background images here.
+export const bgDefaultLight = require('@/assets/images/bg_default_light.png');
+export const bgDefaultDark = require('@/assets/images/bg_default_dark.png');
+export const bgEasyLight = require('@/assets/images/bg_easy_light.png');
+export const bgEasyDark = require('@/assets/images/bg_easy_dark.png');
+export const bgMediumLight = require('@/assets/images/bg_medium_light.png');
+export const bgMediumDark = require('@/assets/images/bg_medium_dark.png');
+export const bgHardLight = require('@/assets/images/bg_hard_light.png');
+export const bgHardDark = require('@/assets/images/bg_hard_dark.png');
+export const bgFoundLight = require('@/assets/images/bg_found_light.png');
+export const bgFoundLightS = require('@/assets/images/bg_found_light_small.png');
+export const bgFoundLightT = require('@/assets/images/bg_found_light_tall.png');
+export const bgFoundDark = require('@/assets/images/bg_found_dark.png');
+export const bgFoundDarkS = require('@/assets/images/bg_found_dark_small.png');
+export const bgFoundDarkT = require('@/assets/images/bg_found_dark_tall.png');
+
+// Add icon images here.
+export const iconTDP = require('@/assets/images/icon_t1.png');
+export const iconTMA = require('@/assets/images/icon_t2.png');
+//export const iconTDS = require('@/assets/images/icon_t3.png');
+export const iconFM = require('@/assets/images/icon_fm.png');
+export const iconGold = require('@/assets/images/icon_gold.png');
+export const iconGems = require('@/assets/images/icon_gems.png');
+export const iconGoods = require('@/assets/images/icon_goods.png');
+export const iconSpecial = require('@/assets/images/icon_loot.png');
+
+// Add arrow images here.
+export const arrowLight = require('@/assets/images/arrow_light.png');
+export const arrowDark = require('@/assets/images/arrow_dark.png');

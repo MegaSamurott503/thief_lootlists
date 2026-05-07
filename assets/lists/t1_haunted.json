@@ -1,0 +1,1887 @@
+{
+  "id": "t1_haunted",
+  "title": "The Haunted Cathedral",
+  "screens": [
+    "MIS_t1_haunted_A",
+    "MIS_t1_haunted_B"
+  ],
+  "goToPrev": "t1_sword",
+  "goToNext": "t1_towers",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [1375,700,760,0,2835],
+    [1375,700,760,0,2835],
+    [1275,600,760,0,2635]
+  ],
+  "lootCount": [33,33,32],
+  "lootChanges": [0,0,1],
+  "goal1": {
+    "total": [750,1750,2000]
+  },
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Rubin Street South Neighborhood"},
+    {"key": "3", "value": "Weaponsmith"},
+    {"key": "4", "value": "South Sewers"},
+    {"key": "5", "value": "Burrick Tunnels"},
+    {"key": "6", "value": "Crayman Tunnels"},
+    {"key": "7", "value": "de Perrin Street"},
+    {"key": "8", "value": "de Perrin Street Neighborhood"},
+    {"key": "9", "value": "Thief's House"},
+    {"key": "10", "value": "Psychic"},
+    {"key": "11", "value": "de Perrin Public Works"},
+    {"key": "12", "value": "Rubin Street North Neighborhood"},
+    {"key": "13", "value": "Rubin Street"},
+    {"key": "14", "value": "West Cathedral Street"},
+    {"key": "15", "value": "Barber Shop"},
+    {"key": "16", "value": "Stable"},
+    {"key": "17", "value": "Old Mansion"},
+    {"key": "18", "value": "Pub"},
+    {"key": "19", "value": "North Sewers"},
+    {"key": "20", "value": "Bakery"},
+    {"key": "21", "value": "Machinist"},
+    {"key": "22", "value": "Armorer"},
+    {"key": "23", "value": "Watchman's Grave"},
+    {"key": "24", "value": "Butcher Shop"},
+    {"key": "25", "value": "Dairy Shop"},
+    {"key": "26", "value": "Spider Den"},
+    {"key": "27", "value": "Market Street Neighborhood"},
+    {"key": "28", "value": "Auldale Street Neighborhood"},
+    {"key": "29", "value": "Auldale Street"},
+    {"key": "30", "value": "East Cathedral Street"},
+    {"key": "31", "value": "Hammer Cathedral Exterior"},
+    {"key": "32", "value": "Hammer Cathedral"},
+    {"key": "33", "value": "Keeper Grotto"},
+    {"key": "34", "value": "Keeper Chapel"}
+  ],
+  "notes": [
+    {
+      "id": "note_0",
+      "delimiter": "  ",
+      "icon": "[X]",
+      "desc": "not obtainable in the AM16 patch",
+      "show": true
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_1",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "north roofless house",
+              "findExact": "high rafters",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_2",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "canal gatehouse",
+              "findExact": "west niche",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_3",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findNarrow": "fallen building",
+              "findCount": [1,1,1],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_4",
+              "findSimple": "findE",
+              "findArea": 30,
+              "findNarrow": "near fallen building",
+              "findExact": "by lamppost",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_5",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "north roofless house",
+              "findExact": "high rafters",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_6",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "cavern",
+              "findExact": "south corner",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_7",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "south basement",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_8",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "pool chamber",
+              "findExact": "bone pile",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_9",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "by fallen building",
+              "findExact": "under south side",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_10",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "NE roofless house",
+              "findExact": "rafters",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_11",
+              "findSimple": "findH",
+              "findArea": 4,
+              "findNarrow": "east passage",
+              "findExact": "lamp niche",
+              "findCount": [1,1,1],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_12",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "1F",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_13",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "near sinking building",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_14",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "cavern",
+              "findExact": "southwest corner",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_15",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "skywalk tower",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_16",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "near weaponsmith",
+              "findExact": "ledge",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_17",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "1F east room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_18",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findNarrow": "west chamber",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_19",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "SE roofless house",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_20",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findExact": "by door",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_21",
+              "findSimple": "findM",
+              "findArea": 21,
+              "findNarrow": "roof",
+              "findExact": "near armorer",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_22",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findNarrow": "north mezzanine",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,0],
+              "findBox": true,
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_23",
+              "findSimple": "findM",
+              "findArea": 28,
+              "findNarrow": "skywalk",
+              "findExact": "near skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_24",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "north roofless house",
+              "findExact": "low rafters",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_25",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "burrick tunnel entrance",
+              "findExact": "by drain",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_26",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "cavern",
+              "findExact": "north corner",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_27",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findNarrow": "east chamber",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_28",
+              "findSimple": "findM",
+              "findArea": 14,
+              "findExact": "by wood beams",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_29",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "cavern",
+              "findExact": "northeast corner",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_30",
+              "findSimple": "findM",
+              "findArea": 19,
+              "findNarrow": "northeast grate",
+              "findExact": "under skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t1_haunted_loot_31",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_serpentyletorc",
+      "name": "Serpentyle Torc",
+      "img": [
+        "IMG_SerpentyleTorc"
+      ],
+      "values": [
+        {
+          "id": "100gold50gems200goods",
+          "value": [100,50,200,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_32",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "bedroom",
+              "findExact": "blue chest",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_SerpentyleTorc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "t1_haunted_loot_33",
+              "findSimple": "findH",
+              "findArea": 8,
+              "findNarrow": "near psychic",
+              "findExact": "leaf pile",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_constantinessword",
+          "name": "Constantine's Sword",
+          "img": [
+            "IMG_ConstantinesSword"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [50,50,50],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_haunted_item_4",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "1F",
+              "findExact": "near broken table",
+              "findCount": [12,12,12]
+            },
+            {
+              "id": "t1_haunted_item_5",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "SE roofless house",
+              "findExact": "ledge",
+              "findCount": [10,10,10]
+            },
+            {
+              "id": "t1_haunted_item_6",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "roof",
+              "findExact": "near dairy shop",
+              "findCount": [12,12,12]
+            },
+            {
+              "id": "t1_haunted_item_7",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "trapped hall",
+              "findCount": [1,1,1],
+              "findRecipe": "arrow traps x1 per trigger"
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_haunted_item_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [6,6,6],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_10",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [4,4,4],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_haunted_item_11",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,4],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_12",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_13",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_haunted_item_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t1_haunted_item_15",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "cavern",
+              "findExact": "between stalagnates",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_item_16",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "footlocker",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            },
+            {
+              "id": "t1_haunted_item_17",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "basement",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_18",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_haunted_item_19",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "t1_haunted_item_20",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "cavern",
+              "findExact": "between stalagnates",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_item_21",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "skywalk tower",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_item_22",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "by bed",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_23",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "N basement",
+              "findExact": "between barrels",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_haunted_item_24",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "pool chamber",
+              "findExact": "underwater",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_haunted_item_25",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "near canal",
+              "findExact": "pump house",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_haunted_item_26",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "SE roofless house",
+              "findExact": "rafters",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_27",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "niche",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_haunted_item_28",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "near canal",
+              "findExact": "pump house",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_haunted_item_29",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "behind broken chair",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_item_30",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "basement",
+              "findCount": [1,1,1],
+              "findRecipe": "x1 per defeated fire shadow"
+            },
+            {
+              "id": "t1_haunted_item_31",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "skywalk",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_haunted_item_32",
+              "findSimple": "find",
+              "findArea": 30,
+              "findNarrow": "fallen building",
+              "findExact": "window",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_haunted_item_33",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "southeast side",
+              "findExact": "near wall",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_34",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "above leaning beam",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "findNote": 0
+            },
+            {
+              "id": "t1_haunted_item_35",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "pool chamber",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_haunted_item_36",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "1F east room",
+              "findExact": "blue chest",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "t1_haunted_item_37",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "south passage",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_38",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_haunted_item_39",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [6,6,6],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t1_haunted_item_40",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "2F",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "t1_haunted_item_41",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "by bed",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_42",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [8,8,8],
+              "findCountActual": [7,7,7],
+              "loadout": "store",
+              "price": 350
+            },
+            {
+              "id": "t1_haunted_item_43",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "2F",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "t1_haunted_item_44",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "footlocker",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            },
+            {
+              "id": "t1_haunted_item_45",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "round room",
+              "findExact": "niche",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_46",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "t1_haunted_item_47",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "near weaponsmith",
+              "findExact": "ledge",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_item_48",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "by barrels",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_item_49",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "east chamber",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_item_50",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "keyhole pedestal",
+              "findExact": "by blue chest",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_breathpotion",
+          "name": "Breath Potion",
+          "img": [
+            "IMG_BreathPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_51",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "t1_haunted_item_52",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "near canal",
+              "findExact": "pump house",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_item_53",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "northwest house",
+              "findExact": "ceiling hole",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_item_54",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "shed",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_holywatervial",
+          "name": "Holy Water Vial",
+          "img": [
+            "IMG_HolyWaterVial"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_55",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_haunted_item_56",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t1_haunted_item_57",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "bedroom",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "t1_haunted_item_58",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "keyhole pedestal",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_59",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_60",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Public Works Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_61",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "cavern",
+              "findExact": "between stalagnates",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_item_62",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "east window",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_haunted_item_63",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "basement",
+              "findExact": "by skeletal arm",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Mansion Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_64",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "porch",
+              "findExact": "under welcome mat",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Keeper Chapel Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_65",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "library",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_portalkey",
+          "name": "Portal Key",
+          "img": [
+            "IMG_PortalKey"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_66",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "library",
+              "findExact": "table",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_67",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_68",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t1_haunted_item_69",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "near fallen building",
+              "findExact": "north side",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_item_70",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "NW roofless house",
+              "findExact": "2F",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_luckycoins",
+          "name": "Lucky Coins",
+          "img": [
+            "IMG_LuckyCoins"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_item_71",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [0,0,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_1",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "near bridge",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_utensils",
+      "category": "Utensils",
+      "catJunk": [
+        {
+          "id": "junk_woodenspoon",
+          "name": "Wooden Spoon",
+          "img": [
+            "IMG_WoodenSpoon"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_2",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "south basement",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_3",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "south basement",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ornateplate",
+          "name": "Ornate Plate",
+          "img": [
+            "IMG_OrnatePlate"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_4",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "canal gatehouse",
+              "findExact": "east niche",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_5",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "canal gatehouse",
+              "findExact": "east niche",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_skillet",
+          "name": "Skillet",
+          "img": [
+            "IMG_Skillet"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_6",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "N basement",
+              "findExact": "near barrels",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_7",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "1F west room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_swordhilt",
+          "name": "Sword Hilt",
+          "img": [
+            "IMG_SwordHilt"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_8",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "south side",
+              "findExact": "near main gate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_junk_9",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "west side",
+              "findExact": "near bone pile",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_warhammer",
+          "name": "Warhammer",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_10",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "pool chamber",
+              "findExact": "by bone pile",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_11",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "near stone beams",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_haunted_junk_12",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "near porch",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_junk_13",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "near bridge",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_statuefragment",
+          "name": "Statue Fragment",
+          "img": [
+            "IMG_StatueFragment_Head",
+            "IMG_StatueFragment_RightTorso",
+            "IMG_StatueFragment_LeftTorso"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_14",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "entrance",
+              "findExact": "broken statue",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_15",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "basement",
+              "findExact": "southeast corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_junk_16",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "northeast grate",
+              "findExact": "skeleton",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_junk_17",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "south side",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_haunted_junk_18",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "southwest side",
+              "findExact": "near wall",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_junk_19",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "southeast side",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_junk_20",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "north side",
+              "findExact": "back corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_junk_21",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "sanctuary",
+              "findExact": "nave",
+              "findCount": [2,2,2],
+              "findUnable": true
+            }
+          ]
+        },
+        {
+          "id": "junk_ribcage",
+          "name": "Ribcage",
+          "img": [
+            "IMG_Ribcage"
+          ],
+          "locations": [
+            {
+              "id": "t1_haunted_junk_22",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "basement",
+              "findExact": "near leaf pile",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_junk_23",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "south side",
+              "findExact": "near front doors",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_junk_24",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "west side",
+              "findExact": "bone pile",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_junk_25",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "southeast side",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_haunted_junk_26",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "north side",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

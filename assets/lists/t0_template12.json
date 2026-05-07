@@ -1,0 +1,4757 @@
+{
+  "id": "template_1_2",
+  "title": "Template (T1 + T2)",
+  "author": [
+    "Looking Glass Studios"
+  ],
+  "firstRelease": "November 1998",
+  "latestVersion": "1.0",
+  "goToPrev": "",
+  "goToNext": "",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": false,
+  "markObj": false,
+  "totals": [
+    [1500,300,200,0,2000],
+    [1500,300,200,0,2000],
+    [1500,300,200,0,2000]
+  ],
+  "lootCount": [40,40,40],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [500,750,1000]
+  },
+  "pocketCount": [4,5,6],
+  "pocketChanges": [0,0,0],
+  "carryLoot": false,
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "somewhere"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_addoniziocrystal",
+      "name": "Addonizio Crystal",
+      "img": [
+        "IMG_AddonizioCrystal"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_1",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coin",
+      "name": "Coin",
+      "img": [
+        "IMG_Coin"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_2",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_collectionplate",
+      "name": "Collection Plate",
+      "img": [
+        "IMG_CollectionPlate"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_3",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_CollectionPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_4",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Monster",
+        "IMG_DecorativeMask_Demon",
+        "IMG_DecorativeMask_Bugaku",
+        "IMG_DecorativeMask_Noh",
+        "IMG_DecorativeMask_Inuit",
+        "IMG_DecorativeMask_White"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_5",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_DecorativeMask_Monster"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Pink",
+        "IMG_DecorativePlate_Red",
+        "IMG_DecorativePlate_Orange",
+        "IMG_DecorativePlate_Gold",
+        "IMG_DecorativePlate_Aqua",
+        "IMG_DecorativePlate_Blue"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_6",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_diamonddrillbit",
+      "name": "Diamond Drill Bit",
+      "img": [
+        "IMG_DiamondDrillbit"
+      ],
+      "values": [
+        {
+          "id": "250gems",
+          "value": [0,250,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_7",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_DiamondDrillbit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_8",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_9",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_10",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_11",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_12",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "Gold Dice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_13",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_14",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_15",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_16",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_17",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_18",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_19",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_20",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldenbone",
+      "name": "Golden Bone",
+      "img": [
+        "IMG_GoldenBone_Skull"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_21",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GoldenBone_Skull"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_22",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_23",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_24",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mechaniststatuette",
+      "name": "Mechanist Statuette",
+      "img": [
+        "IMG_MechanistStatuette"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_25",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mysticsheart",
+      "name": "Mystic's Heart",
+      "img": [
+        "IMG_MysticsHeart"
+      ],
+      "values": [
+        {
+          "id": "1000gems",
+          "value": [0,1000,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_26",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_MysticsHeart"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mysticssoul",
+      "name": "Mystic's Soul",
+      "img": [
+        "IMG_MysticsSoul"
+      ],
+      "values": [
+        {
+          "id": "500gems",
+          "value": [0,500,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_27",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_MysticsSoul"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_28",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_operaglasses",
+      "name": "Opera Glasses",
+      "img": [
+        "IMG_OperaGlasses"
+      ],
+      "values": [
+        {
+          "id": "25gold25gems",
+          "value": [25,25,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_29",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_OperaGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ornateplate",
+      "name": "Ornate Plate",
+      "img": [
+        "IMG_OrnatePlate"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_30",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_OrnatePlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_31",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorgem",
+      "name": "Precursor Gem",
+      "img": [
+        "IMG_PrecursorGem"
+      ],
+      "values": [
+        {
+          "id": "15gems",
+          "value": [0,15,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_32",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_PrecursorGem"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Tall",
+        "IMG_PrecursorJar_Pointed"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_33",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_PrecursorJar_Small"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursormask",
+      "name": "Precursor Mask",
+      "img": [
+        "IMG_PrecursorMask_Green",
+        "IMG_PrecursorMask_Fading",
+        "IMG_PrecursorMask_Bare",
+        "IMG_PrecursorMask_Brass"
+      ],
+      "values": [
+        {
+          "id": "120goods",
+          "value": [0,0,120,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_34",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_PrecursorMask_Green"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_35",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_36",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplemedallion",
+      "name": "Purple Medallion",
+      "img": [
+        "IMG_PurpleMedallion_Yellow"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_37",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_PurpleMedallion_Yellow"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_38",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_39",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_rarespicebag",
+      "name": "Rare Spice Bag",
+      "img": [
+        "IMG_RareSpiceBag"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_40",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_RareSpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_readingglasses",
+      "name": "Reading Glasses",
+      "img": [
+        "IMG_ReadingGlasses"
+      ],
+      "values": [
+        {
+          "id": "200goods",
+          "value": [0,0,200,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_41",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_ReadingGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_sapphirevase",
+      "name": "Sapphire Vase",
+      "img": [
+        "IMG_SapphireVase"
+      ],
+      "values": [
+        {
+          "id": "200gold300gems",
+          "value": [200,300,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_42",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_SapphireVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_scroll",
+      "name": "Scroll",
+      "img": [
+        "IMG_UnrolledScroll"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_43",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_UnrolledScroll"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_serpentyletorc",
+      "name": "Serpentyle Torc",
+      "img": [
+        "IMG_SerpentyleTorc"
+      ],
+      "values": [
+        {
+          "id": "300gold50gems",
+          "value": [300,50,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_44",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_SerpentyleTorc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_45",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverbracelet",
+      "name": "Silver Bracelet",
+      "img": [
+        "IMG_SilverBracelet"
+      ],
+      "values": [
+        {
+          "id": "50gold25goods",
+          "value": [50,0,25,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_46",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_SilverBracelet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_47",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverfirepoker",
+      "name": "Silver Fire Poker",
+      "img": [
+        "IMG_SilverFirePoker"
+      ],
+      "values": [
+        {
+          "id": "100gold100goods",
+          "value": [100,0,100,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_48",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_SilverFirePoker"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverflute",
+      "name": "Silver Flute",
+      "img": [
+        "IMG_Flute",
+        "IMG_SilverFlute"
+      ],
+      "values": [
+        {
+          "id": "25gold25goods",
+          "value": [25,0,25,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_49",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_SilverFlute"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_50",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_51",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Nobleman",
+        "IMG_Statuette_Noblewoman",
+        "IMG_Statuette_Monk",
+        "IMG_Statuette_Nun",
+        "IMG_Statuette_Mage",
+        "IMG_Statuette_Muse"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_52",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_Statuette_Nobleman"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_53",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_treebeastmask",
+      "name": "Treebeast Mask",
+      "img": [
+        "IMG_TreebeastMask"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_54",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_TreebeastMask"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_waxcylinder",
+      "name": "Wax Cylinder",
+      "img": [
+        "IMG_WaxCylinder"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_55",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_WaxCylinder"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_weddingrings",
+      "name": "Wedding Rings",
+      "img": [
+        "IMG_WeddingRings"
+      ],
+      "values": [
+        {
+          "id": "0gold",
+          "value": [0,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_56",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_WeddingRings"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_constantinessword",
+          "name": "Constantine's Sword",
+          "img": [
+            "IMG_ConstantinesSword"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_2",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_3",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_4",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_5",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_6",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_7",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_gasarrow",
+          "name": "Gas Arrow",
+          "img": [
+            "IMG_GasArrow_TDP",
+            "IMG_GasArrow_TMA"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_8",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_9",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_vinearrow",
+          "name": "Vine Arrow",
+          "img": [
+            "IMG_VineArrow"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_10",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_11",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_12",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_13",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_14",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "Air Crystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_15",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_16",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_17",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_18",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "Flash Mine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_19",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_explosivecharge",
+          "name": "Explosive Charge",
+          "img": [
+            "IMG_ExplosiveCharge"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_20",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_21",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_22",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_breathpotion",
+          "name": "Breath Potion",
+          "img": [
+            "IMG_BreathPotion"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_23",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_24",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_25",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_holywatervial",
+          "name": "Holy Water Vial",
+          "img": [
+            "IMG_HolyWaterVial"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_26",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_containers",
+      "category": "Containers",
+      "catItems": [
+        {
+          "id": "item_strongbox",
+          "name": "Strongbox",
+          "img": [
+            "IMG_Strongbox"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_27",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_28",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_29",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Key",
+          "img": [
+            "IMG_Key_Gold",
+            "IMG_Key_Silver",
+            "IMG_Key_Yellow",
+            "IMG_Key_Black",
+            "IMG_Key_Blue",
+            "IMG_Key_Red",
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_30",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_keyring",
+          "name": "Keyring",
+          "img": [
+            "IMG_Keyring"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_31",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_magekey",
+          "name": "Mage Key",
+          "img": [
+            "IMG_MageKey_Earth",
+            "IMG_MageKey_Air",
+            "IMG_MageKey_Fire",
+            "IMG_MageKey_Treasure"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_32",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_portalkey",
+          "name": "Portal Key",
+          "img": [
+            "IMG_PortalKey"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_33",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_gearkey",
+          "name": "Gear",
+          "img": [
+            "IMG_GearKey_Metal",
+            "IMG_GearKey_Silver",
+            "IMG_GearKey_Bronze"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_34",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_candle",
+          "name": "Candle",
+          "img": [
+            "IMG_Candle"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_35",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_36",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_37",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_38",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_birdcall",
+          "name": "Birdcall",
+          "img": [
+            "IMG_Birdcall"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_39",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_frogbeastegg",
+          "name": "Frogbeast Egg",
+          "img": [
+            "IMG_FrogbeastEgg"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_40",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_41",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_42",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_43",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_44",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_45",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_46",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_47",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_letter",
+          "name": "Letter",
+          "img": [
+            "IMG_Letter"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_48",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_crumpledpaper",
+          "name": "Crumpled Paper",
+          "img": [
+            "IMG_CrumpledPaper"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_49",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_50",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_rolledscroll",
+          "name": "Rolled Scroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_51",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_52",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_precursorscroll",
+          "name": "Precursor Scroll",
+          "img": [
+            "IMG_PrecursorScroll_Flat",
+            "IMG_PrecursorScroll_Round"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_53",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blueprints",
+          "name": "Blueprints",
+          "img": [
+            "IMG_Blueprints"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_54",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Book",
+          "img": [
+            "IMG_Book_Red",
+            "IMG_Book_Hammerite"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_55",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_personal",
+      "category": "Personal Items",
+      "catItems": [
+        {
+          "id": "item_handkerchief",
+          "name": "Handkerchief",
+          "img": [
+            "IMG_Handkerchief"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_56",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_musical",
+      "category": "Musical Items",
+      "catItems": [
+        {
+          "id": "item_horn",
+          "name": "Horn",
+          "img": [
+            "IMG_HornOfQuintus"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_57",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_flute",
+          "name": "Flute",
+          "img": [
+            "IMG_Flute"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_58",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "Dewdrop",
+          "img": [
+            "IMG_Dewdrop"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_59",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_levers",
+      "category": "Levers and Knobs",
+      "catItems": [
+        {
+          "id": "item_lever",
+          "name": "Lever",
+          "img": [
+            "IMG_Lever"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_60",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_wheelpeg",
+          "name": "Wheel Peg",
+          "img": [
+            "IMG_WheelPeg"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_61",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crafting",
+      "category": "Crafting Materials",
+      "catItems": [
+        {
+          "id": "item_acidicmixture",
+          "name": "Acidic Mixture",
+          "img": [
+            "IMG_Mixture"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_62",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_quicklimemixture",
+          "name": "Quicklime Mixture",
+          "img": [
+            "IMG_Mixture"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_63",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_flaremixture",
+          "name": "Flare Mixture",
+          "img": [
+            "IMG_Mixture"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_64",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_steelplate",
+          "name": "Steel Plate",
+          "img": [
+            "IMG_SteelPlate"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_65",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ironchassis",
+          "name": "Iron Chassis",
+          "img": [
+            "IMG_IronChassis"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_66",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_gauge",
+          "name": "Gauge",
+          "img": [
+            "IMG_Gauge"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_67",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_springwiring",
+          "name": "Spring Wiring",
+          "img": [
+            "IMG_SpringWiring"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_68",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_bantamnode",
+          "name": "Bantam Node",
+          "img": [
+            "IMG_BantamNode"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_69",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_minebulb",
+          "name": "Mine Bulb",
+          "img": [
+            "IMG_MineBulb"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_70",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_fluxspheroid",
+          "name": "Flux Spheroid",
+          "img": [
+            "IMG_FluxSpheroid"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_71",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_regulatinground",
+          "name": "Regulating Round",
+          "img": [
+            "IMG_RegulatingRound"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_72",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_hammerite",
+      "category": "Hammerite Items",
+      "catItems": [
+        {
+          "id": "item_firsthammer",
+          "name": "First Hammer",
+          "img": [
+            "IMG_StoneHammer"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_73",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_holyhammer",
+          "name": "Holy Hammer",
+          "img": [
+            "IMG_HolyHammer"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_74",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_holysymbol",
+          "name": "Holy Symbol",
+          "img": [
+            "IMG_HolySymbol"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_75",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blessedholysymbol",
+          "name": "Blessed Holy Symbol",
+          "img": [
+            "IMG_BlessedHolySymbol"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_76",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_multimold",
+          "name": "Multimold",
+          "img": [
+            "IMG_Multimold_Symbol",
+            "IMG_Multimold_Key",
+            "IMG_Multimold_Hilt",
+            "IMG_Multimold_Gear",
+            "IMG_Multimold_Knob",
+            "IMG_Multimold_Lever"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_77",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_rosarybeads",
+          "name": "Rosary Beads",
+          "img": [
+            "IMG_RosaryBeads"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_78",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_builderschisel",
+          "name": "Builder's Chisel",
+          "img": [
+            "IMG_BuildersChisel"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_79",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_mechanist",
+      "category": "Mechanist Items",
+      "catItems": [
+        {
+          "id": "item_puttyknife",
+          "name": "Putty Knife",
+          "img": [
+            "IMG_PuttyKnife"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_80",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_waximpression",
+          "name": "Wax Impression",
+          "img": [
+            "IMG_WaxImpression"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_81",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_waxcylinder",
+          "name": "Wax Cylinder",
+          "img": [
+            "IMG_WaxCylinder"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_82",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_mechanistrecording",
+          "name": "Mechanist Recording",
+          "img": [
+            "IMG_Phonograph"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_83",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_rustgascontainer",
+          "name": "Rust Gas Container",
+          "img": [
+            "IMG_RustGasContainer"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_84",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_signalbolt",
+          "name": "Signal Bolt",
+          "img": [
+            "IMG_SignalBolt"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_85",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_stage1piece",
+          "name": "Stage 1 Piece",
+          "img": [
+            "IMG_Stage1Piece"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_86",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_stage2piece",
+          "name": "Stage 2 Piece",
+          "img": [
+            "IMG_Stage2Piece"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_87",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_stage3piece",
+          "name": "Stage 3 Piece",
+          "img": [
+            "IMG_Stage3Piece"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_88",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_guidingbeacon",
+          "name": "Guiding Beacon",
+          "img": [
+            "IMG_GuidingBeacon"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_89",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_luckycoins",
+          "name": "Lucky Coins",
+          "img": [
+            "IMG_LuckyCoins"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_90",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_fakeeye",
+          "name": "Fake Eye",
+          "img": [
+            "IMG_TheEye"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_91",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_shippinglabel",
+          "name": "Shipping Label",
+          "img": [
+            "IMG_ShippingLabel"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_92",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_cuckoo",
+          "name": "Cuckoo",
+          "img": [
+            "IMG_Cuckoo"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_93",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_silverscepter",
+          "name": "Silver Scepter",
+          "img": [
+            "IMG_SilverScepter"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_94",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_hornofquintus",
+          "name": "Horn of Quintus",
+          "img": [
+            "IMG_HornOfQuintus"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_95",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_navigationglobe",
+          "name": "Navigation Globe",
+          "img": [
+            "IMG_NavigationGlobe"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_96",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_precursormask",
+          "name": "Precursor Mask",
+          "img": [
+            "IMG_PrecursorMask_Bare",
+            "IMG_PrecursorMask_Brass",
+            "IMG_PrecursorMask_Wood",
+            "IMG_PrecursorMask_Sun"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_97",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_cultivator",
+          "name": "Cultivator",
+          "img": [
+            "IMG_Cultivator"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_98",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_handofglory",
+          "name": "Hand of Glory",
+          "img": [
+            "IMG_HandOfGlory"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_99",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_goldenbone",
+          "name": "Golden Bone",
+          "img": [
+            "IMG_GoldenBone_Skull",
+            "IMG_GoldenBone_RightArm",
+            "IMG_GoldenBone_LeftArm",
+            "IMG_GoldenBone_RightLeg",
+            "IMG_GoldenBone_LeftLeg"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_100",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_jewelry",
+      "category": "Jewelry",
+      "catItems": [
+        {
+          "id": "item_keepermedallion",
+          "name": "Keeper Medallion",
+          "img": [
+            "IMG_KeeperMedallion"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_101",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_theeye",
+          "name": "The Eye",
+          "img": [
+            "IMG_TheEye"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_102",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_rubystone",
+          "name": "Ruby Stone",
+          "img": [
+            "IMG_RubyStone"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_103",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_talismans",
+      "category": "Talismans",
+      "catItems": [
+        {
+          "id": "item_talismanofearth",
+          "name": "Talisman of Earth",
+          "img": [
+            "IMG_TalismanOfEarth"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_104",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_talismanoffire",
+          "name": "Talisman of Fire",
+          "img": [
+            "IMG_TalismanOfFire"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_105",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_talismanofwater",
+          "name": "Talisman of Water",
+          "img": [
+            "IMG_TalismanOfWater"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_106",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_talismanofair",
+          "name": "Talisman of Air",
+          "img": [
+            "IMG_TalismanOfAir"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_107",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_2",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_utensils",
+      "category": "Utensils",
+      "catJunk": [
+        {
+          "id": "junk_woodenspoon",
+          "name": "Wooden Spoon",
+          "img": [
+            "IMG_WoodenSpoon"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_3",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_knife",
+          "name": "Knife",
+          "img": [
+            "IMG_Knife"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_4",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_cleaver",
+          "name": "Cleaver",
+          "img": [
+            "IMG_Cleaver"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_5",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_6",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_7",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalplate",
+          "name": "Metal Plate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_8",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_9",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ornateplate",
+          "name": "Ornate Plate",
+          "img": [
+            "IMG_OrnatePlate"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_10",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_11",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "Wooden Goblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_12",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_13",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_14",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_15",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_setofbottles",
+          "name": "Set of Bottles",
+          "img": [
+            "IMG_SetOfBottles"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_16",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_skillet",
+          "name": "Skillet",
+          "img": [
+            "IMG_Skillet"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_17",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_saucepan",
+          "name": "Saucepan",
+          "img": [
+            "IMG_Saucepan"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_18",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_cookingpot",
+          "name": "Cooking Pot",
+          "img": [
+            "IMG_CookingPot"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_19",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_Flour",
+            "IMG_Canister_Sugar",
+            "IMG_Canister_Salt",
+            "IMG_Canister_UnmarkedLarge",
+            "IMG_Canister_UnmarkedSmall"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_20",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_sandbag",
+          "name": "Sandbag",
+          "img": [
+            "IMG_SpiceBag"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_21",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_hairbrush",
+          "name": "Hair Brush",
+          "img": [
+            "IMG_HairBrush"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_22",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_handmirror",
+          "name": "Hand Mirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_23",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_spectacles",
+          "name": "Spectacles",
+          "img": [
+            "IMG_ReadingGlasses"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_24",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_25",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_26",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_basketball",
+          "name": "Basketball",
+          "img": [
+            "IMG_Basketball"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_27",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_28",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_29",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_nautical",
+      "category": "Nautical Tools",
+      "catJunk": [
+        {
+          "id": "junk_anchor",
+          "name": "Anchor",
+          "img": [
+            "IMG_Anchor"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_30",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_chartcompass",
+          "name": "Chart Compass",
+          "img": [
+            "IMG_ChartCompass"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_32",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_sextant",
+          "name": "Sextant",
+          "img": [
+            "IMG_Sextant"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_33",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_34",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_pick",
+          "name": "Pick",
+          "img": [
+            "IMG_Pick"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_35",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_drillingmachine",
+          "name": "Drilling Machine",
+          "img": [
+            "IMG_DrillingMachine"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_36",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_levers",
+      "category": "Levers and Knobs",
+      "catJunk": [
+        {
+          "id": "junk_leverhandle",
+          "name": "Lever Handle",
+          "img": [
+            "IMG_LeverHandle"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_37",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_doorknob",
+          "name": "Doorknob",
+          "img": [
+            "IMG_Doorknob"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_38",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_swordhilt",
+          "name": "Sword Hilt",
+          "img": [
+            "IMG_SwordHilt"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_39",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_warhammer",
+          "name": "Warhammer",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_40",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_smallhammer",
+          "name": "Small Hammer",
+          "img": [
+            "IMG_SmallHammer"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_41",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_holyhammer",
+          "name": "Holy Hammer",
+          "img": [
+            "IMG_HolyHammer"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_42",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_stonehammer",
+          "name": "Stone Hammer",
+          "img": [
+            "IMG_StoneHammer"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_43",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ancienthammer",
+          "name": "Ancient Hammer",
+          "img": [
+            "IMG_AncientHammer"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_44",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_mechanistmace",
+          "name": "Mechanist Mace",
+          "img": [
+            "IMG_MechanistMace"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_45",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_46",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_statuefragment",
+          "name": "Statue Fragment",
+          "img": [
+            "IMG_StatueFragment_Head",
+            "IMG_StatueFragment_RightTorso",
+            "IMG_StatueFragment_LeftTorso"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_47",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_48",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ribcage",
+          "name": "Ribcage",
+          "img": [
+            "IMG_Ribcage"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_49",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_gear",
+          "name": "Gear",
+          "img": [
+            "IMG_Gear"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_50",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_laboratoryequipment",
+          "name": "Laboratory Equipment",
+          "img": [
+            "IMG_LaboratoryEquipment"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_51",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_bunsenburner",
+          "name": "Bunsen Burner",
+          "img": [
+            "IMG_BunsenBurner"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_52",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_wax",
+          "name": "Junk Wax",
+          "img": [
+            "IMG_JunkWax"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_53",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_divinghelmet",
+          "name": "Diving Helmet",
+          "img": [
+            "IMG_DivingHelmet"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_54",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_precursormask",
+          "name": "Precursor Mask",
+          "img": [
+            "IMG_PrecursorMask_Green",
+            "IMG_PrecursorMask_Fading",
+            "IMG_PrecursorMask_Bare"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_55",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "TEMP_sec",
+      "number": 1,
+      "img": [
+        "SEC_t2_guest_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 2,
+          "findNarrow": "look_here",
+          "findDiff": [1,1,1],
+          "method": "frob_this_thing"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardRoute": [
+            "this_place",
+            "that_place"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_2",
+          "rewardLoot": "Purse",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_3",
+          "rewardItem": "Healing Potion",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_4",
+          "rewardHint": [
+            "where_to_find_this",
+            "where_that_lever_is"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_5",
+          "rewardOther": "something else",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_6",
+          "rewardBonus": true,
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

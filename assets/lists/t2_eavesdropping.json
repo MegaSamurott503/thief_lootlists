@@ -1,0 +1,1753 @@
+{
+  "id": "t2_eavesdropping",
+  "title": "Eavesdropping",
+  "screens": [
+    "MIS_t2_eavesdropping_A",
+    "MIS_t2_eavesdropping_B"
+  ],
+  "goToPrev": "t2_ambush",
+  "goToNext": "t2_bank",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [1429,250,440,0,2119],
+    [1429,250,440,0,2119],
+    [1429,250,440,0,2119]
+  ],
+  "lootCount": [43,43,43],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [800,1000,1200]
+  },
+  "pocketCount": [1,1,1],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Eastport Mechanist Seminary"},
+    {"key": "3", "value": "Grounds"},
+    {"key": "4", "value": "Servant Laboratory"},
+    {"key": "5", "value": "Northeast Tomb"},
+    {"key": "6", "value": "Cemetery"},
+    {"key": "7", "value": "Barracks"},
+    {"key": "8", "value": "Sanctuary"},
+    {"key": "9", "value": "Terrace"},
+    {"key": "10", "value": "Karras's Quarters"},
+    {"key": "11", "value": "West Tower"},
+    {"key": "12", "value": "East Tower"},
+    {"key": "13", "value": "Southwest Tombs"},
+    {"key": "14", "value": "South Catacombs"},
+    {"key": "15", "value": "Central Catacombs"},
+    {"key": "16", "value": "North Catacombs"},
+    {"key": "17", "value": "Workshop"}
+  ],
+  "notes": [
+    {
+      "id": "note_0",
+      "delimiter": "  ",
+      "icon": "[?]",
+      "desc": "the deposit box key randomly replaces one of the other keys (except the one in the catacombs)",
+      "show": true
+    },
+    {
+      "id": "note_1",
+      "delimiter": "  ",
+      "icon": "[X]",
+      "desc": "treated as a stationary object in the AM16 patch",
+      "show": false
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_collectionplate",
+      "name": "Collection Plate",
+      "img": [
+        "IMG_CollectionPlate"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_1",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "west closet",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_CollectionPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_2",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "south central alcove",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_3",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "storage shed",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_4",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "office",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_5",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "pulpit",
+              "findExact": "railing",
+              "findCount": [2,2,2],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_6",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "2F",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_7",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "by storage shed",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_8",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "east tomb",
+              "findExact": "between crates",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_9",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "crawlspace",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_10",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "1F",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_11",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "southeast crypt",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_12",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_13",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "northeast headstone",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_14",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "southwest headstones",
+              "findExact": "third stone",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_15",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "west tomb",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_16",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "south alcove",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_17",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "west crypt",
+              "findExact": "casket",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_18",
+              "findSimple": "findH",
+              "findArea": 4,
+              "findNarrow": "dump pit",
+              "findExact": "by male servant",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_19",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "guard barracks",
+              "findExact": "west table",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mechaniststatuette",
+      "name": "Mechanist Statuette",
+      "img": [
+        "IMG_MechanistStatuette"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_20",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "storage shed",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_21",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "east mezzanine",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_22",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "west mezzanine",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_23",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "stairwell",
+              "findExact": "under stairs",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_24",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "bedroom",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_25",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "east alcove",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_26",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "acolytes' quarters",
+              "findExact": "shelf",
+              "findCount": [3,3,3],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_27",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "pulpit",
+              "findExact": "lectern",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_28",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "southwest battlement",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_29",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "belfry",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_30",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "3F",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_31",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "pulpit",
+              "findExact": "lectern",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_32",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "work counter",
+              "findExact": "on male Pagan",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_33",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "hallway",
+              "findExact": "east-southeast chair",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_34",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "1F",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "t2_eavesdropping_loot_35",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "west alcove",
+              "findExact": "by bone pile",
+              "findCount": [1,1,1],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_36",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "east tomb",
+              "findExact": "between crates",
+              "findCount": [2,2,2],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Monk"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_37",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "northeast alcove",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_Statuette_Monk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_loot_38",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "nave",
+              "findExact": "east fifth pew",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [35,35,10],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_eavesdropping_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [25,25,25],
+              "loadout": "store",
+              "price": 25
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [15,15,15],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_eavesdropping_item_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [15,15,15],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_7",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [10,10,10],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_eavesdropping_item_8",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,10,10],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_9",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,4],
+              "loadout": "store",
+              "price": 250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_11",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "work counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_12",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,4],
+              "loadout": "store",
+              "price": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_13",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_eavesdropping_item_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "t2_eavesdropping_item_15",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storage shed",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "t2_eavesdropping_item_16",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "balcony",
+              "findExact": "on Mechanist arbalist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t2_eavesdropping_item_17",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "torture chamber",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_18",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_19",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,0,0],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_eavesdropping_item_20",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_21",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_22",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Laboratory Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_23",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "guard barracks",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_item_24",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "acolytes' quarters",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_item_25",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "office",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_item_26",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "workbench",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Seminary Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_27",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "pulpit",
+              "findExact": "lectern",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_item_28",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "west closet",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_item_29",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storage shed",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Catacombs Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_30",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "belfry",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_item_31",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "3F",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_item_32",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "east crypt",
+              "findExact": "on Mechanist",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Deposit Box Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_33",
+              "findSimple": "find",
+              "findArea": 2,
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findNote": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_34",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_eavesdropping_item_35",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [15,15,15],
+              "loadout": "store",
+              "price": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_36",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_37",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "t2_eavesdropping_item_38",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "work counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_39",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "office",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findNoteX": 1
+            },
+            {
+              "id": "t2_eavesdropping_item_40",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "work counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_41",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "guard barracks",
+              "findExact": "east table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_item_42",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "nave",
+              "findExact": "east fifth pew",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_item_43",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_hammerite",
+      "category": "Hammerite Items",
+      "catItems": [
+        {
+          "id": "item_holysymbol",
+          "name": "Holy Symbol",
+          "img": [
+            "IMG_HolySymbol"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_44",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "north central alcove",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_mechanist",
+      "category": "Mechanist Items",
+      "catItems": [
+        {
+          "id": "item_puttyknife",
+          "name": "Putty Knife",
+          "img": [
+            "IMG_PuttyKnife"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_45",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "wax press room",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_waximpression",
+          "name": "Wax Impression",
+          "img": [
+            "IMG_WaxImpression"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_46",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "wax press room",
+              "findCount": [1,1,1],
+              "findRecipe": "use key & Putty Knife on wax press"
+            }
+          ]
+        },
+        {
+          "id": "item_waximpression",
+          "name": "Bank Key Impression",
+          "img": [
+            "IMG_WaxImpression"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_item_47",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "wax press room",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "use Deposit Box Key & Putty Knife on wax press"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_junk_1",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "northeast counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_eavesdropping_junk_2",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "storage shed",
+              "findExact": "behind barrel",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_eavesdropping_junk_3",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "west mezzanine",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t2_eavesdropping_junk_4",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "belfry",
+              "findExact": "by bedroll",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_eavesdropping_junk_5",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "2F",
+              "findExact": "near ladder",
+              "findCount": [7,7,7]
+            },
+            {
+              "id": "t2_eavesdropping_junk_6",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "1F",
+              "findExact": "near ladder",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "t2_eavesdropping_junk_7",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "east mezzanine",
+              "findExact": "by tower",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t2_eavesdropping_junk_8",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "east tomb",
+              "findExact": "near casket",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t2_eavesdropping_junk_9",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "east alcove",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_junk_10",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "torture chamber",
+              "findExact": "by southeast exit",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_junk_11",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "southwest corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_junk_12",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "northeast corner",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_junk_13",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "west mezzanine",
+              "findExact": "barrels",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_junk_14",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "near southwest tombs",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_junk_15",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "east alcove",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_ancienthammer",
+          "name": "Ancient Hammer",
+          "img": [
+            "IMG_AncientHammer"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_junk_16",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "junk_mechanistmace",
+          "name": "Mechanist Mace",
+          "img": [
+            "IMG_MechanistMace"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_junk_17",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "guard barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_junk_18",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "west alcove",
+              "findExact": "bone pile",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_eavesdropping_junk_19",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "catacombs entrance",
+              "findExact": "above door",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_laboratoryequipment",
+          "name": "Laboratory Equipment",
+          "img": [
+            "IMG_LaboratoryEquipment"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_junk_20",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "counters",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t2_eavesdropping_junk_21",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "work counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_wax",
+          "name": "Junk Wax",
+          "img": [
+            "IMG_JunkWax"
+          ],
+          "locations": [
+            {
+              "id": "t2_eavesdropping_junk_22",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "wax press room",
+              "findCountRecipe": [-1,-1,-1],
+              "findRecipe": "use Putty Knife on wax press"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "t2_eavesdropping_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_t2_eavesdropping_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 4,
+          "findNarrow": "east door",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever on the north side of the doorframe"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "Gold Ring",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}
