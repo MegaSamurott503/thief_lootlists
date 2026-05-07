@@ -210,8 +210,7 @@
       ],
       "items": [
         "item_sapphirevase",
-        "item_sunburst",
-        "item_quintus"
+        "item_sunburst"
       ],
       "imgAB": "A"
     },
@@ -362,10 +361,8 @@
         "item_holysymbol",
         "item_dice",
         "item_hand",
-        "item_talisman",
         "item_holyhammer",
-        "item_basketball",
-        "item_globe"
+        "item_basketball"
       ],
       "imgAB": "A",
       "boxSize": "1"
@@ -504,7 +501,7 @@
       "items": [
         "item_gear",
         "item_explosivecharge",
-        "item_horn"
+        "item_quintus"
       ],
       "imgAB": "A"
     },
@@ -624,8 +621,7 @@
         ""
       ],
       "items": [
-        "item_dice",
-        "item_globe"
+        "item_dice"
       ],
       "imgAB": "B"
     },
@@ -1105,7 +1101,6 @@
         "item_dice",
         "item_dewdrop",
         "item_premask",
-        "item_hand",
         "item_globe"
       ],
       "imgAB": "A",
@@ -1172,9 +1167,6 @@
         "char_jenivere"
       ],
       "items": [
-        "item_eye",
-        "item_poker",
-        "item_quintus"
       ],
       "imgAB": "B"
     },
@@ -1252,7 +1244,6 @@
         "char_downwind"
       ],
       "items": [
-        "item_sunburst",
         "item_torc",
         "item_drillbit"
       ],

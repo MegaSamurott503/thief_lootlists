@@ -131,8 +131,7 @@
       ],
       "items": [
         "item_sapphirevase",
-        "item_sunburst",
-        "item_quintus"
+        "item_sunburst"
       ],
       "imgAB": "A"
     },
@@ -283,10 +282,8 @@
         "item_holysymbol",
         "item_dice",
         "item_hand",
-        "item_talisman",
         "item_holyhammer",
-        "item_basketball",
-        "item_globe"
+        "item_basketball"
       ],
       "imgAB": "A",
       "boxSize": "1"
@@ -705,7 +702,6 @@
         "item_dice",
         "item_dewdrop",
         "item_premask",
-        "item_hand",
         "item_globe"
       ],
       "imgAB": "A",
