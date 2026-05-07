@@ -62,7 +62,7 @@
   "changelog": [
     {
       "version": "Alpha v0.0.9",
-      "date": "Jan 21, 2026",
+      "date": "May 6, 2026",
       "changes": [
         "Added 4 TDP, 3 TMA, and 6 FM lootlists.",
         "Reorganized code to utilize Expo Router.",
