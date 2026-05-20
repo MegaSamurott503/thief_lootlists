@@ -1,4 +1,6 @@
-import { ThemeProvider, useTheme } from '@react-navigation/native';
+import {
+  ThemeProvider, DefaultTheme, DarkTheme, useTheme
+} from '@react-navigation/native';
 import { Stack } from 'expo-router';
 import { Platform, useColorScheme } from 'react-native';
 import { useEffect, useState } from 'react';
