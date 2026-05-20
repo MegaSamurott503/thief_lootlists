@@ -1,6 +1,5 @@
 import {
-  Appearance, ThemeProvider, useTheme
-} from '@react-navigation/native';
+  ThemeProvider, useTheme } from '@react-navigation/native';
 import { Stack } from 'expo-router';
 import { Platform, useColorScheme } from 'react-native';
 import { useEffect, useState } from 'react';
@@ -123,11 +122,6 @@ export default function RootLayout() {
   const { colors } = useTheme();
 
   useEffect(() => {
-    // When opened for the first time, defaults to user's color mode.
-    // Set color scheme to ensure background uses correct mode.
-    if (getCurrentTheme === 'default')
-      Appearance.setColorScheme(scheme);
-
     // When app renders, check its last saved settings.
     readAllSettings();
 
@@ -151,11 +145,13 @@ export default function RootLayout() {
     }>
       {/* Wrap app root in 'ThemeProvider' to use light/dark themes. */}
       <ThemeProvider
-        value={getCurrentTheme === 'default' && scheme === 'dark'
-          ? MyDarkTheme
-          : getCurrentTheme === 'dark'
+        value={scheme === 'dark'
+          ? getCurrentTheme !== 'light'
             ? MyDarkTheme
-            : MyLightTheme}
+            : MyLightTheme
+          : getCurrentTheme !== 'dark'
+            ? MyLightTheme
+            : MyDarkTheme}
         //value={scheme === 'dark' ? MyDarkTheme : DefaultTheme}
         //value={DefaultTheme}
       >
