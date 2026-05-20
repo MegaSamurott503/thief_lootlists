@@ -1,4 +1,6 @@
-import { ThemeProvider, useTheme } from '@react-navigation/native';
+import {
+  Appearance, ThemeProvider, useTheme
+} from '@react-navigation/native';
 import { Stack } from 'expo-router';
 import { Platform, useColorScheme } from 'react-native';
 import { useEffect, useState } from 'react';
@@ -121,37 +123,42 @@ export default function RootLayout() {
   const { colors } = useTheme();
 
   useEffect(() => {
+    // When opened for the first time, defaults to user's color mode.
+    // Set color scheme to ensure background uses correct mode.
+    if (getCurrentTheme === 'default')
+      Appearance.setColorScheme(scheme);
+
     // When app renders, check its last saved settings.
     readAllSettings();
 
   }, []);
 
   return (
-    //Wrap app root in 'ThemeProvider' to use light/dark themes.
-    <ThemeProvider
-      value={getCurrentTheme === 'default' && scheme === 'dark'
-        ? MyDarkTheme
-        : getCurrentTheme === 'dark'
+    // Wrap app root in providers to utilize context.
+    <SettingContext.Provider value={
+      {scheme,
+      getCurrentTheme, setCurrentTheme,
+      getDefaultDiffN, setDefaultDiffN,
+      getDefaultDiffH, setDefaultDiffH,
+      getDefaultDiffX, setDefaultDiffX,
+      getLootSort, setLootSort,
+      getShowListLoot, setShowListLoot,
+      getShowListItem, setShowListItem,
+      getShowListJunk, setShowListJunk,
+      getShowListSec, setShowListSec,
+      getSpoilerSec, setSpoilerSec,
+      getSpoilerEgg, setSpoilerEgg}
+    }>
+      {/* Wrap app root in 'ThemeProvider' to use light/dark themes. */}
+      <ThemeProvider
+        value={getCurrentTheme === 'default' && scheme === 'dark'
           ? MyDarkTheme
-          : MyLightTheme}
-      //value={scheme === 'dark' ? MyDarkTheme : DefaultTheme}
-      //value={DefaultTheme}
-    >
-      {/* Wrap app root in providers to utilize context. */}
-      <SettingContext.Provider value={
-        {scheme,
-        getCurrentTheme, setCurrentTheme,
-        getDefaultDiffN, setDefaultDiffN,
-        getDefaultDiffH, setDefaultDiffH,
-        getDefaultDiffX, setDefaultDiffX,
-        getLootSort, setLootSort,
-        getShowListLoot, setShowListLoot,
-        getShowListItem, setShowListItem,
-        getShowListJunk, setShowListJunk,
-        getShowListSec, setShowListSec,
-        getSpoilerSec, setSpoilerSec,
-        getSpoilerEgg, setSpoilerEgg}
-      }>
+          : getCurrentTheme === 'dark'
+            ? MyDarkTheme
+            : MyLightTheme}
+        //value={scheme === 'dark' ? MyDarkTheme : DefaultTheme}
+        //value={DefaultTheme}
+      >
         <Stack>
           <Stack.Screen
             name="(drawers)"
@@ -162,7 +169,7 @@ export default function RootLayout() {
             options={{headerShown: (Platform.OS === 'web') ? false : true}}
           />
         </Stack>
-      </SettingContext.Provider>
-    </ThemeProvider>
+      </ThemeProvider>
+    </SettingContext.Provider>
   );
 }
