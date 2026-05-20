@@ -79,6 +79,20 @@ export default function Index() {
         {` lists coming someday!)`}
       </Text>
 
+      {/* Testing stats. HIDE BEFORE FINALIZING! */}
+      <Text style={[styles.marginText, {color: colors.text}]}>
+        {`~~~ Testing info ~~~`}
+      </Text>
+      <Text style={[styles.marginText, {color: colors.text}]}>
+        {`Device color mode: ${scheme}`}
+      </Text>
+      <Text style={[styles.marginText, {color: colors.text}]}>
+        {`Site color setting: ${getCurrentTheme}`}
+      </Text>
+      <Text style={[styles.marginText, {color: colors.text}]}>
+        {`Screen width: ${width}`}
+      </Text>
+
       {/* UI explanations. */}
       <SectionHeader headerName="Info"/>
       <View style={styles.explainArea}>
