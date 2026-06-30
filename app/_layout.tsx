@@ -15,6 +15,9 @@ export default function RootLayout() {
   // Get the system's default color scheme.
   const scheme = useColorScheme();
 
+  // Access theme colors.
+  const { colors } = useTheme();
+
   // Get the type of device being used.
   const device =
     (deviceType === 1) ? 'phone' :
@@ -68,6 +71,8 @@ export default function RootLayout() {
       // [0] is 'setting_theme'
       if (jsonValues[0][1] !== null) {
         setCurrentTheme(jsonValues[0][1]);
+      } else {
+        setCurrentTheme('default');
       }
       // [1] is 'setting_default_normal'
       if (jsonValues[1][1] === "false") {
@@ -136,9 +141,6 @@ export default function RootLayout() {
     }
   };
 
-  // Access theme colors.
-  const { colors } = useTheme();
-
   useEffect(() => {
     // When app renders, check its last saved settings.
     readAllSettings();
@@ -146,43 +148,43 @@ export default function RootLayout() {
   }, []);
 
   return (
-    // Wrap app root in providers to utilize context.
-    <SettingContext.Provider value={
-      {scheme, device,
-      getCurrentTheme, setCurrentTheme,
-      getDefaultDiffN, setDefaultDiffN,
-      getDefaultDiffH, setDefaultDiffH,
-      getDefaultDiffX, setDefaultDiffX,
-      getLootSort, setLootSort,
-      getShowListLoot, setShowListLoot,
-      getShowListItem, setShowListItem,
-      getShowListJunk, setShowListJunk,
-      getShowListSec, setShowListSec,
-      getSpoilerSec, setSpoilerSec,
-      getSpoilerEgg, setSpoilerEgg,
-      getShowDebug, setShowDebug}
-    }>
-      {/* Wrap app root in 'ThemeProvider' to use light/dark themes. */}
-      <ThemeProvider
-        value={getCurrentTheme === 'default' && scheme === 'dark'
+    // Wrap app root in 'ThemeProvider' to use light/dark themes.
+    <ThemeProvider
+      value={getCurrentTheme === 'default' && scheme === 'dark'
+        ? MyDarkTheme
+        : getCurrentTheme === 'dark'
           ? MyDarkTheme
-          : getCurrentTheme === 'dark'
-            ? MyDarkTheme
-            : MyLightTheme}
-        //value={scheme === 'dark' ? MyDarkTheme : DefaultTheme}
-        //value={DefaultTheme}
-      >
-          <Stack>
-            <Stack.Screen
-              name="(drawers)"
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
-              name="list/[missionName]"
-              options={{headerShown: (device !== 'phone') ? false : true}}
-            />
-          </Stack>
-      </ThemeProvider>
-    </SettingContext.Provider>
+          : MyLightTheme}
+      //value={scheme === 'dark' ? MyDarkTheme : DefaultTheme}
+      //value={DefaultTheme}
+    >
+      {/* Wrap app root in providers to utilize context. */}
+      <SettingContext.Provider value={
+        {scheme, device,
+        getCurrentTheme, setCurrentTheme,
+        getDefaultDiffN, setDefaultDiffN,
+        getDefaultDiffH, setDefaultDiffH,
+        getDefaultDiffX, setDefaultDiffX,
+        getLootSort, setLootSort,
+        getShowListLoot, setShowListLoot,
+        getShowListItem, setShowListItem,
+        getShowListJunk, setShowListJunk,
+        getShowListSec, setShowListSec,
+        getSpoilerSec, setSpoilerSec,
+        getSpoilerEgg, setSpoilerEgg,
+        getShowDebug, setShowDebug}
+      }>
+        <Stack>
+          <Stack.Screen
+            name="(drawers)"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="list/[missionName]"
+            options={{headerShown: (device !== 'phone') ? false : true}}
+          />
+        </Stack>
+      </SettingContext.Provider>
+    </ThemeProvider>
   );
 }
