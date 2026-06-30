@@ -63,6 +63,20 @@
     {
       "id": "note_0",
       "delimiter": "  ",
+      "icon": "[DP]",
+      "desc": "only available in v1.33 (The Dark Project)",
+      "show": true
+    },
+    {
+      "id": "note_1",
+      "delimiter": "  ",
+      "icon": "[G]",
+      "desc": "only available in v1.37 (Gold)",
+      "show": true
+    },
+    {
+      "id": "note_2",
+      "delimiter": "  ",
       "icon": "[A]",
       "desc": "only obtainable with the AM16 patch",
       "show": true
@@ -87,6 +101,7 @@
               "findNarrow": "couch",
               "findExact": "behind cushions",
               "findCount": [2,2,2],
+              "findNote": 1,
               "orderNum": 30,
               "orderImg": [
                 "IMG_Coin"
@@ -932,7 +947,8 @@
               "findArea": 29,
               "findNarrow": "shelf",
               "findExact": "thimble",
-              "findCount": [3,3,3]
+              "findCount": [3,3,3],
+              "findNote": 1
             },
             {
               "id": "t1_sword_item_16",
@@ -940,14 +956,16 @@
               "findArea": 29,
               "findNarrow": "floor",
               "findExact": "under shelf",
-              "findCount": [1,1,1]
+              "findCount": [1,1,1],
+              "findNote": 1
             },
             {
               "id": "t1_sword_item_17",
               "findSimple": "find",
               "findArea": 29,
               "findNarrow": "footlocker",
-              "findCount": [2,2,2]
+              "findCount": [2,2,2],
+              "findNote": 1
             }
           ]
         },
@@ -978,7 +996,8 @@
               "findSimple": "find",
               "findArea": 29,
               "findNarrow": "footlocker",
-              "findCount": [3,3,3]
+              "findCount": [3,3,3],
+              "findNote": 1
             }
           ]
         }
@@ -1062,14 +1081,16 @@
               "findArea": 29,
               "findNarrow": "kitchen shelf",
               "findExact": "saucepan",
-              "findCount": [1,1,1]
+              "findCount": [1,1,1],
+              "findNote": 1
             },
             {
               "id": "t1_sword_item_30",
               "findSimple": "find",
               "findArea": 29,
               "findNarrow": "water tub",
-              "findCount": [3,3,3]
+              "findCount": [3,3,3],
+              "findNote": 1
             },
             {
               "id": "t1_sword_item_31",
@@ -1077,7 +1098,8 @@
               "findArea": 29,
               "findNarrow": "desk",
               "findExact": "inkwell",
-              "findCount": [2,2,2]
+              "findCount": [2,2,2],
+              "findNote": 1
             },
             {
               "id": "t1_sword_item_32",
@@ -1131,7 +1153,8 @@
               "findArea": 29,
               "findNarrow": "shelf",
               "findExact": "matchbox",
-              "findCount": [4,4,4]
+              "findCount": [4,4,4],
+              "findNote": 1
             },
             {
               "id": "t1_sword_item_38",
@@ -1188,7 +1211,7 @@
               "findNarrow": "north tree",
               "findExact": "hollow trunk",
               "findCount": [1,1,1],
-              "findNote": 0
+              "findNote": 2
             },
             {
               "id": "t1_sword_item_44",
@@ -1204,14 +1227,16 @@
               "findArea": 29,
               "findNarrow": "coffee table",
               "findExact": "cheese",
-              "findCount": [2,2,2]
+              "findCount": [2,2,2],
+              "findNote": 1
             },
             {
               "id": "t1_sword_item_46",
               "findSimple": "find",
               "findArea": 29,
               "findNarrow": "bed",
-              "findCount": [3,3,3]
+              "findCount": [3,3,3],
+              "findNote": 1
             },
             {
               "id": "t1_sword_item_47",
@@ -1376,7 +1401,8 @@
               "findNarrow": "village",
               "findExact": "on maroon swordsman",
               "findCountBox": [1,1,1],
-              "findPick": true
+              "findPick": true,
+              "findNote": 1
             },
             {
               "id": "t1_sword_item_63",
@@ -1400,7 +1426,8 @@
               "findSimple": "find",
               "findArea": 29,
               "findExact": "mousetrap",
-              "findCount": [1,1,1]
+              "findCount": [1,1,1],
+              "findNote": 1
             }
           ]
         },
@@ -1416,7 +1443,8 @@
               "findSimple": "find",
               "findArea": 28,
               "findExact": "standing stones",
-              "findCount": [1,1,1]
+              "findCount": [1,1,1],
+              "findNote": 1
             }
           ]
         }
@@ -1503,7 +1531,7 @@
         },
         {
           "id": "item_key",
-          "name": "Greenhouse Key",
+          "name": "Garden Key",
           "img": [
             "IMG_Key_Black"
           ],
@@ -1512,9 +1540,36 @@
               "id": "t1_sword_item_72",
               "findSimple": "find",
               "findArea": 21,
+              "findNarrow": "bedroom",
+              "findExact": "by bed",
+              "findCount": [1,1,1],
+              "findNote": 0
+            },
+            {
+              "id": "t1_sword_item_73",
+              "findSimple": "find",
+              "findArea": 21,
               "findNarrow": "side room",
               "findExact": "table",
-              "findCount": [1,1,1]
+              "findCount": [1,1,1],
+              "findNote": 1
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Unused Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "t1_sword_item_74",
+              "findSimple": "find",
+              "findArea": 24,
+              "findExact": "???",
+              "findCount": [1,1,1],
+              "findNote": 0
             }
           ]
         }
@@ -1532,7 +1587,7 @@
           ],
           "locations": [
             {
-              "id": "t1_sword_item_73",
+              "id": "t1_sword_item_75",
               "findSimple": "find",
               "findArea": 0,
               "findCount": [1,1,1],
@@ -1554,14 +1609,14 @@
           ],
           "locations": [
             {
-              "id": "t1_sword_item_74",
+              "id": "t1_sword_item_76",
               "findSimple": "find",
               "findArea": 16,
               "findExact": "table",
               "findCount": [2,2,2]
             },
             {
-              "id": "t1_sword_item_75",
+              "id": "t1_sword_item_77",
               "findSimple": "find",
               "findArea": 18,
               "findExact": "footlocker",
@@ -1569,7 +1624,7 @@
               "findBox": true
             },
             {
-              "id": "t1_sword_item_76",
+              "id": "t1_sword_item_78",
               "findSimple": "find",
               "findArea": 31,
               "findExact": "southeast counter",
@@ -1591,14 +1646,14 @@
           ],
           "locations": [
             {
-              "id": "t1_sword_item_77",
+              "id": "t1_sword_item_79",
               "findSimple": "find",
               "findArea": 20,
               "findExact": "east table",
               "findCount": [1,1,1]
             },
             {
-              "id": "t1_sword_item_78",
+              "id": "t1_sword_item_80",
               "findSimple": "find",
               "findArea": 21,
               "findNarrow": "side room",
@@ -1606,7 +1661,7 @@
               "findCount": [1,1,1]
             },
             {
-              "id": "t1_sword_item_79",
+              "id": "t1_sword_item_81",
               "findSimple": "find",
               "findArea": 25,
               "findNarrow": "cellar",
@@ -1953,7 +2008,8 @@
               "findSimple": "find",
               "findArea": 29,
               "findExact": "mousetrap",
-              "findCount": [1,1,1]
+              "findCount": [1,1,1],
+              "findNote": 1
             }
           ]
         },
@@ -1969,7 +2025,8 @@
               "findSimple": "find",
               "findArea": 29,
               "findExact": "mousetrap",
-              "findCount": [1,1,1]
+              "findCount": [1,1,1],
+              "findNote": 1
             }
           ]
         }

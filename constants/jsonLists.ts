@@ -21,7 +21,9 @@ export const myList = {
   "t1_escape": require('@/assets/lists/t1_escape.json'), // Escape!
   "t1_bedfellows": require('@/assets/lists/t1_bedfellows.json'), // Strange Bedfellows
   "t1_maw": require('@/assets/lists/t1_maw.json'), // Into the Maw of Chaos
-  //"t1_blooper": require('@/assets/lists/t1_blooper.json'), // Blooper Reel
+  "t1_bafford-demo": require('@/assets/lists/t1_bafford-demo.json'), // Lord Bafford's Manor (Demo)
+  "t1_guild-demo": require('@/assets/lists/t1_guild-demo.json'), // Thieves' Guild (Demo)
+  "t1_blooper": require('@/assets/lists/t1_blooper.json'), // Blooper Reel
 
   // THIEF II: THE METAL AGE
   "t2_interference": require('@/assets/lists/t2_interference.json'), // Running Interference
@@ -39,7 +41,7 @@ export const myList = {
   "t2_casing": require('@/assets/lists/t2_casing.json'), // Casing the Joint
   "t2_masks": require('@/assets/lists/t2_masks.json'), // Masks
   "t2_soulforge": require('@/assets/lists/t2_soulforge.json'), // Sabotage at Soulforge
-  "t2_guest": require('@/assets/lists/t2_guest.json'), // The Unwelcome Guest
+  "t2_guest": require('@/assets/lists/t2_guest.json'), // The Unwelcome Guest (Demo)
 
   // Fan Missions
   "fm_artthievery": require('@/assets/lists/fm_artthievery.json'), // The Art of Thievery
@@ -52,21 +54,27 @@ export const myList = {
   "fm_calendra-winter": require('@/assets/lists/fm_calendra-winter.json'), // Calendra's Legacy: A Winter's Eve
   "fm_cargo": require('@/assets/lists/fm_cargo.json'), // Complicated Cargo
   "fm_spirit-resurrection": require('@/assets/lists/fm_spirit-resurrection.json'), // Cult of the Resurrection
+  "fm_curseancients": require('@/assets/lists/fm_curseancients.json'), // Curse of the Ancients
   "fm_durant": require('@/assets/lists/fm_durant.json'), // Durant
   "fm_ashton-escape": require('@/assets/lists/fm_ashton-escape.json'), // Escape!
+  "fm_equilibrium": require('@/assets/lists/fm_equilibrium.json'), // Equilibrium
   "fm_agenda": require('@/assets/lists/fm_agenda.json'), // Hidden Agenda
   "fm_maelstrom": require('@/assets/lists/fm_maelstrom.json'), // Into the Maelstrom
   "fm_spirit-manse": require('@/assets/lists/fm_spirit-manse.json'), // The Inverted Manse
+  "fm_retreat": require('@/assets/lists/fm_retreat.json'), // Lord James' Retreat
   "fm_forces-invitation": require('@/assets/lists/fm_forces-invitation.json'), // Mysterious Invitation
   "fm_ashton-stroll": require('@/assets/lists/fm_ashton-stroll.json'), // A Night's Stroll
   "fm_nightchristmas": require('@/assets/lists/fm_nightchristmas.json'), // The Night Before Christmas
+  "fm_xedormicost-bequest": require('@/assets/lists/fm_xedormicost-bequest.json'), // Ominous Bequest
   "fm_ashton-revenge": require('@/assets/lists/fm_ashton-revenge.json'), // Revenge
   "fm_cottage": require('@/assets/lists/fm_cottage.json'), // Rose Cottage
+  "fm_rowena": require('@/assets/lists/fm_rowena.json'), // Rowena's Curse
   "fm_seventh-2": require('@/assets/lists/fm_seventh-2.json'), // The Seventh Crystal - Act 2
   "fm_seventh-3": require('@/assets/lists/fm_seventh-3.json'), // The Seventh Crystal - Act 3
   "fm_solong": require('@/assets/lists/fm_solong.json'), // So Long Hammers
   "fm_cleft-ladytaker": require('@/assets/lists/fm_cleft-ladytaker.json'), // Tales from the Cleft: Ladytaker
   "fm_cleft-vandal": require('@/assets/lists/fm_cleft-vandal.json'), // Tales from the Cleft: Vandal
+  "fm_templetides": require('@/assets/lists/fm_templetides.json'), // Temple of the Tides
   "fm_thefthightowne": require('@/assets/lists/fm_thefthightowne.json'), // A Theft in High Towne
   "fm_holiday2004": require('@/assets/lists/fm_holiday2004.json'), // A Thief's Holiday 2004
   "fm_highway": require('@/assets/lists/fm_highway.json'), // Thieves' Highway

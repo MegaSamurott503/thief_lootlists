@@ -16,9 +16,13 @@ export const bgFoundDarkT = require('@/assets/images/bg_found_dark_tall.png');
 
 // Add icon images here.
 export const iconTDP = require('@/assets/images/icon_t1.png');
+export const iconTDPFaded = require('@/assets/images/icon_t1_faded.png');
 export const iconTMA = require('@/assets/images/icon_t2.png');
+export const iconTMAFaded = require('@/assets/images/icon_t2_faded.png');
 //export const iconTDS = require('@/assets/images/icon_t3.png');
+//export const iconTDSFaded = require('@/assets/images/icon_t3_faded.png');
 export const iconFM = require('@/assets/images/icon_fm.png');
+export const iconFMFaded = require('@/assets/images/icon_fm_faded.png');
 export const iconGold = require('@/assets/images/icon_gold.png');
 export const iconGems = require('@/assets/images/icon_gems.png');
 export const iconGoods = require('@/assets/images/icon_goods.png');

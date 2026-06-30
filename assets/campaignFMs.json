@@ -31,7 +31,7 @@
         "npc_undead"
       ],
       "characters": [
-        ""
+        "char_constantine"
       ],
       "items": [
         "item_eye",
@@ -276,7 +276,7 @@
         "npc_monsters"
       ],
       "characters": [
-        ""
+        "char_gamall"
       ],
       "items": [
         "item_holysymbol",
@@ -550,6 +550,58 @@
         "item_poker"
       ],
       "imgAB": "B"
+    },
+    {
+      "note": "~~~~~~~~~~~~~~~~~~~~ Aug 2003 ~~~~~~~~~~~~~~~~~~~~",
+      "id": "fm_xedormicost-bequest",
+      "name": "Ominous Bequest",
+      "game": "game_t2",
+      "year": "y2003",
+      "authors": [
+        "auth_eshaktaar"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_triad",
+      "genres": [
+        "genre_burglar",
+        "genre_heist",
+        "genre_investigate",
+        "genre_escape",
+        "genre_sabotage"
+      ],
+      "locations": [
+        "loc_mansion",
+        "loc_church",
+        "loc_catacombs",
+        "loc_sewers",
+        "loc_ancient",
+        "loc_cave"
+      ],
+      "enemies": [
+        "npc_guards",
+        "npc_servants",
+        "npc_hammerites",
+        "npc_nobles",
+        "npc_ghosts",
+        "npc_haunts",
+        "npc_spiders",
+        "npc_burricks",
+        "npc_craymen",
+        "npc_zombies",
+        "npc_undead"
+      ],
+      "characters": [
+        "char_benny"
+      ],
+      "items": [
+        "item_scepter",
+        "item_quintus",
+        "item_goldbone",
+        "item_talisman"
+      ],
+      "imgAB": "A"
     },
     {
       "note": "~~~~~~~~~~~~~~~~~~~~ Nov 2005 ~~~~~~~~~~~~~~~~~~~~",

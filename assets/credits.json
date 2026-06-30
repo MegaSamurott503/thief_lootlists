@@ -6,7 +6,11 @@
     },
     {
       "name": "Expo Router",
-      "link": "https://https://docs.expo.dev/versions/latest/sdk/router/"
+      "link": "https://docs.expo.dev/versions/latest/sdk/router/"
+    },
+    {
+      "name": "Expo Device",
+      "link": "https://docs.expo.dev/versions/latest/sdk/device/"
     },
     {
       "name": "React Native",
@@ -60,6 +64,28 @@
     }
   ],
   "changelog": [
+    {
+      "version": "Alpha v0.0.10",
+      "date": "June 30, 2026",
+      "changes": [
+        "Added 3 TDP, 1 TMA, and 6 FM lootlists.",
+        "Improved element resizing on web browsers on smaller screens.",
+        "Added buttons to jump to other sections of the lootlist page.",
+        "Item header boxes now hide if all items are hidden by filters.",
+        "Difficulty and area filters now affect the secret list.",
+        "Added spacing between entries on the secret list.",
+        "Added icons to the tab navigator.",
+        "Added loading wheels to more buttons.",
+        "Loot types can now be defined per mission (future-proofing).",
+        "Added option to show debug information.",
+        "Fixed loot total no longer carrying over to next mission.",
+        "Fixed redundant text if both spoiler covers are active.",
+        "Footnotes are now visible next to spoiler covers.",
+        "Updated lootlists to include differences between TDP and TG.",
+        "Various other fixes and corrections to several lootlists.",
+        "Updated credits."
+      ]
+    },
     {
       "version": "Alpha v0.0.9",
       "date": "May 6, 2026",

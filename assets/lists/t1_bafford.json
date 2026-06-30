@@ -318,7 +318,7 @@
               "id": "t1_bafford_loot_13",
               "findSimple": "findE",
               "findArea": 15,
-              "findExact": "bench",
+              "findExact": "north bench",
               "findCount": [1,1,1],
               "orderNum": 8,
               "orderImg": [

@@ -1,6 +1,10 @@
 {
   "id": "t2_guest",
-  "title": "The Unwelcome Guest",
+  "title": "The Unwelcome Guest (Demo)",
+  "screens": [
+    "MIS_t2_guest_A",
+    "MIS_t2_guest_B"
+  ],
   "diffNames": ["Normal","Hard","Expert"],
   "diffChanges": true,
   "markObj": true,
@@ -9,7 +13,7 @@
     [2295,300,140,0,2735],
     [2295,300,140,0,2735]
   ],
-  "lootCount": [55,55,55],
+  "lootCount": [62,62,62],
   "lootChanges": [0,0,0],
   "goal1": {
     "total": [800,1200,1700]
@@ -38,7 +42,8 @@
     {"key": "18", "value": "Northeast Dayport"},
     {"key": "19", "value": "Lady Louisa's Suite"},
     {"key": "20", "value": "Mechanist Tower 8F"},
-    {"key": "21", "value": "Mechanist Tower 9F"}
+    {"key": "21", "value": "Mechanist Tower 9F"},
+    {"key": "22", "value": "Mechanist Tower Roof"}
   ],
   "notes": [
     {
@@ -69,7 +74,7 @@
               "findExact": "footlocker",
               "findCountBox": [1,1,1],
               "findBox": true,
-              "orderNum": 000,
+              "orderNum": 0,
               "orderImg": [
                 "IMG_CopperCoinStack"
               ]
@@ -81,7 +86,7 @@
               "findNarrow": "employee office",
               "findExact": "safe",
               "findCount": [3,3,3],
-              "orderNum": 000,
+              "orderNum": 23,
               "orderImg": [
                 "IMG_CopperCoinStack"
               ]
@@ -108,7 +113,7 @@
               "findNarrow": "dining room",
               "findExact": "serving table",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 35,
               "orderImg": [
                 "IMG_FineWine"
               ]
@@ -120,7 +125,7 @@
               "findNarrow": "ballroom",
               "findExact": "serving table",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 43,
               "orderImg": [
                 "IMG_FineWine"
               ]
@@ -147,7 +152,7 @@
               "findNarrow": "spider's den",
               "findExact": "northwest corner",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 10,
               "orderImg": [
                 "IMG_GemRing"
               ]
@@ -175,7 +180,7 @@
               "findExact": "safe",
               "findObj": true,
               "findCount": [8,8,8],
-              "orderNum": 000,
+              "orderNum": 25,
               "orderImg": [
                 "IMG_Gemstone"
               ]
@@ -202,7 +207,7 @@
               "findNarrow": "3F",
               "findExact": "altar",
               "findCount": [2,2,2],
-              "orderNum": 000,
+              "orderNum": 13,
               "orderImg": [
                 "IMG_GoldCandlestick"
               ]
@@ -214,7 +219,7 @@
               "findNarrow": "castle",
               "findExact": "south room",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 22,
               "orderImg": [
                 "IMG_GoldCandlestick"
               ]
@@ -242,7 +247,7 @@
               "findExact": "blue chest",
               "findCountBox": [1,1,1],
               "findBox": true,
-              "orderNum": 000,
+              "orderNum": 16,
               "orderImg": [
                 "IMG_GoldCoinStack"
               ]
@@ -254,7 +259,7 @@
               "findNarrow": "skylight room",
               "findExact": "table",
               "findCount": [3,3,3],
-              "orderNum": 000,
+              "orderNum": 20,
               "orderImg": [
                 "IMG_GoldCoinStack"
               ]
@@ -266,7 +271,7 @@
               "findNarrow": "Karras's quarters",
               "findExact": "safe",
               "findCount": [4,4,4],
-              "orderNum": 000,
+              "orderNum": 30,
               "orderImg": [
                 "IMG_GoldCoinStack"
               ]
@@ -285,7 +290,7 @@
               "findExact": "blue chest",
               "findCountBox": [1,1,1],
               "findBox": true,
-              "orderNum": 000,
+              "orderNum": 21,
               "orderImg": [
                 "IMG_GoldCoinStack"
               ]
@@ -305,7 +310,7 @@
               "findCountBox": [1,1,1],
               "findBox": true,
               "findSecret": true,
-              "orderNum": 000,
+              "orderNum": 14,
               "orderImg": [
                 "IMG_GoldCoinStack"
               ]
@@ -320,11 +325,11 @@
               "id": "t2_guest_loot_14",
               "findSimple": "findE",
               "findArea": 6,
-              "findNarrow": "stone apartment",
+              "findNarrow": "glass window apt.",
               "findExact": "blue chest",
               "findCountBox": [1,1,1],
               "findBox": true,
-              "orderNum": 000,
+              "orderNum": 11,
               "orderImg": [
                 "IMG_GoldCoinStack"
               ]
@@ -351,7 +356,7 @@
               "findNarrow": "skywalk",
               "findExact": "table",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 7,
               "orderImg": [
                 "IMG_GoldGoblet"
               ]
@@ -363,7 +368,7 @@
               "findNarrow": "dining room",
               "findExact": "serving table",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 34,
               "orderImg": [
                 "IMG_GoldGoblet"
               ]
@@ -375,7 +380,7 @@
               "findNarrow": "study",
               "findExact": "south table",
               "findCount": [2,2,2],
-              "orderNum": 000,
+              "orderNum": 37,
               "orderImg": [
                 "IMG_GoldGoblet"
               ]
@@ -402,7 +407,7 @@
               "findNarrow": "red brick building",
               "findExact": "upper floor",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 15,
               "orderImg": [
                 "IMG_GoldPlate"
               ]
@@ -415,7 +420,7 @@
               "findExact": "footlocker",
               "findCountBox": [1,1,1],
               "findBox": true,
-              "orderNum": 000,
+              "orderNum": 29,
               "orderImg": [
                 "IMG_GoldPlate"
               ]
@@ -442,7 +447,7 @@
               "findNarrow": "burgled apartment",
               "findExact": "cabinet table",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 17,
               "orderImg": [
                 "IMG_GoldRing"
               ]
@@ -469,7 +474,7 @@
               "findNarrow": "west room",
               "findExact": "table",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 8,
               "orderImg": [
                 "IMG_GoldVase"
               ]
@@ -481,7 +486,7 @@
               "findNarrow": "crib room",
               "findExact": "table",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 19,
               "orderImg": [
                 "IMG_GoldVase"
               ]
@@ -492,7 +497,7 @@
               "findArea": 19,
               "findExact": "mantelpiece",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 27,
               "orderImg": [
                 "IMG_GoldVase"
               ]
@@ -521,7 +526,7 @@
               "findCountBox": [1,1,1],
               "findBox": true,
               "findSecret": true,
-              "orderNum": 000,
+              "orderNum": 5,
               "orderImg": [
                 "IMG_Necklace"
               ]
@@ -549,7 +554,7 @@
               "findNarrow": "castle",
               "findExact": "statue niche",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 2,
               "orderImg": [
                 "IMG_PrecursorJar_Small"
               ]
@@ -561,7 +566,7 @@
               "findNarrow": "Karras's quarters",
               "findExact": "safe",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 32,
               "orderImg": [
                 "IMG_PrecursorJar_Tall"
               ]
@@ -589,7 +594,7 @@
               "findExact": "on nobleman",
               "findCountBox": [1,1,1],
               "findPick": true,
-              "orderNum": 000,
+              "orderNum": 33,
               "orderImg": [
                 "IMG_Purse"
               ]
@@ -608,7 +613,7 @@
               "findExact": "on male servant",
               "findCountBox": [1,1,1],
               "findPick": true,
-              "orderNum": 000,
+              "orderNum": 1,
               "orderImg": [
                 "IMG_Purse"
               ]
@@ -621,7 +626,7 @@
               "findExact": "on nobleman",
               "findCountBox": [1,1,1],
               "findPick": true,
-              "orderNum": 000,
+              "orderNum": 39,
               "orderImg": [
                 "IMG_Purse"
               ]
@@ -635,7 +640,7 @@
               "findCountBox": [1,1,1],
               "findPick": true,
               "findNote": 0,
-              "orderNum": 000,
+              "orderNum": 40,
               "orderImg": [
                 "IMG_Purse"
               ]
@@ -654,7 +659,7 @@
               "findExact": "on nobleman",
               "findCountBox": [1,1,1],
               "findPick": true,
-              "orderNum": 000,
+              "orderNum": 36,
               "orderImg": [
                 "IMG_Purse"
               ]
@@ -673,7 +678,7 @@
               "findExact": "on noblewoman",
               "findCountBox": [1,1,1],
               "findPick": true,
-              "orderNum": 000,
+              "orderNum": 38,
               "orderImg": [
                 "IMG_Purse"
               ]
@@ -686,7 +691,7 @@
               "findExact": "on noblewoman",
               "findCountBox": [1,1,1],
               "findPick": true,
-              "orderNum": 000,
+              "orderNum": 41,
               "orderImg": [
                 "IMG_Purse"
               ]
@@ -699,7 +704,7 @@
               "findExact": "on noblewoman",
               "findCountBox": [1,1,1],
               "findPick": true,
-              "orderNum": 000,
+              "orderNum": 42,
               "orderImg": [
                 "IMG_Purse"
               ]
@@ -717,7 +722,7 @@
               "findNarrow": "blue apartment",
               "findExact": "table",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 6,
               "orderImg": [
                 "IMG_Purse"
               ]
@@ -729,7 +734,7 @@
               "findNarrow": "Rothchilds' house",
               "findExact": "open window",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 12,
               "orderImg": [
                 "IMG_Purse"
               ]
@@ -741,7 +746,7 @@
               "findExact": "on noblewoman",
               "findCountBox": [1,1,1],
               "findPick": true,
-              "orderNum": 000,
+              "orderNum": 28,
               "orderImg": [
                 "IMG_Purse"
               ]
@@ -760,7 +765,7 @@
               "findExact": "safe",
               "findObj": true,
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 26,
               "orderImg": [
                 "IMG_Purse"
               ]
@@ -787,7 +792,7 @@
               "findNarrow": "south room",
               "findExact": "table",
               "findCount": [3,3,3],
-              "orderNum": 000,
+              "orderNum": 9,
               "orderImg": [
                 "IMG_SilverCoinStack"
               ]
@@ -799,7 +804,7 @@
               "findNarrow": "employee office",
               "findExact": "safe",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 24,
               "orderImg": [
                 "IMG_SilverCoinStack"
               ]
@@ -811,7 +816,7 @@
               "findNarrow": "Karras's quarters",
               "findExact": "safe",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 31,
               "orderImg": [
                 "IMG_SilverCoinStack"
               ]
@@ -830,7 +835,7 @@
               "findExact": "footlocker",
               "findCountBox": [1,1,1],
               "findBox": true,
-              "orderNum": 000,
+              "orderNum": 4,
               "orderImg": [
                 "IMG_SilverCoinStack"
               ]
@@ -849,7 +854,7 @@
               "findExact": "footlocker",
               "findCountBox": [1,1,1],
               "findBox": true,
-              "orderNum": 000,
+              "orderNum": 3,
               "orderImg": [
                 "IMG_SilverCoinStack"
               ]
@@ -876,7 +881,7 @@
               "findNarrow": "north room",
               "findExact": "cabinet table",
               "findCount": [1,1,1],
-              "orderNum": 000,
+              "orderNum": 18,
               "orderImg": [
                 "IMG_Tiara"
               ]
@@ -1760,7 +1765,7 @@
               "id": "t2_guest_item_72",
               "findSimple": "find",
               "findArea": 6,
-              "findNarrow": "stone apartment",
+              "findNarrow": "glass window apt.",
               "findExact": "blue chest",
               "findCountBox": [5,5,5],
               "findBox": true
@@ -1891,6 +1896,15 @@
               "findNarrow": "study",
               "findExact": "south table",
               "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_guest_item_83",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "Raven shrine",
+              "findCount": [7,7,7],
+              "findNote": 0,
+              "findEaster": true
             }
           ]
         },
@@ -1902,7 +1916,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_item_83",
+              "id": "t2_guest_item_84",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "kitchen",
@@ -1910,7 +1924,7 @@
               "findCount": [1,1,1]
             },
             {
-              "id": "t2_guest_item_84",
+              "id": "t2_guest_item_85",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "dining room",
@@ -1933,7 +1947,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_item_85",
+              "id": "t2_guest_item_86",
               "findSimple": "find",
               "findArea": 13,
               "findNarrow": "armory anteroom",
@@ -1941,7 +1955,7 @@
               "findCount": [1,1,1]
             },
             {
-              "id": "t2_guest_item_86",
+              "id": "t2_guest_item_87",
               "findSimple": "find",
               "findArea": 17,
               "findNarrow": "employee office",
@@ -1958,7 +1972,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_item_87",
+              "id": "t2_guest_item_88",
               "findSimple": "find",
               "findArea": 11,
               "findNarrow": "1F",
@@ -1976,7 +1990,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_item_88",
+              "id": "t2_guest_item_89",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "Karras's office",
@@ -2141,6 +2155,15 @@
               "findNarrow": "kitchen",
               "findExact": "table",
               "findCount": [1,1,1]
+            },
+            {
+              "id": "t2_guest_junk_15",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "Raven shrine",
+              "findCount": [3,3,3],
+              "findNote": 0,
+              "findEaster": true
             }
           ]
         }
@@ -2158,7 +2181,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_15",
+              "id": "t2_guest_junk_16",
               "findSimple": "find",
               "findArea": 2,
               "findNarrow": "NE apartment",
@@ -2166,7 +2189,7 @@
               "findCount": [1,1,1]
             },
             {
-              "id": "t2_guest_junk_16",
+              "id": "t2_guest_junk_17",
               "findSimple": "find",
               "findArea": 5,
               "findNarrow": "kitchen",
@@ -2174,7 +2197,7 @@
               "findCount": [3,3,3]
             },
             {
-              "id": "t2_guest_junk_17",
+              "id": "t2_guest_junk_18",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "pantry",
@@ -2191,7 +2214,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_18",
+              "id": "t2_guest_junk_19",
               "findSimple": "find",
               "findArea": 14,
               "findNarrow": "crib room",
@@ -2208,7 +2231,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_19",
+              "id": "t2_guest_junk_20",
               "findSimple": "find",
               "findArea": 5,
               "findNarrow": "kitchen",
@@ -2216,7 +2239,7 @@
               "findCount": [2,2,2]
             },
             {
-              "id": "t2_guest_junk_20",
+              "id": "t2_guest_junk_21",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "pantry",
@@ -2233,7 +2256,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_21",
+              "id": "t2_guest_junk_22",
               "findSimple": "find",
               "findArea": 10,
               "findNarrow": "red brick building",
@@ -2241,7 +2264,7 @@
               "findCount": [1,1,1]
             },
             {
-              "id": "t2_guest_junk_22",
+              "id": "t2_guest_junk_23",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "pantry",
@@ -2249,7 +2272,7 @@
               "findCount": [4,4,4]
             },
             {
-              "id": "t2_guest_junk_23",
+              "id": "t2_guest_junk_24",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "dining room",
@@ -2266,7 +2289,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_24",
+              "id": "t2_guest_junk_25",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "kitchen",
@@ -2274,7 +2297,7 @@
               "findCount": [1,1,1]
             },
             {
-              "id": "t2_guest_junk_25",
+              "id": "t2_guest_junk_26",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "kitchen",
@@ -2282,7 +2305,7 @@
               "findCount": [3,3,3]
             },
             {
-              "id": "t2_guest_junk_26",
+              "id": "t2_guest_junk_27",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "kitchen",
@@ -2290,7 +2313,7 @@
               "findCount": [1,1,1]
             },
             {
-              "id": "t2_guest_junk_27",
+              "id": "t2_guest_junk_28",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "dining room",
@@ -2298,7 +2321,7 @@
               "findCount": [2,2,2]
             },
             {
-              "id": "t2_guest_junk_28",
+              "id": "t2_guest_junk_29",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "dining room",
@@ -2306,7 +2329,7 @@
               "findCount": [2,2,2]
             },
             {
-              "id": "t2_guest_junk_29",
+              "id": "t2_guest_junk_30",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "study",
@@ -2329,7 +2352,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_30",
+              "id": "t2_guest_junk_31",
               "findSimple": "find",
               "findArea": 2,
               "findNarrow": "NE apartment",
@@ -2337,7 +2360,7 @@
               "findCount": [1,1,1]
             },
             {
-              "id": "t2_guest_junk_31",
+              "id": "t2_guest_junk_32",
               "findSimple": "find",
               "findArea": 5,
               "findNarrow": "kitchen",
@@ -2354,7 +2377,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_32",
+              "id": "t2_guest_junk_33",
               "findSimple": "find",
               "findArea": 8,
               "findNarrow": "skywalk",
@@ -2362,7 +2385,7 @@
               "findCount": [2,2,2]
             },
             {
-              "id": "t2_guest_junk_33",
+              "id": "t2_guest_junk_34",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "dining room",
@@ -2370,7 +2393,7 @@
               "findCount": [7,7,7]
             },
             {
-              "id": "t2_guest_junk_34",
+              "id": "t2_guest_junk_35",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "dining room",
@@ -2378,7 +2401,7 @@
               "findCount": [2,2,2]
             },
             {
-              "id": "t2_guest_junk_35",
+              "id": "t2_guest_junk_36",
               "findSimple": "find",
               "findArea": 21,
               "findNarrow": "ballroom",
@@ -2401,7 +2424,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_36",
+              "id": "t2_guest_junk_37",
               "findSimple": "find",
               "findArea": 2,
               "findNarrow": "NE apartment",
@@ -2409,14 +2432,14 @@
               "findCount": [1,1,1]
             },
             {
-              "id": "t2_guest_junk_37",
+              "id": "t2_guest_junk_38",
               "findSimple": "find",
               "findArea": 18,
               "findNarrow": "drunk guards' roof",
               "findCount": [8,8,8]
             },
             {
-              "id": "t2_guest_junk_38",
+              "id": "t2_guest_junk_39",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "dining room",
@@ -2424,7 +2447,7 @@
               "findCount": [3,3,3]
             },
             {
-              "id": "t2_guest_junk_39",
+              "id": "t2_guest_junk_40",
               "findSimple": "find",
               "findArea": 21,
               "findNarrow": "ballroom",
@@ -2441,7 +2464,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_40",
+              "id": "t2_guest_junk_41",
               "findSimple": "find",
               "findArea": 3,
               "findNarrow": "attic",
@@ -2464,7 +2487,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_41",
+              "id": "t2_guest_junk_42",
               "findSimple": "find",
               "findArea": 5,
               "findNarrow": "kitchen",
@@ -2472,7 +2495,7 @@
               "findCount": [1,1,1]
             },
             {
-              "id": "t2_guest_junk_42",
+              "id": "t2_guest_junk_43",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "pantry",
@@ -2489,7 +2512,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_43",
+              "id": "t2_guest_junk_44",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "pantry",
@@ -2506,7 +2529,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_44",
+              "id": "t2_guest_junk_45",
               "findSimple": "find",
               "findArea": 5,
               "findNarrow": "chandelier hall",
@@ -2515,7 +2538,7 @@
               "findBox": true
             },
             {
-              "id": "t2_guest_junk_45",
+              "id": "t2_guest_junk_46",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "pantry",
@@ -2542,7 +2565,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_46",
+              "id": "t2_guest_junk_47",
               "findSimple": "find",
               "findArea": 5,
               "findNarrow": "kitchen",
@@ -2550,7 +2573,7 @@
               "findCount": [2,2,2]
             },
             {
-              "id": "t2_guest_junk_47",
+              "id": "t2_guest_junk_48",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "pantry",
@@ -2573,7 +2596,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_48",
+              "id": "t2_guest_junk_49",
               "findSimple": "find",
               "findArea": 6,
               "findNarrow": "blue apartment",
@@ -2581,7 +2604,7 @@
               "findCount": [1,1,1]
             },
             {
-              "id": "t2_guest_junk_49",
+              "id": "t2_guest_junk_50",
               "findSimple": "find",
               "findArea": 11,
               "findNarrow": "2F",
@@ -2589,7 +2612,7 @@
               "findCount": [1,1,1]
             },
             {
-              "id": "t2_guest_junk_50",
+              "id": "t2_guest_junk_51",
               "findSimple": "find",
               "findArea": 16,
               "findNarrow": "counter",
@@ -2605,7 +2628,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_51",
+              "id": "t2_guest_junk_52",
               "findSimple": "find",
               "findArea": 12,
               "findNarrow": "burgled apartment",
@@ -2628,7 +2651,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_52",
+              "id": "t2_guest_junk_53",
               "findSimple": "find",
               "findArea": 20,
               "findNarrow": "Karras's quarters",
@@ -2652,7 +2675,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_53",
+              "id": "t2_guest_junk_54",
               "findSimple": "find",
               "findArea": 11,
               "findNarrow": "3F",
@@ -2660,7 +2683,7 @@
               "findCount": [2,2,2]
             },
             {
-              "id": "t2_guest_junk_54",
+              "id": "t2_guest_junk_55",
               "findSimple": "find",
               "findArea": 11,
               "findNarrow": "1F",
@@ -2678,7 +2701,7 @@
           ],
           "locations": [
             {
-              "id": "t2_guest_junk_55",
+              "id": "t2_guest_junk_56",
               "findSimple": "find",
               "findArea": 11,
               "findNarrow": "1F",

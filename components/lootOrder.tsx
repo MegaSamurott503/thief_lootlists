@@ -11,7 +11,6 @@ import { myImages } from '@/constants/imgItems';
 // TODO: Might as well redo screenshot backgrounds (just EP screens, not vanilla).
 // TODO: Double-check that all ordered lists have correct # of entries. (t1/t2 done)
 // TODO: Double-check that linked loot/items all work properly for ordered list.
-// TODO: Look into making secret lists be affected by difficulty filters.
 /* **************** */
 /*    LOOT ORDER    */
 /* **************** */
@@ -24,30 +23,31 @@ export function LootOrder(props) {
     <>
       {/* Map out each entry in loot order array. */}
       {orderedLoot.map((orderKey, orderIndex) => (
-        <View
-          key={`myorder_${orderIndex}`}
-          // Put space between loot found in different general areas.
-          style={orderIndex > 0 &&
-            orderKey[3].findArea !== orderedLoot[orderIndex-1][3].findArea &&
-            styles.orderSplit}
-        >
-          <LootlistEntry
-            key={`loot_${orderIndex}`}
-            id={orderKey[3].id}
-            title={props.title}
-            modeNames={props.modeNames}
-            areas={props.areas}
-            notes={props.notes}
-            name={orderKey[0]}
-            img={orderKey[3].orderImg.map((imgKey, imgIndex) => {
-              return myImages[imgKey];
-            })}
-            //values={oneLootObj}
-            orderedLoot={orderedLoot[orderIndex]}
-            getLinkedFind={props.getLinkedFind}
-            setLinkedFind={props.setLinkedFind}
-          />
-        </View>
+        <LootlistEntry
+          key={`loot_${orderIndex}`}
+          id={orderKey[3].id}
+          title={props.title}
+          modeNames={props.modeNames}
+          lootCats={props.lootCats}
+          areas={props.areas}
+          notes={props.notes}
+          name={orderKey[0]}
+          img={orderKey[3].orderImg.map((imgKey, imgIndex) => {
+            return myImages[imgKey];
+          })}
+          //values={oneLootObj}
+          orderedIndex={orderIndex}
+          orderedLoot={orderedLoot[orderIndex]}
+          getLinkedFind={props.getLinkedFind}
+          setLinkedFind={props.setLinkedFind}
+          // If in a different general area from the next loot,
+          // notify the LootlistEntry to separate them.
+          addSpacing={orderIndex < orderedLoot.length &&
+            orderedLoot[orderIndex+1] &&
+            orderKey[3].findArea !== orderedLoot[orderIndex+1][3].findArea
+              ? true : false
+          }
+        />
       ))}
     </>
   );

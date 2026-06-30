@@ -32,20 +32,21 @@ export function GoalView(props) {
   const { colors } = useTheme();
 
   // Fetch global setting states from context.
-  const {scheme, getCurrentTheme, setCurrentTheme} =
+  const {scheme, device,
+    getCurrentTheme, setCurrentTheme} =
     useContext(SettingContext);
 
   return (
     <>
       {/* If no value minimum, display an empty space. */}
       {props.goalLoot === 0 &&
-        <View style={styles.emptyRowBox} />
+        <View style={styles.emptyRowBox(device)} />
       }
       {/* Otherwise, display the loot goal. */}
       {props.goalLoot > 0 &&
         <View style={[
           stylesTotal.tableRowBox,
-          {width: (Platform.OS !== 'web')
+          {width: (device === 'phone')
                   ? (width < 400) ? 48 : 66
                   : (width < 626) ? 60 : 100,
           borderColor: colors.border}
@@ -54,17 +55,17 @@ export function GoalView(props) {
             source={(getCurrentTheme === 'dark' ||
               (getCurrentTheme === 'default' && scheme === 'dark'))
               ? ((props.foundLoot >= props.goalLoot)
-                ? ((Platform.OS === 'web' && width < 626)
+                ? ((device !== 'phone' && width < 626)
                   ? bgFoundDarkS : bgFoundDark)
                 : bgDefaultDark)
               : ((props.foundLoot >= props.goalLoot)
-                ? ((Platform.OS === 'web' && width < 626)
+                ? ((device !== 'phone' && width < 626)
                   ? bgFoundLightS : bgFoundLight)
                 : bgDefaultLight)}
             resizeMode="cover"
             style={[
               stylesTotal.totalBackground,
-              (Platform.OS === 'web') ? stylesTotal.totalBackgroundWeb : ''
+              (device !== 'phone') ? stylesTotal.totalBackgroundWeb : ''
             ]}
           >
             {/* Display found loot compared to loot goal. */}
@@ -73,14 +74,14 @@ export function GoalView(props) {
               {color: colors.text}
             ]}>
               {props.foundLoot}
-              {((Platform.OS !== 'web' && width < 400) ||
-                (Platform.OS === 'web' && width < 626)) &&
+              {((device === 'phone' && width < 400) ||
+                (device !== 'phone' && width < 626)) &&
                 "\n"
               }
               {" / "}
               {props.goalLoot}
-              {((Platform.OS !== 'web' && width >= 400) ||
-                (Platform.OS === 'web' && width >= 626)) &&
+              {((device === 'phone' && width >= 400) ||
+                (device !== 'phone' && width >= 626)) &&
                 " "
               }
             </Text>
@@ -104,7 +105,7 @@ export function GoalView(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  emptyRowBox: {
-    width: (Platform.OS === 'web') ? 100 : 66,
-  },
+  emptyRowBox: device => ({
+    width: (device !== 'phone') ? 100 : 66,
+  }),
 });

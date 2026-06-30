@@ -61,6 +61,13 @@
     {
       "id": "note_0",
       "delimiter": "  ",
+      "icon": "[G]",
+      "desc": "only available in v1.37 (Gold)",
+      "show": true
+    },
+    {
+      "id": "note_0",
+      "delimiter": "  ",
       "icon": "[X]",
       "desc": "not obtainable in the AM16 patch",
       "show": true
@@ -1004,7 +1011,8 @@
               "findArea": 25,
               "findNarrow": "basement",
               "findCount": [1,1,1],
-              "findRecipe": "x1 per defeated fire shadow"
+              "findRecipe": "x1 per defeated fire shadow",
+              "findNote": 0
             },
             {
               "id": "t1_haunted_item_31",
@@ -1045,7 +1053,7 @@
               "findNarrow": "above leaning beam",
               "findExact": "window",
               "findCount": [1,1,1],
-              "findNote": 0
+              "findNote": 1
             },
             {
               "id": "t1_haunted_item_35",

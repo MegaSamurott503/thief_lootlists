@@ -51,9 +51,7 @@ export default function ThiefFMScreen() {
   const [getFilterItem, setFilterItem] = useState([]);
 
   return (
-    <ScrollView style={{
-      height: (Platform.OS === 'web') ? height*0.99 : '100%'
-    }}>
+    <ScrollView>
       <View style={stylesGoTo.buttonPage}>
         <Text style={{color: colors.text}}>
           Thief FM Mission Selection

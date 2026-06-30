@@ -124,7 +124,7 @@ export function FindMe(props) {
     useContext(FilterContext);
 
   // Fetch global setting states from context.
-  const {scheme,
+  const {scheme, device,
         getCurrentTheme, setCurrentTheme,
         getSpoilerSec, setSpoilerSec,
         getSpoilerEgg, setSpoilerEgg} =
@@ -342,7 +342,7 @@ export function FindMe(props) {
       });
     });
     if ((props.value || props.findLink) &&
-        (!props.carryValue || props.carryValue.length === 0)) {
+        (!props.carryValue || !props.carryValue.length)) {
       //setFoundLoot(addFoundLoot);
       //alert(`${addFoundLoot}`);
       accumLoot.current = addFoundLoot;
@@ -641,7 +641,7 @@ export function FindMe(props) {
       !( getFilterOnlySec && !props.findSecret ) &&
       // If area filter has one or more areas selected,
       // hide this box if this item's area is not selected.
-      ( getFilterArea.length === 0 ||
+      ( !getFilterArea.length ||
         getFilterArea.includes(props.areas[props.findArea].value)
       ) &&
         <>
@@ -650,7 +650,7 @@ export function FindMe(props) {
             // simplicity of finding (Easy, Medium, Hard),
             // and whether user has selected it.
             style={[
-              styles.find,
+              styles.find(device),
               {backgroundColor: colors.backLight,
               borderColor: colors.border},
               //findSimple === "findE" && {backgroundColor: colors.findE},
@@ -667,7 +667,7 @@ export function FindMe(props) {
               resizeMode="cover"
               style={[
                 stylesList.findBackground,
-                (Platform.OS === 'web') ? stylesList.findBackgroundWeb : ''
+                (device !== 'phone') ? stylesList.findBackgroundWeb : ''
               ]}
             >
               {(getIsFound || (!props.findSecret && !props.findEaster) ||
@@ -717,32 +717,30 @@ export function FindMe(props) {
                 />
               }
               {/* Spoiler cover if secret locations are set to be hidden. */}
-              {!getIsFound &&
+              {!getIsFound && !props.findEaster &&
                 props.findSecret && getSpoilerSec !== 'none' &&
                 <Text style={[
                   stylesList.locText,
-                  {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                  {fontSize: (device !== 'phone') ? 12 : width*0.019,
                     color: colors.text},
                   props.findUnable && stylesList.locNoGet,
                 ]}>
-                  {props.findEaster &&
-                    <>
-                      <Text style={{color: colors.locN}}>(</Text>
-                      <Text style={{color: colors.locX}}>\</Text>
-                      <Text style={{color: colors.locH}}>) </Text>
-                    </>
-                  }
                   <Text style={{color: colors.locSecret}}>[[ </Text>
                   <Text style={{fontWeight: 'bold'}}>
                     SECRET
                   </Text>
                   <Text style={{color: colors.locSecret}}> ]]</Text>
-                  {props.findEaster &&
-                    <>
-                      <Text style={{color: colors.locH}}> (</Text>
-                      <Text style={{color: colors.locX}}>/</Text>
-                      <Text style={{color: colors.locN}}>)</Text>
-                    </>
+                  {/* Print the footnote icon for this item, if applicable. */}
+                  {props.notes[props.findNote] && props.loadout !== "start" &&
+                    <Text style={stylesList.locCount}>
+                      {props.notes[props.findNote].delimiter &&
+                        (props.findNarrow || props.findExact || props.findRecipe) &&
+                        `${props.notes[props.findNote].delimiter}`
+                      }
+                      {props.notes[props.findNote].icon &&
+                        `${props.notes[props.findNote].icon}`
+                      }
+                    </Text>
                   }
                 </Text>
               }
@@ -751,7 +749,7 @@ export function FindMe(props) {
                 props.findEaster && getSpoilerEgg !== 'none' &&
                 <Text style={[
                   stylesList.locText,
-                  {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                  {fontSize: (device !== 'phone') ? 12 : width*0.019,
                     color: colors.text},
                   props.findUnable && stylesList.locNoGet,
                 ]}>
@@ -762,7 +760,9 @@ export function FindMe(props) {
                     <Text style={{color: colors.locSecret}}>[[ </Text>
                   }
                   <Text style={{fontWeight: 'bold'}}>
-                    EASTER EGG
+                    {(props.findSecret ? `SECRET ` : '') +
+                      `EASTER EGG`
+                    }
                   </Text>
                   {props.findSecret &&
                     <Text style={{color: colors.locSecret}}> ]]</Text>
@@ -770,6 +770,18 @@ export function FindMe(props) {
                   <Text style={{color: colors.locH}}> (</Text>
                   <Text style={{color: colors.locX}}>/</Text>
                   <Text style={{color: colors.locN}}>)</Text>
+                  {/* Print the footnote icon for this item, if applicable. */}
+                  {props.notes[props.findNote] && props.loadout !== "start" &&
+                    <Text style={stylesList.locCount}>
+                      {props.notes[props.findNote].delimiter &&
+                        (props.findNarrow || props.findExact || props.findRecipe) &&
+                        `${props.notes[props.findNote].delimiter}`
+                      }
+                      {props.notes[props.findNote].icon &&
+                        `${props.notes[props.findNote].icon}`
+                      }
+                    </Text>
+                  }
                 </Text>
               }
             </ImageBackground>
@@ -794,23 +806,23 @@ export function FindMe(props) {
                 {/* Pop-up box with buttons. */}
                 <TouchableWithoutFeedback>
                   <View style={[
-                    styles.buyModal,
+                    styles.buyModal(device),
                     {backgroundColor: colors.backMed,
                     borderColor: colors.border}
                   ]}>
                     <Text style={[
-                      styles.buyModalText,
+                      styles.buyModalText(device),
                       {color: colors.text}
                     ]}>
                       Purchased how many?
                     </Text>
-                    <View style={styles.buyModalCount}>
+                    <View style={styles.buyModalCount(device)}>
                       {/* left arrow button. */}
                       {/* Don't let BuyCount go below 1. */}
                       {(getBuyCount > 1) &&
                         <TouchableOpacity
                           style={[
-                            styles.arrowLeftButton,
+                            styles.arrowLeftButton(device),
                             {borderColor: colors.border}
                           ]}
                           onPress={() => setBuyCount(getBuyCount - 1)}
@@ -824,12 +836,13 @@ export function FindMe(props) {
                         </TouchableOpacity>
                       }
                       {(getBuyCount <= 1) &&
-                        <View style={styles.arrowEmpty}></View>
+                        <View style={styles.arrowEmpty(device)}>
+                        </View>
                       }
                       {/* Number of items being bought. */}
                       <Text style={[
-                        styles.buyModalText,
-                        styles.buyNumber,
+                        styles.buyModalText(device),
+                        styles.buyNumber(device),
                         {color: colors.text}
                       ]}>
                         {`${getBuyCount}`}
@@ -839,7 +852,7 @@ export function FindMe(props) {
                       {(getBuyCount < Math.max(...props.findCount)) &&
                         <TouchableOpacity
                           style={[
-                            styles.arrowRightButton,
+                            styles.arrowRightButton(device),
                             {borderColor: colors.border}
                           ]}
                           onPress={() => setBuyCount(getBuyCount + 1)}
@@ -853,13 +866,14 @@ export function FindMe(props) {
                         </TouchableOpacity>
                       }
                       {(getBuyCount >= Math.max(...props.findCount)) &&
-                        <View style={styles.arrowEmpty}></View>
+                        <View style={styles.arrowEmpty(device)}>
+                        </View>
                       }
                     </View>
                     {/* Amount of gold being spent. */}
                     {(props.value[0] !== 0) &&
                       <Text style={[
-                        styles.buyModalPrice,
+                        styles.buyModalPrice(device),
                         {color: colors.text}
                       ]}>
                         {`${props.value[0] * getBuyCount} `}
@@ -872,7 +886,7 @@ export function FindMe(props) {
                     {/* Amount of gems being spent. */}
                     {(props.value[1] !== 0) &&
                       <Text style={[
-                        styles.buyModalPrice,
+                        styles.buyModalPrice(device),
                         {color: colors.text}
                       ]}>
                         {`${props.value[1] * getBuyCount} `}
@@ -885,7 +899,7 @@ export function FindMe(props) {
                     {/* Amount of goods being spent. */}
                     {(props.value[2] !== 0) &&
                       <Text style={[
-                        styles.buyModalPrice,
+                        styles.buyModalPrice(device),
                         {color: colors.text}
                       ]}>
                         {`${props.value[2] * getBuyCount} `}
@@ -898,7 +912,7 @@ export function FindMe(props) {
                     {/* Amount of special being spent. */}
                     {(props.value[3] !== 0) &&
                       <Text style={[
-                        styles.buyModalPrice,
+                        styles.buyModalPrice(device),
                         {color: colors.text}
                       ]}>
                         {`${props.value[3] * getBuyCount} `}
@@ -911,7 +925,7 @@ export function FindMe(props) {
                     {/* Button to confirm loot spent. */}
                     <TouchableOpacity
                       style={[
-                        styles.buyButton,
+                        styles.buyButton(device),
                         {backgroundColor: colors.backLight,
                         borderColor: colors.border}
                       ]}
@@ -934,51 +948,51 @@ export function FindMe(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  find: {
+  find: device => ({
     borderWidth: 1,
-    width: (Platform.OS === 'web') ? 228 : '50%',
-  },
-  buyModal: {
+    width: (device !== 'phone') ? 228 : '50%',
+  }),
+  buyModal: device => ({
     borderWidth: 1,
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    width: (Platform.OS === 'web') ? 240 : 200,
-    height: (Platform.OS === 'web') ? 180 : 160,
-  },
-  buyModalCount: {
+    width: (device !== 'phone') ? 240 : 200,
+    height: (device !== 'phone') ? 180 : 160,
+  }),
+  buyModalCount: device => ({
     flexDirection: 'row',
     alignItems: 'center',
-    marginVertical: (Platform.OS === 'web') ? 8 : 8,
-  },
-  buyModalText: {
-    fontSize: (Platform.OS === 'web') ? 20 : 14,
-  },
-  buyModalPrice: {
-    fontSize: (Platform.OS === 'web') ? 20 : 13,
-  },
-  buyNumber: {
-    marginHorizontal: (Platform.OS === 'web') ? 20 : 20,
-  },
-  buyButton: {
+    marginVertical: (device !== 'phone') ? 8 : 8,
+  }),
+  buyModalText: device => ({
+    fontSize: (device !== 'phone') ? 20 : 14,
+  }),
+  buyModalPrice: device => ({
+    fontSize: (device !== 'phone') ? 20 : 13,
+  }),
+  buyNumber: device => ({
+    marginHorizontal: (device !== 'phone') ? 20 : 20,
+  }),
+  buyButton: device => ({
     borderWidth: 1,
     borderRadius: 5,
     alignItems: 'center',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
-    marginVertical: (Platform.OS === 'web') ? 10 : 5,
+    marginHorizontal: (device !== 'phone') ? 10 : 5,
+    marginVertical: (device !== 'phone') ? 10 : 5,
     paddingHorizontal: 4,
     paddingVertical: 2,
     width: 80,
-  },
-  arrowLeftButton: {
+  }),
+  arrowLeftButton: device => ({
     borderRightWidth: 1,
-    height: (Platform.OS === 'web') ? 42 : 34,
-  },
-  arrowRightButton: {
+    height: (device !== 'phone') ? 42 : 34,
+  }),
+  arrowRightButton: device => ({
     borderLeftWidth: 1,
-    height: (Platform.OS === 'web') ? 42 : 34,
-  },
-  arrowEmpty: {
-    width: (Platform.OS === 'web') ? 21 : 21,
-  },
+    height: (device !== 'phone') ? 42 : 34,
+  }),
+  arrowEmpty: device => ({
+    width: (device !== 'phone') ? 21 : 21,
+  }),
 });

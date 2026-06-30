@@ -1,0 +1,4099 @@
+{
+  "id": "fm_xedormicost-bequest",
+  "title": "Ominous Bequest",
+  "author": [
+    "auth_eshaktaar"
+  ],
+  "screens": [
+    "MIS_fm_xedormicost-bequest_A",
+    "MIS_fm_xedormicost-bequest_B"
+  ],
+  "firstRelease": "August 2003",
+  "latestVersion": "Gold",
+  "goToNext": "",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [3225,1150,3625,0,8000],
+    [3225,1150,3625,0,8000],
+    [3225,1150,3625,0,8000]
+  ],
+  "lootCount": [124,124,124],
+  "lootChanges": [0,0,1],
+  "goal1": {
+    "total": [3000,4000,5000]
+  },
+  "pocketCount": [7,7,7],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Yard"},
+    {"key": "2", "value": "Coal Room"},
+    {"key": "3", "value": "Kitchen"},
+    {"key": "4", "value": "Wine Cellar"},
+    {"key": "5", "value": "Cold Storage"},
+    {"key": "6", "value": "Armory"},
+    {"key": "7", "value": "Burrick Stables"},
+    {"key": "8", "value": "Entrance Hall"},
+    {"key": "9", "value": "Guard Office"},
+    {"key": "10", "value": "Storage"},
+    {"key": "11", "value": "Servants' Bedroom"},
+    {"key": "12", "value": "Inner Garden"},
+    {"key": "13", "value": "Greenhouse"},
+    {"key": "14", "value": "East Closet"},
+    {"key": "15", "value": "Crawlspace"},
+    {"key": "16", "value": "Cpt. Bucksley's Quarters"},
+    {"key": "17", "value": "Guards' Quarters"},
+    {"key": "18", "value": "Mess Hall"},
+    {"key": "19", "value": "Display Room"},
+    {"key": "20", "value": "Northwest Stairwell"},
+    {"key": "21", "value": "Study"},
+    {"key": "22", "value": "Observatory"},
+    {"key": "23", "value": "North Guest Room"},
+    {"key": "24", "value": "South Guest Room"},
+    {"key": "25", "value": "Library"},
+    {"key": "26", "value": "West Attic"},
+    {"key": "27", "value": "Living Room"},
+    {"key": "28", "value": "Dining Room"},
+    {"key": "29", "value": "2F Gallery"},
+    {"key": "30", "value": "1F Gallery"},
+    {"key": "31", "value": "Vault"},
+    {"key": "32", "value": "Lord Robert's Quarters"},
+    {"key": "33", "value": "East Attic"},
+    {"key": "34", "value": "Northeast Tower"},
+    {"key": "35", "value": "South Attic"},
+    {"key": "36", "value": "Roof"},
+    {"key": "37", "value": "North Attic"},
+    {"key": "38", "value": "Farrington Church"},
+    {"key": "39", "value": "Farrington Crypt"},
+    {"key": "40", "value": "Sewers"},
+    {"key": "41", "value": "Mage Crypts"},
+    {"key": "42", "value": "Tomb of the Nameless Riddler"},
+    {"key": "43", "value": "Alpha Chamber"},
+    {"key": "44", "value": "Kadar's Study"},
+    {"key": "45", "value": "Burrick Arena"},
+    {"key": "46", "value": "Dawn Order Halls"},
+    {"key": "47", "value": "Beta Chamber"},
+    {"key": "48", "value": "Flooded Caves"},
+    {"key": "49", "value": "Armion Drake's Crypt"},
+    {"key": "50", "value": "Collapsed Tunnel"},
+    {"key": "51", "value": "Street Plaza"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Alt2"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_1",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "display case",
+              "findCount": [1,1,1],
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_DecorativeMask_Alt2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_2",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findExact": "north shelf",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_3",
+              "findSimple": "findM",
+              "findArea": 28,
+              "findExact": "serving table",
+              "findCount": [1,1,1],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_4",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "75gold25gems",
+          "value": [75,25,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_5",
+              "findSimple": "findE",
+              "findArea": 49,
+              "findNarrow": "tomb",
+              "findExact": "on skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 94,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold50gems",
+          "value": [100,50,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_6",
+              "findSimple": "findH",
+              "findArea": 51,
+              "findNarrow": "by green brick building",
+              "findExact": "east alley",
+              "findCount": [1,1,1],
+              "orderNum": 97,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_7",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "50gems",
+          "value": [0,50,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_8",
+              "findSimple": "findM",
+              "findArea": 39,
+              "findNarrow": "skull hallway",
+              "findExact": "south skull",
+              "findCount": [1,1,1],
+              "orderNum": 62,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_9",
+              "findSimple": "findM",
+              "findArea": 8,
+              "findNarrow": "1F",
+              "findExact": "under floor panel",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_10",
+              "findSimple": "findH",
+              "findArea": 35,
+              "findNarrow": "north wall",
+              "findExact": "under rafter",
+              "findCount": [1,1,1],
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_11",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "tower crypt",
+              "findExact": "northeast central niche",
+              "findCount": [1,1,1],
+              "orderNum": 70,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_12",
+              "findSimple": "findM",
+              "findArea": 42,
+              "findNarrow": "treasure room",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 81,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_13",
+              "findSimple": "findM",
+              "findArea": 41,
+              "findNarrow": "near alpha chamber",
+              "findExact": "broken chest",
+              "findCount": [1,1,1],
+              "orderNum": 83,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_14",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "dining table",
+              "findCount": [2,2,2],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_15",
+              "findSimple": "findM",
+              "findArea": 36,
+              "findNarrow": "southeast tower",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_16",
+              "findSimple": "findM",
+              "findArea": 42,
+              "findNarrow": "treasure room",
+              "findExact": "east ledge",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 78,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_17",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "low table",
+              "findCount": [2,2,2],
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_18",
+              "findSimple": "findM",
+              "findArea": 25,
+              "findNarrow": "west central bookcase",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 59,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "15gold",
+          "value": [15,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_19",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findExact": "by red armchair",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_20",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "dining table",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_21",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_22",
+              "findSimple": "findM",
+              "findArea": 35,
+              "findExact": "crib",
+              "findCount": [1,1,1],
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "Gold Hammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_23",
+              "findSimple": "findM",
+              "findArea": 38,
+              "findNarrow": "nave",
+              "findExact": "west second pew",
+              "findCount": [1,1,1],
+              "orderNum": 61,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_24",
+              "findSimple": "findM",
+              "findArea": 42,
+              "findNarrow": "treasure room",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 80,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_25",
+              "findSimple": "findM",
+              "findArea": 41,
+              "findNarrow": "sewer passage",
+              "findExact": "by bones",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 87,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_26",
+              "findSimple": "findE",
+              "findArea": 48,
+              "findNarrow": "third cavern",
+              "findExact": "by stalagmite",
+              "findCount": [1,1,1],
+              "orderNum": 91,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_27",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findExact": "east sink",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_28",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findNarrow": "balcony",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_29",
+              "findSimple": "findH",
+              "findArea": 23,
+              "findExact": "north round table",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_30",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "corner table",
+              "findCount": [2,2,2],
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_31",
+              "findSimple": "findE",
+              "findArea": 23,
+              "findExact": "on wardrobe",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldenbone",
+      "name": "Golden Bone",
+      "img": [
+        "IMG_GoldenBone_Skull"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_32",
+              "findSimple": "findM",
+              "findArea": 46,
+              "findNarrow": "library",
+              "findExact": "west bookcase",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 89,
+              "orderImg": [
+                "IMG_GoldenBone_Skull"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_holyhammer",
+      "name": "Holy Hammer",
+      "img": [
+        "IMG_HolyHammer"
+      ],
+      "values": [
+        {
+          "id": "200gold",
+          "value": [200,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_33",
+              "findSimple": "findE",
+              "findArea": 38,
+              "findNarrow": "Rieleg's bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 60,
+              "orderImg": [
+                "IMG_HolyHammer"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_34",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findExact": "round table",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_HolyHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_horn",
+      "name": "Horn",
+      "img": [
+        "IMG_HornOfQuintus"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_35",
+              "findSimple": "findM",
+              "findArea": 42,
+              "findNarrow": "treasure room",
+              "findExact": "east ledge",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 76,
+              "orderImg": [
+                "IMG_HornOfQuintus"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_36",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "mezzanine",
+              "findExact": "north railing",
+              "findCount": [2,2,2],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_37",
+              "findSimple": "findH",
+              "findArea": 6,
+              "findExact": "by sandbag",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_38",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "locker room",
+              "findExact": "Benny's locker",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_39",
+              "findSimple": "findH",
+              "findArea": 20,
+              "findExact": "under stairs",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_40",
+              "findSimple": "findM",
+              "findArea": 26,
+              "findExact": "north window",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_41",
+              "findSimple": "findH",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "by low table",
+              "findCount": [1,1,1],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold50gems",
+          "value": [100,50,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_42",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "niche",
+              "findCount": [2,2,2],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_43",
+              "findSimple": "findE",
+              "findArea": 49,
+              "findNarrow": "tomb",
+              "findExact": "by skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 96,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar_EP"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_44",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "upper crypt",
+              "findExact": "west central niche",
+              "findCount": [0,0,1],
+              "orderNum": 66,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar_EP"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_45",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "upper crypt",
+              "findExact": "west upper niche",
+              "findCount": [1,1,0],
+              "orderNum": 67,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar_EP"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_46",
+              "findSimple": "findH",
+              "findArea": 39,
+              "findNarrow": "skull hallway",
+              "findExact": "hidden alcove",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 63,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar_EP"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_47",
+              "findSimple": "findM",
+              "findArea": 42,
+              "findNarrow": "treasure room",
+              "findExact": "east ledge",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 75,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar_EP"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_48",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "trapped hallway",
+              "findExact": "east niche",
+              "findCount": [2,2,2],
+              "orderNum": 85,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar_EP"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_49",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "cavern",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Small_EP_Alt1",
+        "IMG_PrecursorJar_Tall_EP_Alt1",
+        "IMG_PrecursorJar_Pointed_EP_Alt1"
+      ],
+      "values": [
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_50",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_PrecursorJar_Small_EP_Alt1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "30goods",
+          "value": [0,0,30,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_51",
+              "findSimple": "findM",
+              "findArea": 42,
+              "findNarrow": "treasure room",
+              "findExact": "east ledge",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 79,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall_EP_Alt1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_52",
+              "findSimple": "findH",
+              "findArea": 39,
+              "findNarrow": "skull hallway",
+              "findExact": "hidden alcove",
+              "findCount": [3,3,3],
+              "findSecret": true,
+              "orderNum": 64,
+              "orderImg": [
+                "IMG_PrecursorJar_Pointed_EP_Alt1"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_53",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "upper crypt",
+              "findExact": "southeast upper niche",
+              "findCount": [1,1,1],
+              "orderNum": 68,
+              "orderImg": [
+                "IMG_PrecursorJar_Pointed_EP_Alt1"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_54",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "tower crypt",
+              "findExact": "southeast upper niche",
+              "findCount": [1,1,1],
+              "orderNum": 71,
+              "orderImg": [
+                "IMG_PrecursorJar_Small_EP_Alt1"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_55",
+              "findSimple": "findM",
+              "findArea": 42,
+              "findNarrow": "treasure room",
+              "findExact": "east ledge",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 72,
+              "orderImg": [
+                "IMG_PrecursorJar_Small_EP_Alt1",
+                "IMG_PrecursorJar_Pointed_EP_Alt1"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_56",
+              "findSimple": "findM",
+              "findArea": 41,
+              "findNarrow": "sewer passage",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 88,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall_EP_Alt1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_57",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "tower crypt",
+              "findExact": "northwest central niche",
+              "findCount": [1,1,1],
+              "orderNum": 69,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall_EP_Alt1"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_58",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "tower crypt",
+              "findExact": "middle level",
+              "findCount": [1,1,1],
+              "orderNum": 84,
+              "orderImg": [
+                "IMG_PrecursorJar_Pointed_EP_Alt1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursormask",
+      "name": "Precursor Mask",
+      "img": [
+        "IMG_PrecursorMask_Bare",
+        "IMG_PrecursorMask_Brass_Alt1"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_59",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "display case",
+              "findCount": [2,2,2],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_PrecursorMask_Brass_Alt1"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_60",
+              "findSimple": "findM",
+              "findArea": 42,
+              "findNarrow": "treasure room",
+              "findExact": "east ledge",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 74,
+              "orderImg": [
+                "IMG_PrecursorMask_Brass_Alt1"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_61",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "trapped hallway",
+              "findExact": "east niche",
+              "findCount": [1,1,1],
+              "orderNum": 86,
+              "orderImg": [
+                "IMG_PrecursorMask_Bare"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_62",
+              "findSimple": "findE",
+              "findArea": 49,
+              "findNarrow": "tomb",
+              "findExact": "on skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 92,
+              "orderImg": [
+                "IMG_PrecursorMask_Brass_Alt1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry_Alt1"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_63",
+              "findSimple": "findH",
+              "findArea": 39,
+              "findNarrow": "skull hallway",
+              "findExact": "hidden alcove",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 65,
+              "orderImg": [
+                "IMG_PrecursorTapestry_Alt1"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_64",
+              "findSimple": "findM",
+              "findArea": 42,
+              "findNarrow": "treasure room",
+              "findExact": "east ledge",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 73,
+              "orderImg": [
+                "IMG_PrecursorTapestry_Alt1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_65",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findNarrow": "balcony",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_66",
+              "findSimple": "findM",
+              "findArea": 42,
+              "findNarrow": "treasure room",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 82,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_67",
+              "findSimple": "findE",
+              "findArea": 49,
+              "findNarrow": "tomb",
+              "findExact": "by skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 95,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_68",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "mezzanine",
+              "findExact": "north railing",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_69",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findExact": "behind lamp",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_70",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_71",
+              "findSimple": "findH",
+              "findArea": 8,
+              "findExact": "chandelier",
+              "findCount": [1,1,1],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_72",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "low table",
+              "findCount": [1,1,1],
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_73",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_74",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "desk",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_75",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findExact": "on Nathaniel Farrington",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_76",
+              "findSimple": "findM",
+              "findArea": 32,
+              "findNarrow": "bedroom",
+              "findExact": "decorative vase",
+              "findCount": [1,1,1],
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "200gold",
+          "value": [200,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_77",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "safe",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_rarewine",
+      "name": "Rare Wine",
+      "img": [
+        "IMG_RareWine_Alt1",
+        "IMG_RareWine_Alt2"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_78",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "side room",
+              "findExact": "shelves",
+              "findCount": [3,3,3],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_RareWine_Alt1",
+                "IMG_RareWine_Alt2"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_79",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findCount": [3,3,3],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_RareWine_Alt1",
+                "IMG_RareWine_Alt2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_80",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_RareWine_Alt2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "250goods",
+          "value": [0,0,250,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_81",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "side room",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_RareWine_Alt2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_82",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "corner table",
+              "findCount": [1,1,1],
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_83",
+              "findSimple": "findH",
+              "findArea": 15,
+              "findNarrow": "east dungeon",
+              "findExact": "on skeleton",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "15gold",
+          "value": [15,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_84",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "low table",
+              "findCount": [6,6,6],
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_85",
+              "findSimple": "findM",
+              "findArea": 42,
+              "findNarrow": "treasure room",
+              "findExact": "east ledge",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 77,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_86",
+              "findSimple": "findM",
+              "findArea": 14,
+              "findNarrow": "hidden room",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_87",
+              "findSimple": "findE",
+              "findArea": 48,
+              "findNarrow": "second cavern",
+              "findExact": "by entrance",
+              "findCount": [1,1,1],
+              "orderNum": 90,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverscepter",
+      "name": "Silver Scepter",
+      "img": [
+        "IMG_SilverScepter"
+      ],
+      "values": [
+        {
+          "id": "50gems100goods",
+          "value": [0,50,100,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_88",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findExact": "east pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_SilverScepter"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_89",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findExact": "west table",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_90",
+              "findSimple": "findM",
+              "findArea": 25,
+              "findNarrow": "hidden passage",
+              "findExact": "blue chest",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Noblewoman",
+        "IMG_Statuette_Monk"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_91",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "1F",
+              "findExact": "pedestals",
+              "findCount": [2,2,2],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_Statuette_Noblewoman",
+                "IMG_Statuette_Monk"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_92",
+              "findSimple": "findM",
+              "findArea": 33,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_Statuette_Monk"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_93",
+              "findSimple": "findE",
+              "findArea": 49,
+              "findNarrow": "tomb",
+              "findExact": "by skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 93,
+              "orderImg": [
+                "IMG_Statuette_Noblewoman"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold25gems",
+          "value": [75,25,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_94",
+              "findSimple": "findM",
+              "findArea": 37,
+              "findExact": "trapdoor",
+              "findCount": [1,1,1],
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_95",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_96",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "treasure room",
+              "findExact": "corner table",
+              "findCount": [1,1,1],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_violetvase",
+      "name": "Violet Vase",
+      "img": [
+        "IMG_VioletVase"
+      ],
+      "values": [
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_loot_97",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "staircase",
+              "findExact": "railing",
+              "findCount": [4,4,4],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_VioletVase"
+              ]
+            },
+            {
+              "id": "fm_xedormicost-bequest_loot_98",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_VioletVase"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_xedormicost",
+          "name": "Xedormicost",
+          "img": [
+            "IMG_Xedormicost"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_2",
+              "findSimple": "find",
+              "findArea": 43,
+              "findExact": "altar",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_skillet",
+          "name": "Skillet",
+          "img": [
+            "IMG_Skillet_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_3",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "fireplace",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_4",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [10,10,10],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_5",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_6",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "shelf",
+              "findCount": [15,15,15]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_7",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "1F",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_8",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "barracks",
+              "findExact": "table",
+              "findCount": [5,5,0]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "balcony",
+              "findExact": "on purple archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_10",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "shelf",
+              "findCount": [12,12,12]
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_11",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "footlocker",
+              "findCountBox": [12,12,8],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_12",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "shelf",
+              "findCount": [7,7,7]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_13",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_14",
+              "findSimple": "find",
+              "findArea": 44,
+              "findNarrow": "central room",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_15",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "east sink",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_16",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "hallway",
+              "findExact": "pail",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_17",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "fountain",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_18",
+              "findSimple": "find",
+              "findArea": 30,
+              "findExact": "by statue",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_19",
+              "findSimple": "find",
+              "findArea": 40,
+              "findNarrow": "north waterway",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_20",
+              "findSimple": "find",
+              "findArea": 42,
+              "findNarrow": "lower passage",
+              "findExact": "by font",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_21",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "fireplace",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_22",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "fireplace",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_23",
+              "findSimple": "find",
+              "findArea": 30,
+              "findExact": "by statue",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_24",
+              "findSimple": "find",
+              "findArea": 42,
+              "findNarrow": "lower passage",
+              "findExact": "ash pile",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_25",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "south yard",
+              "findExact": "under east tree",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_26",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "east yard",
+              "findExact": "under plants",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_27",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "east planter",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_28",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_29",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "locker room",
+              "findExact": "locker 1",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_30",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_31",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "locker room",
+              "findExact": "locker 5",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_32",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "locker room",
+              "findExact": "locker 2",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_33",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "by fireplace",
+              "findExact": "on teal swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_breathpotion",
+          "name": "Breath Potion",
+          "img": [
+            "IMG_BreathPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_34",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_holywatervial",
+          "name": "Holy Water Vial",
+          "img": [
+            "IMG_HolyWaterVial"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_35",
+              "findSimple": "find",
+              "findArea": 38,
+              "findNarrow": "Rieleg's hidden room",
+              "findExact": "table",
+              "findCount": [1,1,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_36",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_37",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Cold Storage Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_38",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "under dumbwaiter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "House Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_39",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "key rack",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Captain's Safe Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_40",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "on Cpt. Joseph Bucksley",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Captain's Quarter Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_41",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Wall Safe Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_42",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "hidden room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Inner Balcony Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_43",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "balcony",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Library Safe Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_44",
+              "findSimple": "find",
+              "findArea": 33,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Attic Windows Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_45",
+              "findSimple": "find",
+              "findArea": 35,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Crypt Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_46",
+              "findSimple": "find",
+              "findArea": 38,
+              "findNarrow": "Rieleg's hidden room",
+              "findExact": "key rack",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_47",
+              "findSimple": "find",
+              "findArea": 39,
+              "findNarrow": "hallway",
+              "findExact": "on purple swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Dawn Order Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_48",
+              "findSimple": "find",
+              "findArea": 46,
+              "findNarrow": "Az'Achiel's bedroom",
+              "findExact": "slab",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Church East Exit Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_49",
+              "findSimple": "find",
+              "findArea": 38,
+              "findNarrow": "nave",
+              "findCount": [1,1,1],
+              "findRecipe": "kill Kadar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_50",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_51",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_crookedpole",
+          "name": "Crooked Pole",
+          "img": [
+            "IMG_CrookedPole"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_52",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "cavern",
+              "findExact": "alcove",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_53",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "locker room",
+              "findExact": "locker 2",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_54",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "island",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_55",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "island",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_56",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "balcony",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_57",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "fireplace",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_donut",
+          "name": "Donut",
+          "img": [
+            "IMG_Donut_Chocolate",
+            "IMG_Donut_Caramel",
+            "IMG_Donut_Pink"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_58",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "locker room",
+              "findExact": "Benny's locker",
+              "findCount": [9,9,9]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_59",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_letter",
+          "name": "Letter",
+          "img": [
+            "IMG_Letter"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_60",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_61",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "west central bookcase",
+              "findExact": "safe",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_sheetofpaper",
+          "name": "Sheet of Paper",
+          "img": [
+            "IMG_SheetOfPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_62",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "south shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_pileofpapers",
+          "name": "Pile of Papers",
+          "img": [
+            "IMG_PileOfPapers"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_63",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "hidden room",
+              "findExact": "under blue chest",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_64",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "northwest room",
+              "findExact": "under footlocker",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_65",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "under crates",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_66",
+              "findSimple": "find",
+              "findArea": 30,
+              "findExact": "under statue",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_67",
+              "findSimple": "find",
+              "findArea": 37,
+              "findExact": "under sofa",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_68",
+              "findSimple": "find",
+              "findArea": 47,
+              "findCount": [1,1,1],
+              "findRecipe": "acquired upon entry"
+            }
+          ]
+        },
+        {
+          "id": "item_pileofpapers",
+          "name": "Robert's Last Will",
+          "img": [
+            "IMG_PileOfPapers_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_69",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "hidden room",
+              "findExact": "table",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_70",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_71",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "bedroom",
+              "findExact": "cabinet table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_72",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "tower crypt",
+              "findExact": "by Sorven",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_73",
+              "findSimple": "find",
+              "findArea": 45,
+              "findNarrow": "arena floor",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_precursorscroll",
+          "name": "Precursor Scroll",
+          "img": [
+            "IMG_PrecursorScroll_Round"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_74",
+              "findSimple": "find",
+              "findArea": 44,
+              "findNarrow": "central room",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Legendary Artifacts 1",
+          "img": [
+            "IMG_Book_Bequest1"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_75",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Vault Door Manual",
+          "img": [
+            "IMG_Book_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_76",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "on east central bookcase",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Ancient Tome",
+          "img": [
+            "IMG_Book_Bequest2"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_77",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "cavern",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Edward's Diary",
+          "img": [
+            "IMG_Book_Bequest3"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_78",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "by south window",
+              "findExact": "chair",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Legendary Artifacts 2",
+          "img": [
+            "IMG_Book_Bequest1"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_79",
+              "findSimple": "find",
+              "findArea": 46,
+              "findNarrow": "library",
+              "findExact": "east bookcase",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Az'Achiel's Journal",
+          "img": [
+            "IMG_Book_Ash"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_80",
+              "findSimple": "find",
+              "findArea": 46,
+              "findNarrow": "Az'Achiel's bedroom",
+              "findExact": "slab",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_grisly",
+      "category": "Grisly Objects",
+      "catItems": [
+        {
+          "id": "item_hauntskull",
+          "name": "Haunt Skull",
+          "img": [
+            "IMG_HauntSkull"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_81",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "cavern",
+              "findExact": "alcove",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_sponge",
+          "name": "Sponge",
+          "img": [
+            "IMG_Sponge"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_82",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "southwest planter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_holysponge",
+          "name": "Holy Sponge",
+          "img": [
+            "IMG_HolySponge"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_83",
+              "findSimple": "find",
+              "findArea": 38,
+              "findCount": [1,1,1],
+              "findRecipe": "shoot Sponge with Holy Water Arrow"
+            }
+          ]
+        },
+        {
+          "id": "item_ballofice",
+          "name": "Ball of Ice",
+          "img": [
+            "IMG_BallOfIce"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_84",
+              "findSimple": "find",
+              "findArea": 5,
+              "findCount": [1,1,1],
+              "findRecipe": "break ice in southeast corner"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_hornofdloren",
+          "name": "Horn of Dloren",
+          "img": [
+            "IMG_HornOfDloren"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_85",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "west pedestal",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_painting",
+          "name": "The Hunting Dragon",
+          "img": [
+            "IMG_Painting_Bequest"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_86",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "south wall",
+              "findExact": "behind fake wall",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_talismanoflife",
+          "name": "Talisman of Life",
+          "img": [
+            "IMG_TalismanOfLife"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_87",
+              "findSimple": "find",
+              "findArea": 44,
+              "findNarrow": "locked room",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_bloodtear",
+          "name": "Bloodtear",
+          "img": [
+            "IMG_Bloodtear"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_88",
+              "findSimple": "find",
+              "findArea": 37,
+              "findNarrow": "north wall",
+              "findExact": "niche",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_iceheart",
+          "name": "Iceheart",
+          "img": [
+            "IMG_Iceheart"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_89",
+              "findSimple": "find",
+              "findArea": 5,
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "melt Ball of Ice"
+            }
+          ]
+        },
+        {
+          "id": "item_sunspark",
+          "name": "Sunspark",
+          "img": [
+            "IMG_Sunspark"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_90",
+              "findSimple": "find",
+              "findArea": 34,
+              "findExact": "beacon",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_talismans",
+      "category": "Talismans",
+      "catItems": [
+        {
+          "id": "item_wardstone",
+          "name": "Wardstone",
+          "img": [
+            "IMG_Wardstone_Earth",
+            "IMG_Wardstone_Water"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_item_91",
+              "findSimple": "find",
+              "findArea": 49,
+              "findNarrow": "maze",
+              "findExact": "east dead-end",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_item_92",
+              "findSimple": "find",
+              "findArea": 49,
+              "findNarrow": "maze",
+              "findExact": "southeast dead-end",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_1",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "by stairs",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_2",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "northeast corner",
+              "findCount": [6,6,6],
+              "findSecret": true
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_3",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "near east window",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_4",
+              "findSimple": "find",
+              "findArea": 37,
+              "findNarrow": "near west window",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_5",
+              "findSimple": "find",
+              "findArea": 28,
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_6",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "cabinet",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_7",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "west sink",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_8",
+              "findSimple": "find",
+              "findArea": 28,
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_9",
+              "findSimple": "find",
+              "findArea": 28,
+              "findExact": "serving table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_10",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_11",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "dining table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_12",
+              "findSimple": "find",
+              "findArea": 28,
+              "findExact": "serving table",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_13",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "north shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_14",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_15",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "side room",
+              "findExact": "shelves",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_16",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "dining table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_17",
+              "findSimple": "find",
+              "findArea": 27,
+              "findExact": "square table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_18",
+              "findSimple": "find",
+              "findArea": 28,
+              "findExact": "serving table",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_19",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_20",
+              "findSimple": "find",
+              "findArea": 28,
+              "findExact": "dining table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_21",
+              "findSimple": "find",
+              "findArea": 28,
+              "findExact": "serving table",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "Deck of Cards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_22",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "locker room",
+              "findExact": "locker 1",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_23",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "west round table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_24",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "east yard",
+              "findExact": "garden shack",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_25",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "by coal pile",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_pick",
+          "name": "Pick",
+          "img": [
+            "IMG_Pick"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_26",
+              "findSimple": "find",
+              "findArea": 50,
+              "findExact": "by west cave-in",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_smallhammer",
+          "name": "Small Hammer",
+          "img": [
+            "IMG_SmallHammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_27",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "by north shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_28",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "trapped hallway",
+              "findCount": [1,1,1],
+              "findRecipe": "rockfall trap"
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_29",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "study entrance",
+              "findCount": [1,1,1],
+              "findRecipe": "rockfall trap"
+            }
+          ]
+        },
+        {
+          "id": "junk_brick",
+          "name": "Loose Stone",
+          "img": [
+            "IMG_Brick_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_30",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "upper crypt",
+              "findExact": "by west upper niche",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_31",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "upper crypt",
+              "findExact": "by door",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_32",
+              "findSimple": "find",
+              "findArea": 42,
+              "findNarrow": "treasure room",
+              "findExact": "pitfall trap",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "findUnable": true
+            },
+            {
+              "id": "fm_xedormicost-bequest_junk_33",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "sewer passage",
+              "findExact": "near niche",
+              "findCount": [2,2,2],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_bunsenburner",
+          "name": "Bunsen Burner",
+          "img": [
+            "IMG_BunsenBurner"
+          ],
+          "locations": [
+            {
+              "id": "fm_xedormicost-bequest_junk_34",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "study",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_xedormicost-bequest_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_xedormicost-bequest_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 8,
+          "findNarrow": "staircase",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever behind the banner"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "Gemstone",
+          "value": [0,100,0,0],
+          "findCount": [2,2,2]
+        }
+      ]
+    },
+    {
+      "id": "fm_xedormicost-bequest_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_xedormicost-bequest_02a",
+        "SEC_fm_xedormicost-bequest_02b",
+        "SEC_fm_xedormicost-bequest_02c"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 14,
+          "findNarrow": "south wall",
+          "findDiff": [1,1,1],
+          "method": "Frob the southwest coat hook"
+        },
+        {
+          "id": "sec_2_b",
+          "findArea": 16,
+          "findNarrow": "bedroom",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch in the northeast corner"
+        },
+        {
+          "id": "sec_2_c",
+          "findArea": 17,
+          "findNarrow": "locker room",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch in the fifth locker"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardRoute": [
+            "the east closet",
+            "the coal room",
+            "Cpt. Bucksley's bedroom",
+            "the locker room"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_2",
+          "rewardLoot": "Silver Coin Stack",
+          "value": [25,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_3",
+          "rewardLoot": "Signet Ring",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_4",
+          "rewardItem": "Pile of Papers",
+          "findCount": [2,2,2]
+        }
+      ]
+    },
+    {
+      "id": "fm_xedormicost-bequest_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_xedormicost-bequest_03a",
+        "SEC_fm_xedormicost-bequest_03b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 25,
+          "findNarrow": "southwest bookcase",
+          "findDiff": [1,1,1],
+          "method": "Pull the book on the third shelf"
+        },
+        {
+          "id": "sec_3_b",
+          "findArea": 27,
+          "findNarrow": "bookcase",
+          "findDiff": [1,1,1],
+          "method": "Pull the book on the fourth shelf"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardRoute": [
+            "the library",
+            "the living room"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_2",
+          "rewardLoot": "Lucky Coins",
+          "value": [5,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_3",
+          "rewardLoot": "Spice Bag",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_4",
+          "rewardItem": "Pile of Papers",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_5",
+          "rewardHint": [
+            "the three gems' locations"
+          ],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_xedormicost-bequest_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_fm_xedormicost-bequest_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 39,
+          "findNarrow": "skull hallway",
+          "findDiff": [1,1,1],
+          "method": "Push the button by the southeast wall relief"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardLoot": "Precursor Jar",
+          "value": [0,0,50,0],
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_4_2",
+          "rewardLoot": "Precursor Canopic Jar",
+          "value": [0,0,75,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_4_3",
+          "rewardLoot": "Precursor Tapestry",
+          "value": [0,0,150,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_xedormicost-bequest_sec_5",
+      "number": 5,
+      "img": [
+        "SEC_fm_xedormicost-bequest_05"
+      ],
+      "triggers": [
+        {
+          "id": "sec_5_a",
+          "findArea": 42,
+          "findNarrow": "crypt",
+          "findDiff": [1,1,1],
+          "method": "Shoot a fire arrow at the tear behind the wall relief"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_5_1",
+          "rewardLoot": "Silver Coin Stack",
+          "value": [15,0,0,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_5_2",
+          "rewardLoot": "Gold Coin Stack",
+          "value": [25,0,0,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_5_3",
+          "rewardLoot": "Gold Nugget",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_4",
+          "rewardLoot": "Gemstone",
+          "value": [0,100,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_5",
+          "rewardLoot": "Precursor Jar",
+          "value": [0,0,30,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_6",
+          "rewardLoot": "Precursor Jar",
+          "value": [0,0,50,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_5_7",
+          "rewardLoot": "Precursor Mask",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_8",
+          "rewardLoot": "Purple Goblet",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_9",
+          "rewardLoot": "Horn",
+          "value": [0,0,75,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_10",
+          "rewardLoot": "Precursor Canopic Jar",
+          "value": [0,0,100,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_5_11",
+          "rewardLoot": "Precursor Tapestry",
+          "value": [0,0,150,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_xedormicost-bequest_sec_6",
+      "number": 6,
+      "img": [
+        "SEC_fm_xedormicost-bequest_06"
+      ],
+      "triggers": [
+        {
+          "id": "sec_6_a",
+          "findArea": 44,
+          "findNarrow": "bedroom",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever behind the bed"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_6_1",
+          "rewardRoute": [
+            "Kadar's study",
+            "the tower crypt"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_2",
+          "rewardLoot": "Gold Nugget",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_xedormicost-bequest_sec_7",
+      "number": 7,
+      "img": [
+        "SEC_fm_xedormicost-bequest_07"
+      ],
+      "triggers": [
+        {
+          "id": "sec_7_a",
+          "findArea": 41,
+          "findNarrow": "sewer passage",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever in the niche with the spider"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_7_1",
+          "rewardLoot": "Precursor Jar",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_xedormicost-bequest_sec_8",
+      "number": 8,
+      "img": [
+        "SEC_fm_xedormicost-bequest_08"
+      ],
+      "triggers": [
+        {
+          "id": "sec_8_a",
+          "findArea": 46,
+          "findNarrow": "library",
+          "findDiff": [1,1,1],
+          "method": "Pull the book on the west bookcase's fifth shelf"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_8_1",
+          "rewardLoot": "Golden Bone",
+          "value": [50,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

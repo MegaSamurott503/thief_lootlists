@@ -1,0 +1,729 @@
+{
+  "id": "fm_templetides",
+  "title": "The Temple of the Tides",
+  "author": [
+    "auth_namelessvoice"
+  ],
+  "screens": [
+    "MIS_fm_templetides_A",
+    "MIS_fm_templetides_B"
+  ],
+  "firstRelease": "September 2006",
+  "latestVersion": "1.2",
+  "contest": "con_water",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [1500,0,0,0,1500],
+    [1500,0,0,0,1500],
+    [1500,0,0,0,1500]
+  ],
+  "lootCount": [14,14,14],
+  "lootChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Blade Trap Hall"},
+    {"key": "3", "value": "Sun Door Chamber"},
+    {"key": "4", "value": "Spiked Floor Chamber"},
+    {"key": "5", "value": "West Fire Chamber"},
+    {"key": "6", "value": "North Fire Chamber"},
+    {"key": "7", "value": "East Fire Chamber"},
+    {"key": "8", "value": "Disappearing Door Chamber"},
+    {"key": "9", "value": "Tile Puzzle Chamber"},
+    {"key": "10", "value": "Invisible Door Hall"},
+    {"key": "11", "value": "Sun Beam West Hall"},
+    {"key": "12", "value": "Sun Beam Chamber"},
+    {"key": "13", "value": "Sun Beam East Hall"},
+    {"key": "14", "value": "Deepest Chamber"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_polishedmetalsymbol",
+      "name": "Polished Metal Symbol",
+      "img": [
+        "IMG_PolishedMetalSymbol"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_templetides_loot_1",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findExact": "by pedestals",
+              "findCount": [6,6,6],
+              "findRecipe": "after taking Tear of the Tides",
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_PolishedMetalSymbol"
+              ]
+            },
+            {
+              "id": "fm_templetides_loot_2",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findExact": "by pedestals",
+              "findCount": [5,5,5],
+              "findRecipe": "after taking Tear of the Tides",
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_PolishedMetalSymbol"
+              ]
+            },
+            {
+              "id": "fm_templetides_loot_3",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findExact": "by pedestal",
+              "findCount": [1,1,1],
+              "findRecipe": "after taking Tear of the Tides",
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_PolishedMetalSymbol"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "200gold",
+          "value": [200,0,0,0],
+          "locations": [
+            {
+              "id": "fm_templetides_loot_4",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findExact": "by beacon",
+              "findCount": [1,1,1],
+              "findRecipe": "after taking Tear of the Tides",
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_PolishedMetalSymbol"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_templetides_loot_5",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "rubble pile",
+              "findExact": "on Alexander Frost",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [10,10,10],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_templetides_item_3",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [30,30,30],
+              "findCountActual": [-1,-1,24],
+              "loadout": "store",
+              "price": 25
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_4",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [10,6,2],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_templetides_item_5",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [20,20,20],
+              "findCountActual": [-1,15,12],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,0,0],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_templetides_item_7",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,0],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_8",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "west aqueduct",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_9",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "east aqueduct",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_10",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "west aqueduct",
+              "findCount": [1,1,1],
+              "findRecipe": "x1 per spawned fire elemental"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_11",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_templetides_item_12",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [6,6,6],
+              "findCountActual": [4,3,2],
+              "loadout": "store",
+              "price": 250
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_13",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        },
+        {
+          "id": "item_breathpotion",
+          "name": "Breath Potion",
+          "img": [
+            "IMG_BreathPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_14",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,0,0],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_templetides_item_15",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_16",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,0,0],
+              "loadout": "store",
+              "price": 600
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "Slow-fall Potion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_18",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_19",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_torch",
+          "name": "Torch",
+          "img": [
+            "IMG_Torch"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_20",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "rubble pile",
+              "findExact": "by Alexander Frost",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_21",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,10,10],
+              "loadout": "store",
+              "price": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_22",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_23",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "findCountActual": [-1,2,2],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple_NV"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_24",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "rubble pile",
+              "findExact": "by Alexander Frost",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_sheetofpaper",
+          "name": "Sheet of Paper",
+          "img": [
+            "IMG_SheetOfPaper_TempleTides"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_25",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "rubble pile",
+              "findCount": [1,1,1],
+              "findRecipe": "read Archaeology Journal"
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Archaeology Journal",
+          "img": [
+            "IMG_Book_Green_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_26",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "rubble pile",
+              "findExact": "by Alexander Frost",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_tearofthetides",
+          "name": "Tear of the Tides",
+          "img": [
+            "IMG_TearOfTheTides"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_27",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "pedestal",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_polishedmetalsymbol",
+          "name": "Polished Metal Symbol",
+          "img": [
+            "IMG_PolishedMetalSymbol"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_28",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "near door",
+              "findExact": "southeast ledge",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_29",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "rubble pile",
+              "findExact": "by Alexander Frost",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_30",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "north side",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_31",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "behind firespit traps",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_32",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "behind firespit traps",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_33",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_34",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_35",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "covered pedestal",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_36",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "above stairway",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_37",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "upper room",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_38",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "hidden crawlspace",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_39",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "by beacon",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_templetides_item_40",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "by east pillar",
+              "findExact": "pedestal",
+              "findCount": [1,0,0]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_bedroll",
+          "name": "Bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_junk_1",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "rubble pile",
+              "findExact": "by Alexander Frost",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -472,6 +472,60 @@
       ]
     },
     {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_41",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "water pump",
+              "findCountMode": [2,0,0]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_42",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "armory",
+              "findCountMode": [0,2,0]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_templetides_item_43",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "counter",
+              "findCountMode": [0,0,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "items_explosives",
       "category": "Explosives",
       "catItems": [

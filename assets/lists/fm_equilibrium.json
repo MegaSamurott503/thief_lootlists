@@ -1,0 +1,335 @@
+{
+  "id": "fm_equilibrium",
+  "title": "Equilibrium",
+  "author": [
+    "auth_silentsleep"
+  ],
+  "screens": [
+    "MIS_fm_equilibrium_A",
+    "MIS_fm_equilibrium_B"
+  ],
+  "firstRelease": "December 2000",
+  "latestVersion": "1.0",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "pocketCount": [0,5,5],
+  "pocketChanges": [0,1,1],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "South Chamber"},
+    {"key": "2", "value": "Central Chamber"},
+    {"key": "3", "value": "Water Glyph Chamber"},
+    {"key": "4", "value": "Earth Library"},
+    {"key": "5", "value": "Earth Glyph Chamber"},
+    {"key": "6", "value": "Barracks"},
+    {"key": "7", "value": "Fire Library"},
+    {"key": "8", "value": "Fire Glyph Chamber"},
+    {"key": "9", "value": "Air Glyph Chamber"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_equilibrium_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_equilibrium_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_equilibrium_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [15,15,8],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_equilibrium_item_4",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [6,6,0],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_equilibrium_item_5",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "east bedroom",
+              "findExact": "blue chest",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_equilibrium_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,0],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_equilibrium_item_7",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_equilibrium_item_8",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "northwest bedroom",
+              "findExact": "blue chest",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_jewelry",
+      "category": "Jewelry",
+      "catItems": [
+        {
+          "id": "item_keepermedallion",
+          "name": "Keeper Pendant",
+          "img": [
+            "IMG_RosaryBeads"
+          ],
+          "locations": [
+            {
+              "id": "fm_equilibrium_item_9",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "mezzanine",
+              "findExact": "on rogue Keeper",
+              "findObj": true,
+              "findCountBox": [0,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_equilibrium_item_10",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "on rogue Keeper",
+              "findObj": true,
+              "findCountBox": [0,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_equilibrium_item_11",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "hallway",
+              "findExact": "on rogue Keeper",
+              "findObj": true,
+              "findCountBox": [0,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_equilibrium_item_12",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "on rogue Keeper",
+              "findObj": true,
+              "findCountBox": [0,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_equilibrium_item_13",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "mezzanine",
+              "findExact": "on rogue Keeper",
+              "findObj": true,
+              "findCountBox": [0,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_talismans",
+      "category": "Talismans",
+      "catItems": [
+        {
+          "id": "item_talismanofearth",
+          "name": "Talisman of Earth",
+          "img": [
+            "IMG_TalismanOfEarth",
+            "IMG_TalismanOfEarth_Alt1",
+            "IMG_TalismanOfEarth_Alt2",
+            "IMG_TalismanOfEarth_Alt3"
+          ],
+          "locations": [
+            {
+              "id": "fm_equilibrium_item_14",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "above altar",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_talismanoffire",
+          "name": "Talisman of Fire",
+          "img": [
+            "IMG_TalismanOfFire",
+            "IMG_TalismanOfFire_Alt1",
+            "IMG_TalismanOfFire_Alt2",
+            "IMG_TalismanOfFire_Alt3"
+          ],
+          "locations": [
+            {
+              "id": "fm_equilibrium_item_15",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "above altar",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_talismanofwater",
+          "name": "Talisman of Water",
+          "img": [
+            "IMG_TalismanOfWater",
+            "IMG_TalismanOfWater_Alt1",
+            "IMG_TalismanOfWater_Alt2",
+            "IMG_TalismanOfWater_Alt3"
+          ],
+          "locations": [
+            {
+              "id": "fm_equilibrium_item_16",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "above altar",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_talismanofair",
+          "name": "Talisman of Air",
+          "img": [
+            "IMG_TalismanOfAir",
+            "IMG_TalismanOfAir_Alt1",
+            "IMG_TalismanOfAir_Alt2",
+            "IMG_TalismanOfAir_Alt3"
+          ],
+          "locations": [
+            {
+              "id": "fm_equilibrium_item_17",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "above altar",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

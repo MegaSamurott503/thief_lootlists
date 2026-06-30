@@ -8,9 +8,10 @@ import {
   ActivityIndicator,
   useWindowDimensions
 } from 'react-native';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 
 import { myScreens } from '@/constants/imgMissions';
+import { SettingContext } from '@/constants/context';
 
 /* **************** */
 /*   GO TO MISSION  */
@@ -26,12 +27,13 @@ export function GoToMission(props) {
   // Access theme colors.
   const { colors } = useTheme();
 
+  // Fetch global setting states from context.
+  const { device } = useContext(SettingContext);
+
   // Determine which of the mission's two screenshots to show.
   let screenAB = 'MIS_' + props.missionID +
     (props.imgAB === 'B' ? '_B' : '_A');
 
-  // Determine whether to show the loading text.
-  let isClicked = false;
   // Clicked: checks if the button has been clicked.
   // Used to display the loading wheel.
   const [getClicked, setClicked] = useState(false);
@@ -39,14 +41,14 @@ export function GoToMission(props) {
   return (
     <TouchableOpacity
       style={[
-        styles.buttonMission,
-        Platform.OS !== 'web' && {
+        styles.buttonMission(device),
+        device === 'phone' && {
           width: '46%',
           height: (props.boxSize)
             ? width*0.64*0.46 + (props.boxSize*15)
             : width*0.64*0.46,
         },
-        Platform.OS === 'web' && {
+        device !== 'phone' && {
           width: (width > 618) ? 280 : '45%',
           height: (width > 618)
             ? ((props.boxSize) ? 175 + (props.boxSize*20) : 175)
@@ -74,11 +76,11 @@ export function GoToMission(props) {
         <View
           style={[
             styles.buttonImage,
-            Platform.OS !== 'web' && {
+            device === 'phone' && {
               width: '95%',
               height: width*0.64*0.38,
             },
-            Platform.OS === 'web' && {
+            device !== 'phone' && {
               width: (width > 618) ? 270 : '94%',
               height: (width > 618) ? 150 : width*0.6*0.38,
             }
@@ -109,10 +111,10 @@ export function GoToMission(props) {
       {props.missionName &&
         <Text style={[
           styles.buttonText,
-          Platform.OS !== 'web' && {
+          device === 'phone' && {
             fontSize: 11,
           },
-          Platform.OS === 'web' && {
+          device !== 'phone' && {
             fontSize: (width > 618) ? 15 : width*0.024,
           },
           {color: colors.text}
@@ -124,10 +126,10 @@ export function GoToMission(props) {
       {props.subName &&
         <Text style={[
           styles.buttonText,
-          Platform.OS !== 'web' && {
+          device === 'phone' && {
             fontSize: 11,
           },
-          Platform.OS === 'web' && {
+          device !== 'phone' && {
             fontSize: (width > 618) ? 15 : width*0.024,
           },
           {color: colors.text}
@@ -141,17 +143,17 @@ export function GoToMission(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  buttonMission: {
+  buttonMission: device => ({
     backgroundColor: 'lightgray',
     alignItems: 'center',
     justifyContent: 'flex-start',
     borderWidth: 1,
     borderRadius: 5,
     paddingTop: 2,
-    margin: (Platform.OS === 'web') ? 8 : 4,
+    margin: (device !== 'phone') ? 8 : 4,
     //width: (Platform.OS === 'web') ? 280 : 190,
     //height: (Platform.OS === 'web') ? 175 : 120,
-  },
+  }),
   buttonImage: {
     //width: (Platform.OS === 'web') ? 270 : 180,
     //height: (Platform.OS === 'web') ? 150 : 100,

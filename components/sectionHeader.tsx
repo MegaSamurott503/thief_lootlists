@@ -4,6 +4,9 @@ import {
   Text, View,
   useWindowDimensions
 } from 'react-native';
+import { useContext } from 'react';
+
+import { SettingContext } from '@/constants/context';
 
 /* **************** */
 /*  SECTION HEADER  */
@@ -17,14 +20,19 @@ export function SectionHeader(props) {
   // Access theme colors.
   const { colors } = useTheme();
 
+  // Fetch global setting states from context.
+  const { device } = useContext(SettingContext);
+
   return (
-    <View style={styles.listTitleView}>
+    <View
+      style={styles.listTitleView(device)}
+    >
       <Text style={[
         styles.listTitleText,
-        Platform.OS !== 'web' && {
+        device === 'phone' && {
           fontSize: 14,
         },
-        Platform.OS === 'web' && {
+        device !== 'phone' && {
           fontSize: (width > 460) ? 18 : width*0.039,
         },
         {color: colors.text}
@@ -49,10 +57,10 @@ export function SectionHeader(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  listTitleView: {
+  listTitleView: device => ({
     alignItems: 'center',
-    marginTop: (Platform.OS === 'web') ? 12 : 10,
-  },
+    marginTop: (device !== 'phone') ? 12 : 10,
+  }),
   listTitleText: {
     //fontSize: (Platform.OS === 'web') ? 18 : 14,
     fontWeight: 'bold',

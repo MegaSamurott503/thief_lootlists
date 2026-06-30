@@ -9,6 +9,7 @@ import {
 import { useContext } from 'react';
 
 import { SectionHeader } from '@/components/sectionHeader';
+import { DebugView } from '@/components/debugView';
 
 import { stylesTitle } from '@/constants/stylesTitle';
 import { stylesList } from '@/constants/stylesList';
@@ -30,8 +31,9 @@ export default function Index() {
   const { colors } = useTheme();
 
   // Fetch global setting states from context.
-  const {scheme,
-    getCurrentTheme, setCurrentTheme} =
+  const {scheme, device,
+    getCurrentTheme, setCurrentTheme,
+    getShowDebug, setShowDebug} =
     useContext(SettingContext);
 
   return (
@@ -41,68 +43,58 @@ export default function Index() {
       }}>
       <Text style={[
         styles.homeTitle,
-        Platform.OS !== 'web' && {
+        device === 'phone' && {
           fontSize: width*0.058,
         },
-        Platform.OS === 'web' && {
+        device !== 'phone' && {
           fontSize: (width > 849) ? 40 : width*0.047,
         },
         {color: colors.text}
       ]}>
         {`THIEF Lootlists`}
       </Text>
-      <Text style={[styles.explainText, {color: colors.text}]}>
+      <Text style={[styles.explainText(device), {color: colors.text}]}>
         {`for `}
         <Text style={stylesList.locCount}>
           {`THIEF: The Dark Project / Gold`}
         </Text>
         {`, `}
       </Text>
-      <Text style={[styles.explainText, {color: colors.text}]}>
+      <Text style={[styles.explainText(device), {color: colors.text}]}>
         <Text style={stylesList.locCount}>
           {`THIEF II: The Metal Age`}
         </Text>
         {`,`}
       </Text>
-      <Text style={[styles.explainText, {color: colors.text}]}>
+      <Text style={[styles.explainText(device), {color: colors.text}]}>
         {`and an ever-growing list of `}
         <Text style={stylesList.locCount}>
           {`fan missions`}
         </Text>
         {`.`}
       </Text>
-      <Text style={[styles.marginText, {color: colors.text}]}>
+      <Text style={[styles.marginText(device), {color: colors.text}]}>
         {`(`}
         <Text style={stylesList.locCount}>
           {`THIEF: Deadly Shadows`}
         </Text>
         {` lists coming someday!)`}
       </Text>
-
-      {/* Testing stats. HIDE BEFORE FINALIZING! */}
-      <Text style={[styles.marginText, {color: colors.text}]}>
-        {`~~~ Testing info ~~~`}
-      </Text>
-      <Text style={[styles.marginText, {color: colors.text}]}>
-        {`Device color mode: ${scheme}`}
-      </Text>
-      <Text style={[styles.marginText, {color: colors.text}]}>
-        {`Site color setting: ${getCurrentTheme}`}
-      </Text>
-      <Text style={[styles.marginText, {color: colors.text}]}>
-        {`Screen width: ${width}`}
-      </Text>
+      {/* Optional debug info. */}
+      {getShowDebug &&
+        <DebugView />
+      }
 
       {/* UI explanations. */}
       <SectionHeader headerName="Info"/>
       <View style={styles.explainArea}>
-        <View style={[styles.explain, styles.explainCenter]}>
+        <View style={[styles.explain(device), styles.explainCenter]}>
 
           {/* Description of selected items. */}
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`Click on an item's location to mark it with a`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             <Text style={{backgroundColor: colors.found}}>
               {(getCurrentTheme === 'light' ||
                 (getCurrentTheme === 'default' && scheme === 'light')) &&
@@ -114,15 +106,15 @@ export default function Index() {
             </Text>
             {`. Selected items will be saved to your`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`device's memory, and the loot and pickpocket totals at`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`the bottom of the page will be updated automatically.`}
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -133,19 +125,19 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Lord Bafford's Bedroom`}
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`north table`}
@@ -154,15 +146,15 @@ export default function Index() {
           </View>
 
           {/* Description of background colors for loot. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`Unselected loot items have a colored background`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`to indicate (subjectively) how well-hidden they are.`}
           </Text>
 
           {/* Description of easy background color. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`A `}
             <Text style={{backgroundColor: colors.findE}}>
               {`curved `}
@@ -176,15 +168,15 @@ export default function Index() {
             </Text>
             {` indicates a loot item that`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {` is out in the open. As long as you try to visit every`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`obvious location in the mission, you should find it easily.`}
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -195,19 +187,19 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Butler's Quarters`}
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {'south room, north table '}
@@ -219,7 +211,7 @@ export default function Index() {
           </View>
 
           {/* Description of medium background color. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`A `}
             <Text style={{backgroundColor: colors.findM}}>
               {`slanted `}
@@ -233,15 +225,15 @@ export default function Index() {
             </Text>
             {` indicates a loot item that`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`is tucked away out of sight, or the passage/switch`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`that leads to it is easily overlooked. Keep your eyes open.`}
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -252,19 +244,19 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Narcotics Division`}
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`under southwest desk`}
@@ -273,7 +265,7 @@ export default function Index() {
           </View>
 
           {/* Description of hard background color. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`A `}
             <Text style={{backgroundColor: colors.findH}}>
               {`jagged `}
@@ -287,15 +279,15 @@ export default function Index() {
             </Text>
             {` indicates a loot item that`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`is very difficult to spot if you don't know it's there.`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`Be prepared to pixel hunt for it (or the switch revealing it).`}
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -306,19 +298,19 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Ramirez's Quarters`}
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`bedroom, near footlocker`}
@@ -327,18 +319,18 @@ export default function Index() {
           </View>
 
           {/* Description of objective marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             <Text style={{fontWeight: 'bold', color: colors.locObj}}>
               {'✶'}
             </Text>
             {` An azure star indicates an item that triggers an objective`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`when it is picked up, used correctly, or delivered somewhere.`}
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -349,12 +341,12 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 <Text style={{fontWeight: 'bold', color: colors.locObj}}>
@@ -364,7 +356,7 @@ export default function Index() {
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`1F, behind middle statue`}
@@ -373,21 +365,21 @@ export default function Index() {
           </View>
 
           {/* Description of difficulty markers. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`A colored shape(s) indicates an item that is`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`available on one or two difficulties, but not all three.`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`You can use the filters at the top of a mission's page to`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`show or hide items based on difficulty (or other options).`}
           </Text>
 
           {/* Description of normal difficulty marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             <Text style={{fontWeight: 'bold', color: colors.locN}}>
               {'■'}
             </Text>
@@ -406,7 +398,7 @@ export default function Index() {
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -417,12 +409,12 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 <Text style={{fontWeight: 'bold', color: colors.locN}}>
@@ -432,7 +424,7 @@ export default function Index() {
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`spider cage, `}
@@ -444,7 +436,7 @@ export default function Index() {
           </View>
 
           {/* Description of hard difficulty marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             <Text style={{fontWeight: 'bold', color: colors.locH}}>
               {'▲'}
             </Text>
@@ -463,7 +455,7 @@ export default function Index() {
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -474,12 +466,12 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 <Text style={{fontWeight: 'bold', color: colors.locH}}>
@@ -489,7 +481,7 @@ export default function Index() {
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`office, east bookshelf`}
@@ -498,7 +490,7 @@ export default function Index() {
           </View>
 
           {/* Description of expert difficulty marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             <Text style={{fontWeight: 'bold', color: colors.locX}}>
               {'◆'}
             </Text>
@@ -517,7 +509,7 @@ export default function Index() {
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -528,12 +520,12 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 <Text style={{fontWeight: 'bold', color: colors.locX}}>
@@ -543,7 +535,7 @@ export default function Index() {
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Thom's quarters, bookcase`}
@@ -552,28 +544,28 @@ export default function Index() {
           </View>
 
         </View>
-        <View style={[styles.explain, styles.explainCenter]}>
+        <View style={[styles.explain(device), styles.explainCenter]}>
 
           {/* Description of container marker. */}
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`An `}
             <Text style={stylesList.locBox}>
               {'underlined'}
             </Text>
             {` location indicates an item that`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`is obtained directly from a container.`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`If a container gives you multiple items,`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`selecting one will instantly select the others.`}
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -584,19 +576,19 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Terrace`}
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`storage shed, `}
@@ -608,19 +600,19 @@ export default function Index() {
           </View>
 
           {/* Description of pickpocket marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`An { `}
             <Text style={stylesList.locPick}>
               {'italicized'}
             </Text>
             {` } location surrounded by curly braces`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`indicates an item that can be pickpocketed.`}
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -631,19 +623,19 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`2F Southeast Offices`}
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Marin's office, { `}
@@ -656,16 +648,16 @@ export default function Index() {
           </View>
 
           {/* Description of additional instructions. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`Some items have an additional requirement(s)`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`that must be met to spawn them into the mission`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`(e.g. a crafting recipe). Any such requirements`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`are printed after the location in `}
             <Text style={stylesList.locCount}>
               {`bold text`}
@@ -674,7 +666,7 @@ export default function Index() {
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -685,19 +677,19 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Hammerite Crypts`}
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`lower level, `}
@@ -709,25 +701,25 @@ export default function Index() {
           </View>
 
           {/* Description of spending loot on items. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`Some FMs have items that require you to spend`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`loot to obtain them. The price of each item`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`is printed after the location in `}
             <Text style={stylesList.locCount}>
               {`bold text`}
             </Text>
             {`, and`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`the loot totals below will be updated automatically.`}
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -738,19 +730,19 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Farkus Outfitters`}
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`counter, `}
@@ -766,7 +758,7 @@ export default function Index() {
           </View>
 
           {/* Description of actual number available marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`A `}
             <Text style={stylesList.locCount}>
               {`number`}
@@ -776,21 +768,21 @@ export default function Index() {
               {`(number in parentheses)`}
             </Text>
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`indicates that the number of items made available`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`is different from the number of items obtainable.`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`This usually happens in the loadout store if there's`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`not enough money to buy an item's full stock.`}
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -801,12 +793,12 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Loadout Store `}
@@ -816,7 +808,7 @@ export default function Index() {
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Price: 300`}
@@ -825,25 +817,25 @@ export default function Index() {
           </View>
 
           {/* Description of unobtainable marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`A location with a `}
             <Text style={stylesList.locNoGet}>
               {'strikethrough'}
             </Text>
             {` indicates`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`an item that is in an unreachable location,`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`out of bounds, or cannot be collected without`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`failing an objective, becoming softlocked, or dying.`}
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -854,12 +846,12 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Hammer Cathedral`}
@@ -867,7 +859,7 @@ export default function Index() {
               <Text style={[
                 stylesList.locText,
                 stylesList.locNoGet,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`sanctuary, nave `}
@@ -879,18 +871,18 @@ export default function Index() {
           </View>
 
           {/* Description of spoiler settings. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`Secret and Easter Egg items can have their locations`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`partially or fully hidden while unselected to avoid spoilers.`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`Adjust these spoiler covers on the settings page.`}
           </Text>
 
           {/* Description of secret marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`A location surrounded by `}
             <Text style={{color: colors.locSecret}}>
               {'[[ '}
@@ -900,15 +892,15 @@ export default function Index() {
               {' ]]'}
             </Text>
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`indicates an item found in a secret area,`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`or the item itself is the secret.`}
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -919,19 +911,19 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 {`Truart Family Cemetery`}
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 <Text style={{color: colors.locSecret}}>
@@ -946,7 +938,7 @@ export default function Index() {
           </View>
 
           {/* Description of Easter Egg marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`A location surrounded by `}
             <Text style={{color: colors.locN}}>(</Text>
             <Text style={{color: colors.locX}}>\</Text>
@@ -956,15 +948,15 @@ export default function Index() {
             <Text style={{color: colors.locX}}>/</Text>
             <Text style={{color: colors.locN}}>)</Text>
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`indicates an item found in an Easter Egg area,`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`or the item itself is the Easter Egg.`}
           </Text>
           <View
             style={[
-              styles.explainBox,
+              styles.explainBox(device),
               {borderColor: colors.border},
             ]}
           >
@@ -975,12 +967,12 @@ export default function Index() {
               resizeMode="cover"
               style={[
                 styles.explainBackground,
-                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+                (device !== 'phone') ? styles.explainBackgroundWeb : ''
               ]}
             >
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 <Text style={{fontWeight: 'bold', color: colors.locX}}>
@@ -990,7 +982,7 @@ export default function Index() {
               </Text>
               <Text style={[
                 stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+                {fontSize: (device !== 'phone') ? 12 : width*0.019,
                   color: colors.text}
               ]}>
                 <Text style={{color: colors.locN}}>(</Text>
@@ -1005,30 +997,30 @@ export default function Index() {
           </View>
 
           {/* Description of bodies. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`Bodies and corpse parts are not included as junk items`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
-            {`to avoid having to list every AI in the mission`}
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
+            {`to avoid having to list every NPC in the mission`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`(except if they are treated as an inventory item).`}
           </Text>
 
           {/* Description of secret list. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(device), {color: colors.text}]}>
             {`A list of the mission's secrets (if any),`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`including images, instructions, and rewards,`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`is displayed at the bottom of the page.`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`Click the secret's location to mark it as found,`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(device), {color: colors.text}]}>
             {`and click the secret's image(s) to enlarge it.`}
           </Text>
 
@@ -1048,9 +1040,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Thief',
     textAlign: 'center',
   },
-  explain: {
-    marginTop: (Platform.OS === 'web') ? 12 : 10,
-  },
+  explain: device => ({
+    marginTop: (device !== 'phone') ? 12 : 10,
+  }),
   explainArea: {
     flex: 1,
     flexDirection: 'row',
@@ -1060,19 +1052,19 @@ const styles = StyleSheet.create({
   explainCenter: {
     alignItems: 'center',
   },
-  explainText: {
-    fontSize: (Platform.OS === 'web') ? 14 : 12,
-  },
-  marginText: {
-    fontSize: (Platform.OS === 'web') ? 14 : 12,
+  explainText: device => ({
+    fontSize: (device !== 'phone') ? 14 : 12,
+  }),
+  marginText: device => ({
+    fontSize: (device !== 'phone') ? 14 : 12,
     marginTop: 8,
-  },
-  explainBox: {
+  }),
+  explainBox: device => ({
     borderWidth: 1,
-    width: (Platform.OS === 'web') ? 228 : 156,
-    height: (Platform.OS === 'web') ? 84 : 56,
+    width: (device !== 'phone') ? 228 : 156,
+    height: (device !== 'phone') ? 84 : 56,
     marginBottom: 4,
-  },
+  }),
   explainBackground: {
     flex: 1,
     justifyContent: 'center',

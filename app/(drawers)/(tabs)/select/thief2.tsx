@@ -22,9 +22,7 @@ export default function Thief2Screen() {
   const { colors } = useTheme();
 
   return (
-    <ScrollView style={{
-      height: (Platform.OS === 'web') ? height*0.99 : '100%'
-    }}>
+    <ScrollView>
       <View style={stylesGoTo.buttonPage}>
         <Text style={{color: colors.text}}>
           Thief 2 Mission Selection
@@ -108,11 +106,11 @@ export default function Thief2Screen() {
             missionName="Sabotage at Soulforge"
             imgAB="A"
           />
-          {/*<GoToMission
+          <GoToMission
             missionID="t2_guest"
             missionName="The Unwelcome Guest (Demo)"
             imgAB="A"
-          />*/}
+          />
         </View>
       </View>
     </ScrollView>

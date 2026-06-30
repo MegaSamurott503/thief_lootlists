@@ -45,6 +45,13 @@
     {
       "id": "note_0",
       "delimiter": "  ",
+      "icon": "[G]",
+      "desc": "only available in v1.37 (Gold)",
+      "show": true
+    },
+    {
+      "id": "note_1",
+      "delimiter": "  ",
       "icon": "[X]",
       "desc": "not obtainable in the AM16 patch",
       "show": true
@@ -751,7 +758,7 @@
               "findNarrow": "flooded crypt",
               "findExact": "north wall relief",
               "findCount": [2,2,2],
-              "findNote": 0
+              "findNote": 1
             },
             {
               "id": "t1_bonehoard_item_13",
@@ -815,7 +822,8 @@
               "findArea": 17,
               "findNarrow": "torch room",
               "findCount": [0,1,1],
-              "findRecipe": "x1 per defeated fire shadow"
+              "findRecipe": "x1 per defeated fire shadow",
+              "findNote": 0
             }
           ]
         }

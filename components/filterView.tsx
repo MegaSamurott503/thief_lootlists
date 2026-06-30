@@ -12,14 +12,12 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { MultipleSelectList } from 'react-native-dropdown-select-list';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
+import { LootIconPicker } from '@/components/lootIconPicker';
 import { FilterDropdown } from '@/components/filterDropdown';
 
 import { stylesImg } from '@/constants/stylesImg';
 import { stylesSelect } from '@/constants/stylesSelect';
 import { stylesModal } from '@/constants/stylesModal';
-import {
-  iconGold, iconGems, iconGoods, iconSpecial
-} from '@/constants/imgUI';
 import {
   FoundContext, FilterContext, SettingContext
 } from '@/constants/context';
@@ -40,8 +38,7 @@ export function FilterView(props) {
   const [getShowModal, setShowModal] = useState(false);
 
   // Fetch FoundLoot and FoundPocket states from context.
-  const {accumLoot, accumPiece, accumPocket} =
-    useContext(FoundContext);
+  const {accumLoot, accumPiece, accumPocket} = useContext(FoundContext);
 
   // Fetch filter states from context.
   const {getFilterDiffN, setFilterDiffN,
@@ -61,7 +58,7 @@ export function FilterView(props) {
     useContext(FilterContext);
 
   // Fetch global setting states from context.
-  const {scheme,
+  const {scheme, device,
         getCurrentTheme, setCurrentTheme} =
     useContext(SettingContext);
 
@@ -118,7 +115,7 @@ export function FilterView(props) {
       {/* Button to clear all selected items. */}
       <TouchableOpacity
         style={[
-          styles.allButton,
+          styles.allButton(device),
           {backgroundColor: colors.backLight,
           borderColor: colors.border}
         ]}
@@ -161,12 +158,12 @@ export function FilterView(props) {
         </Modal>
       </TouchableOpacity>
 
-      <View style={styles.filters}>
+      <View style={styles.filters(device)}>
         <Text style={[
-            Platform.OS !== 'web' && {
+            device === 'phone' && {
               fontSize: width*0.035,
             },
-            Platform.OS === 'web' && {
+            device !== 'phone' && {
               fontSize: (width > 460) ? 14 : width*0.03,
             },
             {color: colors.text}
@@ -181,7 +178,7 @@ export function FilterView(props) {
               <TouchableOpacity
                 // Change background color when toggled.
                 style={[styles.filterButton,
-                  {minWidth: (Platform.OS === 'web')
+                  {minWidth: (device !== 'phone')
                     ? 105 : width*0.256,
                   backgroundColor: colors.backLight,
                   borderColor: colors.border},
@@ -198,7 +195,7 @@ export function FilterView(props) {
                 />
                 <Text style={[
                   styles.filterTextMode,
-                  {fontSize: (Platform.OS === 'web')
+                  {fontSize: (device !== 'phone')
                     ? 12 : width*0.028,
                   color: colors.locN}
                 ]}>
@@ -209,7 +206,7 @@ export function FilterView(props) {
               <TouchableOpacity
                 // Change background color when toggled.
                 style={[styles.filterButton,
-                  {minWidth: (Platform.OS === 'web')
+                  {minWidth: (device !== 'phone')
                     ? 105 : width*0.256,
                   backgroundColor: colors.backLight,
                   borderColor: colors.border},
@@ -226,7 +223,7 @@ export function FilterView(props) {
                 />
                 <Text style={[
                   styles.filterTextMode,
-                  {fontSize: (Platform.OS === 'web')
+                  {fontSize: (device !== 'phone')
                     ? 12 : width*0.028,
                   color: colors.locH}
                 ]}>
@@ -237,7 +234,7 @@ export function FilterView(props) {
               <TouchableOpacity
                 // Change background color when toggled.
                 style={[styles.filterButton,
-                  {minWidth: (Platform.OS === 'web')
+                  {minWidth: (device !== 'phone')
                     ? 105 : width*0.256,
                   backgroundColor: colors.backLight,
                   borderColor: colors.border},
@@ -254,7 +251,7 @@ export function FilterView(props) {
                 />
                 <Text style={[
                   styles.filterTextMode,
-                  {fontSize: (Platform.OS === 'web')
+                  {fontSize: (device !== 'phone')
                     ? 12 : width*0.028,
                   color: colors.locX}
                 ]}>
@@ -272,7 +269,7 @@ export function FilterView(props) {
                 <TouchableOpacity
                   // Change background color when toggled.
                   style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
+                    {minWidth: (device !== 'phone')
                       ? 105 : width*0.256,
                     backgroundColor: colors.backLight,
                     borderColor: colors.border},
@@ -289,7 +286,7 @@ export function FilterView(props) {
                   />
                   <Text style={[
                     styles.filterTextMode,
-                    {fontSize: (Platform.OS === 'web')
+                    {fontSize: (device !== 'phone')
                       ? 12 : width*0.028,
                     color: getFilterModeA
                       ? colors.text : colors.textInvert}
@@ -303,7 +300,7 @@ export function FilterView(props) {
                 <TouchableOpacity
                   // Change background color when toggled.
                   style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
+                    {minWidth: (device !== 'phone')
                       ? 105 : width*0.256,
                     backgroundColor: colors.backLight,
                     borderColor: colors.border},
@@ -320,7 +317,7 @@ export function FilterView(props) {
                   />
                   <Text style={[
                     styles.filterTextMode,
-                    {fontSize: (Platform.OS === 'web')
+                    {fontSize: (device !== 'phone')
                       ? 12 : width*0.028,
                     color: getFilterModeB
                       ? colors.text : colors.textInvert}
@@ -334,7 +331,7 @@ export function FilterView(props) {
                 <TouchableOpacity
                   // Change background color when toggled.
                   style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
+                    {minWidth: (device !== 'phone')
                       ? 105 : width*0.256,
                     backgroundColor: colors.backLight,
                     borderColor: colors.border},
@@ -351,7 +348,7 @@ export function FilterView(props) {
                   />
                   <Text style={[
                     styles.filterTextMode,
-                    {fontSize: (Platform.OS === 'web')
+                    {fontSize: (device !== 'phone')
                       ? 12 : width*0.028,
                     color: getFilterModeC
                       ? colors.text : colors.textInvert}
@@ -371,7 +368,7 @@ export function FilterView(props) {
                 <TouchableOpacity
                   // Change background color when toggled.
                   style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
+                    {minWidth: (device !== 'phone')
                       ? 105 : width*0.256,
                     backgroundColor: colors.backLight,
                     borderColor: colors.border},
@@ -387,10 +384,7 @@ export function FilterView(props) {
                     color={getFilterLootGold ? checkColorOn : checkColorOff}
                   />
                   <Text> </Text>
-                  <Image
-                    source={iconGold}
-                    style={stylesImg.imgLootIconBig}
-                  />
+                  <LootIconPicker cat={props.lootCats[0]} big="true" />
                 </TouchableOpacity>
               }
               {/* Gems loot filter. */}
@@ -398,7 +392,7 @@ export function FilterView(props) {
                 <TouchableOpacity
                   // Change background color when toggled.
                   style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
+                    {minWidth: (device !== 'phone')
                       ? 105 : width*0.256,
                     backgroundColor: colors.backLight,
                     borderColor: colors.border},
@@ -414,10 +408,7 @@ export function FilterView(props) {
                     color={getFilterLootGems ? checkColorOn : checkColorOff}
                   />
                   <Text> </Text>
-                  <Image
-                    source={iconGems}
-                    style={stylesImg.imgLootIconBig}
-                  />
+                  <LootIconPicker cat={props.lootCats[1]} big="true" />
                 </TouchableOpacity>
               }
               {/* Goods loot filter. */}
@@ -425,7 +416,7 @@ export function FilterView(props) {
                 <TouchableOpacity
                   // Change background color when toggled.
                   style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
+                    {minWidth: (device !== 'phone')
                       ? 105 : width*0.256,
                     backgroundColor: colors.backLight,
                     borderColor: colors.border},
@@ -441,10 +432,7 @@ export function FilterView(props) {
                     color={getFilterLootGoods ? checkColorOn : checkColorOff}
                   />
                   <Text> </Text>
-                  <Image
-                    source={iconGoods}
-                    style={stylesImg.imgLootIconBig}
-                  />
+                  <LootIconPicker cat={props.lootCats[2]} big="true" />
                 </TouchableOpacity>
               }
               {/* Special loot filter. */}
@@ -452,7 +440,7 @@ export function FilterView(props) {
                 <TouchableOpacity
                   // Change background color when toggled.
                   style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
+                    {minWidth: (device !== 'phone')
                       ? 105 : width*0.256,
                     backgroundColor: colors.backLight,
                     borderColor: colors.border},
@@ -468,10 +456,7 @@ export function FilterView(props) {
                     color={getFilterLootSpecial ? checkColorOn : checkColorOff}
                   />
                   <Text> </Text>
-                  <Image
-                    source={iconSpecial}
-                    style={stylesImg.imgLootIconBig}
-                  />
+                  <LootIconPicker cat={props.lootCats[3]} big="true" />
                 </TouchableOpacity>
               }
             </View>
@@ -486,7 +471,7 @@ export function FilterView(props) {
                 <TouchableOpacity
                   // Change background color when toggled.
                   style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
+                    {minWidth: (device !== 'phone')
                       ? 105 : width*0.256,
                     backgroundColor: colors.backLight,
                     borderColor: colors.border},
@@ -503,7 +488,7 @@ export function FilterView(props) {
                   />
                   <Text style={[
                     styles.filterTextMode,
-                    {fontSize: (Platform.OS === 'web')
+                    {fontSize: (device !== 'phone')
                       ? 12 : width*0.028,
                     color: getFilterOnlyObj
                       ? colors.text : colors.textInvert}
@@ -518,7 +503,7 @@ export function FilterView(props) {
                 <TouchableOpacity
                   // Change background color when toggled.
                   style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
+                    {minWidth: (device !== 'phone')
                       ? 105 : width*0.256,
                     backgroundColor: colors.backLight,
                     borderColor: colors.border},
@@ -535,7 +520,7 @@ export function FilterView(props) {
                   />
                   <Text style={[
                     styles.filterTextMode,
-                    {fontSize: (Platform.OS === 'web')
+                    {fontSize: (device !== 'phone')
                       ? 12 : width*0.028,
                     color: getFilterOnlyPick
                       ? colors.text : colors.textInvert}
@@ -549,7 +534,7 @@ export function FilterView(props) {
                 <TouchableOpacity
                   // Change background color when toggled.
                   style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
+                    {minWidth: (device !== 'phone')
                       ? 105 : width*0.256,
                     backgroundColor: colors.backLight,
                     borderColor: colors.border},
@@ -566,7 +551,7 @@ export function FilterView(props) {
                   />
                   <Text style={[
                     styles.filterTextMode,
-                    {fontSize: (Platform.OS === 'web')
+                    {fontSize: (device !== 'phone')
                       ? 12 : width*0.028,
                     color: getFilterOnlySec
                       ? colors.text : colors.textInvert}
@@ -595,11 +580,11 @@ export function FilterView(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  filters: {
+  filters: device => ({
     flexDirection: 'row',
     alignItems: 'center',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
-  },
+    marginHorizontal: (device !== 'phone') ? 10 : 5,
+  }),
   filterRow: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -624,16 +609,16 @@ const styles = StyleSheet.create({
     //fontSize: 12,
     fontWeight: 'bold',
   },
-  allButton: {
+  allButton: device => ({
     borderWidth: 1,
     borderRadius: 5,
     alignItems: 'center',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
-    marginVertical: (Platform.OS === 'web') ? 10 : 5,
+    marginHorizontal: (device !== 'phone') ? 10 : 5,
+    marginVertical: (device !== 'phone') ? 10 : 5,
     paddingHorizontal: 4,
     paddingVertical: 2,
     width: 80,
-  },
+  }),
   waitModal: {
     borderWidth: 1,
     borderRadius: 10,

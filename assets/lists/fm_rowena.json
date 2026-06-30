@@ -1,0 +1,3694 @@
+{
+  "id": "fm_rowena",
+  "title": "Rowena's Curse",
+  "author": [
+    "auth_ladyrowena"
+  ],
+  "screens": [
+    "MIS_fm_rowena_A",
+    "MIS_fm_rowena_B"
+  ],
+  "firstRelease": "June 2003",
+  "latestVersion": "3.0",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [5469,1015,2590,0,9074],
+    [5469,1015,2590,0,9074],
+    [5469,1015,2590,0,9074]
+  ],
+  "lootCount": [148,148,148],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [6000,7000,8000]
+  },
+  "pocketCount": [13,13,13],
+  "pocketChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "Outer Wall"},
+    {"key": "1", "value": "Old Barracks"},
+    {"key": "2", "value": "Southwest Courtyard"},
+    {"key": "3", "value": "Barker's Apartment"},
+    {"key": "4", "value": "Guardhouse"},
+    {"key": "5", "value": "West Courtyard"},
+    {"key": "6", "value": "Kitchen"},
+    {"key": "7", "value": "Servants' Quarters"},
+    {"key": "8", "value": "Basement"},
+    {"key": "9", "value": "Northeast Courtyard"},
+    {"key": "10", "value": "Cedric's Manor 1F"},
+    {"key": "11", "value": "Storeroom"},
+    {"key": "12", "value": "Lt. Wilson's Quarters"},
+    {"key": "13", "value": "Cedric's Manor 2F"},
+    {"key": "14", "value": "White Room"},
+    {"key": "15", "value": "Chapel"},
+    {"key": "16", "value": "Entrance Hall"},
+    {"key": "17", "value": "South Courtyard"},
+    {"key": "18", "value": "Yellow Room"},
+    {"key": "19", "value": "Blue Room"},
+    {"key": "20", "value": "Internal Courtyard"},
+    {"key": "21", "value": "Red Room"},
+    {"key": "22", "value": "Garden"},
+    {"key": "23", "value": "Accident Pit"},
+    {"key": "24", "value": "Gate of Hell"},
+    {"key": "25", "value": "Lady Rowena's Quarters"},
+    {"key": "26", "value": "Library"},
+    {"key": "27", "value": "Sitting Room"},
+    {"key": "28", "value": "Dining Room"},
+    {"key": "29", "value": "Garden Barracks"},
+    {"key": "30", "value": "Dungeon"},
+    {"key": "31", "value": "Well of Despair"},
+    {"key": "32", "value": "Air Chamber"},
+    {"key": "33", "value": "Yellow Room Passage"},
+    {"key": "34", "value": "Earth Chamber"},
+    {"key": "35", "value": "Blue Room Passage"},
+    {"key": "36", "value": "Spider Cave"},
+    {"key": "37", "value": "Water Chamber"},
+    {"key": "38", "value": "Fire Chamber"},
+    {"key": "39", "value": "Holy Sword Chamber"},
+    {"key": "40", "value": "Southeast Courtyard"},
+    {"key": "41", "value": "Cemetery"},
+    {"key": "42", "value": "Demon Chasm"},
+    {"key": "43", "value": "Rowena's Stronghold"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_1",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "northwest bunkroom",
+              "findExact": "central table",
+              "findCount": [3,3,3],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_2",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "northwest bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_3",
+              "findSimple": "findM",
+              "findArea": 29,
+              "findNarrow": "bunkroom",
+              "findExact": "behind shelf",
+              "findCount": [3,3,3],
+              "findSecret": true,
+              "orderNum": 63,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_4",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findNarrow": "torture room",
+              "findExact": "behind banner",
+              "findCount": [3,3,3],
+              "orderNum": 65,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "Decorative Mask",
+      "img": [
+        "IMG_DecorativeMask_Demon"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_5",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "bedroom",
+              "findExact": "doorway",
+              "findCount": [1,1,1],
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_DecorativeMask_Demon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "Decorative Plate",
+      "img": [
+        "IMG_DecorativePlate_Red_EP",
+        "IMG_DecorativePlate_Aqua_EP"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_6",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "shelves",
+              "findCount": [5,5,5],
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_DecorativePlate_Red_EP",
+                "IMG_DecorativePlate_Aqua_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine_EP"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_7",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findExact": "under west counter",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_FineWine_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_8",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findExact": "under porch",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_FineWine_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_9",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "east shelf",
+              "findExact": "cabinet",
+              "findCount": [1,1,1],
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_FineWine_EP"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_10",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "north hallway",
+              "findExact": "east serving table",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_FineWine_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "Gem Ring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_11",
+              "findSimple": "findM",
+              "findArea": 14,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "Gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_12",
+              "findSimple": "findM",
+              "findArea": 36,
+              "findNarrow": "east spider den",
+              "findCount": [3,3,3],
+              "orderNum": 71,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_13",
+              "findSimple": "findM",
+              "findArea": 37,
+              "findNarrow": "underwater",
+              "findCount": [3,3,3],
+              "orderNum": 72,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "Gold Candlestick",
+      "img": [
+        "IMG_GoldCandlestick_EP"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_14",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "porch",
+              "findExact": "awning",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldCandlestick_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_15",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findNarrow": "chancel",
+              "findExact": "altar",
+              "findCount": [2,2,2],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GoldCandlestick_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_16",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "west shelf",
+              "findExact": "cabinet",
+              "findCount": [2,2,2],
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_GoldCandlestick_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_17",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "sitting room",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "Gold Glasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_18",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findNarrow": "Nelly's bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet_EP"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_19",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [2,2,2],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_GoldGoblet_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_20",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "shelves",
+              "findCount": [12,12,12],
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_GoldGoblet_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_21",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "northeast bunkroom",
+              "findExact": "hidden niche",
+              "findCount": [2,2,2],
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_GoldGoblet_EP"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_22",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "north hallway",
+              "findExact": "east serving table",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GoldGoblet_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "Gold Nugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_23",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findNarrow": "bedroom",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_24",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "gate chamber",
+              "findExact": "southwest corner",
+              "findCount": [1,1,1],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_25",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "sitting room",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_26",
+              "findSimple": "findE",
+              "findArea": 43,
+              "findNarrow": "southeast crawlspace",
+              "findCount": [1,1,1],
+              "orderNum": 87,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate_EP"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_27",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "Isabella's bedroom",
+              "findExact": "east nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_GoldPlate_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_28",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "northeast bunkroom",
+              "findExact": "hidden niche",
+              "findCount": [2,2,2],
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_GoldPlate_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_29",
+              "findSimple": "findH",
+              "findArea": 11,
+              "findExact": "between armchairs",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_30",
+              "findSimple": "findM",
+              "findArea": 21,
+              "findNarrow": "bedroom",
+              "findExact": "east nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase_EP"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_31",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "bedroom",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_GoldVase_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_32",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findNarrow": "shelves",
+              "findExact": "cabinets",
+              "findCount": [4,4,4],
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_GoldVase_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_33",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "northeast bunkroom",
+              "findExact": "hidden niche",
+              "findCount": [1,1,1],
+              "orderNum": 60,
+              "orderImg": [
+                "IMG_GoldVase_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_34",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "north tomb",
+              "findExact": "casket",
+              "findCount": [1,1,1],
+              "orderNum": 79,
+              "orderImg": [
+                "IMG_GoldVase_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldenbone",
+      "name": "Golden Bone",
+      "img": [
+        "IMG_GoldenBone_Skull",
+        "IMG_GoldenBone_RightArm",
+        "IMG_GoldenBone_LeftArm",
+        "IMG_GoldenBone_RightLeg",
+        "IMG_GoldenBone_LeftLeg"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_35",
+              "findSimple": "findE",
+              "findArea": 43,
+              "findNarrow": "entrance hall",
+              "findExact": "cells",
+              "findCount": [4,4,4],
+              "orderNum": 86,
+              "orderImg": [
+                "IMG_GoldenBone_RightArm",
+                "IMG_GoldenBone_LeftArm",
+                "IMG_GoldenBone_RightLeg",
+                "IMG_GoldenBone_LeftLeg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "150gold",
+          "value": [150,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_36",
+              "findSimple": "findH",
+              "findArea": 43,
+              "findNarrow": "treasure room",
+              "findExact": "beds",
+              "findCount": [2,2,2],
+              "orderNum": 89,
+              "orderImg": [
+                "IMG_GoldenBone_Skull"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_37",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findExact": "sink",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_horn",
+      "name": "Horn",
+      "img": [
+        "IMG_HornOfQuintus"
+      ],
+      "values": [
+        {
+          "id": "100gold200gems",
+          "value": [100,200,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_38",
+              "findSimple": "findH",
+              "findArea": 43,
+              "findNarrow": "treasure room",
+              "findExact": "above casket",
+              "findCount": [1,1,1],
+              "orderNum": 90,
+              "orderImg": [
+                "IMG_HornOfQuintus"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase_EP"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_39",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "bedroom",
+              "findExact": "pedestal",
+              "findCount": [1,1,1],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_IndigoVase_EP"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_40",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "sitting room",
+              "findExact": "coffee table",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_IndigoVase_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_41",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "west hallway",
+              "findExact": "pedestals",
+              "findCount": [2,2,2],
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_IndigoVase_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_42",
+              "findSimple": "findE",
+              "findArea": 28,
+              "findExact": "west shelf",
+              "findCount": [1,1,1],
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_IndigoVase_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_43",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "northeast bunkroom",
+              "findExact": "hidden niche",
+              "findCount": [1,1,1],
+              "orderNum": 59,
+              "orderImg": [
+                "IMG_IndigoVase_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "Lucky Coins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_44",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "bedroom",
+              "findExact": "nightstand",
+              "findCount": [3,3,3],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_45",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "west guard post",
+              "findExact": "by chair",
+              "findCount": [3,3,3],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mechaniststatuette",
+      "name": "Mechanist Statuette",
+      "img": [
+        "IMG_MechanistStatuette"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_46",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findExact": "corner table",
+              "findCount": [1,1,1],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "Precursor Canopic Jar",
+      "img": [
+        "IMG_PrecursorCanopicJar_EP"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_47",
+              "findSimple": "findE",
+              "findArea": 24,
+              "findNarrow": "northeast cave",
+              "findExact": "spider den",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_48",
+              "findSimple": "findM",
+              "findArea": 39,
+              "findNarrow": "boulder puzzle",
+              "findExact": "NW chamber",
+              "findCount": [1,1,1],
+              "orderNum": 76,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_49",
+              "findSimple": "findE",
+              "findArea": 42,
+              "findNarrow": "upper side tunnel",
+              "findExact": "casket",
+              "findCount": [1,1,1],
+              "orderNum": 81,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_50",
+              "findSimple": "findE",
+              "findArea": 42,
+              "findNarrow": "middle side tunnel",
+              "findExact": "casket",
+              "findCount": [1,1,1],
+              "orderNum": 82,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_51",
+              "findSimple": "findE",
+              "findArea": 42,
+              "findNarrow": "lower side tunnel",
+              "findExact": "casket",
+              "findCount": [1,1,1],
+              "orderNum": 83,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorgem",
+      "name": "Precursor Gem",
+      "img": [
+        "IMG_PrecursorGem_EP"
+      ],
+      "values": [
+        {
+          "id": "15gems",
+          "value": [0,15,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_52",
+              "findSimple": "findM",
+              "findArea": 39,
+              "findNarrow": "boulder puzzle",
+              "findExact": "NW chamber",
+              "findCount": [6,6,6],
+              "orderNum": 77,
+              "orderImg": [
+                "IMG_PrecursorGem_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Small_EP",
+        "IMG_PrecursorJar_Tall_EP",
+        "IMG_PrecursorJar_Pointed_EP"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_53",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "bedroom",
+              "findExact": "west nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_PrecursorJar_Small_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_54",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findExact": "west table",
+              "findCount": [1,1,1],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_PrecursorJar_Small_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_55",
+              "findSimple": "findM",
+              "findArea": 15,
+              "findNarrow": "sacristy",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 69,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_56",
+              "findSimple": "findM",
+              "findArea": 39,
+              "findNarrow": "boulder puzzle",
+              "findExact": "NW chamber",
+              "findCount": [6,6,6],
+              "orderNum": 74,
+              "orderImg": [
+                "IMG_PrecursorJar_Small_EP",
+                "IMG_PrecursorJar_Tall_EP",
+                "IMG_PrecursorJar_Pointed_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursormask",
+      "name": "Precursor Mask",
+      "img": [
+        "IMG_PrecursorMask_Bare",
+        "IMG_PrecursorMask_Brass"
+      ],
+      "values": [
+        {
+          "id": "120goods",
+          "value": [0,0,120,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_57",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "south hallway",
+              "findExact": "mask stands",
+              "findCount": [2,2,2],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_PrecursorMask_Bare",
+                "IMG_PrecursorMask_Brass"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "Precursor Tapestry",
+      "img": [
+        "IMG_PrecursorTapestry_EP"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_58",
+              "findSimple": "findM",
+              "findArea": 39,
+              "findNarrow": "boulder puzzle",
+              "findExact": "NW chamber",
+              "findCount": [1,1,1],
+              "orderNum": 73,
+              "orderImg": [
+                "IMG_PrecursorTapestry_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_59",
+              "findSimple": "findE",
+              "findArea": 41,
+              "findNarrow": "south tomb",
+              "findExact": "casket",
+              "findCount": [1,1,1],
+              "orderNum": 80,
+              "orderImg": [
+                "IMG_PrecursorTapestry_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_60",
+              "findSimple": "findH",
+              "findArea": 43,
+              "findNarrow": "zombie pit",
+              "findExact": "hidden tomb",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 91,
+              "orderImg": [
+                "IMG_PrecursorTapestry_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet_EP"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_61",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "Isabella's bedroom",
+              "findExact": "east nightstand",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_PurpleGoblet_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase_EP"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_62",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findExact": "east counter",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_PurpleVase_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_63",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "sitting room",
+              "findExact": "vanity",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_PurpleVase_EP"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_64",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "sitting room",
+              "findExact": "corner table",
+              "findCount": [1,1,1],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_PurpleVase_EP"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_65",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findNarrow": "bathroom",
+              "findExact": "on Perceval",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_66",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "southeast bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_67",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "cook's bedroom",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_68",
+              "findSimple": "findH",
+              "findArea": 8,
+              "findNarrow": "furnace room",
+              "findExact": "behind furnace",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_69",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "porch",
+              "findExact": "on Charlie",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_70",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "east guard post",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_71",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findExact": "by east chair",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_72",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "near west chair",
+              "findExact": "on Stan",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_73",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "terrace",
+              "findExact": "by west door",
+              "findCount": [1,1,1],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_74",
+              "findSimple": "findM",
+              "findArea": 8,
+              "findNarrow": "wine cellar",
+              "findExact": "between barrels",
+              "findCount": [1,1,1],
+              "orderNum": 61,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_75",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findNarrow": "bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 62,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_76",
+              "findSimple": "findE",
+              "findArea": 29,
+              "findNarrow": "roof",
+              "findExact": "on Brad",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 64,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_77",
+              "findSimple": "findM",
+              "findArea": 41,
+              "findNarrow": "behind west statue",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 78,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_rosarybeads",
+      "name": "Rosary Beads",
+      "img": [
+        "IMG_RosaryBeads"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_78",
+              "findSimple": "findM",
+              "findArea": 15,
+              "findNarrow": "sacristy",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 67,
+              "orderImg": [
+                "IMG_RosaryBeads"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_serpentyletorc",
+      "name": "Serpentyle Torc",
+      "img": [
+        "IMG_SerpentyleTorc"
+      ],
+      "values": [
+        {
+          "id": "100gold50gems",
+          "value": [100,50,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_79",
+              "findSimple": "findE",
+              "findArea": 43,
+              "findNarrow": "central hall",
+              "findExact": "north end",
+              "findCount": [1,1,1],
+              "orderNum": 88,
+              "orderImg": [
+                "IMG_SerpentyleTorc"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "300gold50gems",
+          "value": [300,50,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_80",
+              "findSimple": "findM",
+              "findArea": 39,
+              "findNarrow": "boulder puzzle",
+              "findExact": "NW chamber",
+              "findCount": [1,1,1],
+              "orderNum": 75,
+              "orderImg": [
+                "IMG_SerpentyleTorc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_81",
+              "findSimple": "findM",
+              "findArea": 30,
+              "findNarrow": "second cell",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 66,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_82",
+              "findSimple": "findM",
+              "findArea": 15,
+              "findNarrow": "sacristy",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 70,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_83",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "northwest bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_84",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "under east counter",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "Silver Nugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_85",
+              "findSimple": "findH",
+              "findArea": 7,
+              "findNarrow": "maids' bedroom",
+              "findExact": "behind east bed",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_86",
+              "findSimple": "findE",
+              "findArea": 42,
+              "findNarrow": "bottom level",
+              "findExact": "alcove",
+              "findCount": [1,1,1],
+              "orderNum": 84,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_87",
+              "findSimple": "findE",
+              "findArea": 42,
+              "findNarrow": "south tunnel",
+              "findExact": "behind rocks",
+              "findCount": [1,1,1],
+              "orderNum": 85,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "Spice Bag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_88",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "cellar",
+              "findExact": "behind barrels",
+              "findCount": [3,3,3],
+              "findSecret": true,
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "Statuette",
+      "img": [
+        "IMG_Statuette_Monk",
+        "IMG_Statuette_Muse"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_89",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findNarrow": "south mezzanine",
+              "findExact": "behind relief",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_Statuette_Muse"
+              ]
+            },
+            {
+              "id": "fm_rowena_loot_90",
+              "findSimple": "findM",
+              "findArea": 15,
+              "findNarrow": "sacristy",
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "orderNum": 68,
+              "orderImg": [
+                "IMG_Statuette_Monk",
+                "IMG_Statuette_Muse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "50gold25gems",
+          "value": [50,25,0,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_91",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findNarrow": "bathroom",
+              "findExact": "sink",
+              "findCount": [1,1,1],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_treebeastmask",
+      "name": "Treebeast Mask",
+      "img": [
+        "IMG_TreebeastMask"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_rowena_loot_92",
+              "findSimple": "findE",
+              "findArea": 25,
+              "findNarrow": "bedroom",
+              "findExact": "doorway",
+              "findCount": [1,1,1],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_TreebeastMask"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_1",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "mess hall",
+              "findExact": "by shelf",
+              "findCount": [1,0,0]
+            }
+          ]
+        },
+        {
+          "id": "item_holysword",
+          "name": "Holy Sword",
+          "img": [
+            "IMG_OrnateKnife"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_2",
+              "findSimple": "find",
+              "findArea": 39,
+              "findExact": "behind gate",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findExact": "broken crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "southwest bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_rowena_item_5",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northwest bunkroom",
+              "findExact": "footlocker",
+              "findCount": [4,4,4],
+              "findBox": true
+            },
+            {
+              "id": "fm_rowena_item_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northeast bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "fm_rowena_item_7",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "on Dorian",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_rowena_item_8",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "mess hall",
+              "findExact": "shelves",
+              "findCount": [9,9,9]
+            },
+            {
+              "id": "fm_rowena_item_9",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "on Kevin",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_rowena_item_10",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "porch",
+              "findExact": "on Gary",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_rowena_item_11",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "on Grant",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_rowena_item_12",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "by stairs",
+              "findExact": "on Brian",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_rowena_item_13",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "roof",
+              "findExact": "on Brad",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_rowena_item_14",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "above shaft",
+              "findExact": "Precursor chest",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "fm_rowena_item_15",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "flooded shaft",
+              "findExact": "Precursor chest",
+              "findCountBox": [5,5,5],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_16",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northwest bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "sewer",
+              "findCount": [9,5,5]
+            },
+            {
+              "id": "fm_rowena_item_18",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "washroom",
+              "findExact": "bathtub",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_rowena_item_19",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "sink",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_item_20",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "bath",
+              "findExact": "bathtub",
+              "findCount": [2,1,0]
+            },
+            {
+              "id": "fm_rowena_item_21",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "bedroom",
+              "findExact": "pedestal cabinet",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_22",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "tool shed",
+              "findExact": "powderkeg",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_23",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "sitting room",
+              "findExact": "basket",
+              "findCount": [10,10,10]
+            },
+            {
+              "id": "fm_rowena_item_24",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "northeast cave",
+              "findExact": "under skull",
+              "findCount": [2,1,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_25",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "mess hall",
+              "findExact": "sword rack",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_item_26",
+              "findSimple": "find",
+              "findArea": 43,
+              "findNarrow": "north crawlspace",
+              "findExact": "near gate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_27",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "mess hall",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion_NV"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_28",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "cook's bedroom",
+              "findExact": "nightstand",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "fm_rowena_item_29",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "locker",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_item_30",
+              "findSimple": "find",
+              "findArea": 42,
+              "findNarrow": "upper level",
+              "findExact": "casket",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_item_31",
+              "findSimple": "find",
+              "findArea": 43,
+              "findNarrow": "bedroom",
+              "findExact": "behind bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "Invisibility Potion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_32",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "sitting room",
+              "findExact": "desk",
+              "findCount": [1,0,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_holywatervial",
+          "name": "Holy Water Vial",
+          "img": [
+            "IMG_HolyWaterVial"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_33",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "bedroom",
+              "findExact": "pedestal cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_34",
+              "findSimple": "find",
+              "findArea": 0,
+              "findExact": "broken crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_35",
+              "findSimple": "find",
+              "findArea": 0,
+              "findExact": "broken crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Silas's Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_36",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "furnace room",
+              "findExact": "on Silas",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "White Room Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_37",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "office",
+              "findExact": "cabinet",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Chapel Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_38",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "Isabella's bedroom",
+              "findExact": "green book",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Red Room Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_39",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "southwest window",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Garden Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_40",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "bedroom",
+              "findExact": "on Lady Lucrethia",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_rowena_item_41",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "bunkroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Rowena's Room Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_42",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "sitting room",
+              "findExact": "corner table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Library Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_43",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "sitting room",
+              "findExact": "vanity",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Library Attic Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_44",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "hidden attic",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Chest Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_45",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "hidden attic",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Well Room Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_46",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "attic",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Rowena's Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_47",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "pit",
+              "findExact": "by Jervis's skeleton",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_magekey",
+          "name": "Air Key",
+          "img": [
+            "IMG_MageKey_Air"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_48",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "upper platform",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_magekey",
+          "name": "Earth Key",
+          "img": [
+            "IMG_MageKey_Earth"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_49",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "above gate",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_magekey",
+          "name": "Water Key",
+          "img": [
+            "IMG_MageKey_Water"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_50",
+              "findSimple": "find",
+              "findArea": 37,
+              "findNarrow": "west ledge",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_magekey",
+          "name": "Fire Key",
+          "img": [
+            "IMG_MageKey_Fire"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_51",
+              "findSimple": "find",
+              "findArea": 38,
+              "findNarrow": "east ledge",
+              "findExact": "pedestal",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Locker Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_52",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "gate chamber",
+              "findCount": [1,1,1],
+              "findRecipe": "after taking Holy Sword"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Cemetery Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_53",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "locker",
+              "findExact": "green book",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_magekey",
+          "name": "Alastor's Key",
+          "img": [
+            "IMG_MageKey_Treasure"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_54",
+              "findSimple": "find",
+              "findArea": 24,
+              "findExact": "on Lord Cedric",
+              "findCountBox": [1,1,1],
+              "findRecipe": "after killing Lord Duncan",
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Front Gate Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_55",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "bottom",
+              "findExact": "on Lenny",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Stronghold Key",
+          "img": [
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_56",
+              "findSimple": "find",
+              "findArea": 43,
+              "findNarrow": "blood pit",
+              "findExact": "north ledge",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_lantern",
+          "name": "Lantern",
+          "img": [
+            "IMG_Lantern_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_57",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northeast bunkroom",
+              "findExact": "east alcove",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_flare",
+          "name": "Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_58",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "tool shed",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_59",
+              "findSimple": "find",
+              "findArea": 0,
+              "findExact": "broken crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "Scouting Orb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_60",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "mess hall",
+              "findExact": "sword rack",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_frogbeastegg",
+          "name": "Frogbeast Egg",
+          "img": [
+            "IMG_FrogbeastEgg"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_61",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "lean-to",
+              "findExact": "by crates",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_rowena_item_62",
+              "findSimple": "find",
+              "findArea": 40,
+              "findNarrow": "under terrace",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_63",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "southwest bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_rowena_item_64",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "mess hall",
+              "findExact": "dining table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_rowena_item_65",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_66",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "west counter",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_67",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "west counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_fruit",
+          "name": "Fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_68",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "west counter",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_69",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "cold storage",
+              "findExact": "shelf",
+              "findCount": [7,7,7]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_70",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "cold storage",
+              "findExact": "shelf",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_letter",
+          "name": "Letter",
+          "img": [
+            "IMG_Letter"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_71",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "office",
+              "findExact": "cabinets",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_crumpledpaper",
+          "name": "Crumpled Paper",
+          "img": [
+            "IMG_CrumpledPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_72",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "Nelly's bedroom",
+              "findExact": "under NW chair",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_item_73",
+              "findSimple": "find",
+              "findArea": 30,
+              "findNarrow": "first cell",
+              "findExact": "behind bucket",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_74",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northwest bunkroom",
+              "findExact": "by NW bunk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_item_75",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northeast bunkroom",
+              "findExact": "footlocker",
+              "findCount": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "fm_rowena_item_76",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "north hallway",
+              "findExact": "by east serving table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_item_77",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "east hallway",
+              "findCount": [1,1,1],
+              "findRecipe": "after taking Red Room Key"
+            },
+            {
+              "id": "fm_rowena_item_78",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "sitting room",
+              "findExact": "vanity",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_item_79",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "chancel",
+              "findCount": [1,1,1],
+              "findRecipe": "after taking Rowena's Key"
+            },
+            {
+              "id": "fm_rowena_item_80",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "gate chamber",
+              "findCount": [1,1,1],
+              "findRecipe": "after taking Holy Sword"
+            },
+            {
+              "id": "fm_rowena_item_81",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "gate chamber",
+              "findCount": [1,1,1],
+              "findRecipe": "after killing Lord Duncan"
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_82",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_item_83",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "second bookcase",
+              "findExact": "hidden niche",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_item_84",
+              "findSimple": "find",
+              "findArea": 30,
+              "findNarrow": "second cell",
+              "findExact": "by bones",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Lord Duncan's Diary",
+          "img": [
+            "IMG_Book_Red_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_85",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "hidden attic",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_jewelry",
+      "category": "Jewelry",
+      "catItems": [
+        {
+          "id": "item_keepermedallion",
+          "name": "Seal of the Sleeper",
+          "img": [
+            "IMG_KeeperMedallion"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_item_86",
+              "findSimple": "find",
+              "findArea": 43,
+              "findNarrow": "bedroom",
+              "findExact": "bed",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_1",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "east counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_2",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "mess hall",
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_junk_3",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "east counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_4",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "mess hall",
+              "findExact": "dining table",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_metaltray",
+          "name": "Metal Tray",
+          "img": [
+            "IMG_MetalTray_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_5",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "mess hall",
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_junk_6",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "under west counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_7",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "northeast shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_8",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northwest bunkroom",
+              "findExact": "by NW bunk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_junk_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northwest bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_rowena_junk_10",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "mess hall",
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_junk_11",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "under west counter",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "fm_rowena_junk_12",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "east shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_junk_13",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "under porch",
+              "findCount": [2,2,2],
+              "findSecret": true
+            },
+            {
+              "id": "fm_rowena_junk_14",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "wine cellar",
+              "findExact": "east shelves",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_15",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "east shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_junk_16",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "under porch",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_powderkeg",
+          "name": "Powder Keg",
+          "img": [
+            "IMG_PowderKeg_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_17",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "tool shed",
+              "findExact": "by shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_hairbrush",
+          "name": "Hair Brush",
+          "img": [
+            "IMG_HairBrush"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_18",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "sitting room",
+              "findExact": "vanity",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_handmirror",
+          "name": "Hand Mirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_19",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "sitting room",
+              "findExact": "vanity",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_pairofdice",
+          "name": "Pair of Dice",
+          "img": [
+            "IMG_PairOfDice"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_20",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "northwest bunkroom",
+              "findExact": "central table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_21",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "office",
+              "findExact": "corner table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_22",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "northwest shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_23",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "furnace room",
+              "findExact": "coal pile",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_levers",
+      "category": "Levers and Knobs",
+      "catJunk": [
+        {
+          "id": "junk_doorknob",
+          "name": "Doorknob",
+          "img": [
+            "IMG_Doorknob"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_24",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "cellar",
+              "findExact": "by barrels",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_25",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "cavern",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "fm_rowena_junk_26",
+              "findSimple": "find",
+              "findArea": 39,
+              "findNarrow": "boulder puzzle",
+              "findExact": "SW chamber",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_rowena_junk_27",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "pit",
+              "findExact": "near Jervis's skeleton",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_rowena_junk_28",
+              "findSimple": "find",
+              "findArea": 39,
+              "findNarrow": "boulder puzzle",
+              "findExact": "NW chamber",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_rowena_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_rowena_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 5,
+          "findNarrow": "lean-to",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever on the central support beam"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "Spice Bag",
+          "value": [0,0,40,0],
+          "findCount": [3,3,3]
+        }
+      ]
+    },
+    {
+      "id": "fm_rowena_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_rowena_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 7,
+          "findNarrow": "maids' bedroom",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch by the east nightstand"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardLoot": "Silver Nugget",
+          "value": [50,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_rowena_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_rowena_03a",
+        "SEC_fm_rowena_03b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 7,
+          "findNarrow": "cook's bedroom",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch in the wardrobe"
+        },
+        {
+          "id": "sec_3_b",
+          "findArea": 8,
+          "findNarrow": "water tank room",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch by the beams in the southwest corner"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardRoute": [
+            "the cook's bedroom",
+            "the water tank room"
+          ],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_rowena_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_fm_rowena_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 9,
+          "findNarrow": "near porch",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch under the southwest window"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardLoot": "Fine Wine",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_rowena_sec_5",
+      "number": 5,
+      "img": [
+        "SEC_fm_rowena_05a",
+        "SEC_fm_rowena_05b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_5_a",
+          "findArea": 8,
+          "findNarrow": "turbine room",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever behind the turbines"
+        },
+        {
+          "id": "sec_5_b",
+          "findArea": 10,
+          "findNarrow": "north hallway",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch by the painting"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_5_1",
+          "rewardRoute": [
+            "the turbine room",
+            "the first floor hallway"
+          ],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_rowena_sec_6",
+      "number": 6,
+      "img": [
+        "SEC_fm_rowena_06"
+      ],
+      "triggers": [
+        {
+          "id": "sec_6_a",
+          "findArea": 20,
+          "findNarrow": "south mezzanine",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever on the southeast window"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_6_1",
+          "rewardLoot": "Statuette",
+          "value": [0,0,15,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_rowena_sec_7",
+      "number": 7,
+      "img": [
+        "SEC_fm_rowena_07"
+      ],
+      "triggers": [
+        {
+          "id": "sec_7_a",
+          "findArea": 29,
+          "findNarrow": "bunkroom",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever above the north window"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_7_1",
+          "rewardLoot": "Copper Coin Stack",
+          "value": [5,0,0,0],
+          "findCount": [3,3,3]
+        }
+      ]
+    },
+    {
+      "id": "fm_rowena_sec_8",
+      "number": 8,
+      "img": [
+        "SEC_fm_rowena_08"
+      ],
+      "triggers": [
+        {
+          "id": "sec_8_a",
+          "findArea": 43,
+          "findNarrow": "treasure room",
+          "findDiff": [1,1,1],
+          "method": "Pull the lever behind the casket"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_8_1",
+          "rewardLoot": "Precursor Tapestry",
+          "value": [0,0,150,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

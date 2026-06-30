@@ -44,7 +44,11 @@
   ],
   "notes": [
     {
-      "id": "null"
+      "id": "note_0",
+      "delimiter": "  ",
+      "icon": "[DP]",
+      "desc": "only available in v1.33 (The Dark Project)",
+      "show": true
     }
   ],
   "loot": [
@@ -1028,6 +1032,25 @@
       "category": "Talismans",
       "catItems": [
         {
+          "id": "item_talismanofearth",
+          "name": "Talisman of Earth",
+          "img": [
+            "IMG_TalismanOfEarth"
+          ],
+          "locations": [
+            {
+              "id": "t1_undercover_item_36",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "west cage",
+              "findExact": "ledge",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findNote": true
+            }
+          ]
+        },
+        {
           "id": "item_talismanofair",
           "name": "Talisman of Air",
           "img": [
@@ -1035,7 +1058,7 @@
           ],
           "locations": [
             {
-              "id": "t1_undercover_item_36",
+              "id": "t1_undercover_item_37",
               "findSimple": "find",
               "findArea": 19,
               "findNarrow": "west cage",

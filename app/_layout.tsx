@@ -1,6 +1,8 @@
 import { ThemeProvider, useTheme } from '@react-navigation/native';
 import { Stack } from 'expo-router';
+import { deviceType } from 'expo-device';
 import { Platform, useColorScheme } from 'react-native';
+//import { getDeviceType } from 'react-native-device-info';
 import { useEffect, useState } from 'react';
 import { useFonts } from 'expo-font';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -12,6 +14,13 @@ import { SettingContext } from '@/constants/context';
 export default function RootLayout() {
   // Get the system's default color scheme.
   const scheme = useColorScheme();
+
+  // Get the type of device being used.
+  const device =
+    (deviceType === 1) ? 'phone' :
+    (deviceType === 2) ? 'tablet' :
+    (deviceType === 3) ? 'desktop' :
+    (deviceType === 4) ? 'tv' : 'unknown';
 
   // Load custom fonts here.
   const [fontsLoaded] = useFonts({
@@ -39,6 +48,9 @@ export default function RootLayout() {
   const [getSpoilerSec, setSpoilerSec] = useState('none');
   const [getSpoilerEgg, setSpoilerEgg] = useState('partial');
 
+  // ShowDebug: tracks if debug information is shown.
+  const [getShowDebug, setShowDebug] = useState(false);
+
   // Read settings from device storage.
   const readAllSettings = async () => {
     try {
@@ -50,7 +62,8 @@ export default function RootLayout() {
         `@setting_loot_sort`,
         `@setting_list_loot`, `@setting_list_item`,
         `@setting_list_junk`, `@setting_list_secret`,
-        `@setting_spoiler_sec`, `@setting_spoiler_egg`]
+        `@setting_spoiler_sec`, `@setting_spoiler_egg`,
+        `@setting_debug`]
       );
       // [0] is 'setting_theme'
       if (jsonValues[0][1] !== null) {
@@ -110,6 +123,12 @@ export default function RootLayout() {
       if (jsonValues[10][1] !== null) {
         setSpoilerEgg(jsonValues[10][1]);
       }
+      // [11] is 'setting_debug'
+      if (jsonValues[11][1] === "false") {
+        setShowDebug(false);
+      } else {
+        setShowDebug(true);
+      }
       //alert(`Loaded settings as ${jsonValues}`);
     } catch (e) {
       // Error: Reading the data failed.
@@ -121,7 +140,6 @@ export default function RootLayout() {
   const { colors } = useTheme();
 
   useEffect(() => {
-    setCurrentTheme(scheme);
     // When app renders, check its last saved settings.
     readAllSettings();
 
@@ -130,7 +148,7 @@ export default function RootLayout() {
   return (
     // Wrap app root in providers to utilize context.
     <SettingContext.Provider value={
-      {scheme,
+      {scheme, device,
       getCurrentTheme, setCurrentTheme,
       getDefaultDiffN, setDefaultDiffN,
       getDefaultDiffH, setDefaultDiffH,
@@ -141,7 +159,8 @@ export default function RootLayout() {
       getShowListJunk, setShowListJunk,
       getShowListSec, setShowListSec,
       getSpoilerSec, setSpoilerSec,
-      getSpoilerEgg, setSpoilerEgg}
+      getSpoilerEgg, setSpoilerEgg,
+      getShowDebug, setShowDebug}
     }>
       {/* Wrap app root in 'ThemeProvider' to use light/dark themes. */}
       <ThemeProvider
@@ -153,16 +172,16 @@ export default function RootLayout() {
         //value={scheme === 'dark' ? MyDarkTheme : DefaultTheme}
         //value={DefaultTheme}
       >
-        <Stack>
-          <Stack.Screen
-            name="(drawers)"
-            options={{ headerShown: false }}
-          />
-          <Stack.Screen
-            name="list/[missionName]"
-            options={{headerShown: (Platform.OS === 'web') ? false : true}}
-          />
-        </Stack>
+          <Stack>
+            <Stack.Screen
+              name="(drawers)"
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="list/[missionName]"
+              options={{headerShown: (device !== 'phone') ? false : true}}
+            />
+          </Stack>
       </ThemeProvider>
     </SettingContext.Provider>
   );

@@ -4,11 +4,12 @@ import {
   Text,
   useWindowDimensions
 } from 'react-native';
-import { memo, useEffect, useState } from 'react';
+import { memo, useEffect, useState, useContext } from 'react';
 
 import { FindMeCount } from '@/components/findMeCount';
 
 import { stylesList } from '@/constants/stylesList';
+import { SettingContext } from '@/constants/context';
 
 /* **************** */
 /*   FIND ME AREA   */
@@ -26,6 +27,9 @@ export const FindMeArea = memo(function FindMeArea(props) {
   // Used to add difficulty markers to text field.
   const [getDiffExclude, setDiffExclude] = useState(false);
 
+  // Fetch global setting states from context.
+  const { device } = useContext(SettingContext);
+
   useEffect(() => {
     // Is this item only available here on certain difficulties?
     if (
@@ -41,7 +45,7 @@ export const FindMeArea = memo(function FindMeArea(props) {
   return (
     <Text style={[
       stylesList.locText,
-      {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+      {fontSize: (device !== 'phone') ? 12 : width*0.019,
         color: colors.text}
     ]}>
       {/* Does this item trigger (or contribute to) an objective? */}

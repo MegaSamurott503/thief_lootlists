@@ -4,7 +4,7 @@ import {
   Image, Text,
   useWindowDimensions
 } from 'react-native';
-import { memo } from 'react';
+import { memo, useContext } from 'react';
 
 import { FindMeCount } from '@/components/findMeCount';
 
@@ -13,6 +13,7 @@ import { stylesImg } from '@/constants/stylesImg';
 import {
   iconGold, iconGems, iconGoods, iconSpecial
 } from '@/constants/imgUI';
+import { SettingContext } from '@/constants/context';
 
 // TODO: 'underline line-through' only works on web; see speed potion in t1_lost
 /* **************** */
@@ -27,10 +28,13 @@ export const FindMePrecise = memo(function FindMePrecise(props) {
   // Access theme colors.
   const { colors } = useTheme();
 
-return (
+  // Fetch global setting states from context.
+  const { device } = useContext(SettingContext);
+
+  return (
     <Text style={[
       stylesList.locText,
-      {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
+      {fontSize: (device !== 'phone') ? 12 : width*0.019,
         color: colors.text},
       //props.findSecret && {color: colors.locSecret},
       props.findUnable && stylesList.locNoGet,
@@ -70,7 +74,7 @@ return (
       {props.findExact &&
         <Text style={[
           stylesList.locText,
-          {fontSize: (Platform.OS === 'web') ? 12 : width*0.019},
+          {fontSize: (device !== 'phone') ? 12 : width*0.019},
           props.findBox && !props.findNoGet && stylesList.locBox,
           props.findBox && props.findNoGet && stylesList.locBoxNoGet,
           props.findPick && stylesList.locPick,

@@ -1,0 +1,780 @@
+{
+  "id": "t1_blooper",
+  "title": "Blooper Reel",
+  "screens": [
+    "MIS_t1_blooper_A",
+    "MIS_t1_blooper_B"
+  ],
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "totals": [
+    [0,0,850,0,850],
+    [0,0,850,0,850],
+    [0,0,850,0,850]
+  ],
+  "lootCount": [17,17,17],
+  "lootChanges": [0,0,0],
+  "pocketCount": [2,3,3],
+  "pocketChanges": [0,1,1],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Entrance Hall"},
+    {"key": "3", "value": "Gallery"},
+    {"key": "4", "value": "1F North Hall"},
+    {"key": "5", "value": "Kitchen"},
+    {"key": "6", "value": "Northeast Tower"},
+    {"key": "7", "value": "North Guard Post"},
+    {"key": "8", "value": "South Guard Post"},
+    {"key": "9", "value": "2F East Hall"},
+    {"key": "10", "value": "Dining Room"},
+    {"key": "11", "value": "Bath"},
+    {"key": "12", "value": "Lord Bafford's Bedroom"},
+    {"key": "13", "value": "Library"},
+    {"key": "14", "value": "Throne Room"},
+    {"key": "15", "value": "Southwest Street"},
+    {"key": "16", "value": "Southeast Street"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_blooper_loot_1",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findExact": "card table",
+              "findCount": [17,17,17],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [36,36,36],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_blooper_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [20,20,20],
+              "findCountActual": [12,12,12],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "t1_blooper_item_5",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "blue archway",
+              "findExact": "arrow cache",
+              "findCount": [12,12,12],
+              "findUnable": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [0,8,8],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_blooper_item_7",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,4],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_8",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "bathtub",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_gasarrow",
+          "name": "Gas Arrow",
+          "img": [
+            "IMG_GasArrow_TDP"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_9",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "southeast table",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_10",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "blue archway",
+              "findExact": "arrow cache",
+              "findCount": [4,4,4],
+              "findUnable": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_11",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [9,9,9],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_blooper_item_12",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "findCountActual": [1,1,1],
+              "loadout": "store",
+              "price": 250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_key",
+          "name": "Throne Room Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_13",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "on Bafford sergeant",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_blooper_item_14",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "on Bafford sergeant",
+              "findCountBox": [0,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_blooper_item_15",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "table",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_blooper_item_16",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "anteroom",
+              "findExact": "on Bafford sergeant",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_17",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_18",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_blooper_item_19",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "1F",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_20",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_21",
+              "findSimple": "find",
+              "findArea": 2,
+              "findRecipe": "shot by archer",
+              "findCountRecipe": [-1,-1,-1]
+            },
+            {
+              "id": "t1_blooper_item_22",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "1F",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_23",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "south counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_24",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "south counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_item_25",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "northwest table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_junk_1",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "mess hall",
+              "findExact": "southwest corner",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_blooper_junk_2",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "near south counter",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t1_blooper_junk_3",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storage",
+              "findCount": [6,6,6]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_junk_4",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storage",
+              "findExact": "east shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_junk_5",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_blooper_junk_6",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "serving table",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_junk_7",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "1F",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_blooper_junk_8",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "southwest table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_junk_9",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "serving table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_blooper_junk_10",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "by shrunken swordsman",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_blooper_junk_11",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "serving table",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_junk_12",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "serving table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_blooper_junk_13",
+              "findSimple": "find",
+              "findArea": 4,
+              "findExact": "by shrunken swordsman",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_blooper_junk_14",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "mess hall",
+              "findExact": "SE dining table",
+              "findCount": [8,8,8]
+            },
+            {
+              "id": "t1_blooper_junk_15",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "south counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_blooper_junk_16",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_blooper_junk_17",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "serving table",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "t1_blooper_junk_18",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "southwest table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_junk_19",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storage",
+              "findExact": "west shelf",
+              "findCount": [7,7,7]
+            },
+            {
+              "id": "t1_blooper_junk_20",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "near well house",
+              "findCount": [3,3,3],
+              "findUnable": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_saucepan",
+          "name": "Saucepan",
+          "img": [
+            "IMG_Saucepan"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_junk_21",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "west island",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_Flour",
+            "IMG_Canister_Sugar",
+            "IMG_Canister_Salt"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_junk_22",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "south shelf",
+              "findCount": [8,8,8]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_basketball",
+          "name": "Basketball",
+          "img": [
+            "IMG_Basketball"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_junk_23",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "anteroom",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_ribcage",
+          "name": "Ribcage",
+          "img": [
+            "IMG_Ribcage"
+          ],
+          "locations": [
+            {
+              "id": "t1_blooper_junk_24",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1411 @@
+{
+  "id": "t1_bafford-demo",
+  "title": "Lord Bafford's Manor (Demo)",
+  "screens": [
+    "MIS_t1_bafford-demo_A",
+    "MIS_t1_bafford-demo_B"
+  ],
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [714,150,365,0,1229],
+    [714,150,365,0,1229],
+    [714,150,365,0,1229]
+  ],
+  "lootCount": [22,22,22],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [0,350,700]
+  },
+  "pocketCount": [3,4,4],
+  "pocketChanges": [0,1,1],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Southeast Street"},
+    {"key": "3", "value": "Basement"},
+    {"key": "4", "value": "Servants' Quarters"},
+    {"key": "5", "value": "Kitchen"},
+    {"key": "6", "value": "1F North Hall"},
+    {"key": "7", "value": "Northeast Tower"},
+    {"key": "8", "value": "Northwest Tower"},
+    {"key": "9", "value": "North Waiting Room"},
+    {"key": "10", "value": "Entrance Hall"},
+    {"key": "11", "value": "Gallery"},
+    {"key": "12", "value": "South Waiting Room"},
+    {"key": "13", "value": "Southwest Tower"},
+    {"key": "14", "value": "Southeast Tower"},
+    {"key": "15", "value": "Sitting Room"},
+    {"key": "16", "value": "South Guard Post"},
+    {"key": "17", "value": "North Guard Post"},
+    {"key": "18", "value": "Library"},
+    {"key": "19", "value": "2F East Hall"},
+    {"key": "20", "value": "Lord Bafford's Bedroom"},
+    {"key": "21", "value": "Counting Room"},
+    {"key": "22", "value": "Dining Room"},
+    {"key": "23", "value": "Throne Room"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_loot_1",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "north room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_loot_2",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "1F",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "t1_bafford-demo_loot_3",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "t1_bafford-demo_loot_4",
+              "findSimple": "findE",
+              "findArea": 22,
+              "findExact": "serving table",
+              "findCount": [2,2,2],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_loot_5",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "serving table",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_loot_6",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findExact": "north shelf",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "t1_bafford-demo_loot_7",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "1F",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            },
+            {
+              "id": "t1_bafford-demo_loot_8",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "2F",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_loot_9",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findExact": "serving table",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_loot_10",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "side hall",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_loot_11",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findExact": "northeast table",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_loot_12",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findExact": "north bench",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "Signet Ring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_loot_13",
+              "findSimple": "findH",
+              "findArea": 15,
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_loot_14",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "t1_bafford-demo_loot_15",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "storage",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "t1_bafford-demo_loot_16",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "t1_bafford-demo_loot_17",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "north table",
+              "findCount": [4,4,4],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_loot_18",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "north table",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [36,36,36],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_bafford-demo_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [20,20,20],
+              "loadout": "store",
+              "price": 25
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [20,8,8],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_bafford-demo_item_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,4],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_7",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,4],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [12,12,12],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_10",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "wood hall",
+              "findExact": "footlocker",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_gasmine",
+          "name": "Gas Mine",
+          "img": [
+            "IMG_GasMine"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_11",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 650
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_12",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_bafford-demo_item_13",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "t1_bafford-demo_item_14",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "west storage",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_15",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "findCountActual": [1,1,1],
+              "loadout": "store",
+              "price": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_key",
+          "name": "Well House Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_16",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "on drunk Bafford swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Throne Room Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_17",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "on Bafford sergeant",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_bafford-demo_item_18",
+              "findSimple": "find",
+              "findArea": 19,
+              "findExact": "on Bafford sergeant",
+              "findCountBox": [0,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_bafford-demo_item_19",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "south table",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "t1_bafford-demo_item_20",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "north wall",
+              "findExact": "above footlocker",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bafford-demo_item_21",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "anteroom",
+              "findExact": "on Bafford sergeant",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_22",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_23",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bafford-demo_item_24",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "1F",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bafford-demo_item_25",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "1F",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bafford-demo_item_26",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_27",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bafford-demo_item_28",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "Apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_29",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "wood hall",
+              "findExact": "by footlocker",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bafford-demo_item_30",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "east island",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t1_bafford-demo_item_31",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "1F",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_32",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "east island",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bafford-demo_item_33",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "south counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bafford-demo_item_34",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "1F",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_35",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "south counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_36",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "northwest table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_silverscepter",
+          "name": "Bafford's Scepter",
+          "img": [
+            "IMG_SilverScepter"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_item_37",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "northwest corner",
+              "findExact": "rack",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_junk_1",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "breached room",
+              "findExact": "behind barrels",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_bafford-demo_junk_2",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "west storage",
+              "findCount": [10,10,10]
+            },
+            {
+              "id": "t1_bafford-demo_junk_3",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "stairwell",
+              "findExact": "under stairs",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_bafford-demo_junk_4",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "near south counter",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "t1_bafford-demo_junk_5",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "mess hall",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_bafford-demo_junk_6",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storage",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "t1_bafford-demo_junk_7",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "storage",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "Old Crate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_junk_8",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "east storage",
+              "findExact": "southeast area",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "Wooden Bowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_junk_9",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "east storage",
+              "findExact": "southeast shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_bafford-demo_junk_10",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storage",
+              "findExact": "east shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalbowl",
+          "name": "Metal Bowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_junk_11",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "north shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_bafford-demo_junk_12",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bafford-demo_junk_13",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "serving table",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_porcelainplate",
+          "name": "Porcelain Plate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_junk_14",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "1F",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bafford-demo_junk_15",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "southwest table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_junk_16",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "east storage",
+              "findExact": "southeast shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_bafford-demo_junk_17",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "by drunk Bafford swordsman",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bafford-demo_junk_18",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "serving table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_bafford-demo_junk_19",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "serving table",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_junk_20",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "south counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_bafford-demo_junk_21",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "by drunk Bafford swordsman",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_bafford-demo_junk_22",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "serving table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_bafford-demo_junk_23",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bafford-demo_junk_24",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "southwest table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bafford-demo_junk_25",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "nightstand",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bafford-demo_junk_26",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "serving table",
+              "findCount": [6,6,6]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_junk_27",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "near well house",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_bafford-demo_junk_28",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "east storage",
+              "findExact": "southeast shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "t1_bafford-demo_junk_29",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "wood hall",
+              "findExact": "by footlocker",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bafford-demo_junk_30",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storage",
+              "findExact": "west shelf",
+              "findCount": [7,7,7]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_saucepan",
+          "name": "Saucepan",
+          "img": [
+            "IMG_Saucepan"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_junk_31",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "west island",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_Flour",
+            "IMG_Canister_Sugar",
+            "IMG_Canister_Salt"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_junk_32",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "east storage",
+              "findExact": "southwest shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "t1_bafford-demo_junk_33",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "south shelf",
+              "findCount": [8,8,8]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_vase",
+          "name": "Vase",
+          "img": [
+            "IMG_Vase"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_junk_34",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "north room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "t1_bafford-demo_junk_35",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bafford-demo_junk_36",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_bafford-demo_junk_37",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "tables",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_bafford-demo_junk_38",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "tables",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "Spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "t1_bafford-demo_junk_39",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "east storage",
+              "findExact": "northwest shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

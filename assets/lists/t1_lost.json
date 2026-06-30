@@ -47,6 +47,20 @@
       "icon": "[$]",
       "desc": "treated as junk items if you don't buy the papyrus at loadout",
       "show": true
+    },
+    {
+      "id": "note_1",
+      "delimiter": "  ",
+      "icon": "[DP]",
+      "desc": "only available in v1.33 (The Dark Project)",
+      "show": true
+    },
+    {
+      "id": "note_2",
+      "delimiter": "  ",
+      "icon": "[G]",
+      "desc": "only available in v1.37 (Gold)",
+      "show": true
     }
   ],
   "loot": [
@@ -904,7 +918,8 @@
               "findArea": 10,
               "findNarrow": "ceiling trap",
               "findExact": "by dead mage",
-              "findCount": [3,3,3]
+              "findCount": [3,3,3],
+              "findNote": 2
             },
             {
               "id": "t1_lost_item_18",
@@ -1424,6 +1439,25 @@
       "category": "Talismans",
       "catItems": [
         {
+          "id": "item_talismanofwater",
+          "name": "Talisman of Water",
+          "img": [
+            "IMG_TalismanOfWater"
+          ],
+          "locations": [
+            {
+              "id": "t1_lost_item_59",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "flooded cavity",
+              "findExact": "south end",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findNote": 1
+            }
+          ]
+        },
+        {
           "id": "item_talismanoffire",
           "name": "Talisman of Fire",
           "img": [
@@ -1431,7 +1465,7 @@
           ],
           "locations": [
             {
-              "id": "t1_lost_item_59",
+              "id": "t1_lost_item_60",
               "findSimple": "find",
               "findArea": 16,
               "findNarrow": "4F",

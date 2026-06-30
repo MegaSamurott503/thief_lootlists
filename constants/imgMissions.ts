@@ -48,9 +48,15 @@ export const myScreens = {
   // T1: Into the Maw of Chaos
   'MIS_t1_maw_A': require('@/assets/images/screens/t1_maw_A.png'),
   'MIS_t1_maw_B': require('@/assets/images/screens/t1_maw_B.png'),
+  // T1: Lord Bafford's Manor (Demo)
+  'MIS_t1_bafford-demo_A': require('@/assets/images/screens/t1_bafford-demo_A.png'),
+  'MIS_t1_bafford-demo_B': require('@/assets/images/screens/t1_bafford-demo_B.png'),
+  // T1: Thieves' Guild (Demo)
+  'MIS_t1_guild-demo_A': require('@/assets/images/screens/t1_guild-demo_A.png'),
+  'MIS_t1_guild-demo_B': require('@/assets/images/screens/t1_guild-demo_B.png'),
   // T1: Blooper Reel
-  //'MIS_t1_blooper_A': require('@/assets/images/screens/t1_blooper_A.png'),
-  //'MIS_t1_blooper_B': require('@/assets/images/screens/t1_blooper_B.png'),
+  'MIS_t1_blooper_A': require('@/assets/images/screens/t1_blooper_A.png'),
+  'MIS_t1_blooper_B': require('@/assets/images/screens/t1_blooper_B.png'),
 
   // T2: Running Interference
   'MIS_t2_interference_A': require('@/assets/images/screens/t2_interference_A.png'),
@@ -98,8 +104,8 @@ export const myScreens = {
   'MIS_t2_soulforge_A': require('@/assets/images/screens/t2_soulforge_A.png'),
   'MIS_t2_soulforge_B': require('@/assets/images/screens/t2_soulforge_B.png'),
   // T2: The Unwelcome Guest (Demo)
-  //'MIS_t2_guest_A': require('@/assets/images/screens/t2_guest_A.png'),
-  //'MIS_t2_guest_B': require('@/assets/images/screens/t2_guest_B.png'),
+  'MIS_t2_guest_A': require('@/assets/images/screens/t2_guest_A.png'),
+  'MIS_t2_guest_B': require('@/assets/images/screens/t2_guest_B.png'),
 
   // FM: The Art of Thievery
   'MIS_fm_artthievery_A': require('@/assets/images/screens/fm_artthievery_A.png'),
@@ -131,12 +137,18 @@ export const myScreens = {
   // FM: Cult of the Resurrection
   'MIS_fm_spirit-resurrection_A': require('@/assets/images/screens/fm_spirit-resurrection_A.png'),
   'MIS_fm_spirit-resurrection_B': require('@/assets/images/screens/fm_spirit-resurrection_B.png'),
+  // FM: Curse of the Ancients
+  'MIS_fm_curseancients_A': require('@/assets/images/screens/fm_curseancients_A.png'),
+  'MIS_fm_curseancients_B': require('@/assets/images/screens/fm_curseancients_B.png'),
   // FM: Durant
   'MIS_fm_durant_A': require('@/assets/images/screens/fm_durant_A.png'),
   'MIS_fm_durant_B': require('@/assets/images/screens/fm_durant_B.png'),
   // FM: Escape!
   'MIS_fm_ashton-escape_A': require('@/assets/images/screens/fm_ashton-escape_A.png'),
   'MIS_fm_ashton-escape_B': require('@/assets/images/screens/fm_ashton-escape_B.png'),
+  // FM: Equilirium
+  'MIS_fm_equilibrium_A': require('@/assets/images/screens/fm_equilibrium_A.png'),
+  'MIS_fm_equilibrium_B': require('@/assets/images/screens/fm_equilibrium_B.png'),
   // FM: Hidden Agenda
   'MIS_fm_agenda_A': require('@/assets/images/screens/fm_agenda_A.png'),
   'MIS_fm_agenda_B': require('@/assets/images/screens/fm_agenda_B.png'),
@@ -146,6 +158,9 @@ export const myScreens = {
   // FM: The Inverted Manse
   'MIS_fm_spirit-manse_A': require('@/assets/images/screens/fm_spirit-manse_A.png'),
   'MIS_fm_spirit-manse_B': require('@/assets/images/screens/fm_spirit-manse_B.png'),
+  // FM: Lord James' Retreat
+  'MIS_fm_retreat_A': require('@/assets/images/screens/fm_retreat_A.png'),
+  'MIS_fm_retreat_B': require('@/assets/images/screens/fm_retreat_B.png'),
   // FM: Mysterious Invitation
   'MIS_fm_forces-invitation_A': require('@/assets/images/screens/fm_forces-invitation_A.png'),
   'MIS_fm_forces-invitation_B': require('@/assets/images/screens/fm_forces-invitation_B.png'),
@@ -155,12 +170,18 @@ export const myScreens = {
   // FM: A Night's Stroll
   'MIS_fm_ashton-stroll_A': require('@/assets/images/screens/fm_ashton-stroll_A.png'),
   'MIS_fm_ashton-stroll_B': require('@/assets/images/screens/fm_ashton-stroll_B.png'),
+  // FM: Ominous Bequest
+  'MIS_fm_xedormicost-bequest_A': require('@/assets/images/screens/fm_xedormicost-bequest_A.png'),
+  'MIS_fm_xedormicost-bequest_B': require('@/assets/images/screens/fm_xedormicost-bequest_B.png'),
   // FM: Revenge
   'MIS_fm_ashton-revenge_A': require('@/assets/images/screens/fm_ashton-revenge_A.png'),
   'MIS_fm_ashton-revenge_B': require('@/assets/images/screens/fm_ashton-revenge_B.png'),
   // FM: Rose Cottage
   'MIS_fm_cottage_A': require('@/assets/images/screens/fm_cottage_A.png'),
   'MIS_fm_cottage_B': require('@/assets/images/screens/fm_cottage_B.png'),
+  // FM: Rowena's Curse
+  'MIS_fm_rowena_A': require('@/assets/images/screens/fm_rowena_A.png'),
+  'MIS_fm_rowena_B': require('@/assets/images/screens/fm_rowena_B.png'),
   // FM: The Seventh Crystal - Act 2
   'MIS_fm_seventh-2_A': require('@/assets/images/screens/fm_seventh-2_A.png'),
   'MIS_fm_seventh-2_B': require('@/assets/images/screens/fm_seventh-2_B.png'),
@@ -176,6 +197,9 @@ export const myScreens = {
   // FM: Tales from the Cleft: Vandal
   'MIS_fm_cleft-vandal_A': require('@/assets/images/screens/fm_cleft-vandal_A.png'),
   'MIS_fm_cleft-vandal_B': require('@/assets/images/screens/fm_cleft-vandal_B.png'),
+  // FM: Temple of the Tides
+  'MIS_fm_templetides_A': require('@/assets/images/screens/fm_templetides_A.png'),
+  'MIS_fm_templetides_B': require('@/assets/images/screens/fm_templetides_B.png'),
   // FM: A Theft in High Towne
   'MIS_fm_thefthightowne_A': require('@/assets/images/screens/fm_thefthightowne_A.png'),
   'MIS_fm_thefthightowne_B': require('@/assets/images/screens/fm_thefthightowne_B.png'),

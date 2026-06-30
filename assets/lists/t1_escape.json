@@ -47,7 +47,11 @@
   ],
   "notes": [
     {
-      "id": "null"
+      "id": "note_0",
+      "delimiter": "  ",
+      "icon": "[$]",
+      "desc": "value of 275 gold in v1.33 (The Dark Project)",
+      "show": true
     }
   ],
   "loot": [
@@ -344,6 +348,7 @@
               "findArea": 1,
               "findExact": "behind altar",
               "findCount": [1,0,0],
+              "findNote": 0,
               "orderNum": 0,
               "orderImg": [
                 "IMG_Purse"
@@ -355,6 +360,7 @@
               "findArea": 10,
               "findExact": "by ritual star",
               "findCount": [0,1,0],
+              "findNote": 0,
               "orderNum": 11,
               "orderImg": [
                 "IMG_Purse"
@@ -367,6 +373,7 @@
               "findNarrow": "1F",
               "findExact": "tile floor",
               "findCount": [0,0,1],
+              "findNote": 0,
               "orderNum": 19,
               "orderImg": [
                 "IMG_Purse"

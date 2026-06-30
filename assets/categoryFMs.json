@@ -355,7 +355,7 @@
         "npc_monsters"
       ],
       "characters": [
-        ""
+        "char_gamall"
       ],
       "items": [
         "item_holysymbol",
@@ -443,12 +443,51 @@
         "npc_undead"
       ],
       "characters": [
-        ""
+        "char_constantine"
       ],
       "items": [
         "item_eye",
         "item_sapphirevase",
         "item_heartsoul"
+      ],
+      "imgAB": "B"
+    },
+    {
+      "id": "fm_curseancients",
+      "name": "Curse of the Ancients",
+      "game": "game_t1",
+      "year": "y2000",
+      "authors": [
+        "auth_kozmala"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "genres": [
+        "genre_salvage"
+      ],
+      "locations": [
+        "loc_streets",
+        "loc_tavern",
+        "loc_hotel",
+        "loc_museum",
+        "loc_church",
+        "loc_cemetery",
+        "loc_cave",
+        "loc_catacombs"
+      ],
+      "enemies": [
+        "npc_ghosts",
+        "npc_zombies",
+        "npc_haunts"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_torc",
+        "item_goldbone",
+        "item_talisman"
       ],
       "imgAB": "B"
     },
@@ -549,6 +588,33 @@
         "item_magemedal",
         "item_scepter",
         "item_poker"
+      ],
+      "imgAB": "A"
+    },
+    {
+      "id": "fm_equilibrium",
+      "name": "Equilibrium",
+      "game": "game_t2",
+      "year": "y2000",
+      "authors": [
+        "auth_silentsleep"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "genres": [
+        "genre_investigate",
+        "genre_escape"
+      ],
+      "locations": [
+        "loc_library"
+      ],
+      "enemies": [
+        "npc_keepers"
+      ],
+      "items": [
+        "item_rosary",
+        "item_talisman"
       ],
       "imgAB": "A"
     },
@@ -670,6 +736,45 @@
         "item_torc"
       ],
       "imgAB": "B"
+    },
+    {
+      "id": "fm_retreat",
+      "name": "Lord James' Retreat",
+      "game": "game_t2",
+      "year": "y2003",
+      "authors": [
+        "auth_john9818a"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "genres": [
+        "genre_heist"
+      ],
+      "locations": [
+        "loc_mountain",
+        "loc_cave",
+        "loc_sewers",
+        "loc_mansion"
+      ],
+      "enemies": [
+        "npc_guards",
+        "npc_beasts",
+        "npc_servants",
+        "npc_nobles",
+        "npc_watch"
+      ],
+      "characters": [
+        "char_benny"
+      ],
+      "items": [
+        "item_dice",
+        "item_premask",
+        "item_goldbone",
+        "item_poker",
+        "item_torc"
+      ],
+      "imgAB": "A"
     },
     {
       "id": "fm_forces-invitation",
@@ -820,6 +925,57 @@
       "imgAB": "B"
     },
     {
+      "id": "fm_xedormicost-bequest",
+      "name": "Ominous Bequest",
+      "game": "game_t2",
+      "year": "y2003",
+      "authors": [
+        "auth_eshaktaar"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_triad",
+      "genres": [
+        "genre_burglar",
+        "genre_heist",
+        "genre_investigate",
+        "genre_escape",
+        "genre_sabotage"
+      ],
+      "locations": [
+        "loc_mansion",
+        "loc_church",
+        "loc_catacombs",
+        "loc_sewers",
+        "loc_ancient",
+        "loc_cave"
+      ],
+      "enemies": [
+        "npc_guards",
+        "npc_servants",
+        "npc_hammerites",
+        "npc_nobles",
+        "npc_ghosts",
+        "npc_haunts",
+        "npc_spiders",
+        "npc_burricks",
+        "npc_craymen",
+        "npc_zombies",
+        "npc_undead"
+      ],
+      "characters": [
+        "char_benny"
+      ],
+      "items": [
+        "item_scepter",
+        "item_quintus",
+        "item_goldbone",
+        "item_talisman"
+      ],
+      "imgAB": "A"
+    },
+    {
       "id": "fm_ashton-revenge",
       "name": "Revenge",
       "game": "game_t2",
@@ -894,6 +1050,51 @@
       ],
       "items": [
         ""
+      ],
+      "imgAB": "A"
+    },
+    {
+      "id": "fm_rowena",
+      "name": "Rowena's Curse",
+      "game": "game_t2",
+      "year": "y2003",
+      "authors": [
+        "auth_ladyrowena"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "genres": [
+        "genre_mystery",
+        "genre_rescue"
+      ],
+      "locations": [
+        "loc_mansion",
+        "loc_cave",
+        "loc_ancient"
+      ],
+      "enemies": [
+        "npc_watch",
+        "npc_spiders",
+        "npc_servants",
+        "npc_ghosts",
+        "npc_nobles",
+        "npc_guards",
+        "npc_beasts",
+        "npc_elementals",
+        "npc_monsters",
+        "npc_zombies",
+        "npc_undead"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "item_rosary",
+        "item_torc",
+        "item_goldbone",
+        "item_keepermedal",
+        "item_quintus"
       ],
       "imgAB": "A"
     },
@@ -1105,6 +1306,30 @@
       ],
       "imgAB": "A",
       "boxSize": "1"
+    },
+    {
+      "id": "fm_templetides",
+      "name": "Temple of the Tides",
+      "game": "game_t2",
+      "year": "y2006",
+      "authors": [
+        "auth_namelessvoice"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "contest": "con_water",
+      "genres": [
+        "genre_salvage",
+        "genre_puzzle"
+      ],
+      "locations": [
+        "loc_ancient"
+      ],
+      "enemies": [
+        "npc_elementals"
+      ],
+      "imgAB": "A"
     },
     {
       "id": "fm_thefthightowne",

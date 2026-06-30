@@ -24,7 +24,7 @@ export default function AboutScreen() {
   const { colors } = useTheme();
 
   // Fetch global setting states from context.
-  const {scheme,
+  const {scheme, device,
     getCurrentTheme, setCurrentTheme} =
     useContext(SettingContext);
 
@@ -34,32 +34,59 @@ export default function AboutScreen() {
         contentContainerStyle={{
           alignItems: 'center',
         }}>
-        <Text style={[styles.creditText, {color: colors.text}]}>
+        <Text style={[
+          styles.creditText(device), {color: colors.text}
+        ]}>
           {(Platform.OS === 'web') ? `Site` : `App`}
           {` created by`}
         </Text>
         <Text style={[
-          styles.creditText, styles.creditName, {color: colors.text}
+          styles.creditText(device), styles.creditName,
+          {color: colors.text}
         ]}>
           {`Kevin Kolpack (Grandmauden)`}
         </Text>
 
-        <View style={[styles.credit, styles.creditCenter]}>
-          <Text style={[styles.creditText, {color: colors.text}]}>
+        <View style={[
+          styles.credit(device),
+          styles.creditCenter
+        ]}>
+          <Text style={[
+            styles.creditText(device), {color: colors.text}
+          ]}>
             {`This `}
             {(Platform.OS === 'web') ? `site` : `app`}
             {` is not affiliated with and is not supported by`}
           </Text>
-          <Text style={[styles.creditText, {color: colors.text}]}>
-            {`Looking Glass Studios, Ion Storm - Austin, Eidos Montréal,`}
+          <Text style={[
+            styles.creditText(device), {color: colors.text}
+          ]}>
+            {`Looking Glass Studios, Ion Storm - Austin, Nightdive Studios,`}
           </Text>
-          <Text style={[styles.creditText, {color: colors.text}]}>
-            {`Eidos Interactive, Square Enix, or Embracer Group.`}
+          <Text style={[
+            styles.creditText(device), {color: colors.text}
+          ]}>
+            {`Eidos Montréal, Maze Theory,`}
+          </Text>
+          <Text style={[
+            styles.creditText(device), {color: colors.text}
+          ]}>
+            {`Eidos Interactive, Square Enix, Vertigo Games,`}
+          </Text>
+          <Text style={[
+            styles.creditText(device), {color: colors.text}
+          ]}>
+            {`or Embracer Group.`}
           </Text>
         </View>
 
-        <View style={[styles.credit, styles.creditCenter]}>
-          <Text style={[styles.creditText, {color: colors.text}]}>
+        <View style={[
+          styles.credit(device),
+          styles.creditCenter
+        ]}>
+          <Text style={[
+            styles.creditText(device), {color: colors.text}
+          ]}>
             {`This `}
             {(Platform.OS === 'web') ? `site` : `app`}
             {` was not created using generative AI.`}
@@ -68,7 +95,7 @@ export default function AboutScreen() {
 
         {/* API section */}
         <SectionHeader headerName="APIs Used"/>
-        <View style={styles.credit}>
+        <View style={styles.credit(device)}>
           {/* Map out each entry in API array. */}
           {myCredits.credits.api.map((apiKey, apiIndex) => (
             <View
@@ -76,12 +103,15 @@ export default function AboutScreen() {
               style={styles.creditCenter}
             >
               <Text style={[
-                styles.creditText, styles.creditName, {color: colors.text}
+                styles.creditText(device), styles.creditName,
+                {color: colors.text}
               ]}>
                 {`${apiKey.name}:`}
               </Text>
               <Text
-                style={[styles.url, {color: colors.url}]}
+                style={[
+                  styles.url(device), {color: colors.url}
+                ]}
                 onPress={() => Linking.openURL(apiKey.link)}
               >
                 {`${apiKey.link}`}
@@ -92,11 +122,16 @@ export default function AboutScreen() {
 
         {/* Special Thanks section */}
         <SectionHeader headerName="Special Thanks"/>
-        <View style={[styles.credit, styles.creditCenter]}>
+        <View style={[
+          styles.credit(device),
+          styles.creditCenter
+        ]}>
           {/* Map out each entry in special thanks array. */}
           {myCredits.credits.thanks.map((thankKey, thankIndex) => (
             <View key={`thank_${thankIndex}`}>
-              <Text style={[styles.creditText, {color: colors.text}]}>
+              <Text style={[
+                styles.creditText(device), {color: colors.text}
+              ]}>
                 <Text style={styles.creditName}>
                   {`${thankKey.name}: `}
                 </Text>
@@ -112,20 +147,27 @@ export default function AboutScreen() {
           {/* Map out each entry in changelog array. */}
           {myCredits.credits.changelog.map((logKey, logIndex) => (
             <View key={`log_${logIndex}`}>
-              <View style={[styles.changelog, styles.creditCenter]}>
+              <View style={[
+                styles.changelog(device), styles.creditCenter
+              ]}>
                 <Text style={[
-                  styles.creditText, styles.creditName, {color: colors.text}
+                  styles.creditText(device), styles.creditName,
+                  {color: colors.text}
                 ]}>
                   {`${logKey.version}`}
                 </Text>
-                <Text style={[styles.creditText, {color: colors.text}]}>
+                <Text style={[
+                  styles.creditText(device), {color: colors.text}
+                ]}>
                   {`${logKey.date}`}
                 </Text>
               </View>
               <View>
                 {logKey.changes.map((changeKey, changeIndex) => (
                   <View key={`change_${changeIndex}`}>
-                    <Text style={[styles.creditText, {color: colors.text}]}>
+                    <Text style={[
+                      styles.creditText(device), {color: colors.text}
+                    ]}>
                       {`• ${changeKey}`}
                     </Text>
                   </View>
@@ -133,7 +175,7 @@ export default function AboutScreen() {
               </View>
               <View style={styles.creditCenter}>
                 <Text style={[styles.changeLine, {color: colors.text}]}>
-                  {(Platform.OS === 'web')
+                  {(device !== 'phone')
                     ? '                                                  '
                     : '                                        '
                   }
@@ -149,28 +191,28 @@ export default function AboutScreen() {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  credit: {
-    marginTop: (Platform.OS === 'web') ? 12 : 10,
-  },
+  credit: device => ({
+    marginTop: (device !== 'phone') ? 12 : 10,
+  }),
   creditCenter: {
     alignItems: 'center',
   },
-  creditText: {
-    fontSize: (Platform.OS === 'web') ? 14 : 12,
-  },
+  creditText: device => ({
+    fontSize: (device !== 'phone') ? 14 : 12,
+  }),
   creditName: {
     fontWeight: 'bold',
   },
-  changelog: {
-    marginTop: (Platform.OS === 'web') ? 12 : 10,
-    marginBottom: (Platform.OS === 'web') ? 8 : 6,
-  },
+  changelog: device => ({
+    marginTop: (device !== 'phone') ? 12 : 10,
+    marginBottom: (device !== 'phone') ? 8 : 6,
+  }),
   changeLine: {
     textDecorationLine: 'underline',
   },
-  url: {
-    fontSize: (Platform.OS === 'web') ? 14 : 11,
+  url: device => ({
+    fontSize: (device !== 'phone') ? 14 : 11,
     textDecorationLine: 'underline',
     marginBottom: 4,
-  },
+  }),
 });

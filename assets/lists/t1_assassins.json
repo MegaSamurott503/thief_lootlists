@@ -49,7 +49,9 @@
   ],
   "notes": [
     {
-      "id": "null"
+      "id": "note_0",
+      "desc": "The demo version of this mission has all the same items.",
+      "show": true
     }
   ],
   "loot": [
@@ -992,7 +994,7 @@
               "id": "t1_assassins_item_25",
               "findSimple": "find",
               "findArea": 10,
-              "findExact": "blue chest",
+              "findExact": "footlocker",
               "findCountBox": [1,1,1],
               "findBox": true
             },
@@ -1222,7 +1224,7 @@
               "findSimple": "find",
               "findArea": 19,
               "findCount": [1,1,1],
-              "findRecipe": "x1 per alerted servant with tray"
+              "findRecipe": "x1 per alerted/attacked servant with tray"
             }
           ]
         },
@@ -1559,7 +1561,7 @@
               "findSimple": "find",
               "findArea": 19,
               "findCount": [1,1,1],
-              "findRecipe": "x1 per alerted servant with tray"
+              "findRecipe": "x1 per alerted/attacked servant with tray"
             }
           ]
         }
@@ -1610,7 +1612,7 @@
               "findSimple": "find",
               "findArea": 19,
               "findCount": [1,1,1],
-              "findRecipe": "x1 per alerted servant with tray"
+              "findRecipe": "x1 per alerted/attacked servant with tray"
             },
             {
               "id": "t1_assassins_junk_20",

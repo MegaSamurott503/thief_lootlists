@@ -2184,7 +2184,7 @@
               "findSimple": "find",
               "findArea": 2,
               "findNarrow": "kitchen",
-              "findExact": "south counter",
+              "findExact": "southeast counter",
               "findCount": [1,1,1]
             },
             {

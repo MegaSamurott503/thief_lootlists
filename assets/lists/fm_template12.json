@@ -3,7 +3,7 @@
   "title": "Template",
   "subtitle": "(T1 + T2)",
   "author": [
-    "Looking Glass Studios"
+    "auth_Looking_Glass_Studios"
   ],
   "screens": [
     "MIS_fm_lampfire_A",
@@ -17,6 +17,8 @@
   "diffNames": ["Normal","Hard","Expert"],
   "diffChanges": false,
   "markObj": false,
+  "lootCats":
+    ["gold","gems","goods"],
   "totals": [
     [1500,300,200,0,2000],
     [1500,300,200,0,2000],
@@ -461,7 +463,8 @@
         "IMG_DecorativeMask_Noh",
         "IMG_DecorativeMask_Inuit",
         "IMG_DecorativeMask_White",
-        "IMG_DecorativeMask_Alt1"
+        "IMG_DecorativeMask_Alt1",
+        "IMG_DecorativeMask_Alt2"
       ],
       "values": [
         {
@@ -490,9 +493,11 @@
       "img": [
         "IMG_DecorativePlate_Pink",
         "IMG_DecorativePlate_Red",
+        "IMG_DecorativePlate_Red_EP",
         "IMG_DecorativePlate_Orange",
         "IMG_DecorativePlate_Gold",
         "IMG_DecorativePlate_Aqua",
+        "IMG_DecorativePlate_Aqua_EP",
         "IMG_DecorativePlate_Blue"
       ],
       "values": [
@@ -1069,7 +1074,8 @@
       "name": "Gold Goblet",
       "img": [
         "IMG_GoldGoblet",
-        "IMG_GoldGoblet_NV"
+        "IMG_GoldGoblet_NV",
+        "IMG_GoldGoblet_EP"
       ],
       "values": [
         {
@@ -1180,7 +1186,8 @@
       "name": "Gold Plate",
       "img": [
         "IMG_GoldPlate",
-        "IMG_GoldPlate_NV"
+        "IMG_GoldPlate_NV",
+        "IMG_GoldPlate_EP"
       ],
       "values": [
         {
@@ -1263,7 +1270,8 @@
       "name": "Gold Vase",
       "img": [
         "IMG_GoldVase",
-        "IMG_GoldVase_NV"
+        "IMG_GoldVase_NV",
+        "IMG_GoldVase_EP"
       ],
       "values": [
         {
@@ -1290,7 +1298,11 @@
       "id": "loot_goldenbone",
       "name": "Golden Bone",
       "img": [
-        "IMG_GoldenBone_Skull"
+        "IMG_GoldenBone_Skull",
+        "IMG_GoldenBone_RightArm",
+        "IMG_GoldenBone_LeftArm",
+        "IMG_GoldenBone_RightLeg",
+        "IMG_GoldenBone_LeftLeg"
       ],
       "values": [
         {
@@ -1427,7 +1439,8 @@
       "name": "Indigo Vase",
       "img": [
         "IMG_IndigoVase",
-        "IMG_IndigoVase_NV"
+        "IMG_IndigoVase_NV",
+        "IMG_IndigoVase_EP"
       ],
       "values": [
         {
@@ -2039,10 +2052,38 @@
       ]
     },
     {
+      "id": "loot_polishedmetalsymbol",
+      "name": "Polished Metal Symbol",
+      "img": [
+        "IMG_PolishedMetalSymbol"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_32",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_PolishedMetalSymbol"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "loot_precursorcanopicjar",
       "name": "Precursor Canopic Jar",
       "img": [
-        "IMG_PrecursorCanopicJar"
+        "IMG_PrecursorCanopicJar",
+        "IMG_PrecursorCanopicJar_EP"
       ],
       "values": [
         {
@@ -2069,7 +2110,8 @@
       "id": "loot_precursorgem",
       "name": "Precursor Gem",
       "img": [
-        "IMG_PrecursorGem"
+        "IMG_PrecursorGem",
+        "IMG_PrecursorGem_EP"
       ],
       "values": [
         {
@@ -2097,16 +2139,22 @@
       "name": "Precursor Jar",
       "img": [
         "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Small_EP",
+        "IMG_PrecursorJar_Small_EP_Alt1",
         "IMG_PrecursorJar_Small_Alt1",
         "IMG_PrecursorJar_Small_Alt3",
         "IMG_PrecursorJar_Small_Alt4",
         "IMG_PrecursorJar_Small_Alt5",
         "IMG_PrecursorJar_Tall",
+        "IMG_PrecursorJar_Tall_EP",
+        "IMG_PrecursorJar_Tall_EP_Alt1",
         "IMG_PrecursorJar_Tall_Alt1",
         "IMG_PrecursorJar_Tall_Alt3",
         "IMG_PrecursorJar_Tall_Alt4",
         "IMG_PrecursorJar_Tall_Alt5",
         "IMG_PrecursorJar_Pointed",
+        "IMG_PrecursorJar_Pointed_EP",
+        "IMG_PrecursorJar_Pointed_EP_Alt1",
         "IMG_PrecursorJar_Pointed_Alt1"
       ],
       "values": [
@@ -2138,6 +2186,7 @@
         "IMG_PrecursorMask_Fading",
         "IMG_PrecursorMask_Bare",
         "IMG_PrecursorMask_Brass",
+        "IMG_PrecursorMask_Brass_Alt1",
         "IMG_PrecursorMask_Wood",
         "IMG_PrecursorMask_Sun"
       ],
@@ -2166,7 +2215,9 @@
       "id": "loot_precursortapestry",
       "name": "Precursor Tapestry",
       "img": [
-        "IMG_PrecursorTapestry"
+        "IMG_PrecursorTapestry",
+        "IMG_PrecursorTapestry_EP",
+        "IMG_PrecursorTapestry_Alt1"
       ],
       "values": [
         {
@@ -2194,7 +2245,8 @@
       "name": "Purple Goblet",
       "img": [
         "IMG_PurpleGoblet",
-        "IMG_PurpleGoblet_NV"
+        "IMG_PurpleGoblet_NV",
+        "IMG_PurpleGoblet_EP"
       ],
       "values": [
         {
@@ -2250,7 +2302,8 @@
       "name": "Purple Vase",
       "img": [
         "IMG_PurpleVase",
-        "IMG_PurpleVase_NV"
+        "IMG_PurpleVase_NV",
+        "IMG_PurpleVase_EP"
       ],
       "values": [
         {
@@ -2332,7 +2385,9 @@
       "id": "loot_rarewine",
       "name": "Rare Wine",
       "img": [
-        "IMG_RareWine"
+        "IMG_RareWine",
+        "IMG_RareWine_Alt1",
+        "IMG_RareWine_Alt2"
       ],
       "values": [
         {
@@ -2376,6 +2431,33 @@
               "orderNum": 000,
               "orderImg": [
                 "IMG_ReadingGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_rosarybeads",
+      "name": "Rosary Beads",
+      "img": [
+        "IMG_RosaryBeads"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_41",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_RosaryBeads"
               ]
             }
           ]
@@ -2987,6 +3069,33 @@
       ]
     },
     {
+      "id": "loot_violetvase",
+      "name": "Violet Vase",
+      "img": [
+        "IMG_VioletVase"
+      ],
+      "values": [
+        {
+          "id": "25goods",
+          "value": [0,0,25,0],
+          "locations": [
+            {
+              "id": "TEMP_loot_54",
+              "findSimple": "findE",
+              "findArea": "22",
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "orderNum": 000,
+              "orderImg": [
+                "IMG_VioletVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "loot_vodkabottle",
       "name": "Vodka Bottle",
       "img": [
@@ -3167,6 +3276,24 @@
           ]
         },
         {
+          "id": "item_xedormicost",
+          "name": "Xedormicost",
+          "img": [
+            "IMG_Xedormicost"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
           "id": "item_jeweledsword",
           "name": "Jeweled Sword",
           "img": [
@@ -3189,6 +3316,24 @@
           "name": "Saint Edgar's Sword",
           "img": [
             "IMG_SaintEdgarsSword"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_2",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_holysword",
+          "name": "Holy Sword",
+          "img": [
+            "IMG_OrnateKnife"
           ],
           "locations": [
             {
@@ -3243,6 +3388,24 @@
           "name": "Blackjack",
           "img": [
             "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_skillet",
+          "name": "Skillet",
+          "img": [
+            "IMG_Skillet_Alt1"
           ],
           "locations": [
             {
@@ -4406,6 +4569,7 @@
           "id": "item_magekey",
           "name": "Mage Key",
           "img": [
+            "IMG_MageKey_Water",
             "IMG_MageKey_Earth",
             "IMG_MageKey_Air",
             "IMG_MageKey_Fire",
@@ -4509,6 +4673,24 @@
           "img": [
             "IMG_Lantern_Alt1",
             "IMG_Lantern_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_36",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_torch",
+          "name": "Torch",
+          "img": [
+            "IMG_Torch"
           ],
           "locations": [
             {
@@ -4807,6 +4989,24 @@
           "name": "Matchbox",
           "img": [
             "IMG_Matchbox"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_39",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_crookedpole",
+          "name": "Crooked Pole",
+          "img": [
+            "IMG_CrookedPole"
           ],
           "locations": [
             {
@@ -5242,6 +5442,26 @@
           ]
         },
         {
+          "id": "item_donut",
+          "name": "Donut",
+          "img": [
+            "IMG_Donut_Brown",
+            "IMG_Donut_Pink",
+            "IMG_Donut_Orange"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_47",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
           "id": "item_christmascookie",
           "name": "Christmas Cookie",
           "img": [
@@ -5270,6 +5490,44 @@
           "name": "Letter",
           "img": [
             "IMG_Letter"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_48",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_sheetofpaper",
+          "name": "Sheet of Paper",
+          "img": [
+            "IMG_SheetOfPaper",
+            "IMG_SheetOfPaper_TempleTides"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_48",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_pileofpapers",
+          "name": "Pile of Papers",
+          "img": [
+            "IMG_PileOfPapers",
+            "IMG_PileOfPapers_Alt1"
           ],
           "locations": [
             {
@@ -5472,6 +5730,7 @@
             "IMG_Book_Green",
             "IMG_Book_Green_EP",
             "IMG_Book_Red",
+            "IMG_Book_Red_EP",
             "IMG_Book_Purple",
             "IMG_Book_Hammerite",
             "IMG_Book_Mechanist",
@@ -5498,6 +5757,9 @@
             "IMG_Book_Calendra1",
             "IMG_Book_Calendra2",
             "IMG_Book_Calendra3",
+            "IMG_Book_Bequest1",
+            "IMG_Book_Bequest2",
+            "IMG_Book_Bequest3",
             "IMG_Book_Vandal1",
             "IMG_Book_Vandal2"
           ],
@@ -6650,6 +6912,24 @@
           ]
         },
         {
+          "id": "item_hauntskull",
+          "name": "Haunt Skull",
+          "img": [
+            "IMG_HauntSkull"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_90",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
           "id": "item_skeletalarm",
           "name": "Skeletal Arm",
           "img": [
@@ -6855,10 +7135,64 @@
           ]
         },
         {
+          "id": "item_sponge",
+          "name": "Sponge",
+          "img": [
+            "IMG_Sponge"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_93",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_holysponge",
+          "name": "Holy Sponge",
+          "img": [
+            "IMG_Sponge"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_93",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
           "id": "item_snowball",
           "name": "Snowball",
           "img": [
             "IMG_Snowball"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_93",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ballofice",
+          "name": "Ball of Ice",
+          "img": [
+            "IMG_BallofIce"
           ],
           "locations": [
             {
@@ -6915,6 +7249,24 @@
           ]
         },
         {
+          "id": "item_hornofdloren",
+          "name": "Horn of Dloren",
+          "img": [
+            "IMG_HornOfDloren"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_95",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
           "id": "item_navigationglobe",
           "name": "Navigation Globe",
           "img": [
@@ -6947,6 +7299,7 @@
             "IMG_Painting_ArtThievery8",
             "IMG_Painting_ArtThievery9",
             "IMG_Painting_Murkbell2",
+            "IMG_Painting_Bequest",
             "IMG_Painting_Holiday1",
             "IMG_Painting_Holiday2",
             "IMG_Painting_Holiday3",
@@ -7024,10 +7377,46 @@
           ]
         },
         {
+          "id": "item_tearofthetides",
+          "name": "Tear of the Tides",
+          "img": [
+            "IMG_TearOfTheTides"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_98",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
           "id": "item_cylixofjortul",
           "name": "Cylix of Jortul",
           "img": [
             "IMG_CylixOfJortul"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_98",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_talismanoflife",
+          "name": "Talisman of Life",
+          "img": [
+            "IMG_TalismanOfLife"
           ],
           "locations": [
             {
@@ -7068,6 +7457,24 @@
             "IMG_GoldenBone_LeftArm",
             "IMG_GoldenBone_RightLeg",
             "IMG_GoldenBone_LeftLeg"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_100",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_polishedmetalsymbol",
+          "name": "Polished Metal Symbol",
+          "img": [
+            "IMG_PolishedMetalSymbol"
           ],
           "locations": [
             {
@@ -7465,7 +7872,10 @@
           "id": "item_talismanofearth",
           "name": "Talisman of Earth",
           "img": [
-            "IMG_TalismanOfEarth"
+            "IMG_TalismanOfEarth",
+            "IMG_TalismanOfEarth_Alt1",
+            "IMG_TalismanOfEarth_Alt2",
+            "IMG_TalismanOfEarth_Alt3"
           ],
           "locations": [
             {
@@ -7483,7 +7893,10 @@
           "id": "item_talismanoffire",
           "name": "Talisman of Fire",
           "img": [
-            "IMG_TalismanOfFire"
+            "IMG_TalismanOfFire",
+            "IMG_TalismanOfFire_Alt1",
+            "IMG_TalismanOfFire_Alt2",
+            "IMG_TalismanOfFire_Alt3"
           ],
           "locations": [
             {
@@ -7501,7 +7914,10 @@
           "id": "item_talismanofwater",
           "name": "Talisman of Water",
           "img": [
-            "IMG_TalismanOfWater"
+            "IMG_TalismanOfWater",
+            "IMG_TalismanOfWater_Alt1",
+            "IMG_TalismanOfWater_Alt2",
+            "IMG_TalismanOfWater_Alt3"
           ],
           "locations": [
             {
@@ -7519,7 +7935,50 @@
           "id": "item_talismanofair",
           "name": "Talisman of Air",
           "img": [
-            "IMG_TalismanOfAir"
+            "IMG_TalismanOfAir",
+            "IMG_TalismanOfAir_Alt1",
+            "IMG_TalismanOfAir_Alt2",
+            "IMG_TalismanOfAir_Alt3"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_107",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ancienttalisman",
+          "name": "Ancient Talisman",
+          "img": [
+            "IMG_AncientTalisman_Ramises",
+            "IMG_AncientTalisman_Ailmar",
+            "IMG_AncientTalisman_Salamar",
+            "IMG_AncientTalisman_Saldic"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_item_107",
+              "findSimple": "find",
+              "findArea": "222",
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_wardstone",
+          "name": "Wardstone",
+          "img": [
+            "IMG_Wardstone_Earth",
+            "IMG_Wardstone_Water"
           ],
           "locations": [
             {
@@ -7833,7 +8292,8 @@
           "name": "Green Bottle",
           "img": [
             "IMG_GreenBottle",
-            "IMG_GreenBottle_NV"
+            "IMG_GreenBottle_NV",
+            "IMG_GreenBottle_EP"
           ],
           "locations": [
             {
@@ -8176,6 +8636,24 @@
           "name": "Barrel",
           "img": [
             "IMG_Barrel"
+          ],
+          "locations": [
+            {
+              "id": "TEMP_junk_21",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "this_place",
+              "findExact": "here",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_powderkeg",
+          "name": "Powder Keg",
+          "img": [
+            "IMG_PowderKeg",
+            "IMG_PowderKeg_Alt1"
           ],
           "locations": [
             {
@@ -8859,7 +9337,8 @@
           "name": "Brick",
           "img": [
             "IMG_Brick",
-            "IMG_Brick_Alt1"
+            "IMG_Brick_Alt1",
+            "IMG_Brick_Alt2"
           ],
           "locations": [
             {

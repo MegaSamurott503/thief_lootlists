@@ -196,6 +196,10 @@ export const mySecrets = {
   'SEC_fm_maelstrom_03': require('@/assets/images/secrets/fm_maelstrom_03.png'),
   // FM: The Inverted Manse
   'SEC_fm_spirit-manse_01': require('@/assets/images/secrets/fm_spirit-manse_01.png'),
+  // FM: Lord James' Retreat
+  'SEC_fm_retreat_01': require('@/assets/images/secrets/fm_retreat_01.png'),
+  'SEC_fm_retreat_02': require('@/assets/images/secrets/fm_retreat_02.png'),
+  'SEC_fm_retreat_03': require('@/assets/images/secrets/fm_retreat_03.png'),
   // FM: The Night Before Christmas
   'SEC_fm_nightchristmas_01': require('@/assets/images/secrets/fm_nightchristmas_01.png'),
   // FM: A Night's Stroll
@@ -206,12 +210,35 @@ export const mySecrets = {
   'SEC_fm_ashton-stroll_05': require('@/assets/images/secrets/fm_ashton-stroll_05.png'),
   'SEC_fm_ashton-stroll_06': require('@/assets/images/secrets/fm_ashton-stroll_06.png'),
   'SEC_fm_ashton-stroll_07': require('@/assets/images/secrets/fm_ashton-stroll_07.png'),
+  // FM: Ominous Bequest
+  'SEC_fm_xedormicost-bequest_01': require('@/assets/images/secrets/fm_xedormicost-bequest_01.png'),
+  'SEC_fm_xedormicost-bequest_02a': require('@/assets/images/secrets/fm_xedormicost-bequest_02a.png'),
+  'SEC_fm_xedormicost-bequest_02b': require('@/assets/images/secrets/fm_xedormicost-bequest_02b.png'),
+  'SEC_fm_xedormicost-bequest_02c': require('@/assets/images/secrets/fm_xedormicost-bequest_02c.png'),
+  'SEC_fm_xedormicost-bequest_03a': require('@/assets/images/secrets/fm_xedormicost-bequest_03a.png'),
+  'SEC_fm_xedormicost-bequest_03b': require('@/assets/images/secrets/fm_xedormicost-bequest_03b.png'),
+  'SEC_fm_xedormicost-bequest_04': require('@/assets/images/secrets/fm_xedormicost-bequest_04.png'),
+  'SEC_fm_xedormicost-bequest_05': require('@/assets/images/secrets/fm_xedormicost-bequest_05.png'),
+  'SEC_fm_xedormicost-bequest_06': require('@/assets/images/secrets/fm_xedormicost-bequest_06.png'),
+  'SEC_fm_xedormicost-bequest_07': require('@/assets/images/secrets/fm_xedormicost-bequest_07.png'),
+  'SEC_fm_xedormicost-bequest_08': require('@/assets/images/secrets/fm_xedormicost-bequest_08.png'),
   // FM: Revenge
   'SEC_fm_ashton-revenge_01': require('@/assets/images/secrets/fm_ashton-revenge_01.png'),
   'SEC_fm_ashton-revenge_02': require('@/assets/images/secrets/fm_ashton-revenge_02.png'),
   'SEC_fm_ashton-revenge_03': require('@/assets/images/secrets/fm_ashton-revenge_03.png'),
   'SEC_fm_ashton-revenge_04': require('@/assets/images/secrets/fm_ashton-revenge_04.png'),
   'SEC_fm_ashton-revenge_05': require('@/assets/images/secrets/fm_ashton-revenge_05.png'),
+  // FM: Rowena's Curse
+  'SEC_fm_rowena_01': require('@/assets/images/secrets/fm_rowena_01.png'),
+  'SEC_fm_rowena_02': require('@/assets/images/secrets/fm_rowena_02.png'),
+  'SEC_fm_rowena_03a': require('@/assets/images/secrets/fm_rowena_03a.png'),
+  'SEC_fm_rowena_03b': require('@/assets/images/secrets/fm_rowena_03b.png'),
+  'SEC_fm_rowena_04': require('@/assets/images/secrets/fm_rowena_04.png'),
+  'SEC_fm_rowena_05a': require('@/assets/images/secrets/fm_rowena_05a.png'),
+  'SEC_fm_rowena_05b': require('@/assets/images/secrets/fm_rowena_05b.png'),
+  'SEC_fm_rowena_06': require('@/assets/images/secrets/fm_rowena_06.png'),
+  'SEC_fm_rowena_07': require('@/assets/images/secrets/fm_rowena_07.png'),
+  'SEC_fm_rowena_08': require('@/assets/images/secrets/fm_rowena_08.png'),
   // FM: So Long Hammers
   'SEC_fm_solong_01': require('@/assets/images/secrets/fm_solong_01.png'),
   'SEC_fm_solong_02': require('@/assets/images/secrets/fm_solong_02.png'),

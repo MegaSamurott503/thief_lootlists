@@ -1,0 +1,1735 @@
+{
+  "id": "fm_curseancients",
+  "title": "Curse of the Ancients",
+  "author": [
+    "auth_kozmala"
+  ],
+  "screens": [
+    "MIS_fm_curseancients_A",
+    "MIS_fm_curseancients_B"
+  ],
+  "firstRelease": "Jul 2000",
+  "latestVersion": "1.0",
+  "diffNames": ["Normal","Hard","Expert"],
+  "markObj": true,
+  "lootCats":
+    ["gold","gems","goods"],
+  "totals": [
+    [1199,150,1620,0,2969],
+    [1199,150,1620,0,2969],
+    [1199,150,1620,0,2969]
+  ],
+  "lootCount": [58,58,58],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [1000,1500,2500]
+  },
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Bar"},
+    {"key": "2", "value": "Grocer"},
+    {"key": "3", "value": "Weaponsmith"},
+    {"key": "4", "value": "Inn"},
+    {"key": "5", "value": "Alchemist"},
+    {"key": "6", "value": "Salvador's House"},
+    {"key": "7", "value": "Morgan's Museum"},
+    {"key": "8", "value": "Parsonage"},
+    {"key": "9", "value": "Church"},
+    {"key": "10", "value": "Graveyard"},
+    {"key": "11", "value": "Cave"},
+    {"key": "12", "value": "Tomb of Ramises"},
+    {"key": "13", "value": "Albumasar Family Tomb"},
+    {"key": "14", "value": "Servetus Family Tomb"},
+    {"key": "15", "value": "Tomb of Heorogar"},
+    {"key": "16", "value": "Tomb of Ailmar"},
+    {"key": "17", "value": "Raypoz Family Tomb"},
+    {"key": "18", "value": "Tomb of Tugay"},
+    {"key": "19", "value": "Tomb of Salamar"},
+    {"key": "20", "value": "Mabus Family Tomb"},
+    {"key": "21", "value": "Rebroi Family Tomb"},
+    {"key": "22", "value": "Tomb of Saldic"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_finewine",
+      "name": "Fine Wine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_1",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "Godard's office",
+              "findExact": "south shelf",
+              "findCount": [8,8,8],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_2",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findExact": "fireplace niche",
+              "findCount": [2,2,2],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "Gold Goblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_3",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "room 10",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_curseancients_loot_4",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [2,2,2],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_curseancients_loot_5",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findNarrow": "library",
+              "findExact": "hidden niche",
+              "findCount": [2,2,2],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_curseancients_loot_6",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findExact": "caskets",
+              "findCount": [3,3,3],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "Gold Plate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_7",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "room 10",
+              "findExact": "mantelpiece",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            },
+            {
+              "id": "fm_curseancients_loot_8",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [2,2,2],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "Gold Ring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_9",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "room 2",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldvase",
+      "name": "Gold Vase",
+      "img": [
+        "IMG_GoldVase"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_10",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findExact": "caskets",
+              "findCount": [2,2,2],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_GoldVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldenbone",
+      "name": "Golden Bone",
+      "img": [
+        "IMG_GoldenBone_Skull"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_11",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findExact": "caskets",
+              "findCount": [2,2,2],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_GoldenBone_Skull"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_greenvase",
+      "name": "Green Vase",
+      "img": [
+        "IMG_GreenVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_12",
+              "findSimple": "findE",
+              "findArea": 21,
+              "findExact": "caskets",
+              "findCount": [2,2,2],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GreenVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_indigovase",
+      "name": "Indigo Vase",
+      "img": [
+        "IMG_IndigoVase"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_13",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findExact": "east niche",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            },
+            {
+              "id": "fm_curseancients_loot_14",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findNarrow": "burial chamber",
+              "findExact": "alcoves",
+              "findCount": [4,4,4],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_IndigoVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "Necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_15",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "upper northwest casket",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "Precursor Jar",
+      "img": [
+        "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Tall",
+        "IMG_PrecursorJar_Pointed"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_16",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findNarrow": "burial chamber",
+              "findExact": "behind east panel",
+              "findCount": [3,3,3],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_PrecursorJar_Small",
+                "IMG_PrecursorJar_Tall",
+                "IMG_PrecursorJar_Pointed"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "Purple Goblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_17",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "tomb",
+              "findExact": "caskets",
+              "findCount": [3,3,3],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_curseancients_loot_18",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findExact": "caskets",
+              "findCount": [3,3,3],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_curseancients_loot_19",
+              "findSimple": "findE",
+              "findArea": 18,
+              "findExact": "caskets",
+              "findCount": [3,3,3],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_curseancients_loot_20",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "upper level",
+              "findExact": "west caskets",
+              "findCount": [3,3,3],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            },
+            {
+              "id": "fm_curseancients_loot_21",
+              "findSimple": "findM",
+              "findArea": 19,
+              "findNarrow": "entrance",
+              "findExact": "niches",
+              "findCount": [2,2,2],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplevase",
+      "name": "Purple Vase",
+      "img": [
+        "IMG_PurpleVase"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_22",
+              "findSimple": "findE",
+              "findArea": 15,
+              "findExact": "west niche",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_PurpleVase"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_23",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "1F",
+              "findExact": "safe",
+              "findCount": [2,2,2],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_curseancients_loot_24",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "Edgar's bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_25",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findExact": "fireplace niche",
+              "findCount": [2,2,2],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "Tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_curseancients_loot_26",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "upper northwest casket",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_holywaterarrow",
+          "name": "Holy Water Arrow",
+          "img": [
+            "IMG_HolyWaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_4",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "armory",
+              "findExact": "footlocker",
+              "findCountBox": [15,15,15],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_curseancients_item_6",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "storefront",
+              "findExact": "footlocker",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_7",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "kitchen",
+              "findExact": "sink",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_curseancients_item_8",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "storefront",
+              "findExact": "shelf",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "fm_curseancients_item_9",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "central section",
+              "findCount": [4,4,4],
+              "findRecipe": "shoot Water Arrow at flowers"
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "Fire Crystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_10",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "storefront",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_curseancients_item_11",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "central section",
+              "findCount": [4,4,4],
+              "findRecipe": "shoot Water Arrow at flowers"
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "Earth Crystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_12",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "storefront",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_13",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "armory",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_curseancients_item_14",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_curseancients_item_15",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "Hammerite camp",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_16",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "storefront",
+              "findExact": "under counter",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_17",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storefront",
+              "findExact": "under counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_item_18",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "sanctuary",
+              "findExact": "pulpit",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_item_19",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_20",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "storefront",
+              "findExact": "under counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_item_21",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "office",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_22",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_23",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Weaponsmith Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_24",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Church Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_25",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "Godard's office",
+              "findExact": "north shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Safe Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_26",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "SE section",
+              "findCount": [1,1,1],
+              "findRecipe": "bury Morgan"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Ailmar's Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_27",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "casket",
+              "findExact": "on Heorogar's skeleton",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_28",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_29",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "storefront",
+              "findExact": "west shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_curseancients_item_30",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "Hammerite camp",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "Carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_31",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "storefront",
+              "findExact": "south shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "Cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_32",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "storefront",
+              "findExact": "south shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_33",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "storefront",
+              "findExact": "south shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_34",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "storefront",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_unrolledscroll",
+          "name": "Scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_35",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "central section",
+              "findExact": "east well",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "Papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_36",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "storeroom",
+              "findExact": "in fallen barrel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_item_37",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Edgar's bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_item_38",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "living room",
+              "findExact": "fireplace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_item_39",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "library",
+              "findExact": "hidden niche",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_item_40",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "SE section",
+              "findExact": "behind Eliza's headstone",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_goldenbone",
+          "name": "Golden Bone",
+          "img": [
+            "IMG_GoldenBone_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_41",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "entrance",
+              "findExact": "staircase railing",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_jewelry",
+      "category": "Jewelry",
+      "catItems": [
+        {
+          "id": "item_serpentyletorc",
+          "name": "Serpentyle Torc",
+          "img": [
+            "IMG_SerpentyleTorc"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_42",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "room 9",
+              "findExact": "mantelpiece",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_necklace",
+          "name": "Manninger's Necklace",
+          "img": [
+            "IMG_Necklace"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_43",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "fireplace niche",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_talismans",
+      "category": "Talismans",
+      "catItems": [
+        {
+          "id": "item_ancienttalisman",
+          "name": "Talisman of Ramises",
+          "img": [
+            "IMG_AncientTalisman_Ramises"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_44",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "burial chamber",
+              "findExact": "above casket",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_ancienttalisman",
+          "name": "Talisman of Ailmar",
+          "img": [
+            "IMG_AncientTalisman_Ailmar"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_45",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "burial chamber",
+              "findExact": "above casket",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_ancienttalisman",
+          "name": "Talisman of Salamar",
+          "img": [
+            "IMG_AncientTalisman_Salamar"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_46",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "burial chamber",
+              "findExact": "above casket",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_ancienttalisman",
+          "name": "Talisman of Saldic",
+          "img": [
+            "IMG_AncientTalisman_Saldic"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_item_47",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "burial chamber",
+              "findExact": "by window",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_utensils",
+      "category": "Utensils",
+      "catJunk": [
+        {
+          "id": "junk_cleaver",
+          "name": "Cleaver",
+          "img": [
+            "IMG_Cleaver"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_1",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "meeting room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metalplate",
+          "name": "Metal Plate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_2",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_junk_3",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "Metal Goblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "1F",
+              "findExact": "by tables",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_curseancients_junk_5",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "1F",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_junk_6",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_junk_7",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "Green Bottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_8",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "1F",
+              "findExact": "by tables",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_curseancients_junk_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "1F",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_junk_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "1F",
+              "findExact": "wine shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "Gray Bottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_11",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "1F",
+              "findExact": "by tables",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_curseancients_junk_12",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "1F",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_junk_13",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "1F",
+              "findExact": "wine shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_skillet",
+          "name": "Skillet",
+          "img": [
+            "IMG_Skillet"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_14",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_cookingpot",
+          "name": "Cooking Pot",
+          "img": [
+            "IMG_CookingPot"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_15",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "kitchen",
+              "findExact": "by counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_junk_16",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "kitchen",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_Flour",
+            "IMG_Canister_Sugar",
+            "IMG_Canister_Salt",
+            "IMG_Canister_UnmarkedLarge"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_17",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "storefront",
+              "findExact": "west shelf",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_curseancients_junk_18",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "kitchen",
+              "findExact": "shelf",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "Potted Plant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_19",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "living room",
+              "findExact": "north corners",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "Rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_20",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "collapsed stairway",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_statuefragment",
+          "name": "Statue Fragment",
+          "img": [
+            "IMG_StatueFragment_Head",
+            "IMG_StatueFragment_RightTorso",
+            "IMG_StatueFragment_LeftTorso"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_21",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "1F",
+              "findExact": "east room",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "Skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_22",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "lobby",
+              "findExact": "front desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_junk_23",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "2F hall",
+              "findExact": "table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_curseancients_junk_24",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "casket",
+              "findExact": "Heorogar's skeleton",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_curseancients_junk_25",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "upper northwest casket",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ribcage",
+          "name": "Ribcage",
+          "img": [
+            "IMG_Ribcage"
+          ],
+          "locations": [
+            {
+              "id": "fm_curseancients_junk_26",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "yard",
+              "findExact": "skeleton",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

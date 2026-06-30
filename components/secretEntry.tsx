@@ -11,6 +11,7 @@ import {
 import { memo, useEffect, useState, useContext } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+import { LootIconPicker } from '@/components/lootIconPicker';
 import { FindMeArea } from '@/components/findMeArea';
 import { FindMePrecise } from '@/components/findMePrecise';
 
@@ -19,15 +20,12 @@ import { stylesImg } from '@/constants/stylesImg';
 import { stylesModal } from '@/constants/stylesModal';
 import {
   bgDefaultLight, bgDefaultDark,
-  bgFoundLightT, bgFoundDarkT,
-  iconGold, iconGems, iconGoods, iconSpecial
+  bgFoundLightT, bgFoundDarkT
 } from '@/constants/imgUI';
 import {
   SettingContext, FilterContext
 } from '@/constants/context';
 
-// TODO: New reward category for 'hints', set up similar to 'routes'.
-// TODO: Check all T2/FM secrets for any that should have a 'hint' reward.
 /* **************** */
 /*   SECRET ENTRY   */
 /* **************** */
@@ -59,12 +57,38 @@ export const SecretEntry = memo(function SecretEntry(props) {
   // Fetch FilterDiff states from context.
   const {getFilterDiffN, setFilterDiffN,
         getFilterDiffH, setFilterDiffH,
-        getFilterDiffX, setFilterDiffX} =
+        getFilterDiffX, setFilterDiffX,
+        getFilterModeA, setFilterModeA,
+        getFilterModeB, setFilterModeB,
+        getFilterModeC, setFilterModeC,
+        getFilterArea, setFilterArea} =
     useContext(FilterContext);
 
   // Fetch global setting states from context.
-  const {scheme, getCurrentTheme, setCurrentTheme} =
+  const {scheme, device,
+    getCurrentTheme, setCurrentTheme} =
     useContext(SettingContext);
+
+  // Arrays to store data from this entry's triggers.
+  // Used to completely hide this entry's box
+  // depending on the filters applied.
+  const whatsMyDiff = [];
+  const whatsMyMode = [];
+  const whatsMyLoc = [];
+
+  // Iterate through all of this entry's triggers
+  // and add their relevant data to the 'whatsMy' arrays.
+  props.triggers && props.triggers.forEach((eachTrig) => {
+    if (eachTrig.findDiff) {
+      whatsMyDiff.push(eachTrig.findDiff);
+    }
+    if (eachTrig.findMode) {
+      whatsMyMode.push(eachTrig.findMode);
+    }
+    if (eachTrig.findArea) {
+      whatsMyLoc.push(eachTrig.findArea)
+    }
+  });
 
   // Send data to device storage.
   const storeSecFound = async (newSecFound, newSecID) => {
@@ -145,397 +169,450 @@ export const SecretEntry = memo(function SecretEntry(props) {
   }, [props.getLinkedFind]);
 
   return (
-    <View style={stylesList.listEntry}>
-      <View style={[
-        styles.secretTrigList,
-        Platform.OS !== 'web' && {width: '72%'},
-        Platform.OS === 'web' && {
-          width: (width > 794) ? 590 : '77.5%'
-        }
-      ]}>
-        {/* Map out each entry in secret trigger sub-array. */}
-        {props.triggers && props.triggers.map((trigKey, trigIndex) => (
-          <View
-            key={trigKey.id}
-            style={styles.secretTrig}
-          >
+    <>
+      {(
+      // If all triggers are exclusive to certain difficulties,
+      // hide this entry if those difficulty filters are disabled.
+        (getFilterDiffN &&
+          whatsMyDiff.some(trig => trig[0] !== 0) ) ||
+        (getFilterDiffH &&
+          whatsMyDiff.some(trig => trig[1] !== 0) ) ||
+        (getFilterDiffX &&
+          whatsMyDiff.some(trig => trig[2] !== 0) )
+      ) &&
+      // If all triggers are exclusive to certain game modes,
+      // hide this entry if those game mode filters are disabled.
+      ( !whatsMyMode.length ||
+        (getFilterModeA &&
+          whatsMyMode.some(trig => trig[0] !== 0) ) ||
+        (getFilterModeB &&
+          whatsMyMode.some(trig => trig[1] !== 0) ) ||
+        (getFilterModeC &&
+          whatsMyMode.some(trig => trig[2] !== 0) )
+      ) &&
+      // If area filter has one or more areas selected,
+      // hide this entry if all of this entry's areas are not selected.
+      ( !getFilterArea.length ||
+        whatsMyLoc.some(loc =>
+          getFilterArea.includes(props.areas[loc].value))
+      ) &&
+        <>
+          <View style={[
+            stylesList.listEntry,
+            styles.secretSplit
+          ]}>
             <View style={[
-              styles.secretTrigID,
-              Platform.OS !== 'web' && {width: '27%'},
-              Platform.OS === 'web' && {
-                width: (width > 794) ? 140 : '24%'
-              },
-              {backgroundColor: colors.backMed,
-              borderColor: colors.border},
-              props.triggers.length === 1 && styles.secretTrigOne,
-              trigIndex === 0 && styles.secretTrigTop,
-              trigIndex !== 0 && styles.secretTrigMid,
-              trigIndex === props.triggers.length - 1 &&
-                props.triggers.length > 1 &&
-                styles.secretTrigBot
-            ]}>
-              {/* Secret's number and image go here. */}
-              {trigIndex === 0 &&
-                <Text style={[styles.secretNum, {color: colors.text}]}>
-                  {props.number}
-                </Text>
+              styles.secretTrigList,
+              device === 'phone' && {width: '72%'},
+              device !== 'phone' && {
+                width: (width > 794) ? 590 : '77.5%'
               }
-              <TouchableWithoutFeedback
-                onPress={() => setShowModal(trigIndex)}
-              >
-                <Image
-                  source={props.img[trigIndex]}
-                  style={[
-                    styles.imgSecret,
-                    Platform.OS !== 'web' && {width: 70, height: 70},
-                    Platform.OS === 'web' && {
-                      width: (width > 794) ? 128 : width*0.16,
-                      height: (width > 794) ? 128 : width*0.16,
-                    },
-                  ]}
-                />
-              </TouchableWithoutFeedback>
-              {/* Modal to show bigger secret image. */}
-              <Modal
-                animationType='fade'
-                transparent={true}
-                statusBarTranslucent={true}
-                visible={getShowModal === trigIndex}
-                onRequestClose={() => setShowModal(-1)}
-              >
-                {/* Semi-transparent background.
-                    Tap the background to hide the modal. */}
-                <TouchableOpacity
-                  style={stylesModal.modalView}
-                  activeOpacity={1}
-                  onPressOut={() => setShowModal(-1)}
-                >
-                  {/* Pop-up box containing the image. */}
-                  <TouchableWithoutFeedback>
-                    <View style={[
-                      styles.secretModal,
-                      {backgroundColor: colors.backMed,
-                      borderColor: colors.border}
-                    ]}>
-                      <Image
-                        source={props.img[getShowModal]}
-                        style={styles.imgSecretBig}
-                      />
-                    </View>
-                  </TouchableWithoutFeedback>
-                </TouchableOpacity>
-              </Modal>
-            </View>
-            <TouchableOpacity
-              style={[
-                styles.secretLoc,
-                Platform.OS !== 'web' && {width: '38%'},
-                Platform.OS === 'web' && {
-                  width: (width > 794) ? 150 : '25%'
-                },
-                {borderColor: colors.border}
-              ]}
-              // Toggle whether this secret is selected or not.
-              onPress={() => triggerMe("opposite")}
-            >
-              <ImageBackground
-                source={(getCurrentTheme === 'dark' ||
-                  (getCurrentTheme === 'default' && scheme === 'dark'))
-                  ? (getSecFound
-                    ? bgFoundDarkT : bgDefaultDark)
-                  : (getSecFound
-                    ? bgFoundLightT : bgDefaultLight)}
-                resizeMode="cover"
-                style={[
-                  stylesList.findBackground,
-                  (Platform.OS === 'web') ? stylesList.findBackgroundWeb : ''
-                ]}
-              >
-                {/* Secret's location goes here. */}
-                <FindMeArea
-                  findArea={props.areas[trigKey.findArea].value}
-                  findCount={trigKey.findDiff}
-                  findObj={trigKey.findObj}
-                />
-                <FindMePrecise
-                  findNarrow={trigKey.findNarrow}
-                />
-              </ImageBackground>
-            </TouchableOpacity>
-            <View style={[
-              styles.secretMethod,
-              Platform.OS !== 'web' && {width: '35%'},
-              Platform.OS === 'web' && {
-                width: (width > 794) ? 300 : '51%'
-              },
-              {backgroundColor: colors.backLight,
-              borderColor: colors.border}
             ]}>
-              {/* Secret's trigger goes here. */}
-              <Text style={[
-                styles.secretText,
-                {color: colors.text}
-              ]}>
-                {trigKey.method}
-              </Text>
-            </View>
-          </View>
-        ))}
-      </View>
-      <View style={[
-        styles.secretRewardList,
-        Platform.OS !== 'web' && {width: '28%'},
-        Platform.OS === 'web' && {
-          width: (width > 794) ? 174 : '22.5%'
-        }
-      ]}>
-        {/* Map out each entry in secret reward sub-array. */}
-        {props.rewards && props.rewards.map((rewKey, rewIndex) => (
-          <View
-            key={rewKey.id}
-            style={styles.secretRewardFlex}
-          >
-            {(
-            // If exclusive to certain difficulties,
-            // hide this box if those difficulty filters are disabled.
-              (getFilterDiffN &&
-                rewKey.findCount && rewKey.findCount[0] !== 0) ||
-              (getFilterDiffH &&
-                rewKey.findCount && rewKey.findCount[1] !== 0) ||
-              (getFilterDiffX &&
-                rewKey.findCount && rewKey.findCount[2] !== 0)
-            ) &&
-              <View style={[
-                styles.secretReward,
-                {backgroundColor: colors.backLight,
-                borderColor: colors.border}
-              ]}>
-                {/*!rewKey.rewardLoot && !rewKey.rewardItem &&
-                  <Text style={styles.secretRewardText}>WIP</Text>
-                */}
-                {/* Is this reward a new route? */}
-                {rewKey.rewardRoute &&
-                  <>
-                    <Text style={[
-                      styles.secretRewardText,
-                      styles.secretRewardOther,
-                      {color: colors.text}
-                    ]}>
-                      A new route between
-                    </Text>
-                    {rewKey.rewardRoute.map((routeKey, routeIndex) => (
-                      <Text
-                        key={`route_${routeIndex}`}
-                        style={[
-                          styles.secretRewardText,
-                          styles.secretRewardOther,
-                          {color: colors.text}
+              {/* Map out each entry in secret trigger sub-array. */}
+              {props.triggers && props.triggers.map((trigKey, trigIndex) => (
+                <View
+                  key={trigKey.id}
+                  style={styles.secretTrig}
+                >
+                  {(
+                  // If exclusive to certain difficulties,
+                  // hide this trigger if those difficulty filters are disabled.
+                    (getFilterDiffN &&
+                      trigKey.findDiff && trigKey.findDiff[0] !== 0) ||
+                    (getFilterDiffH &&
+                      trigKey.findDiff && trigKey.findDiff[1] !== 0) ||
+                    (getFilterDiffX &&
+                      trigKey.findDiff && trigKey.findDiff[2] !== 0)
+                  ) &&
+                  // If exclusive to certain game modes,
+                  // hide this trigger if those game mode filters are disabled.
+                  ( (getFilterModeA &&
+                      trigKey.findMode && trigKey.findMode[0] !== 0) ||
+                    (getFilterModeB &&
+                      trigKey.findMode && trigKey.findMode[1] !== 0) ||
+                    (getFilterModeC &&
+                      trigKey.findMode && trigKey.findMode[2] !== 0) ||
+                    !trigKey.findMode
+                  ) &&
+                  // If area filter has one or more areas selected,
+                  // hide this trigger if this trigger's area is not selected.
+                  ( !getFilterArea.length ||
+                    getFilterArea.includes(props.areas[trigKey.findArea].value)
+                  ) &&
+                    <>
+                      <View style={[
+                        styles.secretTrigID,
+                        device === 'phone' && {width: '27%'},
+                        device !== 'phone' && {
+                          width: (width > 794) ? 140 : '24%'
+                        },
+                        {backgroundColor: colors.backMed,
+                        borderColor: colors.border},
+                        props.triggers.length === 1 && styles.secretTrigOne,
+                        trigIndex === 0 && styles.secretTrigTop(device),
+                        trigIndex !== 0 && styles.secretTrigMid,
+                        trigIndex === props.triggers.length - 1 &&
+                          props.triggers.length > 1 &&
+                          styles.secretTrigBot(device)
                       ]}>
-                        {/* Print 'and' before
-                            final destination in list. */}
-                        {routeIndex === rewKey.rewardRoute.length -1 &&
-                          <Text>and </Text>
+                        {/* Secret's number and image go here. */}
+                        {trigIndex === 0 &&
+                          <Text style={[
+                            styles.secretNum(device),
+                            {color: colors.text}
+                          ]}>
+                            {props.number}
+                          </Text>
                         }
-                        {/* Print each destination. */}
-                        {routeKey}
-                        {/* Print comma after each destination
-                            if list has at least 3 destinations. */}
-                        {routeIndex !== rewKey.rewardRoute.length - 1 &&
-                          rewKey.rewardRoute.length > 2 &&
-                          <Text>,</Text>
-                        }
-                      </Text>
-                    ))}
-                  </>
-                }
-                {/* Is this reward a loot item? */}
-                {rewKey.rewardLoot &&
-                  <>
-                    <Text style={[
-                      styles.secretRewardText,
-                      {color: colors.text}
-                    ]}>
-                      <FindMeArea
-                        value={rewKey.value}
-                        findArea={rewKey.rewardLoot}
-                        findCount={rewKey.findCount}
-                        secret={true}
-                      />
-                      {':'}
-                    </Text>
-                    {/* Loot item's value goes here. */}
-                    <View style={stylesList.lootRow}>
-                      {rewKey.value && rewKey.value[0] > 0 &&
-                        <>
+                        <TouchableWithoutFeedback
+                          onPress={() => setShowModal(trigIndex)}
+                        >
                           <Image
-                            source={iconGold}
-                            style={stylesImg.imgLootIcon}
+                            source={props.img[trigIndex]}
+                            style={[
+                              styles.imgSecret,
+                              device === 'phone' && {width: 70, height: 70},
+                              device !== 'phone' && {
+                                width: (width > 794) ? 128 : width*0.16,
+                                height: (width > 794) ? 128 : width*0.16,
+                              },
+                            ]}
                           />
-                          <Text style={[
-                            stylesList.lootText,
-                            {color: colors.text}
-                          ]}>
-                            {`${rewKey.value[0]} `}
-                          </Text>
-                        </>
-                      }
-                      {rewKey.value && rewKey.value[1] > 0 &&
-                        <>
-                          <Image
-                            source={iconGems}
-                            style={stylesImg.imgLootIcon}
+                        </TouchableWithoutFeedback>
+                        {/* Modal to show bigger secret image. */}
+                        <Modal
+                          animationType='fade'
+                          transparent={true}
+                          statusBarTranslucent={true}
+                          visible={getShowModal === trigIndex}
+                          onRequestClose={() => setShowModal(-1)}
+                        >
+                          {/* Semi-transparent background.
+                              Tap the background to hide the modal. */}
+                          <TouchableOpacity
+                            style={stylesModal.modalView}
+                            activeOpacity={1}
+                            onPressOut={() => setShowModal(-1)}
+                          >
+                            {/* Pop-up box containing the image. */}
+                            <TouchableWithoutFeedback>
+                              <View style={[
+                                styles.secretModal(device),
+                                {backgroundColor: colors.backMed,
+                                borderColor: colors.border}
+                              ]}>
+                                <Image
+                                  source={props.img[getShowModal]}
+                                  style={styles.imgSecretBig(device)}
+                                />
+                              </View>
+                            </TouchableWithoutFeedback>
+                          </TouchableOpacity>
+                        </Modal>
+                      </View>
+                      <TouchableOpacity
+                        style={[
+                          styles.secretLoc,
+                          device === 'phone' && {width: '38%'},
+                          device !== 'phone' && {
+                            width: (width > 794) ? 150 : '25%'
+                          },
+                          {borderColor: colors.border}
+                        ]}
+                        // Toggle whether this secret is selected or not.
+                        onPress={() => triggerMe("opposite")}
+                      >
+                        <ImageBackground
+                          source={(getCurrentTheme === 'dark' ||
+                            (getCurrentTheme === 'default' && scheme === 'dark'))
+                            ? (getSecFound
+                              ? bgFoundDarkT : bgDefaultDark)
+                            : (getSecFound
+                              ? bgFoundLightT : bgDefaultLight)}
+                          resizeMode="cover"
+                          style={[
+                            stylesList.findBackground,
+                            (device !== 'phone') ? stylesList.findBackgroundWeb : ''
+                          ]}
+                        >
+                          {/* Secret's location goes here. */}
+                          <FindMeArea
+                            findArea={props.areas[trigKey.findArea].value}
+                            findCount={trigKey.findDiff}
+                            findObj={trigKey.findObj}
                           />
-                          <Text style={[
-                            stylesList.lootText,
-                            {color: colors.text}
-                          ]}>
-                            {`${rewKey.value[1]} `}
-                          </Text>
-                        </>
-                      }
-                      {rewKey.value && rewKey.value[2] > 0 &&
-                        <>
-                          <Image
-                            source={iconGoods}
-                            style={stylesImg.imgLootIcon}
+                          <FindMePrecise
+                            findNarrow={trigKey.findNarrow}
                           />
-                          <Text style={[
-                            stylesList.lootText,
-                            {color: colors.text}
-                          ]}>
-                            {`${rewKey.value[2]} `}
-                          </Text>
-                        </>
-                      }
-                      {rewKey.value && rewKey.value[3] > 0 &&
-                        <>
-                          <Image
-                            source={iconSpecial}
-                            style={stylesImg.imgLootIcon}
-                          />
-                          <Text style={[
-                            stylesList.lootText,
-                            {color: colors.text}
-                          ]}>
-                            {`${rewKey.value[2]} `}
-                          </Text>
-                        </>
-                      }
-                      {/* If multiple loot items have same value,
-                          clarify shown value is not cumulative. */}
-                      {rewKey.findCount &&
-                        Math.max(...rewKey.findCount) > 1 &&
+                        </ImageBackground>
+                      </TouchableOpacity>
+                      <View style={[
+                        styles.secretMethod,
+                        device === 'phone' && {width: '35%'},
+                        device !== 'phone' && {
+                          width: (width > 794) ? 300 : '51%'
+                        },
+                        {backgroundColor: colors.backLight,
+                        borderColor: colors.border}
+                      ]}>
+                        {/* Secret's trigger goes here. */}
                         <Text style={[
-                          styles.secretRewardText,
+                          styles.secretText(device),
                           {color: colors.text}
                         ]}>
-                          {'each'}
+                          {trigKey.method}
+                        </Text>
+                      </View>
+                    </>
+                  }
+                </View>
+              ))}
+            </View>
+            <View style={[
+              styles.secretRewardList,
+              device === 'phone' && {width: '28%'},
+              device !== 'phone' && {
+                width: (width > 794) ? 174 : '22.5%'
+              }
+            ]}>
+              {/* Map out each entry in secret reward sub-array. */}
+              {props.rewards && props.rewards.map((rewKey, rewIndex) => (
+                <View
+                  key={rewKey.id}
+                  style={styles.secretRewardFlex}
+                >
+                  {(
+                  // If exclusive to certain difficulties,
+                  // hide this box if those difficulty filters are disabled.
+                    (getFilterDiffN &&
+                      rewKey.findCount && rewKey.findCount[0] !== 0) ||
+                    (getFilterDiffH &&
+                      rewKey.findCount && rewKey.findCount[1] !== 0) ||
+                    (getFilterDiffX &&
+                      rewKey.findCount && rewKey.findCount[2] !== 0)
+                  ) &&
+                    <View style={[
+                      styles.secretReward,
+                      {backgroundColor: colors.backLight,
+                      borderColor: colors.border}
+                    ]}>
+                      {/*!rewKey.rewardLoot && !rewKey.rewardItem &&
+                        <Text style={styles.secretRewardText}>WIP</Text>
+                      */}
+                      {/* Is this reward a new route? */}
+                      {rewKey.rewardRoute &&
+                        <>
+                          <Text style={[
+                            styles.secretRewardText(device),
+                            styles.secretRewardOther,
+                            {color: colors.text}
+                          ]}>
+                            A new route between
+                          </Text>
+                          {rewKey.rewardRoute.map((routeKey, routeIndex) => (
+                            <Text
+                              key={`route_${routeIndex}`}
+                              style={[
+                                styles.secretRewardText(device),
+                                styles.secretRewardOther,
+                                {color: colors.text}
+                            ]}>
+                              {/* Print 'and' before
+                                  final destination in list. */}
+                              {routeIndex === rewKey.rewardRoute.length -1 &&
+                                <Text>and </Text>
+                              }
+                              {/* Print each destination. */}
+                              {routeKey}
+                              {/* Print comma after each destination
+                                  if list has at least 3 destinations. */}
+                              {routeIndex !== rewKey.rewardRoute.length - 1 &&
+                                rewKey.rewardRoute.length > 2 &&
+                                <Text>,</Text>
+                              }
+                            </Text>
+                          ))}
+                        </>
+                      }
+                      {/* Is this reward a loot item? */}
+                      {rewKey.rewardLoot &&
+                        <>
+                          <Text style={[
+                            styles.secretRewardText(device),
+                            {color: colors.text}
+                          ]}>
+                            <FindMeArea
+                              value={rewKey.value}
+                              findArea={rewKey.rewardLoot}
+                              findCount={rewKey.findCount}
+                              secret={true}
+                            />
+                            {':'}
+                          </Text>
+                          {/* Loot item's value goes here. */}
+                          <View style={stylesList.lootRow}>
+                            {rewKey.value && rewKey.value[0] > 0 &&
+                              <>
+                                <LootIconPicker cat={props.lootCats[0]} />
+                                <Text style={[
+                                  stylesList.lootText,
+                                  {color: colors.text}
+                                ]}>
+                                  {`${rewKey.value[0]} `}
+                                </Text>
+                              </>
+                            }
+                            {rewKey.value && rewKey.value[1] > 0 &&
+                              <>
+                                <LootIconPicker cat={props.lootCats[1]} />
+                                <Text style={[
+                                  stylesList.lootText,
+                                  {color: colors.text}
+                                ]}>
+                                  {`${rewKey.value[1]} `}
+                                </Text>
+                              </>
+                            }
+                            {rewKey.value && rewKey.value[2] > 0 &&
+                              <>
+                                <LootIconPicker cat={props.lootCats[2]} />
+                                <Text style={[
+                                  stylesList.lootText,
+                                  {color: colors.text}
+                                ]}>
+                                  {`${rewKey.value[2]} `}
+                                </Text>
+                              </>
+                            }
+                            {rewKey.value && rewKey.value[3] > 0 &&
+                              <>
+                                <LootIconPicker cat={props.lootCats[3]} />
+                                <Text style={[
+                                  stylesList.lootText,
+                                  {color: colors.text}
+                                ]}>
+                                  {`${rewKey.value[2]} `}
+                                </Text>
+                              </>
+                            }
+                            {/* If multiple loot items have same value,
+                                clarify shown value is not cumulative. */}
+                            {rewKey.findCount &&
+                              Math.max(...rewKey.findCount) > 1 &&
+                              <Text style={[
+                                styles.secretRewardText(device),
+                                {color: colors.text}
+                              ]}>
+                                {'each'}
+                              </Text>
+                            }
+                          </View>
+                        </>
+                      }
+                      {/* Is this reward an inventory item? */}
+                      {rewKey.rewardItem &&
+                        <Text style={[
+                          styles.secretRewardText(device),
+                          {color: colors.text}
+                        ]}>
+                          <FindMeArea
+                            value={rewKey.value}
+                            findArea={rewKey.rewardItem}
+                            findCount={rewKey.findCount}
+                            findCountActual={rewKey.findCountActual}
+                            secret={true}
+                          />
+                        </Text>
+                      }
+                      {/* Is this reward a hint in a readable? */}
+                      {rewKey.rewardHint &&
+                        <>
+                          <Text style={[
+                            styles.secretRewardText(device),
+                            styles.secretRewardOther,
+                            {color: colors.text}
+                          ]}>
+                            {rewKey.rewardHint.length === 1 &&
+                              <Text>A hint about</Text>
+                            }
+                            {rewKey.rewardHint.length > 1 &&
+                              <Text>Hints about</Text>
+                            }
+                          </Text>
+                          {rewKey.rewardHint.map((hintKey, hintIndex) => (
+                            <Text
+                              key={`hint_${hintIndex}`}
+                              style={[
+                                styles.secretRewardText(device),
+                                styles.secretRewardOther,
+                                {color: colors.text}
+                            ]}>
+                              {/* Print 'and' before
+                                  final hint in list
+                                  if list has at least 2 hints. */}
+                              {hintIndex === rewKey.rewardHint.length -1 &&
+                                rewKey.rewardHint.length > 1 &&
+                                <Text>and </Text>
+                              }
+                              {/* Print each hint. */}
+                              {hintKey}
+                              {/* Print comma after each hint
+                                  if list has at least 3 hints. */}
+                              {hintIndex !== rewKey.rewardHint.length - 1 &&
+                                rewKey.rewardHint.length > 2 &&
+                                <Text>,</Text>
+                              }
+                            </Text>
+                          ))}
+                        </>
+                      }
+                      {/* Is this reward something else? */}
+                      {rewKey.rewardOther &&
+                        <Text style={[
+                          styles.secretRewardText(device),
+                          styles.secretRewardOther,
+                          {color: colors.text}
+                        ]}>
+                          {rewKey.rewardOther}
+                        </Text>
+                      }
+                      {/* Is this reward a bonus objective? */}
+                      {rewKey.rewardBonus &&
+                        <Text style={[
+                          styles.secretRewardText(device),
+                          styles.secretRewardOther,
+                          {color: colors.text}
+                        ]}>
+                          A bonus objective
                         </Text>
                       }
                     </View>
-                  </>
-                }
-                {/* Is this reward an inventory item? */}
-                {rewKey.rewardItem &&
+                  }
+                </View>
+              ))}
+              {/* Is there no tangible reward for finding this secret? */}
+              {!props.rewards &&
+                <View style={styles.secretReward}>
                   <Text style={[
-                    styles.secretRewardText,
-                    {color: colors.text}
-                  ]}>
-                    <FindMeArea
-                      value={rewKey.value}
-                      findArea={rewKey.rewardItem}
-                      findCount={rewKey.findCount}
-                      findCountActual={rewKey.findCountActual}
-                      secret={true}
-                    />
-                  </Text>
-                }
-                {/* Is this reward a hint in a readable? */}
-                {rewKey.rewardHint &&
-                  <>
-                    <Text style={[
-                      styles.secretRewardText,
-                      styles.secretRewardOther,
-                      {color: colors.text}
-                    ]}>
-                      {rewKey.rewardHint.length === 1 &&
-                        <Text>A hint about</Text>
-                      }
-                      {rewKey.rewardHint.length > 1 &&
-                        <Text>Hints about</Text>
-                      }
-                    </Text>
-                    {rewKey.rewardHint.map((hintKey, hintIndex) => (
-                      <Text
-                        key={`hint_${hintIndex}`}
-                        style={[
-                          styles.secretRewardText,
-                          styles.secretRewardOther,
-                          {color: colors.text}
-                      ]}>
-                        {/* Print 'and' before
-                            final hint in list
-                            if list has at least 2 hints. */}
-                        {hintIndex === rewKey.rewardHint.length -1 &&
-                          rewKey.rewardHint.length > 1 &&
-                          <Text>and </Text>
-                        }
-                        {/* Print each hint. */}
-                        {hintKey}
-                        {/* Print comma after each hint
-                            if list has at least 3 hints. */}
-                        {hintIndex !== rewKey.rewardHint.length - 1 &&
-                          rewKey.rewardHint.length > 2 &&
-                          <Text>,</Text>
-                        }
-                      </Text>
-                    ))}
-                  </>
-                }
-                {/* Is this reward something else? */}
-                {rewKey.rewardOther &&
-                  <Text style={[
-                    styles.secretRewardText,
+                    styles.secretRewardText(device),
                     styles.secretRewardOther,
                     {color: colors.text}
                   ]}>
-                    {rewKey.rewardOther}
+                    None
                   </Text>
-                }
-                {/* Is this reward a bonus objective? */}
-                {rewKey.rewardBonus &&
-                  <Text style={[
-                    styles.secretRewardText,
-                    styles.secretRewardOther,
-                    {color: colors.text}
-                  ]}>
-                    A bonus objective
-                  </Text>
-                }
-              </View>
-            }
+                </View>
+              }
+            </View>
           </View>
-        ))}
-        {/* Is there no tangible reward for finding this secret? */}
-        {!props.rewards &&
-          <View style={styles.secretReward}>
-            <Text style={[
-              styles.secretRewardText,
-              styles.secretRewardOther,
-              {color: colors.text}
-            ]}>
-              None
-            </Text>
-          </View>
-        }
-      </View>
-    </View>
+        </>
+      }
+    </>
   );
 });
 
 // Define various styles here.
 const styles = StyleSheet.create({
-secretTrigList: {
+  secretTrigList: {
     //width: (Platform.OS === 'web') ? 590 : '72%',
   },
   secretTrig: {
@@ -551,22 +628,22 @@ secretTrigList: {
   secretTrigOne: {
     borderBottomLeftRadius: 8,
   },
-  secretTrigTop: {
+  secretTrigTop: device => ({
     borderTopLeftRadius: 8,
-    paddingBottom: (Platform.OS === 'web') ? 5 : 3,
-  },
+    paddingBottom: (device !== 'phone') ? 5 : 3,
+  }),
   secretTrigMid: {
     paddingVertical: 8,
   },
-  secretTrigBot: {
+  secretTrigBot: device => ({
     borderBottomLeftRadius: 8,
-    paddingTop: (Platform.OS === 'web') ? 5 : 3,
-    paddingBottom: (Platform.OS === 'web') ? 16 : 13,
-  },
-  secretNum: {
-    fontSize: (Platform.OS === 'web') ? 12 : 8,
+    paddingTop: (device !== 'phone') ? 5 : 3,
+    paddingBottom: (device !== 'phone') ? 16 : 13,
+  }),
+  secretNum: device => ({
+    fontSize: (device !== 'phone') ? 12 : 8,
     fontWeight: 'bold',
-  },
+  }),
   secretLoc: {
     borderTopWidth: 1,
     borderBottomWidth: 1,
@@ -580,9 +657,9 @@ secretTrigList: {
     padding: 2,
     //width: (Platform.OS === 'web') ? 300 : '35%',
   },
-  secretText: {
-    fontSize: (Platform.OS === 'web') ? 12 : 8,
-  },
+  secretText: device => ({
+    fontSize: (device !== 'phone') ? 12 : 8,
+  }),
   secretRewardList: {
     //width: (Platform.OS === 'web') ? 175 : '28%',
   },
@@ -595,26 +672,29 @@ secretTrigList: {
     justifyContent: 'center',
     padding: 2,
   },
-  secretRewardText: {
-    fontSize: (Platform.OS === 'web') ? 12 : 8,
-  },
+  secretRewardText: device => ({
+    fontSize: (device !== 'phone') ? 12 : 8,
+  }),
   secretRewardOther: {
     fontStyle: 'italic',
   },
-  secretModal: {
+  secretModal: device => ({
     borderWidth: 1,
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    width: (Platform.OS === 'web') ? 420 : 220,
-    height: (Platform.OS === 'web') ? 420 : 220,
-  },
+    width: (device !== 'phone') ? 420 : 220,
+    height: (device !== 'phone') ? 420 : 220,
+  }),
   imgSecret: {
     //width: (Platform.OS === 'web') ? 128 : 70,
     //height: (Platform.OS === 'web') ? 128 : 70,
   },
-  imgSecretBig: {
-    width: (Platform.OS === 'web') ? 400 : 200,
-    height: (Platform.OS === 'web') ? 400 : 200,
+  imgSecretBig: device => ({
+    width: (device !== 'phone') ? 400 : 200,
+    height: (device !== 'phone') ? 400 : 200,
+  }),
+  secretSplit: {
+    marginBottom: 9,
   },
 });

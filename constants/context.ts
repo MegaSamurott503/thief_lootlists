@@ -5,3 +5,4 @@ export const FoundContext = createContext();
 export const CarryoverContext = createContext();
 export const FilterContext = createContext();
 export const SettingContext = createContext();
+export const ScrollContext = createContext();

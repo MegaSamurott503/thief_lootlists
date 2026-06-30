@@ -22,9 +22,7 @@ export default function Thief1Screen() {
   const { colors } = useTheme();
 
   return (
-    <ScrollView style={{
-      height: (Platform.OS === 'web') ? height*0.99 : '100%'
-    }}>
+    <ScrollView>
       <View style={stylesGoTo.buttonPage}>
         <Text style={{color: colors.text}}>
           Thief 1 Mission Selection
@@ -113,11 +111,21 @@ export default function Thief1Screen() {
             missionName="Into the Maw of Chaos"
             imgAB="A"
           />
-          {/*<GoToMission
+          <GoToMission
+            missionID="t1_bafford-demo"
+            missionName="Lord Bafford's Manor (Demo)"
+            imgAB="B"
+          />
+          <GoToMission
+            missionID="t1_guild-demo"
+            missionName="Thieves' Guild (Demo)"
+            imgAB="B"
+          />
+          <GoToMission
             missionID="t1_blooper"
             missionName="Blooper Reel"
             imgAB="A"
-          />*/}
+          />
         </View>
       </View>
     </ScrollView>

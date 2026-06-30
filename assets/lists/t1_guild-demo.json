@@ -1,0 +1,855 @@
+{
+  "id": "t1_guild-demo",
+  "title": "Thieves' Guild (Demo)",
+  "screens": [
+    "MIS_t1_guild-demo_A",
+    "MIS_t1_guild-demo_B"
+  ],
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "totals": [
+    [209,0,0,0,209],
+    [209,0,0,0,209],
+    [209,0,0,0,209]
+  ],
+  "lootCount": [16,16,16],
+  "lootChanges": [0,0,0],
+  "pocketCount": [4,5,5],
+  "pocketChanges": [0,1,1],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Street"},
+    {"key": "3", "value": "Restaurant"},
+    {"key": "4", "value": "Overlord's Fancy"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coppercoinstack",
+      "name": "Copper Coin Stack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "t1_guild-demo_loot_1",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "side room",
+              "findExact": "table",
+              "findCount": [2,2,2],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "t1_guild-demo_loot_2",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "southeast room",
+              "findExact": "west card table",
+              "findCount": [2,2,2],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "t1_guild-demo_loot_3",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "southwest room",
+              "findExact": "card table",
+              "findCount": [3,3,3],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "t1_guild-demo_loot_4",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "northeast room",
+              "findExact": "roulette table",
+              "findCount": [2,2,2],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "Gold Coin Stack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "t1_guild-demo_loot_5",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "side room",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "t1_guild-demo_loot_6",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "t1_guild-demo_loot_7",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "southwest room",
+              "findExact": "card table",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "Purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "t1_guild-demo_loot_8",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "N booth",
+              "findExact": "east shelf",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "Silver Coin Stack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "t1_guild-demo_loot_9",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "southeast room",
+              "findExact": "east card table",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "t1_guild-demo_loot_10",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "northeast room",
+              "findExact": "card table",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "15gold",
+          "value": [15,0,0,0],
+          "locations": [
+            {
+              "id": "t1_guild-demo_loot_11",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "side room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "Sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "Blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "Broadhead Arrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [30,30,30],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_guild-demo_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [30,30,30],
+              "loadout": "store",
+              "price": 25
+            },
+            {
+              "id": "t1_guild-demo_item_5",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "barracks",
+              "findExact": "behind chimney",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "Water Arrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_6",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [7,7,7],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_guild-demo_item_7",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [20,20,20],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "Fire Arrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_guild-demo_item_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [6,6,6],
+              "findCountActual": [5,5,5],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "Moss Arrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_10",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_guild-demo_item_11",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [8,8,8],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "Rope Arrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_12",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "t1_guild-demo_item_13",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t1_guild-demo_item_14",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "barracks",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "Noisemaker Arrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_15",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,10,10],
+              "findCountActual": [6,6,6],
+              "loadout": "store",
+              "price": 250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "Water Crystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_16",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "northeast room",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_guild-demo_item_17",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "N booth",
+              "findExact": "west shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Flash Bomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_18",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "t1_guild-demo_item_19",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "southwest room",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_guild-demo_item_20",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "N booth",
+              "findExact": "west shelf",
+              "findCountBox": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "Mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_21",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,4],
+              "loadout": "store",
+              "price": 350
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "Healing Potion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_22",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "t1_guild-demo_item_23",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "on Bafford swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "Speed Potion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_24",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "Square-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_25",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "Triangle-tooth Lockpick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_26",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Restaurant Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_27",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "main room",
+              "findExact": "on Sutter",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Casino Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_28",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "SW booth",
+              "findExact": "on thief archer",
+              "findCountBox": [0,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_guild-demo_item_29",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "SW booth",
+              "findExact": "on thief swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_guild-demo_item_30",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "N booth",
+              "findExact": "on thief swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "t1_guild-demo_item_31",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "N booth",
+              "findExact": "on thief archer",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "Compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_32",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "Loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_33",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "kitchen",
+              "findExact": "east counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "Deer Leg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_item_34",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "kitchen",
+              "findExact": "southeast counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "Normal Crate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_junk_1",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "barracks",
+              "findExact": "near table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cookware",
+      "category": "Cookware",
+      "catJunk": [
+        {
+          "id": "junk_skillet",
+          "name": "Skillet",
+          "img": [
+            "IMG_Skillet"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_junk_2",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "kitchen",
+              "findExact": "north counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_saucepan",
+          "name": "Saucepan",
+          "img": [
+            "IMG_Saucepan"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_junk_3",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "kitchen",
+              "findExact": "southwest counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_cookingpot",
+          "name": "Cooking Pot",
+          "img": [
+            "IMG_CookingPot"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_junk_4",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "kitchen",
+              "findExact": "oven",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "t1_guild-demo_junk_5",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "kitchen",
+              "findExact": "north counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_canister",
+          "name": "Canister",
+          "img": [
+            "IMG_Canister_Flour",
+            "IMG_Canister_UnmarkedLarge"
+          ],
+          "locations": [
+            {
+              "id": "t1_guild-demo_junk_6",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "kitchen",
+              "findExact": "north counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "t1_guild-demo_junk_7",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "kitchen",
+              "findExact": "southwest counter",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

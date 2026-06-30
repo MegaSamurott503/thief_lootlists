@@ -6,9 +6,12 @@ import {
   View, ScrollView,
   useWindowDimensions
 } from 'react-native';
+import { Link } from 'react-scroll';
 import { memo, useEffect, useState, useContext } from 'react';
 
 import { GoalView } from '@/components/goalView';
+import { JumpView } from '@/components/jumpView';
+import { LootIconPicker } from '@/components/lootIconPicker';
 
 import { stylesList } from '@/constants/stylesList';
 import { stylesTotal } from '@/constants/stylesTotal';
@@ -16,8 +19,7 @@ import { stylesImg } from '@/constants/stylesImg';
 import {
   bgDefaultLight, bgDefaultDark,
   bgFoundLight, bgFoundDark,
-  bgFoundLightS, bgFoundDarkS,
-  iconGold, iconGems, iconGoods, iconSpecial
+  bgFoundLightS, bgFoundDarkS
 } from '@/constants/imgUI';
 import {
   SettingContext, FoundContext, CarryoverContext
@@ -36,7 +38,7 @@ export const TotalsView = memo(function TotalsView(props) {
   // Access theme colors.
   const { colors } = useTheme();
 
-  // Fetch FoundLoot and FoundPocket states from context.
+  // Fetch accumLoot, accumPiece, and accumPiece states from context.
   const {accumLoot, accumPiece, accumPocket} = useContext(FoundContext);
 
   // Fetch CarryLoot and CarryFound states from context.
@@ -47,7 +49,8 @@ export const TotalsView = memo(function TotalsView(props) {
     useContext(CarryoverContext);
 
   // Fetch global setting states from context.
-  const {scheme, getCurrentTheme, setCurrentTheme} =
+  const {scheme, device,
+    getCurrentTheme, setCurrentTheme} =
     useContext(SettingContext);
 
   // FoundLoot: tracks the values of loot selected by the user.
@@ -339,17 +342,20 @@ export const TotalsView = memo(function TotalsView(props) {
     <View style={[styles.totalBorder, {borderColor: colors.border}]}>
       <ScrollView
         style={{
-          flexGrow: (Platform.OS === 'web') ? 0 : 1,
-          height: (!props.totals && !props.pocketCount) ? '0%' :
-            (Platform.OS === 'web') ? height*0.33 : '25%'
+          flexGrow: (device !== 'phone') ? 0 : 1,
+          height: (!props.totals && !props.pocketCount) ? '16%' :
+            (device !== 'phone') ? height*0.33 : '25%'
         }}
-        contentContainerStyle={styles.totalView}
+        contentContainerStyle={styles.totalView(device)}
       >
         {/* If loot carries over from the previous mission,
             allow user to input the total loot they found. */}
         {props.totals && props.carryLoot &&
           <View style={styles.carryView}>
-            <Text style={[styles.carryText, {color: colors.text}]}>
+            <Text style={[
+              styles.carryText(device),
+              {color: colors.text}
+            ]}>
               {`Enter previous loot: `}
             </Text>
             <TextInput
@@ -373,99 +379,89 @@ export const TotalsView = memo(function TotalsView(props) {
          (Math.max(...props.totals[0]) > 0 ||
           Math.max(...props.totals[1]) > 0 ||
           Math.max(...props.totals[2]) > 0) ) &&
-          <View style={styles.spacedView}>
+          <View style={styles.spacedView(device)}>
             <View style={styles.tableHeader}>
               <View style={[
-                styles.tableHeadBox,
-                styles.sizeRowStart,
+                styles.tableHeadBox(device),
+                styles.sizeRowStart(device),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>
+                <Text style={styles.tableHeadText(device)}>
                   Loot Totals
                   </Text>
               </View>
               {/* Column headers for gold / gems / goods / special / total. */}
               <View style={[
-                styles.tableHeadBox,
-                {width: (Platform.OS !== 'web')
+                styles.tableHeadBox(device),
+                {width: (device === 'phone')
                         ? (width < 400) ? 48 : 66
                         : (width < 626) ? 60 : 100,
                 backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Image
-                  source={iconGold}
-                  style={stylesImg.imgLootIcon}
-                />
+                <LootIconPicker cat={props.lootCats[0]} />
               </View>
               <View style={[
-                styles.tableHeadBox,
-                {width: (Platform.OS !== 'web')
+                styles.tableHeadBox(device),
+                {width: (device === 'phone')
                         ? (width < 400) ? 48 : 66
                         : (width < 626) ? 60 : 100,
                 backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Image
-                  source={iconGems}
-                  style={stylesImg.imgLootIcon}
-                />
+                <LootIconPicker cat={props.lootCats[1]} />
               </View>
               <View style={[
-                styles.tableHeadBox,
-                {width: (Platform.OS !== 'web')
+                styles.tableHeadBox(device),
+                {width: (device === 'phone')
                         ? (width < 400) ? 48 : 66
                         : (width < 626) ? 60 : 100,
                 backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Image
-                  source={iconGoods}
-                  style={stylesImg.imgLootIcon}
-                />
+                <LootIconPicker cat={props.lootCats[2]} />
               </View>
               {(props.totals[0][3] > 0 ||
                 props.totals[1][3] > 0 ||
                 props.totals[2][3] > 0) &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
+                  styles.tableHeadBox(device),
+                  {width: (device === 'phone')
                           ? (width < 400) ? 48 : 66
                           : (width < 626) ? 60 : 100,
                   backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
-                  <Image
-                    source={iconSpecial}
-                    style={stylesImg.imgLootIcon}
-                  />
+                  <LootIconPicker cat={props.lootCats[3]} />
                 </View>
               }
               <View style={[
-                styles.tableHeadBox,
-                {width: (Platform.OS !== 'web')
+                styles.tableHeadBox(device),
+                {width: (device === 'phone')
                         ? (width < 400) ? 48 : 66
                         : (width < 626) ? 60 : 100,
                 backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>Total</Text>
+                <Text style={styles.tableHeadText(device)}>
+                  Total
+                </Text>
               </View>
               {/* Extra column if loot carries over. */}
               {props.carryLoot &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
+                  styles.tableHeadBox(device),
+                  {width: (device === 'phone')
                           ? (width < 400) ? 48 : 66
                           : (width < 626) ? 60 : 100,
                   backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
                   <Text style={[
-                    styles.tableHeadText,
-                    {fontSize: (Platform.OS !== 'web') ? 8 :
-                            (width < 626) ? 10 : 14}
+                    styles.tableHeadText(device),
+                    {fontSize: (device === 'phone') ? 8 :
+                                (width < 626) ? 10 : 14}
                   ]}>+ Carryover</Text>
                 </View>
               }
@@ -482,8 +478,8 @@ export const TotalsView = memo(function TotalsView(props) {
                     {Math.max(...outerKey) > 0 &&
                       <>
                         <View style={[
-                          styles.tableRowStart,
-                          styles.sizeRowStart,
+                          styles.tableRowStart(device),
+                          styles.sizeRowStart(device),
                           {backgroundColor: colors.backMed,
                           borderColor: colors.border}
                         ]}>
@@ -587,7 +583,7 @@ export const TotalsView = memo(function TotalsView(props) {
                             {((b !== 3) || (b === 3 && innerKey > 0)) &&
                               <View
                                 style={[stylesTotal.tableRowBox,
-                                  {width: (Platform.OS !== 'web')
+                                  {width: (device === 'phone')
                                           ? (width < 400) ? 48 : 66
                                           : (width < 626) ? 60 : 100,
                                   borderColor: colors.border}
@@ -596,25 +592,25 @@ export const TotalsView = memo(function TotalsView(props) {
                                   source={(getCurrentTheme === 'dark' ||
                                     (getCurrentTheme === 'default' && scheme === 'dark'))
                                     ? ((getFoundLoot[a][b] >= innerKey)
-                                      ? ((Platform.OS === 'web' && width < 626)
+                                      ? ((device !== 'phone' && width < 626)
                                         ? bgFoundDarkS : bgFoundDark)
                                       : bgDefaultDark)
                                     : ((getFoundLoot[a][b] >= innerKey)
-                                      ? ((Platform.OS === 'web' && width < 626)
+                                      ? ((device !== 'phone' && width < 626)
                                         ? bgFoundLightS : bgFoundLight)
                                       : bgDefaultLight)}
                                   resizeMode="cover"
                                   style={[
                                     stylesTotal.totalBackground,
-                                    (Platform.OS === 'web') ? stylesTotal.totalBackgroundWeb : ''
+                                    (device !== 'phone') ? stylesTotal.totalBackgroundWeb : ''
                                   ]}
                                 >
                                   <Text style={[
                                     stylesTotal.tableRowText, {color: colors.text}
                                   ]}>
                                     {getFoundLoot[a][b]}
-                                    {((Platform.OS !== 'web' && width < 400) ||
-                                      (Platform.OS === 'web' && width < 626)) &&
+                                    {((device === 'phone' && width < 400) ||
+                                      (device !== 'phone' && width < 626)) &&
                                       "\n"
                                     }
                                     {" / "}
@@ -628,7 +624,7 @@ export const TotalsView = memo(function TotalsView(props) {
                         {/* Carryover loot box if input is empty. */}
                         {props.carryLoot && getCarryLoot === '' &&
                           <View style={[stylesTotal.tableRowBox,
-                            {width: (Platform.OS !== 'web')
+                            {width: (device === 'phone')
                                     ? (width < 400) ? 48 : 66
                                     : (width < 626) ? 60 : 100,
                             borderColor: colors.border}
@@ -637,25 +633,25 @@ export const TotalsView = memo(function TotalsView(props) {
                               source={(getCurrentTheme === 'dark' ||
                                 (getCurrentTheme === 'default' && scheme === 'dark'))
                                 ? ((getFoundLoot[a][4] >= props.totals[a][4])
-                                  ? ((Platform.OS === 'web' && width < 626)
+                                  ? ((device !== 'phone' && width < 626)
                                     ? bgFoundDarkS : bgFoundDark)
                                   : bgDefaultDark)
                                 : ((getFoundLoot[a][4] >= props.totals[a][4])
-                                  ? ((Platform.OS === 'web' && width < 626)
+                                  ? ((device !== 'phone' && width < 626)
                                     ? bgFoundLightS : bgFoundLight)
                                   : bgDefaultLight)}
                               resizeMode="cover"
                               style={[
                                 stylesTotal.totalBackground,
-                                (Platform.OS === 'web') ? stylesTotal.totalBackgroundWeb : ''
+                                (device !== 'phone') ? stylesTotal.totalBackgroundWeb : ''
                               ]}
                             >
                               <Text style={[
                                 stylesTotal.tableRowText, {color: colors.text}
                               ]}>
                                 {getFoundLoot[a][4]}
-                                {((Platform.OS !== 'web' && width < 400) ||
-                                  (Platform.OS === 'web' && width < 626)) &&
+                                {((device === 'phone' && width < 400) ||
+                                  (device !== 'phone' && width < 626)) &&
                                   "\n"
                                 }
                                 {" / "}
@@ -667,7 +663,7 @@ export const TotalsView = memo(function TotalsView(props) {
                         {/* Carryover loot box if input is given. */}
                         {props.carryLoot && getCarryLoot !== '' &&
                           <View style={[stylesTotal.tableRowBox,
-                            {width: (Platform.OS !== 'web')
+                            {width: (device === 'phone')
                                     ? (width < 400) ? 48 : 66
                                     : (width < 626) ? 60 : 100,
                             borderColor: colors.border},
@@ -683,7 +679,7 @@ export const TotalsView = memo(function TotalsView(props) {
                                       (a === 2 && getCarryFoundX)) &&
                                   (parseInt(getCarryLoot) + getFoundLoot[a][4]) >=
                                   (parseInt(getCarryLoot) + props.totals[a][4]))
-                                  ? ((Platform.OS === 'web' && width < 626)
+                                  ? ((device !== 'phone' && width < 626)
                                     ? bgFoundDarkS : bgFoundDark)
                                   : bgDefaultDark)
                                 : ( (((a === 0 && getCarryFoundN) ||
@@ -691,13 +687,13 @@ export const TotalsView = memo(function TotalsView(props) {
                                       (a === 2 && getCarryFoundX)) &&
                                   (parseInt(getCarryLoot) + getFoundLoot[a][4]) >=
                                   (parseInt(getCarryLoot) + props.totals[a][4]))
-                                  ? ((Platform.OS === 'web' && width < 626)
+                                  ? ((device !== 'phone' && width < 626)
                                     ? bgFoundLightS : bgFoundLight)
                                   : bgDefaultLight)}
                               resizeMode="cover"
                               style={[
                                 stylesTotal.totalBackground,
-                                (Platform.OS === 'web') ? stylesTotal.totalBackgroundWeb : ''
+                                (device !== 'phone') ? stylesTotal.totalBackgroundWeb : ''
                               ]}
                             >
                               <Text style={[
@@ -711,8 +707,8 @@ export const TotalsView = memo(function TotalsView(props) {
                                    (a === 1 && getCarryFoundH) ||
                                    (a === 2 && getCarryFoundX)) &&
                                   getFoundLoot[a][4]}
-                                {((Platform.OS !== 'web' && width < 400) ||
-                                  (Platform.OS === 'web' && width < 626)) &&
+                                {((device === 'phone' && width < 400) ||
+                                  (device !== 'phone' && width < 626)) &&
                                   "\n"
                                 }
                                 {" / "}
@@ -734,24 +730,28 @@ export const TotalsView = memo(function TotalsView(props) {
             display a table of loot piece counts. */}
         {(props.totals && props.lootCount &&
          (Math.max(...props.lootCount) > 0) ) &&
-          <View style={styles.spacedView}>
+          <View style={styles.spacedView(device)}>
             <View style={styles.tableHeader}>
               <View style={[
-                styles.tableHeadBox,
-                styles.sizeRowStart,
+                styles.tableHeadBox(device),
+                styles.sizeRowStart(device),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>Loot Pieces</Text>
+                <Text style={styles.tableHeadText(device)}>
+                  Loot Pieces
+                </Text>
               </View>
               {/* Column header. */}
               <View style={[
-                styles.tableHeadBox,
-                styles.pieceRowBox,
+                styles.tableHeadBox(device),
+                styles.pieceRowBox(device),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>Total</Text>
+                <Text style={styles.tableHeadText(device)}>
+                  Total
+                </Text>
               </View>
             </View>
             {props.lootCount.map((pieceKey, e) => (
@@ -766,8 +766,8 @@ export const TotalsView = memo(function TotalsView(props) {
                     {pieceKey > 0 &&
                       <>
                         <View style={[
-                          styles.tableRowStart,
-                          styles.sizeRowStart,
+                          styles.tableRowStart(device),
+                          styles.sizeRowStart(device),
                           {backgroundColor: colors.backMed,
                           borderColor: colors.border}
                         ]}>
@@ -868,24 +868,24 @@ export const TotalsView = memo(function TotalsView(props) {
                         {/* Display found loot pieces & max loot pieces. */}
                         <View style={[
                           stylesTotal.tableRowBox,
-                          styles.pieceRowBox,
+                          styles.pieceRowBox(device),
                           {borderColor: colors.border}
                         ]}>
                           <ImageBackground
                             source={(getCurrentTheme === 'dark' ||
                               (getCurrentTheme === 'default' && scheme === 'dark'))
                               ? ((getFoundPiece[e] >= props.lootCount[e])
-                                ? ((Platform.OS === 'web' && width < 626)
+                                ? ((device !== 'phone' && width < 626)
                                   ? bgFoundDarkS : bgFoundDark)
                                 : bgDefaultDark)
                               : ((getFoundPiece[e] >= props.lootCount[e])
-                                ? ((Platform.OS === 'web' && width < 626)
+                                ? ((device !== 'phone' && width < 626)
                                   ? bgFoundLightS : bgFoundLight)
                                 : bgDefaultLight)}
                             resizeMode="cover"
                             style={[
                               stylesTotal.totalBackground,
-                              (Platform.OS === 'web') ? stylesTotal.totalBackgroundWeb : ''
+                              (device !== 'phone') ? stylesTotal.totalBackgroundWeb : ''
                             ]}
                           >
                             <Text style={[stylesTotal.tableRowText, {color: colors.text}]}>
@@ -908,22 +908,24 @@ export const TotalsView = memo(function TotalsView(props) {
             Math.max(...props.goal1.total) > 0) ||
            (props.goal2 && props.goal2.total &&
             Math.max(...props.goal2.total) > 0) ) &&
-          <View style={styles.spacedView}>
+          <View style={styles.spacedView(device)}>
             <View style={styles.tableHeader}>
               <View style={[
-                styles.tableHeadBox,
-                styles.sizeRowStart,
+                styles.tableHeadBox(device),
+                styles.sizeRowStart(device),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>Loot Goals</Text>
+                <Text style={styles.tableHeadText(device)}>
+                  Loot Goals
+                </Text>
               </View>
               {/* Column for the first loot goal. */}
               {props.goal1 && props.goal1.total &&
                 Math.max(...props.goal1.total) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
+                  styles.tableHeadBox(device),
+                  {width: (device === 'phone')
                           ? (width < 400) ? 48 : 66
                           : (width < 626) ? 60 : 100,
                   backgroundColor: colors.backDark,
@@ -932,13 +934,19 @@ export const TotalsView = memo(function TotalsView(props) {
                   {/* Is this loot goal optional or a bonus? */}
                   {props.goal1.info !== "optional" &&
                    props.goal1.info !== "bonus" &&
-                    <Text style={styles.tableHeadText}>Required</Text>
+                    <Text style={styles.tableHeadText(device)}>
+                      Required
+                    </Text>
                   }
                   {props.goal1.info === "optional" &&
-                    <Text style={styles.tableHeadText}>(Optional)</Text>
+                    <Text style={styles.tableHeadText(device)}>
+                      (Optional)
+                    </Text>
                   }
                   {props.goal1.info === "bonus" &&
-                    <Text style={styles.tableHeadText}>(Bonus)</Text>
+                    <Text style={styles.tableHeadText(device)}>
+                      (Bonus)
+                    </Text>
                   }
                 </View>
               }
@@ -946,76 +954,64 @@ export const TotalsView = memo(function TotalsView(props) {
               {props.goal1 && props.goal1.gold &&
                 Math.max(...props.goal1.gold) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
+                  styles.tableHeadBox(device),
+                  {width: (device === 'phone')
                           ? (width < 400) ? 48 : 66
                           : (width < 626) ? 60 : 100,
                   backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
-                  <Image
-                    source={iconGold}
-                    style={stylesImg.imgLootIcon}
-                  />
+                  <LootIconPicker cat={props.lootCats[0]} />
                 </View>
               }
               {/* Column for the first goal's gems minimum. */}
               {props.goal1 && props.goal1.gems &&
                 Math.max(...props.goal1.gems) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
+                  styles.tableHeadBox(device),
+                  {width: (device === 'phone')
                           ? (width < 400) ? 48 : 66
                           : (width < 626) ? 60 : 100,
                   backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
-                  <Image
-                    source={iconGems}
-                    style={stylesImg.imgLootIcon}
-                  />
+                  <LootIconPicker cat={props.lootCats[1]} />
                 </View>
               }
               {/* Column for the first goal's goods minimum. */}
               {props.goal1 && props.goal1.goods &&
                 Math.max(...props.goal1.goods) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
+                  styles.tableHeadBox(device),
+                  {width: (device === 'phone')
                           ? (width < 400) ? 48 : 66
                           : (width < 626) ? 60 : 100,
                   backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
-                  <Image
-                    source={iconGoods}
-                    style={stylesImg.imgLootIcon}
-                  />
+                  <LootIconPicker cat={props.lootCats[2]} />
                 </View>
               }
               {/* Column for the first goal's special minimum. */}
               {props.goal1 && props.goal1.special &&
                 Math.max(...props.goal1.special) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
+                  styles.tableHeadBox(device),
+                  {width: (device === 'phone')
                           ? (width < 400) ? 48 : 66
                           : (width < 626) ? 60 : 100,
                   backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
-                  <Image
-                    source={iconSpecial}
-                    style={stylesImg.imgLootIcon}
-                  />
+                  <LootIconPicker cat={props.lootCats[3]} />
                 </View>
               }
               {/* Column for the second loot goal. */}
               {props.goal2 && props.goal2.total &&
                 Math.max(...props.goal2.total) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
+                  styles.tableHeadBox(device),
+                  {width: (device === 'phone')
                           ? (width < 400) ? 48 : 66
                           : (width < 626) ? 60 : 100,
                   backgroundColor: colors.backDark,
@@ -1024,13 +1020,19 @@ export const TotalsView = memo(function TotalsView(props) {
                   {/* Is this loot goal optional or a bonus? */}
                   {props.goal2.info !== "optional" &&
                    props.goal2.info !== "bonus" &&
-                    <Text style={styles.tableHeadText}>Required</Text>
+                    <Text style={styles.tableHeadText(device)}>
+                      Required
+                    </Text>
                   }
                   {props.goal2.info === "optional" &&
-                    <Text style={styles.tableHeadText}>(Optional)</Text>
+                    <Text style={styles.tableHeadText(device)}>
+                      (Optional)
+                    </Text>
                   }
                   {props.goal2.info === "bonus" &&
-                    <Text style={styles.tableHeadText}>(Bonus)</Text>
+                    <Text style={styles.tableHeadText(device)}>
+                      (Bonus)
+                    </Text>
                   }
                 </View>
               }
@@ -1038,68 +1040,56 @@ export const TotalsView = memo(function TotalsView(props) {
               {props.goal2 && props.goal2.gold &&
                 Math.max(...props.goal2.gold) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
+                  styles.tableHeadBox(device),
+                  {width: (device === 'phone')
                           ? (width < 400) ? 48 : 66
                           : (width < 626) ? 60 : 100,
                   backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
-                  <Image
-                    source={iconGold}
-                    style={stylesImg.imgLootIcon}
-                  />
+                  <LootIconPicker cat={props.lootCats[0]} />
                 </View>
               }
               {/* Column for the second goal's gems minimum. */}
               {props.goal2 && props.goal2.gems &&
                 Math.max(...props.goal2.gems) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
+                  styles.tableHeadBox(device),
+                  {width: (device === 'phone')
                           ? (width < 400) ? 48 : 66
                           : (width < 626) ? 60 : 100,
                   backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
-                  <Image
-                    source={iconGems}
-                    style={stylesImg.imgLootIcon}
-                  />
+                  <LootIconPicker cat={props.lootCats[1]} />
                 </View>
               }
               {/* Column for the second goal's goods minimum. */}
               {props.goal2 && props.goal2.goods &&
                 Math.max(...props.goal2.goods) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
+                  styles.tableHeadBox(device),
+                  {width: (device === 'phone')
                           ? (width < 400) ? 48 : 66
                           : (width < 626) ? 60 : 100,
                   backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
-                  <Image
-                    source={iconGoods}
-                    style={stylesImg.imgLootIcon}
-                  />
+                  <LootIconPicker cat={props.lootCats[2]} />
                 </View>
               }
               {/* Column for the second goal's special minimum. */}
               {props.goal2 && props.goal2.special &&
                 Math.max(...props.goal2.special) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
+                  styles.tableHeadBox(device),
+                  {width: (device === 'phone')
                           ? (width < 400) ? 48 : 66
                           : (width < 626) ? 60 : 100,
                   backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
-                  <Image
-                    source={iconSpecial}
-                    style={stylesImg.imgLootIcon}
-                  />
+                  <LootIconPicker cat={props.lootCats[3]} />
                 </View>
               }
             </View>
@@ -1124,8 +1114,8 @@ export const TotalsView = memo(function TotalsView(props) {
                     ) &&
                       <>
                         <View style={[
-                          styles.tableRowStart,
-                          styles.sizeRowStart,
+                          styles.tableRowStart(device),
+                          styles.sizeRowStart(device),
                           {backgroundColor: colors.backMed,
                           borderColor: colors.border}
                         ]}>
@@ -1325,24 +1315,28 @@ export const TotalsView = memo(function TotalsView(props) {
             display a table of pickpocket counts. */}
         {(props.pocketCount &&
          (Math.max(...props.pocketCount) > 0) ) &&
-          <View style={styles.spacedView}>
+          <View style={styles.spacedView(device)}>
             <View style={styles.tableHeader}>
               <View style={[
-                styles.tableHeadBox,
-                styles.sizeRowStart,
+                styles.tableHeadBox(device),
+                styles.sizeRowStart(device),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>Pickpockets</Text>
+                <Text style={styles.tableHeadText(device)}>
+                  Pickpockets
+                </Text>
               </View>
               {/* Column header. */}
               <View style={[
-                styles.tableHeadBox,
-                styles.pocketRowBox,
+                styles.tableHeadBox(device),
+                styles.pocketRowBox(device),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>Total</Text>
+                <Text style={styles.tableHeadText(device)}>
+                  Total
+                </Text>
               </View>
             </View>
             {props.pocketCount.map((pickKey, c) => (
@@ -1357,8 +1351,8 @@ export const TotalsView = memo(function TotalsView(props) {
                     {pickKey > 0 &&
                       <>
                         <View style={[
-                          styles.tableRowStart,
-                          styles.sizeRowStart,
+                          styles.tableRowStart(device),
+                          styles.sizeRowStart(device),
                           {backgroundColor: colors.backMed,
                           borderColor: colors.border}
                         ]}>
@@ -1459,24 +1453,24 @@ export const TotalsView = memo(function TotalsView(props) {
                         {/* Display found pickpockets & max pickpockets. */}
                         <View style={[
                           stylesTotal.tableRowBox,
-                          styles.pocketRowBox,
+                          styles.pocketRowBox(device),
                           {borderColor: colors.border}
                         ]}>
                           <ImageBackground
                             source={(getCurrentTheme === 'dark' ||
                               (getCurrentTheme === 'default' && scheme === 'dark'))
                               ? ((getFoundPocket[c] >= props.pocketCount[c])
-                                ? ((Platform.OS === 'web' && width < 626)
+                                ? ((device !== 'phone' && width < 626)
                                   ? bgFoundDarkS : bgFoundDark)
                                 : bgDefaultDark)
                               : ((getFoundPocket[c] >= props.pocketCount[c])
-                                ? ((Platform.OS === 'web' && width < 626)
+                                ? ((device !== 'phone' && width < 626)
                                   ? bgFoundLightS : bgFoundLight)
                                 : bgDefaultLight)}
                             resizeMode="cover"
                             style={[
                               stylesTotal.totalBackground,
-                              (Platform.OS === 'web') ? stylesTotal.totalBackgroundWeb : ''
+                              (device !== 'phone') ? stylesTotal.totalBackgroundWeb : ''
                             ]}
                           >
                             <Text style={[stylesTotal.tableRowText, {color: colors.text}]}>
@@ -1492,6 +1486,23 @@ export const TotalsView = memo(function TotalsView(props) {
             ))}
           </View>
         }
+
+        {/* Display buttons to jump to different sections. */}
+        <JumpView
+          canFindLoot={props.canFindLoot}
+          canFindItems={props.canFindItems}
+          canFindJunk={props.canFindJunk}
+          canFindSecrets={props.canFindSecrets}
+          canFindArrows={props.canFindArrows}
+          canFindCrystals={props.canFindCrystals}
+          canFindKeys={props.canFindKeys}
+          canFindParchment={props.canFindParchment}
+          canFindTreasure={props.canFindTreasure}
+          canFindJewelry={props.canFindJewelry}
+          canFindGemstones={props.canFindGemstones}
+          canFindTalismans={props.canFindTalismans}
+        />
+
       </ScrollView>
     </View>
   );
@@ -1502,18 +1513,18 @@ const styles = StyleSheet.create({
   totalBorder: {
     borderTopWidth: 3,
   },
-  totalView: {
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
+  totalView: device => ({
+    marginHorizontal: (device !== 'phone') ? 10 : 5,
     marginBottom: 5,
-  },
+  }),
   carryView: {
     flexDirection: 'row',
     alignItems: 'center',
     margin: 5,
   },
-  carryText: {
-    fontSize: (Platform.OS === 'web') ? 15 : 12,
-  },
+  carryText: device => ({
+    fontSize: (device !== 'phone') ? 15 : 12,
+  }),
   carryInput: {
     borderWidth: 1,
     paddingHorizontal: 5,
@@ -1522,39 +1533,39 @@ const styles = StyleSheet.create({
     height: 22,
     fontSize: 12,
   },
-  spacedView: {
-    marginVertical: (Platform.OS === 'web') ? 8 : 5,
-  },
+  spacedView: device => ({
+    marginVertical: (device !== 'phone') ? 8 : 5,
+  }),
   tableHeader: {
     flexDirection: 'row',
   },
-  tableHeadBox: {
+  tableHeadBox: device => ({
     borderWidth: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    width: (Platform.OS === 'web') ? 100 : 70,
+    width: (device !== 'phone') ? 100 : 70,
     padding: 2,
-  },
-  tableHeadText: {
+  }),
+  tableHeadText: device => ({
     color: 'white',
-    fontSize: (Platform.OS === 'web') ? 13 : 8,
-  },
+    fontSize: (device !== 'phone') ? 13 : 8,
+  }),
   tableRow: {
     flexDirection: 'row',
   },
-  tableRowStart: {
+  tableRowStart: device => ({
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
-    padding: (Platform.OS === 'web') ? 4 : 2,
-  },
-  sizeRowStart: {
-    width: (Platform.OS === 'web') ? 100 : 70,
-  },
-  pieceRowBox: {
-    width: (Platform.OS === 'web') ? 80 : 50,
-  },
-  pocketRowBox: {
-    width: (Platform.OS === 'web') ? 60 : 40,
-  },
+    padding: (device !== 'phone') ? 4 : 2,
+  }),
+  sizeRowStart: device => ({
+    width: (device !== 'phone') ? 100 : 70,
+  }),
+  pieceRowBox: device => ({
+    width: (device !== 'phone') ? 80 : 50,
+  }),
+  pocketRowBox: device => ({
+    width: (device !== 'phone') ? 60 : 40,
+  }),
 });

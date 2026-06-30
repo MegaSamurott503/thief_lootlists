@@ -3,7 +3,10 @@ import {
   StyleSheet, Platform,
   useWindowDimensions
 } from 'react-native';
+import { useContext } from 'react';
 import { MultipleSelectList } from 'react-native-dropdown-select-list';
+
+import { SettingContext } from '@/constants/context';
 
 /* **************** */
 /*  FILTER DROPDOWN */
@@ -22,17 +25,20 @@ export function FilterDropdown(props) {
   // Access theme colors.
   const { colors } = useTheme();
 
+  // Fetch global setting states from context.
+  const { device } = useContext(SettingContext);
+
   return (
     <MultipleSelectList
       boxStyles={[
-        styles.selectBox,
-        Platform.OS !== 'web' && {
+        styles.selectBox(device),
+        device === 'phone' && {
           width: (props.size === 'wide') ? '80%' : width*0.46,
         },
-        Platform.OS === 'web' && {
+        device !== 'phone' && {
           width: (props.size === 'wide') ?
             ((width > 460) ? 425 : width*0.92) :
-            ((width > 618) ? 280 : '45%'),
+            ((width > 618) ? 280 : 220),
         },
         {backgroundColor: colors.inputArea,
         borderColor: colors.inputBorder}
@@ -44,23 +50,28 @@ export function FilterDropdown(props) {
       ]}
       labelStyles={{color: colors.text}}
       dropdownStyles={[
-        styles.selectDropdown,
-        Platform.OS !== 'web' && {
+        styles.selectDropdown(device),
+        device === 'phone' && {
           width: (props.size === 'wide') ? '80%' : width*0.46,
         },
-        Platform.OS === 'web' && {
+        device !== 'phone' && {
           width: (props.size === 'wide') ?
             ((width > 460) ? 425 : width*0.92) :
-            ((width > 618) ? 280 : '45%'),
+            ((width > 618) ? 280 : 220),
         },
         {backgroundColor: colors.inputArea,
         borderColor: colors.inputBorder}
       ]}
       dropdownItemStyles={styles.selectListItem}
       dropdownTextStyles={[
-        styles.selectListText,
-        {color: colors.text,
-        fontSize: (props.size === 'wide') ? 10 : 9}
+        //styles.selectListText,
+        device === 'phone' && {
+          fontSize: (props.size === 'wide') ? 10 : 9
+        },
+        device !== 'phone' && {
+          fontSize: (props.size === 'wide') ? 14 : 12
+        },
+        {color: colors.text}
       ]}
       badgeStyles={[
         styles.selectBadge,
@@ -82,25 +93,25 @@ export function FilterDropdown(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  selectBox: {
+  selectBox: device => ({
     borderRadius: 5,
     //width: (Platform.OS === 'web') ? 425 : '80%',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
+    marginHorizontal: (device !== 'phone') ? 10 : 5,
     marginVertical: 5,
-  },
-  selectDropdown: {
+  }),
+  selectDropdown: device => ({
     borderRadius: 5,
     //width: (Platform.OS === 'web') ? 425 : '80%',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
+    marginHorizontal: (device !== 'phone') ? 10 : 5,
     marginVertical: 5,
-  },
+  }),
   selectListItem: {
     alignItems: 'center',
     marginHorizontal: -5,
     height: 30,
   },
   selectListText: {
-    fontSize: (Platform.OS === 'web') ? 15 : 10,
+    //fontSize: (Platform.OS === 'web') ? 15 : 10,
   },
   selectBadge: {
     borderWidth: 1,

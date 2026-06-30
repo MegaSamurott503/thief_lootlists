@@ -10,6 +10,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 import { SectionHeader } from '@/components/sectionHeader';
+import { DebugView } from '@/components/debugView';
 
 import { SettingContext } from '@/constants/context';
 
@@ -28,7 +29,7 @@ export default function SettingsScreen() {
   const { colors } = useTheme();
 
   // Fetch global setting states from context.
-  const {scheme,
+  const {scheme, device,
     getCurrentTheme, setCurrentTheme,
     getDefaultDiffN, setDefaultDiffN,
     getDefaultDiffH, setDefaultDiffH,
@@ -39,7 +40,8 @@ export default function SettingsScreen() {
     getShowListJunk, setShowListJunk,
     getShowListSec, setShowListSec,
     getSpoilerSec, setSpoilerSec,
-    getSpoilerEgg, setSpoilerEgg} =
+    getSpoilerEgg, setSpoilerEgg,
+    getShowDebug, setShowDebug} =
     useContext(SettingContext);
 
   // Variables for checkbox icon formatting.
@@ -98,6 +100,11 @@ export default function SettingsScreen() {
   function updateSpoilerEgg(newSpoilerEgg) {
     storeSpoilerEgg(newSpoilerEgg);
     setSpoilerEgg(newSpoilerEgg);
+  };
+
+  function updateDebug(newDebug) {
+    storeDebug(newDebug);
+    setShowDebug(newDebug);
   };
 
   // Send data to device storage.
@@ -173,6 +180,18 @@ export default function SettingsScreen() {
     }
   };
 
+  const storeDebug = async (newDebug) => {
+    try {
+      // Convert setting's state to string.
+      const jsonSetting = JSON.stringify(newDebug);
+      await AsyncStorage.setItem(`@setting_debug`, jsonSetting);
+      //alert(`Saved setting_theme as ${newDebug}`);
+    } catch (e) {
+      // Error: Saving the data failed.
+      alert('Failed to save setting.');
+    }
+  };
+
   return (
     <View style={{ flex: 1, paddingBottom: insets.bottom }}>
       <ScrollView>
@@ -183,6 +202,10 @@ export default function SettingsScreen() {
           <Text style={{color: colors.text}}>
             WIP
           </Text>
+          {/* Optional debug info. */}
+          {getShowDebug &&
+            <DebugView />
+          }
 
           <SectionHeader headerName="Theme"/>
           <View style={styles.settingRow}>
@@ -274,7 +297,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(device)
           ]}>
             <Text style={{color: colors.text}}>
               {`This site will ` +
@@ -381,7 +404,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(device)
           ]}>
             <Text style={{color: colors.text}}>
               {`By default, lootlists will ` +
@@ -476,7 +499,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(device)
           ]}>
             <Text style={{color: colors.text}}>
               {`Each mission's loot section will be sorted`}
@@ -619,7 +642,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(device)
           ]}>
             <Text style={{color: colors.text}}>
               {`Lootlists will ` +
@@ -788,7 +811,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(device)
           ]}>
             <Text style={{color: colors.text}}>
               {`Secret items will ` +
@@ -900,7 +923,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(device)
           ]}>
             <Text style={{color: colors.text}}>
               {`Easter Egg items will ` +
@@ -919,6 +942,80 @@ export default function SettingsScreen() {
                 (getSpoilerEgg !== "none"
                   ? `(unless selected).` : ''
               )}
+            </Text>
+          </View>
+
+          <SectionHeader headerName="Debug Info"/>
+          <View style={styles.settingRow}>
+            {/* Debug info setting: show debug info. */}
+            <TouchableOpacity
+              // Change background color when toggled.
+              style={[styles.settingButton,
+                {backgroundColor: colors.backLight,
+                borderColor: colors.border},
+                !getShowDebug &&
+                {backgroundColor: colors.backDark}
+              ]}
+              // Show the debug info.
+              onPress={() => updateDebug(true)}
+            >
+              {/* Change checkbox icon when toggled. */}
+              <Ionicons
+                name={getShowDebug
+                  ? "checkbox" : "square-outline"}
+                size={checkSize}
+                color={getShowDebug
+                  ? checkColorOn : checkColorOff}
+              />
+              <Text style={[
+                styles.settingButtonText,
+                {color: getShowDebug
+                  ? colors.text : colors.textInvert}
+              ]}>
+                {` True`}
+              </Text>
+            </TouchableOpacity>
+            {/* Debug info setting: hide debug info. */}
+            <TouchableOpacity
+              // Change background color when toggled.
+              style={[styles.settingButton,
+                {backgroundColor: colors.backLight,
+                borderColor: colors.border},
+                getShowDebug &&
+                {backgroundColor: colors.backDark}
+              ]}
+              // Hide the debug info.
+              onPress={() => updateDebug(false)}
+            >
+              {/* Change checkbox icon when toggled. */}
+              <Ionicons
+                name={!getShowDebug
+                  ? "checkbox" : "square-outline"}
+                size={checkSize}
+                color={!getShowDebug
+                  ? checkColorOn : checkColorOff}
+              />
+              <Text style={[
+                styles.settingButtonText,
+                {color: !getShowDebug
+                  ? colors.text : colors.textInvert}
+              ]}>
+                {` False`}
+              </Text>
+            </TouchableOpacity>
+          </View>
+          {/* Dynamic setting description. */}
+          <View style={[
+            styles.settingText,
+            styles.settingSpace(device)
+          ]}>
+            <Text style={{color: colors.text}}>
+              {(getShowDebug
+                ? `Display` : `Don't display`) +
+              ` debug information`}
+            </Text>
+            <Text style={{color: colors.text}}>
+              {`on each page.`}
             </Text>
           </View>
 
@@ -941,9 +1038,9 @@ const styles = StyleSheet.create({
     //justifyContent: 'center',
     alignItems: 'center',
   },
-  settingSpace : {
-    paddingBottom: (Platform.OS === 'web') ? 28 : 12,
-  },
+  settingSpace: device => ({
+    paddingBottom: (device !== 'phone') ? 28 : 12,
+  }),
   settingButton: {
     backgroundColor: 'lightgray',
     flexDirection: 'row',

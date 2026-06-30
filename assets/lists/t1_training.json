@@ -25,6 +25,11 @@
   "notes": [
     {
       "id": "note_0",
+      "desc": "The demo version of this mission has all the same items.",
+      "show": true
+    },
+    {
+      "id": "note_1",
       "delimiter": "  ",
       "icon": "[A]",
       "desc": "treated as an inventory item in the AM16 patch",
@@ -217,7 +222,7 @@
               "findArea": 2,
               "findExact": "northwest corner",
               "findCount": [0,0,1],
-              "findNote": 0,
+              "findNote": 1,
               "findEaster": true
             }
           ]
