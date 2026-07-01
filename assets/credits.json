@@ -78,7 +78,6 @@
         "Added loading wheels to more buttons.",
         "Loot types can now be defined per mission (future-proofing).",
         "Added option to show debug information.",
-        "Fixed home screen sometimes using the wrong color scheme.",
         "Fixed loot total no longer carrying over to next mission.",
         "Fixed redundant text if both spoiler covers are active.",
         "Footnotes are now visible next to spoiler covers.",

@@ -31,7 +31,7 @@ export default function RootLayout() {
   });
 
   // CurrentTheme: tracks the currently selected color theme.
-  const [getCurrentTheme, setCurrentTheme] = useState('default');
+  const [getCurrentTheme, setCurrentTheme] = useState('dark');
 
   // DefaultDiff: tracks which difficulty filters are on by default.
   const [getDefaultDiffN, setDefaultDiffN] = useState(true);
@@ -146,32 +146,32 @@ export default function RootLayout() {
   }, []);
 
   return (
-    // Wrap app root in 'ThemeProvider' to use light/dark themes.
-    <ThemeProvider
-      value={getCurrentTheme === 'default' && scheme === 'dark'
-        ? MyDarkTheme
-        : getCurrentTheme === 'dark'
+    // Wrap app root in providers to utilize context.
+    <SettingContext.Provider value={
+      {scheme, device,
+      getCurrentTheme, setCurrentTheme,
+      getDefaultDiffN, setDefaultDiffN,
+      getDefaultDiffH, setDefaultDiffH,
+      getDefaultDiffX, setDefaultDiffX,
+      getLootSort, setLootSort,
+      getShowListLoot, setShowListLoot,
+      getShowListItem, setShowListItem,
+      getShowListJunk, setShowListJunk,
+      getShowListSec, setShowListSec,
+      getSpoilerSec, setSpoilerSec,
+      getSpoilerEgg, setSpoilerEgg,
+      getShowDebug, setShowDebug}
+    }>
+      {/* Wrap app root in 'ThemeProvider' to use light/dark themes. */}
+      <ThemeProvider
+        value={getCurrentTheme === 'default' && scheme === 'dark'
           ? MyDarkTheme
-          : MyLightTheme}
-      //value={scheme === 'dark' ? MyDarkTheme : DefaultTheme}
-      //value={DefaultTheme}
-    >
-      {/* Wrap app root in providers to utilize context. */}
-      <SettingContext.Provider value={
-        {scheme, device,
-        getCurrentTheme, setCurrentTheme,
-        getDefaultDiffN, setDefaultDiffN,
-        getDefaultDiffH, setDefaultDiffH,
-        getDefaultDiffX, setDefaultDiffX,
-        getLootSort, setLootSort,
-        getShowListLoot, setShowListLoot,
-        getShowListItem, setShowListItem,
-        getShowListJunk, setShowListJunk,
-        getShowListSec, setShowListSec,
-        getSpoilerSec, setSpoilerSec,
-        getSpoilerEgg, setSpoilerEgg,
-        getShowDebug, setShowDebug}
-      }>
+          : getCurrentTheme === 'dark'
+            ? MyDarkTheme
+            : MyLightTheme}
+        //value={scheme === 'dark' ? MyDarkTheme : DefaultTheme}
+        //value={DefaultTheme}
+      >
         <Stack>
           <Stack.Screen
             name="(drawers)"
@@ -182,7 +182,7 @@ export default function RootLayout() {
             options={{headerShown: (device !== 'phone') ? false : true}}
           />
         </Stack>
-      </SettingContext.Provider>
-    </ThemeProvider>
+      </ThemeProvider>
+    </SettingContext.Provider>
   );
 }
