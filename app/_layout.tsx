@@ -71,8 +71,6 @@ export default function RootLayout() {
       // [0] is 'setting_theme'
       if (jsonValues[0][1] !== null) {
         setCurrentTheme(jsonValues[0][1]);
-      } else {
-        setCurrentTheme('default');
       }
       // [1] is 'setting_default_normal'
       if (jsonValues[1][1] === "false") {
