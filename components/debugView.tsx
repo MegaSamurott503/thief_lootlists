@@ -31,16 +31,16 @@ export function DebugView(props) {
     <View>
       <SectionHeader headerName="Debug Info"/>
 
-      <Text style={[styles.debugText(device), {color: colors.text}]}>
+      <Text style={[styles.debugText, {color: colors.text}]}>
         {`Device type: ${device}`}
       </Text>
-      <Text style={[styles.debugText(device), {color: colors.text}]}>
+      <Text style={[styles.debugText, {color: colors.text}]}>
         {`Device color mode: ${scheme}`}
       </Text>
-      <Text style={[styles.debugText(device), {color: colors.text}]}>
+      <Text style={[styles.debugText, {color: colors.text}]}>
         {`Color mode setting: ${getCurrentTheme}`}
       </Text>
-      <Text style={[styles.debugText(device), {color: colors.text}]}>
+      <Text style={[styles.debugText, {color: colors.text}]}>
         {`Screen width: ${width}`}
       </Text>
     </View>
@@ -49,8 +49,8 @@ export function DebugView(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  debugText: device => ({
-    fontSize: (device !== 'phone') ? 14 : 12,
+  debugText: {
+    fontSize: (Platform.OS === 'web') ? 14 : 12,
     marginTop: 3,
-  }),
+  },
 });

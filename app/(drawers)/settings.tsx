@@ -297,7 +297,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace(device)
+            styles.settingSpace
           ]}>
             <Text style={{color: colors.text}}>
               {`This site will ` +
@@ -404,7 +404,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace(device)
+            styles.settingSpace
           ]}>
             <Text style={{color: colors.text}}>
               {`By default, lootlists will ` +
@@ -499,7 +499,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace(device)
+            styles.settingSpace
           ]}>
             <Text style={{color: colors.text}}>
               {`Each mission's loot section will be sorted`}
@@ -642,7 +642,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace(device)
+            styles.settingSpace
           ]}>
             <Text style={{color: colors.text}}>
               {`Lootlists will ` +
@@ -811,7 +811,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace(device)
+            styles.settingSpace
           ]}>
             <Text style={{color: colors.text}}>
               {`Secret items will ` +
@@ -923,7 +923,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace(device)
+            styles.settingSpace
           ]}>
             <Text style={{color: colors.text}}>
               {`Easter Egg items will ` +
@@ -1007,7 +1007,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace(device)
+            styles.settingSpace
           ]}>
             <Text style={{color: colors.text}}>
               {(getShowDebug
@@ -1038,9 +1038,9 @@ const styles = StyleSheet.create({
     //justifyContent: 'center',
     alignItems: 'center',
   },
-  settingSpace: device => ({
-    paddingBottom: (device !== 'phone') ? 28 : 12,
-  }),
+  settingSpace: {
+    paddingBottom: (Platform.OS === 'web') ? 28 : 12,
+  },
   settingButton: {
     backgroundColor: 'lightgray',
     flexDirection: 'row',

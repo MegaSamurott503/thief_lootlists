@@ -31,11 +31,11 @@ export function FilterDropdown(props) {
   return (
     <MultipleSelectList
       boxStyles={[
-        styles.selectBox(device),
-        device === 'phone' && {
+        styles.selectBox,
+        Platform.OS !== 'web' && {
           width: (props.size === 'wide') ? '80%' : width*0.46,
         },
-        device !== 'phone' && {
+        Platform.OS === 'web' && {
           width: (props.size === 'wide') ?
             ((width > 460) ? 425 : width*0.92) :
             ((width > 618) ? 280 : 220),
@@ -50,11 +50,11 @@ export function FilterDropdown(props) {
       ]}
       labelStyles={{color: colors.text}}
       dropdownStyles={[
-        styles.selectDropdown(device),
-        device === 'phone' && {
+        styles.selectDropdown,
+        Platform.OS !== 'web' && {
           width: (props.size === 'wide') ? '80%' : width*0.46,
         },
-        device !== 'phone' && {
+        Platform.OS === 'web' && {
           width: (props.size === 'wide') ?
             ((width > 460) ? 425 : width*0.92) :
             ((width > 618) ? 280 : 220),
@@ -65,10 +65,10 @@ export function FilterDropdown(props) {
       dropdownItemStyles={styles.selectListItem}
       dropdownTextStyles={[
         //styles.selectListText,
-        device === 'phone' && {
+        Platform.OS !== 'web' && {
           fontSize: (props.size === 'wide') ? 10 : 9
         },
-        device !== 'phone' && {
+        Platform.OS === 'web' && {
           fontSize: (props.size === 'wide') ? 14 : 12
         },
         {color: colors.text}
@@ -93,18 +93,18 @@ export function FilterDropdown(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  selectBox: device => ({
+  selectBox: {
     borderRadius: 5,
     //width: (Platform.OS === 'web') ? 425 : '80%',
-    marginHorizontal: (device !== 'phone') ? 10 : 5,
+    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
     marginVertical: 5,
-  }),
-  selectDropdown: device => ({
+  },
+  selectDropdown: {
     borderRadius: 5,
     //width: (Platform.OS === 'web') ? 425 : '80%',
-    marginHorizontal: (device !== 'phone') ? 10 : 5,
+    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
     marginVertical: 5,
-  }),
+  },
   selectListItem: {
     alignItems: 'center',
     marginHorizontal: -5,

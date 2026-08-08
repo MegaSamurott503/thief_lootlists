@@ -34,12 +34,14 @@ export const stylesList = {
     fontStyle: 'italic',
   },
   locBox: {
-    textDecorationLine: 'underline',
+    //textDecorationLine: 'underline',
+    borderWidth: 1,
+    marginVertical: -1,
   },
   locNoGet: {
     textDecorationLine: 'line-through',
   },
   locBoxNoGet: {
-    textDecorationLine: 'underline line-through',
+    //textDecorationLine: 'underline line-through',
   },
 }

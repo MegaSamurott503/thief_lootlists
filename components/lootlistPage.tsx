@@ -46,7 +46,6 @@ import {
 /*   LOOTLIST PAGE  */
 /* **************** */
 // Custom view component for displaying mission lootlist.
-// Moved to sub-component to utilize CustomScrollView.
 export function LootlistPage(props) {
 
   // Access the router object.
@@ -128,6 +127,12 @@ export function LootlistPage(props) {
   // LinkedFind: tracks if items and secrets are found simultaneously.
   // Used to trigger multiple items/secrets at the same time.
   const [getLinkedFind, setLinkedFind] = useState([]);
+
+  // DiffNames: defines the names of each difficulty.
+  // Shown on the filter buttons and totals window.
+  let diffNames = ["Normal","Hard","Expert"];
+  if (myList[props.missionName].diffNames)
+    diffNames = myList[props.missionName].diffNames;
 
   // LootCats: defines the loot categories of this mission.
   // Used to determine which loot icons to display.
@@ -320,10 +325,9 @@ export function LootlistPage(props) {
         collapsable={false}
         onScroll={checkOffset}
         style={{
-          flexGrow: (device !== 'phone') ? 0 : 1,
-          height: (!myList[props.missionName].totals &&
-            !myList[props.missionName].pocketCount) ? '84%' :
-            (device !== 'phone') ? height*0.66 : '75%'
+          flexGrow: (Platform.OS === 'web') ? 0 : 1,
+          height: (!myList[props.missionName].totals) ? '84%' :
+            (Platform.OS === 'web') ? height*0.66 : '75%'
         }}
       >
         <View style={[styles.listScreen, {
@@ -339,10 +343,10 @@ export function LootlistPage(props) {
             {myList[props.missionName].title &&
               <Text style={[
                 stylesTitle.bigTitle,
-                device === 'phone' && {
+                Platform.OS !== 'web' && {
                   fontSize: width*0.058,
                 },
-                device !== 'phone' && {
+                Platform.OS === 'web' && {
                   fontSize: (width > 849) ? 40 : width*0.047,
                 },
                 {color: colors.text}
@@ -355,10 +359,10 @@ export function LootlistPage(props) {
             {myList[props.missionName].subtitle &&
               <Text style={[
                 stylesTitle.bigTitle,
-                device === 'phone' && {
+                Platform.OS !== 'web' && {
                   fontSize: width*0.058,
                 },
-                device !== 'phone' && {
+                Platform.OS === 'web' && {
                   fontSize: (width > 849) ? 40 : width*0.047,
                 },
                 {color: colors.text}
@@ -460,7 +464,7 @@ export function LootlistPage(props) {
           <FilterView
             id={myList[props.missionName].id}
             title={myList[props.missionName].title}
-            diffNames={myList[props.missionName].diffNames}
+            diffNames={diffNames}
             modeNames={myList[props.missionName].modeNames}
             lootCats={lootCats}
             diffChanges={myList[props.missionName].diffChanges}
@@ -481,12 +485,12 @@ export function LootlistPage(props) {
             myList[props.missionName].notes[0].id !== 'null' &&
             <>
               <SectionHeader headerName="Notes"/>
-              <View style={styles.noteView(device)}>
+              <View style={styles.noteView}>
                 {/* Map out each entry in notes array. */}
                 {myList[props.missionName].notes.map((noteKey, noteIndex) => (
                   <View key={`note_${noteIndex}`}>
                     {noteKey.show &&
-                      <Text style={[styles.noteText(device),
+                      <Text style={[styles.noteText,
                         {color: colors.text}]}
                       >
                         {noteKey.icon &&
@@ -512,8 +516,8 @@ export function LootlistPage(props) {
                 <SectionHeader headerName="Loot"/>
               </View>
               <View style={[
-                device === 'phone' && {width: '100%'},
-                device !== 'phone' && {
+                Platform.OS !== 'web' && {width: '100%'},
+                Platform.OS === 'web' && {
                   width: /*(width > 1300) ? 1300 :
                          (width > 1072) ? 1072 :*/
                          (width > 844) ? 844 :
@@ -522,17 +526,17 @@ export function LootlistPage(props) {
               ]}>
                 {/* Empty header bar, as loot isn't split into categories. */}
                 <View style={[
-                  styles.listHeader(device),
+                  styles.listHeader,
                   {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
-                  <Text style={styles.listHeaderText(device)}>
+                  <Text style={styles.listHeaderText}>
                     {' '}
                   </Text>
                 </View>
                 {/* List of the mission's loot, sorted by order found. */}
                 {getLootSort === "order" &&
-                  <View style={styles.listView(device)}>
+                  <View style={styles.listView}>
                     <LootOrder
                       title={myList[props.missionName].title}
                       modeNames={myList[props.missionName].modeNames}
@@ -560,7 +564,7 @@ export function LootlistPage(props) {
                 }
                 {/* List of the mission's loot, sorted by type and value. */}
                 {getLootSort === "value" &&
-                  <View style={styles.listView(device)}>
+                  <View style={styles.listView}>
                     {/* Map out each entry in loot array. */}
                     {myList[props.missionName].loot.map((lootKey, lootIndex) => (
                       <LootlistEntry
@@ -591,9 +595,9 @@ export function LootlistPage(props) {
               <View ref={jumpItems} collapsable={false}>
                 <SectionHeader headerName="Items"/>
               </View>
-              <View style={[styles.listView(device),
-                device === 'phone' && {width: '90%'},
-                device !== 'phone' && {
+              <View style={[styles.listView,
+                Platform.OS !== 'web' && {width: '90%'},
+                Platform.OS === 'web' && {
                   width: /*(width > 1240) ? 1240 :
                          (width > 1012) ? 1012 :*/
                          (width > 784) ? 784 :
@@ -608,12 +612,12 @@ export function LootlistPage(props) {
                       ref={pickMyRef(itemCatKey.category)}
                       collapsable={false}
                       style={[
-                        styles.listHeader(device),
+                        styles.listHeader,
                         {backgroundColor: colors.backDark,
                         borderColor: colors.border}
                       ]}
                     >
-                      <Text style={styles.listHeaderText(device)}>
+                      <Text style={styles.listHeaderText}>
                         {itemCatKey.category}
                       </Text>
                     </View>
@@ -647,9 +651,9 @@ export function LootlistPage(props) {
               <View ref={jumpJunk} collapsable={false}>
                 <SectionHeader headerName="Junk"/>
               </View>
-              <View style={[styles.listView(device),
-                device === 'phone' && {width: '90%'},
-                device !== 'phone' && {
+              <View style={[styles.listView,
+                Platform.OS !== 'web' && {width: '90%'},
+                Platform.OS === 'web' && {
                   width: /*(width > 1240) ? 1240 :
                          (width > 1012) ? 1012 :*/
                          (width > 784) ? 784 :
@@ -661,11 +665,11 @@ export function LootlistPage(props) {
                   <View key={`junkCat_${junkCatIndex}`}>
                     {/* Header bar for each category of junk. */}
                     <View style={[
-                      styles.listHeader(device),
+                      styles.listHeader,
                       {backgroundColor: colors.backDark,
                       borderColor: colors.border}
                     ]}>
-                      <Text style={styles.listHeaderText(device)}>
+                      <Text style={styles.listHeaderText}>
                         {junkCatKey.category}
                       </Text>
                     </View>
@@ -695,9 +699,9 @@ export function LootlistPage(props) {
           }
           {/* Secret section. */}
           {myList[props.missionName].secrets && getShowListSec &&
-            <View style={[styles.listSecretView(device),
-              device === 'phone' && {width: '100%'},
-              device !== 'phone' && {
+            <View style={[styles.listSecretView,
+              Platform.OS !== 'web' && {width: '100%'},
+              Platform.OS === 'web' && {
                 width: (width > 784) ? 784 : '100%'
               }
             ]}>
@@ -705,15 +709,15 @@ export function LootlistPage(props) {
                 <SectionHeader headerName="Secrets"/>
               </View>
               <View style={[
-                styles.listHeader(device),
+                styles.listHeader,
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.listHeaderText(device)}>
+                <Text style={styles.listHeaderText}>
                   {' '}
                 </Text>
               </View>
-              <View style={styles.listView(device)}>
+              <View style={styles.listView}>
                 {/* Map out each entry in secrets array. */}
                 {myList[props.missionName].secrets.map((secKey, secIndex) => (
                   <SecretEntry
@@ -741,7 +745,7 @@ export function LootlistPage(props) {
       {/* Display the mission's loot total(s). */}
       <TotalsView
         title={myList[props.missionName].title}
-        diffNames={myList[props.missionName].diffNames}
+        diffNames={diffNames}
         lootCats={lootCats}
         totals={myList[props.missionName].totals}
         lootCount={myList[props.missionName].lootCount}
@@ -774,33 +778,33 @@ const styles = StyleSheet.create({
   listScreen: {
     //width: '100%',
   },
-  listView: device => ({
+  listView: {
     //width: '100%',
-    marginBottom: (device !== 'phone') ? 10 : 5,
-  }),
+    marginBottom: (Platform.OS === 'web') ? 10 : 5,
+  },
   listItemView: {
     //width: (Platform.OS === 'web') ? 784 : '90%',
   },
-  listSecretView: device => ({
-    width: (device !== 'phone') ? 785 : '100%',
-  }),
-  listHeader: device => ({
+  listSecretView: {
+    width: (Platform.OS === 'web') ? 785 : '100%',
+  },
+  listHeader: {
     borderWidth: 1,
     borderTopLeftRadius: 8,
     borderBottomLeftRadius: 8,
-    marginHorizontal: (device !== 'phone') ? 10 : 5,
-    marginTop: (device !== 'phone') ? 12 : 10,
+    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
+    marginTop: (Platform.OS === 'web') ? 12 : 10,
     padding: 2,
     paddingLeft: 6,
-  }),
-  listHeaderText: device => ({
+  },
+  listHeaderText: {
     color: 'white',
-    fontSize: (device !== 'phone') ? 12 : 10,
-  }),
-  listTitleView: device => ({
+    fontSize: (Platform.OS === 'web') ? 12 : 10,
+  },
+  listTitleView: {
     alignItems: 'center',
-    marginTop: (device !== 'phone') ? 12 : 10,
-  }),
+    marginTop: (Platform.OS === 'web') ? 12 : 10,
+  },
   listTitleText: {
     //fontSize: (Platform.OS === 'web') ? 18 : 14,
     fontWeight: 'bold',
@@ -830,13 +834,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     columnGap: 10,
   },
-  noteView: device => ({
-    marginHorizontal: (device !== 'phone') ? 10 : 5,
+  noteView: {
+    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
     marginTop: 5,
-  }),
-  noteText: device => ({
-    fontSize: (device !== 'phone') ? 15 : 12,
-  }),
+  },
+  noteText: {
+    fontSize: (Platform.OS === 'web') ? 15 : 12,
+  },
   noteSymbol: {
     fontWeight: 'bold',
   }

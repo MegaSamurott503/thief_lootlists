@@ -45,7 +45,7 @@ export const FindMeArea = memo(function FindMeArea(props) {
   return (
     <Text style={[
       stylesList.locText,
-      {fontSize: (device !== 'phone') ? 12 : width*0.019,
+      {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
         color: colors.text}
     ]}>
       {/* Does this item trigger (or contribute to) an objective? */}

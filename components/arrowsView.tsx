@@ -60,7 +60,7 @@ export function ArrowsView(props) {
     <View style={styles.goToView(device)}>
       {/* Empty space if no previous mission. */}
       {!props.goToPrev &&
-        <View style={styles.goPrevBlank(device)}>
+        <View style={styles.goPrevBlank}>
         </View>
       }
       {/* Previous mission button. */}
@@ -94,7 +94,7 @@ export function ArrowsView(props) {
           />
           <View
             style={[
-              styles.goToButton(device),
+              styles.goToButton,
               styles.goPrevButton,
               {backgroundColor: colors.backLight,
               borderColor: colors.border}
@@ -112,7 +112,7 @@ export function ArrowsView(props) {
             {/* Show the text when the button is not clicked. */}
             {!getPrevClicked &&
               <Text style={[
-                styles.goPrevText(device), {color: colors.text}
+                styles.goPrevText, {color: colors.text}
               ]}>
                 {`Previous\nMission`}
                 {/*{props.goToPrev}*/}
@@ -124,7 +124,7 @@ export function ArrowsView(props) {
       {/* Back to mission selection button. */}
       <TouchableOpacity
         style={[
-          styles.goToButton(device),
+          styles.goToButton,
           styles.goPrevButton,
           styles.goNextButton,
           {backgroundColor: colors.backLight,
@@ -133,14 +133,14 @@ export function ArrowsView(props) {
         onPress={() => router.navigate(backSwitch(props.pageID))}
       >
         <Text style={[
-          styles.goBackText(device), {color: colors.text}
+          styles.goBackText, {color: colors.text}
         ]}>
           {`Select\nMission`}
         </Text>
       </TouchableOpacity>
       {/* Empty space if no next mission. */}
       {!props.goToNext &&
-        <View style={styles.goPrevBlank(device)}>
+        <View style={styles.goPrevBlank}>
         </View>
       }
       {/* Next mission button. */}
@@ -167,7 +167,7 @@ export function ArrowsView(props) {
         >
           <View
             style={[
-              styles.goToButton(device),
+              styles.goToButton,
               styles.goNextButton,
               {backgroundColor: colors.backLight,
               borderColor: colors.border}
@@ -185,7 +185,7 @@ export function ArrowsView(props) {
             {/* Show the text when the button is not clicked. */}
             {!getNextClicked &&
               <Text style={[
-                styles.goNextText(device), {color: colors.text}
+                styles.goNextText, {color: colors.text}
               ]}>
                 {`Next\nMission`}
                 {/*{props.goToNext}*/}
@@ -217,29 +217,29 @@ const styles = StyleSheet.create({
   goToArrow: {
     flexDirection: 'row',
   },
-  goToButton: device => ({
+  goToButton: {
     borderTopWidth: 1,
     borderBottomWidth: 1,
-    marginVertical: (device !== 'phone') ? 10 : 5,
+    marginVertical: (Platform.OS === 'web') ? 10 : 5,
     paddingHorizontal: 4,
     paddingVertical: 2,
-    width: (device !== 'phone') ? 65 : 55
-  }),
+    width: (Platform.OS === 'web') ? 65 : 55
+  },
   goPrevButton: {
     borderRightWidth: 1,
     borderTopRightRadius: 5,
     borderBottomRightRadius: 5,
   },
-  goPrevBlank: device => ({
-    marginVertical: (device !== 'phone') ? 10 : 5,
+  goPrevBlank: {
+    marginVertical: (Platform.OS === 'web') ? 10 : 5,
     paddingHorizontal: 8,
     paddingVertical: 2,
-    width: (device !== 'phone') ? 85 : 72
-  }),
-  goPrevText: device => ({
-    fontSize: (device !== 'phone') ? 13 : 10,
+    width: (Platform.OS === 'web') ? 85 : 72
+  },
+  goPrevText: {
+    fontSize: (Platform.OS === 'web') ? 13 : 10,
     textAlign: 'left',
-  }),
+  },
   goNextButton: {
     borderLeftWidth: 1,
     borderTopLeftRadius: 5,
@@ -251,14 +251,14 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
     //width: (Platform.OS === 'web') ? 85 : 72,
   },
-  goNextText: device => ({
-    fontSize: (device !== 'phone') ? 13 : 10,
+  goNextText: {
+    fontSize: (Platform.OS === 'web') ? 13 : 10,
     textAlign: 'right',
-  }),
-  goBackText: device => ({
-    fontSize: (device !== 'phone') ? 13 : 10,
+  },
+  goBackText: {
+    fontSize: (Platform.OS === 'web') ? 13 : 10,
     textAlign: 'center',
-  }),
+  },
   centerWheel: {
     flex: 1,
     justifyContent: 'center',

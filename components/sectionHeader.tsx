@@ -25,14 +25,14 @@ export function SectionHeader(props) {
 
   return (
     <View
-      style={styles.listTitleView(device)}
+      style={styles.listTitleView}
     >
       <Text style={[
         styles.listTitleText,
-        device === 'phone' && {
+        Platform.OS !== 'web' && {
           fontSize: 14,
         },
-        device !== 'phone' && {
+        Platform.OS === 'web' && {
           fontSize: (width > 460) ? 18 : width*0.039,
         },
         {color: colors.text}
@@ -57,10 +57,10 @@ export function SectionHeader(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  listTitleView: device => ({
+  listTitleView: {
     alignItems: 'center',
-    marginTop: (device !== 'phone') ? 12 : 10,
-  }),
+    marginTop: (Platform.OS === 'web') ? 12 : 10,
+  },
   listTitleText: {
     //fontSize: (Platform.OS === 'web') ? 18 : 14,
     fontWeight: 'bold',

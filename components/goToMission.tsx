@@ -41,14 +41,14 @@ export function GoToMission(props) {
   return (
     <TouchableOpacity
       style={[
-        styles.buttonMission(device),
-        device === 'phone' && {
+        styles.buttonMission,
+        Platform.OS !== 'web' && {
           width: '46%',
           height: (props.boxSize)
             ? width*0.64*0.46 + (props.boxSize*15)
             : width*0.64*0.46,
         },
-        device !== 'phone' && {
+        Platform.OS === 'web' && {
           width: (width > 618) ? 280 : '45%',
           height: (width > 618)
             ? ((props.boxSize) ? 175 + (props.boxSize*20) : 175)
@@ -76,11 +76,11 @@ export function GoToMission(props) {
         <View
           style={[
             styles.buttonImage,
-            device === 'phone' && {
+            Platform.OS !== 'web' && {
               width: '95%',
               height: width*0.64*0.38,
             },
-            device !== 'phone' && {
+            Platform.OS === 'web' && {
               width: (width > 618) ? 270 : '94%',
               height: (width > 618) ? 150 : width*0.6*0.38,
             }
@@ -111,10 +111,10 @@ export function GoToMission(props) {
       {props.missionName &&
         <Text style={[
           styles.buttonText,
-          device === 'phone' && {
+          Platform.OS !== 'web' && {
             fontSize: 11,
           },
-          device !== 'phone' && {
+          Platform.OS === 'web' && {
             fontSize: (width > 618) ? 15 : width*0.024,
           },
           {color: colors.text}
@@ -126,10 +126,10 @@ export function GoToMission(props) {
       {props.subName &&
         <Text style={[
           styles.buttonText,
-          device === 'phone' && {
+          Platform.OS !== 'web' && {
             fontSize: 11,
           },
-          device !== 'phone' && {
+          Platform.OS === 'web' && {
             fontSize: (width > 618) ? 15 : width*0.024,
           },
           {color: colors.text}
@@ -143,17 +143,17 @@ export function GoToMission(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  buttonMission: device => ({
+  buttonMission: {
     backgroundColor: 'lightgray',
     alignItems: 'center',
     justifyContent: 'flex-start',
     borderWidth: 1,
     borderRadius: 5,
     paddingTop: 2,
-    margin: (device !== 'phone') ? 8 : 4,
+    margin: (Platform.OS === 'web') ? 8 : 4,
     //width: (Platform.OS === 'web') ? 280 : 190,
     //height: (Platform.OS === 'web') ? 175 : 120,
-  }),
+  },
   buttonImage: {
     //width: (Platform.OS === 'web') ? 270 : 180,
     //height: (Platform.OS === 'web') ? 150 : 100,

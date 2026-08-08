@@ -292,10 +292,10 @@ export function LootlistEntry(props) {
           addSpacing && styles.orderSplit
         ]}>
           <View style={[
-            styles.nameEntry(device),
+            styles.nameEntry,
             {backgroundColor: colors.backMed,
             borderColor: colors.border},
-            myValues && styles.nameEntryLoot(device)
+            myValues && styles.nameEntryLoot
           ]}>
             {/* Item's image goes here. */}
             {props.img.length === 1 &&
@@ -311,16 +311,16 @@ export function LootlistEntry(props) {
                 img={props.img}
               />
             }
-            <Text style={[styles.entryText(device), {color: colors.text}]}>
+            <Text style={[styles.entryText, {color: colors.text}]}>
               {props.name}
             </Text>
-            {/*<Text style={[styles.entryText(device), {color: colors.text}]}>
+            {/*<Text style={[styles.entryText, {color: colors.text}]}>
               {whatsMyDiff}
             </Text>*/}
           </View>
           <View style={[
-            styles.subEntry(device),
-            myValues && styles.subEntryLoot(device)
+            styles.subEntry,
+            myValues && styles.subEntryLoot
           ]}>
             {/* For loot,
                 map out each entry in loot value sub-array. */}
@@ -328,13 +328,13 @@ export function LootlistEntry(props) {
               <View
                 key={valueKey.id}
                 style={[
-                  (device !== 'phone' && width >= 617 &&
+                  (Platform.OS === 'web' && width >= 617 &&
                   valueKey.locations.length < 3)
-                  ? styles.subEntryLPV_Web(device)
-                  : (device !== 'phone' && width < 617 &&
+                  ? styles.subEntryLPV_Web
+                  : (Platform.OS === 'web' && width < 617 &&
                     valueKey.locations.length === 1)
-                    ? styles.subEntryLPV_Web(device)
-                    : styles.subEntryLocsPerValue(device)
+                    ? styles.subEntryLPV_Web
+                    : styles.subEntryLocsPerValue
                 ]}
               >
                 {(
@@ -400,7 +400,7 @@ export function LootlistEntry(props) {
                 ) &&
                   <>
                     <View style={[
-                      styles.subEntryValue(device),
+                      styles.subEntryValue,
                       {backgroundColor: colors.backMed,
                       borderColor: colors.border}
                     ]}>
@@ -490,7 +490,7 @@ export function LootlistEntry(props) {
                         </Text>
                       }
                     </View>
-                    <View style={[styles.subEntryLoc, styles.subEntryLocLoot(device)]}>
+                    <View style={[styles.subEntryLoc, styles.subEntryLocLoot]}>
                       {/* Map out each entry in loot location sub-sub-array. */}
                       {valueKey.locations.map((locKey, index2) => (
                         <FindMe
@@ -581,42 +581,42 @@ export function LootlistEntry(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  nameEntry: device => ({
+  nameEntry: {
     borderWidth: 1,
     borderTopLeftRadius: 8,
     borderBottomLeftRadius: 8,
     alignItems: 'center',
-    width: (device !== 'phone') ? 80 : '15%',
-  }),
-  nameEntryLoot: device => ({
-    width: (device !== 'phone') ? 80 : '13.5%',
-  }),
-  subEntry: device => ({
+    width: (Platform.OS === 'web') ? 80 : '15%',
+  },
+  nameEntryLoot: {
+    width: (Platform.OS === 'web') ? 80 : '13.5%',
+  },
+  subEntry: {
     flex: 1,
-    width: (device !== 'phone') ? 764 : '85%',
-  }),
-  subEntryLoot: device => ({
+    width: (Platform.OS === 'web') ? 764 : '85%',
+  },
+  subEntryLoot: {
     flex: 1,
-    width: (device !== 'phone') ? 764 : '86.5%',
-  }),
-  subEntryLocsPerValue: device => ({
+    width: (Platform.OS === 'web') ? 764 : '86.5%',
+  },
+  subEntryLocsPerValue: {
     flex: 10,
     flexDirection: 'row',
-    minHeight: (device !== 'phone') ? 38 : 30,
-  }),
-  subEntryLPV_Web: device => ({
+    minHeight: (Platform.OS === 'web') ? 38 : 30,
+  },
+  subEntryLPV_Web: {
     //backgroundColor: 'orange',
     flex: 1,
     flexDirection: 'row',
-    minHeight: (device !== 'phone') ? 38 : 30,
-  }),
-  subEntryValue: device => ({
+    minHeight: (Platform.OS === 'web') ? 38 : 30,
+  },
+  subEntryValue: {
     //flexDirection: 'row',
     borderWidth: 1,
     justifyContent: 'center',
-    paddingLeft: (device !== 'phone') ? 4 : 2,
-    width: (device !== 'phone') ? 60 : '11%',
-  }),
+    paddingLeft: (Platform.OS === 'web') ? 4 : 2,
+    width: (Platform.OS === 'web') ? 60 : '11%',
+  },
   subEntryLoc: {
     flex: 1,
     flexDirection: 'row',
@@ -624,13 +624,13 @@ const styles = StyleSheet.create({
     alignContent: 'stretch',
     //width: '89%',
   },
-  subEntryLocLoot: device => ({
-    width: (device !== 'phone') ? 228 : '89%',
-  }),
-  entryText: device => ({
-    fontSize: (device !== 'phone') ? 12 : 7.5,
+  subEntryLocLoot: {
+    width: (Platform.OS === 'web') ? 228 : '89%',
+  },
+  entryText: {
+    fontSize: (Platform.OS === 'web') ? 12 : 7.5,
     textAlign: 'center',
-  }),
+  },
   orderSplit: {
     marginBottom: 9,
   },

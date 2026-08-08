@@ -179,7 +179,7 @@ export default function RootLayout() {
           />
           <Stack.Screen
             name="list/[missionName]"
-            options={{headerShown: (device !== 'phone') ? false : true}}
+            options={{headerShown: (Platform.OS === 'web') ? false : true}}
           />
         </Stack>
       </ThemeProvider>

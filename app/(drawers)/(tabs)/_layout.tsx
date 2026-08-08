@@ -43,7 +43,7 @@ export default function TabLayout() {
         screenOptions={{
           headerShown: false,
           tabBarStyle: {
-            height: (device !== 'phone') ? 50 : 90
+            height: (Platform.OS === 'web') ? 50 : 90
           }
           //tabBarButton: HapticTab,
         }}>
@@ -55,7 +55,7 @@ export default function TabLayout() {
               <Ionicons
                 name = {focused
                   ? 'information-circle' : 'information-circle-outline'}
-                size={(device !== 'phone') ? 30 : 30}
+                size={(Platform.OS === 'web') ? 30 : 30}
               />
             ),
             //tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
@@ -69,7 +69,7 @@ export default function TabLayout() {
               <Image
                 source={focused
                   ? iconTDP : iconTDPFaded}
-                style={styles.imgTabIcon(device)}
+                style={styles.imgTabIcon}
               />
             ),
             //tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
@@ -83,7 +83,7 @@ export default function TabLayout() {
               <Image
                 source={focused
                   ? iconTMA : iconTMAFaded}
-                style={styles.imgTabIcon(device)}
+                style={styles.imgTabIcon}
               />
             ),
             //tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
@@ -97,7 +97,7 @@ export default function TabLayout() {
               <Image
                 source={focused
                   ? iconFM : iconFMFaded}
-                style={styles.imgTabIcon(device)}
+                style={styles.imgTabIcon}
               />
             ),
             //tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
@@ -110,8 +110,8 @@ export default function TabLayout() {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  imgTabIcon: device => ({
-    width: (device !== 'phone') ? 24 : 24,
-    height: (device !== 'phone') ? 24 : 24,
-  }),
+  imgTabIcon: {
+    width: (Platform.OS === 'web') ? 24 : 24,
+    height: (Platform.OS === 'web') ? 24 : 24,
+  },
 });

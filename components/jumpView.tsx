@@ -43,7 +43,7 @@ export function JumpView(props) {
     useContext(SettingContext);
 
   // Additional offset to use when scrolling on mobile devices.
-  let deviceOffset = (device === 'phone') ? 80 : 0;
+  let deviceOffset = (Platform.OS !== 'web') ? 80 : 0;
 
   // Jump function for major section headers or the top of the page.
   function jumpHere(jumpRef) {
@@ -73,10 +73,10 @@ export function JumpView(props) {
   return (
     <View style={styles.jumpView}>
       <Text style={[
-          device === 'phone' && {
+          Platform.OS !== 'web' && {
             fontSize: width*0.027,
           },
-          device !== 'phone' && {
+          Platform.OS === 'web' && {
             fontSize: (width > 460) ? 14 : width*0.03,
           },
           {color: colors.text}
@@ -90,14 +90,14 @@ export function JumpView(props) {
           {/* Button to jump to the top of the page. */}
           <TouchableOpacity
             style={[
-              styles.jumpButton(device),
+              styles.jumpButton,
               {backgroundColor: colors.backLight,
               borderColor: colors.border}
             ]}
             onPress={() => jumpHere(jumpTop)}
           >
             <Text style={
-              {fontSize: (device !== 'phone') ? 14 : width*0.028,
+              {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
               color: colors.text}
             }>
               Page Top
@@ -110,14 +110,14 @@ export function JumpView(props) {
           {props.canFindLoot && getShowListLoot &&
             <TouchableOpacity
               style={[
-                styles.jumpButton(device),
+                styles.jumpButton,
                 {backgroundColor: colors.backLight,
                 borderColor: colors.border}
               ]}
               onPress={() => jumpHere(jumpLoot)}
             >
               <Text style={
-                {fontSize: (device !== 'phone') ? 14 : width*0.028,
+                {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
                 color: colors.text}
               }>
                 Loot
@@ -128,14 +128,14 @@ export function JumpView(props) {
           {props.canFindItems && getShowListItem &&
             <TouchableOpacity
               style={[
-                styles.jumpButton(device),
+                styles.jumpButton,
                 {backgroundColor: colors.backLight,
                 borderColor: colors.border}
               ]}
               onPress={() => jumpHere(jumpItems)}
             >
               <Text style={
-                {fontSize: (device !== 'phone') ? 14 : width*0.028,
+                {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
                 color: colors.text}
               }>
                 Items
@@ -146,14 +146,14 @@ export function JumpView(props) {
           {props.canFindJunk && getShowListJunk &&
             <TouchableOpacity
               style={[
-                styles.jumpButton(device),
+                styles.jumpButton,
                 {backgroundColor: colors.backLight,
                 borderColor: colors.border}
               ]}
               onPress={() => jumpHere(jumpJunk)}
             >
               <Text style={
-                {fontSize: (device !== 'phone') ? 14 : width*0.028,
+                {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
                 color: colors.text}
               }>
                 Junk
@@ -164,14 +164,14 @@ export function JumpView(props) {
           {props.canFindSecrets > 0 && getShowListSec &&
             <TouchableOpacity
               style={[
-                styles.jumpButton(device),
+                styles.jumpButton,
                 {backgroundColor: colors.backLight,
                 borderColor: colors.border}
               ]}
               onPress={() => jumpItemHere(jumpSecrets)}
             >
               <Text style={
-                {fontSize: (device !== 'phone') ? 14 : width*0.028,
+                {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
                 color: colors.text}
               }>
                 Secrets
@@ -187,14 +187,14 @@ export function JumpView(props) {
             {props.canFindArrows &&
               <TouchableOpacity
                 style={[
-                  styles.jumpButton(device),
+                  styles.jumpButton,
                   {backgroundColor: colors.backLight,
                   borderColor: colors.border}
                 ]}
                 onPress={() => jumpItemHere(jumpArrows)}
               >
                 <Text style={
-                  {fontSize: (device !== 'phone') ? 14 : width*0.028,
+                  {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
                   color: colors.text}
                 }>
                   Arrows
@@ -204,14 +204,14 @@ export function JumpView(props) {
             {!props.canFindArrows && props.canFindCrystals &&
               <TouchableOpacity
                 style={[
-                  styles.jumpButton(device),
+                  styles.jumpButton,
                   {backgroundColor: colors.backLight,
                   borderColor: colors.border}
                 ]}
                 onPress={() => jumpItemHere(jumpCrystals)}
               >
                 <Text style={
-                  {fontSize: (device !== 'phone') ? 14 : width*0.028,
+                  {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
                   color: colors.text}
                 }>
                   Arrows
@@ -222,14 +222,14 @@ export function JumpView(props) {
             {props.canFindKeys &&
               <TouchableOpacity
                 style={[
-                  styles.jumpButton(device),
+                  styles.jumpButton,
                   {backgroundColor: colors.backLight,
                   borderColor: colors.border}
                 ]}
                 onPress={() => jumpItemHere(jumpKeys)}
               >
                 <Text style={
-                  {fontSize: (device !== 'phone') ? 14 : width*0.028,
+                  {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
                   color: colors.text}
                 }>
                   Keys
@@ -240,14 +240,14 @@ export function JumpView(props) {
             {props.canFindParchment &&
               <TouchableOpacity
                 style={[
-                  styles.jumpButton(device),
+                  styles.jumpButton,
                   {backgroundColor: colors.backLight,
                   borderColor: colors.border}
                 ]}
                 onPress={() => jumpItemHere(jumpParchment)}
               >
                 <Text style={
-                  {fontSize: (device !== 'phone') ? 14 : width*0.028,
+                  {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
                   color: colors.text}
                 }>
                   Parchment
@@ -258,14 +258,14 @@ export function JumpView(props) {
             {props.canFindTreasure &&
               <TouchableOpacity
                 style={[
-                  styles.jumpButton(device),
+                  styles.jumpButton,
                   {backgroundColor: colors.backLight,
                   borderColor: colors.border}
                 ]}
                 onPress={() => jumpItemHere(jumpTreasure)}
               >
                 <Text style={
-                  {fontSize: (device !== 'phone') ? 14 : width*0.028,
+                  {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
                   color: colors.text}
                 }>
                   Treasure
@@ -275,14 +275,14 @@ export function JumpView(props) {
             {!props.canFindTreasure && props.canFindJewelry &&
               <TouchableOpacity
                 style={[
-                  styles.jumpButton(device),
+                  styles.jumpButton,
                   {backgroundColor: colors.backLight,
                   borderColor: colors.border}
                 ]}
                 onPress={() => jumpItemHere(jumpJewelry)}
               >
                 <Text style={
-                  {fontSize: (device !== 'phone') ? 14 : width*0.028,
+                  {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
                   color: colors.text}
                 }>
                   Treasure
@@ -293,14 +293,14 @@ export function JumpView(props) {
             props.canFindGemstones &&
               <TouchableOpacity
                 style={[
-                  styles.jumpButton(device),
+                  styles.jumpButton,
                   {backgroundColor: colors.backLight,
                   borderColor: colors.border}
                 ]}
                 onPress={() => jumpItemHere(jumpGemstones)}
               >
                 <Text style={
-                  {fontSize: (device !== 'phone') ? 14 : width*0.028,
+                  {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
                   color: colors.text}
                 }>
                   Treasure
@@ -311,14 +311,14 @@ export function JumpView(props) {
             !props.canFindGemstones && props.canFindTalismans &&
               <TouchableOpacity
                 style={[
-                  styles.jumpButton(device),
+                  styles.jumpButton,
                   {backgroundColor: colors.backLight,
                   borderColor: colors.border}
                 ]}
                 onPress={() => jumpItemHere(jumpTalismans)}
               >
                 <Text style={
-                  {fontSize: (device !== 'phone') ? 14 : width*0.028,
+                  {fontSize: (Platform.OS === 'web') ? 14 : width*0.028,
                   color: colors.text}
                 }>
                   Treasure
@@ -347,7 +347,7 @@ const styles = StyleSheet.create({
   buttonSection: {
     marginHorizontal: 5,
   },
-  jumpButton: device => ({
+  jumpButton: {
     borderWidth: 1,
     borderRadius: 5,
     alignItems: 'center',
@@ -355,6 +355,6 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     paddingHorizontal: 4,
     paddingVertical: 2,
-    width: (device !== 'phone') ? 80 : 75,
-  }),
+    width: (Platform.OS === 'web') ? 80 : 75,
+  },
 });

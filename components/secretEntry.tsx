@@ -203,8 +203,8 @@ export const SecretEntry = memo(function SecretEntry(props) {
           ]}>
             <View style={[
               styles.secretTrigList,
-              device === 'phone' && {width: '72%'},
-              device !== 'phone' && {
+              Platform.OS !== 'web' && {width: '72%'},
+              Platform.OS === 'web' && {
                 width: (width > 794) ? 590 : '77.5%'
               }
             ]}>
@@ -242,23 +242,23 @@ export const SecretEntry = memo(function SecretEntry(props) {
                     <>
                       <View style={[
                         styles.secretTrigID,
-                        device === 'phone' && {width: '27%'},
-                        device !== 'phone' && {
+                        Platform.OS !== 'web' && {width: '27%'},
+                        Platform.OS === 'web' && {
                           width: (width > 794) ? 140 : '24%'
                         },
                         {backgroundColor: colors.backMed,
                         borderColor: colors.border},
                         props.triggers.length === 1 && styles.secretTrigOne,
-                        trigIndex === 0 && styles.secretTrigTop(device),
+                        trigIndex === 0 && styles.secretTrigTop,
                         trigIndex !== 0 && styles.secretTrigMid,
                         trigIndex === props.triggers.length - 1 &&
                           props.triggers.length > 1 &&
-                          styles.secretTrigBot(device)
+                          styles.secretTrigBot
                       ]}>
                         {/* Secret's number and image go here. */}
                         {trigIndex === 0 &&
                           <Text style={[
-                            styles.secretNum(device),
+                            styles.secretNum,
                             {color: colors.text}
                           ]}>
                             {props.number}
@@ -271,8 +271,8 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             source={props.img[trigIndex]}
                             style={[
                               styles.imgSecret,
-                              device === 'phone' && {width: 70, height: 70},
-                              device !== 'phone' && {
+                              Platform.OS !== 'web' && {width: 70, height: 70},
+                              Platform.OS === 'web' && {
                                 width: (width > 794) ? 128 : width*0.16,
                                 height: (width > 794) ? 128 : width*0.16,
                               },
@@ -297,13 +297,13 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             {/* Pop-up box containing the image. */}
                             <TouchableWithoutFeedback>
                               <View style={[
-                                styles.secretModal(device),
+                                styles.secretModal,
                                 {backgroundColor: colors.backMed,
                                 borderColor: colors.border}
                               ]}>
                                 <Image
                                   source={props.img[getShowModal]}
-                                  style={styles.imgSecretBig(device)}
+                                  style={styles.imgSecretBig}
                                 />
                               </View>
                             </TouchableWithoutFeedback>
@@ -313,8 +313,8 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       <TouchableOpacity
                         style={[
                           styles.secretLoc,
-                          device === 'phone' && {width: '38%'},
-                          device !== 'phone' && {
+                          Platform.OS !== 'web' && {width: '38%'},
+                          Platform.OS === 'web' && {
                             width: (width > 794) ? 150 : '25%'
                           },
                           {borderColor: colors.border}
@@ -332,7 +332,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                           resizeMode="cover"
                           style={[
                             stylesList.findBackground,
-                            (device !== 'phone') ? stylesList.findBackgroundWeb : ''
+                            (Platform.OS === 'web') ? stylesList.findBackgroundWeb : ''
                           ]}
                         >
                           {/* Secret's location goes here. */}
@@ -348,8 +348,8 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       </TouchableOpacity>
                       <View style={[
                         styles.secretMethod,
-                        device === 'phone' && {width: '35%'},
-                        device !== 'phone' && {
+                        Platform.OS !== 'web' && {width: '35%'},
+                        Platform.OS === 'web' && {
                           width: (width > 794) ? 300 : '51%'
                         },
                         {backgroundColor: colors.backLight,
@@ -357,7 +357,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       ]}>
                         {/* Secret's trigger goes here. */}
                         <Text style={[
-                          styles.secretText(device),
+                          styles.secretText,
                           {color: colors.text}
                         ]}>
                           {trigKey.method}
@@ -370,8 +370,8 @@ export const SecretEntry = memo(function SecretEntry(props) {
             </View>
             <View style={[
               styles.secretRewardList,
-              device === 'phone' && {width: '28%'},
-              device !== 'phone' && {
+              Platform.OS !== 'web' && {width: '28%'},
+              Platform.OS === 'web' && {
                 width: (width > 794) ? 174 : '22.5%'
               }
             ]}>
@@ -403,7 +403,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       {rewKey.rewardRoute &&
                         <>
                           <Text style={[
-                            styles.secretRewardText(device),
+                            styles.secretRewardText,
                             styles.secretRewardOther,
                             {color: colors.text}
                           ]}>
@@ -413,7 +413,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             <Text
                               key={`route_${routeIndex}`}
                               style={[
-                                styles.secretRewardText(device),
+                                styles.secretRewardText,
                                 styles.secretRewardOther,
                                 {color: colors.text}
                             ]}>
@@ -438,7 +438,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       {rewKey.rewardLoot &&
                         <>
                           <Text style={[
-                            styles.secretRewardText(device),
+                            styles.secretRewardText,
                             {color: colors.text}
                           ]}>
                             <FindMeArea
@@ -500,7 +500,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             {rewKey.findCount &&
                               Math.max(...rewKey.findCount) > 1 &&
                               <Text style={[
-                                styles.secretRewardText(device),
+                                styles.secretRewardText,
                                 {color: colors.text}
                               ]}>
                                 {'each'}
@@ -512,7 +512,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       {/* Is this reward an inventory item? */}
                       {rewKey.rewardItem &&
                         <Text style={[
-                          styles.secretRewardText(device),
+                          styles.secretRewardText,
                           {color: colors.text}
                         ]}>
                           <FindMeArea
@@ -528,7 +528,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       {rewKey.rewardHint &&
                         <>
                           <Text style={[
-                            styles.secretRewardText(device),
+                            styles.secretRewardText,
                             styles.secretRewardOther,
                             {color: colors.text}
                           ]}>
@@ -543,7 +543,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             <Text
                               key={`hint_${hintIndex}`}
                               style={[
-                                styles.secretRewardText(device),
+                                styles.secretRewardText,
                                 styles.secretRewardOther,
                                 {color: colors.text}
                             ]}>
@@ -569,7 +569,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       {/* Is this reward something else? */}
                       {rewKey.rewardOther &&
                         <Text style={[
-                          styles.secretRewardText(device),
+                          styles.secretRewardText,
                           styles.secretRewardOther,
                           {color: colors.text}
                         ]}>
@@ -579,7 +579,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       {/* Is this reward a bonus objective? */}
                       {rewKey.rewardBonus &&
                         <Text style={[
-                          styles.secretRewardText(device),
+                          styles.secretRewardText,
                           styles.secretRewardOther,
                           {color: colors.text}
                         ]}>
@@ -594,7 +594,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
               {!props.rewards &&
                 <View style={styles.secretReward}>
                   <Text style={[
-                    styles.secretRewardText(device),
+                    styles.secretRewardText,
                     styles.secretRewardOther,
                     {color: colors.text}
                   ]}>
@@ -628,22 +628,22 @@ const styles = StyleSheet.create({
   secretTrigOne: {
     borderBottomLeftRadius: 8,
   },
-  secretTrigTop: device => ({
+  secretTrigTop: {
     borderTopLeftRadius: 8,
-    paddingBottom: (device !== 'phone') ? 5 : 3,
-  }),
+    paddingBottom: (Platform.OS === 'web') ? 5 : 3,
+  },
   secretTrigMid: {
     paddingVertical: 8,
   },
-  secretTrigBot: device => ({
+  secretTrigBot: {
     borderBottomLeftRadius: 8,
-    paddingTop: (device !== 'phone') ? 5 : 3,
-    paddingBottom: (device !== 'phone') ? 16 : 13,
-  }),
-  secretNum: device => ({
-    fontSize: (device !== 'phone') ? 12 : 8,
+    paddingTop: (Platform.OS === 'web') ? 5 : 3,
+    paddingBottom: (Platform.OS === 'web') ? 16 : 13,
+  },
+  secretNum: {
+    fontSize: (Platform.OS === 'web') ? 12 : 8,
     fontWeight: 'bold',
-  }),
+  },
   secretLoc: {
     borderTopWidth: 1,
     borderBottomWidth: 1,
@@ -657,9 +657,9 @@ const styles = StyleSheet.create({
     padding: 2,
     //width: (Platform.OS === 'web') ? 300 : '35%',
   },
-  secretText: device => ({
-    fontSize: (device !== 'phone') ? 12 : 8,
-  }),
+  secretText: {
+    fontSize: (Platform.OS === 'web') ? 12 : 8,
+  },
   secretRewardList: {
     //width: (Platform.OS === 'web') ? 175 : '28%',
   },
@@ -672,28 +672,28 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 2,
   },
-  secretRewardText: device => ({
-    fontSize: (device !== 'phone') ? 12 : 8,
-  }),
+  secretRewardText: {
+    fontSize: (Platform.OS === 'web') ? 12 : 8,
+  },
   secretRewardOther: {
     fontStyle: 'italic',
   },
-  secretModal: device => ({
+  secretModal: {
     borderWidth: 1,
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    width: (device !== 'phone') ? 420 : 220,
-    height: (device !== 'phone') ? 420 : 220,
-  }),
+    width: (Platform.OS === 'web') ? 420 : 220,
+    height: (Platform.OS === 'web') ? 420 : 220,
+  },
   imgSecret: {
     //width: (Platform.OS === 'web') ? 128 : 70,
     //height: (Platform.OS === 'web') ? 128 : 70,
   },
-  imgSecretBig: device => ({
-    width: (device !== 'phone') ? 400 : 200,
-    height: (device !== 'phone') ? 400 : 200,
-  }),
+  imgSecretBig: {
+    width: (Platform.OS === 'web') ? 400 : 200,
+    height: (Platform.OS === 'web') ? 400 : 200,
+  },
   secretSplit: {
     marginBottom: 9,
   },
