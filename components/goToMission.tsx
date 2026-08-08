@@ -49,7 +49,8 @@ export function GoToMission(props) {
             : width*0.64*0.46,
         },
         Platform.OS === 'web' && {
-          width: (width > 618) ? 280 : '45%',
+          width: (width > 618) ? 280 :
+                 (width > 410) ? 185 : '45%',
           height: (width > 618)
             ? ((props.boxSize) ? 175 + (props.boxSize*20) : 175)
             : ((props.boxSize) ? width*0.6*0.45 + (props.boxSize*17)

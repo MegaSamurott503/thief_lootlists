@@ -38,7 +38,7 @@ export function FilterDropdown(props) {
         Platform.OS === 'web' && {
           width: (props.size === 'wide') ?
             ((width > 460) ? 425 : width*0.92) :
-            ((width > 618) ? 280 : 220),
+            ((width > 618) ? 280 : 185),
         },
         {backgroundColor: colors.inputArea,
         borderColor: colors.inputBorder}
@@ -46,7 +46,8 @@ export function FilterDropdown(props) {
       checkBoxStyles={{backgroundColor: colors.inputCheck}}
       inputStyles={[
         {color: colors.text,
-        fontSize: (props.size === 'wide') ? 14 : 12}
+        fontSize: (props.size === 'wide') ? 14 : 12,
+        width: '100%'}
       ]}
       labelStyles={{color: colors.text}}
       dropdownStyles={[
@@ -57,7 +58,7 @@ export function FilterDropdown(props) {
         Platform.OS === 'web' && {
           width: (props.size === 'wide') ?
             ((width > 460) ? 425 : width*0.92) :
-            ((width > 618) ? 280 : 220),
+            ((width > 618) ? 280 : 185),
         },
         {backgroundColor: colors.inputArea,
         borderColor: colors.inputBorder}
