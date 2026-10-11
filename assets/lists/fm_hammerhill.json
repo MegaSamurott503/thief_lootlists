@@ -1,0 +1,1752 @@
+{
+  "id": "fm_hammerhill",
+  "title": "Escape Hammer Hill",
+  "author": [
+    "auth_darthslair"
+  ],
+  "screens": [
+    "MIS_fm_hammerhill_A",
+    "MIS_fm_hammerhill_B"
+  ],
+  "firstRelease": "July 2010",
+  "latestVersion": "Revised",
+  "contest": "con_svc",
+  "diffNames": ["Easy","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [3664,250,265,0,4179],
+    [3864,150,265,0,4279],
+    [3864,150,265,0,4279]
+  ],
+  "lootCount": [59,60,60],
+  "lootChanges": [0,1,1],
+  "goal1": {
+    "total": [2000,3000,3500]
+  },
+  "pocketCount": [15,17,17],
+  "pocketChanges": [0,1,1],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Hammer Hill 3F"},
+    {"key": "2", "value": "Grounds"},
+    {"key": "3", "value": "Guard Tower 1"},
+    {"key": "4", "value": "Guard Tower 3"},
+    {"key": "5", "value": "Guard Tower 4"},
+    {"key": "6", "value": "Guard Tower 2"},
+    {"key": "7", "value": "Hammer Hill 2F"},
+    {"key": "8", "value": "Cell Control Room"},
+    {"key": "9", "value": "Warden's Office"},
+    {"key": "10", "value": "Hammer Hill 1F"},
+    {"key": "11", "value": "Workshop"},
+    {"key": "12", "value": "Barracks"},
+    {"key": "13", "value": "Kitchen"},
+    {"key": "14", "value": "Foyer"},
+    {"key": "15", "value": "Sewer Access Room"},
+    {"key": "16", "value": "Sewers"},
+    {"key": "17", "value": "Sewer Management"},
+    {"key": "18", "value": "Sewer Shed"},
+    {"key": "19", "value": "Main Gate"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coin",
+      "name": "ref_coin",
+      "img": [
+        "IMG_Coin"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_1",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "cell 13",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_2",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "cell 6",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_3",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "cell 18",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativeplate",
+      "name": "ref_decorativeplate",
+      "img": [
+        "IMG_DecorativePlate_Pink"
+      ],
+      "values": [
+        {
+          "id": "10goods",
+          "value": [0,0,10,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_4",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "dining table",
+              "findCount": [5,5,5],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_DecorativePlate_Pink"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "ref_finewine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_5",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "small table",
+              "findCount": [2,2,2],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "ref_gemring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_6",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "cell 15",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "ref_gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_7",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findExact": "safe",
+              "findCount": [1,0,0],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "ref_golddice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_8",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "cell 1",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "ref_goldgoblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_9",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "dining table",
+              "findCount": [5,5,5],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammercoins",
+      "name": "Gold Hamr. Coins",
+      "img": [
+        "IMG_GoldHammerCoins_One",
+        "IMG_GoldHammerCoins_Three",
+        "IMG_GoldHammerCoins_Five"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_10",
+              "findSimple": "findE",
+              "findArea": 11,
+              "findNarrow": "shelf",
+              "findExact": "by bucket",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_GoldHammerCoins_Three"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_11",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "middle locker",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_GoldHammerCoins_Five"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_12",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "under north banner",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_GoldHammerCoins_One"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_13",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findNarrow": "NW passage",
+              "findExact": "by Malcolmb Magee",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_GoldHammerCoins_Five"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_14",
+              "findSimple": "findH",
+              "findArea": 18,
+              "findNarrow": "roof",
+              "findCount": [1,1,1],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_GoldHammerCoins_Five"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "ref_goldnugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_15",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "by sewer management gate",
+              "findCount": [1,1,1],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "ref_goldring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_16",
+              "findSimple": "findH",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "by south bunk",
+              "findCount": [1,1,1],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_17",
+              "findSimple": "findH",
+              "findArea": 12,
+              "findNarrow": "toilet",
+              "findExact": "behind basin",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "ref_necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_18",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "cell 10",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "ref_purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_19",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "2F east ledge",
+              "findExact": "on Hammerite",
+              "findCountBox": [0,1,1],
+              "findPick": true,
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_20",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "2F",
+              "findExact": "on Hammerite archer",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_21",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "2F",
+              "findExact": "on Hammerite arbalist",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_22",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "2F",
+              "findExact": "on Hammerite arbalist",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_23",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "3F",
+              "findExact": "on Hammerite arbalist",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_24",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "3F",
+              "findExact": "on Hammerite archer",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_25",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "2F",
+              "findExact": "on Hammerite archer",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_26",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "tunnel",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_27",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "S post",
+              "findExact": "on Hammerite swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_28",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "gate",
+              "findExact": "on Hammerite captain",
+              "findCountBox": [0,1,1],
+              "findPick": true,
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_29",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findExact": "on Hammerite swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "ref_signetring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_30",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "cell 4",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverfirepoker",
+      "name": "ref_silverfirepoker",
+      "img": [
+        "IMG_SilverFirePoker"
+      ],
+      "values": [
+        {
+          "id": "100gold100goods",
+          "value": [100,0,100,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_31",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "by oven",
+              "findCount": [1,1,1],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_SilverFirePoker"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverfork",
+      "name": "Silver Fork",
+      "img": [
+        "IMG_SilverFork"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_32",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "dining table",
+              "findCount": [5,5,5],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_SilverFork"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverhammercoins",
+      "name": "Silver Hamr. Coins",
+      "img": [
+        "IMG_SilverHammerCoins_Three",
+        "IMG_SilverHammerCoins_Five"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_33",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "south window",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_SilverHammerCoins_Five"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_34",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "north locker",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_SilverHammerCoins_Three"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverknife",
+      "name": "Silver Knife",
+      "img": [
+        "IMG_SilverKnife"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_35",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findExact": "dining table",
+              "findCount": [5,5,5],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_SilverKnife"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "ref_silvernugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_36",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "by guard tower 4",
+              "findExact": "plant",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "ref_statuette",
+      "img": [
+        "IMG_Statuette_Muse"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_37",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "south locker",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_Statuette_Muse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "ref_tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_38",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "hall",
+              "findExact": "on southwest statue",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_wantedposter",
+      "name": "Wanted Poster",
+      "img": [
+        "IMG_WantedPoster_Glen",
+        "IMG_WantedPoster_Jabberwocky",
+        "IMG_WantedPoster_Slipknot",
+        "IMG_WantedPoster_Sluggs",
+        "IMG_WantedPoster_Spike",
+        "IMG_WantedPoster_Thief13x"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hammerhill_loot_39",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "stairway",
+              "findExact": "by windows",
+              "findCount": [2,2,2],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_WantedPoster_Jabberwocky",
+                "IMG_WantedPoster_Thief13x"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_40",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "N post",
+              "findExact": "by window",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_WantedPoster_Glen"
+              ]
+            },
+            {
+              "id": "fm_hammerhill_loot_41",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "S post",
+              "findExact": "by bulletin board",
+              "findCount": [3,3,3],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_WantedPoster_Slipknot",
+                "IMG_WantedPoster_Sluggs",
+                "IMG_WantedPoster_Spike"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "ref_sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_1",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "middle locker",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_leadpipe",
+          "name": "Lead Pipe",
+          "img": [
+            "IMG_LeadPipe"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_2",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "workbench",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_ropearrow",
+          "name": "ref_ropearrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_3",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "hall",
+              "findExact": "metal footlocker",
+              "findCountBox": [4,4,4],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "ref_noisemakerarrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_4",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "roof",
+              "findCount": [3,0,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "ref_watercrystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_5",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "north locker",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "ref_earthcrystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_6",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "under guard tower 1",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "ref_flashbomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_7",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "roof",
+              "findCount": [3,0,0]
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "ref_mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_8",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "roof",
+              "findCount": [2,0,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "ref_healingpotion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_9",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "north locker",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hammerhill_item_10",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "toilet",
+              "findExact": "behind mirror",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_makeshiftlockpick",
+          "name": "Makeshift Lockpick",
+          "img": [
+            "IMG_Lockpick_Makeshift"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_11",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "workbench",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "General Use Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_12",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "3F",
+              "findExact": "on Hammerite archer",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_hammerhill_item_13",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "3F",
+              "findExact": "on Hammerite arbalist",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_hammerhill_item_14",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "by north bunk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hammerhill_item_15",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_keyring",
+          "name": "Basso's Keys",
+          "img": [
+            "IMG_Keyring_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_16",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "south roster board",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Sewer Access Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_17",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "south window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hammerhill_item_18",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "on powderkeg",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Foyer Gate Key",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_19",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "N post",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_hammerhill_item_20",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "gate",
+              "findExact": "on Hammerite swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Sewer Manhole Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_21",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "on powderkeg",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Sewer Mgmt. Key",
+          "img": [
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_22",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "on Hammerite swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_hammerhill_item_23",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hammerhill_item_24",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "pump room",
+              "findExact": "on Hammerite",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Safe Door Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_25",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "NW passage",
+              "findExact": "on Malcolmb Magee",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "ref_flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_26",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "middle locker",
+              "findCount": [4,4,4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "ref_compass",
+          "img": [
+            "IMG_Compass_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_27",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_utensils",
+      "category": "Utensils",
+      "catItems": [
+        {
+          "id": "item_spoon",
+          "name": "Spoon",
+          "img": [
+            "IMG_WoodenSpoon"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_28",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "cell 11",
+              "findExact": "food slot",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_frogbeastegg",
+          "name": "ref_frogbeastegg",
+          "img": [
+            "IMG_FrogbeastEgg"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_29",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "roof",
+              "findCount": [4,0,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "ref_loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_30",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "counter",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "ref_carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_31",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "counter",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "ref_cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_32",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "counter",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "ref_cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_33",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "small table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "ref_deerleg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_34",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "small table",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_rolledscroll",
+          "name": "ref_rolledscroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_35",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "cell 11",
+              "findExact": "cot",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hammerhill_item_36",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "cell 11",
+              "findExact": "window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hammerhill_item_37",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "cell 4",
+              "findExact": "under toilet",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hammerhill_item_38",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "south locker",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "ref_papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_39",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "cell 3",
+              "findExact": "window",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_personal",
+      "category": "Personal Items",
+      "catItems": [
+        {
+          "id": "item_disguise",
+          "name": "Disguise",
+          "img": [
+            "IMG_Disguise"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_40",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "cell 18",
+              "findExact": "by window",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "ref_dewdrop",
+          "img": [
+            "IMG_Dewdrop"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_41",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "cell 2",
+              "findExact": "crib",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_jewelry",
+      "category": "Jewelry",
+      "catItems": [
+        {
+          "id": "item_hammermedallion",
+          "name": "Golden Medallion",
+          "img": [
+            "IMG_HammerMedallion"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_item_42",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "safe",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_oldcrate",
+          "name": "ref_oldcrate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_junk_1",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "hall",
+              "findExact": "by vent",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_hammerhill_junk_2",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "southeast passage",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_hammerhill_junk_3",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "by manhole",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_graybottle",
+          "name": "Rat Poison Pellets",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_junk_4",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "cell 6",
+              "findExact": "under cot",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hammerhill_junk_5",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "office",
+              "findExact": "shelf",
+              "findCount": [6,6,6]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "ref_spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_junk_6",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "by powderkeg",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hammerhill_junk_7",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "by door",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_levers",
+      "category": "Levers and Knobs",
+      "catJunk": [
+        {
+          "id": "junk_doorknob",
+          "name": "ref_doorknob",
+          "img": [
+            "IMG_Doorknob"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_junk_8",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "north passage",
+              "findExact": "by middle passage",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_warhammer",
+          "name": "ref_warhammer",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_junk_9",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "south locker",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hammerhill_junk_10",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bunkroom",
+              "findExact": "north locker",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "ref_skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_hammerhill_junk_11",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "east passage",
+              "findExact": "near sandbag",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

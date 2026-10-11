@@ -40,54 +40,47 @@ export function GoalView(props) {
     <>
       {/* If no value minimum, display an empty space. */}
       {props.goalLoot === 0 &&
-        <View style={styles.emptyRowBox} />
+        <View style={styles.emptyRowBox(width)} />
       }
       {/* Otherwise, display the loot goal. */}
       {props.goalLoot > 0 &&
         <View style={[
-          stylesTotal.tableRowBox,
-          {width: (Platform.OS !== 'web')
-                  ? (width < 400) ? 48 : 66
-                  : (width < 626) ? 60 : 100,
-          borderColor: colors.border}
+          stylesTotal.tableRowBox(width),
+          stylesTotal.tableHeadColumn(width),
+          {borderColor: colors.border}
         ]}>
           <ImageBackground
             source={(getCurrentTheme === 'dark' ||
               (getCurrentTheme === 'default' && scheme === 'dark'))
               ? ((props.foundLoot >= props.goalLoot)
-                ? ((Platform.OS === 'web' && width < 626)
+                ? ((width < 626)
                   ? bgFoundDarkS : bgFoundDark)
                 : bgDefaultDark)
               : ((props.foundLoot >= props.goalLoot)
-                ? ((Platform.OS === 'web' && width < 626)
+                ? ((width < 626)
                   ? bgFoundLightS : bgFoundLight)
                 : bgDefaultLight)}
             resizeMode="cover"
             style={[
-              stylesTotal.totalBackground,
+              stylesTotal.totalBackground(width),
               (Platform.OS === 'web') ? stylesTotal.totalBackgroundWeb : ''
             ]}
           >
             {/* Display found loot compared to loot goal. */}
-            <Text style={[
-              stylesTotal.tableRowText,
-              {color: colors.text}
-            ]}>
+            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
               {props.foundLoot}
-              {((Platform.OS !== 'web' && width < 400) ||
-                (Platform.OS === 'web' && width < 626)) &&
+              {(width <= 389) &&
                 "\n"
               }
               {" / "}
               {props.goalLoot}
-              {((Platform.OS !== 'web' && width >= 400) ||
-                (Platform.OS === 'web' && width >= 626)) &&
+              {(width > 389) &&
                 " "
               }
             </Text>
             {/* Display loot goal percentage. */}
             <Text style={[
-              stylesTotal.tableRowText,
+              stylesTotal.tableRowText(width),
               stylesList.locCount,
               {color: colors.text}
             ]}>
@@ -105,7 +98,7 @@ export function GoalView(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  emptyRowBox: {
-    width: (Platform.OS === 'web') ? 100 : 66,
-  },
+  emptyRowBox: (width) => ({
+    width: (width > 626) ? 100 : 66,
+  }),
 });

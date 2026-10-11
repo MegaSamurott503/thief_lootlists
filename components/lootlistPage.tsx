@@ -136,7 +136,7 @@ export function LootlistPage(props) {
 
   // LootCats: defines the loot categories of this mission.
   // Used to determine which loot icons to display.
-  let lootCats = ["gold","gems","goods"];
+  let lootCats = ["gold","gems","goods","special"];
   if (myList[props.missionName].lootCats)
     lootCats = myList[props.missionName].lootCats;
 
@@ -327,7 +327,7 @@ export function LootlistPage(props) {
         style={{
           flexGrow: (Platform.OS === 'web') ? 0 : 1,
           height: (!myList[props.missionName].totals) ? '84%' :
-            (Platform.OS === 'web') ? height*0.66 : '75%'
+            (width > 817) ? height*0.66 : '75%'
         }}
       >
         <View style={[styles.listScreen, {
@@ -341,32 +341,14 @@ export function LootlistPage(props) {
           >
             {/* Display mission title. */}
             {myList[props.missionName].title &&
-              <Text style={[
-                stylesTitle.bigTitle,
-                Platform.OS !== 'web' && {
-                  fontSize: width*0.058,
-                },
-                Platform.OS === 'web' && {
-                  fontSize: (width > 849) ? 40 : width*0.047,
-                },
-                {color: colors.text}
-              ]}>
+              <Text style={[stylesTitle.bigTitle(width), {color: colors.text}]}>
                 {myList[props.missionName].title}
                 {myList[props.missionName].subtitle && ':'}
               </Text>
             }
             {/* Display mission subtitle, if applicable. */}
             {myList[props.missionName].subtitle &&
-              <Text style={[
-                stylesTitle.bigTitle,
-                Platform.OS !== 'web' && {
-                  fontSize: width*0.058,
-                },
-                Platform.OS === 'web' && {
-                  fontSize: (width > 849) ? 40 : width*0.047,
-                },
-                {color: colors.text}
-              ]}>
+              <Text style={[stylesTitle.bigTitle(width), {color: colors.text}]}>
                 {myList[props.missionName].subtitle}
               </Text>
             }
@@ -485,12 +467,12 @@ export function LootlistPage(props) {
             myList[props.missionName].notes[0].id !== 'null' &&
             <>
               <SectionHeader headerName="Notes"/>
-              <View style={styles.noteView}>
+              <View style={styles.noteView(width)}>
                 {/* Map out each entry in notes array. */}
                 {myList[props.missionName].notes.map((noteKey, noteIndex) => (
                   <View key={`note_${noteIndex}`}>
                     {noteKey.show &&
-                      <Text style={[styles.noteText,
+                      <Text style={[styles.noteText(width),
                         {color: colors.text}]}
                       >
                         {noteKey.icon &&
@@ -515,28 +497,20 @@ export function LootlistPage(props) {
               <View ref={jumpLoot} collapsable={false}>
                 <SectionHeader headerName="Loot"/>
               </View>
-              <View style={[
-                Platform.OS !== 'web' && {width: '100%'},
-                Platform.OS === 'web' && {
-                  width: /*(width > 1300) ? 1300 :
-                         (width > 1072) ? 1072 :*/
-                         (width > 844) ? 844 :
-                         (width > 616) ? 616 : 388
-                }
-              ]}>
+              <View style={styles.headerView(width)}>
                 {/* Empty header bar, as loot isn't split into categories. */}
                 <View style={[
-                  styles.listHeader,
+                  styles.listHeader(width),
                   {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
-                  <Text style={styles.listHeaderText}>
+                  <Text style={styles.listHeaderText(width)}>
                     {' '}
                   </Text>
                 </View>
                 {/* List of the mission's loot, sorted by order found. */}
                 {getLootSort === "order" &&
-                  <View style={styles.listView}>
+                  <View style={styles.listView(width)}>
                     <LootOrder
                       title={myList[props.missionName].title}
                       modeNames={myList[props.missionName].modeNames}
@@ -564,7 +538,7 @@ export function LootlistPage(props) {
                 }
                 {/* List of the mission's loot, sorted by type and value. */}
                 {getLootSort === "value" &&
-                  <View style={styles.listView}>
+                  <View style={styles.listView(width)}>
                     {/* Map out each entry in loot array. */}
                     {myList[props.missionName].loot.map((lootKey, lootIndex) => (
                       <LootlistEntry
@@ -595,14 +569,8 @@ export function LootlistPage(props) {
               <View ref={jumpItems} collapsable={false}>
                 <SectionHeader headerName="Items"/>
               </View>
-              <View style={[styles.listView,
-                Platform.OS !== 'web' && {width: '90%'},
-                Platform.OS === 'web' && {
-                  width: /*(width > 1240) ? 1240 :
-                         (width > 1012) ? 1012 :*/
-                         (width > 784) ? 784 :
-                         (width > 556) ? 556 : 328
-                }
+              <View style={[styles.listView(width),
+                styles.listItemView(width)
               ]}>
                 {/* Map out each entry in item array. */}
                 {myList[props.missionName].items.map((itemCatKey, itemCatIndex) => (
@@ -612,12 +580,12 @@ export function LootlistPage(props) {
                       ref={pickMyRef(itemCatKey.category)}
                       collapsable={false}
                       style={[
-                        styles.listHeader,
+                        styles.listHeader(width),
                         {backgroundColor: colors.backDark,
                         borderColor: colors.border}
                       ]}
                     >
-                      <Text style={styles.listHeaderText}>
+                      <Text style={styles.listHeaderText(width)}>
                         {itemCatKey.category}
                       </Text>
                     </View>
@@ -628,6 +596,7 @@ export function LootlistPage(props) {
                           id={itemKey.id}
                           title={myList[props.missionName].title}
                           modeNames={myList[props.missionName].modeNames}
+                          lootCats={lootCats}
                           areas={myList[props.missionName].areas}
                           notes={myList[props.missionName].notes}
                           name={itemKey.name}
@@ -651,25 +620,19 @@ export function LootlistPage(props) {
               <View ref={jumpJunk} collapsable={false}>
                 <SectionHeader headerName="Junk"/>
               </View>
-              <View style={[styles.listView,
-                Platform.OS !== 'web' && {width: '90%'},
-                Platform.OS === 'web' && {
-                  width: /*(width > 1240) ? 1240 :
-                         (width > 1012) ? 1012 :*/
-                         (width > 784) ? 784 :
-                         (width > 556) ? 556 : 328
-                }
+              <View style={[styles.listView(width),
+                styles.listItemView(width)
               ]}>
                 {/* Map out each entry in junk array. */}
                 {myList[props.missionName].junk.map((junkCatKey, junkCatIndex) => (
                   <View key={`junkCat_${junkCatIndex}`}>
                     {/* Header bar for each category of junk. */}
                     <View style={[
-                      styles.listHeader,
+                      styles.listHeader(width),
                       {backgroundColor: colors.backDark,
                       borderColor: colors.border}
                     ]}>
-                      <Text style={styles.listHeaderText}>
+                      <Text style={styles.listHeaderText(width)}>
                         {junkCatKey.category}
                       </Text>
                     </View>
@@ -680,6 +643,7 @@ export function LootlistPage(props) {
                           id={junkKey.id}
                           title={myList[props.missionName].title}
                           modeNames={myList[props.missionName].modeNames}
+                          lootCats={lootCats}
                           areas={myList[props.missionName].areas}
                           notes={myList[props.missionName].notes}
                           name={junkKey.name}
@@ -699,25 +663,25 @@ export function LootlistPage(props) {
           }
           {/* Secret section. */}
           {myList[props.missionName].secrets && getShowListSec &&
-            <View style={[styles.listSecretView,
-              Platform.OS !== 'web' && {width: '100%'},
-              Platform.OS === 'web' && {
-                width: (width > 784) ? 784 : '100%'
+            <View style={[styles.listSecretView(width),
+              //Platform.OS !== 'web' && {width: '100%'},
+              //Platform.OS === 'web' && {
+              {  width: (width > 784) ? 784 : '100%'
               }
             ]}>
               <View ref={jumpSecrets} collapsable={false}>
                 <SectionHeader headerName="Secrets"/>
               </View>
               <View style={[
-                styles.listHeader,
+                styles.listHeader(width),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.listHeaderText}>
+                <Text style={styles.listHeaderText(width)}>
                   {' '}
                 </Text>
               </View>
-              <View style={styles.listView}>
+              <View style={styles.listView(width)}>
                 {/* Map out each entry in secrets array. */}
                 {myList[props.missionName].secrets.map((secKey, secIndex) => (
                   <SecretEntry
@@ -778,35 +742,47 @@ const styles = StyleSheet.create({
   listScreen: {
     //width: '100%',
   },
-  listView: {
-    //width: '100%',
-    marginBottom: (Platform.OS === 'web') ? 10 : 5,
-  },
-  listItemView: {
-    //width: (Platform.OS === 'web') ? 784 : '90%',
-  },
-  listSecretView: {
-    width: (Platform.OS === 'web') ? 785 : '100%',
-  },
-  listHeader: {
+  headerView: (width) => ({
+    width: /*(width > 1300) ? 1300 :
+             (width > 1072) ? 1072 :*/
+           /*(width > 845) ? 845 :
+             (width > 617) ? 617 : 389,*/
+             (width > 845) ? 844 :
+             (width > 617) ? 616 :
+             (width > 389) ? 388 : '99.3%',
+             //(width > 365) ? 364 : 354,
+  }),
+  listView: (width) => ({
+    marginBottom: (width > 617) ? 10 : 5,
+  }),
+  listItemView: (width) => ({
+    width: /*(width > 1240) ? 1240 :
+             (width > 1012) ? 1012 :*/
+             (width > 784) ? 784 :
+             (width > 556) ? 556 :
+             (width > 389) ? 348 : '90.8%',
+  }),
+  listSecretView: (width) => ({
+    width: (width > 784) ? 784 : '100%',
+  }),
+  listHeader: (width) => ({
     borderWidth: 1,
     borderTopLeftRadius: 8,
     borderBottomLeftRadius: 8,
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
-    marginTop: (Platform.OS === 'web') ? 12 : 10,
+    marginHorizontal: (width > 449) ? 10 : 5,
+    marginTop: (width > 449) ? 12 : 10,
     padding: 2,
     paddingLeft: 6,
-  },
-  listHeaderText: {
+  }),
+  listHeaderText: (width) => ({
     color: 'white',
-    fontSize: (Platform.OS === 'web') ? 12 : 10,
-  },
-  listTitleView: {
+    fontSize: (width > 449) ? 12 : 10,
+  }),
+  listTitleView: (width) => ({
     alignItems: 'center',
-    marginTop: (Platform.OS === 'web') ? 12 : 10,
-  },
+    marginTop: (width > 449) ? 12 : 10,
+  }),
   listTitleText: {
-    //fontSize: (Platform.OS === 'web') ? 18 : 14,
     fontWeight: 'bold',
   },
   listTitleLine: {
@@ -817,14 +793,12 @@ const styles = StyleSheet.create({
     marginVertical: 2,
   },
   titleHeaderBy: {
-    //fontSize: (Platform.OS === 'web') ? 24 : 14,
     fontSize: 16 / PixelRatio.getFontScale(),
   },
   titleHeaderName: {
     fontWeight: 'bold',
   },
   titleHeaderDate: {
-    //fontSize: (Platform.OS === 'web') ? 16 : 10,
     fontSize: 12 / PixelRatio.getFontScale(),
   },
   imgHeader: {
@@ -834,13 +808,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     columnGap: 10,
   },
-  noteView: {
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
+  noteView: (width) => ({
+    marginHorizontal: (width > 449) ? 10 : 5,
     marginTop: 5,
-  },
-  noteText: {
-    fontSize: (Platform.OS === 'web') ? 15 : 12,
-  },
+  }),
+  noteText: (width) => ({
+    fontSize: (width > 449) ? 15 : 12,
+  }),
   noteSymbol: {
     fontWeight: 'bold',
   }

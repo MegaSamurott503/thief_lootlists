@@ -16,7 +16,7 @@ export const FindMeCount = memo(function FindMeCount(props) {
     findCount = [1,1,1],
     findCountMode = [-1,-1,-1],
     findCountActual = [-1,-1,-1],
-    //findBox = false,
+    findBox = false,
     findPick = false,
     carryover = false,
   } = props;
@@ -173,10 +173,11 @@ export const FindMeCount = memo(function FindMeCount(props) {
   return (
     <Text style={[
       stylesList.locCount,
-      //findBox && stylesList.locBox,
+      findBox && stylesList.locBox,
       findPick && stylesList.locPick,
+      {textDecorationColor: colors.locBox}
     ]}>
-      {' '}
+      {'\u200B \u200B'}
       {/* Does this item carry over from the last mission? */}
       {carryover &&
         'x [previous #]'

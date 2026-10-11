@@ -11,6 +11,7 @@ import { FindMe } from '@/components/findMe';
 import { LootIconPicker } from '@/components/lootIconPicker';
 import { ImageSwitch } from '@/components/imageSwitch';
 
+import { myItems } from '@/constants/jsonFilters';
 import { stylesList } from '@/constants/stylesList';
 import { stylesImg } from '@/constants/stylesImg';
 import {
@@ -263,8 +264,14 @@ export function LootlistEntry(props) {
         (getFilterLootSpecial && myValues &&
           (whatsMyLoot.flat().some(val => val[3] !== 0) ||
           whatsMyLootCarry.flat().some(val => val[3] === -1)) ) ||
+        // Edge case for carryover loot.
         (myValues && whatsMyLootCarry.flat().some(val =>
           Math.max(...val) === 0) ) ||
+        // Edge case for loot with a value of 0.
+        (myValues &&
+          (getFilterLootGold && getFilterLootGems &&
+            getFilterLootGoods && getFilterLootSpecial) &&
+          Math.max(...whatsMyLoot.flat(2)) === 0) ||
         !myValues
       ) &&
       // If no items are the goal of an objective,
@@ -286,22 +293,22 @@ export function LootlistEntry(props) {
           getFilterArea.includes(props.areas[loc].value))
       ) &&
         <View style={[
-          stylesList.listEntry,
+          stylesList.listEntry(width),
           // If loot is sorted by order found,
           // put space between loot found in different general areas.
           addSpacing && styles.orderSplit
         ]}>
           <View style={[
-            styles.nameEntry,
+            styles.nameEntry(width),
             {backgroundColor: colors.backMed,
             borderColor: colors.border},
-            myValues && styles.nameEntryLoot
+            myValues && styles.nameEntryLoot(width)
           ]}>
             {/* Item's image goes here. */}
             {props.img.length === 1 &&
               <Image
                 source={props.img[0]}
-                style={stylesImg.imgStyle}
+                style={stylesImg.imgStyle(width)}
               />
             }
             {/* If the item has several varieties,
@@ -311,16 +318,21 @@ export function LootlistEntry(props) {
                 img={props.img}
               />
             }
-            <Text style={[styles.entryText, {color: colors.text}]}>
-              {props.name}
+            {/* Display the item's name,
+                whether the name is a common string or custom name. */}
+            <Text style={[styles.entryText(width), {color: colors.text}]}>
+              {props.name.startsWith("ref_")
+                ? myItems[props.name]
+                : props.name
+              }
             </Text>
-            {/*<Text style={[styles.entryText, {color: colors.text}]}>
+            {/*<Text style={[styles.entryText(width), {color: colors.text}]}>
               {whatsMyDiff}
             </Text>*/}
           </View>
           <View style={[
-            styles.subEntry,
-            myValues && styles.subEntryLoot
+            styles.subEntry(width),
+            myValues && styles.subEntryLoot(width)
           ]}>
             {/* For loot,
                 map out each entry in loot value sub-array. */}
@@ -328,13 +340,11 @@ export function LootlistEntry(props) {
               <View
                 key={valueKey.id}
                 style={[
-                  (Platform.OS === 'web' && width >= 617 &&
-                  valueKey.locations.length < 3)
-                  ? styles.subEntryLPV_Web
-                  : (Platform.OS === 'web' && width < 617 &&
-                    valueKey.locations.length === 1)
-                    ? styles.subEntryLPV_Web
-                    : styles.subEntryLocsPerValue
+                  (width > 617 && valueKey.locations.length < 3)
+                  ? styles.subEntryLPV_Web(width)
+                  : (width <= 617 && valueKey.locations.length === 1)
+                    ? styles.subEntryLPV_Web(width)
+                    : styles.subEntryLocsPerValue(width)
                 ]}
               >
                 {(
@@ -376,8 +386,12 @@ export function LootlistEntry(props) {
                   (getFilterLootSpecial && myValues &&
                     (whatsMyLoot[index1].some(val => val[3] !== 0) ||
                     whatsMyLootCarry[index1].some(val => val[3] === -1)) ) ||
+                  // Edge case for carryover loot.
                   (myValues && whatsMyLootCarry[index1].some(val =>
                     Math.max(...val) === 0) ) ||
+                  // Edge case for loot with a value of 0.
+                  (myValues && (whatsMyLoot[index1].some(val =>
+                    Math.max(...val) === 0) )) ||
                   !myValues
                 ) &&
                 // If no items are the goal of an objective,
@@ -400,7 +414,7 @@ export function LootlistEntry(props) {
                 ) &&
                   <>
                     <View style={[
-                      styles.subEntryValue,
+                      styles.subEntryValue(width),
                       {backgroundColor: colors.backMed,
                       borderColor: colors.border}
                     ]}>
@@ -408,7 +422,7 @@ export function LootlistEntry(props) {
                       {valueKey.value && valueKey.value[0] > 0 &&
                         <View style={stylesList.lootRow}>
                           <LootIconPicker cat={props.lootCats[0]} />
-                          <Text style={[stylesList.lootText, {color: colors.text}]}>
+                          <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                             {valueKey.value[0]}
                           </Text>
                         </View>
@@ -416,7 +430,7 @@ export function LootlistEntry(props) {
                       {valueKey.value && valueKey.value[1] > 0 &&
                         <View style={stylesList.lootRow}>
                           <LootIconPicker cat={props.lootCats[1]} />
-                          <Text style={[stylesList.lootText, {color: colors.text}]}>
+                          <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                             {valueKey.value[1]}
                           </Text>
                         </View>
@@ -424,7 +438,7 @@ export function LootlistEntry(props) {
                       {valueKey.value && valueKey.value[2] > 0 &&
                         <View style={stylesList.lootRow}>
                           <LootIconPicker cat={props.lootCats[2]} />
-                          <Text style={[stylesList.lootText, {color: colors.text}]}>
+                          <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                             {valueKey.value[2]}
                           </Text>
                         </View>
@@ -432,7 +446,7 @@ export function LootlistEntry(props) {
                       {valueKey.value && valueKey.value[3] > 0 &&
                         <View style={stylesList.lootRow}>
                           <LootIconPicker cat={props.lootCats[3]} />
-                          <Text style={[stylesList.lootText, {color: colors.text}]}>
+                          <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                             {valueKey.value[3]}
                           </Text>
                         </View>
@@ -442,7 +456,7 @@ export function LootlistEntry(props) {
                         valueKey.carryValue[0] === -1 &&
                         <View style={stylesList.lootRow}>
                           <LootIconPicker cat={props.lootCats[0]} />
-                          <Text style={[stylesList.lootText, {color: colors.text}]}>
+                          <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                             {getCarryLoot}
                             {!getCarryLoot && "????"}
                           </Text>
@@ -452,7 +466,7 @@ export function LootlistEntry(props) {
                         valueKey.carryValue[1] === -1 &&
                         <View style={stylesList.lootRow}>
                           <LootIconPicker cat={props.lootCats[1]} />
-                          <Text style={[stylesList.lootText, {color: colors.text}]}>
+                          <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                             {getCarryLoot}
                             {!getCarryLoot && "????"}
                           </Text>
@@ -462,7 +476,7 @@ export function LootlistEntry(props) {
                         valueKey.carryValue[2] === -1 &&
                         <View style={stylesList.lootRow}>
                           <LootIconPicker cat={props.lootCats[2]} />
-                          <Text style={[stylesList.lootText, {color: colors.text}]}>
+                          <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                             {getCarryLoot}
                             {!getCarryLoot && "????"}
                           </Text>
@@ -472,7 +486,7 @@ export function LootlistEntry(props) {
                         valueKey.carryValue[3] === -1 &&
                         <View style={stylesList.lootRow}>
                           <LootIconPicker cat={props.lootCats[3]} />
-                          <Text style={[stylesList.lootText, {color: colors.text}]}>
+                          <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                             {getCarryLoot}
                             {!getCarryLoot && "????"}
                           </Text>
@@ -485,12 +499,12 @@ export function LootlistEntry(props) {
                         valueKey.value[1] === 0 &&
                         valueKey.value[2] === 0 &&
                         valueKey.value[3] === 0 &&
-                        <Text style={[stylesList.lootText, {color: colors.text}]}>
+                        <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                           0
                         </Text>
                       }
                     </View>
-                    <View style={[styles.subEntryLoc, styles.subEntryLocLoot]}>
+                    <View style={[styles.subEntryLoc(width), styles.subEntryLocLoot(width)]}>
                       {/* Map out each entry in loot location sub-sub-array. */}
                       {valueKey.locations.map((locKey, index2) => (
                         <FindMe
@@ -498,6 +512,7 @@ export function LootlistEntry(props) {
                           id={locKey.id}
                           title={props.title}
                           modeNames={props.modeNames}
+                          lootCats={props.lootCats}
                           areas={props.areas}
                           notes={props.notes}
                           value={valueKey.value}
@@ -535,13 +550,14 @@ export function LootlistEntry(props) {
             {/* For items and junk,
                 map out each entry in location sub-array. */}
             {props.locations &&
-              <View style={styles.subEntryLoc}>
+              <View style={styles.subEntryLoc(width)}>
                 {props.locations.map((locKey, index3) => (
                   <FindMe
                     key={locKey.id}
                     id={locKey.id}
                     title={props.title}
                     modeNames={props.modeNames}
+                    lootCats={props.lootCats}
                     areas={props.areas}
                     notes={props.notes}
                     value={locKey.value}
@@ -581,56 +597,57 @@ export function LootlistEntry(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  nameEntry: {
+  nameEntry: (width) => ({
     borderWidth: 1,
     borderTopLeftRadius: 8,
     borderBottomLeftRadius: 8,
     alignItems: 'center',
-    width: (Platform.OS === 'web') ? 80 : '15%',
-  },
-  nameEntryLoot: {
-    width: (Platform.OS === 'web') ? 80 : '13.5%',
-  },
-  subEntry: {
+    width: (width > 449) ? 80 : 54,
+    // 50 is just big enough for 'Triangle-tooth Lockpick' on app
+  }),
+  nameEntryLoot: (width) => ({
+    width: (width > 449) ? 80 : 54,
+  }),
+  subEntry: (width) => ({
     flex: 1,
-    width: (Platform.OS === 'web') ? 764 : '85%',
-  },
-  subEntryLoot: {
+    width: (width > 449) ? 764 : '85%',
+  }),
+  subEntryLoot: (width) => ({
     flex: 1,
-    width: (Platform.OS === 'web') ? 764 : '86.5%',
-  },
-  subEntryLocsPerValue: {
+    width: (width > 449) ? 764 : '86.5%',
+  }),
+  subEntryLocsPerValue: (width) => ({
     flex: 10,
     flexDirection: 'row',
-    minHeight: (Platform.OS === 'web') ? 38 : 30,
-  },
-  subEntryLPV_Web: {
-    //backgroundColor: 'orange',
+    minHeight: (width > 449) ? 38 : 30,
+  }),
+  subEntryLPV_Web: (width) => ({
     flex: 1,
     flexDirection: 'row',
-    minHeight: (Platform.OS === 'web') ? 38 : 30,
-  },
-  subEntryValue: {
+    minHeight: (width > 449) ? 38 : 30,
+  }),
+  subEntryValue: (width) => ({
     //flexDirection: 'row',
     borderWidth: 1,
     justifyContent: 'center',
-    paddingLeft: (Platform.OS === 'web') ? 4 : 2,
-    width: (Platform.OS === 'web') ? 60 : '11%',
-  },
-  subEntryLoc: {
+    paddingLeft: (width > 449) ? 4 : 2,
+    width: (width > 449) ? 60 :
+           (width > 388) ? 40 : 30,
+  }),
+  subEntryLoc: (width) => ({
     flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignContent: 'stretch',
-    //width: '89%',
-  },
-  subEntryLocLoot: {
-    width: (Platform.OS === 'web') ? 228 : '89%',
-  },
-  entryText: {
-    fontSize: (Platform.OS === 'web') ? 12 : 7.5,
+    //width: (width > 389) ? 228 : width*3.25,
+  }),
+  subEntryLocLoot: (width) => ({
+    width: (width > 388) ? 258 : '50%',
+  }),
+  entryText: (width) => ({
+    fontSize: (width > 449) ? 12 : 6.75,
     textAlign: 'center',
-  },
+  }),
   orderSplit: {
     marginBottom: 9,
   },

@@ -1,0 +1,2098 @@
+{
+  "id": "fm_horrors-dance",
+  "title": "Dance with the Dead",
+  "author": [
+    "auth_yandros"
+  ],
+  "screens": [
+    "MIS_fm_horrors-dance_A",
+    "MIS_fm_horrors-dance_B"
+  ],
+  "firstRelease": "March 2007",
+  "latestVersion": "1.2",
+  "goToPrev": "fm_horrors-below",
+  "diffNames": ["Easy Peasy","Harder","Nightmare"],
+  "modeNames": [
+    {
+      "name": "Garrett",
+      "icon": "G"
+    },
+    {
+      "name": "Duke Nukem",
+      "icon": "D"
+    },
+    {
+      "name": "Suicidal",
+      "icon": "S"
+    }
+  ],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [2835,3525,525,0,6885],
+    [2835,3525,525,0,6885],
+    [2835,3525,525,0,6885]
+  ],
+  "lootCount": [69,69,69],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [3000,3000,3000],
+    "info": "bonus"
+  },
+  "goal2": {
+    "total": [6000,6000,6000],
+    "info": "bonus"
+  },
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Stock Room"},
+    {"key": "2", "value": "Northwest Upper Level"},
+    {"key": "3", "value": "North Upper Level"},
+    {"key": "4", "value": "Southwest Upper Level"},
+    {"key": "5", "value": "Central Upper Level"},
+    {"key": "6", "value": "South Upper Level"},
+    {"key": "7", "value": "Earth Passage"},
+    {"key": "8", "value": "Northeast Upper Level"},
+    {"key": "9", "value": "East Upper Level"},
+    {"key": "10", "value": "Water Maze"},
+    {"key": "11", "value": "Talisman Chamber"},
+    {"key": "12", "value": "North Lower Level"},
+    {"key": "13", "value": "Map Chamber"},
+    {"key": "14", "value": "South Lower Level"},
+    {"key": "15", "value": "West Lower Level"},
+    {"key": "16", "value": "Southwest Lower Level"},
+    {"key": "17", "value": "Scarab Stone Chamber"},
+    {"key": "18", "value": "East Lower Level"},
+    {"key": "19", "value": "Lower Reaches"},
+    {"key": "20", "value": "King La'arti's Burial Chamber"},
+    {"key": "21", "value": "Throne Room"}
+  ],
+  "notes": [
+    {
+      "id": "note_0",
+      "delimiter": "~",
+      "icon": "G",
+      "desc": "Garrett mode",
+      "show": true
+    },
+    {
+      "id": "note_1",
+      "delimiter": "~",
+      "icon": "D",
+      "desc": "Duke Nukem mode",
+      "show": true
+    },
+    {
+      "id": "note_2",
+      "delimiter": "~",
+      "icon": "S",
+      "desc": "Suicidal mode",
+      "show": true
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_decorativemask",
+      "name": "ref_decorativemask",
+      "img": [
+        "IMG_DecorativeMask_White"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_1",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findExact": "old chest",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_DecorativeMask_White"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "ref_gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "50gems",
+          "value": [0,50,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_2",
+              "findSimple": "findM",
+              "findArea": 19,
+              "findNarrow": "blinking light room",
+              "findExact": "old chest",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_3",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findExact": "old chest",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_4",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findExact": "sarcophagus",
+              "findCount": [3,3,3],
+              "findSecret": true,
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "ref_goldring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_5",
+              "findSimple": "findH",
+              "findArea": 20,
+              "findExact": "by An'aka's skeleton",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_jeweleddagger",
+      "name": "ref_jeweleddagger",
+      "img": [
+        "IMG_JeweledDagger"
+      ],
+      "values": [
+        {
+          "id": "10gold",
+          "value": [10,0,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_6",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "small room",
+              "findExact": "by skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_largegemstone",
+      "name": "ref_largegemstone",
+      "img": [
+        "IMG_LargeGemstone_Sapphire_Alt1"
+      ],
+      "values": [
+        {
+          "id": "300gems",
+          "value": [0,300,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_7",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "east path",
+              "findExact": "third dead-end",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_LargeGemstone_Sapphire_Alt1"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_8",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "north path",
+              "findExact": "second dead-end",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_LargeGemstone_Sapphire_Alt1"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_9",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "north path",
+              "findExact": "third dead-end",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_LargeGemstone_Sapphire_Alt1"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_10",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "north path",
+              "findExact": "sixth dead-end",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_LargeGemstone_Sapphire_Alt1"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_11",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "west path",
+              "findExact": "second dead-end",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_LargeGemstone_Sapphire_Alt1"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_12",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "portal room",
+              "findExact": "old chest",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_LargeGemstone_Sapphire_Alt1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "500gems",
+          "value": [0,500,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_13",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findExact": "old chest",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_LargeGemstone_Sapphire_Alt1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "ref_necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "25gold25gems",
+          "value": [25,25,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_14",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "element room",
+              "findExact": "on Twitty",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_15",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findNarrow": "by sarcophagus",
+              "findExact": "east side",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "ref_precanopicjar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_16",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "by north pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "ref_pretapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_17",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "by north pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_scarabcoin",
+      "name": "Scarab Coin",
+      "img": [
+        "IMG_ScarabCoin"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_18",
+              "findSimple": "findH",
+              "findArea": 3,
+              "findNarrow": "cave-in room",
+              "findExact": "by northwest pillar",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_ScarabCoin"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_19",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "portal room",
+              "findExact": "by pedestals",
+              "findCount": [11,11,11],
+              "findSecret": true,
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_ScarabCoin"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_20",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "by corner pillars",
+              "findCount": [5,5,5],
+              "findSecret": true,
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_ScarabCoin"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_21",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findNarrow": "by southwest pedestal",
+              "findCount": [6,6,6],
+              "findSecret": true,
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_ScarabCoin"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_22",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findNarrow": "by sarcophagus",
+              "findExact": "east side",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_ScarabCoin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_scarabcoinpile",
+      "name": "Scarab Coin Pile",
+      "img": [
+        "IMG_ScarabCoinPile"
+      ],
+      "values": [
+        {
+          "id": "150gold",
+          "value": [150,0,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_23",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "by south pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_ScarabCoinPile"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_24",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findExact": "sarcophagus",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_ScarabCoinPile"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_25",
+              "findSimple": "findM",
+              "findArea": 19,
+              "findNarrow": "blinking light room",
+              "findExact": "old chest",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_ScarabCoinPile"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "200gold",
+          "value": [200,0,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_26",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "portal room",
+              "findExact": "SW pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_ScarabCoinPile"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_27",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "portal room",
+              "findExact": "old chest",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_ScarabCoinPile"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_28",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findExact": "north pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_ScarabCoinPile"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_scarabgem",
+      "name": "Scarab Gem",
+      "img": [
+        "IMG_ScarabGem"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_29",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "portal room",
+              "findExact": "NW pedestal",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_ScarabGem"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_30",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findExact": "north pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_ScarabGem"
+              ]
+            },
+            {
+              "id": "fm_horrors-dance_loot_31",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findExact": "sarcophagus",
+              "findCount": [6,6,6],
+              "findSecret": true,
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_ScarabGem"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_serpentyletorc",
+      "name": "ref_serpentyletorc",
+      "img": [
+        "IMG_SerpentyleTorc"
+      ],
+      "values": [
+        {
+          "id": "75gold75gems",
+          "value": [75,75,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_32",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findExact": "old chest",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_SerpentyleTorc"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "300gold50gems",
+          "value": [300,50,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_33",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findExact": "sarcophagus",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_SerpentyleTorc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "ref_signetring",
+      "img": [
+        "IMG_SignetRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_34",
+              "findSimple": "findH",
+              "findArea": 20,
+              "findNarrow": "southwest corner",
+              "findExact": "by skeleton",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_SignetRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverscepter",
+      "name": "ref_silverscepter",
+      "img": [
+        "IMG_SilverScepter"
+      ],
+      "values": [
+        {
+          "id": "150gold250gems",
+          "value": [150,250,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_35",
+              "findSimple": "findM",
+              "findArea": 20,
+              "findExact": "sarcophagus",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_SilverScepter"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "ref_spicebag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "100goods",
+          "value": [0,0,100,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_36",
+              "findSimple": "findM",
+              "findArea": 19,
+              "findNarrow": "blinking light room",
+              "findExact": "old chest",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "ref_statuette",
+      "img": [
+        "IMG_Statuette_Monk",
+        "IMG_Statuette_Mage"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_loot_37",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findExact": "old chest",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_Statuette_Monk",
+                "IMG_Statuette_Mage"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_bonecrusher",
+          "name": "Bonecrusher",
+          "img": [
+            "IMG_Bonecrusher"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_1",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "shelf",
+              "findCountMode": [1,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_sturdybone",
+          "name": "Sturdy Bone",
+          "img": [
+            "IMG_Tibia"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_2",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "medium room",
+              "findExact": "by bones",
+              "findCountMode": [0,0,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_explosivearrow",
+          "name": "Explosive Arrow",
+          "img": [
+            "IMG_ExplosiveArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_3",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "shelf",
+              "findCountMode": [5,25,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "ref_watercrystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_4",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "exit",
+              "findExact": "pedestals",
+              "findCount": [2,2,2],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_explosivecrystal",
+          "name": "Explosive Crystal",
+          "img": [
+            "IMG_ExplosiveCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_5",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "small room",
+              "findExact": "west casket",
+              "findCountMode": [2,2,0]
+            },
+            {
+              "id": "fm_horrors-dance_item_6",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "north small room",
+              "findExact": "pedestal",
+              "findCountMode": [2,2,0]
+            },
+            {
+              "id": "fm_horrors-dance_item_7",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "southeast pedestal",
+              "findCount": [5,4,3],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "ref_flashbomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_8",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "shelf",
+              "findCountMode": [4,0,0]
+            }
+          ]
+        },
+        {
+          "id": "item_bennybomb",
+          "name": "Benny Bomb",
+          "img": [
+            "IMG_BennyBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_9",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "shelf",
+              "findCountMode": [1,2,0]
+            },
+            {
+              "id": "fm_horrors-dance_item_10",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "cave-in room",
+              "findExact": "pedestal",
+              "findCount": [1,0,0],
+              "findCountMode": [1,1,0]
+            },
+            {
+              "id": "fm_horrors-dance_item_11",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "northwest small room",
+              "findExact": "pedestal",
+              "findCount": [0,1,0],
+              "findCountMode": [1,1,0]
+            },
+            {
+              "id": "fm_horrors-dance_item_12",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "southwest small room",
+              "findExact": "pedestal",
+              "findCount": [0,0,1],
+              "findCountMode": [1,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_fraggrenade",
+          "name": "Frag Grenade",
+          "img": [
+            "IMG_FragGrenade"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_13",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "shelf",
+              "findCountMode": [3,20,0]
+            },
+            {
+              "id": "fm_horrors-dance_item_14",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "earth room",
+              "findExact": "east casket",
+              "findCount": [2,1,1],
+              "findCountMode": [1,1,0]
+            },
+            {
+              "id": "fm_horrors-dance_item_15",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "fence room",
+              "findExact": "pedestal",
+              "findCount": [2,1,1],
+              "findCountMode": [1,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_megafraggrenade",
+          "name": "Mega Frag Grenade",
+          "img": [
+            "IMG_MegaFragGrenade"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_16",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "shelf",
+              "findCountMode": [1,5,0]
+            },
+            {
+              "id": "fm_horrors-dance_item_17",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "large room",
+              "findExact": "central casket",
+              "findCount": [0,0,1],
+              "findCountMode": [1,1,0]
+            },
+            {
+              "id": "fm_horrors-dance_item_18",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "cave-in room",
+              "findExact": "south casket",
+              "findCount": [1,1,0],
+              "findCountMode": [1,1,0]
+            },
+            {
+              "id": "fm_horrors-dance_item_19",
+              "findSimple": "find",
+              "findArea": 16,
+              "findNarrow": "lever room",
+              "findExact": "pedestal",
+              "findCountMode": [2,2,0]
+            }
+          ]
+        },
+        {
+          "id": "item_scarabmine",
+          "name": "Scarab Mine",
+          "img": [
+            "IMG_ScarabMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_20",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "brazier room",
+              "findExact": "pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_horrors-dance_item_21",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "portal room",
+              "findExact": "old chest",
+              "findCount": [2,2,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_horrors-dance_item_22",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "portal room",
+              "findExact": "SE pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_horrors-dance_item_23",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "south pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_horrors-dance_item_24",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "pedestals",
+              "findCount": [2,2,2],
+              "findSecret": true
+            },
+            {
+              "id": "fm_horrors-dance_item_25",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "southwest pedestal",
+              "findCount": [3,3,2],
+              "findSecret": true
+            },
+            {
+              "id": "fm_horrors-dance_item_26",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "blinking light room",
+              "findExact": "NW corner",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_explosivecharge",
+          "name": "ref_explosivecharge",
+          "img": [
+            "IMG_ExplosiveCharge_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_27",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "northwest pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "ref_healingpotion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_28",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "findCountMode": [1,0,0]
+            },
+            {
+              "id": "fm_horrors-dance_item_29",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "small room",
+              "findExact": "by skeleton",
+              "findCount": [1,1,0],
+              "findCountMode": [1,0,0]
+            },
+            {
+              "id": "fm_horrors-dance_item_30",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "S small room",
+              "findExact": "pedestal",
+              "findCount": [2,2,1],
+              "findCountMode": [1,0,0]
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "ref_speedpotion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_31",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "shelf",
+              "findCountMode": [1,0,0]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "ref_invispotion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_32",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "shelf",
+              "findCountMode": [1,0,0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_key",
+          "name": "La'arti's Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_33",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "sarcophagus",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "ref_compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_34",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_fruit",
+          "name": "ref_fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_35",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "northeast pedestal",
+              "findCount": [2,2,2],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_sheetofpaper",
+          "name": "ref_sheetofpaper",
+          "img": [
+            "IMG_SheetOfPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_36",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "small room",
+              "findExact": "by skeleton",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_pileofpapers",
+          "name": "Pile of Papers",
+          "img": [
+            "IMG_PileOfPapers"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_37",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "element room",
+              "findExact": "by Twitty",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_rolledscroll",
+          "name": "ref_rolledscroll",
+          "img": [
+            "IMG_RolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_38",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "element room",
+              "findExact": "by Twitty",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_precursorscroll",
+          "name": "ref_prescroll",
+          "img": [
+            "IMG_PrecursorScroll_Flat",
+            "IMG_PrecursorScroll_Round"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_39",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "cave-in",
+              "findExact": "doorway",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_horrors-dance_item_40",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "south pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_horrors-dance_item_41",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "old chest",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Old Journal",
+          "img": [
+            "IMG_Book_Green"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_42",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "cave-in",
+              "findExact": "doorway",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Twitty's Journal",
+          "img": [
+            "IMG_Book_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_43",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "cave-in room",
+              "findExact": "northeast corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Dre'bek's Journal",
+          "img": [
+            "IMG_Book_Red_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_44",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "portal room",
+              "findExact": "NE pedestal",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_blades",
+      "category": "Blades",
+      "catItems": [
+        {
+          "id": "item_cromsblade",
+          "name": "Kingsbane",
+          "img": [
+            "IMG_CromsBlade"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_45",
+              "findSimple": "find",
+              "findArea": 21,
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "kill Bone King"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_stone",
+      "category": "Stone",
+      "catItems": [
+        {
+          "id": "item_rock",
+          "name": "Curiously Heavy Rock",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_46",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "east cave-in",
+              "findCount": [1,1,1],
+              "findRecipe": "enter brazier room",
+              "findSecret": true
+            },
+            {
+              "id": "fm_horrors-dance_item_47",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "south cave-in",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_talismanofdeath",
+          "name": "Asmodan's Icon of Death",
+          "img": [
+            "IMG_TalismanOfDeath"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_48",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "behind throne",
+              "findExact": "wall relief",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_jewelry",
+      "category": "Jewelry",
+      "catItems": [
+        {
+          "id": "item_kingscrown",
+          "name": "Jeweled Crown",
+          "img": [
+            "IMG_KingsCrown"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_49",
+              "findSimple": "find",
+              "findArea": 21,
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "kill Bone King"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_scarabstone",
+          "name": "Scarab Stone",
+          "img": [
+            "IMG_ScarabStone"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_50",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "above west pedestal",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_talismans",
+      "category": "Talismans",
+      "catItems": [
+        {
+          "id": "item_talismanofearth",
+          "name": "Element of Earth",
+          "img": [
+            "IMG_TalismanOfEarth_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_51",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "earth room",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "place Curiously Heavy Rocks on pedestals",
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_talismanoffire",
+          "name": "Element of Fire",
+          "img": [
+            "IMG_TalismanOfFire_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_52",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "fire room",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "push buttons under north & south caskets",
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_talismanofwater",
+          "name": "Element of Water",
+          "img": [
+            "IMG_TalismanOfWater_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_53",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "south pedestal",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "shoot Water Arrows at flames",
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_talismanofair",
+          "name": "Element of Air",
+          "img": [
+            "IMG_TalismanOfAir_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-dance_item_54",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "air room",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "frob west & east caskets & south placard",
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_horrors-dance_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_horrors-dance_01a",
+        "SEC_fm_horrors-dance_01b",
+        "SEC_fm_horrors-dance_01c",
+        "SEC_fm_horrors-dance_01d"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 4,
+          "findNarrow": "air room",
+          "findDiff": [1,1,1],
+          "method": "Attack the scarab-marked placard on the south wall"
+        },
+        {
+          "id": "sec_1_b",
+          "findArea": 6,
+          "findNarrow": "earth room",
+          "findDiff": [1,1,1],
+          "method": "Attack the scarab-marked placard on the west wall"
+        },
+        {
+          "id": "sec_1_c",
+          "findArea": 8,
+          "findNarrow": "fire room",
+          "findDiff": [1,1,1],
+          "method": "Attack the scarab-marked placard on the east wall"
+        },
+        {
+          "id": "sec_1_d",
+          "findArea": 9,
+          "findNarrow": "water room",
+          "findDiff": [1,1,1],
+          "method": "Attack the scarab-marked placard on the north wall"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "ref_largegemstone",
+          "value": [0,300,0,0],
+          "findCount": [5,5,5]
+        },
+        {
+          "id": "sec_1_2",
+          "rewardItem": "ref_watercrystal",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_1_3",
+          "rewardItem": "Scarab Mine",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_4",
+          "rewardItem": "Curiously Heavy Rock",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_1_5",
+          "rewardItem": "Element of Earth",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_6",
+          "rewardItem": "Element of Fire",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_7",
+          "rewardItem": "Element of Water",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_8",
+          "rewardItem": "Element of Air",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_horrors-dance_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_horrors-dance_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 9,
+          "findNarrow": "south corner hallway",
+          "findDiff": [1,1,1],
+          "method": "Go through the false wall by the scarab symbol"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardLoot": "ref_necklace",
+          "value": [25,25,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_2",
+          "rewardItem": "ref_rolledscroll",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_3",
+          "rewardItem": "Pile of Papers",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_4",
+          "rewardHint": [
+            "the scarab symbols",
+            "the throne room's location"
+          ],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_horrors-dance_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_horrors-dance_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 11,
+          "findNarrow": "element room",
+          "findDiff": [1,1,1],
+          "method": "Use the four talismans on their respective placards"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardLoot": "Scarab Coin",
+          "value": [25,0,0,0],
+          "findCount": [11,11,11]
+        },
+        {
+          "id": "sec_3_2",
+          "rewardLoot": "Scarab Coin Pile",
+          "value": [200,0,0,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_3_3",
+          "rewardLoot": "Scarab Gem",
+          "value": [0,25,0,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_3_4",
+          "rewardLoot": "ref_largegemstone",
+          "value": [0,300,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_5",
+          "rewardItem": "Scarab Mine",
+          "findCount": [3,3,2]
+        },
+        {
+          "id": "sec_3_6",
+          "rewardItem": "Dre'bek's Journal",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_7",
+          "rewardHint": [
+            "the burial chamber's location",
+            "B'irian's riddle"
+          ],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_horrors-dance_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_fm_horrors-dance_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 12,
+          "findNarrow": "corner hallway",
+          "findDiff": [1,1,1],
+          "method": "Go through the false wall by the scarab symbol"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardLoot": "Scarab Coin Pile",
+          "value": [200,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_4_2",
+          "rewardLoot": "Scarab Gem",
+          "value": [0,25,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_4_3",
+          "rewardItem": "Scarab Mine",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_4_4",
+          "rewardItem": "ref_prescroll",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_4_5",
+          "rewardHint": [
+            "how to solve B'irian's riddle"
+          ],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_horrors-dance_sec_5",
+      "number": 5,
+      "img": [
+        "SEC_fm_horrors-dance_05"
+      ],
+      "triggers": [
+        {
+          "id": "sec_5_a",
+          "findArea": 14,
+          "findNarrow": "alcove room",
+          "findDiff": [1,1,1],
+          "method": "Change the four nearby scarab-marked placards to match the riddle (clockwise from the north: air, fire, water, earth)"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_5_1",
+          "rewardLoot": "Scarab Coin",
+          "value": [25,0,0,0],
+          "findCount": [5,5,5]
+        },
+        {
+          "id": "sec_5_2",
+          "rewardLoot": "ref_serpentyletorc",
+          "value": [75,75,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_3",
+          "rewardLoot": "Scarab Coin Pile",
+          "value": [150,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_4",
+          "rewardLoot": "ref_gemstone",
+          "value": [0,100,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_5",
+          "rewardLoot": "ref_pretapestry",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_6",
+          "rewardLoot": "ref_precanopicjar",
+          "value": [0,0,75,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_7",
+          "rewardLoot": "ref_statuette",
+          "value": [0,0,75,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_5_8",
+          "rewardLoot": "ref_decorativemask",
+          "value": [0,0,150,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_9",
+          "rewardItem": "Scarab Mine",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_5_10",
+          "rewardItem": "Scarab Stone",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_horrors-dance_sec_6",
+      "number": 6,
+      "img": [
+        "SEC_fm_horrors-dance_06"
+      ],
+      "triggers": [
+        {
+          "id": "sec_6_a",
+          "findArea": 11,
+          "findNarrow": "portal room",
+          "findDiff": [1,1,1],
+          "method": "Put the Scarab Stone in the receptacle"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_6_1",
+          "rewardRoute": [
+            "the portal room",
+            "the throne room"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_2",
+          "rewardLoot": "Scarab Coin",
+          "value": [25,0,0,0],
+          "findCount": [8,8,8]
+        },
+        {
+          "id": "sec_6_3",
+          "rewardLoot": "ref_goldring",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_4",
+          "rewardLoot": "ref_signetring",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_5",
+          "rewardLoot": "ref_necklace",
+          "value": [100,100,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_6",
+          "rewardLoot": "Scarab Coin Pile",
+          "value": [150,0,0,0],
+          "findCount": [4,4,4]
+        },
+        {
+          "id": "sec_6_7",
+          "rewardLoot": "ref_silverscepter",
+          "value": [150,250,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_8",
+          "rewardLoot": "ref_serpentyletorc",
+          "value": [300,50,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_9",
+          "rewardLoot": "Scarab Gem",
+          "value": [0,25,0,0],
+          "findCount": [6,6,6]
+        },
+        {
+          "id": "sec_6_10",
+          "rewardLoot": "ref_gemstone",
+          "value": [0,50,0,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_6_11",
+          "rewardLoot": "ref_gemstone",
+          "value": [0,100,0,0],
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_6_12",
+          "rewardLoot": "ref_largegemstone",
+          "value": [0,500,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_13",
+          "rewardLoot": "ref_spicebag",
+          "value": [0,0,100,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_14",
+          "rewardItem": "ref_explosivecharge",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_15",
+          "rewardItem": "La'arti's Key",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_16",
+          "rewardItem": "ref_fruit",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_6_17",
+          "rewardBonus": true,
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

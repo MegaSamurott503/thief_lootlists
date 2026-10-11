@@ -1,26 +1,26 @@
 import { Platform } from 'react-native';
 
 export const stylesSelect = {
-  selectMeBox: {
+  selectMeBox: (width) => ({
     borderRadius: 5,
     //width: (Platform.OS === 'web') ? 425 : '80%',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
+    marginHorizontal: (width > 449) ? 10 : 5,
     marginVertical: 5,
-  },
-  selectMeDropdown: {
+  }),
+  selectMeDropdown: (width) => ({
     borderRadius: 5,
     //width: (Platform.OS === 'web') ? 425 : '80%',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
+    marginHorizontal: (width > 449) ? 10 : 5,
     marginVertical: 5,
-  },
+  }),
   selectMeListItem: {
     alignItems: 'center',
     marginHorizontal: -5,
     height: 30,
   },
-  selectMeListText: {
-    fontSize: (Platform.OS === 'web') ? 15 : 10,
-  },
+  selectMeListText: (width) => ({
+    fontSize: (width > 449) ? 15 : 10,
+  }),
   selectMeBadge: {
     borderWidth: 1,
     borderColor: 'black',

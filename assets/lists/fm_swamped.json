@@ -1,0 +1,1181 @@
+{
+  "id": "fm_swamped",
+  "title": "Swamped",
+  "author": [
+    "auth_sharga"
+  ],
+  "screens": [
+    "MIS_fm_swamped_A",
+    "MIS_fm_swamped_B"
+  ],
+  "firstRelease": "March 2002",
+  "latestVersion": "1.1",
+  "diffNames": ["Easy","Tad Harder","Even Harder"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [775,160,445,0,1380],
+    [775,160,445,0,1380],
+    [775,160,445,0,1380]
+  ],
+  "lootCount": [16,16,16],
+  "lootChanges": [0,0,0],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "North Bog"},
+    {"key": "3", "value": "Crayman Fire Shrine"},
+    {"key": "4", "value": "Burrick Cave"},
+    {"key": "5", "value": "Crayman Air Shrine"},
+    {"key": "6", "value": "Treebeast Forest"},
+    {"key": "7", "value": "Crayman Water Shrine"},
+    {"key": "8", "value": "Abandoned Village"},
+    {"key": "9", "value": "Giant Tree"},
+    {"key": "10", "value": "Daag's Temple"},
+    {"key": "11", "value": "Spider Tunnels"},
+    {"key": "12", "value": "Keeper Newton's Cottage"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_finewine",
+      "name": "ref_finewine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_swamped_loot_1",
+              "findSimple": "findM",
+              "findArea": 8,
+              "findNarrow": "Sharga's hideaway",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "ref_goldnugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_swamped_loot_2",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "exit cave",
+              "findExact": "by north pit",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "ref_precanopicjar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_swamped_loot_3",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "rafters",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorgem",
+      "name": "ref_pregem",
+      "img": [
+        "IMG_PrecursorGem"
+      ],
+      "values": [
+        {
+          "id": "15gems",
+          "value": [0,15,0,0],
+          "locations": [
+            {
+              "id": "fm_swamped_loot_4",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findNarrow": "pillar room",
+              "findExact": "tall pillars",
+              "findCount": [4,4,4],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_PrecursorGem"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "ref_prejar",
+      "img": [
+        "IMG_PrecursorJar_Tall"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_swamped_loot_5",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findNarrow": "rafters",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursormask",
+      "name": "ref_premask",
+      "img": [
+        "IMG_PrecursorMask_Wood"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_swamped_loot_6",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "gate room",
+              "findExact": "behind west gate",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_PrecursorMask_Wood"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "ref_pretapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_swamped_loot_7",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "gate room",
+              "findExact": "behind northwest gate",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "ref_purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_swamped_loot_8",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "north forest",
+              "findExact": "by Madison",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_swamped_loot_9",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "near campfire",
+              "findExact": "by thief swordsman",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_serpentyletorc",
+      "name": "ref_serpentyletorc",
+      "img": [
+        "IMG_SerpentyleTorc"
+      ],
+      "values": [
+        {
+          "id": "300gold50gems",
+          "value": [300,50,0,0],
+          "locations": [
+            {
+              "id": "fm_swamped_loot_10",
+              "findSimple": "findE",
+              "findArea": 8,
+              "findNarrow": "tower",
+              "findExact": "round window",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_SerpentyleTorc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "ref_silvernugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_swamped_loot_11",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "south chamber",
+              "findExact": "near mushroom",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "fm_swamped_loot_12",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "north chamber",
+              "findExact": "by plant",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "ref_tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_swamped_loot_13",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "south chamber",
+              "findExact": "behind plant",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "ref_sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "ref_blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "ref_broadheadarrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [25,25,25],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_swamped_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,10,10],
+              "loadout": "store",
+              "price": 25
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "ref_waterarrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [4,4,4],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_swamped_item_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [10,10,10],
+              "loadout": "store",
+              "price": 50
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "ref_firearrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_7",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_swamped_item_8",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "findCountActual": [2,2,1],
+              "loadout": "store",
+              "price": 300
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "ref_mossarrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_9",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_gasarrow",
+          "name": "ref_gasarrow",
+          "img": [
+            "IMG_GasArrow_TMA"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "findCountActual": [2,2,1],
+              "loadout": "store",
+              "price": 500
+            }
+          ]
+        },
+        {
+          "id": "item_vinearrow",
+          "name": "ref_vinearrow",
+          "img": [
+            "IMG_VineArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_11",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [6,6,6],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_swamped_item_12",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 200
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "ref_noisemakerarrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_13",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_firecrystal",
+          "name": "ref_firecrystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_14",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "ref_aircrystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_15",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "behind idol",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "ref_flashbomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_16",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "findCountActual": [5,5,2],
+              "loadout": "store",
+              "price": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "ref_healingpotion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_17",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,0],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_swamped_item_18",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "loadout": "store",
+              "price": 250
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "ref_invispotion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_19",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "rafters",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "ref_slowfallpotion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_20",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "rafters",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_holywatervial",
+          "name": "ref_holywatervial",
+          "img": [
+            "IMG_HolyWaterVial"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_21",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "rafters",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "ref_compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_22",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_frogbeastegg",
+          "name": "ref_frogbeastegg",
+          "img": [
+            "IMG_FrogbeastEgg"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_23",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "findCountActual": [5,5,2],
+              "loadout": "store",
+              "price": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "ref_loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_24",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "fireplace hearth",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_fruit",
+          "name": "ref_fruit",
+          "img": [
+            "IMG_Fruit"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_25",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "upper canopy",
+              "findCount": [1,1,0]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "ref_cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_26",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "Sharga's hideaway",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_unrolledscroll",
+          "name": "ref_scroll",
+          "img": [
+            "IMG_UnrolledScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_27",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "by north tunnel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_swamped_item_28",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north house",
+              "findExact": "by barrels",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_swamped_item_29",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "west entrance",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_precursorscroll",
+          "name": "ref_prescroll",
+          "img": [
+            "IMG_PrecursorScroll_Round"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_30",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "gate room",
+              "findExact": "center cage",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Keeper's Notebook",
+          "img": [
+            "IMG_Book_Keeper"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_31",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "bedroom",
+              "findExact": "rafters",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_diamond",
+          "name": "Diamond",
+          "img": [
+            "IMG_LargeGemstone_Diamond"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_32",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "southeast cave",
+              "findExact": "by Carris",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        },
+        {
+          "id": "item_ruby",
+          "name": "Ruby",
+          "img": [
+            "IMG_LargeGemstone_Ruby"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_33",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "tower",
+              "findExact": "red pool",
+              "findObj": true,
+              "findCount": [0,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_sapphire",
+          "name": "Crystaline",
+          "img": [
+            "IMG_LargeGemstone_Sapphire"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_34",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "fountain room",
+              "findExact": "underwater",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        },
+        {
+          "id": "item_emerald",
+          "name": "Emerald",
+          "img": [
+            "IMG_LargeGemstone_Emerald"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_35",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "above altar",
+              "findObj": true,
+              "findCount": [0,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_amethyst",
+          "name": "Amethyst",
+          "img": [
+            "IMG_LargeGemstone_Amethyst"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_item_36",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "upper canopy",
+              "findExact": "by north mushroom",
+              "findObj": true,
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metalplate",
+          "name": "ref_metalplate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_junk_1",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_metalgoblet",
+          "name": "ref_metalgoblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_junk_2",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "kitchen",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "ref_rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_junk_3",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "exit cave",
+              "findExact": "near south pit",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_swamped_junk_4",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "gate room",
+              "findExact": "by center cage",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_swamped_junk_5",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "gate room",
+              "findExact": "behind southeast gate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_statuefragment",
+          "name": "ref_statuefragment",
+          "img": [
+            "IMG_StatueFragment_Head",
+            "IMG_StatueFragment_RightTorso"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_junk_6",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "north area",
+              "findExact": "by statue pedestal",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "ref_skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_swamped_junk_7",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "south house",
+              "findExact": "east room",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_swamped_junk_8",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "south house",
+              "findExact": "west room",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_swamped_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_swamped_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 7,
+          "findNarrow": "gate room",
+          "findDiff": [1,1,1],
+          "method": "Depress the weighted pedestal behind the south gate"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardRoute": [
+            "the gate room",
+            "the pillar room"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_2",
+          "rewardLoot": "ref_premask",
+          "value": [0,0,150,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_3",
+          "rewardItem": "ref_prescroll",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_swamped_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_swamped_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 8,
+          "findNarrow": "central house",
+          "findDiff": [1,1,1],
+          "method": "Depress the weighted stone pedestal"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardLoot": "ref_finewine",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_2",
+          "rewardItem": "ref_cheese",
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

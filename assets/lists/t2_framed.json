@@ -71,7 +71,7 @@
   "loot": [
     {
       "id": "loot_coppercoinstack",
-      "name": "Copper Coin Stack",
+      "name": "ref_coppercoinstack",
       "img": [
         "IMG_CopperCoinStack"
       ],
@@ -97,7 +97,7 @@
     },
     {
       "id": "loot_decorativeplate",
-      "name": "Decorative Plate",
+      "name": "ref_decorativeplate",
       "img": [
         "IMG_DecorativePlate_Blue"
       ],
@@ -123,7 +123,7 @@
     },
     {
       "id": "loot_finewine",
-      "name": "Fine Wine",
+      "name": "ref_finewine",
       "img": [
         "IMG_FineWine"
       ],
@@ -162,7 +162,7 @@
     },
     {
       "id": "loot_gemring",
-      "name": "Gem Ring",
+      "name": "ref_gemring",
       "img": [
         "IMG_GemRing"
       ],
@@ -188,7 +188,7 @@
     },
     {
       "id": "loot_goldcandlestick",
-      "name": "Gold Candlestick",
+      "name": "ref_goldcandlestick",
       "img": [
         "IMG_GoldCandlestick"
       ],
@@ -214,7 +214,7 @@
     },
     {
       "id": "loot_goldcoinstack",
-      "name": "Gold Coin Stack",
+      "name": "ref_goldcoinstack",
       "img": [
         "IMG_GoldCoinStack"
       ],
@@ -276,7 +276,7 @@
     },
     {
       "id": "loot_goldglasses",
-      "name": "Gold Glasses",
+      "name": "ref_goldglasses",
       "img": [
         "IMG_GoldGlasses"
       ],
@@ -303,7 +303,7 @@
     },
     {
       "id": "loot_goldring",
-      "name": "Gold Ring",
+      "name": "ref_goldring",
       "img": [
         "IMG_GoldRing"
       ],
@@ -329,7 +329,7 @@
     },
     {
       "id": "loot_goldvase",
-      "name": "Gold Vase",
+      "name": "ref_goldvase",
       "img": [
         "IMG_GoldVase"
       ],
@@ -355,7 +355,7 @@
     },
     {
       "id": "loot_indigovase",
-      "name": "Indigo Vase",
+      "name": "ref_indigovase",
       "img": [
         "IMG_IndigoVase"
       ],
@@ -381,7 +381,7 @@
     },
     {
       "id": "loot_purse",
-      "name": "Purse",
+      "name": "ref_purse",
       "img": [
         "IMG_Purse"
       ],
@@ -424,7 +424,7 @@
     },
     {
       "id": "loot_silvercoinstack",
-      "name": "Silver Coin Stack",
+      "name": "ref_silvercoinstack",
       "img": [
         "IMG_SilverCoinStack"
       ],
@@ -461,7 +461,7 @@
     },
     {
       "id": "loot_statuette",
-      "name": "Statuette",
+      "name": "ref_statuette",
       "img": [
         "IMG_Statuette_Nobleman",
         "IMG_Statuette_Noblewoman",
@@ -513,7 +513,7 @@
     },
     {
       "id": "loot_tiara",
-      "name": "Tiara",
+      "name": "ref_tiara",
       "img": [
         "IMG_Tiara"
       ],
@@ -545,7 +545,7 @@
       "catItems": [
         {
           "id": "item_sword",
-          "name": "Sword",
+          "name": "ref_sword",
           "img": [
             "IMG_Sword"
           ],
@@ -561,7 +561,7 @@
         },
         {
           "id": "item_blackjack",
-          "name": "Blackjack",
+          "name": "ref_blackjack",
           "img": [
             "IMG_Blackjack"
           ],
@@ -583,7 +583,7 @@
       "catItems": [
         {
           "id": "item_broadheadarrow",
-          "name": "Broadhead Arrow",
+          "name": "ref_broadheadarrow",
           "img": [
             "IMG_BroadheadArrow"
           ],
@@ -614,7 +614,7 @@
         },
         {
           "id": "item_waterarrow",
-          "name": "Water Arrow",
+          "name": "ref_waterarrow",
           "img": [
             "IMG_WaterArrow"
           ],
@@ -638,7 +638,7 @@
         },
         {
           "id": "item_mossarrow",
-          "name": "Moss Arrow",
+          "name": "ref_mossarrow",
           "img": [
             "IMG_MossArrow"
           ],
@@ -662,7 +662,7 @@
         },
         {
           "id": "item_ropearrow",
-          "name": "Rope Arrow",
+          "name": "ref_ropearrow",
           "img": [
             "IMG_RopeArrow"
           ],
@@ -694,7 +694,7 @@
         },
         {
           "id": "item_noisemakerarrow",
-          "name": "Noisemaker Arrow",
+          "name": "ref_noisemakerarrow",
           "img": [
             "IMG_NoisemakerArrow"
           ],
@@ -739,7 +739,7 @@
       "catItems": [
         {
           "id": "item_watercrystal",
-          "name": "Water Crystal",
+          "name": "ref_watercrystal",
           "img": [
             "IMG_WaterCrystal"
           ],
@@ -824,7 +824,7 @@
         },
         {
           "id": "item_earthcrystal",
-          "name": "Earth Crystal",
+          "name": "ref_earthcrystal",
           "img": [
             "IMG_EarthCrystal"
           ],
@@ -863,7 +863,7 @@
       "catItems": [
         {
           "id": "item_flashbomb",
-          "name": "Flash Bomb",
+          "name": "ref_flashbomb",
           "img": [
             "IMG_FlashBomb"
           ],
@@ -923,7 +923,7 @@
       "catItems": [
         {
           "id": "item_healingpotion",
-          "name": "Healing Potion",
+          "name": "ref_healingpotion",
           "img": [
             "IMG_HealingPotion"
           ],
@@ -976,7 +976,7 @@
         },
         {
           "id": "item_breathpotion",
-          "name": "Breath Potion",
+          "name": "ref_breathpotion",
           "img": [
             "IMG_BreathPotion"
           ],
@@ -992,7 +992,7 @@
         },
         {
           "id": "item_invisibilitypotion",
-          "name": "Invisibility Potion",
+          "name": "ref_invispotion",
           "img": [
             "IMG_InvisibilityPotion"
           ],
@@ -1038,7 +1038,7 @@
         },
         {
           "id": "item_slowfallpotion",
-          "name": "Slow-fall Potion",
+          "name": "ref_slowfallpotion",
           "img": [
             "IMG_SlowfallPotion"
           ],
@@ -1061,7 +1061,7 @@
       "catItems": [
         {
           "id": "item_strongbox",
-          "name": "Strongbox",
+          "name": "ref_strongbox",
           "img": [
             "IMG_Strongbox"
           ],
@@ -1084,7 +1084,7 @@
       "catItems": [
         {
           "id": "item_lockpicksquare",
-          "name": "Square-tooth Lockpick",
+          "name": "ref_squarepick",
           "img": [
             "IMG_Lockpick_Square"
           ],
@@ -1100,7 +1100,7 @@
         },
         {
           "id": "item_lockpicktriangle",
-          "name": "Triangle-tooth Lockpick",
+          "name": "ref_trianglepick",
           "img": [
             "IMG_Lockpick_Triangle"
           ],
@@ -1200,7 +1200,7 @@
       "catItems": [
         {
           "id": "item_flare",
-          "name": "Flare",
+          "name": "ref_flare",
           "img": [
             "IMG_Flare"
           ],
@@ -1230,7 +1230,7 @@
       "catItems": [
         {
           "id": "item_compass",
-          "name": "Compass",
+          "name": "ref_compass",
           "img": [
             "IMG_Compass"
           ],
@@ -1246,7 +1246,7 @@
         },
         {
           "id": "item_scoutingorb",
-          "name": "Scouting Orb",
+          "name": "ref_scoutingorb",
           "img": [
             "IMG_ScoutingOrb"
           ],
@@ -1284,7 +1284,7 @@
       "catItems": [
         {
           "id": "item_loaf",
-          "name": "Loaf",
+          "name": "ref_loaf",
           "img": [
             "IMG_Loaf"
           ],
@@ -1301,7 +1301,7 @@
         },
         {
           "id": "item_carrot",
-          "name": "Carrot",
+          "name": "ref_carrot",
           "img": [
             "IMG_Carrot"
           ],
@@ -1324,7 +1324,7 @@
       "catItems": [
         {
           "id": "item_crumpledpaper",
-          "name": "Crumpled Paper",
+          "name": "ref_crumpledpaper",
           "img": [
             "IMG_CrumpledPaper"
           ],
@@ -1362,7 +1362,7 @@
         },
         {
           "id": "item_unrolledscroll",
-          "name": "Scroll",
+          "name": "ref_scroll",
           "img": [
             "IMG_UnrolledScroll"
           ],
@@ -1393,7 +1393,7 @@
       "catItems": [
         {
           "id": "item_handkerchief",
-          "name": "Handkerchief",
+          "name": "ref_handkerchief",
           "img": [
             "IMG_Handkerchief"
           ],
@@ -1418,7 +1418,7 @@
       "catJunk": [
         {
           "id": "junk_normalcrate",
-          "name": "Normal Crate",
+          "name": "ref_normalcrate",
           "img": [
             "IMG_NormalCrate"
           ],
@@ -1468,7 +1468,7 @@
       "catJunk": [
         {
           "id": "junk_metalgoblet",
-          "name": "Metal Goblet",
+          "name": "ref_metalgoblet",
           "img": [
             "IMG_MetalGoblet"
           ],
@@ -1491,7 +1491,7 @@
       "catJunk": [
         {
           "id": "junk_greenbottle",
-          "name": "Green Bottle",
+          "name": "ref_greenbottle",
           "img": [
             "IMG_GreenBottle"
           ],
@@ -1516,7 +1516,7 @@
         },
         {
           "id": "junk_graybottle",
-          "name": "Gray Bottle",
+          "name": "ref_graybottle",
           "img": [
             "IMG_GrayBottle"
           ],
@@ -1540,7 +1540,7 @@
         },
         {
           "id": "junk_setofbottles",
-          "name": "Set of Bottles",
+          "name": "ref_setofbottles",
           "img": [
             "IMG_SetOfBottles"
           ],
@@ -1562,7 +1562,7 @@
       "catJunk": [
         {
           "id": "junk_vase",
-          "name": "Vase",
+          "name": "ref_vase",
           "img": [
             "IMG_Vase"
           ],
@@ -1584,7 +1584,7 @@
       "catJunk": [
         {
           "id": "junk_bunsenburner",
-          "name": "Bunsen Burner",
+          "name": "ref_bunsenburner",
           "img": [
             "IMG_BunsenBurner"
           ],
@@ -1696,37 +1696,37 @@
         },
         {
           "id": "sec_3_2",
-          "rewardItem": "Noisemaker Arrow",
+          "rewardItem": "ref_noisemakerarrow",
           "findCount": [2,1,1]
         },
         {
           "id": "sec_3_3",
-          "rewardItem": "Water Crystal",
+          "rewardItem": "ref_watercrystal",
           "findCount": [6,4,3]
         },
         {
           "id": "sec_3_4",
-          "rewardItem": "Earth Crystal",
+          "rewardItem": "ref_earthcrystal",
           "findCount": [2,2,1]
         },
         {
           "id": "sec_3_5",
-          "rewardItem": "Flash Bomb",
+          "rewardItem": "ref_flashbomb",
           "findCount": [1,0,0]
         },
         {
           "id": "sec_3_6",
-          "rewardItem": "Healing Potion",
+          "rewardItem": "ref_healingpotion",
           "findCount": [4,1,0]
         },
         {
           "id": "sec_3_7",
-          "rewardItem": "Invisibility Potion",
+          "rewardItem": "ref_invispotion",
           "findCount": [1,0,1]
         },
         {
           "id": "sec_3_8",
-          "rewardItem": "Scouting Orb",
+          "rewardItem": "ref_scoutingorb",
           "findCount": [1,1,1]
         }
       ]
@@ -1749,7 +1749,7 @@
       "rewards": [
         {
           "id": "sec_4_1",
-          "rewardLoot": "Gold Coin Stack",
+          "rewardLoot": "ref_goldcoinstack",
           "value": [25,0,0,0],
           "findCount": [4,4,4]
         }

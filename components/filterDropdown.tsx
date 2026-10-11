@@ -31,47 +31,24 @@ export function FilterDropdown(props) {
   return (
     <MultipleSelectList
       boxStyles={[
-        styles.selectBox,
-        Platform.OS !== 'web' && {
-          width: (props.size === 'wide') ? '80%' : width*0.46,
-        },
-        Platform.OS === 'web' && {
-          width: (props.size === 'wide') ?
-            ((width > 460) ? 425 : width*0.92) :
-            ((width > 618) ? 280 : 185),
-        },
+        styles.selectBox(width, props.size),
         {backgroundColor: colors.inputArea,
         borderColor: colors.inputBorder}
       ]}
       checkBoxStyles={{backgroundColor: colors.inputCheck}}
       inputStyles={[
-        {color: colors.text,
-        fontSize: (props.size === 'wide') ? 14 : 12,
-        width: '100%'}
+        styles.selectInput(width, props.size),
+        {color: colors.text}
       ]}
       labelStyles={{color: colors.text}}
       dropdownStyles={[
-        styles.selectDropdown,
-        Platform.OS !== 'web' && {
-          width: (props.size === 'wide') ? '80%' : width*0.46,
-        },
-        Platform.OS === 'web' && {
-          width: (props.size === 'wide') ?
-            ((width > 460) ? 425 : width*0.92) :
-            ((width > 618) ? 280 : 185),
-        },
+        styles.selectDropdown(width, props.size),
         {backgroundColor: colors.inputArea,
         borderColor: colors.inputBorder}
       ]}
       dropdownItemStyles={styles.selectListItem}
       dropdownTextStyles={[
-        //styles.selectListText,
-        Platform.OS !== 'web' && {
-          fontSize: (props.size === 'wide') ? 10 : 9
-        },
-        Platform.OS === 'web' && {
-          fontSize: (props.size === 'wide') ? 14 : 12
-        },
+        styles.selectListText(width, props.size),
         {color: colors.text}
       ]}
       badgeStyles={[
@@ -94,26 +71,44 @@ export function FilterDropdown(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  selectBox: {
+  selectBox: (width, size) => ({
     borderRadius: 5,
-    //width: (Platform.OS === 'web') ? 425 : '80%',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
+    width: (size === 'wide')
+      ? ((width > 449) ? 425 : '80%')
+      : ((width > 899) ? width*0.19 :
+          (width > 617) ? width*0.23 : width*0.45),
+    marginHorizontal: (width > 449) ? 10 : 6,
     marginVertical: 5,
-  },
-  selectDropdown: {
+  }),
+  selectInput: (width, size) => ({
+    fontSize: (size === 'wide')
+      ? 14
+      : (width > 1199 ? 14 :
+          width > 449 ? 12 : 11),
+    width: '95%',
+    marginLeft: (width > 1234) ? -5 : -10,
+    marginRight: -5,
+  }),
+  selectDropdown: (width, size) => ({
     borderRadius: 5,
-    //width: (Platform.OS === 'web') ? 425 : '80%',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
+    width: (size === 'wide')
+      ? ((width > 449) ? 425 : '80%')
+      : ((width > 899) ? width*0.19 :
+          (width > 617) ? width*0.23 : width*0.45),
+    marginHorizontal: (width > 449) ? 10 : 6,
     marginVertical: 5,
-  },
+  }),
   selectListItem: {
     alignItems: 'center',
-    marginHorizontal: -5,
+    marginHorizontal: -10,
     height: 30,
   },
-  selectListText: {
-    //fontSize: (Platform.OS === 'web') ? 15 : 10,
-  },
+  selectListText: (width, size) => ({
+    fontSize: (size === 'wide')
+      ? ((width > 449) ? 14 : 10)
+      : ((width > 899) ? 12 :
+          (width > 449) ? 10 : 9),
+  }),
   selectBadge: {
     borderWidth: 1,
     borderColor: 'black',

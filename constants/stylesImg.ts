@@ -1,17 +1,17 @@
 import { Platform } from 'react-native';
 
 export const stylesImg = {
-  imgStyle: {
-    marginTop: (Platform.OS === 'web') ? 4 : 2,
-    width: (Platform.OS === 'web') ? 64 : 40,
-    height: (Platform.OS === 'web') ? 64 : 40,
-  },
-  imgLootIcon: {
-    width: (Platform.OS === 'web') ? 15 : 10,
-    height: (Platform.OS === 'web') ? 15 : 10,
-  },
-  imgLootIconBig: {
-    width: (Platform.OS === 'web') ? 18 : 14,
-    height: (Platform.OS === 'web') ? 18 : 14,
-  },
+  imgStyle: (width) => ({
+    marginTop: (width > 449) ? 4 : 2,
+    width: (width > 449) ? 64 : 40,
+    height: (width > 449) ? 64 : 40,
+  }),
+  imgLootIcon: (width) => ({
+    width: (width > 449) ? 15 : 10,
+    height: (width > 449) ? 15 : 10,
+  }),
+  imgLootIconBig: (width) => ({
+    width: (width > 449) ? 18 : 14,
+    height: (width > 449) ? 18 : 14,
+  }),
 }

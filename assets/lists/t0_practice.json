@@ -73,7 +73,7 @@
   "loot": [
     {
       "id": "loot_finewine",
-      "name": "Fine Wine",
+      "name": "ref_finewine",
       "img": [
         "IMG_FineWine"
       ],
@@ -113,7 +113,7 @@
     },
     {
       "id": "loot_gemstone",
-      "name": "Gemstone",
+      "name": "ref_gemstone",
       "img": [
         "IMG_Gemstone"
       ],
@@ -141,7 +141,7 @@
     },
     {
       "id": "loot_goldring",
-      "name": "Gold Ring",
+      "name": "ref_goldring",
       "img": [
         "IMG_GoldRing"
       ],
@@ -196,7 +196,7 @@
     },
     {
       "id": "loot_purse",
-      "name": "Purse",
+      "name": "ref_purse",
       "img": [
         "IMG_Purse"
       ],
@@ -310,7 +310,7 @@
       "catItems": [
         {
           "id": "item_sword",
-          "name": "Sword",
+          "name": "ref_sword",
           "img": [
             "IMG_Sword"
           ],
@@ -326,7 +326,7 @@
         },
         {
           "id": "item_blackjack",
-          "name": "Blackjack",
+          "name": "ref_blackjack",
           "img": [
             "IMG_Blackjack"
           ],
@@ -348,7 +348,7 @@
       "catItems": [
         {
           "id": "item_broadheadarrow",
-          "name": "Broadhead Arrow",
+          "name": "ref_broadheadarrow",
           "img": [
             "IMG_BroadheadArrow"
           ],
@@ -392,7 +392,7 @@
         },
         {
           "id": "item_ropearrow",
-          "name": "Rope Arrow",
+          "name": "ref_ropearrow",
           "img": [
             "IMG_RopeArrow"
           ],
@@ -415,7 +415,7 @@
       "catItems": [
         {
           "id": "item_watercrystal",
-          "name": "Water Crystal",
+          "name": "ref_watercrystal",
           "img": [
             "IMG_WaterCrystal"
           ],
@@ -439,7 +439,7 @@
         },
         {
           "id": "item_firecrystal",
-          "name": "Fire Crystal",
+          "name": "ref_firecrystal",
           "img": [
             "IMG_FireCrystal"
           ],
@@ -465,7 +465,7 @@
         },
         {
           "id": "item_earthcrystal",
-          "name": "Earth Crystal",
+          "name": "ref_earthcrystal",
           "img": [
             "IMG_EarthCrystal"
           ],
@@ -490,7 +490,7 @@
         },
         {
           "id": "item_aircrystal",
-          "name": "Air Crystal",
+          "name": "ref_aircrystal",
           "img": [
             "IMG_AirCrystal"
           ],
@@ -515,7 +515,7 @@
       "catJunk": [
         {
           "id": "junk_normalcrate",
-          "name": "Normal Crate",
+          "name": "ref_normalcrate",
           "img": [
             "IMG_NormalCrate"
           ],
@@ -554,7 +554,7 @@
         },
         {
           "id": "item_oldcrate",
-          "name": "Old Crate",
+          "name": "ref_oldcrate",
           "img": [
             "IMG_OldCrate"
           ],
@@ -597,7 +597,7 @@
       "rewards": [
         {
           "id": "sec_1_1",
-          "rewardItem": "Fire Crystal",
+          "rewardItem": "ref_firecrystal",
           "findCount": [2,2,2]
         },
         {
@@ -633,7 +633,7 @@
       "rewards": [
         {
           "id": "sec_2_1",
-          "rewardLoot": "Necklace",
+          "rewardLoot": "ref_necklace",
           "value": [30,30,30,0],
           "findCount": [1,1,1]
         }
@@ -657,23 +657,23 @@
       "rewards": [
         {
           "id": "sec_3_1",
-          "rewardLoot": "Gold Coin Stack",
+          "rewardLoot": "ref_goldcoinstack",
           "value": [100,0,0,0],
           "findCount": [1,2,3]
         },
         {
           "id": "sec_3_2",
-          "rewardItem": "Healing Potion",
+          "rewardItem": "ref_healingpotion",
           "findCount": [1,1,0]
         },
         {
           "id": "sec_3_3",
-          "rewardItem": "Speed Potion",
+          "rewardItem": "ref_speedpotion",
           "findCount": [1,0,0]
         },
         {
           "id": "sec_3_4",
-          "rewardItem": "Papyrus",
+          "rewardItem": "ref_papyrus",
           "findCount": [1,1,1]
         }
       ]
@@ -704,12 +704,12 @@
         },
         {
           "id": "sec_4_2",
-          "rewardItem": "Healing Potion",
+          "rewardItem": "ref_healingpotion",
           "findCount": [2,1,0]
         },
         {
           "id": "sec_4_3",
-          "rewardItem": "Speed Potion",
+          "rewardItem": "ref_speedpotion",
           "findCount": [0,1,2]
         }
       ]

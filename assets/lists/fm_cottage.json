@@ -63,7 +63,7 @@
         },
         {
           "id": "item_key",
-          "name": "Mansion Key",
+          "name": "ref_key_mansion",
           "img": [
             "IMG_Key_RC_Gold"
           ],
@@ -95,7 +95,7 @@
         },
         {
           "id": "item_key",
-          "name": "Chapel Key",
+          "name": "ref_key_chapel",
           "img": [
             "IMG_Key_Yellow"
           ],
@@ -146,7 +146,7 @@
         },
         {
           "id": "item_key",
-          "name": "Cemetery Key",
+          "name": "ref_key_cemetery",
           "img": [
             "IMG_Key_Black"
           ],
@@ -238,7 +238,7 @@
       "catItems": [
         {
           "id": "item_loaf",
-          "name": "Loaf",
+          "name": "ref_loaf",
           "img": [
             "IMG_Loaf"
           ],
@@ -255,7 +255,7 @@
         },
         {
           "id": "item_cheese",
-          "name": "Cheese",
+          "name": "ref_cheese",
           "img": [
             "IMG_Cheese"
           ],
@@ -278,7 +278,7 @@
       "catItems": [
         {
           "id": "item_unrolledscroll",
-          "name": "Scroll",
+          "name": "ref_scroll",
           "img": [
             "IMG_UnrolledScroll"
           ],
@@ -475,7 +475,7 @@
               "id": "fm_cottage_item_30",
               "findSimple": "find",
               "findArea": 14,
-              "findExact": "behind southwest cabinet",
+              "findExact": "behind southwest hutch",
               "findObj": true,
               "findCount": [1,1,1]
             },

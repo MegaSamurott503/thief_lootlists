@@ -77,7 +77,7 @@
   "loot": [
     {
       "id": "loot_coppercoinstack",
-      "name": "Copper Coin Stack",
+      "name": "ref_coppercoinstack",
       "img": [
         "IMG_CopperCoinStack"
       ],
@@ -103,7 +103,7 @@
     },
     {
       "id": "loot_decorativemask",
-      "name": "Decorative Mask",
+      "name": "ref_decorativemask",
       "img": [
         "IMG_DecorativeMask_Monster",
         "IMG_DecorativeMask_Bugaku",
@@ -182,7 +182,7 @@
     },
     {
       "id": "loot_decorativeplate",
-      "name": "Decorative Plate",
+      "name": "ref_decorativeplate",
       "img": [
         "IMG_DecorativePlate_Pink",
         "IMG_DecorativePlate_Red",
@@ -294,7 +294,7 @@
     },
     {
       "id": "loot_diamonddrillbit",
-      "name": "Diamond Drill Bit",
+      "name": "ref_diamonddrillbit",
       "img": [
         "IMG_DiamondDrillbit"
       ],
@@ -321,7 +321,7 @@
     },
     {
       "id": "loot_finewine",
-      "name": "Fine Wine",
+      "name": "ref_finewine",
       "img": [
         "IMG_FineWine"
       ],
@@ -407,7 +407,7 @@
     },
     {
       "id": "loot_goldcandlestick",
-      "name": "Gold Candlestick",
+      "name": "ref_goldcandlestick",
       "img": [
         "IMG_GoldCandlestick"
       ],
@@ -481,7 +481,7 @@
     },
     {
       "id": "loot_goldcoinstack",
-      "name": "Gold Coin Stack",
+      "name": "ref_goldcoinstack",
       "img": [
         "IMG_GoldCoinStack"
       ],
@@ -568,7 +568,7 @@
     },
     {
       "id": "loot_goldglasses",
-      "name": "Gold Glasses",
+      "name": "ref_goldglasses",
       "img": [
         "IMG_GoldGlasses"
       ],
@@ -606,7 +606,7 @@
     },
     {
       "id": "loot_goldgoblet",
-      "name": "Gold Goblet",
+      "name": "ref_goldgoblet",
       "img": [
         "IMG_GoldGoblet"
       ],
@@ -680,7 +680,7 @@
     },
     {
       "id": "loot_goldplate",
-      "name": "Gold Plate",
+      "name": "ref_goldplate",
       "img": [
         "IMG_GoldPlate"
       ],
@@ -707,7 +707,7 @@
     },
     {
       "id": "loot_goldvase",
-      "name": "Gold Vase",
+      "name": "ref_goldvase",
       "img": [
         "IMG_GoldVase"
       ],
@@ -769,7 +769,7 @@
     },
     {
       "id": "loot_greenvase",
-      "name": "Green Vase",
+      "name": "ref_greenvase",
       "img": [
         "IMG_GreenVase"
       ],
@@ -855,7 +855,7 @@
     },
     {
       "id": "loot_indigovase",
-      "name": "Indigo Vase",
+      "name": "ref_indigovase",
       "img": [
         "IMG_IndigoVase"
       ],
@@ -990,7 +990,7 @@
     },
     {
       "id": "loot_necklace",
-      "name": "Necklace",
+      "name": "ref_necklace",
       "img": [
         "IMG_Necklace"
       ],
@@ -1018,7 +1018,7 @@
     },
     {
       "id": "loot_precursorcanopicjar",
-      "name": "Precursor Canopic Jar",
+      "name": "ref_precanopicjar",
       "img": [
         "IMG_PrecursorCanopicJar"
       ],
@@ -1124,7 +1124,7 @@
     },
     {
       "id": "loot_precursorgem",
-      "name": "Precursor Gem",
+      "name": "ref_pregem",
       "img": [
         "IMG_PrecursorGem"
       ],
@@ -1151,7 +1151,7 @@
     },
     {
       "id": "loot_precursorjar",
-      "name": "Precursor Jar",
+      "name": "ref_prejar",
       "img": [
         "IMG_PrecursorJar_Small",
         "IMG_PrecursorJar_Tall",
@@ -1255,7 +1255,7 @@
     },
     {
       "id": "loot_precursortapestry",
-      "name": "Precursor Tapestry",
+      "name": "ref_pretapestry",
       "img": [
         "IMG_PrecursorTapestry"
       ],
@@ -1283,7 +1283,7 @@
     },
     {
       "id": "loot_purplegoblet",
-      "name": "Purple Goblet",
+      "name": "ref_purplegoblet",
       "img": [
         "IMG_PurpleGoblet"
       ],
@@ -1334,7 +1334,7 @@
     },
     {
       "id": "loot_purplevase",
-      "name": "Purple Vase",
+      "name": "ref_purplevase",
       "img": [
         "IMG_PurpleVase"
       ],
@@ -1444,7 +1444,7 @@
     },
     {
       "id": "loot_purse",
-      "name": "Purse",
+      "name": "ref_purse",
       "img": [
         "IMG_Purse"
       ],
@@ -1625,7 +1625,7 @@
     },
     {
       "id": "loot_silverflute",
-      "name": "Silver Flute",
+      "name": "ref_silverflute",
       "img": [
         "IMG_SilverFlute"
       ],
@@ -1652,7 +1652,7 @@
     },
     {
       "id": "loot_statuette",
-      "name": "Statuette",
+      "name": "ref_statuette",
       "img": [
         "IMG_Statuette_Noblewoman",
         "IMG_Statuette_Mage",
@@ -1694,7 +1694,7 @@
     },
     {
       "id": "loot_tiara",
-      "name": "Tiara",
+      "name": "ref_tiara",
       "img": [
         "IMG_Tiara"
       ],
@@ -1723,7 +1723,7 @@
     },
     {
       "id": "loot_treebeastmask",
-      "name": "Treebeast Mask",
+      "name": "ref_treebeastmask",
       "img": [
         "IMG_TreebeastMask"
       ],
@@ -1750,7 +1750,7 @@
     },
     {
       "id": "loot_vase",
-      "name": "Vase",
+      "name": "ref_vase",
       "img": [
         "IMG_Vase"
       ],
@@ -1783,7 +1783,7 @@
       "catItems": [
         {
           "id": "item_sword",
-          "name": "Sword",
+          "name": "ref_sword",
           "img": [
             "IMG_Sword"
           ],
@@ -1798,52 +1798,8 @@
           ]
         },
         {
-          "id": "item_jeweledsword",
-          "name": "Sword of Chaos",
-          "img": [
-            "IMG_JeweledSword"
-          ],
-          "locations": [
-            {
-              "id": "fm_artthievery_item_2",
-              "findSimple": "find",
-              "findArea": 10,
-              "findNarrow": "south tank",
-              "findExact": "south pedestal",
-              "findObj": true,
-              "findCount": [1,0,0]
-            },
-            {
-              "id": "fm_artthievery_item_3",
-              "findSimple": "find",
-              "findArea": 40,
-              "findExact": "safe",
-              "findObj": true,
-              "findCountBox": [0,1,0],
-              "findBox": true,
-              "findLink": [
-                {
-                  "id": "fm_artthievery_item_83",
-                  "findCount": [0,0,1]
-                }
-              ]
-            },
-            {
-              "id": "fm_artthievery_item_4",
-              "findSimple": "find",
-              "findArea": 41,
-              "findNarrow": "treasure room",
-              "findExact": "sea chest",
-              "findObj": true,
-              "findCountBox": [0,0,1],
-              "findBox": true,
-              "findSecret": true
-            }
-          ]
-        },
-        {
           "id": "item_blackjack",
-          "name": "Blackjack",
+          "name": "ref_blackjack",
           "img": [
             "IMG_Blackjack"
           ],
@@ -1865,7 +1821,7 @@
       "catItems": [
         {
           "id": "item_broadheadarrow",
-          "name": "Broadhead Arrow",
+          "name": "ref_broadheadarrow",
           "img": [
             "IMG_BroadheadArrow"
           ],
@@ -1907,7 +1863,7 @@
         },
         {
           "id": "item_waterarrow",
-          "name": "Water Arrow",
+          "name": "ref_waterarrow",
           "img": [
             "IMG_WaterArrow"
           ],
@@ -1931,7 +1887,7 @@
         },
         {
           "id": "item_firearrow",
-          "name": "Fire Arrow",
+          "name": "ref_firearrow",
           "img": [
             "IMG_FireArrow"
           ],
@@ -1955,7 +1911,7 @@
         },
         {
           "id": "item_mossarrow",
-          "name": "Moss Arrow",
+          "name": "ref_mossarrow",
           "img": [
             "IMG_MossArrow"
           ],
@@ -1979,7 +1935,7 @@
         },
         {
           "id": "item_gasarrow",
-          "name": "Gas Arrow",
+          "name": "ref_gasarrow",
           "img": [
             "IMG_GasArrow_TMA"
           ],
@@ -2003,7 +1959,7 @@
         },
         {
           "id": "item_ropearrow",
-          "name": "Rope Arrow",
+          "name": "ref_ropearrow",
           "img": [
             "IMG_RopeArrow"
           ],
@@ -2046,7 +2002,7 @@
         },
         {
           "id": "item_noisemakerarrow",
-          "name": "Noisemaker Arrow",
+          "name": "ref_noisemakerarrow",
           "img": [
             "IMG_NoisemakerArrow"
           ],
@@ -2076,7 +2032,7 @@
       "catItems": [
         {
           "id": "item_watercrystal",
-          "name": "Water Crystal",
+          "name": "ref_watercrystal",
           "img": [
             "IMG_WaterCrystal"
           ],
@@ -2100,7 +2056,7 @@
               "id": "fm_artthievery_item_25",
               "findSimple": "find",
               "findArea": 41,
-              "findNarrow": "elemental room",
+              "findNarrow": "element room",
               "findExact": "by W waterfall",
               "findCount": [0,0,1],
               "findSecret": true
@@ -2109,7 +2065,7 @@
         },
         {
           "id": "item_firecrystal",
-          "name": "Fire Crystal",
+          "name": "ref_firecrystal",
           "img": [
             "IMG_FireCrystal"
           ],
@@ -2127,7 +2083,7 @@
               "id": "fm_artthievery_item_27",
               "findSimple": "find",
               "findArea": 41,
-              "findNarrow": "elemental room",
+              "findNarrow": "element room",
               "findExact": "by W waterfall",
               "findCount": [0,0,1],
               "findSecret": true
@@ -2136,7 +2092,7 @@
         },
         {
           "id": "item_earthcrystal",
-          "name": "Earth Crystal",
+          "name": "ref_earthcrystal",
           "img": [
             "IMG_EarthCrystal"
           ],
@@ -2178,7 +2134,7 @@
               "id": "fm_artthievery_item_31",
               "findSimple": "find",
               "findArea": 41,
-              "findNarrow": "elemental room",
+              "findNarrow": "element room",
               "findExact": "by E waterfall",
               "findCount": [0,0,1],
               "findSecret": true
@@ -2187,7 +2143,7 @@
         },
         {
           "id": "item_aircrystal",
-          "name": "Air Crystal",
+          "name": "ref_aircrystal",
           "img": [
             "IMG_AirCrystal"
           ],
@@ -2203,7 +2159,7 @@
               "id": "fm_artthievery_item_33",
               "findSimple": "find",
               "findArea": 41,
-              "findNarrow": "elemental room",
+              "findNarrow": "element room",
               "findExact": "by E waterfall",
               "findCount": [0,0,2],
               "findSecret": true
@@ -2218,7 +2174,7 @@
       "catItems": [
         {
           "id": "item_flashbomb",
-          "name": "Flash Bomb",
+          "name": "ref_flashbomb",
           "img": [
             "IMG_FlashBomb"
           ],
@@ -2251,7 +2207,7 @@
         },
         {
           "id": "item_gasmine",
-          "name": "Gas Mine",
+          "name": "ref_gasmine",
           "img": [
             "IMG_GasMine"
           ],
@@ -2287,7 +2243,7 @@
         },
         {
           "id": "item_flashmine",
-          "name": "Flash Mine",
+          "name": "ref_flashmine",
           "img": [
             "IMG_FlashMine"
           ],
@@ -2311,7 +2267,7 @@
       "catItems": [
         {
           "id": "item_healingpotion",
-          "name": "Healing Potion",
+          "name": "ref_healingpotion",
           "img": [
             "IMG_HealingPotion"
           ],
@@ -2342,7 +2298,7 @@
         },
         {
           "id": "item_speedpotion",
-          "name": "Speed Potion",
+          "name": "ref_speedpotion",
           "img": [
             "IMG_SpeedPotion"
           ],
@@ -2375,7 +2331,7 @@
         },
         {
           "id": "item_breathpotion",
-          "name": "Breath Potion",
+          "name": "ref_breathpotion",
           "img": [
             "IMG_BreathPotion"
           ],
@@ -2393,7 +2349,7 @@
         },
         {
           "id": "item_invisibilitypotion",
-          "name": "Invisibility Potion",
+          "name": "ref_invispotion",
           "img": [
             "IMG_InvisibilityPotion"
           ],
@@ -2420,7 +2376,7 @@
               "id": "fm_artthievery_item_50",
               "findSimple": "find",
               "findArea": 35,
-              "findNarrow": "staircase hall rafters",
+              "findNarrow": "staircase rafters",
               "findExact": "hope chest",
               "findCountBox": [0,1,1],
               "findBox": true,
@@ -2430,7 +2386,7 @@
         },
         {
           "id": "item_slowfallpotion",
-          "name": "Slow-fall Potion",
+          "name": "ref_slowfallpotion",
           "img": [
             "IMG_SlowfallPotion"
           ],
@@ -2464,7 +2420,7 @@
       "catItems": [
         {
           "id": "item_lockpicksquare",
-          "name": "Square-tooth Lockpick",
+          "name": "ref_squarepick",
           "img": [
             "IMG_Lockpick_Square"
           ],
@@ -2480,7 +2436,7 @@
         },
         {
           "id": "item_lockpicktriangle",
-          "name": "Triangle-tooth Lockpick",
+          "name": "ref_trianglepick",
           "img": [
             "IMG_Lockpick_Triangle"
           ],
@@ -2822,7 +2778,7 @@
       "catItems": [
         {
           "id": "item_flare",
-          "name": "Flare",
+          "name": "ref_flare",
           "img": [
             "IMG_Flare"
           ],
@@ -2844,7 +2800,7 @@
       "catItems": [
         {
           "id": "item_compass",
-          "name": "Compass",
+          "name": "ref_compass",
           "img": [
             "IMG_Compass"
           ],
@@ -2860,7 +2816,7 @@
         },
         {
           "id": "item_scoutingorb",
-          "name": "Scouting Orb",
+          "name": "ref_scoutingorb",
           "img": [
             "IMG_ScoutingOrb"
           ],
@@ -2882,7 +2838,7 @@
       "catItems": [
         {
           "id": "item_fruit",
-          "name": "Fruit",
+          "name": "ref_fruit",
           "img": [
             "IMG_Fruit"
           ],
@@ -2904,7 +2860,7 @@
       "catItems": [
         {
           "id": "item_papyrus",
-          "name": "Papyrus",
+          "name": "ref_papyrus",
           "img": [
             "IMG_Papyrus"
           ],
@@ -2913,7 +2869,7 @@
               "id": "fm_artthievery_item_82",
               "findSimple": "find",
               "findArea": 32,
-              "findExact": "dresser",
+              "findExact": "hutch",
               "findCount": [0,0,1]
             }
           ]
@@ -2949,7 +2905,7 @@
       "catItems": [
         {
           "id": "item_wheelpeg",
-          "name": "Wheel Peg",
+          "name": "ref_wheelpeg",
           "img": [
             "IMG_WheelPeg"
           ],
@@ -2968,12 +2924,62 @@
       ]
     },
     {
+      "id": "items_blades",
+      "category": "Blades",
+      "catItems": [
+        {
+          "id": "item_jeweledsword",
+          "name": "Sword of Chaos",
+          "img": [
+            "IMG_JeweledSword"
+          ],
+          "locations": [
+            {
+              "id": "fm_artthievery_item_2",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "south tank",
+              "findExact": "south pedestal",
+              "findObj": true,
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_artthievery_item_3",
+              "findSimple": "find",
+              "findArea": 40,
+              "findExact": "safe",
+              "findObj": true,
+              "findCountBox": [0,1,0],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_artthievery_item_83",
+                  "findCount": [0,0,1]
+                }
+              ]
+            },
+            {
+              "id": "fm_artthievery_item_4",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "treasure room",
+              "findExact": "sea chest",
+              "findObj": true,
+              "findCountBox": [0,0,1],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "items_hammerite",
       "category": "Hammerite Items",
       "catItems": [
         {
           "id": "item_rosarybeads",
-          "name": "Rosary Beads",
+          "name": "ref_rosarybeads",
           "img": [
             "IMG_RosaryBeads"
           ],
@@ -2997,7 +3003,7 @@
       "catItems": [
         {
           "id": "item_hornofquintus",
-          "name": "Horn of Quintus",
+          "name": "ref_hornofquintus",
           "img": [
             "IMG_HornOfQuintus"
           ],
@@ -3015,7 +3021,7 @@
         },
         {
           "id": "item_painting",
-          "name": "Painting",
+          "name": "ref_painting",
           "img": [
             "IMG_Painting_ArtThievery1",
             "IMG_Painting_ArtThievery2",
@@ -3118,7 +3124,7 @@
       "catItems": [
         {
           "id": "item_theeye",
-          "name": "The Eye",
+          "name": "ref_theeye",
           "img": [
             "IMG_TheEye"
           ],
@@ -3142,7 +3148,7 @@
       "catItems": [
         {
           "id": "item_talismanofearth",
-          "name": "Talisman of Earth",
+          "name": "ref_talismanofearth",
           "img": [
             "IMG_TalismanOfEarth"
           ],
@@ -3159,7 +3165,7 @@
         },
         {
           "id": "item_talismanoffire",
-          "name": "Talisman of Fire",
+          "name": "ref_talismanoffire",
           "img": [
             "IMG_TalismanOfFire"
           ],
@@ -3177,7 +3183,7 @@
         },
         {
           "id": "item_talismanofwater",
-          "name": "Talisman of Water",
+          "name": "ref_talismanofwater",
           "img": [
             "IMG_TalismanOfWater"
           ],
@@ -3196,7 +3202,7 @@
         },
         {
           "id": "item_talismanofair",
-          "name": "Talisman of Air",
+          "name": "ref_talismanofair",
           "img": [
             "IMG_TalismanOfAir"
           ],
@@ -3221,7 +3227,7 @@
       "catJunk": [
         {
           "id": "junk_oldcrate",
-          "name": "Old Crate",
+          "name": "ref_oldcrate",
           "img": [
             "IMG_OldCrate"
           ],
@@ -3243,7 +3249,7 @@
       "catJunk": [
         {
           "id": "junk_porcelainplate",
-          "name": "Porcelain Plate",
+          "name": "ref_porcelainplate",
           "img": [
             "IMG_PorcelainPlate"
           ],
@@ -3274,7 +3280,7 @@
       "catJunk": [
         {
           "id": "junk_metalgoblet",
-          "name": "Metal Goblet",
+          "name": "ref_metalgoblet",
           "img": [
             "IMG_MetalGoblet"
           ],
@@ -3305,7 +3311,7 @@
       "catJunk": [
         {
           "id": "junk_barrel",
-          "name": "Barrel",
+          "name": "ref_barrel",
           "img": [
             "IMG_Barrel"
           ],
@@ -3351,7 +3357,7 @@
       "catJunk": [
         {
           "id": "junk_pottedplant",
-          "name": "Potted Plant",
+          "name": "ref_pottedplant",
           "img": [
             "IMG_PottedPlant"
           ],
@@ -3392,7 +3398,7 @@
         },
         {
           "id": "junk_vase",
-          "name": "Vase",
+          "name": "ref_vase",
           "img": [
             "IMG_Vase"
           ],
@@ -3447,7 +3453,7 @@
       "catJunk": [
         {
           "id": "junk_sextant",
-          "name": "Sextant",
+          "name": "ref_sextant",
           "img": [
             "IMG_Sextant"
           ],
@@ -3470,7 +3476,7 @@
       "catJunk": [
         {
           "id": "junk_drillingmachine",
-          "name": "Drilling Machine",
+          "name": "ref_drillingmachine",
           "img": [
             "IMG_DrillingMachine"
           ],
@@ -3493,7 +3499,7 @@
       "catJunk": [
         {
           "id": "junk_divinghelmet",
-          "name": "Diving Helmet",
+          "name": "ref_divinghelmet",
           "img": [
             "IMG_DivingHelmet"
           ],
@@ -3530,7 +3536,7 @@
       "rewards": [
         {
           "id": "sec_1_1",
-          "rewardItem": "Talisman of Fire",
+          "rewardItem": "ref_talismanoffire",
           "findCount": [1,1,1]
         }
       ]
@@ -3553,7 +3559,7 @@
       "rewards": [
         {
           "id": "sec_2_1",
-          "rewardItem": "Talisman of Water",
+          "rewardItem": "ref_talismanofwater",
           "findCount": [1,1,1]
         }
       ]
@@ -3584,13 +3590,13 @@
       "rewards": [
         {
           "id": "sec_3_1",
-          "rewardLoot": "Precursor Canopic Jar",
+          "rewardLoot": "ref_precanopicjar",
           "value": [0,0,75,0],
           "findCount": [0,0,1]
         },
         {
           "id": "sec_3_2",
-          "rewardItem": "Invisibility Potion",
+          "rewardItem": "ref_invispotion",
           "findCount": [1,1,0]
         }
       ]
@@ -3805,7 +3811,7 @@
       "rewards": [
         {
           "id": "sec_9_1",
-          "rewardItem": "Talisman of Earth",
+          "rewardItem": "ref_talismanofearth",
           "findCount": [1,1,1]
         }
       ]
@@ -3836,7 +3842,7 @@
       "rewards": [
         {
           "id": "sec_10_1",
-          "rewardLoot": "Tiara",
+          "rewardLoot": "ref_tiara",
           "value": [75,50,0,0],
           "findCount": [1,1,1]
         }
@@ -3866,9 +3872,9 @@
         }
       ],
       "rewards": [
-      {
+        {
           "id": "sec_11_1",
-          "rewardItem": "Invisibility Potion",
+          "rewardItem": "ref_invispotion",
           "findCount": [1,1,1]
         }
       ]
@@ -3891,7 +3897,7 @@
       "rewards": [
         {
           "id": "sec_12_1",
-          "rewardLoot": "Purse",
+          "rewardLoot": "ref_purse",
           "value": [100,0,0,0],
           "findCount": [1,1,1]
         }
@@ -3923,7 +3929,7 @@
       "rewards": [
         {
           "id": "sec_13_1",
-          "rewardLoot": "Decorative Mask",
+          "rewardLoot": "ref_decorativemask",
           "value": [0,0,50,0],
           "findCount": [1,1,1]
         }
@@ -3947,7 +3953,7 @@
       "rewards": [
         {
           "id": "sec_14_1",
-          "rewardItem": "Invisibility Potion",
+          "rewardItem": "ref_invispotion",
           "findCount": [1,1,1]
         }
       ]
@@ -3970,7 +3976,7 @@
       "rewards": [
         {
           "id": "sec_15_1",
-          "rewardItem": "Gas Mine",
+          "rewardItem": "ref_gasmine",
           "findCount": [1,1,1]
         }
       ]
@@ -4016,19 +4022,19 @@
       "rewards": [
         {
           "id": "sec_17_1",
-          "rewardLoot": "Precursor Jar",
+          "rewardLoot": "ref_prejar",
           "value": [0,0,20,0],
           "findCount": [1,1,1]
         },
         {
           "id": "sec_17_2",
-          "rewardLoot": "Precursor Canopic Jar",
+          "rewardLoot": "ref_precanopicjar",
           "value": [0,0,75,0],
           "findCount": [1,1,1]
         },
         {
           "id": "sec_17_3",
-          "rewardLoot": "Precursor Tapestry",
+          "rewardLoot": "ref_pretapestry",
           "value": [0,0,150,0],
           "findCount": [3,3,3]
         },
@@ -4039,32 +4045,32 @@
         },
         {
           "id": "sec_17_5",
-          "rewardItem": "Water Crystal",
+          "rewardItem": "ref_watercrystal",
           "findCount": [1,1,1]
         },
         {
           "id": "sec_17_6",
-          "rewardItem": "Fire Crystal",
+          "rewardItem": "ref_firecrystal",
           "findCount": [1,1,1]
         },
         {
           "id": "sec_17_7",
-          "rewardItem": "Earth Crystal",
+          "rewardItem": "ref_earthcrystal",
           "findCount": [1,1,1]
         },
         {
           "id": "sec_17_8",
-          "rewardItem": "Air Crystal",
+          "rewardItem": "ref_aircrystal",
           "findCount": [2,2,2]
         },
         {
           "id": "sec_17_9",
-          "rewardItem": "Horn of Quintus",
+          "rewardItem": "ref_hornofquintus",
           "findCount": [1,1,1]
         },
         {
           "id": "sec_17_10",
-          "rewardItem": "The Eye",
+          "rewardItem": "ref_theeye",
           "findCount": [1,1,1]
         }
       ]

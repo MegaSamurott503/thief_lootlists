@@ -1,0 +1,3468 @@
+{
+  "id": "fm_hangover",
+  "title": "Bad Hangover",
+  "author": [
+    "auth_brethren"
+  ],
+  "screens": [
+    "MIS_fm_hangover_A",
+    "MIS_fm_hangover_B"
+  ],
+  "firstRelease": "April 2012",
+  "latestVersion": "1.01",
+  "contest": "con_reload2",
+  "diffNames": ["Some","More","Lots"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [2158,850,925,0,3933],
+    [2158,850,925,0,3933],
+    [2158,850,925,0,3933]
+  ],
+  "lootCount": [65,65,65],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [2500,2500,2500],
+    "info": "optional"
+  },
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Garrett's Apartment"},
+    {"key": "2", "value": "Apartment Building"},
+    {"key": "3", "value": "South Quarter"},
+    {"key": "4", "value": "Fountain Plaza"},
+    {"key": "5", "value": "Tome Raider Owner's House"},
+    {"key": "6", "value": "Tome Raider Books"},
+    {"key": "7", "value": "South Quarter Watch Station"},
+    {"key": "8", "value": "Black Alley"},
+    {"key": "9", "value": "Weapon Shop"},
+    {"key": "10", "value": "Watch Storage Armory"},
+    {"key": "11", "value": "Stonemarket Plaza"},
+    {"key": "12", "value": "Hollingsworth Way"},
+    {"key": "13", "value": "Stonemarket Tavern"},
+    {"key": "14", "value": "Cartwright's Apartment"},
+    {"key": "15", "value": "Stonemarket Proper"},
+    {"key": "16", "value": "Stonemarket Watch Station"},
+    {"key": "17", "value": "Jack's Chemical Shop"},
+    {"key": "18", "value": "Bourdon's Workshop"},
+    {"key": "19", "value": "Bourdon's House"},
+    {"key": "20", "value": "Cathedral Underpass"},
+    {"key": "21", "value": "Norrington Court"},
+    {"key": "22", "value": "Jordan's Apartment"},
+    {"key": "23", "value": "Clocktower Plaza"},
+    {"key": "24", "value": "Terces Courtyard"},
+    {"key": "25", "value": "St. James Lane"},
+    {"key": "26", "value": "Garrison's Warehouse"},
+    {"key": "27", "value": "Jordan's Storage Facility"},
+    {"key": "28", "value": "Docks"},
+    {"key": "29", "value": "Central Dock"},
+    {"key": "30", "value": "West Dock"},
+    {"key": "31", "value": "Bunkhouse"},
+    {"key": "32", "value": "East Dock"},
+    {"key": "33", "value": "Twin Anchors Tavern"},
+    {"key": "34", "value": "Ship"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_addoniziocrystal",
+      "name": "ref_addoniziocrystal",
+      "img": [
+        "IMG_AddonizioCrystal"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_1",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "west covered alley",
+              "findExact": "behind barrel",
+              "findCount": [1,1,1],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_2",
+              "findSimple": "findM",
+              "findArea": 31,
+              "findNarrow": "dining room",
+              "findExact": "fireplace",
+              "findCount": [1,1,1],
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_3",
+              "findSimple": "findM",
+              "findArea": 8,
+              "findNarrow": "east end",
+              "findExact": "hatch",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_4",
+              "findSimple": "findM",
+              "findArea": 33,
+              "findNarrow": "by bedroom window",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_8",
+                  "value": [5,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_25",
+                  "value": [25,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_51",
+                  "value": [12,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 63,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "ref_coppercoinstack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_5",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_22",
+                  "value": [25,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_48",
+                  "value": [12,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_6",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "reading room",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_23",
+                  "value": [25,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_49",
+                  "value": [12,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_7",
+              "findSimple": "findM",
+              "findArea": 31,
+              "findNarrow": "wine room",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_24",
+                  "value": [25,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_50",
+                  "value": [12,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_8",
+              "findSimple": "findM",
+              "findArea": 33,
+              "findNarrow": "by bedroom window",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_4",
+                  "value": [0,25,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_25",
+                  "value": [25,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_51",
+                  "value": [12,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 60,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "ref_decorativemask",
+      "img": [
+        "IMG_DecorativeMask_Demon",
+        "IMG_DecorativeMask_Bugaku",
+        "IMG_DecorativeMask_Noh",
+        "IMG_DecorativeMask_White"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_9",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "entrance room",
+              "findExact": "couch",
+              "findCount": [1,1,1],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_DecorativeMask_Noh"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_10",
+              "findSimple": "findM",
+              "findArea": 26,
+              "findNarrow": "east shelf",
+              "findExact": "under roulette table",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_DecorativeMask_White"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_11",
+              "findSimple": "findE",
+              "findArea": 27,
+              "findNarrow": "third level",
+              "findExact": "by telescope",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_DecorativeMask_Demon"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_12",
+              "findSimple": "findM",
+              "findArea": 33,
+              "findNarrow": "by bar",
+              "findExact": "on nobleman",
+              "findCount": [1,1,1],
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_DecorativeMask_Bugaku"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_diamonddrillbit",
+      "name": "ref_diamonddrillbit",
+      "img": [
+        "IMG_DiamondDrillbit"
+      ],
+      "values": [
+        {
+          "id": "250gems",
+          "value": [0,250,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_13",
+              "findSimple": "findE",
+              "findArea": 19,
+              "findNarrow": "workshop",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_DiamondDrillbit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "ref_finewine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_14",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "hallway",
+              "findExact": "wine rack",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_15",
+              "findSimple": "findM",
+              "findArea": 22,
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_16",
+              "findSimple": "findM",
+              "findArea": 31,
+              "findNarrow": "wine room",
+              "findExact": "by lower barrel",
+              "findCount": [1,1,1],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_17",
+              "findSimple": "findE",
+              "findArea": 33,
+              "findNarrow": "dining room",
+              "findExact": "west dining table",
+              "findCount": [1,1,1],
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "ref_gemring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_18",
+              "findSimple": "findH",
+              "findArea": 4,
+              "findExact": "on fountain",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_19",
+              "findSimple": "findH",
+              "findArea": 29,
+              "findNarrow": "under chains",
+              "findExact": "underwater",
+              "findCount": [1,1,1],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "ref_gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_20",
+              "findSimple": "findM",
+              "findArea": 8,
+              "findNarrow": "east end",
+              "findExact": "hatch",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_21",
+              "findSimple": "findM",
+              "findArea": 34,
+              "findNarrow": "hold",
+              "findExact": "north minecart",
+              "findCount": [1,1,1],
+              "orderNum": 64,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "ref_goldcoinstack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_22",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_5",
+                  "value": [5,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_48",
+                  "value": [12,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_23",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "reading room",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_6",
+                  "value": [5,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_49",
+                  "value": [12,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_24",
+              "findSimple": "findM",
+              "findArea": 31,
+              "findNarrow": "wine room",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_7",
+                  "value": [5,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_50",
+                  "value": [12,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_25",
+              "findSimple": "findM",
+              "findArea": 33,
+              "findNarrow": "by bedroom window",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_4",
+                  "value": [0,25,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_8",
+                  "value": [5,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_51",
+                  "value": [12,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 62,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "ref_golddice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_26",
+              "findSimple": "findM",
+              "findArea": 31,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [1,1,1],
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldglasses",
+      "name": "ref_goldglasses",
+      "img": [
+        "IMG_GoldGlasses"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_27",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "entrance room",
+              "findExact": "west shelf",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_GoldGlasses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "ref_goldgoblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_28",
+              "findSimple": "findE",
+              "findArea": 33,
+              "findNarrow": "bar",
+              "findExact": "behind counter",
+              "findCount": [1,1,1],
+              "orderNum": 59,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "ref_goldnugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_29",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "east street",
+              "findExact": "well",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_30",
+              "findSimple": "findM",
+              "findArea": 24,
+              "findNarrow": "garden",
+              "findExact": "behind tree",
+              "findCount": [1,1,1],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_31",
+              "findSimple": "findM",
+              "findArea": 28,
+              "findNarrow": "burning wreckage",
+              "findExact": "by fence",
+              "findCount": [1,1,1],
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "ref_goldring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_32",
+              "findSimple": "findH",
+              "findArea": 6,
+              "findNarrow": "entrance room",
+              "findExact": "north shelf",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_33",
+              "findSimple": "findH",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "ref_luckycoins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_34",
+              "findSimple": "findH",
+              "findArea": 5,
+              "findNarrow": "living room",
+              "findExact": "rafters",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_35",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findExact": "northeast shelf",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_mechaniststatuette",
+      "name": "ref_mechstatuette",
+      "img": [
+        "IMG_MechanistStatuette"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_36",
+              "findSimple": "findM",
+              "findArea": 8,
+              "findNarrow": "east end",
+              "findExact": "hatch",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_MechanistStatuette"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "ref_necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_37",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_38",
+              "findSimple": "findM",
+              "findArea": 23,
+              "findNarrow": "northeast corner",
+              "findExact": "by noblewoman",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "ref_pretapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_39",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "bedroom",
+              "findExact": "by dresser",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_40",
+              "findSimple": "findM",
+              "findArea": 17,
+              "findNarrow": "bedroom",
+              "findExact": "under bed",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purplegoblet",
+      "name": "ref_purplegoblet",
+      "img": [
+        "IMG_PurpleGoblet"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_41",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "main dining room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_PurpleGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "ref_purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_42",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "balcony",
+              "findExact": "railing",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_43",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "northwest porch",
+              "findExact": "on nobleman",
+              "findCount": [1,1,1],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_44",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "east street",
+              "findExact": "on Watch swordsman",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_45",
+              "findSimple": "findM",
+              "findArea": 24,
+              "findNarrow": "divider wall",
+              "findExact": "on Watch swordsman",
+              "findCount": [1,1,1],
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_46",
+              "findSimple": "findM",
+              "findArea": 31,
+              "findNarrow": "bunkroom",
+              "findExact": "by footlocker",
+              "findCount": [1,1,1],
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_47",
+              "findSimple": "findM",
+              "findArea": 32,
+              "findNarrow": "by south fence",
+              "findExact": "on thief swordsman",
+              "findCount": [1,1,1],
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "ref_silvercoinstack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_48",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_5",
+                  "value": [5,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_22",
+                  "value": [25,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_49",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "reading room",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_6",
+                  "value": [5,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_23",
+                  "value": [25,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_50",
+              "findSimple": "findM",
+              "findArea": 31,
+              "findNarrow": "wine room",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_7",
+                  "value": [5,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_24",
+                  "value": [25,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_51",
+              "findSimple": "findM",
+              "findArea": 33,
+              "findNarrow": "by bedroom window",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_4",
+                  "value": [0,25,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_8",
+                  "value": [5,0,0,0],
+                  "findCount": [1,1,1]
+                },
+                {
+                  "id": "fm_hangover_loot_25",
+                  "value": [25,0,0,0],
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 61,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silverflute",
+      "name": "ref_silverflute",
+      "img": [
+        "IMG_SilverFlute"
+      ],
+      "values": [
+        {
+          "id": "25gold25goods",
+          "value": [25,0,25,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_52",
+              "findSimple": "findE",
+              "findArea": 12,
+              "findNarrow": "terrace",
+              "findExact": "battlement",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_SilverFlute"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "ref_silvernugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_53",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "by apartments",
+              "findExact": "behind east bush",
+              "findCount": [1,1,1],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_54",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "south alley",
+              "findExact": "behind crate",
+              "findCount": [1,1,1],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_55",
+              "findSimple": "findM",
+              "findArea": 32,
+              "findNarrow": "near stairs",
+              "findExact": "behind boulder",
+              "findCount": [1,1,1],
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "ref_spicebag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_56",
+              "findSimple": "findM",
+              "findArea": 10,
+              "findExact": "west shelf",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_57",
+              "findSimple": "findM",
+              "findArea": 19,
+              "findNarrow": "bedroom",
+              "findExact": "by armchair",
+              "findCount": [1,1,1],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "ref_statuette",
+      "img": [
+        "IMG_Statuette_Nobleman",
+        "IMG_Statuette_Noblewoman",
+        "IMG_Statuette_Monk",
+        "IMG_Statuette_Nun",
+        "IMG_Statuette_Mage",
+        "IMG_Statuette_Muse"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_58",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "landlord's room",
+              "findExact": "behind east table",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Statuette_Nun"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_59",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findExact": "southeast corner",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_Statuette_Muse"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_60",
+              "findSimple": "findM",
+              "findArea": 9,
+              "findExact": "under broken shelf",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_Statuette_Noblewoman"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_61",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "terrace",
+              "findExact": "window",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_Statuette_Mage"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_62",
+              "findSimple": "findE",
+              "findArea": 17,
+              "findNarrow": "stairway",
+              "findExact": "shelf",
+              "findCount": [1,1,1],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_Statuette_Nobleman"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_63",
+              "findSimple": "findE",
+              "findArea": 31,
+              "findNarrow": "wine room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_item_39",
+                  "findCount": [1,1,1]
+                }
+              ],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_Statuette_Monk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "ref_tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_hangover_loot_64",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "living room",
+              "findExact": "north armchair",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            },
+            {
+              "id": "fm_hangover_loot_65",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "south street",
+              "findExact": "under porch",
+              "findCount": [1,1,1],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "ref_sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "ref_blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_2",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "east gate",
+              "findExact": "by crates",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "ref_broadheadarrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_hangover_item_4",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_item_5",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "by counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_hangover_item_6",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "large crate",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_hangover_item_7",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "by south gate",
+              "findExact": "on Watch archer",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_hangover_item_8",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "by east gate",
+              "findExact": "on purple archer",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "ref_waterarrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_9",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [8,8,8],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "ref_firearrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_10",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "arrow rack",
+              "findCount": [4,2,3]
+            }
+          ]
+        },
+        {
+          "id": "item_gasarrow",
+          "name": "Neurotoxin Arrow",
+          "img": [
+            "IMG_GasArrow_TMA"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_11",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "arrow rack",
+              "findCount": [4,2,3]
+            },
+            {
+              "id": "fm_hangover_item_12",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "broadhead infuser",
+              "findCount": [5,5,5],
+              "findRecipe": "pull lever"
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "ref_ropearrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_13",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [10,10,10],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_hangover_item_14",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "broken shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "ref_noisemakerarrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_15",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "arrow rack",
+              "findCount": [3,2,2]
+            },
+            {
+              "id": "fm_hangover_item_16",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "Cpt. Cromwell's bedroom",
+              "findExact": "bed",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_firecrystal",
+          "name": "ref_firecrystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_17",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "near well",
+              "findExact": "toolbox",
+              "findObj": true,
+              "findCountBox": [2,2,2],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_item_24",
+                  "findCount": [1,1,1]
+                }
+              ]
+            },
+            {
+              "id": "fm_hangover_item_18",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "central street",
+              "findExact": "toolbox",
+              "findObj": true,
+              "findCountBox": [2,2,2],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_item_26",
+                  "findCount": [1,1,1]
+                }
+              ]
+            },
+            {
+              "id": "fm_hangover_item_19",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "southwest roof",
+              "findExact": "toolbox",
+              "findObj": true,
+              "findCountBox": [2,2,2],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_item_27",
+                  "findCount": [1,1,1]
+                }
+              ]
+            },
+            {
+              "id": "fm_hangover_item_20",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "east warehouse",
+              "findExact": "toolbox",
+              "findObj": true,
+              "findCountBox": [2,2,2],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_item_28",
+                  "findCount": [1,1,1]
+                }
+              ]
+            },
+            {
+              "id": "fm_hangover_item_21",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "hold",
+              "findExact": "large crate",
+              "findCount": [16,16,16]
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "ref_earthcrystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_22",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "central street",
+              "findExact": "garden",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "Knockdown Grenade",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_23",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "workshop",
+              "findExact": "workbench",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "ref_mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_24",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "near well",
+              "findExact": "toolbox",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_item_17",
+                  "findCount": [2,2,2]
+                }
+              ]
+            },
+            {
+              "id": "fm_hangover_item_25",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "east shelf",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_hangover_item_26",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "central street",
+              "findExact": "toolbox",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_item_18",
+                  "findCount": [2,2,2]
+                }
+              ]
+            },
+            {
+              "id": "fm_hangover_item_27",
+              "findSimple": "find",
+              "findArea": 23,
+              "findNarrow": "southwest roof",
+              "findExact": "toolbox",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_item_19",
+                  "findCount": [2,2,2]
+                }
+              ]
+            },
+            {
+              "id": "fm_hangover_item_28",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "east warehouse",
+              "findExact": "toolbox",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_item_20",
+                  "findCount": [2,2,2]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item_explosivecharge",
+          "name": "Shielded Charge",
+          "img": [
+            "IMG_ExplosiveCharge"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_29",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "injecting machine",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "place Steel Plate & TNT Gel in left slot & Trigger Core in right slot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "ref_healingpotion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_30",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_hangover_item_31",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_item_32",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "bedroom",
+              "findExact": "hope chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "ref_speedpotion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_33",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "ref_invispotion",
+          "img": [
+            "IMG_InvisibilityPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_34",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "reading room",
+              "findExact": "south rafter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_bucketofwater",
+          "name": "ref_bucketofwater",
+          "img": [
+            "IMG_BucketOfWater"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_35",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "dining room",
+              "findExact": "by dining table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_containers",
+      "category": "Containers",
+      "catItems": [
+        {
+          "id": "item_foodbag",
+          "name": "Food Bag",
+          "img": [
+            "IMG_BrownHerbs"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_36",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "ref_squarepick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_37",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "ref_trianglepick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_38",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_hookedlockpick",
+          "name": "Hooked Lockpick",
+          "img": [
+            "IMG_CrookedPole"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_39",
+              "value": [0,0,0,0],
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "wine room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findLink": [
+                {
+                  "id": "fm_hangover_loot_63",
+                  "value": [0,0,15,0],
+                  "findCount": [1,1,1]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Landlord's Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_40",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "landlord's room",
+              "findExact": "by west table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Bookstore Entrance Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_41",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "bedroom fireplace",
+              "findCount": [1,1,1],
+              "findRecipe": "after reading green book in office"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Reading Area Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_42",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "dining loft",
+              "findExact": "on Marcus",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Jack's Main Door Key",
+          "img": [
+            "IMG_Key_Orange"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_43",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "living room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Workshop Shutters Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_44",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "south window",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Inventor's House Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_45",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "workshop",
+              "findExact": "workbench",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Storage Facility Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_46",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "chair",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Mysterious Key",
+          "img": [
+            "IMG_Key_Gold"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_47",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "north street",
+              "findExact": "on thief swordsman",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Bunkhouse Shutters Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_48",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "wine room",
+              "findExact": "key rack",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Bunkhouse Storage Key",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_49",
+              "findSimple": "find",
+              "findArea": 30,
+              "findExact": "on Emeline",
+              "findCount": [1,1,1],
+              "findRecipe": "after reading green book in bunkhouse"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "ref_compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_50",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_silverfirepoker",
+          "name": "ref_silverfirepoker",
+          "img": [
+            "IMG_SilverFirePoker"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_51",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "bedroom",
+              "findExact": "by bookcase",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_frogbeastegg",
+          "name": "ref_frogbeastegg",
+          "img": [
+            "IMG_FrogbeastEgg"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_52",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "ref_loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_53",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "south porch",
+              "findExact": "railing",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_54",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "by church gatehouse",
+              "findExact": "donation box",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_55",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "tavern porch",
+              "findExact": "by barrels",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_56",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "dining loft",
+              "findExact": "under south dining table",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_carrot",
+          "name": "ref_carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_57",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "central street",
+              "findExact": "behind market stall",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_58",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "east street",
+              "findExact": "barrel",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_59",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "garden",
+              "findExact": "by north central pillar",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_60",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "hold",
+              "findExact": "hammer crate",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_apple",
+          "name": "ref_apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_61",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "office",
+              "findExact": "bookshelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_62",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "lower shelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_63",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "by shelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_64",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "by lamppost",
+              "findExact": "west fence",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "ref_cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_65",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "exterior",
+              "findExact": "southwest corner",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_66",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "by Devan's Pawn Shop",
+              "findExact": "crate pile",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_67",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "northwest alley",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_68",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "hallway",
+              "findExact": "shelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_deerleg",
+          "name": "ref_deerleg",
+          "img": [
+            "IMG_DeerLeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_69",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "southwest shelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_70",
+              "findSimple": "find",
+              "findArea": 18,
+              "findExact": "on injecting machine",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_71",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "balcony",
+              "findExact": "railing",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_72",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "reading room",
+              "findExact": "south chair",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_item_73",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "burning wreckage",
+              "findExact": "on west crate",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "ref_papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_74",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "Cpt. Cromwell's bedroom",
+              "findCount": [1,1,1],
+              "findRecipe": "read Cromwell's journal"
+            },
+            {
+              "id": "fm_hangover_item_75",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "captain's cabin",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_blueprints",
+          "name": "ref_blueprints",
+          "img": [
+            "IMG_Blueprints"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_76",
+              "findSimple": "find",
+              "findArea": 19,
+              "findNarrow": "workshop",
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_navigationcharts",
+          "name": "Nautical Chart",
+          "img": [
+            "IMG_Banner_Globe"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_77",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "by bar",
+              "findExact": "east wall",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Lockpicking for Taffers",
+          "img": [
+            "IMG_Book_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_78",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "entrance room",
+              "findExact": "Edan's mailbox",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_book",
+          "name": "Nautical Book",
+          "img": [
+            "IMG_Book_Mechanist"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_79",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "reading room",
+              "findExact": "table",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "ref_dewdrop",
+          "img": [
+            "IMG_Dewdrop"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_80",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "fifth level",
+              "findExact": "by bedroll",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_nautical",
+      "category": "Nautical Tools",
+      "catItems": [
+        {
+          "id": "item_nauticalchronometer",
+          "name": "Nautical Chronometer",
+          "img": [
+            "IMG_NavigationGlobe"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_81",
+              "findSimple": "find",
+              "findArea": 30,
+              "findNarrow": "underwater",
+              "findExact": "by nobleman",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_chartcompass",
+          "name": "ref_chartcompass",
+          "img": [
+            "IMG_ChartCompass"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_82",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "under torch",
+              "findExact": "underwater",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_sextant",
+          "name": "ref_sextant",
+          "img": [
+            "IMG_Sextant"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_83",
+              "findSimple": "find",
+              "findArea": 29,
+              "findExact": "rowboat",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crafting",
+      "category": "Crafting Materials",
+      "catItems": [
+        {
+          "id": "item_acidicmixture",
+          "name": "TNT Gel",
+          "img": [
+            "IMG_Mixture"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_84",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "supply room",
+              "findExact": "on middle shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_steelplate",
+          "name": "ref_steelplate",
+          "img": [
+            "IMG_SteelPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_85",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "bed",
+              "findExact": "on Cartwright",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_gauge",
+          "name": "Detonator",
+          "img": [
+            "IMG_Gauge"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_86",
+              "findSimple": "find",
+              "findArea": 26,
+              "findNarrow": "under west shelf",
+              "findExact": "footlocker",
+              "findObj": true,
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_springwiring",
+          "name": "Electro- magnetic Rod",
+          "img": [
+            "IMG_SpringWiring"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_87",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "west shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_bantamnode",
+          "name": "Trigger Core",
+          "img": [
+            "IMG_BantamNode"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_item_88",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "fourth level",
+              "findExact": "by victrola",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "ref_normalcrate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_1",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "east end",
+              "findExact": "by lean-to",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_hangover_junk_2",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "near south gate",
+              "findExact": "by barrel",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_3",
+              "findSimple": "find",
+              "findArea": 21,
+              "findNarrow": "east end",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_4",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "by bed",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_5",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "by elevator",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_6",
+              "findSimple": "find",
+              "findArea": 26,
+              "findExact": "west shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_7",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "bunkroom",
+              "findExact": "by south window",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_8",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "bar",
+              "findExact": "by front door",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_9",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "hold",
+              "findExact": "crate pile",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "ref_oldcrate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "training room",
+              "findExact": "northeast corner",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_11",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "south street",
+              "findExact": "under porch",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_12",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "reading room",
+              "findExact": "west rafter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_hangover_junk_13",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "hold",
+              "findExact": "by crate pile",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_cratelid",
+          "name": "Crate Lid",
+          "img": [
+            "IMG_CrateLid"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_14",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "hold",
+              "findExact": "large crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "ref_woodenbowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_15",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalplate",
+          "name": "ref_metalplate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_16",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "ref_woodengoblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_17",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "northwest alley",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_18",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "dining room",
+              "findExact": "dining tables",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_19",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalgoblet",
+          "name": "ref_metalgoblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_20",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "dining room",
+              "findExact": "east dining table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_21",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_22",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "dining loft",
+              "findExact": "south dining table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "ref_greenbottle",
+          "img": [
+            "IMG_GreenBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_23",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "living room",
+              "findExact": "by fireplace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_24",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "hallway",
+              "findExact": "wine rack",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_25",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_26",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "wine rack",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_hangover_junk_27",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "main dining room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_28",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "terrace",
+              "findExact": "battlement",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_29",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "northeast shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_30",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "northwest alley",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_31",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_32",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "dining room",
+              "findExact": "dining tables",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_hangover_junk_33",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_graybottle",
+          "name": "ref_graybottle",
+          "img": [
+            "IMG_GrayBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_34",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "living room",
+              "findExact": "under bookcase",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_35",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "hallway",
+              "findExact": "wine rack",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_36",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_37",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "bar",
+              "findExact": "wine rack",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_38",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "side dining room",
+              "findExact": "table",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_hangover_junk_39",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "terrace",
+              "findExact": "battlement",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_40",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_41",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "dining room",
+              "findExact": "dining table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_42",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "dining room",
+              "findExact": "dining tables",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_hangover_junk_43",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_44",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "dining loft",
+              "findExact": "dining tables",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_barrel",
+          "name": "ref_barrel",
+          "img": [
+            "IMG_Barrel"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_45",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "wine room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_powderkeg",
+          "name": "ref_powderkeg",
+          "img": [
+            "IMG_PowderKeg"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_46",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "under west shelf",
+              "findObj": true,
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_hangover_junk_47",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "hold",
+              "findExact": "by crate pile",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "ref_pottedplant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_48",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "second level",
+              "findExact": "by flowerpot",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_digging",
+      "category": "Digging Tools",
+      "catJunk": [
+        {
+          "id": "junk_spade",
+          "name": "ref_spade",
+          "img": [
+            "IMG_Spade"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_49",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "hold",
+              "findExact": "between minecarts",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_rubble",
+          "name": "ref_rubble",
+          "img": [
+            "IMG_Rubble"
+          ],
+          "locations": [
+            {
+              "id": "fm_hangover_junk_50",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "by garden",
+              "findExact": "under torch",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_51",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "north end",
+              "findExact": "behind crates",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_hangover_junk_52",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "by elevator",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_hangover_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_hangover_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 3,
+          "findNarrow": "east street",
+          "findDiff": [1,1,1],
+          "method": "Shoot a rope arrow by the west windows and climb to the steaming roof"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardOther": "None",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_hangover_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_hangover_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 15,
+          "findNarrow": "cathedral gatehouse",
+          "findDiff": [1,1,1],
+          "method": "Shoot a neurotoxin arrow at the Keeper on the roof"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardOther": "None",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_hangover_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_hangover_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 8,
+          "findNarrow": "east end",
+          "findDiff": [1,1,1],
+          "method": "Unlock the hatch under the crates with the mysterious key"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardLoot": "ref_addoniziocrystal",
+          "value": [0,25,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_2",
+          "rewardLoot": "ref_gemstone",
+          "value": [0,100,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_3",
+          "rewardLoot": "ref_mechstatuette",
+          "value": [0,0,15,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_hangover_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_fm_hangover_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 34,
+          "findNarrow": "main deck",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch on the side of the starboard ramp"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardItem": "ref_papyrus",
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

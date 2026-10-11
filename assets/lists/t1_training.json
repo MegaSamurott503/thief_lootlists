@@ -25,7 +25,7 @@
   "notes": [
     {
       "id": "note_0",
-      "desc": "The demo version of this mission has all the same items.",
+      "desc": "The demo version of this mission has all the same items",
       "show": true
     },
     {
@@ -39,7 +39,7 @@
   "loot": [
     {
       "id": "loot_greenvase",
-      "name": "Green Vase",
+      "name": "ref_greenvase",
       "img": [
         "IMG_GreenVase"
       ],
@@ -71,7 +71,7 @@
       "catItems": [
         {
           "id": "item_sword",
-          "name": "Sword",
+          "name": "ref_sword",
           "img": [
             "IMG_Sword"
           ],
@@ -94,7 +94,7 @@
       "catItems": [
         {
           "id": "item_broadheadarrow",
-          "name": "Broadhead Arrow",
+          "name": "ref_broadheadarrow",
           "img": [
             "IMG_BroadheadArrow"
           ],
@@ -118,7 +118,7 @@
       "catItems": [
         {
           "id": "item_healingpotion",
-          "name": "Healing Potion",
+          "name": "ref_healingpotion",
           "img": [
             "IMG_HealingPotion"
           ],
@@ -141,7 +141,7 @@
       "catItems": [
         {
           "id": "item_key",
-          "name": "Courtyard Key",
+          "name": "ref_key_courtyard",
           "img": [
             "IMG_Key_Black"
           ],
@@ -164,7 +164,7 @@
       "catItems": [
         {
           "id": "item_compass",
-          "name": "Compass",
+          "name": "ref_compass",
           "img": [
             "IMG_Compass"
           ],
@@ -186,7 +186,7 @@
       "catItems": [
         {
           "id": "item_apple",
-          "name": "Apple",
+          "name": "ref_apple",
           "img": [
             "IMG_Apple"
           ],
@@ -211,7 +211,7 @@
       "catJunk": [
         {
           "id": "junk_bedroll",
-          "name": "Bedroll",
+          "name": "ref_bedroll",
           "img": [
             "IMG_Bedroll"
           ],
@@ -235,7 +235,7 @@
       "catJunk": [
         {
           "id": "junk_basketball",
-          "name": "Basketball",
+          "name": "ref_basketball",
           "img": [
             "IMG_Basketball"
           ],
@@ -258,7 +258,7 @@
       "catJunk": [
         {
           "id": "junk_pottedplant",
-          "name": "Potted Plant",
+          "name": "ref_pottedplant",
           "img": [
             "IMG_PottedPlant"
           ],
@@ -274,7 +274,7 @@
         },
         {
           "id": "junk_vase",
-          "name": "Vase",
+          "name": "ref_vase",
           "img": [
             "IMG_Vase"
           ],

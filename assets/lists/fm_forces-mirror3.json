@@ -1,0 +1,883 @@
+{
+  "id": "fm_forces-mirror3",
+  "title": "The Mirror of Return",
+  "subtitle": "Part 3",
+  "author": [
+    "auth_psymh"
+  ],
+  "screens": [
+    "MIS_fm_forces-mirror3_A",
+    "MIS_fm_forces-mirror3_B"
+  ],
+  "firstRelease": "February 2010",
+  "latestVersion": "1b",
+  "goToPrev": "fm_forces-mirror2",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": false,
+  "markObj": false,
+  "pocketCount": [2,4,4],
+  "pocketChanges": [0,1,2],
+  "carryLoot": false,
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Ramparts"},
+    {"key": "2", "value": "North Kitchen"},
+    {"key": "3", "value": "1F North Barracks"},
+    {"key": "4", "value": "Arena"},
+    {"key": "5", "value": "Northeast Storage"},
+    {"key": "6", "value": "2F Barracks"},
+    {"key": "7", "value": "Manuel's Quarters"},
+    {"key": "8", "value": "South Kitchen"},
+    {"key": "9", "value": "1F Southwest Hall"},
+    {"key": "10", "value": "South Staircase"},
+    {"key": "11", "value": "1F Southeast Hall"},
+    {"key": "12", "value": "1F South Barracks"},
+    {"key": "13", "value": "Training Room"},
+    {"key": "14", "value": "1F East Barracks"},
+    {"key": "15", "value": "Workshop"},
+    {"key": "16", "value": "Bar"},
+    {"key": "17", "value": "Air Tower"},
+    {"key": "18", "value": "Tigiel's Quarters"}
+  ],
+  "notes": [
+    {
+      "id": "note_0",
+      "delimiter": "  ",
+      "icon": "[!]",
+      "desc": "this NPC is killed before he can be pickpocketed",
+      "show": true
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "ref_sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "ref_blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "ref_broadheadarrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_3",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "on thief archer",
+              "findCountBox": [3,3,3],
+              "findPick": true,
+              "findNote": 0
+            },
+            {
+              "id": "fm_forces-mirror3_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "on thief archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_forces-mirror3_item_5",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "on purple archer",
+              "findCountBox": [0,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_forces-mirror3_item_6",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "southeast bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [6,6,6],
+              "findBox": true
+            },
+            {
+              "id": "fm_forces-mirror3_item_7",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "footlocker",
+              "findCountBox": [4,4,4],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "ref_waterarrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_8",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [12,12,12],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_firearrow",
+          "name": "ref_firearrow",
+          "img": [
+            "IMG_FireArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_9",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "ref_noisemakerarrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_10",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "ref_watercrystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_11",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "north bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [4,4,4],
+              "findBox": true
+            },
+            {
+              "id": "fm_forces-mirror3_item_12",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "footlocker",
+              "findCountBox": [4,4,4],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "ref_firecrystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_13",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "north bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "ref_aircrystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_14",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "southwest bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "ref_squarepick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_15",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "ref_trianglepick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_16",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Bandit Chief's Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_17",
+              "findSimple": "find",
+              "findArea": 1,
+              "findExact": "on Ronon",
+              "findCountBox": [0,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "ref_flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_18",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [12,12,12],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_magical",
+      "category": "Magical Tools",
+      "catItems": [
+        {
+          "id": "item_mirrorofreturn",
+          "name": "Mirror of Return",
+          "img": [
+            "IMG_MirrorOfReturn"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_19",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "ref_compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_20",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_apple",
+          "name": "ref_apple",
+          "img": [
+            "IMG_Apple"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_21",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "west bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "ref_cheese",
+          "img": [
+            "IMG_Cheese_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_22",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_steak",
+          "name": "ref_steak",
+          "img": [
+            "IMG_Steak"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_23",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "near fireplace",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "ref_papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_24",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "west bedroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-mirror3_item_25",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "bedroom",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "ref_dewdrop",
+          "img": [
+            "IMG_Dewdrop"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_26",
+              "findSimple": "find",
+              "findArea": 12,
+              "findNarrow": "west bunkroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_gemstones",
+      "category": "Gemstones",
+      "catItems": [
+        {
+          "id": "item_diamond",
+          "name": "White Nexus Stone",
+          "img": [
+            "IMG_LargeGemstone_Diamond"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_27",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ruby",
+          "name": "Red Nexus Stone",
+          "img": [
+            "IMG_LargeGemstone_Ruby"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_28",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_sapphire",
+          "name": "Blue Nexus Stone",
+          "img": [
+            "IMG_LargeGemstone_Sapphire"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_29",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_emerald",
+          "name": "Green Nexus Stone",
+          "img": [
+            "IMG_LargeGemstone_Emerald"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_item_30",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "ref_normalcrate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_1",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "storage",
+              "findExact": "northeast corner",
+              "findCount": [5,5,5]
+            },
+            {
+              "id": "fm_forces-mirror3_junk_2",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "mail room",
+              "findExact": "shelf",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_forces-mirror3_junk_3",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "lower floor",
+              "findCount": [8,8,8]
+            }
+          ]
+        },
+        {
+          "id": "junk_oldcrate",
+          "name": "ref_oldcrate",
+          "img": [
+            "IMG_OldCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "west central tower 1F",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_forces-mirror3_junk_5",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "south wall",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_forces-mirror3_junk_6",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "northeast corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metaltray",
+          "name": "ref_metaltray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_7",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bathroom",
+              "findExact": "bathtub",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_forces-mirror3_junk_8",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "by counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "ref_woodengoblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_9",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "cabinet",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_graybottle",
+          "name": "ref_graybottle",
+          "img": [
+            "IMG_GrayBottle_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_10",
+              "findSimple": "find",
+              "findArea": 17,
+              "findNarrow": "roof",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_redbottle",
+          "name": "Red Bottle",
+          "img": [
+            "IMG_RedBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_11",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "wine shelf",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_orangebottle",
+          "name": "Orange Bottle",
+          "img": [
+            "IMG_OrangeBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_12",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "wine shelf",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "junk_setofbottles",
+          "name": "ref_setofbottles",
+          "img": [
+            "IMG_SetOfBottles"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_13",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "wine shelf",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_spectacles",
+          "name": "ref_spectacles",
+          "img": [
+            "IMG_ReadingGlasses"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_14",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "southeast bunkroom",
+              "findExact": "west shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "ref_pottedplant",
+          "img": [
+            "IMG_PottedPlant"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_15",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "south tables",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_forces-mirror3_junk_16",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "anteroom",
+              "findExact": "east table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_warhammer",
+          "name": "ref_warhammer",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_17",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "sand pit",
+              "findExact": "bone pile",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_smallhammer",
+          "name": "ref_smallhammer",
+          "img": [
+            "IMG_SmallHammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_18",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "workbench",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "ref_skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_forces-mirror3_junk_19",
+              "findSimple": "find",
+              "findArea": 3,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_forces-mirror3_junk_20",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "sand pit",
+              "findExact": "on sword",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -79,7 +79,7 @@
   "loot": [
     {
       "id": "loot_coppercoinstack",
-      "name": "Copper Coin Stack",
+      "name": "ref_coppercoinstack",
       "img": [
         "IMG_CopperCoinStack"
       ],
@@ -92,7 +92,7 @@
               "id": "fm_rowena_loot_1",
               "findSimple": "findE",
               "findArea": 1,
-              "findNarrow": "northwest bunkroom",
+              "findNarrow": "NW bunkroom",
               "findExact": "central table",
               "findCount": [3,3,3],
               "orderNum": 1,
@@ -104,7 +104,7 @@
               "id": "fm_rowena_loot_2",
               "findSimple": "findE",
               "findArea": 1,
-              "findNarrow": "northwest bunkroom",
+              "findNarrow": "NW bunkroom",
               "findExact": "footlocker",
               "findCountBox": [1,1,1],
               "findBox": true,
@@ -144,7 +144,7 @@
     },
     {
       "id": "loot_decorativemask",
-      "name": "Decorative Mask",
+      "name": "ref_decorativemask",
       "img": [
         "IMG_DecorativeMask_Demon"
       ],
@@ -171,7 +171,7 @@
     },
     {
       "id": "loot_decorativeplate",
-      "name": "Decorative Plate",
+      "name": "ref_decorativeplate",
       "img": [
         "IMG_DecorativePlate_Red_EP",
         "IMG_DecorativePlate_Aqua_EP"
@@ -185,7 +185,7 @@
               "id": "fm_rowena_loot_6",
               "findSimple": "findE",
               "findArea": 28,
-              "findExact": "shelves",
+              "findExact": "plate hutches",
               "findCount": [5,5,5],
               "orderNum": 53,
               "orderImg": [
@@ -199,7 +199,7 @@
     },
     {
       "id": "loot_finewine",
-      "name": "Fine Wine",
+      "name": "ref_finewine",
       "img": [
         "IMG_FineWine_EP"
       ],
@@ -235,7 +235,7 @@
               "id": "fm_rowena_loot_9",
               "findSimple": "findE",
               "findArea": 28,
-              "findNarrow": "east shelf",
+              "findNarrow": "east plate hutch",
               "findExact": "cabinet",
               "findCount": [1,1,1],
               "orderNum": 52,
@@ -267,7 +267,7 @@
     },
     {
       "id": "loot_gemring",
-      "name": "Gem Ring",
+      "name": "ref_gemring",
       "img": [
         "IMG_GemRing"
       ],
@@ -294,7 +294,7 @@
     },
     {
       "id": "loot_gemstone",
-      "name": "Gemstone",
+      "name": "ref_gemstone",
       "img": [
         "IMG_Gemstone"
       ],
@@ -331,7 +331,7 @@
     },
     {
       "id": "loot_goldcandlestick",
-      "name": "Gold Candlestick",
+      "name": "ref_goldcandlestick",
       "img": [
         "IMG_GoldCandlestick_EP"
       ],
@@ -368,7 +368,7 @@
               "id": "fm_rowena_loot_16",
               "findSimple": "findE",
               "findArea": 28,
-              "findNarrow": "west shelf",
+              "findNarrow": "west plate hutch",
               "findExact": "cabinet",
               "findCount": [2,2,2],
               "orderNum": 55,
@@ -382,7 +382,7 @@
     },
     {
       "id": "loot_goldcoinstack",
-      "name": "Gold Coin Stack",
+      "name": "ref_goldcoinstack",
       "img": [
         "IMG_GoldCoinStack"
       ],
@@ -410,7 +410,7 @@
     },
     {
       "id": "loot_goldglasses",
-      "name": "Gold Glasses",
+      "name": "ref_goldglasses",
       "img": [
         "IMG_GoldGlasses"
       ],
@@ -437,7 +437,7 @@
     },
     {
       "id": "loot_goldgoblet",
-      "name": "Gold Goblet",
+      "name": "ref_goldgoblet",
       "img": [
         "IMG_GoldGoblet_EP"
       ],
@@ -462,7 +462,7 @@
               "id": "fm_rowena_loot_20",
               "findSimple": "findE",
               "findArea": 28,
-              "findExact": "shelves",
+              "findExact": "plate hutches",
               "findCount": [12,12,12],
               "orderNum": 54,
               "orderImg": [
@@ -473,7 +473,7 @@
               "id": "fm_rowena_loot_21",
               "findSimple": "findM",
               "findArea": 1,
-              "findNarrow": "northeast bunkroom",
+              "findNarrow": "NE bunkroom",
               "findExact": "hidden niche",
               "findCount": [2,2,2],
               "orderNum": 57,
@@ -505,7 +505,7 @@
     },
     {
       "id": "loot_goldnugget",
-      "name": "Gold Nugget",
+      "name": "ref_goldnugget",
       "img": [
         "IMG_GoldNugget"
       ],
@@ -569,7 +569,7 @@
     },
     {
       "id": "loot_goldplate",
-      "name": "Gold Plate",
+      "name": "ref_goldplate",
       "img": [
         "IMG_GoldPlate_EP"
       ],
@@ -594,7 +594,7 @@
               "id": "fm_rowena_loot_28",
               "findSimple": "findM",
               "findArea": 1,
-              "findNarrow": "northeast bunkroom",
+              "findNarrow": "NE bunkroom",
               "findExact": "hidden niche",
               "findCount": [2,2,2],
               "orderNum": 58,
@@ -608,7 +608,7 @@
     },
     {
       "id": "loot_goldring",
-      "name": "Gold Ring",
+      "name": "ref_goldring",
       "img": [
         "IMG_GoldRing"
       ],
@@ -646,7 +646,7 @@
     },
     {
       "id": "loot_goldvase",
-      "name": "Gold Vase",
+      "name": "ref_goldvase",
       "img": [
         "IMG_GoldVase_EP"
       ],
@@ -671,7 +671,7 @@
               "id": "fm_rowena_loot_32",
               "findSimple": "findE",
               "findArea": 28,
-              "findNarrow": "shelves",
+              "findNarrow": "plate hutches",
               "findExact": "cabinets",
               "findCount": [4,4,4],
               "orderNum": 51,
@@ -683,7 +683,7 @@
               "id": "fm_rowena_loot_33",
               "findSimple": "findM",
               "findArea": 1,
-              "findNarrow": "northeast bunkroom",
+              "findNarrow": "NE bunkroom",
               "findExact": "hidden niche",
               "findCount": [1,1,1],
               "orderNum": 60,
@@ -709,7 +709,7 @@
     },
     {
       "id": "loot_goldenbone",
-      "name": "Golden Bone",
+      "name": "ref_goldenbone",
       "img": [
         "IMG_GoldenBone_Skull",
         "IMG_GoldenBone_RightArm",
@@ -761,7 +761,7 @@
     },
     {
       "id": "loot_greenvase",
-      "name": "Green Vase",
+      "name": "ref_greenvase",
       "img": [
         "IMG_GreenVase"
       ],
@@ -787,7 +787,7 @@
     },
     {
       "id": "loot_horn",
-      "name": "Horn",
+      "name": "ref_horn",
       "img": [
         "IMG_HornOfQuintus"
       ],
@@ -814,7 +814,7 @@
     },
     {
       "id": "loot_indigovase",
-      "name": "Indigo Vase",
+      "name": "ref_indigovase",
       "img": [
         "IMG_IndigoVase_EP"
       ],
@@ -869,7 +869,7 @@
               "id": "fm_rowena_loot_42",
               "findSimple": "findE",
               "findArea": 28,
-              "findExact": "west shelf",
+              "findExact": "west plate hutch",
               "findCount": [1,1,1],
               "orderNum": 56,
               "orderImg": [
@@ -880,7 +880,7 @@
               "id": "fm_rowena_loot_43",
               "findSimple": "findM",
               "findArea": 1,
-              "findNarrow": "northeast bunkroom",
+              "findNarrow": "NE bunkroom",
               "findExact": "hidden niche",
               "findCount": [1,1,1],
               "orderNum": 59,
@@ -894,7 +894,7 @@
     },
     {
       "id": "loot_luckycoins",
-      "name": "Lucky Coins",
+      "name": "ref_luckycoins",
       "img": [
         "IMG_LuckyCoins"
       ],
@@ -933,7 +933,7 @@
     },
     {
       "id": "loot_mechaniststatuette",
-      "name": "Mechanist Statuette",
+      "name": "ref_mechstatuette",
       "img": [
         "IMG_MechanistStatuette"
       ],
@@ -959,7 +959,7 @@
     },
     {
       "id": "loot_precursorcanopicjar",
-      "name": "Precursor Canopic Jar",
+      "name": "ref_precanopicjar",
       "img": [
         "IMG_PrecursorCanopicJar_EP"
       ],
@@ -1034,7 +1034,7 @@
     },
     {
       "id": "loot_precursorgem",
-      "name": "Precursor Gem",
+      "name": "ref_pregem",
       "img": [
         "IMG_PrecursorGem_EP"
       ],
@@ -1061,7 +1061,7 @@
     },
     {
       "id": "loot_precursorjar",
-      "name": "Precursor Jar",
+      "name": "ref_prejar",
       "img": [
         "IMG_PrecursorJar_Small_EP",
         "IMG_PrecursorJar_Tall_EP",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": "loot_precursormask",
-      "name": "Precursor Mask",
+      "name": "ref_premask",
       "img": [
         "IMG_PrecursorMask_Bare",
         "IMG_PrecursorMask_Brass"
@@ -1156,7 +1156,7 @@
     },
     {
       "id": "loot_precursortapestry",
-      "name": "Precursor Tapestry",
+      "name": "ref_pretapestry",
       "img": [
         "IMG_PrecursorTapestry_EP"
       ],
@@ -1208,7 +1208,7 @@
     },
     {
       "id": "loot_purplegoblet",
-      "name": "Purple Goblet",
+      "name": "ref_purplegoblet",
       "img": [
         "IMG_PurpleGoblet_EP"
       ],
@@ -1235,7 +1235,7 @@
     },
     {
       "id": "loot_purplevase",
-      "name": "Purple Vase",
+      "name": "ref_purplevase",
       "img": [
         "IMG_PurpleVase_EP"
       ],
@@ -1285,7 +1285,7 @@
     },
     {
       "id": "loot_purse",
-      "name": "Purse",
+      "name": "ref_purse",
       "img": [
         "IMG_Purse"
       ],
@@ -1317,7 +1317,7 @@
               "id": "fm_rowena_loot_66",
               "findSimple": "findM",
               "findArea": 1,
-              "findNarrow": "southeast bunkroom",
+              "findNarrow": "SE bunkroom",
               "findExact": "footlocker",
               "findCountBox": [1,1,1],
               "findBox": true,
@@ -1469,7 +1469,7 @@
     },
     {
       "id": "loot_rosarybeads",
-      "name": "Rosary Beads",
+      "name": "ref_rosarybeads",
       "img": [
         "IMG_RosaryBeads"
       ],
@@ -1496,7 +1496,7 @@
     },
     {
       "id": "loot_serpentyletorc",
-      "name": "Serpentyle Torc",
+      "name": "ref_serpentyletorc",
       "img": [
         "IMG_SerpentyleTorc"
       ],
@@ -1541,7 +1541,7 @@
     },
     {
       "id": "loot_signetring",
-      "name": "Signet Ring",
+      "name": "ref_signetring",
       "img": [
         "IMG_SignetRing"
       ],
@@ -1581,7 +1581,7 @@
     },
     {
       "id": "loot_silvercoinstack",
-      "name": "Silver Coin Stack",
+      "name": "ref_silvercoinstack",
       "img": [
         "IMG_SilverCoinStack"
       ],
@@ -1594,7 +1594,7 @@
               "id": "fm_rowena_loot_83",
               "findSimple": "findE",
               "findArea": 1,
-              "findNarrow": "northwest bunkroom",
+              "findNarrow": "NW bunkroom",
               "findExact": "footlocker",
               "findCountBox": [1,1,1],
               "findBox": true,
@@ -1622,7 +1622,7 @@
     },
     {
       "id": "loot_silvernugget",
-      "name": "Silver Nugget",
+      "name": "ref_silvernugget",
       "img": [
         "IMG_SilverNugget"
       ],
@@ -1674,7 +1674,7 @@
     },
     {
       "id": "loot_spicebag",
-      "name": "Spice Bag",
+      "name": "ref_spicebag",
       "img": [
         "IMG_SpiceBag"
       ],
@@ -1702,7 +1702,7 @@
     },
     {
       "id": "loot_statuette",
-      "name": "Statuette",
+      "name": "ref_statuette",
       "img": [
         "IMG_Statuette_Monk",
         "IMG_Statuette_Muse"
@@ -1744,7 +1744,7 @@
     },
     {
       "id": "loot_tiara",
-      "name": "Tiara",
+      "name": "ref_tiara",
       "img": [
         "IMG_Tiara"
       ],
@@ -1771,7 +1771,7 @@
     },
     {
       "id": "loot_treebeastmask",
-      "name": "Treebeast Mask",
+      "name": "ref_treebeastmask",
       "img": [
         "IMG_TreebeastMask"
       ],
@@ -1804,7 +1804,7 @@
       "catItems": [
         {
           "id": "item_sword",
-          "name": "Sword",
+          "name": "ref_sword",
           "img": [
             "IMG_Sword"
           ],
@@ -1838,7 +1838,7 @@
         },
         {
           "id": "item_blackjack",
-          "name": "Blackjack",
+          "name": "ref_blackjack",
           "img": [
             "IMG_Blackjack"
           ],
@@ -1860,7 +1860,7 @@
       "catItems": [
         {
           "id": "item_broadheadarrow",
-          "name": "Broadhead Arrow",
+          "name": "ref_broadheadarrow",
           "img": [
             "IMG_BroadheadArrow"
           ],
@@ -1869,7 +1869,7 @@
               "id": "fm_rowena_item_4",
               "findSimple": "find",
               "findArea": 1,
-              "findNarrow": "southwest bunkroom",
+              "findNarrow": "SW bunkroom",
               "findExact": "footlocker",
               "findCountBox": [1,1,1],
               "findBox": true
@@ -1878,7 +1878,7 @@
               "id": "fm_rowena_item_5",
               "findSimple": "find",
               "findArea": 1,
-              "findNarrow": "northwest bunkroom",
+              "findNarrow": "NW bunkroom",
               "findExact": "footlocker",
               "findCount": [4,4,4],
               "findBox": true
@@ -1887,7 +1887,7 @@
               "id": "fm_rowena_item_6",
               "findSimple": "find",
               "findArea": 1,
-              "findNarrow": "northeast bunkroom",
+              "findNarrow": "NE bunkroom",
               "findExact": "footlocker",
               "findCountBox": [2,2,2],
               "findBox": true
@@ -1973,7 +1973,7 @@
         },
         {
           "id": "item_noisemakerarrow",
-          "name": "Noisemaker Arrow",
+          "name": "ref_noisemakerarrow",
           "img": [
             "IMG_NoisemakerArrow"
           ],
@@ -1982,7 +1982,7 @@
               "id": "fm_rowena_item_16",
               "findSimple": "find",
               "findArea": 1,
-              "findNarrow": "northwest bunkroom",
+              "findNarrow": "NW bunkroom",
               "findExact": "footlocker",
               "findCountBox": [1,1,1],
               "findBox": true
@@ -1997,7 +1997,7 @@
       "catItems": [
         {
           "id": "item_watercrystal",
-          "name": "Water Crystal",
+          "name": "ref_watercrystal",
           "img": [
             "IMG_WaterCrystal"
           ],
@@ -2044,7 +2044,7 @@
         },
         {
           "id": "item_firecrystal",
-          "name": "Fire Crystal",
+          "name": "ref_firecrystal",
           "img": [
             "IMG_FireCrystal"
           ],
@@ -2061,7 +2061,7 @@
         },
         {
           "id": "item_earthcrystal",
-          "name": "Earth Crystal",
+          "name": "ref_earthcrystal",
           "img": [
             "IMG_EarthCrystal"
           ],
@@ -2092,7 +2092,7 @@
       "catItems": [
         {
           "id": "item_flashbomb",
-          "name": "Flash Bomb",
+          "name": "ref_flashbomb",
           "img": [
             "IMG_FlashBomb"
           ],
@@ -2117,7 +2117,7 @@
         },
         {
           "id": "item_mine",
-          "name": "Mine",
+          "name": "ref_mine",
           "img": [
             "IMG_Mine"
           ],
@@ -2140,7 +2140,7 @@
       "catItems": [
         {
           "id": "item_healingpotion",
-          "name": "Healing Potion",
+          "name": "ref_healingpotion",
           "img": [
             "IMG_HealingPotion_NV"
           ],
@@ -2180,7 +2180,7 @@
         },
         {
           "id": "item_invisibilitypotion",
-          "name": "Invisibility Potion",
+          "name": "ref_invispotion",
           "img": [
             "IMG_InvisibilityPotion"
           ],
@@ -2203,7 +2203,7 @@
       "catItems": [
         {
           "id": "item_holywatervial",
-          "name": "Holy Water Vial",
+          "name": "ref_holywatervial",
           "img": [
             "IMG_HolyWaterVial"
           ],
@@ -2226,7 +2226,7 @@
       "catItems": [
         {
           "id": "item_lockpicksquare",
-          "name": "Square-tooth Lockpick",
+          "name": "ref_squarepick",
           "img": [
             "IMG_Lockpick_Square"
           ],
@@ -2242,7 +2242,7 @@
         },
         {
           "id": "item_lockpicktriangle",
-          "name": "Triangle-tooth Lockpick",
+          "name": "ref_trianglepick",
           "img": [
             "IMG_Lockpick_Triangle"
           ],
@@ -2293,7 +2293,7 @@
         },
         {
           "id": "item_key",
-          "name": "Chapel Key",
+          "name": "ref_key_chapel",
           "img": [
             "IMG_Key_Blue"
           ],
@@ -2370,7 +2370,7 @@
         },
         {
           "id": "item_key",
-          "name": "Library Key",
+          "name": "ref_key_library",
           "img": [
             "IMG_Key_Silver"
           ],
@@ -2456,7 +2456,7 @@
         },
         {
           "id": "item_magekey",
-          "name": "Air Key",
+          "name": "ref_key_air",
           "img": [
             "IMG_MageKey_Air"
           ],
@@ -2473,7 +2473,7 @@
         },
         {
           "id": "item_magekey",
-          "name": "Earth Key",
+          "name": "ref_key_earth",
           "img": [
             "IMG_MageKey_Earth"
           ],
@@ -2490,7 +2490,7 @@
         },
         {
           "id": "item_magekey",
-          "name": "Water Key",
+          "name": "ref_key_water",
           "img": [
             "IMG_MageKey_Water"
           ],
@@ -2507,7 +2507,7 @@
         },
         {
           "id": "item_magekey",
-          "name": "Fire Key",
+          "name": "ref_key_fire",
           "img": [
             "IMG_MageKey_Fire"
           ],
@@ -2541,7 +2541,7 @@
         },
         {
           "id": "item_key",
-          "name": "Cemetery Key",
+          "name": "ref_key_cemetery",
           "img": [
             "IMG_Key_Silver"
           ],
@@ -2617,7 +2617,7 @@
       "catItems": [
         {
           "id": "item_lantern",
-          "name": "Lantern",
+          "name": "ref_lantern",
           "img": [
             "IMG_Lantern_Alt2"
           ],
@@ -2626,7 +2626,7 @@
               "id": "fm_rowena_item_57",
               "findSimple": "find",
               "findArea": 1,
-              "findNarrow": "northeast bunkroom",
+              "findNarrow": "NE bunkroom",
               "findExact": "east alcove",
               "findCount": [1,1,1]
             }
@@ -2634,7 +2634,7 @@
         },
         {
           "id": "item_flare",
-          "name": "Flare",
+          "name": "ref_flare",
           "img": [
             "IMG_Flare"
           ],
@@ -2657,7 +2657,7 @@
       "catItems": [
         {
           "id": "item_compass",
-          "name": "Compass",
+          "name": "ref_compass",
           "img": [
             "IMG_Compass"
           ],
@@ -2673,7 +2673,7 @@
         },
         {
           "id": "item_scoutingorb",
-          "name": "Scouting Orb",
+          "name": "ref_scoutingorb",
           "img": [
             "IMG_ScoutingOrb"
           ],
@@ -2696,7 +2696,7 @@
       "catItems": [
         {
           "id": "item_frogbeastegg",
-          "name": "Frogbeast Egg",
+          "name": "ref_frogbeastegg",
           "img": [
             "IMG_FrogbeastEgg"
           ],
@@ -2726,7 +2726,7 @@
       "catItems": [
         {
           "id": "item_loaf",
-          "name": "Loaf",
+          "name": "ref_loaf",
           "img": [
             "IMG_Loaf"
           ],
@@ -2735,7 +2735,7 @@
               "id": "fm_rowena_item_63",
               "findSimple": "find",
               "findArea": 1,
-              "findNarrow": "southwest bunkroom",
+              "findNarrow": "SW bunkroom",
               "findExact": "footlocker",
               "findCountBox": [1,1,1],
               "findBox": true
@@ -2761,7 +2761,7 @@
         },
         {
           "id": "item_carrot",
-          "name": "Carrot",
+          "name": "ref_carrot",
           "img": [
             "IMG_Carrot"
           ],
@@ -2777,7 +2777,7 @@
         },
         {
           "id": "item_cucumber",
-          "name": "Cucumber",
+          "name": "ref_cucumber",
           "img": [
             "IMG_Cucumber"
           ],
@@ -2793,7 +2793,7 @@
         },
         {
           "id": "item_fruit",
-          "name": "Fruit",
+          "name": "ref_fruit",
           "img": [
             "IMG_Fruit"
           ],
@@ -2809,7 +2809,7 @@
         },
         {
           "id": "item_cheese",
-          "name": "Cheese",
+          "name": "ref_cheese",
           "img": [
             "IMG_Cheese"
           ],
@@ -2826,7 +2826,7 @@
         },
         {
           "id": "item_deerleg",
-          "name": "Deer Leg",
+          "name": "ref_deerleg",
           "img": [
             "IMG_DeerLeg"
           ],
@@ -2849,7 +2849,7 @@
       "catItems": [
         {
           "id": "item_letter",
-          "name": "Letter",
+          "name": "ref_letter",
           "img": [
             "IMG_Letter"
           ],
@@ -2866,7 +2866,7 @@
         },
         {
           "id": "item_crumpledpaper",
-          "name": "Crumpled Paper",
+          "name": "ref_crumpledpaper",
           "img": [
             "IMG_CrumpledPaper"
           ],
@@ -2891,7 +2891,7 @@
         },
         {
           "id": "item_unrolledscroll",
-          "name": "Scroll",
+          "name": "ref_scroll",
           "img": [
             "IMG_UnrolledScroll"
           ],
@@ -2900,15 +2900,15 @@
               "id": "fm_rowena_item_74",
               "findSimple": "find",
               "findArea": 1,
-              "findNarrow": "northwest bunkroom",
-              "findExact": "by NW bunk",
+              "findNarrow": "NW bunkroom",
+              "findExact": "by northwest bunk",
               "findCount": [1,1,1]
             },
             {
               "id": "fm_rowena_item_75",
               "findSimple": "find",
               "findArea": 1,
-              "findNarrow": "northeast bunkroom",
+              "findNarrow": "NE bunkroom",
               "findExact": "footlocker",
               "findCount": [2,2,2],
               "findBox": true
@@ -2965,7 +2965,7 @@
         },
         {
           "id": "item_papyrus",
-          "name": "Papyrus",
+          "name": "ref_papyrus",
           "img": [
             "IMG_Papyrus"
           ],
@@ -3046,7 +3046,7 @@
       "catJunk": [
         {
           "id": "junk_woodenbowl",
-          "name": "Wooden Bowl",
+          "name": "ref_woodenbowl",
           "img": [
             "IMG_WoodenBowl"
           ],
@@ -3062,7 +3062,7 @@
         },
         {
           "id": "junk_metalbowl",
-          "name": "Metal Bowl",
+          "name": "ref_metalbowl",
           "img": [
             "IMG_MetalBowl"
           ],
@@ -3086,7 +3086,7 @@
         },
         {
           "id": "junk_porcelainplate",
-          "name": "Porcelain Plate",
+          "name": "ref_porcelainplate",
           "img": [
             "IMG_PorcelainPlate"
           ],
@@ -3103,7 +3103,7 @@
         },
         {
           "id": "junk_metaltray",
-          "name": "Metal Tray",
+          "name": "ref_metaltray",
           "img": [
             "IMG_MetalTray_EP"
           ],
@@ -3133,7 +3133,7 @@
       "catJunk": [
         {
           "id": "junk_metalgoblet",
-          "name": "Metal Goblet",
+          "name": "ref_metalgoblet",
           "img": [
             "IMG_MetalGoblet"
           ],
@@ -3155,7 +3155,7 @@
       "catJunk": [
         {
           "id": "junk_greenbottle",
-          "name": "Green Bottle",
+          "name": "ref_greenbottle",
           "img": [
             "IMG_GreenBottle_EP"
           ],
@@ -3164,15 +3164,15 @@
               "id": "fm_rowena_junk_8",
               "findSimple": "find",
               "findArea": 1,
-              "findNarrow": "northwest bunkroom",
-              "findExact": "by NW bunk",
+              "findNarrow": "NW bunkroom",
+              "findExact": "by northwest bunk",
               "findCount": [1,1,1]
             },
             {
               "id": "fm_rowena_junk_9",
               "findSimple": "find",
               "findArea": 1,
-              "findNarrow": "northwest bunkroom",
+              "findNarrow": "NW bunkroom",
               "findExact": "footlocker",
               "findCountBox": [1,1,1],
               "findBox": true
@@ -3219,7 +3219,7 @@
         },
         {
           "id": "junk_graybottle",
-          "name": "Gray Bottle",
+          "name": "ref_graybottle",
           "img": [
             "IMG_GrayBottle"
           ],
@@ -3249,7 +3249,7 @@
       "catJunk": [
         {
           "id": "junk_powderkeg",
-          "name": "Powder Keg",
+          "name": "ref_powderkeg",
           "img": [
             "IMG_PowderKeg_Alt1"
           ],
@@ -3272,7 +3272,7 @@
       "catJunk": [
         {
           "id": "junk_hairbrush",
-          "name": "Hair Brush",
+          "name": "ref_hairbrush",
           "img": [
             "IMG_HairBrush"
           ],
@@ -3289,7 +3289,7 @@
         },
         {
           "id": "junk_handmirror",
-          "name": "Hand Mirror",
+          "name": "ref_handmirror",
           "img": [
             "IMG_HandMirror"
           ],
@@ -3312,7 +3312,7 @@
       "catJunk": [
         {
           "id": "junk_pairofdice",
-          "name": "Pair of Dice",
+          "name": "ref_pairofdice",
           "img": [
             "IMG_PairOfDice"
           ],
@@ -3321,7 +3321,7 @@
               "id": "fm_rowena_junk_20",
               "findSimple": "find",
               "findArea": 1,
-              "findNarrow": "northwest bunkroom",
+              "findNarrow": "NW bunkroom",
               "findExact": "central table",
               "findCount": [1,1,1]
             }
@@ -3335,7 +3335,7 @@
       "catJunk": [
         {
           "id": "junk_pottedplant",
-          "name": "Potted Plant",
+          "name": "ref_pottedplant",
           "img": [
             "IMG_PottedPlant"
           ],
@@ -3352,7 +3352,7 @@
         },
         {
           "id": "junk_vase",
-          "name": "Vase",
+          "name": "ref_vase",
           "img": [
             "IMG_Vase"
           ],
@@ -3374,7 +3374,7 @@
       "catJunk": [
         {
           "id": "junk_spade",
-          "name": "Spade",
+          "name": "ref_spade",
           "img": [
             "IMG_Spade"
           ],
@@ -3397,7 +3397,7 @@
       "catJunk": [
         {
           "id": "junk_doorknob",
-          "name": "Doorknob",
+          "name": "ref_doorknob",
           "img": [
             "IMG_Doorknob"
           ],
@@ -3421,7 +3421,7 @@
       "catJunk": [
         {
           "id": "junk_rubble",
-          "name": "Rubble",
+          "name": "ref_rubble",
           "img": [
             "IMG_Rubble"
           ],
@@ -3451,7 +3451,7 @@
       "catJunk": [
         {
           "id": "junk_skull",
-          "name": "Skull",
+          "name": "ref_skull",
           "img": [
             "IMG_Skull"
           ],
@@ -3496,7 +3496,7 @@
       "rewards": [
         {
           "id": "sec_1_1",
-          "rewardLoot": "Spice Bag",
+          "rewardLoot": "ref_spicebag",
           "value": [0,0,40,0],
           "findCount": [3,3,3]
         }
@@ -3520,7 +3520,7 @@
       "rewards": [
         {
           "id": "sec_2_1",
-          "rewardLoot": "Silver Nugget",
+          "rewardLoot": "ref_silvernugget",
           "value": [50,0,0,0],
           "findCount": [1,1,1]
         }
@@ -3578,7 +3578,7 @@
       "rewards": [
         {
           "id": "sec_4_1",
-          "rewardLoot": "Fine Wine",
+          "rewardLoot": "ref_finewine",
           "value": [0,0,50,0],
           "findCount": [1,1,1]
         }
@@ -3636,7 +3636,7 @@
       "rewards": [
         {
           "id": "sec_6_1",
-          "rewardLoot": "Statuette",
+          "rewardLoot": "ref_statuette",
           "value": [0,0,15,0],
           "findCount": [1,1,1]
         }
@@ -3660,7 +3660,7 @@
       "rewards": [
         {
           "id": "sec_7_1",
-          "rewardLoot": "Copper Coin Stack",
+          "rewardLoot": "ref_coppercoinstack",
           "value": [5,0,0,0],
           "findCount": [3,3,3]
         }
@@ -3684,7 +3684,7 @@
       "rewards": [
         {
           "id": "sec_8_1",
-          "rewardLoot": "Precursor Tapestry",
+          "rewardLoot": "ref_pretapestry",
           "value": [0,0,150,0],
           "findCount": [1,1,1]
         }

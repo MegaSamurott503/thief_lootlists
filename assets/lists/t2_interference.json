@@ -60,7 +60,7 @@
   "loot": [
     {
       "id": "loot_coppercoinstack",
-      "name": "Copper Coin Stack",
+      "name": "ref_coppercoinstack",
       "img": [
         "IMG_CopperCoinStack"
       ],
@@ -137,7 +137,7 @@
     },
     {
       "id": "loot_finewine",
-      "name": "Fine Wine",
+      "name": "ref_finewine",
       "img": [
         "IMG_FineWine"
       ],
@@ -182,7 +182,7 @@
     },
     {
       "id": "loot_gemring",
-      "name": "Gem Ring",
+      "name": "ref_gemring",
       "img": [
         "IMG_GemRing"
       ],
@@ -209,7 +209,7 @@
     },
     {
       "id": "loot_goldcandlestick",
-      "name": "Gold Candlestick",
+      "name": "ref_goldcandlestick",
       "img": [
         "IMG_GoldCandlestick"
       ],
@@ -236,7 +236,7 @@
     },
     {
       "id": "loot_goldgoblet",
-      "name": "Gold Goblet",
+      "name": "ref_goldgoblet",
       "img": [
         "IMG_GoldGoblet"
       ],
@@ -274,7 +274,7 @@
     },
     {
       "id": "loot_goldnugget",
-      "name": "Gold Nugget",
+      "name": "ref_goldnugget",
       "img": [
         "IMG_GoldNugget"
       ],
@@ -301,7 +301,7 @@
     },
     {
       "id": "loot_goldplate",
-      "name": "Gold Plate",
+      "name": "ref_goldplate",
       "img": [
         "IMG_GoldPlate"
       ],
@@ -351,7 +351,7 @@
     },
     {
       "id": "loot_luckycoins",
-      "name": "Lucky Coins",
+      "name": "ref_luckycoins",
       "img": [
         "IMG_LuckyCoins"
       ],
@@ -379,7 +379,7 @@
     },
     {
       "id": "loot_necklace",
-      "name": "Necklace",
+      "name": "ref_necklace",
       "img": [
         "IMG_Necklace"
       ],
@@ -406,7 +406,7 @@
     },
     {
       "id": "loot_ornateplate",
-      "name": "Ornate Plate",
+      "name": "ref_ornateplate",
       "img": [
         "IMG_OrnatePlate"
       ],
@@ -433,7 +433,7 @@
     },
     {
       "id": "loot_purplevase",
-      "name": "Purple Vase",
+      "name": "ref_purplevase",
       "img": [
         "IMG_PurpleVase"
       ],
@@ -472,7 +472,7 @@
     },
     {
       "id": "loot_purse",
-      "name": "Purse",
+      "name": "ref_purse",
       "img": [
         "IMG_Purse"
       ],
@@ -572,7 +572,7 @@
     },
     {
       "id": "loot_silvercoinstack",
-      "name": "Silver Coin Stack",
+      "name": "ref_silvercoinstack",
       "img": [
         "IMG_SilverCoinStack"
       ],
@@ -599,7 +599,7 @@
     },
     {
       "id": "loot_silverflute",
-      "name": "Silver Flute",
+      "name": "ref_silverflute",
       "img": [
         "IMG_SilverFlute"
       ],
@@ -626,7 +626,7 @@
     },
     {
       "id": "loot_silvernugget",
-      "name": "Silver Nugget",
+      "name": "ref_silvernugget",
       "img": [
         "IMG_SilverNugget"
       ],
@@ -653,7 +653,7 @@
     },
     {
       "id": "loot_spicebag",
-      "name": "Spice Bag",
+      "name": "ref_spicebag",
       "img": [
         "IMG_SpiceBag"
       ],
@@ -680,7 +680,7 @@
     },
     {
       "id": "loot_tiara",
-      "name": "Tiara",
+      "name": "ref_tiara",
       "img": [
         "IMG_Tiara"
       ],
@@ -708,7 +708,7 @@
     },
     {
       "id": "loot_weddingrings",
-      "name": "Wedding Rings",
+      "name": "ref_weddingrings",
       "img": [
         "IMG_WeddingRings"
       ],
@@ -742,7 +742,7 @@
       "catItems": [
         {
           "id": "item_sword",
-          "name": "Sword",
+          "name": "ref_sword",
           "img": [
             "IMG_Sword"
           ],
@@ -758,7 +758,7 @@
         },
         {
           "id": "item_blackjack",
-          "name": "Blackjack",
+          "name": "ref_blackjack",
           "img": [
             "IMG_Blackjack"
           ],
@@ -780,7 +780,7 @@
       "catItems": [
         {
           "id": "item_broadheadarrow",
-          "name": "Broadhead Arrow",
+          "name": "ref_broadheadarrow",
           "img": [
             "IMG_BroadheadArrow"
           ],
@@ -798,7 +798,7 @@
         },
         {
           "id": "item_waterarrow",
-          "name": "Water Arrow",
+          "name": "ref_waterarrow",
           "img": [
             "IMG_WaterArrow"
           ],
@@ -820,7 +820,7 @@
       "catItems": [
         {
           "id": "item_flashbomb",
-          "name": "Flash Bomb",
+          "name": "ref_flashbomb",
           "img": [
             "IMG_FlashBomb"
           ],
@@ -852,7 +852,7 @@
       "catItems": [
         {
           "id": "item_healingpotion",
-          "name": "Healing Potion",
+          "name": "ref_healingpotion",
           "img": [
             "IMG_HealingPotion"
           ],
@@ -878,7 +878,7 @@
         },
         {
           "id": "item_speedpotion",
-          "name": "Speed Potion",
+          "name": "ref_speedpotion",
           "img": [
             "IMG_SpeedPotion"
           ],
@@ -1010,7 +1010,7 @@
       "catItems": [
         {
           "id": "item_flare",
-          "name": "Flare",
+          "name": "ref_flare",
           "img": [
             "IMG_Flare"
           ],
@@ -1042,7 +1042,7 @@
       "catItems": [
         {
           "id": "item_compass",
-          "name": "Compass",
+          "name": "ref_compass",
           "img": [
             "IMG_Compass"
           ],
@@ -1058,7 +1058,7 @@
         },
         {
           "id": "item_birdcall",
-          "name": "Birdcall",
+          "name": "ref_birdcall",
           "img": [
             "IMG_Birdcall"
           ],
@@ -1080,7 +1080,7 @@
       "catItems": [
         {
           "id": "item_loaf",
-          "name": "Loaf",
+          "name": "ref_loaf",
           "img": [
             "IMG_Loaf"
           ],
@@ -1105,7 +1105,7 @@
         },
         {
           "id": "item_carrot",
-          "name": "Carrot",
+          "name": "ref_carrot",
           "img": [
             "IMG_Carrot"
           ],
@@ -1122,7 +1122,7 @@
         },
         {
           "id": "item_cheese",
-          "name": "Cheese",
+          "name": "ref_cheese",
           "img": [
             "IMG_Cheese"
           ],
@@ -1155,7 +1155,7 @@
         },
         {
           "id": "item_deerleg",
-          "name": "Deer Leg",
+          "name": "ref_deerleg",
           "img": [
             "IMG_DeerLeg"
           ],
@@ -1180,7 +1180,7 @@
       "catJunk": [
         {
           "id": "junk_normalcrate",
-          "name": "Normal Crate",
+          "name": "ref_normalcrate",
           "img": [
             "IMG_NormalCrate"
           ],
@@ -1230,7 +1230,7 @@
       "catJunk": [
         {
           "id": "junk_metalbowl",
-          "name": "Metal Bowl",
+          "name": "ref_metalbowl",
           "img": [
             "IMG_MetalBowl"
           ],
@@ -1247,7 +1247,7 @@
         },
         {
           "id": "junk_metalplate",
-          "name": "Metal Plate",
+          "name": "ref_metalplate",
           "img": [
             "IMG_MetalPlate"
           ],
@@ -1280,7 +1280,7 @@
         },
         {
           "id": "junk_porcelainplate",
-          "name": "Porcelain Plate",
+          "name": "ref_porcelainplate",
           "img": [
             "IMG_PorcelainPlate"
           ],
@@ -1303,7 +1303,7 @@
         },
         {
           "id": "junk_metaltray",
-          "name": "Metal Tray",
+          "name": "ref_metaltray",
           "img": [
             "IMG_MetalTray"
           ],
@@ -1342,7 +1342,7 @@
       "catJunk": [
         {
           "id": "junk_woodengoblet",
-          "name": "Wooden Goblet",
+          "name": "ref_woodengoblet",
           "img": [
             "IMG_WoodenGoblet"
           ],
@@ -1373,7 +1373,7 @@
         },
         {
           "id": "junk_metalgoblet",
-          "name": "Metal Goblet",
+          "name": "ref_metalgoblet",
           "img": [
             "IMG_MetalGoblet"
           ],
@@ -1411,7 +1411,7 @@
       "catJunk": [
         {
           "id": "junk_greenbottle",
-          "name": "Green Bottle",
+          "name": "ref_greenbottle",
           "img": [
             "IMG_GreenBottle"
           ],
@@ -1443,7 +1443,7 @@
         },
         {
           "id": "junk_graybottle",
-          "name": "Gray Bottle",
+          "name": "ref_graybottle",
           "img": [
             "IMG_GrayBottle"
           ],
@@ -1474,7 +1474,7 @@
       "catJunk": [
         {
           "id": "junk_hairbrush",
-          "name": "Hair Brush",
+          "name": "ref_hairbrush",
           "img": [
             "IMG_HairBrush"
           ],
@@ -1499,7 +1499,7 @@
         },
         {
           "id": "junk_handmirror",
-          "name": "Hand Mirror",
+          "name": "ref_handmirror",
           "img": [
             "IMG_HandMirror"
           ],
@@ -1524,7 +1524,7 @@
         },
         {
           "id": "junk_spectacles",
-          "name": "Spectacles",
+          "name": "ref_spectacles",
           "img": [
             "IMG_ReadingGlasses"
           ],
@@ -1547,7 +1547,7 @@
       "catJunk": [
         {
           "id": "junk_deckofcards",
-          "name": "Deck of Cards",
+          "name": "ref_deckofcards",
           "img": [
             "IMG_DeckOfCards"
           ],
@@ -1585,7 +1585,7 @@
       "catJunk": [
         {
           "id": "junk_vase",
-          "name": "Vase",
+          "name": "ref_vase",
           "img": [
             "IMG_Vase"
           ],
@@ -1643,23 +1643,23 @@
       "rewards": [
         {
           "id": "sec_1_1",
-          "rewardLoot": "Purse",
+          "rewardLoot": "ref_purse",
           "value": [0,50,0,0],
           "findCount": [1,1,1]
         },
         {
           "id": "sec_1_2",
-          "rewardItem": "Flash Bomb",
+          "rewardItem": "ref_flashbomb",
           "findCount": [2,2,1]
         },
         {
           "id": "sec_1_3",
-          "rewardItem": "Healing Potion",
+          "rewardItem": "ref_healingpotion",
           "findCount": [1,1,1]
         },
         {
           "id": "sec_1_4",
-          "rewardItem": "Flare",
+          "rewardItem": "ref_flare",
           "findCount": [1,1,1]
         }
       ]
@@ -1682,7 +1682,7 @@
       "rewards": [
         {
           "id": "sec_2_1",
-          "rewardItem": "Speed Potion",
+          "rewardItem": "ref_speedpotion",
           "findCount": [1,1,1]
         }
       ]
@@ -1705,7 +1705,7 @@
       "rewards": [
         {
           "id": "sec_3_1",
-          "rewardLoot": "Tiara",
+          "rewardLoot": "ref_tiara",
           "value": [75,100,0,0],
           "findCount": [1,1,1]
         }

@@ -1,0 +1,1399 @@
+{
+  "id": "fm_horrors-below",
+  "title": "What Lies Below",
+  "subtitle": "The Crusade for the Old Quarter",
+  "author": [
+    "auth_yandros"
+  ],
+  "screens": [
+    "MIS_fm_horrors-below_A",
+    "MIS_fm_horrors-below_B"
+  ],
+  "firstRelease": "September 2006",
+  "latestVersion": "NewDark 1.0",
+  "goToNext": "fm_horrors-dance",
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [505,145,435,0,1085],
+    [505,145,435,0,1085],
+    [505,145,435,0,1085]
+  ],
+  "lootCount": [33,33,33],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [800,800,800],
+    "info": "bonus"
+  },
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Loadout Store"},
+    {"key": "2", "value": "Sector 12"},
+    {"key": "3", "value": "Sector 13"},
+    {"key": "4", "value": "Sector 13 Crossover Station"},
+    {"key": "5", "value": "Sector 13 Primary Reservoir"},
+    {"key": "6", "value": "Sector 14"},
+    {"key": "7", "value": "Sector 15"},
+    {"key": "8", "value": "Crypt Upper Passage"},
+    {"key": "9", "value": "Cathedral Crypt"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_addoniziocrystal",
+      "name": "ref_addoniziocrystal",
+      "img": [
+        "IMG_AddonizioCrystal"
+      ],
+      "values": [
+        {
+          "id": "25gems",
+          "value": [0,25,0,0],
+          "locations": [
+            {
+              "id": "relics-below_loot_1",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "west Keeper room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            },
+            {
+              "id": "relics-below_loot_2",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "central Keeper room",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_AddonizioCrystal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coin",
+      "name": "ref_coin",
+      "img": [
+        "IMG_Coin"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "relics-below_loot_3",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "near power room",
+              "findExact": "light niche",
+              "findCount": [2,2,2],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "relics-below_loot_4",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "offices",
+              "findExact": "by north desk",
+              "findCount": [3,3,3],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "relics-below_loot_5",
+              "findSimple": "findH",
+              "findArea": 4,
+              "findNarrow": "crossover passage",
+              "findExact": "main tunnel",
+              "findCount": [3,3,3],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "relics-below_loot_6",
+              "findSimple": "findH",
+              "findArea": 4,
+              "findNarrow": "crossover passage",
+              "findExact": "SW tunnel",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "relics-below_loot_7",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "Francis's office",
+              "findExact": "under desk",
+              "findCount": [2,2,2],
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "relics-below_loot_8",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "south gate control",
+              "findExact": "under chair",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "relics-below_loot_9",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "Reginald's office",
+              "findExact": "barrel",
+              "findCount": [2,2,2],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            },
+            {
+              "id": "relics-below_loot_10",
+              "findSimple": "findM",
+              "findArea": 8,
+              "findNarrow": "near north desk",
+              "findExact": "under bench",
+              "findCount": [2,2,2],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "ref_gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "20gems",
+          "value": [0,20,0,0],
+          "locations": [
+            {
+              "id": "relics-below_loot_11",
+              "findSimple": "findE",
+              "findArea": 4,
+              "findNarrow": "west reservoir",
+              "findExact": "underwater",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_jeweleddagger",
+      "name": "ref_jeweleddagger",
+      "img": [
+        "IMG_JeweledDagger"
+      ],
+      "values": [
+        {
+          "id": "25gold25gems",
+          "value": [25,25,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-below_loot_12",
+              "findSimple": "findM",
+              "findArea": 3,
+              "findNarrow": "Keeper room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_JeweledDagger"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "ref_luckycoins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-below_loot_13",
+              "findSimple": "findH",
+              "findArea": 7,
+              "findNarrow": "office",
+              "findExact": "under north chair",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "ref_prejar",
+      "img": [
+        "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Tall"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_horrors-below_loot_14",
+              "findSimple": "findE",
+              "findArea": 3,
+              "findNarrow": "west office",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_PrecursorJar_Tall"
+              ]
+            },
+            {
+              "id": "fm_horrors-below_loot_15",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "Lauden's office",
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_PrecursorJar_Small"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "ref_pretapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_horrors-below_loot_16",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "Keeper passage",
+              "findExact": "north niche",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            },
+            {
+              "id": "fm_horrors-below_loot_17",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "west Keeper room",
+              "findExact": "on bookcase",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "ref_purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "30gold",
+          "value": [30,0,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-below_loot_18",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "E maintenance room",
+              "findExact": "behind crate",
+              "findCount": [1,1,1],
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_serpentyletorc",
+      "name": "ref_serpentyletorc",
+      "img": [
+        "IMG_SerpentyleTorc"
+      ],
+      "values": [
+        {
+          "id": "300gold50gems",
+          "value": [300,50,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-below_loot_19",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findNarrow": "central Keeper room",
+              "findExact": "table",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_SerpentyleTorc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvernugget",
+      "name": "ref_silvernugget",
+      "img": [
+        "IMG_SilverNugget"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_horrors-below_loot_20",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "east storage",
+              "findExact": "behind barrels",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_SilverNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "ref_statuette",
+      "img": [
+        "IMG_Statuette_Nobleman",
+        "IMG_Statuette_Monk"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_horrors-below_loot_21",
+              "findSimple": "findH",
+              "findArea": 2,
+              "findNarrow": "offices",
+              "findExact": "behind south desk",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_Statuette_Monk"
+              ]
+            },
+            {
+              "id": "fm_horrors-below_loot_22",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "west reservoir",
+              "findExact": "by drainage",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Statuette_Nobleman"
+              ]
+            },
+            {
+              "id": "fm_horrors-below_loot_23",
+              "findSimple": "findE",
+              "findArea": 6,
+              "findNarrow": "Reginald's office",
+              "findExact": "by barrel",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_Statuette_Nobleman"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_horrors-below_loot_24",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "power room",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_Statuette_Monk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_treebeastmask",
+      "name": "ref_treebeastmask",
+      "img": [
+        "IMG_TreebeastMask"
+      ],
+      "values": [
+        {
+          "id": "200goods",
+          "value": [0,0,200,0],
+          "locations": [
+            {
+              "id": "fm_horrors-below_loot_25",
+              "findSimple": "findH",
+              "findArea": 2,
+              "findNarrow": "middle waterway",
+              "findExact": "above W bridge",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_TreebeastMask"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "ref_sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "ref_broadheadarrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [10,10,10],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "ref_mossarrow",
+          "img": [
+            "IMG_MossArrow",
+            "IMG_MossArrow_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_horrors-below_item_4",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "loadout": "store",
+              "price": 125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_fraggrenade",
+          "name": "Frag Grenade",
+          "img": [
+            "IMG_FragGrenade"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_horrors-below_item_6",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [5,5,5],
+              "findCountActual": [5,4,3],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "fm_horrors-below_item_7",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "east reservoir",
+              "findExact": "northeast ledge",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_horrors-below_item_8",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "west Keeper room",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_flashgrenade",
+          "name": "Flash Grenade",
+          "img": [
+            "IMG_FlashGrenade"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_9",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,2],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_horrors-below_item_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,4],
+              "findCountActual": [4,3,2],
+              "loadout": "store",
+              "price": 350
+            },
+            {
+              "id": "fm_horrors-below_item_11",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "west Keeper room",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "findSecret": true
+            },
+            {
+              "id": "fm_horrors-below_item_12",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "office",
+              "findExact": "desk",
+              "findCount": [2,2,1]
+            }
+          ]
+        },
+        {
+          "id": "item_holywatergrenade",
+          "name": "Holy Water Grenade",
+          "img": [
+            "IMG_HolyWaterGrenade"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_13",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_horrors-below_item_14",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [4,4,4],
+              "findCountActual": [3,2,1],
+              "loadout": "store",
+              "price": 400
+            },
+            {
+              "id": "fm_horrors-below_item_15",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "ref_flashmine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_16",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [3,3,3],
+              "loadout": "store",
+              "price": 200
+            },
+            {
+              "id": "fm_horrors-below_item_17",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "west Keeper room",
+              "findExact": "niche",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "ref_healingpotion",
+          "img": [
+            "IMG_HealingPotion_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_18",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [2,2,2],
+              "loadout": "store",
+              "price": 250
+            },
+            {
+              "id": "fm_horrors-below_item_19",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "offices",
+              "findExact": "rope crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_horrors-below_item_20",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Francis's office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_horrors-below_item_21",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "west Keeper room",
+              "findExact": "on bookcase",
+              "findCount": [1,1,0],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_speedpotion",
+          "name": "ref_speedpotion",
+          "img": [
+            "IMG_SpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_22",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Keeper room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilitypotion",
+          "name": "ref_invispotion",
+          "img": [
+            "IMG_InvisibilityPotion_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_23",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "Keeper passage",
+              "findExact": "north niche",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_concentratedholywater",
+          "name": "Concentrated Holy Water",
+          "img": [
+            "IMG_CyanBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_24",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "ref_squarepick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_25",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "ref_trianglepick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_26",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "S-12 Power Room Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_27",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "west storage",
+              "findExact": "behind desk",
+              "findCount": [0,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "S-13 Gate Room Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_28",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "offices",
+              "findExact": "under south desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Crossover West Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_29",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "west office",
+              "findExact": "barrel",
+              "findCount": [0,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Crossover East Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_30",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Francis's office",
+              "findExact": "under desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "S-14 Valve Control Key",
+          "img": [
+            "IMG_Key_Blue"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_31",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "Reginald's office",
+              "findExact": "by table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "S-15 Gate Room Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_32",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "storage room B",
+              "findExact": "open crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Crypt Gate Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_33",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "south desk",
+              "findCount": [1,1,1],
+              "findRecipe": "after taking Medallion of Protection"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "S-09 Key",
+          "img": [
+            "IMG_Key_Yellow"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_34",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "near entrance",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "ref_compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_35",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_scoutingorb",
+          "name": "ref_scoutingorb",
+          "img": [
+            "IMG_ScoutingOrb"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_36",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Keeper room",
+              "findExact": "shelf",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_horrors-below_item_37",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "central Keeper room",
+              "findExact": "niche",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_dewdrop",
+          "name": "Gloria's Dewdrop",
+          "img": [
+            "IMG_Dewdrop"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_38",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "offices",
+              "findExact": "behind west crate",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_jewelry",
+      "category": "Jewelry",
+      "catItems": [
+        {
+          "id": "item_keepermedallion",
+          "name": "Medallion of Protection",
+          "img": [
+            "IMG_KeeperMedallion_EP"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_item_39",
+              "findSimple": "find",
+              "findArea": 8,
+              "findNarrow": "Keeper room",
+              "findExact": "table",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metalplate",
+          "name": "ref_metalplate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_junk_1",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "W maintenance room",
+              "findExact": "crate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_horrors-below_junk_2",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "E maintenance room",
+              "findExact": "by crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_levers",
+      "category": "Levers and Knobs",
+      "catJunk": [
+        {
+          "id": "junk_leverhandle",
+          "name": "ref_leverhandle",
+          "img": [
+            "IMG_LeverHandle"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_junk_3",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "overflow reservoir",
+              "findExact": "SE corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_weapons",
+      "category": "Weapons",
+      "catJunk": [
+        {
+          "id": "junk_swordhilt",
+          "name": "ref_swordhilt",
+          "img": [
+            "IMG_SwordHilt"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_junk_4",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "overflow reservoir",
+              "findExact": "NE corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_warhammer",
+          "name": "ref_warhammer",
+          "img": [
+            "IMG_Warhammer"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_junk_5",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "gate control room",
+              "findExact": "by chair",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_necronymus",
+          "name": "Necronymus",
+          "img": [
+            "IMG_Necronymus"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_junk_6",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "above pedestal",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_grisly",
+      "category": "Grisly Objects",
+      "catJunk": [
+        {
+          "id": "junk_skull",
+          "name": "ref_skull",
+          "img": [
+            "IMG_Skull"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_junk_7",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "offices",
+              "findExact": "near north desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_ribcage",
+          "name": "ref_ribcage",
+          "img": [
+            "IMG_Ribcage"
+          ],
+          "locations": [
+            {
+              "id": "fm_horrors-below_junk_7",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "overflow reservoir",
+              "findExact": "by NE ladder",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_horrors-below_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_horrors-below_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 2,
+          "findNarrow": "middle waterway",
+          "findDiff": [1,1,1],
+          "method": "Break the cobweb above the west bridge"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "ref_treebeastmask",
+          "value": [0,0,200,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_horrors-below_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_horrors-below_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 2,
+          "findNarrow": "offices",
+          "findDiff": [1,1,1],
+          "method": "Look behind the west crate"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardItem": "Gloria's Dewdrop",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_horrors-below_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_horrors-below_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 7,
+          "findNarrow": "by Sector 11 entrance",
+          "findDiff": [1,1,1],
+          "method": "Go through the false wall by the glyph"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardLoot": "ref_addoniziocrystal",
+          "value": [0,25,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_2",
+          "rewardLoot": "ref_pretapestry",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_3",
+          "rewardItem": "ref_healingpotion",
+          "findCount": [1,1,0]
+        },
+        {
+          "id": "sec_3_4",
+          "rewardItem": "Frag Grenade",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_5",
+          "rewardItem": "Flash Grenade",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_6",
+          "rewardItem": "ref_flashmine",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_7",
+          "rewardHint": [
+            "another Keeper room's location",
+            "how to reach the overhead walkway"
+          ],
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

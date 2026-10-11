@@ -39,7 +39,7 @@
       "catItems": [
         {
           "id": "item_sword",
-          "name": "Sword",
+          "name": "ref_sword",
           "img": [
             "IMG_Sword"
           ],
@@ -55,7 +55,7 @@
         },
         {
           "id": "item_blackjack",
-          "name": "Blackjack",
+          "name": "ref_blackjack",
           "img": [
             "IMG_Blackjack"
           ],
@@ -77,7 +77,7 @@
       "catItems": [
         {
           "id": "item_broadheadarrow",
-          "name": "Broadhead Arrow",
+          "name": "ref_broadheadarrow",
           "img": [
             "IMG_BroadheadArrow"
           ],
@@ -93,7 +93,7 @@
         },
         {
           "id": "item_waterarrow",
-          "name": "Water Arrow",
+          "name": "ref_waterarrow",
           "img": [
             "IMG_WaterArrow"
           ],
@@ -115,7 +115,7 @@
       "catItems": [
         {
           "id": "item_watercrystal",
-          "name": "Water Crystal",
+          "name": "ref_watercrystal",
           "img": [
             "IMG_WaterCrystal"
           ],
@@ -139,7 +139,7 @@
       "catItems": [
         {
           "id": "item_flashbomb",
-          "name": "Flash Bomb",
+          "name": "ref_flashbomb",
           "img": [
             "IMG_FlashBomb"
           ],
@@ -161,7 +161,7 @@
       "catItems": [
         {
           "id": "item_flare",
-          "name": "Flare",
+          "name": "ref_flare",
           "img": [
             "IMG_Flare"
           ],
@@ -255,7 +255,7 @@
       "catItems": [
         {
           "id": "item_talismanofearth",
-          "name": "Talisman of Earth",
+          "name": "ref_talismanofearth",
           "img": [
             "IMG_TalismanOfEarth",
             "IMG_TalismanOfEarth_Alt1",
@@ -274,7 +274,7 @@
         },
         {
           "id": "item_talismanoffire",
-          "name": "Talisman of Fire",
+          "name": "ref_talismanoffire",
           "img": [
             "IMG_TalismanOfFire",
             "IMG_TalismanOfFire_Alt1",
@@ -293,7 +293,7 @@
         },
         {
           "id": "item_talismanofwater",
-          "name": "Talisman of Water",
+          "name": "ref_talismanofwater",
           "img": [
             "IMG_TalismanOfWater",
             "IMG_TalismanOfWater_Alt1",
@@ -312,7 +312,7 @@
         },
         {
           "id": "item_talismanofair",
-          "name": "Talisman of Air",
+          "name": "ref_talismanofair",
           "img": [
             "IMG_TalismanOfAir",
             "IMG_TalismanOfAir_Alt1",

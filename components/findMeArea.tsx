@@ -8,6 +8,7 @@ import { memo, useEffect, useState, useContext } from 'react';
 
 import { FindMeCount } from '@/components/findMeCount';
 
+import { myItems } from '@/constants/jsonFilters';
 import { stylesList } from '@/constants/stylesList';
 import { SettingContext } from '@/constants/context';
 
@@ -43,11 +44,7 @@ export const FindMeArea = memo(function FindMeArea(props) {
   }, []);
 
   return (
-    <Text style={[
-      stylesList.locText,
-      {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-        color: colors.text}
-    ]}>
+    <Text style={[stylesList.locText(width), {color: colors.text}]}>
       {/* Does this item trigger (or contribute to) an objective? */}
       {props.findObj &&
         <Text style={{fontWeight: 'bold', color: colors.locObj}}>
@@ -86,8 +83,13 @@ export const FindMeArea = memo(function FindMeArea(props) {
       {(props.findObj || getDiffExclude) &&
         ' '
       }
-      {/* Print the area where this item is found. */}
-      {props.findArea}
+      {/* Print the area where this item is found.
+          The secrets list borrows this component for listing rewards,
+          so make sure it can use references to item names, too. */}
+      {props.findArea.startsWith("ref_")
+        ? myItems[props.findArea]
+        : props.findArea
+      }
       {/* Is there more than 1 of this item at loadout?
           Or, is there more than 1 of this item in the secret list? */}
       {(props.loadout === "start" || props.loadout === "store" ||
@@ -103,39 +105,6 @@ export const FindMeArea = memo(function FindMeArea(props) {
           carryover={props.carryover}
         />
       }
-      {/* Mirror the objective and difficulty markings, if any. */}
-      {/*{(props.findObj || getDiffExclude) &&
-        ' '
-      }
-      {getDiffExclude &&
-        (props.findCount && props.findCount[2] > 0 ||
-          props.findCountRecipe && props.findCountRecipe[2] > 0 ||
-          props.findCountBox && props.findCountBox[2] > 0) &&
-        <Text style={{fontWeight: 'bold', color: colors.locX}}>
-          {'▷'}
-        </Text>
-      }
-      {getDiffExclude &&
-        (props.findCount && props.findCount[1] > 0 ||
-          props.findCountRecipe && props.findCountRecipe[1] > 0 ||
-          props.findCountBox && props.findCountBox[1] > 0) &&
-        <Text style={{fontWeight: 'bold', color: colors.locH}}>
-          {'>'}
-        </Text>
-      }
-      {getDiffExclude &&
-        (props.findCount && props.findCount[0] > 0 ||
-          props.findCountRecipe && props.findCountRecipe[0] > 0 ||
-          props.findCountBox && props.findCountBox[0] > 0) &&
-        <Text style={{fontWeight: 'bold', color: colors.locN}}>
-          {'❱'}
-        </Text>
-      }
-      {props.findObj &&
-        <Text style={{fontWeight: 'bold', color: colors.locObj}}>
-          {'✶'}
-        </Text>
-      }*/}
       {/* Print the footnote icon for this item, if applicable. */}
       {props.findNote && props.loadout === "start" &&
         <Text style={stylesList.locCount}>

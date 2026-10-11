@@ -1,0 +1,3892 @@
+{
+  "id": "fm_finals",
+  "title": "Prequel",
+  "subtitle": "Finals at the Academy",
+  "author": [
+    "auth_larryg"
+  ],
+  "screens": [
+    "MIS_fm_finals_A",
+    "MIS_fm_finals_B"
+  ],
+  "firstRelease": "December 2011",
+  "latestVersion": "1.0",
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [5640,196,677,0,6513],
+    [5640,196,677,0,6513],
+    [5640,196,677,0,6513]
+  ],
+  "lootCount": [71,71,71],
+  "lootChanges": [0,0,0],
+  "goal1": {
+    "total": [1000,2400,4800],
+    "info": "optional"
+  },
+  "pocketCount": [6,7,5],
+  "pocketChanges": [0,1,2],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Keeper Academy"},
+    {"key": "2", "value": "Keeper Academy B2F"},
+    {"key": "3", "value": "Auditorium"},
+    {"key": "4", "value": "West Stairwell"},
+    {"key": "5", "value": "Keeper Academy B1F"},
+    {"key": "6", "value": "Janitor's Room"},
+    {"key": "7", "value": "Caldarium"},
+    {"key": "8", "value": "West Classroom"},
+    {"key": "9", "value": "Central Classroom"},
+    {"key": "10", "value": "Laboratory"},
+    {"key": "11", "value": "East Classroom"},
+    {"key": "12", "value": "Laundry Room"},
+    {"key": "13", "value": "Student Dormitories"},
+    {"key": "14", "value": "Kitchen"},
+    {"key": "15", "value": "Keeper Academy 1F"},
+    {"key": "16", "value": "Pantry"},
+    {"key": "17", "value": "Spider Crawlspace"},
+    {"key": "18", "value": "Dining Room"},
+    {"key": "19", "value": "Library"},
+    {"key": "20", "value": "Front Office"},
+    {"key": "21", "value": "Reception Area"},
+    {"key": "22", "value": "Scriptorium"},
+    {"key": "23", "value": "Map Room"},
+    {"key": "24", "value": "Administration Office"},
+    {"key": "25", "value": "Keeper Academy 3F"},
+    {"key": "26", "value": "M. Leopold's Quarters"},
+    {"key": "27", "value": "M. Iolana's Quarters"},
+    {"key": "28", "value": "M. Osteria's Quarters"},
+    {"key": "29", "value": "Osteria and Talia's Study"},
+    {"key": "30", "value": "M. Talia's Quarters"},
+    {"key": "31", "value": "M. Pauel's Quarters"},
+    {"key": "32", "value": "Hm. Coleman's Quarters"},
+    {"key": "33", "value": "Special Collections"},
+    {"key": "34", "value": "Attic"},
+    {"key": "35", "value": "Maze of Anharra"},
+    {"key": "36", "value": "Anharran Royal Tomb"},
+    {"key": "37", "value": "Anharran Secret Tomb"},
+    {"key": "38", "value": "Baby Burial Chamber"},
+    {"key": "39", "value": "Necromage Passage"},
+    {"key": "40", "value": "Necromage Ctr. Quarters"},
+    {"key": "41", "value": "Necromage N Quarters"},
+    {"key": "42", "value": "Necromage S Quarters"},
+    {"key": "43", "value": "Aescha's Endless Stairs"}
+  ],
+  "notes": [
+    {
+      "id": "null"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_ancientarmband",
+      "name": "Ancient Armband",
+      "img": [
+        "IMG_AncientArmband"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_1",
+              "findSimple": "findE",
+              "findArea": 36,
+              "findNarrow": "ground level",
+              "findExact": "casket",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_AncientArmband"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ancientcandlestick",
+      "name": "Ancient Candlestick",
+      "img": [
+        "IMG_AncientCandlestick"
+      ],
+      "values": [
+        {
+          "id": "1gold",
+          "value": [1,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_2",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findNarrow": "4th dead-end",
+              "findExact": "third niche",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_AncientCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ancientchalice",
+      "name": "Ancient Chalice",
+      "img": [
+        "IMG_AncientChalice"
+      ],
+      "values": [
+        {
+          "id": "55gold25goods",
+          "value": [55,0,25,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_3",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findNarrow": "6th dead-end",
+              "findExact": "casket",
+              "findCount": [1,1,1],
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_AncientChalice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ancientcoins",
+      "name": "Ancient Coins",
+      "img": [
+        "IMG_AncientCoins"
+      ],
+      "values": [
+        {
+          "id": "45gold",
+          "value": [45,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_4",
+              "findSimple": "findH",
+              "findArea": 34,
+              "findNarrow": "northeast alcove",
+              "findExact": "shipping crate",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_AncientCoins"
+              ]
+            },
+            {
+              "id": "fm_finals_loot_5",
+              "findSimple": "findH",
+              "findArea": 36,
+              "findNarrow": "middle level",
+              "findExact": "NNW wall panels",
+              "findCount": [1,1,1],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_AncientCoins"
+              ]
+            },
+            {
+              "id": "fm_finals_loot_6",
+              "findSimple": "findH",
+              "findArea": 40,
+              "findNarrow": "E bedroom",
+              "findExact": "under skin rug",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_AncientCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ancientdeathmask",
+      "name": "Ancient Death Mask",
+      "img": [
+        "IMG_AncientDeathMask_Gold",
+        "IMG_AncientDeathMask_Crooked"
+      ],
+      "values": [
+        {
+          "id": "75gold75goods",
+          "value": [75,0,75,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_7",
+              "findSimple": "findE",
+              "findArea": 36,
+              "findNarrow": "ground level",
+              "findExact": "casket",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_AncientDeathMask_Gold"
+              ]
+            },
+            {
+              "id": "fm_finals_loot_8",
+              "findSimple": "findH",
+              "findArea": 37,
+              "findNarrow": "treasure room",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_AncientDeathMask_Crooked"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ancienthelm",
+      "name": "Ancient Helm",
+      "img": [
+        "IMG_AncientHelm"
+      ],
+      "values": [
+        {
+          "id": "75gold50goods",
+          "value": [75,0,50,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_9",
+              "findSimple": "findE",
+              "findArea": 36,
+              "findNarrow": "ground level",
+              "findExact": "chariot",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_AncientHelm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ancientknife",
+      "name": "Ancient Knife",
+      "img": [
+        "IMG_AncientKnife"
+      ],
+      "values": [
+        {
+          "id": "20gold12goods",
+          "value": [20,0,12,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_10",
+              "findSimple": "findM",
+              "findArea": 36,
+              "findNarrow": "ground level",
+              "findExact": "by funerary jugs",
+              "findCount": [1,1,1],
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_AncientKnife"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ancientnecklace",
+      "name": "Ancient Necklace",
+      "img": [
+        "IMG_AncientNecklace"
+      ],
+      "values": [
+        {
+          "id": "300gold",
+          "value": [300,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_11",
+              "findSimple": "findH",
+              "findArea": 37,
+              "findNarrow": "treasure room",
+              "findExact": "by pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_AncientNecklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ancientritualdagger",
+      "name": "Ancient Ritual Dagger",
+      "img": [
+        "IMG_AncientRitualDagger"
+      ],
+      "values": [
+        {
+          "id": "15gold13goods",
+          "value": [15,0,13,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_12",
+              "findSimple": "findM",
+              "findArea": 39,
+              "findNarrow": "sacrificial chamber",
+              "findExact": "on skeleton",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_AncientRitualDagger"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ancientsheath",
+      "name": "Ancient Sheath",
+      "img": [
+        "IMG_AncientSheath"
+      ],
+      "values": [
+        {
+          "id": "10gold17goods",
+          "value": [10,0,17,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_13",
+              "findSimple": "findM",
+              "findArea": 39,
+              "findNarrow": "sacrificial chamber",
+              "findExact": "west side",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_AncientSheath"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ancientshield",
+      "name": "Ancient Shield",
+      "img": [
+        "IMG_AncientShield_Drakes",
+        "IMG_AncientShield_Plants",
+        "IMG_AncientShield_Octopus",
+        "IMG_AncientShield_Birds",
+        "IMG_AncientShield_Demons"
+      ],
+      "values": [
+        {
+          "id": "65gold10goods",
+          "value": [65,0,10,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_14",
+              "findSimple": "findM",
+              "findArea": 36,
+              "findNarrow": "top level",
+              "findExact": "around walls",
+              "findCount": [22,22,22],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_AncientShield_Drakes",
+                "IMG_AncientShield_Plants",
+                "IMG_AncientShield_Octopus",
+                "IMG_AncientShield_Birds",
+                "IMG_AncientShield_Demons"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_ancienturn",
+      "name": "Ancient Urn",
+      "img": [
+        "IMG_AncientUrn"
+      ],
+      "values": [
+        {
+          "id": "45goods",
+          "value": [0,0,45,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_15",
+              "findSimple": "findM",
+              "findArea": 35,
+              "findNarrow": "4th dead-end",
+              "findExact": "upper niche",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_AncientUrn"
+              ]
+            },
+            {
+              "id": "fm_finals_loot_16",
+              "findSimple": "findE",
+              "findArea": 35,
+              "findNarrow": "15th dead-end",
+              "findExact": "casket",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_AncientUrn"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_coppercoinstack",
+      "name": "ref_coppercoinstack",
+      "img": [
+        "IMG_CopperCoinStack"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_17",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "safe",
+              "findCount": [4,4,4],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_CopperCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "ref_finewine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_18",
+              "findSimple": "findM",
+              "findArea": 34,
+              "findNarrow": "northeast area",
+              "findExact": "behind crate piles",
+              "findCount": [1,1,1],
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "ref_gemring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "1gold3gems",
+          "value": [1,3,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_19",
+              "findSimple": "findM",
+              "findArea": 14,
+              "findNarrow": "hidden attic",
+              "findExact": "by skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldanimal",
+      "name": "Gold Animal",
+      "img": [
+        "IMG_GoldAnimal_Pig",
+        "IMG_GoldAnimal_Calf",
+        "IMG_GoldAnimal_Tiger"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_20",
+              "findSimple": "findM",
+              "findArea": 37,
+              "findNarrow": "burial chamber",
+              "findExact": "by funerary jugs",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_GoldAnimal_Pig"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "120gold",
+          "value": [120,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_21",
+              "findSimple": "findH",
+              "findArea": 37,
+              "findNarrow": "treasure room",
+              "findExact": "by pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_GoldAnimal_Tiger"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "255gold",
+          "value": [255,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_22",
+              "findSimple": "findH",
+              "findArea": 37,
+              "findNarrow": "treasure room",
+              "findExact": "by north wall",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_GoldAnimal_Calf"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "ref_goldcoinstack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_23",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "safe",
+              "findCount": [2,2,2],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_finals_loot_24",
+              "findSimple": "findH",
+              "findArea": 26,
+              "findNarrow": "bedroom",
+              "findExact": "wardrobe",
+              "findCount": [1,1,1],
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "ref_goldnugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_25",
+              "findSimple": "findE",
+              "findArea": 26,
+              "findNarrow": "bedroom",
+              "findExact": "wardrobe",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "ref_goldring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "1gold",
+          "value": [1,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_26",
+              "findSimple": "findM",
+              "findArea": 14,
+              "findNarrow": "hidden attic",
+              "findExact": "by skeleton",
+              "findCount": [1,1,1],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldstatuette",
+      "name": "Gold Statuette",
+      "img": [
+        "IMG_GoldStatuette_Priest",
+        "IMG_GoldStatuette_Priestess",
+        "IMG_GoldStatuette_Mother",
+        "IMG_GoldStatuette_Baby",
+        "IMG_GoldStatuette_Warrior"
+      ],
+      "values": [
+        {
+          "id": "130gold",
+          "value": [130,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_27",
+              "findSimple": "findH",
+              "findArea": 37,
+              "findNarrow": "treasure room",
+              "findExact": "behind chest",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_GoldStatuette_Mother"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "165gold",
+          "value": [165,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_28",
+              "findSimple": "findH",
+              "findArea": 37,
+              "findNarrow": "treasure room",
+              "findExact": "by pedestal",
+              "findCount": [3,3,3],
+              "findSecret": true,
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_GoldStatuette_Baby"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "220gold",
+          "value": [220,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_29",
+              "findSimple": "findH",
+              "findArea": 37,
+              "findNarrow": "treasure room",
+              "findExact": "by north wall",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_GoldStatuette_Priestess"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "230gold",
+          "value": [230,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_30",
+              "findSimple": "findH",
+              "findArea": 37,
+              "findNarrow": "treasure room",
+              "findExact": "by pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_GoldStatuette_Priest"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "885gold",
+          "value": [885,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_31",
+              "findSimple": "findH",
+              "findArea": 37,
+              "findNarrow": "treasure room",
+              "findExact": "pedestal",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_GoldStatuette_Warrior"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_jeweledcrown",
+      "name": "Jeweled Crown",
+      "img": [
+        "IMG_KingsCrown_Alt2"
+      ],
+      "values": [
+        {
+          "id": "100gold175gems",
+          "value": [100,175,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_32",
+              "findSimple": "findM",
+              "findArea": 36,
+              "findRecipe": "shoot Holy Water Arrow at Rupert's skull",
+              "findCount": [1,1,1],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_KingsCrown_Alt2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_keepercoin",
+      "name": "Keeper Coin",
+      "img": [
+        "IMG_KeeperCoin"
+      ],
+      "values": [
+        {
+          "id": "55gold",
+          "value": [55,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_33",
+              "findSimple": "findM",
+              "findArea": 33,
+              "findExact": "third display case",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_KeeperCoin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "ref_purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_34",
+              "findSimple": "findE",
+              "findArea": 5,
+              "findNarrow": "south hall",
+              "findExact": "on Diarmuid",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_finals_loot_35",
+              "findSimple": "findE",
+              "findArea": 13,
+              "findNarrow": "Diarmuid's room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_finals_loot_36",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "filing cabinet",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_rubyring",
+      "name": "Ruby Ring",
+      "img": [
+        "IMG_RubyRing"
+      ],
+      "values": [
+        {
+          "id": "12gold18gems",
+          "value": [12,18,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_37",
+              "findSimple": "findM",
+              "findArea": 34,
+              "findNarrow": "southwest alcove",
+              "findCount": [1,1,1],
+              "findRecipe": "trade Golden Ribbon",
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_RubyRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_shadowmask",
+      "name": "Shadow Mask",
+      "img": [
+        "IMG_ShadowMask"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_38",
+              "findSimple": "findM",
+              "findArea": 33,
+              "findExact": "second display case",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_ShadowMask"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_signetring",
+      "name": "ref_signetring",
+      "img": [
+        "IMG_SignetRing_Alt1"
+      ],
+      "values": [
+        {
+          "id": "1gold",
+          "value": [1,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_39",
+              "findSimple": "findH",
+              "findArea": 19,
+              "findNarrow": "librarian's office",
+              "findExact": "by table",
+              "findCount": [1,1,1],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_SignetRing_Alt1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "ref_silvercoinstack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_40",
+              "findSimple": "findE",
+              "findArea": 20,
+              "findExact": "safe",
+              "findCount": [2,2,2],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_skullcoin",
+      "name": "Skull Coin",
+      "img": [
+        "IMG_SkullCoin"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_41",
+              "findSimple": "findE",
+              "findArea": 42,
+              "findNarrow": "bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_SkullCoin"
+              ]
+            },
+            {
+              "id": "fm_finals_loot_42",
+              "findSimple": "findH",
+              "findArea": 39,
+              "findExact": "under second elevator",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_SkullCoin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_skullcoinpile",
+      "name": "Skull Coin Pile",
+      "img": [
+        "IMG_SkullCoinPile"
+      ],
+      "values": [
+        {
+          "id": "175gold",
+          "value": [175,0,0,0],
+          "locations": [
+            {
+              "id": "fm_finals_loot_43",
+              "findSimple": "findH",
+              "findArea": 35,
+              "findNarrow": "22nd dead-end",
+              "findExact": "tenth niche",
+              "findCount": [1,1,1],
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_SkullCoinPile"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "ref_sword",
+          "img": [
+            "IMG_Sword_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_1",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "foyer",
+              "findExact": "southwest corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "ref_blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,0],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_finals_item_3",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "Garrett's room",
+              "findExact": "under armoire",
+              "findCount": [0,0,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "ref_broadheadarrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_4",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "foyer",
+              "findExact": "quiver",
+              "findCountBox": [7,7,7],
+              "findBox": true
+            },
+            {
+              "id": "fm_finals_item_5",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "Garrett's room",
+              "findExact": "footlocker",
+              "findCountBox": [7,7,7],
+              "findBox": true
+            },
+            {
+              "id": "fm_finals_item_6",
+              "findSimple": "find",
+              "findArea": 42,
+              "findNarrow": "bedroom",
+              "findExact": "footlocker",
+              "findCountBox": [5,5,5],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "ref_waterarrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_7",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "study",
+              "findExact": "behind painting",
+              "findCount": [3,3,3],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "ref_mossarrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_8",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "archways",
+              "findExact": "niches",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_finals_item_9",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "study",
+              "findExact": "behind painting",
+              "findCount": [6,6,6],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "ref_ropearrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_10",
+              "findSimple": "find",
+              "findArea": 1,
+              "findCount": [1,1,1],
+              "findRecipe": "use Coil of Rope with Broadhead Arrow"
+            }
+          ]
+        },
+        {
+          "id": "item_noisemakerarrow",
+          "name": "ref_noisemakerarrow",
+          "img": [
+            "IMG_NoisemakerArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_11",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "archways",
+              "findExact": "niches",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "ref_watercrystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_12",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "Ohlm's alcove",
+              "findExact": "bucket",
+              "findCount": [10,10,7]
+            },
+            {
+              "id": "fm_finals_item_13",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "closet",
+              "findExact": "north bucket",
+              "findCount": [4,2,2]
+            },
+            {
+              "id": "fm_finals_item_14",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bathtub",
+              "findExact": "underwater",
+              "findCount": [8,8,5]
+            },
+            {
+              "id": "fm_finals_item_15",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "northeast tub",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "fm_finals_item_16",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "janitor closet",
+              "findExact": "east bucket",
+              "findCount": [9,4,2]
+            },
+            {
+              "id": "fm_finals_item_17",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "3rd dead-end",
+              "findExact": "cache",
+              "findCount": [3,3,1]
+            },
+            {
+              "id": "fm_finals_item_18",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "4th dead-end",
+              "findExact": "cache",
+              "findCount": [8,8,1]
+            },
+            {
+              "id": "fm_finals_item_19",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "5th dead-end",
+              "findExact": "cache",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_finals_item_20",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "10th dead-end",
+              "findExact": "cache",
+              "findCount": [4,4,2]
+            }
+          ]
+        },
+        {
+          "id": "item_firecrystal",
+          "name": "ref_firecrystal",
+          "img": [
+            "IMG_FireCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_21",
+              "findSimple": "find",
+              "findArea": 15,
+              "findCount": [1,1,1],
+              "findRecipe": "x1 per defeated fire shadow"
+            },
+            {
+              "id": "fm_finals_item_22",
+              "findSimple": "find",
+              "findArea": 15,
+              "findCount": [1,1,1],
+              "findRecipe": "x1 per defeated fire shadow"
+            },
+            {
+              "id": "fm_finals_item_23",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "hallway",
+              "findCount": [1,1,1],
+              "findRecipe": "x1 per defeated fire shadow"
+            },
+            {
+              "id": "fm_finals_item_24",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "hallway",
+              "findCount": [1,1,1],
+              "findRecipe": "x1 per defeated fire shadow"
+            },
+            {
+              "id": "fm_finals_item_25",
+              "findSimple": "find",
+              "findArea": 36,
+              "findNarrow": "ground level",
+              "findCount": [0,0,1],
+              "findRecipe": "x1 per defeated fire shadow"
+            },
+            {
+              "id": "fm_finals_item_26",
+              "findSimple": "find",
+              "findArea": 43,
+              "findNarrow": "exterior",
+              "findCount": [1,1,1],
+              "findRecipe": "x1 per defeated fire shadow"
+            }
+          ]
+        },
+        {
+          "id": "item_earthcrystal",
+          "name": "ref_earthcrystal",
+          "img": [
+            "IMG_EarthCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_27",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "ceiling",
+              "findExact": "northeast corner",
+              "findCount": [2,0,0]
+            },
+            {
+              "id": "fm_finals_item_28",
+              "findSimple": "find",
+              "findArea": 7,
+              "findNarrow": "bathtub",
+              "findExact": "southwest corner",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "fm_finals_item_29",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "under empty tub",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_finals_item_30",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "Adelise's room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,0],
+              "findBox": true
+            },
+            {
+              "id": "fm_finals_item_31",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "northeast alcove",
+              "findExact": "rafter",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_aircrystal",
+          "name": "ref_aircrystal",
+          "img": [
+            "IMG_AirCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_32",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "by cauldron",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "place Cheese, Tissue Sheet, Broken Arrow, & Webbed Rat in cauldron"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "ref_flashbomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_33",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "5th dead-end",
+              "findExact": "cache",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_mine",
+          "name": "ref_mine",
+          "img": [
+            "IMG_Mine"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_34",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "study",
+              "findExact": "behind painting",
+              "findCount": [2,2,2],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_flashmine",
+          "name": "ref_flashmine",
+          "img": [
+            "IMG_FlashMine"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_35",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "study",
+              "findExact": "behind painting",
+              "findCount": [3,3,3],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_healingpotion",
+          "name": "ref_healingpotion",
+          "img": [
+            "IMG_HealingPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_36",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "10th dead-end",
+              "findExact": "cache",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_37",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "12th dead-end",
+              "findExact": "behind obelisk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_invisibilityspeedpotion",
+          "name": "Invisibility- Speed Potion",
+          "img": [
+            "IMG_InvisibilitySpeedPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_38",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "by cauldron",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "place Smoked Fish, Cabbage, Brass Padlock, & Empty Potion Bottle in cauldron"
+            }
+          ]
+        },
+        {
+          "id": "item_slowfallpotion",
+          "name": "ref_slowfallpotion",
+          "img": [
+            "IMG_SlowfallPotion"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_39",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "archways",
+              "findExact": "third niche",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_potionoftruedreams",
+          "name": "Potion of True Dreams",
+          "img": [
+            "IMG_PotionOfTrueDreams"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_40",
+              "findSimple": "find",
+              "findArea": 43,
+              "findNarrow": "summit",
+              "findExact": "pedestal",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_holywatervial",
+          "name": "ref_holywatervial",
+          "img": [
+            "IMG_HolyWaterVial"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_41",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "bedroom",
+              "findExact": "wooden chest",
+              "findCountBox": [2,2,2],
+              "findBox": true
+            },
+            {
+              "id": "fm_finals_item_42",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "3rd dead-end",
+              "findExact": "cache",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_43",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "4th dead-end",
+              "findExact": "cache",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_44",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "10th dead-end",
+              "findExact": "cache",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_finals_item_45",
+              "findSimple": "find",
+              "findArea": 35,
+              "findNarrow": "14th dead-end",
+              "findExact": "behind obelisk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_freshmilk",
+          "name": "Fresh Milk",
+          "img": [
+            "IMG_FreshMilk"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_46",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "cold storage",
+              "findExact": "shelves",
+              "findCount": [9,9,9]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_containers",
+      "category": "Containers",
+      "catItems": [
+        {
+          "id": "item_potionbottle",
+          "name": "Empty Potion Bottle",
+          "img": [
+            "IMG_PotionBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_47",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "southwest table",
+              "findExact": "cabinet",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_48",
+              "findSimple": "find",
+              "findArea": 30,
+              "findNarrow": "bedroom",
+              "findExact": "drawer",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_finals_item_49",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "southeast alcove",
+              "findExact": "by talisman map",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "ref_squarepick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_50",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "ref_trianglepick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_51",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_keyring",
+          "name": "Garrett's Keys",
+          "img": [
+            "IMG_Keyring_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_52",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Diarmuid's Room Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_53",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "south hall",
+              "findExact": "on Diarmuid",
+              "findCountBox": [1,1,0],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Adelise's Room Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_54",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "south water closet",
+              "findExact": "on Adelise",
+              "findCountBox": [0,1,0],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_keeperring",
+          "name": "Librarian's Ring",
+          "img": [
+            "IMG_KeeperRing"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_55",
+              "findSimple": "find",
+              "findArea": 20,
+              "findNarrow": "safe",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Pauel's Room Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_56",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "Osteria's desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "Osteria's Room Key",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_57",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "bedroom",
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_keyring",
+          "name": "Coleman's Room Key",
+          "img": [
+            "IMG_Keyring_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_58",
+              "findSimple": "find",
+              "findArea": 25,
+              "findExact": "Hm. Coleman's door",
+              "findCount": [1,0,0]
+            }
+          ]
+        },
+        {
+          "id": "item_keeperring",
+          "name": "Collections Ring",
+          "img": [
+            "IMG_KeeperRing"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_59",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "study",
+              "findExact": "behind painting",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_precursorkey",
+          "name": "Ancient Key",
+          "img": [
+            "IMG_PrecursorKey"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_60",
+              "findSimple": "find",
+              "findArea": 36,
+              "findNarrow": "ground level",
+              "findExact": "Anharran chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_flare",
+          "name": "Self-Igniting Flare",
+          "img": [
+            "IMG_Flare"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_61",
+              "findSimple": "find",
+              "findArea": 17,
+              "findExact": "above dumbwaiter",
+              "findCount": [5,5,5]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_magical",
+      "category": "Magical Tools",
+      "catItems": [
+        {
+          "id": "item_keeperwand",
+          "name": "Keeper Wand",
+          "img": [
+            "IMG_KeeperWand"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_62",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "west balcony",
+              "findExact": "on Magister Talia",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_finals_item_63",
+              "findSimple": "find",
+              "findArea": 5,
+              "findExact": "on Magister Iolana",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_finals_item_64",
+              "findSimple": "find",
+              "findArea": 15,
+              "findExact": "on Headmaster Coleman",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            },
+            {
+              "id": "fm_finals_item_65",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "study",
+              "findExact": "on Magister Pauel",
+              "findCountBox": [1,1,1],
+              "findPick": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "ref_compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_66",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_writingquill",
+          "name": "Writing Quill",
+          "img": [
+            "IMG_WritingQuill"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_67",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "Joram's room",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_68",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "Poldi's room",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_69",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "Diarmuid's room",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_70",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "Milena's room",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_71",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "Sinead's room",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_72",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "Garrett's room",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_73",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "Eliezer's room",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_74",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "Adelise's room",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_75",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "desks",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_brokenarrow",
+          "name": "ref_brokenarrow",
+          "img": [
+            "IMG_BrokenArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_76",
+              "findSimple": "find",
+              "findArea": 33,
+              "findExact": "near statue",
+              "findCount": [2,2,2],
+              "findSecret": true
+            },
+            {
+              "id": "fm_finals_item_77",
+              "findSimple": "find",
+              "findArea": 33,
+              "findExact": "by north display case",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_coilofrope",
+          "name": "Coil of Rope",
+          "img": [
+            "IMG_CoilOfRope"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_78",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "backstage",
+              "findExact": "by east exit",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "fm_finals_item_79",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "backstage",
+              "findExact": "behind clothes rack",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_finals_item_80",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "study",
+              "findExact": "under harpoon",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_81",
+              "findSimple": "find",
+              "findArea": 41,
+              "findNarrow": "bedroom",
+              "findExact": "under west bed",
+              "findCount": [1,1,0]
+            },
+            {
+              "id": "fm_finals_item_82",
+              "findSimple": "find",
+              "findArea": 43,
+              "findExact": "under stairwell",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_spanner",
+          "name": "Spanner",
+          "img": [
+            "IMG_Spanner"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_83",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "stage lights",
+              "findExact": "above southeast light",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_utensils",
+      "category": "Utensils",
+      "catItems": [
+        {
+          "id": "item_dinnerfork",
+          "name": "Dinner Fork",
+          "img": [
+            "IMG_DinnerFork"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_84",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "west cabinet table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_85",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "west cabinet table",
+              "findExact": "drawer",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_dinnerknife",
+          "name": "Dinner Knife",
+          "img": [
+            "IMG_DinnerKnife"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_86",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "east cabinet table",
+              "findExact": "drawer",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_webbedrat",
+          "name": "Webbed Rat",
+          "img": [
+            "IMG_WebbedRat"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_87",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "northeast alcove",
+              "findExact": "rafter",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_carrot",
+          "name": "ref_carrot",
+          "img": [
+            "IMG_Carrot"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_88",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "southwest table",
+              "findExact": "iron pot",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_89",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "northwest table",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_cabbage",
+          "name": "ref_cabbage",
+          "img": [
+            "IMG_Cabbage_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_90",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "north table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_91",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "storage room",
+              "findExact": "south barrel",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "item_chiliristra",
+          "name": "Chili Ristra",
+          "img": [
+            "IMG_ChiliRistra"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_92",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "under ledge",
+              "findExact": "by ladder",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_garliccloves",
+          "name": "Garlic Cloves",
+          "img": [
+            "IMG_GarlicCloves"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_93",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "under ledge",
+              "findExact": "by ladder",
+              "findCount": [3,3,3]
+            }
+          ]
+        },
+        {
+          "id": "item_morelmushrooms",
+          "name": "Morel Mushrooms",
+          "img": [
+            "IMG_MorelMushrooms"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_94",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "northwest table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_bananas",
+          "name": "Bananas",
+          "img": [
+            "IMG_Bananas"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_95",
+              "findSimple": "find",
+              "findArea": 22,
+              "findNarrow": "head scribe's office",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_strawberries",
+          "name": "Strawberries",
+          "img": [
+            "IMG_Strawberries"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_96",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "northwest table",
+              "findExact": "plate",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "ref_cheese",
+          "img": [
+            "IMG_Cheese_Alt3"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_97",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "cold storage",
+              "findExact": "shelf",
+              "findCount": [5,5,5]
+            }
+          ]
+        },
+        {
+          "id": "item_smokedfish",
+          "name": "Smoked Fish",
+          "img": [
+            "IMG_SmokedFish"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_98",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "smokehouse",
+              "findExact": "west meat rack",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_egg",
+          "name": "Egg",
+          "img": [
+            "IMG_Egg"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_99",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "northwest table",
+              "findExact": "plate",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_scrapofpaper",
+          "name": "Scrap of Paper",
+          "img": [
+            "IMG_ScrapOfPaper"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_100",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "loadout": "start"
+            },
+            {
+              "id": "fm_finals_item_101",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "safe",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_finals_item_102",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "Coleman's office",
+              "findExact": "cat statuette",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_103",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "Osteria's desk",
+              "findExact": "under skull",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_104",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "vault",
+              "findCount": [1,1,1],
+              "findRecipe": "dropped from grimoire"
+            }
+          ]
+        },
+        {
+          "id": "item_crumpledpaper",
+          "name": "ref_crumpledpaper",
+          "img": [
+            "IMG_CrumpledPaper_Alt1",
+            "IMG_CrumpledPaper_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_105",
+              "findSimple": "find",
+              "findArea": 27,
+              "findNarrow": "study",
+              "findExact": "fireplace",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_106",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "study",
+              "findExact": "by desk",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_finals_item_107",
+              "findSimple": "find",
+              "findArea": 40,
+              "findNarrow": "E bedroom",
+              "findExact": "Anharran footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_papyrus",
+          "name": "ref_papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_108",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "stage",
+              "findExact": "stool",
+              "findObj": true,
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_109",
+              "findSimple": "find",
+              "findArea": 23,
+              "findExact": "cubbies",
+              "findCount": [6,6,6]
+            },
+            {
+              "id": "fm_finals_item_110",
+              "findSimple": "find",
+              "findArea": 40,
+              "findNarrow": "W bedroom",
+              "findExact": "Anharran footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_precursorscroll",
+          "name": "ref_precursorscroll",
+          "img": [
+            "IMG_PrecursorScroll_Round"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_111",
+              "findSimple": "find",
+              "findArea": 40,
+              "findNarrow": "dining room",
+              "findExact": "under dining table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_spellscroll",
+          "name": "Aegis Spell",
+          "img": [
+            "IMG_SpellScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_112",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "by cauldron",
+              "findObj": true,
+              "findCount": [4,4,4],
+              "findRecipe": "place Skull & Egg in cauldron"
+            }
+          ]
+        },
+        {
+          "id": "item_spellscroll",
+          "name": "Fireproof Spell",
+          "img": [
+            "IMG_SpellScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_113",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "by cauldron",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "place Writing Quill & Map in cauldron"
+            }
+          ]
+        },
+        {
+          "id": "item_spellscroll",
+          "name": "Minor Toxic Curse",
+          "img": [
+            "IMG_SpellScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_114",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "by cauldron",
+              "findObj": true,
+              "findCount": [7,7,7],
+              "findRecipe": "place Dinner Fork & Strawberry in cauldron"
+            }
+          ]
+        },
+        {
+          "id": "item_spellscroll",
+          "name": "Petrify Curse",
+          "img": [
+            "IMG_SpellScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_115",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "by cauldron",
+              "findObj": true,
+              "findCount": [3,3,3],
+              "findRecipe": "place Sewing Thimble & Handsaw in cauldron"
+            }
+          ]
+        },
+        {
+          "id": "item_spellscroll",
+          "name": "Lesser Unlock Spell",
+          "img": [
+            "IMG_SpellScroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_116",
+              "findSimple": "find",
+              "findArea": 10,
+              "findExact": "by cauldron",
+              "findObj": true,
+              "findCount": [8,8,8],
+              "findRecipe": "place Pair of Dice & Deck of Cards in cauldron"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_personal",
+      "category": "Personal Items",
+      "catItems": [
+        {
+          "id": "item_hairbrush",
+          "name": "ref_hairbrush",
+          "img": [
+            "IMG_HairBrush_Alt1",
+            "IMG_HairBrush_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_117",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "bedroom",
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_118",
+              "findSimple": "find",
+              "findArea": 30,
+              "findNarrow": "bedroom",
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_handmirror",
+          "name": "ref_handmirror",
+          "img": [
+            "IMG_HandMirror_Alt1",
+            "IMG_HandMirror_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_119",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "bedroom",
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_120",
+              "findSimple": "find",
+              "findArea": 30,
+              "findNarrow": "bedroom",
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_spectacles",
+          "name": "ref_spectacles",
+          "img": [
+            "IMG_ReadingGlasses"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_121",
+              "findSimple": "find",
+              "findArea": 30,
+              "findNarrow": "bedroom",
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_toys",
+      "category": "Toys",
+      "catItems": [
+        {
+          "id": "item_deckofcards",
+          "name": "ref_deckofcards",
+          "img": [
+            "IMG_DeckOfCards_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_122",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "Milena's room",
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_pairofdice",
+          "name": "ref_pairofdice",
+          "img": [
+            "IMG_PairOfDice_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_123",
+              "findSimple": "find",
+              "findArea": 31,
+              "findNarrow": "bedroom",
+              "findExact": "dresser",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_dewdrop",
+          "name": "ref_dewdrop",
+          "img": [
+            "IMG_Dewdrop"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_124",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "south generator room",
+              "findExact": "SE corner",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_teddybear",
+          "name": "Roosevelt Bear",
+          "img": [
+            "IMG_TeddyBear_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_125",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "under chalkboard",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_ancientbabyrattle",
+          "name": "Ancient Baby Rattle",
+          "img": [
+            "IMG_AncientBabyRattle"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_126",
+              "findSimple": "find",
+              "findArea": 38,
+              "findNarrow": "up west ladder",
+              "findExact": "behind 2nd stack",
+              "findObj": true,
+              "findCount": [1,1,0],
+              "findSecret": true
+            },
+            {
+              "id": "fm_finals_item_127",
+              "findSimple": "find",
+              "findArea": 38,
+              "findNarrow": "up east ladder",
+              "findExact": "behind 2nd stack",
+              "findObj": true,
+              "findCount": [0,0,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "item_ancientball",
+          "name": "Ancient Ball",
+          "img": [
+            "IMG_AncientBall"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_128",
+              "findSimple": "find",
+              "findArea": 40,
+              "findNarrow": "W bedroom",
+              "findExact": "toy box",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_blades",
+      "category": "Blades",
+      "catItems": [
+        {
+          "id": "item_warax",
+          "name": "War Ax",
+          "img": [
+            "IMG_WarAx"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_129",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "hidden attic",
+              "findExact": "on skeleton",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_handsaw",
+          "name": "Handsaw",
+          "img": [
+            "IMG_Handsaw_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_130",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "workbench",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_grisly",
+      "category": "Grisly Objects",
+      "catItems": [
+        {
+          "id": "item_skull",
+          "name": "ref_skull",
+          "img": [
+            "IMG_Skull_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_131",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "hidden attic",
+              "findExact": "skeleton",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_132",
+              "findSimple": "find",
+              "findArea": 29,
+              "findNarrow": "Osteria's desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_miscellaneous",
+      "category": "Miscellaneous",
+      "catItems": [
+        {
+          "id": "item_scrapofgoldenribbon",
+          "name": "Golden Ribbon",
+          "img": [
+            "IMG_ScrapOfGoldenRibbon"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_133",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "bedroom",
+              "findExact": "basket",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_sewingthimble",
+          "name": "Sewing Thimble",
+          "img": [
+            "IMG_SewingThimble"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_134",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "bedroom",
+              "findExact": "drawer",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_darningegg",
+          "name": "Darning Egg",
+          "img": [
+            "IMG_DarningEgg"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_135",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "bedroom",
+              "findExact": "drawer",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        },
+        {
+          "id": "item_brasspadlock",
+          "name": "Brass Padlock",
+          "img": [
+            "IMG_BrassPadlock"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_136",
+              "findSimple": "find",
+              "findArea": 6,
+              "findExact": "workbench",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_137",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "northwest area",
+              "findExact": "by southeast couch",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_item_138",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "northeast alcove",
+              "findExact": "by shipping crate",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_tissuesheet",
+          "name": "Tissue Sheet",
+          "img": [
+            "IMG_TissueSheet"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_139",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "north water closet",
+              "findExact": "by toilet",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_finals_item_140",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "south water closet",
+              "findExact": "by toilet",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_finals_item_141",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "north water closet",
+              "findExact": "by toilet",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_finals_item_142",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "south water closet",
+              "findExact": "by toilets",
+              "findCount": [11,11,11]
+            },
+            {
+              "id": "fm_finals_item_143",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "east water closet",
+              "findExact": "by toilet",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_finals_item_144",
+              "findSimple": "find",
+              "findArea": 15,
+              "findNarrow": "west water closet",
+              "findExact": "by toilet",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_finals_item_145",
+              "findSimple": "find",
+              "findArea": 24,
+              "findNarrow": "water closet",
+              "findExact": "by toilet",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_finals_item_146",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "west water closet",
+              "findExact": "by toilets",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_finals_item_147",
+              "findSimple": "find",
+              "findArea": 25,
+              "findNarrow": "east water closet",
+              "findExact": "by toilets",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "item_blackboarderaser",
+          "name": "Blackboard Eraser",
+          "img": [
+            "IMG_BlackboardEraser"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_148",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "lectern",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_finals_item_149",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "lectern",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            },
+            {
+              "id": "fm_finals_item_150",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "lectern",
+              "findCountBox": [3,3,3],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_wisdombell",
+          "name": "Wisdom Bell",
+          "img": [
+            "IMG_WisdomBell"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_151",
+              "findSimple": "find",
+              "findArea": 33,
+              "findExact": "north display case",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_jewelry",
+      "category": "Jewelry",
+      "catItems": [
+        {
+          "id": "item_keepermedallion",
+          "name": "ref_medallion",
+          "img": [
+            "IMG_KeeperMedallion"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_item_152",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "hidden attic",
+              "findExact": "on skeleton",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_crates",
+      "category": "Crates",
+      "catJunk": [
+        {
+          "id": "junk_normalcrate",
+          "name": "ref_normalcrate",
+          "img": [
+            "IMG_NormalCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_1",
+              "findSimple": "find",
+              "findArea": 14,
+              "findExact": "ledge",
+              "findCount": [2,2,2]
+            }
+          ]
+        },
+        {
+          "id": "junk_fancycrate",
+          "name": "Fancy Crate",
+          "img": [
+            "IMG_FancyCrate"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_2",
+              "findSimple": "find",
+              "findArea": 33,
+              "findNarrow": "crawlspace",
+              "findCount": [4,4,4],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_metaltray",
+          "name": "ref_metaltray",
+          "img": [
+            "IMG_MetalTray"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_3",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "northeast area",
+              "findExact": "behind crate piles",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "ref_woodengoblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_4",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "northeast area",
+              "findExact": "behind crate piles",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_mug",
+          "name": "ref_mug",
+          "img": [
+            "IMG_Mug_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_5",
+              "findSimple": "find",
+              "findArea": 21,
+              "findExact": "by coffee brewer",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_bottles",
+      "category": "Bottles",
+      "catJunk": [
+        {
+          "id": "junk_greenbottle",
+          "name": "ref_greenbottle",
+          "img": [
+            "IMG_GreenBottle_EP_Alt1",
+            "IMG_GreenBottle_EP_Alt2",
+            "IMG_GreenBottle_EP_Alt3"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_6",
+              "findSimple": "find",
+              "findArea": 18,
+              "findNarrow": "cabinet tables",
+              "findCount": [8,8,8]
+            },
+            {
+              "id": "fm_finals_junk_7",
+              "findSimple": "find",
+              "findArea": 28,
+              "findNarrow": "bedroom",
+              "findExact": "by bed",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_finals_junk_8",
+              "findSimple": "find",
+              "findArea": 34,
+              "findNarrow": "northeast area",
+              "findExact": "behind crate piles",
+              "findCount": [2,2,2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_containers",
+      "category": "Containers",
+      "catJunk": [
+        {
+          "id": "junk_sandbag",
+          "name": "ref_sandbag",
+          "img": [
+            "IMG_SpiceBag"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_9",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "ledge",
+              "findCount": [6,6,6]
+            }
+          ]
+        },
+        {
+          "id": "junk_coinbox",
+          "name": "ref_coinbox",
+          "img": [
+            "IMG_CoinBox_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_10",
+              "findSimple": "find",
+              "findArea": 20,
+              "findExact": "safe",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_decor",
+      "category": "Décor",
+      "catJunk": [
+        {
+          "id": "junk_pottedplant",
+          "name": "ref_pottedplant",
+          "img": [
+            "IMG_PottedPlant",
+            "IMG_PottedPlant_Alt1",
+            "IMG_PottedPlant_Alt2"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_11",
+              "findSimple": "find",
+              "findArea": 29,
+              "findExact": "window",
+              "findCount": [3,3,3]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_nautical",
+      "category": "Nautical Tools",
+      "catJunk": [
+        {
+          "id": "junk_navigatorscompass",
+          "name": "ref_navicompass",
+          "img": [
+            "IMG_NavigatorsCompass"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_12",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "study",
+              "findExact": "window",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_chartcompass",
+          "name": "ref_chartcompass",
+          "img": [
+            "IMG_ChartCompass"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_13",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "study",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_sextant",
+          "name": "ref_sextant",
+          "img": [
+            "IMG_Sextant"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_14",
+              "findSimple": "find",
+              "findArea": 32,
+              "findNarrow": "study",
+              "findExact": "desk",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_stone",
+      "category": "Stone",
+      "catJunk": [
+        {
+          "id": "junk_statuefragment",
+          "name": "ref_statuefragment",
+          "img": [
+            "IMG_StatueFragment_Head",
+            "IMG_StatueFragment_RightTorso",
+            "IMG_StatueFragment_LeftTorso"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_15",
+              "findSimple": "find",
+              "findArea": 37,
+              "findNarrow": "burial chamber",
+              "findExact": "by chest",
+              "findCount": [3,3,3],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_stool",
+          "name": "Stool",
+          "img": [
+            "IMG_Stool"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_16",
+              "findSimple": "find",
+              "findArea": 22,
+              "findExact": "by desks",
+              "findCount": [4,4,4]
+            }
+          ]
+        },
+        {
+          "id": "junk_corkstopper",
+          "name": "Cork Stopper",
+          "img": [
+            "IMG_CorkStopper"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_17",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "sink",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_gruliacslyre",
+          "name": "Gruliac's Lyre",
+          "img": [
+            "IMG_GruliacsLyre"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_18",
+              "findSimple": "find",
+              "findArea": 33,
+              "findExact": "first display case",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        },
+        {
+          "id": "junk_brokenarmillarysphere",
+          "name": "Armillary Sphere",
+          "img": [
+            "IMG_BrokenArmillarySphere"
+          ],
+          "locations": [
+            {
+              "id": "fm_finals_junk_19",
+              "findSimple": "find",
+              "findArea": 33,
+              "findExact": "fourth display case",
+              "findCount": [1,1,1],
+              "findSecret": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_finals_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_finals_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 32,
+          "findNarrow": "study",
+          "findDiff": [1,1,1],
+          "method": "Push the brick in the chimney"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardItem": "ref_waterarrow",
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_1_2",
+          "rewardItem": "ref_mossarrow",
+          "findCount": [6,6,6]
+        },
+        {
+          "id": "sec_1_3",
+          "rewardItem": "ref_mine",
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_1_4",
+          "rewardItem": "ref_flashmine",
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_1_5",
+          "rewardItem": "Collections Ring",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_finals_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_finals_02a",
+        "SEC_fm_finals_02b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 4,
+          "findNarrow": "2F landing",
+          "findDiff": [1,1,1],
+          "method": "Unlock the lock with Headmaster Coleman's ring"
+        },
+        {
+          "id": "sec_2_b",
+          "findArea": 17,
+          "findNarrow": "behind paintings",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch above the west cobweb"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardRoute": [
+            "the west stairwell",
+            "the spider crawlspace"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_2",
+          "rewardLoot": "Keeper Coin",
+          "value": [55,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_3",
+          "rewardLoot": "Shadow Mask",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_2_4",
+          "rewardItem": "ref_brokenarrow",
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_2_5",
+          "rewardItem": "Wisdom Bell",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_finals_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_finals_03a",
+        "SEC_fm_finals_03b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 35,
+          "findNarrow": "central east hall",
+          "findDiff": [1,1,1],
+          "method": "Push the button under the empty wall panels"
+        },
+        {
+          "id": "sec_3_b",
+          "findArea": 36,
+          "findNarrow": "top level",
+          "findDiff": [1,1,1],
+          "method": "Push the button by the fallen shield"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardRoute": [
+            "the Maze of Anharra",
+            "the royal tomb"
+          ],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_finals_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_fm_finals_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 35,
+          "findNarrow": "9th dead-end",
+          "findDiff": [1,1,1],
+          "method": "Push the button by the casket"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardLoot": "Gold Animal",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_finals_sec_5",
+      "number": 5,
+      "img": [
+        "SEC_fm_finals_05"
+      ],
+      "triggers": [
+        {
+          "id": "sec_5_a",
+          "findArea": 37,
+          "findNarrow": "entrance",
+          "findDiff": [1,1,1],
+          "method": "Push the button between the stairs"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_5_1",
+          "rewardLoot": "Ancient Death Mask",
+          "value": [75,0,75,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_2",
+          "rewardLoot": "Gold Animal",
+          "value": [120,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_3",
+          "rewardLoot": "Gold Statuette",
+          "value": [130,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_4",
+          "rewardLoot": "Gold Statuette",
+          "value": [165,0,0,0],
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_5_5",
+          "rewardLoot": "Gold Statuette",
+          "value": [220,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_6",
+          "rewardLoot": "Gold Statuette",
+          "value": [230,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_7",
+          "rewardLoot": "Gold Animal",
+          "value": [255,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_8",
+          "rewardLoot": "Ancient Necklace",
+          "value": [300,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_5_9",
+          "rewardLoot": "Gold Statuette",
+          "value": [885,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_finals_sec_6",
+      "number": 6,
+      "img": [
+        "SEC_fm_finals_06a",
+        "SEC_fm_finals_06b"
+      ],
+      "triggers": [
+        {
+          "id": "sec_6_a",
+          "findArea": 35,
+          "findNarrow": "north hall",
+          "findDiff": [1,1,1],
+          "method": "Climb over the casket in the ninth niche"
+        },
+        {
+          "id": "sec_6_b",
+          "findArea": 39,
+          "findNarrow": "near sacrificial chamber",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch by the ladder"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_6_1",
+          "rewardRoute": [
+            "the Maze of Anharra",
+            "the necromage passage"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_6_2",
+          "rewardItem": "Ancient Baby Rattle",
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_finals_sec_7",
+      "number": 7,
+      "img": [
+        "SEC_fm_finals_07a",
+        "SEC_fm_finals_07b",
+        "SEC_fm_finals_07c",
+        "SEC_fm_finals_07d"
+      ],
+      "triggers": [
+        {
+          "id": "sec_7_a",
+          "findArea": 38,
+          "findNarrow": "lower area",
+          "findDiff": [1,1,1],
+          "method": "Flip the switch on the fifth west casket"
+        },
+        {
+          "id": "sec_7_b",
+          "findArea": 40,
+          "findNarrow": "W bedroom",
+          "findDiff": [1,1,1],
+          "method": "Push the button behind the bed"
+        },
+        {
+          "id": "sec_7_c",
+          "findArea": 40,
+          "findNarrow": "E bedroom",
+          "findDiff": [1,1,1],
+          "method": "Push the button behind the bed"
+        },
+        {
+          "id": "sec_7_d",
+          "findArea": 42,
+          "findNarrow": "bedroom",
+          "findDiff": [1,1,1],
+          "method": "Push the button under the table"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_7_1",
+          "rewardRoute": [
+            "the baby burial chamber",
+            "the necromage quarters"
+          ],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_7_2",
+          "rewardLoot": "Ancient Sheath",
+          "value": [10,0,17,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_7_3",
+          "rewardLoot": "Ancient Ritual Dagger",
+          "value": [15,0,13,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_7_4",
+          "rewardLoot": "Skull Coin",
+          "value": [25,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    }
+  ]
+}

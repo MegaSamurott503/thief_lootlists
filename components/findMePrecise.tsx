@@ -8,12 +8,10 @@ import {
 import { memo, useContext } from 'react';
 
 import { FindMeCount } from '@/components/findMeCount';
+import { LootIconPicker } from '@/components/lootIconPicker';
 
 import { stylesList } from '@/constants/stylesList';
-import { stylesImg } from '@/constants/stylesImg';
-import {
-  iconGold, iconGems, iconGoods, iconSpecial
-} from '@/constants/imgUI';
+//import { stylesImg } from '@/constants/stylesImg';
 import { SettingContext } from '@/constants/context';
 
 // TODO: 'underline line-through' only works on web; see speed potion in t1_lost
@@ -32,12 +30,16 @@ export const FindMePrecise = memo(function FindMePrecise(props) {
   // Fetch global setting states from context.
   const { device } = useContext(SettingContext);
 
+  let lootCats = ["gold","gems","goods","special"];
+  if (props.lootCats)
+    lootCats = props.lootCats;
+
   return (
-    <View style={styles.preciseRow}>
+    <View>
       <Text style={[
-        stylesList.locText,
-        {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-          color: colors.text},
+        stylesList.locText(width),
+        //styles.preciseRow,
+        {color: colors.text},
         props.findUnable && stylesList.locNoGet,
       ]}>
         {/* If no precise location, insert a blank for spacing. */}
@@ -56,7 +58,7 @@ export const FindMePrecise = memo(function FindMePrecise(props) {
         {/* Is this item in a secret location? */}
         {props.findSecret &&
           <Text style={{color: colors.locSecret}}>
-            {'[[ '}
+            {'⟨⟨ '}{/*'[[ '*/}
           </Text>
         }
         {/* Print the general location of this item, if applicable. */}
@@ -69,64 +71,36 @@ export const FindMePrecise = memo(function FindMePrecise(props) {
         }
         {/* Is this item able to be pickpocketed? */}
         {props.findPick &&
-          <Text>{'{ '}</Text>
+          <Text style={{color: colors.locPick}}>{'{ '}</Text>
         }
-      </Text>
-      {/* Is this item in a container? */}
-      {props.findBox &&
-        <Text style={[
-          stylesList.locText,
-          {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-            color: colors.text,
-            borderColor: colors.text},
-          props.findBox && stylesList.locBox,
-        ]}>
-          {` `}
-          {/* Print the exact location of this item, if applicable. */}
-          {props.findExact &&
+        {/* Is this item in a container? */}
+        {props.findBox &&
+          <Text style={{color: colors.locBox}}>
+            {'['}
             <Text style={[
-              stylesList.locText,
-              {fontSize: (Platform.OS === 'web') ? 12 : width*0.019},
-              props.findUnable && stylesList.locNoGet,
-              props.findPick && stylesList.locPick,
+              stylesList.locBox,
+              props.findUnable && stylesList.locBoxNoGet
             ]}>
-              {props.findExact}
+              {'\u200B \u200B'}
             </Text>
-          }
-          {/* Is there more than 1 of this item in a container? */}
-          {props.findCountBox && Math.max(...props.findCountBox) > 1 &&
-            <FindMeCount
-              findCount={props.findCountBox}
-              findCountActual={props.findCountActual}
-              findBox={props.findBox}
-              findPick={props.findPick}
-            />
-          }
-          {` `}
-        </Text>
-      }
-      <Text style={[
-        stylesList.locText,
-        {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-          color: colors.text},
-        props.findUnable && stylesList.locNoGet,
-      ]}>
+          </Text>
+        }
         {/* Print the exact location of this item, if applicable. */}
-        {props.findExact && !props.findBox &&
+        {props.findExact && //!props.findBox &&
           <Text style={[
-            stylesList.locText,
-            {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-              borderColor: colors.text},
+            stylesList.locText(width),
+            {borderColor: colors.text,
+            textDecorationColor: colors.locBox},
             props.findBox && stylesList.locBox,
             props.findUnable && stylesList.locNoGet,
+            props.findBox && props.findUnable && stylesList.locBoxNoGet,
             props.findPick && stylesList.locPick,
           ]}>
             {props.findExact}
           </Text>
         }
-        {/* Is there more than 1 of this item in a pickpocket? */}
-        {props.findCountBox && props.findPick &&
-          Math.max(...props.findCountBox) > 1 &&
+        {/* Is there more than 1 of this item in a container? */}
+        {props.findCountBox && Math.max(...props.findCountBox) > 1 &&
           <FindMeCount
             findCount={props.findCountBox}
             findCountActual={props.findCountActual}
@@ -134,8 +108,25 @@ export const FindMePrecise = memo(function FindMePrecise(props) {
             findPick={props.findPick}
           />
         }
+        {props.findBox &&
+          <Text style={{color: colors.locBox}}>
+            <Text style={[
+              stylesList.locBox,
+              props.findUnable && stylesList.locBoxNoGet
+            ]}>
+              {'\u200B \u200B'}
+            </Text>
+            {/* Are there multiple items in this container? */}
+            {props.findLink &&
+              <Text style={stylesList.locBox}>
+                {'•••'}
+              </Text>
+            }
+            {']'}
+          </Text>
+        }
         {props.findPick &&
-          <Text>{' }'}</Text>
+          <Text style={{color: colors.locPick}}>{' }'}</Text>
         }
         {/* Is there more than 1 of this item at this location? */}
         {!props.loadout &&
@@ -149,6 +140,12 @@ export const FindMePrecise = memo(function FindMePrecise(props) {
             findCountMode={props.findCountMode}
             findCountActual={props.findCountActual}
           />
+        }
+        {/* Does this item give you multiple items? */}
+        {props.findLink && !props.findBox &&
+          <Text style={{color: colors.locBox}}>
+            {' •••'}
+          </Text>
         }
         {/* Separate the location and requirements, if needed. */}
         {(props.findNarrow || props.findExact) &&
@@ -185,40 +182,28 @@ export const FindMePrecise = memo(function FindMePrecise(props) {
             {(props.value[0] < 0) &&
               <Text style={stylesList.locCount}>
                 {` ${Math.abs(props.value[0])} `}
-                <Image
-                  source={iconGold}
-                  style={stylesImg.imgLootIcon}
-                />
+                <LootIconPicker cat={props.lootCats[0]} />
               </Text>
             }
             {/* In-game gems must be spent. */}
             {(props.value[1] < 0) &&
               <Text style={stylesList.locCount}>
                 {` ${Math.abs(props.value[1])} `}
-                <Image
-                  source={iconGems}
-                  style={stylesImg.imgLootIcon}
-                />
+                <LootIconPicker cat={props.lootCats[1]} />
               </Text>
             }
             {/* In-game goods must be spent. */}
             {(props.value[2] < 0) &&
               <Text style={stylesList.locCount}>
                 {` ${Math.abs(props.value[2])} `}
-                <Image
-                  source={iconGoods}
-                  style={stylesImg.imgLootIcon}
-                />
+                <LootIconPicker cat={props.lootCats[2]} />
               </Text>
             }
             {/* In-game special must be spent. */}
             {(props.value[3] < 0) &&
               <Text style={stylesList.locCount}>
                 {` ${Math.abs(props.value[3])} `}
-                <Image
-                  source={iconSpecial}
-                  style={stylesImg.imgLootIcon}
-                />
+                <LootIconPicker cat={props.lootCats[3]} />
               </Text>
             }
             {(Math.max(...props.findCount) > 1) &&
@@ -230,7 +215,7 @@ export const FindMePrecise = memo(function FindMePrecise(props) {
         }
         {props.findSecret &&
           <Text style={{color: colors.locSecret}}>
-            {' ]]'}
+            {' ⟩⟩'}{/*' ]]'*/}
           </Text>
         }
         {props.findEaster &&
@@ -266,5 +251,10 @@ const styles = StyleSheet.create({
   preciseRow: {
     flexDirection: 'row',
     alignItems: 'center'
-  }
+  },
+  preciseBox: (width) => ({
+    borderWidth: 1,
+    marginVertical: -5,
+    marginRight: (width > 449) ? 0 : -5
+  })
 });

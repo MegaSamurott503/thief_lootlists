@@ -5,4 +5,11 @@ export const stylesModal = {
     alignItems: 'center',
     justifyContent: 'center',
   },
+  waitModal: {
+    borderWidth: 1,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 5,
+  },
 }

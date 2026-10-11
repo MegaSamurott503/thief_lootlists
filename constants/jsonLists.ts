@@ -44,8 +44,10 @@ export const myList = {
   "t2_guest": require('@/assets/lists/t2_guest.json'), // The Unwelcome Guest (Demo)
 
   // Fan Missions
+  "fm_twostorms": require('@/assets/lists/fm_twostorms.json'), // Among Two Storms
   "fm_artthievery": require('@/assets/lists/fm_artthievery.json'), // The Art of Thievery
   "fm_lampfire": require('@/assets/lists/fm_lampfire.json'), // Autumn in Lampfire Hills
+  "fm_hangover": require('@/assets/lists/fm_hangover.json'), // Bad Hangover
   "fm_bennydead": require('@/assets/lists/fm_bennydead.json'), // Benny's Dead
   "fm_burrickhead": require('@/assets/lists/fm_burrickhead.json'), // The Burrick's Head Inn
   "fm_calendra-cistern": require('@/assets/lists/fm_calendra-cistern.json'), // Calendra's Cistern
@@ -55,23 +57,30 @@ export const myList = {
   "fm_cargo": require('@/assets/lists/fm_cargo.json'), // Complicated Cargo
   "fm_spirit-resurrection": require('@/assets/lists/fm_spirit-resurrection.json'), // Cult of the Resurrection
   "fm_curseancients": require('@/assets/lists/fm_curseancients.json'), // Curse of the Ancients
+  "fm_horrors-dance": require('@/assets/lists/fm_horrors-dance.json'), // Dance with the Dead
   "fm_durant": require('@/assets/lists/fm_durant.json'), // Durant
   "fm_ashton-escape": require('@/assets/lists/fm_ashton-escape.json'), // Escape!
+  "fm_hammerhill": require('@/assets/lists/fm_hammerhill.json'), // Escape Hammer Hill
   "fm_equilibrium": require('@/assets/lists/fm_equilibrium.json'), // Equilibrium
   "fm_agenda": require('@/assets/lists/fm_agenda.json'), // Hidden Agenda
   "fm_maelstrom": require('@/assets/lists/fm_maelstrom.json'), // Into the Maelstrom
   "fm_spirit-manse": require('@/assets/lists/fm_spirit-manse.json'), // The Inverted Manse
   "fm_retreat": require('@/assets/lists/fm_retreat.json'), // Lord James' Retreat
+  "fm_forces-mirror1": require('@/assets/lists/fm_forces-mirror1.json'), // The Mirror of Return - Part 1
+  "fm_forces-mirror2": require('@/assets/lists/fm_forces-mirror2.json'), // The Mirror of Return - Part 2
+  "fm_forces-mirror3": require('@/assets/lists/fm_forces-mirror3.json'), // The Mirror of Return - Part 3
   "fm_forces-invitation": require('@/assets/lists/fm_forces-invitation.json'), // Mysterious Invitation
   "fm_ashton-stroll": require('@/assets/lists/fm_ashton-stroll.json'), // A Night's Stroll
   "fm_nightchristmas": require('@/assets/lists/fm_nightchristmas.json'), // The Night Before Christmas
   "fm_xedormicost-bequest": require('@/assets/lists/fm_xedormicost-bequest.json'), // Ominous Bequest
+  "fm_finals": require('@/assets/lists/fm_finals.json'), // Prequel: Finals at the Academy
   "fm_ashton-revenge": require('@/assets/lists/fm_ashton-revenge.json'), // Revenge
   "fm_cottage": require('@/assets/lists/fm_cottage.json'), // Rose Cottage
   "fm_rowena": require('@/assets/lists/fm_rowena.json'), // Rowena's Curse
   "fm_seventh-2": require('@/assets/lists/fm_seventh-2.json'), // The Seventh Crystal - Act 2
   "fm_seventh-3": require('@/assets/lists/fm_seventh-3.json'), // The Seventh Crystal - Act 3
   "fm_solong": require('@/assets/lists/fm_solong.json'), // So Long Hammers
+  "fm_swamped": require('@/assets/lists/fm_swamped.json'), // Swamped
   "fm_cleft-ladytaker": require('@/assets/lists/fm_cleft-ladytaker.json'), // Tales from the Cleft: Ladytaker
   "fm_cleft-vandal": require('@/assets/lists/fm_cleft-vandal.json'), // Tales from the Cleft: Vandal
   "fm_templetides": require('@/assets/lists/fm_templetides.json'), // Temple of the Tides
@@ -84,4 +93,5 @@ export const myList = {
   "fm_united": require('@/assets/lists/fm_united.json'), // United Bank of Auldale
   "fm_ashton-visit": require('@/assets/lists/fm_ashton-visit.json'), // A Visit to Lord Ashton's
   "fm_links": require('@/assets/lists/fm_links.json'), // Weak Links
+  "fm_horrors-below": require('@/assets/lists/fm_horrors-below.json'), // What Lies Below
 }

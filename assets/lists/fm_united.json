@@ -48,7 +48,7 @@
   "loot": [
     {
       "id": "loot_decorativemask",
-      "name": "Decorative Mask",
+      "name": "ref_decorativemask",
       "img": [
         "IMG_DecorativeMask_Demon",
         "IMG_DecorativeMask_Noh",
@@ -79,7 +79,7 @@
     },
     {
       "id": "loot_dewdrop",
-      "name": "Dewdrop",
+      "name": "ref_dewdrop",
       "img": [
         "IMG_Dewdrop"
       ],
@@ -106,7 +106,7 @@
     },
     {
       "id": "loot_finewine",
-      "name": "Fine Wine",
+      "name": "ref_finewine",
       "img": [
         "IMG_FineWine"
       ],
@@ -168,7 +168,7 @@
     },
     {
       "id": "loot_gemring",
-      "name": "Gem Ring",
+      "name": "ref_gemring",
       "img": [
         "IMG_GemRing"
       ],
@@ -196,7 +196,7 @@
     },
     {
       "id": "loot_gemstone",
-      "name": "Gemstone",
+      "name": "ref_gemstone",
       "img": [
         "IMG_Gemstone"
       ],
@@ -225,7 +225,7 @@
     },
     {
       "id": "loot_goldcandlestick",
-      "name": "Gold Candlestick",
+      "name": "ref_goldcandlestick",
       "img": [
         "IMG_GoldCandlestick"
       ],
@@ -252,7 +252,7 @@
     },
     {
       "id": "loot_goldcoinstack",
-      "name": "Gold Coin Stack",
+      "name": "ref_goldcoinstack",
       "img": [
         "IMG_GoldCoinStack"
       ],
@@ -331,7 +331,7 @@
     },
     {
       "id": "loot_golddice",
-      "name": "Gold Dice",
+      "name": "ref_golddice",
       "img": [
         "IMG_GoldDice"
       ],
@@ -358,7 +358,7 @@
     },
     {
       "id": "loot_goldglasses",
-      "name": "Gold Glasses",
+      "name": "ref_goldglasses",
       "img": [
         "IMG_GoldGlasses"
       ],
@@ -385,7 +385,7 @@
     },
     {
       "id": "loot_goldgoblet",
-      "name": "Gold Goblet",
+      "name": "ref_goldgoblet",
       "img": [
         "IMG_GoldGoblet"
       ],
@@ -424,7 +424,7 @@
     },
     {
       "id": "loot_goldplate",
-      "name": "Gold Plate",
+      "name": "ref_goldplate",
       "img": [
         "IMG_GoldPlate"
       ],
@@ -463,7 +463,7 @@
     },
     {
       "id": "loot_goldring",
-      "name": "Gold Ring",
+      "name": "ref_goldring",
       "img": [
         "IMG_GoldRing"
       ],
@@ -490,7 +490,7 @@
     },
     {
       "id": "loot_goldvase",
-      "name": "Gold Vase",
+      "name": "ref_goldvase",
       "img": [
         "IMG_GoldVase"
       ],
@@ -517,7 +517,7 @@
     },
     {
       "id": "loot_mechaniststatuette",
-      "name": "Mechanist Statuette",
+      "name": "ref_mechstatuette",
       "img": [
         "IMG_MechanistStatuette"
       ],
@@ -544,7 +544,7 @@
     },
     {
       "id": "loot_necklace",
-      "name": "Necklace",
+      "name": "ref_necklace",
       "img": [
         "IMG_Necklace"
       ],
@@ -578,7 +578,7 @@
     },
     {
       "id": "loot_purplegoblet",
-      "name": "Purple Goblet",
+      "name": "ref_purplegoblet",
       "img": [
         "IMG_PurpleGoblet"
       ],
@@ -616,7 +616,7 @@
     },
     {
       "id": "loot_purse",
-      "name": "Purse",
+      "name": "ref_purse",
       "img": [
         "IMG_Purse"
       ],
@@ -681,7 +681,7 @@
     },
     {
       "id": "loot_serpentyletorc",
-      "name": "Serpentyle Torc",
+      "name": "ref_serpentyletorc",
       "img": [
         "IMG_SerpentyleTorc"
       ],
@@ -708,7 +708,7 @@
     },
     {
       "id": "loot_silvercoinstack",
-      "name": "Silver Coin Stack",
+      "name": "ref_silvercoinstack",
       "img": [
         "IMG_SilverCoinStack"
       ],
@@ -735,7 +735,7 @@
     },
     {
       "id": "loot_statuette",
-      "name": "Statuette",
+      "name": "ref_statuette",
       "img": [
         "IMG_Statuette_Nobleman",
         "IMG_Statuette_Muse"
@@ -787,7 +787,7 @@
     },
     {
       "id": "loot_tiara",
-      "name": "Tiara",
+      "name": "ref_tiara",
       "img": [
         "IMG_Tiara"
       ],
@@ -814,7 +814,7 @@
     },
     {
       "id": "loot_waxcylinder",
-      "name": "Wax Cylinder",
+      "name": "ref_waxcylinder",
       "img": [
         "IMG_WaxCylinder"
       ],
@@ -847,7 +847,7 @@
       "catItems": [
         {
           "id": "item_sword",
-          "name": "Sword",
+          "name": "ref_sword",
           "img": [
             "IMG_Sword"
           ],
@@ -863,7 +863,7 @@
         },
         {
           "id": "item_blackjack",
-          "name": "Blackjack",
+          "name": "ref_blackjack",
           "img": [
             "IMG_Blackjack"
           ],
@@ -885,7 +885,7 @@
       "catItems": [
         {
           "id": "item_broadheadarrow",
-          "name": "Broadhead Arrow",
+          "name": "ref_broadheadarrow",
           "img": [
             "IMG_BroadheadArrow"
           ],
@@ -954,7 +954,7 @@
         },
         {
           "id": "item_waterarrow",
-          "name": "Water Arrow",
+          "name": "ref_waterarrow",
           "img": [
             "IMG_WaterArrow"
           ],
@@ -970,7 +970,7 @@
         },
         {
           "id": "item_mossarrow",
-          "name": "Moss Arrow",
+          "name": "ref_mossarrow",
           "img": [
             "IMG_MossArrow"
           ],
@@ -986,7 +986,7 @@
         },
         {
           "id": "item_gasarrow",
-          "name": "Gas Arrow",
+          "name": "ref_gasarrow",
           "img": [
             "IMG_GasArrow_TMA"
           ],
@@ -1002,7 +1002,7 @@
         },
         {
           "id": "item_ropearrow",
-          "name": "Rope Arrow",
+          "name": "ref_ropearrow",
           "img": [
             "IMG_RopeArrow"
           ],
@@ -1018,7 +1018,7 @@
         },
         {
           "id": "item_noisemakerarrow",
-          "name": "Noisemaker Arrow",
+          "name": "ref_noisemakerarrow",
           "img": [
             "IMG_NoisemakerArrow"
           ],
@@ -1040,7 +1040,7 @@
       "catItems": [
         {
           "id": "item_watercrystal",
-          "name": "Water Crystal",
+          "name": "ref_watercrystal",
           "img": [
             "IMG_WaterCrystal"
           ],
@@ -1066,7 +1066,7 @@
         },
         {
           "id": "item_firecrystal",
-          "name": "Fire Crystal",
+          "name": "ref_firecrystal",
           "img": [
             "IMG_FireCrystal"
           ],
@@ -1089,7 +1089,7 @@
       "catItems": [
         {
           "id": "item_flashbomb",
-          "name": "Flash Bomb",
+          "name": "ref_flashbomb",
           "img": [
             "IMG_FlashBomb"
           ],
@@ -1111,7 +1111,7 @@
       "catItems": [
         {
           "id": "item_healingpotion",
-          "name": "Healing Potion",
+          "name": "ref_healingpotion",
           "img": [
             "IMG_HealingPotion"
           ],
@@ -1129,7 +1129,7 @@
         },
         {
           "id": "item_invisibilitypotion",
-          "name": "Invisibility Potion",
+          "name": "ref_invispotion",
           "img": [
             "IMG_InvisibilityPotion"
           ],
@@ -1154,7 +1154,7 @@
         },
         {
           "id": "item_slowfallpotion",
-          "name": "Slow-fall Potion",
+          "name": "ref_slowfallpotion",
           "img": [
             "IMG_SlowfallPotion"
           ],
@@ -1177,7 +1177,7 @@
       "catItems": [
         {
           "id": "item_lockpicksquare",
-          "name": "Square-tooth Lockpick",
+          "name": "ref_squarepick",
           "img": [
             "IMG_Lockpick_Square"
           ],
@@ -1193,7 +1193,7 @@
         },
         {
           "id": "item_lockpicktriangle",
-          "name": "Triangle-tooth Lockpick",
+          "name": "ref_trianglepick",
           "img": [
             "IMG_Lockpick_Triangle"
           ],
@@ -1262,7 +1262,7 @@
         },
         {
           "id": "item_key",
-          "name": "Power Station Key",
+          "name": "ref_key_powerstation",
           "img": [
             "IMG_Key_Gold"
           ],
@@ -1434,7 +1434,7 @@
         },
         {
           "id": "item_key",
-          "name": "Safe Key",
+          "name": "ref_key_safe",
           "img": [
             "IMG_Key_Black"
           ],
@@ -1468,7 +1468,7 @@
         },
         {
           "id": "item_key",
-          "name": "Vault Key",
+          "name": "ref_key_vault",
           "img": [
             "IMG_Key_Red"
           ],
@@ -1510,7 +1510,7 @@
       "catItems": [
         {
           "id": "item_flare",
-          "name": "Flare",
+          "name": "ref_flare",
           "img": [
             "IMG_Flare"
           ],
@@ -1532,7 +1532,7 @@
       "catItems": [
         {
           "id": "item_compass",
-          "name": "Compass",
+          "name": "ref_compass",
           "img": [
             "IMG_Compass"
           ],
@@ -1548,7 +1548,7 @@
         },
         {
           "id": "item_scoutingorb",
-          "name": "Scouting Orb",
+          "name": "ref_scoutingorb",
           "img": [
             "IMG_ScoutingOrb"
           ],
@@ -1570,7 +1570,7 @@
       "catItems": [
         {
           "id": "item_loaf",
-          "name": "Loaf",
+          "name": "ref_loaf",
           "img": [
             "IMG_Loaf"
           ],
@@ -1587,7 +1587,7 @@
         },
         {
           "id": "item_cabbage",
-          "name": "Cabbage",
+          "name": "ref_cabbage",
           "img": [
             "IMG_Cabbage_Alt1"
           ],
@@ -1604,7 +1604,7 @@
         },
         {
           "id": "item_cheese",
-          "name": "Cheese",
+          "name": "ref_cheese",
           "img": [
             "IMG_Cheese_Alt2"
           ],
@@ -1644,7 +1644,7 @@
       "catItems": [
         {
           "id": "item_crumpledpaper",
-          "name": "Crumpled Paper",
+          "name": "ref_crumpledpaper",
           "img": [
             "IMG_CrumpledPaper"
           ],
@@ -1676,7 +1676,7 @@
         },
         {
           "id": "item_unrolledscroll",
-          "name": "Scroll",
+          "name": "ref_scroll",
           "img": [
             "IMG_UnrolledScroll"
           ],
@@ -1723,7 +1723,7 @@
         },
         {
           "id": "item_rolledscroll",
-          "name": "Rolled Scroll",
+          "name": "ref_rolledscroll",
           "img": [
             "IMG_RolledScroll"
           ],
@@ -1741,7 +1741,7 @@
         },
         {
           "id": "item_papyrus",
-          "name": "Papyrus",
+          "name": "ref_papyrus",
           "img": [
             "IMG_Papyrus"
           ],
@@ -1772,7 +1772,7 @@
       "catItems": [
         {
           "id": "item_multimold",
-          "name": "Multimold",
+          "name": "ref_multimold",
           "img": [
             "IMG_Multimold_Symbol"
           ],
@@ -1818,7 +1818,7 @@
       "catItems": [
         {
           "id": "item_hornofquintus",
-          "name": "Horn of Quintus",
+          "name": "ref_hornofquintus",
           "img": [
             "IMG_HornOfQuintus"
           ],
@@ -1845,7 +1845,7 @@
         },
         {
           "id": "item_navigationglobe",
-          "name": "Navigation Globe",
+          "name": "ref_naviglobe",
           "img": [
             "IMG_NavigationGlobe"
           ],
@@ -1864,7 +1864,7 @@
         },
         {
           "id": "item_goldenbone",
-          "name": "Golden Bone",
+          "name": "ref_goldenbone",
           "img": [
             "IMG_GoldenBone_Skull"
           ],
@@ -1891,7 +1891,7 @@
       "catJunk": [
         {
           "id": "junk_normalcrate",
-          "name": "Normal Crate",
+          "name": "ref_normalcrate",
           "img": [
             "IMG_NormalCrate"
           ],
@@ -1907,7 +1907,7 @@
         },
         {
           "id": "junk_oldcrate",
-          "name": "Old Crate",
+          "name": "ref_oldcrate",
           "img": [
             "IMG_OldCrate"
           ],
@@ -1930,7 +1930,7 @@
       "catJunk": [
         {
           "id": "junk_porcelainplate",
-          "name": "Porcelain Plate",
+          "name": "ref_porcelainplate",
           "img": [
             "IMG_PorcelainPlate"
           ],
@@ -1954,7 +1954,7 @@
         },
         {
           "id": "junk_metaltray",
-          "name": "Metal Tray",
+          "name": "ref_metaltray",
           "img": [
             "IMG_MetalTray"
           ],
@@ -1977,7 +1977,7 @@
       "catJunk": [
         {
           "id": "junk_metalgoblet",
-          "name": "Metal Goblet",
+          "name": "ref_metalgoblet",
           "img": [
             "IMG_MetalGoblet"
           ],
@@ -2015,7 +2015,7 @@
       "catJunk": [
         {
           "id": "junk_greenbottle",
-          "name": "Green Bottle",
+          "name": "ref_greenbottle",
           "img": [
             "IMG_GreenBottle"
           ],
@@ -2046,7 +2046,7 @@
         },
         {
           "id": "junk_graybottle",
-          "name": "Gray Bottle",
+          "name": "ref_graybottle",
           "img": [
             "IMG_GrayBottle"
           ],
@@ -2069,7 +2069,7 @@
       "catJunk": [
         {
           "id": "junk_pottedplant",
-          "name": "Potted Plant",
+          "name": "ref_pottedplant",
           "img": [
             "IMG_PottedPlant"
           ],
@@ -2093,7 +2093,7 @@
         },
         {
           "id": "junk_vase",
-          "name": "Vase",
+          "name": "ref_vase",
           "img": [
             "IMG_Vase"
           ],
@@ -2116,7 +2116,7 @@
       "catJunk": [
         {
           "id": "junk_anchor",
-          "name": "Anchor",
+          "name": "ref_anchor",
           "img": [
             "IMG_Anchor"
           ],
@@ -2139,7 +2139,7 @@
       "catJunk": [
         {
           "id": "junk_spade",
-          "name": "Spade",
+          "name": "ref_spade",
           "img": [
             "IMG_Spade"
           ],
@@ -2156,7 +2156,7 @@
         },
         {
           "id": "junk_drillingmachine",
-          "name": "Drilling Machine",
+          "name": "ref_drillingmachine",
           "img": [
             "IMG_DrillingMachine"
           ],
@@ -2179,7 +2179,7 @@
       "catJunk": [
         {
           "id": "junk_smallhammer",
-          "name": "Small Hammer",
+          "name": "ref_smallhammer",
           "img": [
             "IMG_SmallHammer"
           ],
@@ -2202,7 +2202,7 @@
       "catJunk": [
         {
           "id": "junk_skull",
-          "name": "Skull",
+          "name": "ref_skull",
           "img": [
             "IMG_Skull"
           ],
@@ -2239,7 +2239,7 @@
       "rewards": [
         {
           "id": "sec_1_1",
-          "rewardLoot": "Gemstone",
+          "rewardLoot": "ref_gemstone",
           "value": [0,100,0,0],
           "findCount": [1,1,1]
         }

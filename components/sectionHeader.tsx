@@ -25,29 +25,27 @@ export function SectionHeader(props) {
 
   return (
     <View
-      style={styles.listTitleView}
+      style={styles.listTitleView(width)}
     >
-      <Text style={[
-        styles.listTitleText,
-        Platform.OS !== 'web' && {
-          fontSize: 14,
-        },
-        Platform.OS === 'web' && {
-          fontSize: (width > 460) ? 18 : width*0.039,
-        },
-        {color: colors.text}
-      ]}>
+      <Text style={[styles.listTitleText(width), {color: colors.text}]}>
         <Text style={styles.listTitleLine}>
-          {(width > 631)
-            ? '                                        '
-            : '                              '
+          {/* Some browsers like Chrome see a string of all spaces
+              as trailing whitespace and won't apply some styles to it.
+              The zero-width space character \u200B prevents this. */}
+          {(width > 617)
+            ? '\u200B                                        \u200B'
+            : (width > 449)
+              ? '\u200B                              \u200B'
+              : '\u200B                    \u200B'
           }
         </Text>
         {`  ${props.headerName}  `}
         <Text style={styles.listTitleLine}>
-          {(width > 631)
-            ? '                                        '
-            : '                              '
+          {(width > 617)
+            ? '\u200B                                        \u200B'
+            : (width > 449)
+              ? '\u200B                              \u200B'
+              : '\u200B                    \u200B'
           }
         </Text>
       </Text>
@@ -57,14 +55,14 @@ export function SectionHeader(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  listTitleView: {
+  listTitleView: (width) => ({
     alignItems: 'center',
-    marginTop: (Platform.OS === 'web') ? 12 : 10,
-  },
-  listTitleText: {
-    //fontSize: (Platform.OS === 'web') ? 18 : 14,
+    marginTop: (width > 449) ? 12 : 10,
+  }),
+  listTitleText: (width) => ({
+    fontSize: (width > 449) ? 18 : 14,
     fontWeight: 'bold',
-  },
+  }),
   listTitleLine: {
     textDecorationLine: 'line-through',
   },

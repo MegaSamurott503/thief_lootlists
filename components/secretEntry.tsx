@@ -16,7 +16,7 @@ import { FindMeArea } from '@/components/findMeArea';
 import { FindMePrecise } from '@/components/findMePrecise';
 
 import { stylesList } from '@/constants/stylesList';
-import { stylesImg } from '@/constants/stylesImg';
+//import { stylesImg } from '@/constants/stylesImg';
 import { stylesModal } from '@/constants/stylesModal';
 import {
   bgDefaultLight, bgDefaultDark,
@@ -198,16 +198,10 @@ export const SecretEntry = memo(function SecretEntry(props) {
       ) &&
         <>
           <View style={[
-            stylesList.listEntry,
+            stylesList.listEntry(width),
             styles.secretSplit
           ]}>
-            <View style={[
-              styles.secretTrigList,
-              Platform.OS !== 'web' && {width: '72%'},
-              Platform.OS === 'web' && {
-                width: (width > 794) ? 590 : '77.5%'
-              }
-            ]}>
+            <View style={styles.secretTrigList(width)}>
               {/* Map out each entry in secret trigger sub-array. */}
               {props.triggers && props.triggers.map((trigKey, trigIndex) => (
                 <View
@@ -241,26 +235,19 @@ export const SecretEntry = memo(function SecretEntry(props) {
                   ) &&
                     <>
                       <View style={[
-                        styles.secretTrigID,
-                        Platform.OS !== 'web' && {width: '27%'},
-                        Platform.OS === 'web' && {
-                          width: (width > 794) ? 140 : '24%'
-                        },
+                        styles.secretTrigID(width),
                         {backgroundColor: colors.backMed,
                         borderColor: colors.border},
                         props.triggers.length === 1 && styles.secretTrigOne,
-                        trigIndex === 0 && styles.secretTrigTop,
+                        trigIndex === 0 && styles.secretTrigTop(width),
                         trigIndex !== 0 && styles.secretTrigMid,
                         trigIndex === props.triggers.length - 1 &&
                           props.triggers.length > 1 &&
-                          styles.secretTrigBot
+                          styles.secretTrigBot(width)
                       ]}>
                         {/* Secret's number and image go here. */}
                         {trigIndex === 0 &&
-                          <Text style={[
-                            styles.secretNum,
-                            {color: colors.text}
-                          ]}>
+                          <Text style={[styles.secretNum(width), {color: colors.text}]}>
                             {props.number}
                           </Text>
                         }
@@ -269,14 +256,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                         >
                           <Image
                             source={props.img[trigIndex]}
-                            style={[
-                              styles.imgSecret,
-                              Platform.OS !== 'web' && {width: 70, height: 70},
-                              Platform.OS === 'web' && {
-                                width: (width > 794) ? 128 : width*0.16,
-                                height: (width > 794) ? 128 : width*0.16,
-                              },
-                            ]}
+                            style={styles.imgSecret(width)}
                           />
                         </TouchableWithoutFeedback>
                         {/* Modal to show bigger secret image. */}
@@ -297,13 +277,13 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             {/* Pop-up box containing the image. */}
                             <TouchableWithoutFeedback>
                               <View style={[
-                                styles.secretModal,
+                                styles.secretModal(width),
                                 {backgroundColor: colors.backMed,
                                 borderColor: colors.border}
                               ]}>
                                 <Image
                                   source={props.img[getShowModal]}
-                                  style={styles.imgSecretBig}
+                                  style={styles.imgSecretBig(width)}
                                 />
                               </View>
                             </TouchableWithoutFeedback>
@@ -311,14 +291,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                         </Modal>
                       </View>
                       <TouchableOpacity
-                        style={[
-                          styles.secretLoc,
-                          Platform.OS !== 'web' && {width: '38%'},
-                          Platform.OS === 'web' && {
-                            width: (width > 794) ? 150 : '25%'
-                          },
-                          {borderColor: colors.border}
-                        ]}
+                        style={[styles.secretLoc(width), {borderColor: colors.border}]}
                         // Toggle whether this secret is selected or not.
                         onPress={() => triggerMe("opposite")}
                       >
@@ -347,19 +320,12 @@ export const SecretEntry = memo(function SecretEntry(props) {
                         </ImageBackground>
                       </TouchableOpacity>
                       <View style={[
-                        styles.secretMethod,
-                        Platform.OS !== 'web' && {width: '35%'},
-                        Platform.OS === 'web' && {
-                          width: (width > 794) ? 300 : '51%'
-                        },
+                        styles.secretMethod(width),
                         {backgroundColor: colors.backLight,
                         borderColor: colors.border}
                       ]}>
                         {/* Secret's trigger goes here. */}
-                        <Text style={[
-                          styles.secretText,
-                          {color: colors.text}
-                        ]}>
+                        <Text style={[styles.secretText(width), {color: colors.text}]}>
                           {trigKey.method}
                         </Text>
                       </View>
@@ -368,13 +334,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                 </View>
               ))}
             </View>
-            <View style={[
-              styles.secretRewardList,
-              Platform.OS !== 'web' && {width: '28%'},
-              Platform.OS === 'web' && {
-                width: (width > 794) ? 174 : '22.5%'
-              }
-            ]}>
+            <View style={styles.secretRewardList(width)}>
               {/* Map out each entry in secret reward sub-array. */}
               {props.rewards && props.rewards.map((rewKey, rewIndex) => (
                 <View
@@ -403,7 +363,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       {rewKey.rewardRoute &&
                         <>
                           <Text style={[
-                            styles.secretRewardText,
+                            styles.secretRewardText(width),
                             styles.secretRewardOther,
                             {color: colors.text}
                           ]}>
@@ -413,7 +373,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             <Text
                               key={`route_${routeIndex}`}
                               style={[
-                                styles.secretRewardText,
+                                styles.secretRewardText(width),
                                 styles.secretRewardOther,
                                 {color: colors.text}
                             ]}>
@@ -438,7 +398,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       {rewKey.rewardLoot &&
                         <>
                           <Text style={[
-                            styles.secretRewardText,
+                            styles.secretRewardText(width),
                             {color: colors.text}
                           ]}>
                             <FindMeArea
@@ -454,10 +414,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             {rewKey.value && rewKey.value[0] > 0 &&
                               <>
                                 <LootIconPicker cat={props.lootCats[0]} />
-                                <Text style={[
-                                  stylesList.lootText,
-                                  {color: colors.text}
-                                ]}>
+                                <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                                   {`${rewKey.value[0]} `}
                                 </Text>
                               </>
@@ -465,10 +422,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             {rewKey.value && rewKey.value[1] > 0 &&
                               <>
                                 <LootIconPicker cat={props.lootCats[1]} />
-                                <Text style={[
-                                  stylesList.lootText,
-                                  {color: colors.text}
-                                ]}>
+                                <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                                   {`${rewKey.value[1]} `}
                                 </Text>
                               </>
@@ -476,10 +430,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             {rewKey.value && rewKey.value[2] > 0 &&
                               <>
                                 <LootIconPicker cat={props.lootCats[2]} />
-                                <Text style={[
-                                  stylesList.lootText,
-                                  {color: colors.text}
-                                ]}>
+                                <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                                   {`${rewKey.value[2]} `}
                                 </Text>
                               </>
@@ -487,10 +438,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             {rewKey.value && rewKey.value[3] > 0 &&
                               <>
                                 <LootIconPicker cat={props.lootCats[3]} />
-                                <Text style={[
-                                  stylesList.lootText,
-                                  {color: colors.text}
-                                ]}>
+                                <Text style={[stylesList.lootText(width), {color: colors.text}]}>
                                   {`${rewKey.value[2]} `}
                                 </Text>
                               </>
@@ -500,7 +448,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             {rewKey.findCount &&
                               Math.max(...rewKey.findCount) > 1 &&
                               <Text style={[
-                                styles.secretRewardText,
+                                styles.secretRewardText(width),
                                 {color: colors.text}
                               ]}>
                                 {'each'}
@@ -512,7 +460,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       {/* Is this reward an inventory item? */}
                       {rewKey.rewardItem &&
                         <Text style={[
-                          styles.secretRewardText,
+                          styles.secretRewardText(width),
                           {color: colors.text}
                         ]}>
                           <FindMeArea
@@ -528,7 +476,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       {rewKey.rewardHint &&
                         <>
                           <Text style={[
-                            styles.secretRewardText,
+                            styles.secretRewardText(width),
                             styles.secretRewardOther,
                             {color: colors.text}
                           ]}>
@@ -543,7 +491,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                             <Text
                               key={`hint_${hintIndex}`}
                               style={[
-                                styles.secretRewardText,
+                                styles.secretRewardText(width),
                                 styles.secretRewardOther,
                                 {color: colors.text}
                             ]}>
@@ -569,7 +517,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       {/* Is this reward something else? */}
                       {rewKey.rewardOther &&
                         <Text style={[
-                          styles.secretRewardText,
+                          styles.secretRewardText(width),
                           styles.secretRewardOther,
                           {color: colors.text}
                         ]}>
@@ -579,7 +527,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
                       {/* Is this reward a bonus objective? */}
                       {rewKey.rewardBonus &&
                         <Text style={[
-                          styles.secretRewardText,
+                          styles.secretRewardText(width),
                           styles.secretRewardOther,
                           {color: colors.text}
                         ]}>
@@ -594,7 +542,7 @@ export const SecretEntry = memo(function SecretEntry(props) {
               {!props.rewards &&
                 <View style={styles.secretReward}>
                   <Text style={[
-                    styles.secretRewardText,
+                    styles.secretRewardText(width),
                     styles.secretRewardOther,
                     {color: colors.text}
                   ]}>
@@ -612,57 +560,58 @@ export const SecretEntry = memo(function SecretEntry(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  secretTrigList: {
-    //width: (Platform.OS === 'web') ? 590 : '72%',
-  },
+  secretTrigList: (width) => ({
+    width: (width > 794) ? 590 : '77.5%',
+  }),
   secretTrig: {
     flexDirection: 'row',
     flexGrow: 1,
   },
-  secretTrigID: {
+  secretTrigID: (width) => ({
     borderWidth: 1,
     alignItems: 'center',
     paddingHorizontal: 3,
-    //width: (Platform.OS === 'web') ? 140 : '27%',
-  },
+    width: (width > 794) ? 140 : '24%',
+  }),
   secretTrigOne: {
     borderBottomLeftRadius: 8,
   },
-  secretTrigTop: {
+  secretTrigTop: (width) => ({
     borderTopLeftRadius: 8,
-    paddingBottom: (Platform.OS === 'web') ? 5 : 3,
-  },
+    paddingBottom: (width > 617) ? 5 : 3,
+  }),
   secretTrigMid: {
     paddingVertical: 8,
   },
-  secretTrigBot: {
+  secretTrigBot: (width) => ({
     borderBottomLeftRadius: 8,
-    paddingTop: (Platform.OS === 'web') ? 5 : 3,
-    paddingBottom: (Platform.OS === 'web') ? 16 : 13,
-  },
-  secretNum: {
-    fontSize: (Platform.OS === 'web') ? 12 : 8,
+    paddingTop: (width > 617) ? 5 : 3,
+    paddingBottom: (width > 617) ? 16 : 13,
+  }),
+  secretNum: (width) => ({
+    fontSize: (width > 617) ? 12 : 8,
     fontWeight: 'bold',
-  },
-  secretLoc: {
+  }),
+  secretLoc: (width) => ({
     borderTopWidth: 1,
     borderBottomWidth: 1,
     borderLeftWidth: 1,
     justifyContent: 'center',
-    //width: (Platform.OS === 'web') ? 150 : '38%',
-  },
-  secretMethod: {
+    width: (width > 794) ? 150 : '30%',
+  }),
+  secretMethod: (width) => ({
     borderWidth: 1,
     justifyContent: 'center',
     padding: 2,
-    //width: (Platform.OS === 'web') ? 300 : '35%',
-  },
-  secretText: {
-    fontSize: (Platform.OS === 'web') ? 12 : 8,
-  },
-  secretRewardList: {
-    //width: (Platform.OS === 'web') ? 175 : '28%',
-  },
+    width: (width > 794) ? 300 : '46%',
+
+  }),
+  secretText: (width) => ({
+    fontSize: (width > 617) ? 12 : 8,
+  }),
+  secretRewardList: (width) => ({
+    width: (width > 794) ? 175 : '22.5%',
+  }),
   secretRewardFlex: {
     flexGrow: 100,
   },
@@ -672,28 +621,28 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 2,
   },
-  secretRewardText: {
-    fontSize: (Platform.OS === 'web') ? 12 : 8,
-  },
+  secretRewardText: (width) => ({
+    fontSize: (width > 617) ? 12 : 8,
+  }),
   secretRewardOther: {
     fontStyle: 'italic',
   },
-  secretModal: {
+  secretModal: (width) => ({
     borderWidth: 1,
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    width: (Platform.OS === 'web') ? 420 : 220,
-    height: (Platform.OS === 'web') ? 420 : 220,
-  },
-  imgSecret: {
-    //width: (Platform.OS === 'web') ? 128 : 70,
-    //height: (Platform.OS === 'web') ? 128 : 70,
-  },
-  imgSecretBig: {
-    width: (Platform.OS === 'web') ? 400 : 200,
-    height: (Platform.OS === 'web') ? 400 : 200,
-  },
+    width: (width > 617) ? 420 : 220,
+    height: (width > 617) ? 420 : 220,
+  }),
+  imgSecret: (width) => ({
+    width: (width > 617) ? 128 : width*0.16,
+    height: (width > 617) ? 128 : width*0.16,
+  }),
+  imgSecretBig: (width) => ({
+    width: (width > 617) ? 400 : 200,
+    height: (width > 617) ? 400 : 200,
+  }),
   secretSplit: {
     marginBottom: 9,
   },

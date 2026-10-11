@@ -1,19 +1,19 @@
 import { Platform } from 'react-native';
 
 export const stylesList = {
-  listEntry: {
+  listEntry: (width) => ({
     flexDirection: 'row',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
+    marginHorizontal: (width > 449) ? 10 : 5,
     alignItems: 'stretch',
-  },
+  }),
   lootRow: {
     flexDirection: 'row',
     flexWrap: 'wrap',
   },
-  lootText: {
-    fontSize: (Platform.OS === 'web') ? 12 : 8,
-    marginLeft: (Platform.OS === 'web') ? 3 : 2,
-  },
+  lootText: (width) => ({
+    fontSize: (width > 449) ? 12 : 8,
+    marginLeft: (width > 449) ? 3 : 2,
+  }),
   findBackground: {
     flex: 1,
     justifyContent: 'center',
@@ -23,10 +23,11 @@ export const stylesList = {
     height: '100%',
     width: '100%',
   },
-  locText: {
+  locText: (width) => ({
     //fontFamily: 'BlueHighway',
-    //fontSize: (Platform.OS === 'web') ? 12 : 8,
-  },
+    fontSize: (width > 449) ? 12 : 7,
+    //fontSize: (width > 449) ? 12 : (width > 389) ? 9 : width*0.019,
+  }),
   locCount: {
     fontWeight: 'bold',
   },
@@ -34,14 +35,15 @@ export const stylesList = {
     fontStyle: 'italic',
   },
   locBox: {
-    //textDecorationLine: 'underline',
-    borderWidth: 1,
-    marginVertical: -1,
+    // No overline. Too high up to make box shape.
+    textDecorationLine: 'underline',
+    //borderWidth: 1,
+    //marginHorizontal: 0,
   },
   locNoGet: {
     textDecorationLine: 'line-through',
   },
   locBoxNoGet: {
-    //textDecorationLine: 'underline line-through',
+    textDecorationLine: 'underline line-through',
   },
 }

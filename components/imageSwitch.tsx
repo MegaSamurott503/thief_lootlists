@@ -1,6 +1,7 @@
 //import { useTheme } from '@react-navigation/native';
 import {
-  Image, View
+  Image, View,
+  useWindowDimensions
 } from 'react-native';
 import { memo, useEffect, useState } from 'react';
 
@@ -12,6 +13,9 @@ import { stylesImg } from '@/constants/stylesImg';
 // Custom view component showing a slideshow of images.
 // Wrap in a memo to avoid unnecessary re-renders.
 export const ImageSwitch = memo(function ImageSwitch(props) {
+  // Access window size.
+  const { height, width } = useWindowDimensions();
+
   // ImageIndex: tracks the current index in the image array.
   const [getImageIndex, setImageIndex] = useState(0);
 
@@ -35,7 +39,7 @@ export const ImageSwitch = memo(function ImageSwitch(props) {
     <View>
       <Image
         source={props.img[getImageIndex]}
-        style={stylesImg.imgStyle}
+        style={stylesImg.imgStyle(width)}
       />
     </View>
   );

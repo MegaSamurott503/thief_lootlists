@@ -57,10 +57,10 @@ export function ArrowsView(props) {
   const [getNextClicked, setNextClicked] = useState(false);
 
   return (
-    <View style={styles.goToView(device)}>
+    <View style={styles.goToView(width)}>
       {/* Empty space if no previous mission. */}
       {!props.goToPrev &&
-        <View style={styles.goPrevBlank}>
+        <View style={styles.goPrevBlank(width)}>
         </View>
       }
       {/* Previous mission button. */}
@@ -88,13 +88,13 @@ export function ArrowsView(props) {
               ? arrowDark : arrowLight}
             //source={arrowLight}
             style={[
-              stylesArrow.arrowLeft,
-              stylesArrow.arrowGoTo
+              stylesArrow.arrowLeft(width),
+              stylesArrow.arrowGoTo(width)
             ]}
           />
           <View
             style={[
-              styles.goToButton,
+              styles.goToButton(width),
               styles.goPrevButton,
               {backgroundColor: colors.backLight,
               borderColor: colors.border}
@@ -111,9 +111,7 @@ export function ArrowsView(props) {
             }
             {/* Show the text when the button is not clicked. */}
             {!getPrevClicked &&
-              <Text style={[
-                styles.goPrevText, {color: colors.text}
-              ]}>
+              <Text style={[styles.goPrevText(width), {color: colors.text}]}>
                 {`Previous\nMission`}
                 {/*{props.goToPrev}*/}
               </Text>
@@ -124,7 +122,7 @@ export function ArrowsView(props) {
       {/* Back to mission selection button. */}
       <TouchableOpacity
         style={[
-          styles.goToButton,
+          styles.goToButton(width),
           styles.goPrevButton,
           styles.goNextButton,
           {backgroundColor: colors.backLight,
@@ -132,15 +130,13 @@ export function ArrowsView(props) {
         ]}
         onPress={() => router.navigate(backSwitch(props.pageID))}
       >
-        <Text style={[
-          styles.goBackText, {color: colors.text}
-        ]}>
+        <Text style={[styles.goBackText(width), {color: colors.text}]}>
           {`Select\nMission`}
         </Text>
       </TouchableOpacity>
       {/* Empty space if no next mission. */}
       {!props.goToNext &&
-        <View style={styles.goPrevBlank}>
+        <View style={styles.goPrevBlank(width)}>
         </View>
       }
       {/* Next mission button. */}
@@ -167,7 +163,7 @@ export function ArrowsView(props) {
         >
           <View
             style={[
-              styles.goToButton,
+              styles.goToButton(width),
               styles.goNextButton,
               {backgroundColor: colors.backLight,
               borderColor: colors.border}
@@ -184,9 +180,7 @@ export function ArrowsView(props) {
             }
             {/* Show the text when the button is not clicked. */}
             {!getNextClicked &&
-              <Text style={[
-                styles.goNextText, {color: colors.text}
-              ]}>
+              <Text style={[styles.goNextText(width), {color: colors.text}]}>
                 {`Next\nMission`}
                 {/*{props.goToNext}*/}
               </Text>
@@ -198,8 +192,8 @@ export function ArrowsView(props) {
               ? arrowDark : arrowLight}
             //source={arrowLight}
             style={[
-              stylesArrow.arrowRight,
-              stylesArrow.arrowGoTo
+              stylesArrow.arrowRight(width),
+              stylesArrow.arrowGoTo(width)
             ]}
           />
         </TouchableOpacity>
@@ -210,36 +204,37 @@ export function ArrowsView(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  goToView: device => ({
+  goToView: (width) => ({
     flexDirection: 'row',
-    columnGap: (device !== 'phone') ? 120 : 60
+    columnGap: (width > 617) ? 180 :
+      (width > 449) ? 120 : 60
   }),
   goToArrow: {
     flexDirection: 'row',
   },
-  goToButton: {
+  goToButton: (width) => ({
     borderTopWidth: 1,
     borderBottomWidth: 1,
-    marginVertical: (Platform.OS === 'web') ? 10 : 5,
+    marginVertical: (width > 617) ? 10 : 5,
     paddingHorizontal: 4,
     paddingVertical: 2,
-    width: (Platform.OS === 'web') ? 65 : 55
-  },
+    width: (width > 617) ? 65 : 55
+  }),
   goPrevButton: {
     borderRightWidth: 1,
     borderTopRightRadius: 5,
     borderBottomRightRadius: 5,
   },
-  goPrevBlank: {
-    marginVertical: (Platform.OS === 'web') ? 10 : 5,
+  goPrevBlank: (width) => ({
+    marginVertical: (width > 617) ? 10 : 5,
     paddingHorizontal: 8,
     paddingVertical: 2,
-    width: (Platform.OS === 'web') ? 85 : 72
-  },
-  goPrevText: {
-    fontSize: (Platform.OS === 'web') ? 13 : 10,
+    width: (width > 617) ? 85 : 72
+  }),
+  goPrevText: (width) => ({
+    fontSize: (width > 617) ? 13 : 10,
     textAlign: 'left',
-  },
+  }),
   goNextButton: {
     borderLeftWidth: 1,
     borderTopLeftRadius: 5,
@@ -251,14 +246,14 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
     //width: (Platform.OS === 'web') ? 85 : 72,
   },
-  goNextText: {
-    fontSize: (Platform.OS === 'web') ? 13 : 10,
+  goNextText: (width) => ({
+    fontSize: (width > 617) ? 13 : 10,
     textAlign: 'right',
-  },
-  goBackText: {
-    fontSize: (Platform.OS === 'web') ? 13 : 10,
+  }),
+  goBackText: (width) => ({
+    fontSize: (width > 617) ? 13 : 10,
     textAlign: 'center',
-  },
+  }),
   centerWheel: {
     flex: 1,
     justifyContent: 'center',

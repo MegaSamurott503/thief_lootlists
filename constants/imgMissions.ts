@@ -107,12 +107,18 @@ export const myScreens = {
   'MIS_t2_guest_A': require('@/assets/images/screens/t2_guest_A.png'),
   'MIS_t2_guest_B': require('@/assets/images/screens/t2_guest_B.png'),
 
+  // FM: Among Two Storms
+  'MIS_fm_twostorms_A': require('@/assets/images/screens/fm_twostorms_A.png'),
+  'MIS_fm_twostorms_B': require('@/assets/images/screens/fm_twostorms_B.png'),
   // FM: The Art of Thievery
   'MIS_fm_artthievery_A': require('@/assets/images/screens/fm_artthievery_A.png'),
   'MIS_fm_artthievery_B': require('@/assets/images/screens/fm_artthievery_B.png'),
   // FM: Autumn in Lampfire Hills
   'MIS_fm_lampfire_A': require('@/assets/images/screens/fm_lampfire_A.png'),
   'MIS_fm_lampfire_B': require('@/assets/images/screens/fm_lampfire_B.png'),
+  // FM: Bad Hangover
+  'MIS_fm_hangover_A': require('@/assets/images/screens/fm_hangover_A.png'),
+  'MIS_fm_hangover_B': require('@/assets/images/screens/fm_hangover_B.png'),
   // FM: Benny's Dead
   'MIS_fm_bennydead_A': require('@/assets/images/screens/fm_bennydead_A.png'),
   'MIS_fm_bennydead_B': require('@/assets/images/screens/fm_bennydead_B.png'),
@@ -140,12 +146,18 @@ export const myScreens = {
   // FM: Curse of the Ancients
   'MIS_fm_curseancients_A': require('@/assets/images/screens/fm_curseancients_A.png'),
   'MIS_fm_curseancients_B': require('@/assets/images/screens/fm_curseancients_B.png'),
+  // FM: Dance with the Dead
+  'MIS_fm_horrors-dance_A': require('@/assets/images/screens/fm_horrors-dance_A.png'),
+  'MIS_fm_horrors-dance_B': require('@/assets/images/screens/fm_horrors-dance_B.png'),
   // FM: Durant
   'MIS_fm_durant_A': require('@/assets/images/screens/fm_durant_A.png'),
   'MIS_fm_durant_B': require('@/assets/images/screens/fm_durant_B.png'),
   // FM: Escape!
   'MIS_fm_ashton-escape_A': require('@/assets/images/screens/fm_ashton-escape_A.png'),
   'MIS_fm_ashton-escape_B': require('@/assets/images/screens/fm_ashton-escape_B.png'),
+  // FM: Escape Hammer Hill
+  'MIS_fm_hammerhill_A': require('@/assets/images/screens/fm_hammerhill_A.png'),
+  'MIS_fm_hammerhill_B': require('@/assets/images/screens/fm_hammerhill_B.png'),
   // FM: Equilirium
   'MIS_fm_equilibrium_A': require('@/assets/images/screens/fm_equilibrium_A.png'),
   'MIS_fm_equilibrium_B': require('@/assets/images/screens/fm_equilibrium_B.png'),
@@ -161,6 +173,15 @@ export const myScreens = {
   // FM: Lord James' Retreat
   'MIS_fm_retreat_A': require('@/assets/images/screens/fm_retreat_A.png'),
   'MIS_fm_retreat_B': require('@/assets/images/screens/fm_retreat_B.png'),
+  // FM: The Mirror of Return - Part 1
+  'MIS_fm_forces-mirror1_A': require('@/assets/images/screens/fm_forces-mirror1_A.png'),
+  'MIS_fm_forces-mirror1_B': require('@/assets/images/screens/fm_forces-mirror1_B.png'),
+  // FM: The Mirror of Return - Part 2
+  'MIS_fm_forces-mirror2_A': require('@/assets/images/screens/fm_forces-mirror2_A.png'),
+  'MIS_fm_forces-mirror2_B': require('@/assets/images/screens/fm_forces-mirror2_B.png'),
+  // FM: The Mirror of Return - Part 3
+  'MIS_fm_forces-mirror3_A': require('@/assets/images/screens/fm_forces-mirror3_A.png'),
+  'MIS_fm_forces-mirror3_B': require('@/assets/images/screens/fm_forces-mirror3_B.png'),
   // FM: Mysterious Invitation
   'MIS_fm_forces-invitation_A': require('@/assets/images/screens/fm_forces-invitation_A.png'),
   'MIS_fm_forces-invitation_B': require('@/assets/images/screens/fm_forces-invitation_B.png'),
@@ -173,6 +194,9 @@ export const myScreens = {
   // FM: Ominous Bequest
   'MIS_fm_xedormicost-bequest_A': require('@/assets/images/screens/fm_xedormicost-bequest_A.png'),
   'MIS_fm_xedormicost-bequest_B': require('@/assets/images/screens/fm_xedormicost-bequest_B.png'),
+  // FM: Prequel - Finals at the Academy
+  'MIS_fm_finals_A': require('@/assets/images/screens/fm_finals_A.png'),
+  'MIS_fm_finals_B': require('@/assets/images/screens/fm_finals_B.png'),
   // FM: Revenge
   'MIS_fm_ashton-revenge_A': require('@/assets/images/screens/fm_ashton-revenge_A.png'),
   'MIS_fm_ashton-revenge_B': require('@/assets/images/screens/fm_ashton-revenge_B.png'),
@@ -191,6 +215,9 @@ export const myScreens = {
   // FM: So Long Hammers
   'MIS_fm_solong_A': require('@/assets/images/screens/fm_solong_A.png'),
   'MIS_fm_solong_B': require('@/assets/images/screens/fm_solong_B.png'),
+  // FM: Swamped
+  'MIS_fm_swamped_A': require('@/assets/images/screens/fm_swamped_A.png'),
+  'MIS_fm_swamped_B': require('@/assets/images/screens/fm_swamped_B.png'),
   // FM: Tales from the Cleft: Ladytaker
   'MIS_fm_cleft-ladytaker_A': require('@/assets/images/screens/fm_cleft-ladytaker_A.png'),
   'MIS_fm_cleft-ladytaker_B': require('@/assets/images/screens/fm_cleft-ladytaker_B.png'),
@@ -227,4 +254,7 @@ export const myScreens = {
   // FM: Weak Links
   'MIS_fm_links_A': require('@/assets/images/screens/fm_links_A.png'),
   'MIS_fm_links_B': require('@/assets/images/screens/fm_links_B.png'),
+  // FM: What Lies Below
+  'MIS_fm_horrors-below_A': require('@/assets/images/screens/fm_horrors-below_A.png'),
+  'MIS_fm_horrors-below_B': require('@/assets/images/screens/fm_horrors-below_B.png'),
 }

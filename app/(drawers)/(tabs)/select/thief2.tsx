@@ -7,6 +7,7 @@ import {
 
 import { GoToMission } from '@/components/goToMission';
 
+import { stylesTitle } from '@/constants/stylesTitle';
 import { stylesGoTo } from '@/constants/stylesGoTo';
 
 /* **************** */
@@ -24,11 +25,11 @@ export default function Thief2Screen() {
   return (
     <ScrollView>
       <View style={stylesGoTo.buttonPage}>
-        <Text style={{color: colors.text}}>
-          Thief 2 Mission Selection
+        <Text style={[stylesTitle.bigTitle(width), {color: colors.text}]}>
+          {` THIEF II: `}
         </Text>
-        <Text style={{color: colors.text}}>
-          WIP
+        <Text style={[stylesTitle.bigTitle(width), {color: colors.text}]}>
+          {` The Metal Age `}
         </Text>
         <View style={stylesGoTo.buttonView}>
           <GoToMission

@@ -1,5 +1,6 @@
 import {
-  StyleSheet, Image
+  StyleSheet, Image,
+  useWindowDimensions
 } from 'react-native';
 //import { useContext } from 'react';
 
@@ -13,6 +14,9 @@ import {
 /* **************** */
 // Custom image component of a loot category's icon (gold, gems, goods, etc).
 export function LootIconPicker(props) {
+  // Access window size.
+  const { height, width } = useWindowDimensions();
+
   // Use the identifier to decide which loot icon to return.
   function lootSwitch(lootCat) {
     switch(lootCat) {
@@ -42,8 +46,8 @@ export function LootIconPicker(props) {
     <Image
       source={lootSwitch(props.cat)}
       style={props.big
-        ? stylesImg.imgLootIconBig
-        : stylesImg.imgLootIcon
+        ? stylesImg.imgLootIconBig(width)
+        : stylesImg.imgLootIcon(width)
       }
     />
   );

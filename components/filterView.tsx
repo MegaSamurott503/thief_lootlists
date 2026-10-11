@@ -15,8 +15,8 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { LootIconPicker } from '@/components/lootIconPicker';
 import { FilterDropdown } from '@/components/filterDropdown';
 
-import { stylesImg } from '@/constants/stylesImg';
-import { stylesSelect } from '@/constants/stylesSelect';
+//import { stylesImg } from '@/constants/stylesImg';
+//import { stylesSelect } from '@/constants/stylesSelect';
 import { stylesModal } from '@/constants/stylesModal';
 import {
   FoundContext, FilterContext, SettingContext
@@ -80,7 +80,7 @@ export function FilterView(props) {
     for (let i = 1; i <= 140; i++) {
       invKeys.push(`@inventory_${props.id}_loot_${i}`);
     }
-    for (let i = 1; i <= 130; i++) {
+    for (let i = 1; i <= 160; i++) {
       invKeys.push(`@inventory_${props.id}_item_${i}`);
     }
     for (let i = 1; i <= 90; i++) {
@@ -115,7 +115,7 @@ export function FilterView(props) {
       {/* Button to clear all selected items. */}
       <TouchableOpacity
         style={[
-          styles.allButton,
+          styles.allButton(width),
           {backgroundColor: colors.backLight,
           borderColor: colors.border}
         ]}
@@ -139,7 +139,7 @@ export function FilterView(props) {
           >
             {/* Pop-up box containing the text. */}
             <View style={[
-              styles.waitModal,
+              stylesModal.waitModal,
               {backgroundColor: colors.backLight,
               borderColor: colors.border}
             ]}>
@@ -158,16 +158,12 @@ export function FilterView(props) {
         </Modal>
       </TouchableOpacity>
 
-      <View style={styles.filters}>
-        <Text style={[
-            Platform.OS !== 'web' && {
-              fontSize: width*0.035,
-            },
-            Platform.OS === 'web' && {
-              fontSize: (width > 460) ? 14 : width*0.03,
-            },
-            {color: colors.text}
-          ]}>
+      <View style={styles.filters(width)}>
+        <Text style={
+            {fontSize: (width > 460)
+              ? 14 : width*0.03,
+            color: colors.text}
+          }>
           Filters:
         </Text>
         <View>
@@ -177,10 +173,8 @@ export function FilterView(props) {
               {/* Normal difficulty filter. */}
               <TouchableOpacity
                 // Change background color when toggled.
-                style={[styles.filterButton,
-                  {minWidth: (Platform.OS === 'web')
-                    ? 105 : width*0.256,
-                  backgroundColor: colors.backLight,
+                style={[styles.filterButton(width),
+                  {backgroundColor: colors.backLight,
                   borderColor: colors.border},
                   !getFilterDiffN && {backgroundColor: colors.backDark}
                 ]}
@@ -194,10 +188,8 @@ export function FilterView(props) {
                   color={getFilterDiffN ? checkColorOn : checkColorOff}
                 />
                 <Text style={[
-                  styles.filterTextMode,
-                  {fontSize: (Platform.OS === 'web')
-                    ? 12 : width*0.028,
-                  color: colors.locN}
+                  styles.filterTextMode(width),
+                  {color: colors.locN}
                 ]}>
                   {` ■ ${props.diffNames[0]}`}
                 </Text>
@@ -205,10 +197,8 @@ export function FilterView(props) {
               {/* Hard difficulty filter. */}
               <TouchableOpacity
                 // Change background color when toggled.
-                style={[styles.filterButton,
-                  {minWidth: (Platform.OS === 'web')
-                    ? 105 : width*0.256,
-                  backgroundColor: colors.backLight,
+                style={[styles.filterButton(width),
+                  {backgroundColor: colors.backLight,
                   borderColor: colors.border},
                   !getFilterDiffH && {backgroundColor: colors.backDark}
                 ]}
@@ -222,10 +212,8 @@ export function FilterView(props) {
                   color={getFilterDiffH ? checkColorOn : checkColorOff}
                 />
                 <Text style={[
-                  styles.filterTextMode,
-                  {fontSize: (Platform.OS === 'web')
-                    ? 12 : width*0.028,
-                  color: colors.locH}
+                  styles.filterTextMode(width),
+                  {color: colors.locH}
                 ]}>
                   {` ▲ ${props.diffNames[1]}`}
                 </Text>
@@ -233,10 +221,8 @@ export function FilterView(props) {
               {/* Expert difficulty filter. */}
               <TouchableOpacity
                 // Change background color when toggled.
-                style={[styles.filterButton,
-                  {minWidth: (Platform.OS === 'web')
-                    ? 105 : width*0.256,
-                  backgroundColor: colors.backLight,
+                style={[styles.filterButton(width),
+                  {backgroundColor: colors.backLight,
                   borderColor: colors.border},
                   !getFilterDiffX && {backgroundColor: colors.backDark}
                 ]}
@@ -250,10 +236,8 @@ export function FilterView(props) {
                   color={getFilterDiffX ? checkColorOn : checkColorOff}
                 />
                 <Text style={[
-                  styles.filterTextMode,
-                  {fontSize: (Platform.OS === 'web')
-                    ? 12 : width*0.028,
-                  color: colors.locX}
+                  styles.filterTextMode(width),
+                  {color: colors.locX}
                 ]}>
                   {` ◆ ${props.diffNames[2]}`}
                 </Text>
@@ -268,10 +252,8 @@ export function FilterView(props) {
               {props.modeNames.length >= 1 &&
                 <TouchableOpacity
                   // Change background color when toggled.
-                  style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
-                      ? 105 : width*0.256,
-                    backgroundColor: colors.backLight,
+                  style={[styles.filterButton(width),
+                    {backgroundColor: colors.backLight,
                     borderColor: colors.border},
                     !getFilterModeA && {backgroundColor: colors.backDark}
                   ]}
@@ -285,10 +267,8 @@ export function FilterView(props) {
                     color={getFilterModeA ? checkColorOn : checkColorOff}
                   />
                   <Text style={[
-                    styles.filterTextMode,
-                    {fontSize: (Platform.OS === 'web')
-                      ? 12 : width*0.028,
-                    color: getFilterModeA
+                    styles.filterTextMode(width),
+                    {color: getFilterModeA
                       ? colors.text : colors.textInvert}
                   ]}>
                     {` ${props.modeNames[0].name}`}
@@ -299,10 +279,8 @@ export function FilterView(props) {
               {props.modeNames.length >= 2 &&
                 <TouchableOpacity
                   // Change background color when toggled.
-                  style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
-                      ? 105 : width*0.256,
-                    backgroundColor: colors.backLight,
+                  style={[styles.filterButton(width),
+                    {backgroundColor: colors.backLight,
                     borderColor: colors.border},
                     !getFilterModeB && {backgroundColor: colors.backDark}
                   ]}
@@ -316,10 +294,8 @@ export function FilterView(props) {
                     color={getFilterModeB ? checkColorOn : checkColorOff}
                   />
                   <Text style={[
-                    styles.filterTextMode,
-                    {fontSize: (Platform.OS === 'web')
-                      ? 12 : width*0.028,
-                    color: getFilterModeB
+                    styles.filterTextMode(width),
+                    {color: getFilterModeB
                       ? colors.text : colors.textInvert}
                   ]}>
                     {` ${props.modeNames[1].name}`}
@@ -330,10 +306,8 @@ export function FilterView(props) {
               {props.modeNames.length >= 3 &&
                 <TouchableOpacity
                   // Change background color when toggled.
-                  style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
-                      ? 105 : width*0.256,
-                    backgroundColor: colors.backLight,
+                  style={[styles.filterButton(width),
+                    {backgroundColor: colors.backLight,
                     borderColor: colors.border},
                     !getFilterModeC && {backgroundColor: colors.backDark}
                   ]}
@@ -347,10 +321,8 @@ export function FilterView(props) {
                     color={getFilterModeC ? checkColorOn : checkColorOff}
                   />
                   <Text style={[
-                    styles.filterTextMode,
-                    {fontSize: (Platform.OS === 'web')
-                      ? 12 : width*0.028,
-                    color: getFilterModeC
+                    styles.filterTextMode(width),
+                    {color: getFilterModeC
                       ? colors.text : colors.textInvert}
                   ]}>
                     {` ${props.modeNames[2].name}`}
@@ -367,10 +339,8 @@ export function FilterView(props) {
               {props.goldCount &&
                 <TouchableOpacity
                   // Change background color when toggled.
-                  style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
-                      ? 105 : width*0.256,
-                    backgroundColor: colors.backLight,
+                  style={[styles.filterButton(width),
+                    {backgroundColor: colors.backLight,
                     borderColor: colors.border},
                     !getFilterLootGold && {backgroundColor: colors.backDark}
                   ]}
@@ -391,10 +361,8 @@ export function FilterView(props) {
               {props.gemsCount &&
                 <TouchableOpacity
                   // Change background color when toggled.
-                  style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
-                      ? 105 : width*0.256,
-                    backgroundColor: colors.backLight,
+                  style={[styles.filterButton(width),
+                    {backgroundColor: colors.backLight,
                     borderColor: colors.border},
                     !getFilterLootGems && {backgroundColor: colors.backDark}
                   ]}
@@ -415,10 +383,8 @@ export function FilterView(props) {
               {props.goodsCount &&
                 <TouchableOpacity
                   // Change background color when toggled.
-                  style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
-                      ? 105 : width*0.256,
-                    backgroundColor: colors.backLight,
+                  style={[styles.filterButton(width),
+                    {backgroundColor: colors.backLight,
                     borderColor: colors.border},
                     !getFilterLootGoods && {backgroundColor: colors.backDark}
                   ]}
@@ -439,10 +405,8 @@ export function FilterView(props) {
               {props.specialCount &&
                 <TouchableOpacity
                   // Change background color when toggled.
-                  style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
-                      ? 105 : width*0.256,
-                    backgroundColor: colors.backLight,
+                  style={[styles.filterButton(width),
+                    {backgroundColor: colors.backLight,
                     borderColor: colors.border},
                     !getFilterLootSpecial && {backgroundColor: colors.backDark}
                   ]}
@@ -470,10 +434,8 @@ export function FilterView(props) {
               {props.markObj &&
                 <TouchableOpacity
                   // Change background color when toggled.
-                  style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
-                      ? 105 : width*0.256,
-                    backgroundColor: colors.backLight,
+                  style={[styles.filterButton(width),
+                    {backgroundColor: colors.backLight,
                     borderColor: colors.border},
                     !getFilterOnlyObj && {backgroundColor: colors.backDark}
                   ]}
@@ -487,10 +449,8 @@ export function FilterView(props) {
                     color={getFilterOnlyObj ? checkColorOn : checkColorOff}
                   />
                   <Text style={[
-                    styles.filterTextMode,
-                    {fontSize: (Platform.OS === 'web')
-                      ? 12 : width*0.028,
-                    color: getFilterOnlyObj
+                    styles.filterTextMode(width),
+                    {color: getFilterOnlyObj
                       ? colors.text : colors.textInvert}
                   ]}>
                     {` Only Objs`}
@@ -502,10 +462,8 @@ export function FilterView(props) {
                (Math.max(...props.pocketCount) > 0) ) &&
                 <TouchableOpacity
                   // Change background color when toggled.
-                  style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
-                      ? 105 : width*0.256,
-                    backgroundColor: colors.backLight,
+                  style={[styles.filterButton(width),
+                    {backgroundColor: colors.backLight,
                     borderColor: colors.border},
                     !getFilterOnlyPick && {backgroundColor: colors.backDark}
                   ]}
@@ -519,10 +477,8 @@ export function FilterView(props) {
                     color={getFilterOnlyPick ? checkColorOn : checkColorOff}
                   />
                   <Text style={[
-                    styles.filterTextMode,
-                    {fontSize: (Platform.OS === 'web')
-                      ? 12 : width*0.028,
-                    color: getFilterOnlyPick
+                    styles.filterTextMode(width),
+                    {color: getFilterOnlyPick
                       ? colors.text : colors.textInvert}
                   ]}>
                     {` Only Picks`}
@@ -533,10 +489,8 @@ export function FilterView(props) {
               {props.secretCount > 0 &&
                 <TouchableOpacity
                   // Change background color when toggled.
-                  style={[styles.filterButton,
-                    {minWidth: (Platform.OS === 'web')
-                      ? 105 : width*0.256,
-                    backgroundColor: colors.backLight,
+                  style={[styles.filterButton(width),
+                    {backgroundColor: colors.backLight,
                     borderColor: colors.border},
                     !getFilterOnlySec && {backgroundColor: colors.backDark}
                   ]}
@@ -550,10 +504,8 @@ export function FilterView(props) {
                     color={getFilterOnlySec ? checkColorOn : checkColorOff}
                   />
                   <Text style={[
-                    styles.filterTextMode,
-                    {fontSize: (Platform.OS === 'web')
-                      ? 12 : width*0.028,
-                    color: getFilterOnlySec
+                    styles.filterTextMode(width),
+                    {color: getFilterOnlySec
                       ? colors.text : colors.textInvert}
                   ]}>
                     {` Only Secrets`}
@@ -580,17 +532,17 @@ export function FilterView(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  filters: {
+  filters: (width) => ({
     flexDirection: 'row',
     alignItems: 'center',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
-  },
+    marginHorizontal: (width > 449) ? 10 : 5,
+  }),
   filterRow: {
     flexDirection: 'row',
     alignItems: 'center',
     flexWrap: 'wrap',
   },
-  filterButton: {
+  filterButton: (width) => ({
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
@@ -599,31 +551,26 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     paddingHorizontal: 4,
     paddingVertical: 2,
-    //minWidth: 105,
+    minWidth: (width > 449)
+      ? 105 : width*0.256,
     minHeight: 27,
-  },
+  }),
   filterTextFalse: {
     color: 'white',
   },
-  filterTextMode: {
-    //fontSize: 12,
+  filterTextMode: (width) => ({
+    fontSize: (width > 449)
+      ? 12 : width*0.028,
     fontWeight: 'bold',
-  },
-  allButton: {
+  }),
+  allButton: (width) => ({
     borderWidth: 1,
     borderRadius: 5,
     alignItems: 'center',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
-    marginVertical: (Platform.OS === 'web') ? 10 : 5,
+    marginHorizontal: (width > 449) ? 10 : 5,
+    marginVertical: (width > 449) ? 10 : 5,
     paddingHorizontal: 4,
     paddingVertical: 2,
     width: 80,
-  },
-  waitModal: {
-    borderWidth: 1,
-    borderRadius: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 5,
-  },
+  }),
 });

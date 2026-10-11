@@ -1,0 +1,2451 @@
+{
+  "id": "fm_twostorms",
+  "title": "Among Two Storms",
+  "author": [
+    "auth_haplo"
+  ],
+  "screens": [
+    "MIS_fm_twostorms_A",
+    "MIS_fm_twostorms_B"
+  ],
+  "firstRelease": "October 2010",
+  "latestVersion": "1.0",
+  "weblinks": {
+    "guild": "https://www.thiefguild.com/fanmissions/3674/among-two-storms",
+    "ttlg": "https://www.ttlg.com/forums/showthread.php?t=133658"
+  },
+  "diffNames": ["Normal","Hard","Expert"],
+  "diffChanges": true,
+  "markObj": true,
+  "totals": [
+    [3109,1250,3130,0,7489],
+    [3109,1250,3130,0,7489],
+    [3109,1250,3130,0,7489]
+  ],
+  "lootCount": [100,100,100],
+  "lootChanges": [0,0,0],
+  "pocketCount": [5,5,6],
+  "pocketChanges": [0,0,1],
+  "areas": [
+    {"key": "0", "value": "In Possession"},
+    {"key": "1", "value": "Streets"},
+    {"key": "2", "value": "Gambling Room"},
+    {"key": "3", "value": "Storage Area"},
+    {"key": "4", "value": "West Sewers"},
+    {"key": "5", "value": "Workshop"},
+    {"key": "6", "value": "North Barracks"},
+    {"key": "7", "value": "Kitchen"},
+    {"key": "8", "value": "Mess Hall"},
+    {"key": "9", "value": "Loot Stash"},
+    {"key": "10", "value": "Central Sewers"},
+    {"key": "11", "value": "East Sewers"},
+    {"key": "12", "value": "Dance Hall"},
+    {"key": "13", "value": "South Barracks"},
+    {"key": "14", "value": "Guard Post"},
+    {"key": "15", "value": "Training Room"},
+    {"key": "16", "value": "Thom's Bedroom"}
+  ],
+  "notes": [
+    {
+      "id": "note_0",
+      "delimiter": "~",
+      "icon": "G",
+      "desc": "Garrett only",
+      "show": true
+    },
+    {
+      "id": "note_1",
+      "delimiter": "~",
+      "icon": "P",
+      "desc": "Palmer only",
+      "show": true
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot_coin",
+      "name": "ref_coin",
+      "img": [
+        "IMG_Coin"
+      ],
+      "values": [
+        {
+          "id": "5gold",
+          "value": [5,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_1",
+              "findSimple": "findH",
+              "findArea": 1,
+              "findNarrow": "NE building",
+              "findExact": "by angel statue",
+              "findCount": [1,1,1],
+              "orderNum": 11,
+              "orderImg": [
+                "IMG_Coin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_decorativemask",
+      "name": "ref_decorativemask",
+      "img": [
+        "IMG_DecorativeMask_Demon",
+        "IMG_DecorativeMask_Noh"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_2",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "east shelf",
+              "findCount": [1,1,1],
+              "orderNum": 24,
+              "orderImg": [
+                "IMG_DecorativeMask_Noh"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "250goods",
+          "value": [0,0,250,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_3",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "sea chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 34,
+              "orderImg": [
+                "IMG_DecorativeMask_Demon"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_4",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "vault",
+              "findExact": "Precursor chest",
+              "findCount": [2,2,2],
+              "findBox": true,
+              "orderNum": 54,
+              "orderImg": [
+                "IMG_DecorativeMask_Demon",
+                "IMG_DecorativeMask_Noh"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_diamonddrillbit",
+      "name": "ref_diamonddrillbit",
+      "img": [
+        "IMG_DiamondDrillbit"
+      ],
+      "values": [
+        {
+          "id": "250gems",
+          "value": [0,250,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_5",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "vault",
+              "findExact": "shelf",
+              "findCount": [2,2,2],
+              "orderNum": 56,
+              "orderImg": [
+                "IMG_DiamondDrillbit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_finewine",
+      "name": "ref_finewine",
+      "img": [
+        "IMG_FineWine"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_6",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findExact": "west table",
+              "findCount": [1,1,1],
+              "orderNum": 3,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_7",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [3,3,3],
+              "orderNum": 7,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_8",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findExact": "counter",
+              "findCount": [2,2,2],
+              "orderNum": 21,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_9",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findExact": "south corner table",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "findEaster": true,
+              "orderNum": 39,
+              "orderImg": [
+                "IMG_FineWine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemring",
+      "name": "ref_gemring",
+      "img": [
+        "IMG_GemRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_10",
+              "findSimple": "findH",
+              "findArea": 2,
+              "findNarrow": "south bedroom",
+              "findExact": "wardrobe",
+              "findCount": [1,1,1],
+              "orderNum": 6,
+              "orderImg": [
+                "IMG_GemRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_gemstone",
+      "name": "ref_gemstone",
+      "img": [
+        "IMG_Gemstone"
+      ],
+      "values": [
+        {
+          "id": "100gems",
+          "value": [0,100,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_11",
+              "findSimple": "findH",
+              "findArea": 15,
+              "findExact": "behind bullseye",
+              "findCount": [4,4,4],
+              "findSecret": true,
+              "orderNum": 57,
+              "orderImg": [
+                "IMG_Gemstone"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcandlestick",
+      "name": "ref_goldcandlestick",
+      "img": [
+        "IMG_GoldCandlestick"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_12",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 35,
+              "orderImg": [
+                "IMG_GoldCandlestick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldcoinstack",
+      "name": "ref_goldcoinstack",
+      "img": [
+        "IMG_GoldCoinStack"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_13",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findNarrow": "cabinet table",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 48,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_14",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 53,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_15",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "bunkroom",
+              "findExact": "blue chest",
+              "findCount": [2,2,2],
+              "findBox": true,
+              "orderNum": 58,
+              "orderImg": [
+                "IMG_GoldCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_golddice",
+      "name": "ref_golddice",
+      "img": [
+        "IMG_GoldDice"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_16",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findExact": "card table",
+              "findCount": [2,2,2],
+              "orderNum": 1,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_17",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "east shelf",
+              "findCount": [1,1,1],
+              "orderNum": 31,
+              "orderImg": [
+                "IMG_GoldDice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldgoblet",
+      "name": "ref_goldgoblet",
+      "img": [
+        "IMG_GoldGoblet"
+      ],
+      "values": [
+        {
+          "id": "25gold",
+          "value": [25,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_18",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findExact": "west table",
+              "findCount": [2,2,2],
+              "orderNum": 4,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_19",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [3,3,3],
+              "orderNum": 8,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_20",
+              "findSimple": "findM",
+              "findArea": 12,
+              "findExact": "south corner table",
+              "findCount": [3,3,3],
+              "findSecret": true,
+              "findEaster": true,
+              "orderNum": 38,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_21",
+              "findSimple": "findE",
+              "findArea": 16,
+              "findExact": "desk",
+              "findCount": [1,1,1],
+              "orderNum": 49,
+              "orderImg": [
+                "IMG_GoldGoblet"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldhammer",
+      "name": "ref_goldhammer",
+      "img": [
+        "IMG_GoldHammer"
+      ],
+      "values": [
+        {
+          "id": "75gold",
+          "value": [75,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_22",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "middle shelf",
+              "findCount": [1,1,1],
+              "orderNum": 32,
+              "orderImg": [
+                "IMG_GoldHammer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldnugget",
+      "name": "ref_goldnugget",
+      "img": [
+        "IMG_GoldNugget"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_23",
+              "findSimple": "findM",
+              "findArea": 5,
+              "findNarrow": "basement",
+              "findExact": "under elevator",
+              "findCount": [1,1,1],
+              "orderNum": 16,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "137gold",
+          "value": [137,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_24",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "NE building",
+              "findExact": "Precursor chest",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 14,
+              "orderImg": [
+                "IMG_GoldNugget"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldplate",
+      "name": "ref_goldplate",
+      "img": [
+        "IMG_GoldPlate"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_25",
+              "findSimple": "findM",
+              "findArea": 7,
+              "findExact": "sink",
+              "findCount": [3,3,3],
+              "orderNum": 19,
+              "orderImg": [
+                "IMG_GoldPlate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_goldring",
+      "name": "ref_goldring",
+      "img": [
+        "IMG_GoldRing"
+      ],
+      "values": [
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_26",
+              "findSimple": "findH",
+              "findArea": 6,
+              "findNarrow": "bathroom",
+              "findExact": "shower",
+              "findCount": [1,1,1],
+              "orderNum": 17,
+              "orderImg": [
+                "IMG_GoldRing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_luckycoins",
+      "name": "ref_luckycoins",
+      "img": [
+        "IMG_LuckyCoins"
+      ],
+      "values": [
+        {
+          "id": "20gold",
+          "value": [20,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_27",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "east street",
+              "findExact": "by female Pagan",
+              "findCount": [1,1,1],
+              "orderNum": 0,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_28",
+              "findSimple": "findH",
+              "findArea": 2,
+              "findExact": "under game tables",
+              "findCount": [5,5,5],
+              "orderNum": 2,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_29",
+              "findSimple": "findH",
+              "findArea": 10,
+              "findNarrow": "waterway",
+              "findExact": "under west board",
+              "findCount": [4,4,4],
+              "orderNum": 36,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_30",
+              "findSimple": "findH",
+              "findArea": 11,
+              "findExact": "lower northwest ledge",
+              "findCount": [4,4,4],
+              "orderNum": 41,
+              "orderImg": [
+                "IMG_LuckyCoins"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_necklace",
+      "name": "ref_necklace",
+      "img": [
+        "IMG_Necklace"
+      ],
+      "values": [
+        {
+          "id": "100gold100gems",
+          "value": [100,100,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_31",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "east shelf",
+              "findCount": [1,1,1],
+              "orderNum": 30,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_32",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "east bedroom",
+              "findExact": "coin box",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "findSecret": true,
+              "orderNum": 46,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_33",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 52,
+              "orderImg": [
+                "IMG_Necklace"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorcanopicjar",
+      "name": "ref_precanopicjar",
+      "img": [
+        "IMG_PrecursorCanopicJar"
+      ],
+      "values": [
+        {
+          "id": "75goods",
+          "value": [0,0,75,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_34",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "NE building",
+              "findExact": "back room",
+              "findCount": [2,2,2],
+              "findSecret": true,
+              "orderNum": 13,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_35",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "under east shelf",
+              "findCount": [1,1,1],
+              "orderNum": 22,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_36",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "hallway",
+              "findExact": "behind banner",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 44,
+              "orderImg": [
+                "IMG_PrecursorCanopicJar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursorjar",
+      "name": "ref_prejar",
+      "img": [
+        "IMG_PrecursorJar_Small",
+        "IMG_PrecursorJar_Tall",
+        "IMG_PrecursorJar_Pointed"
+      ],
+      "values": [
+        {
+          "id": "20goods",
+          "value": [0,0,20,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_37",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "middle shelf",
+              "findCount": [3,3,3],
+              "orderNum": 33,
+              "orderImg": [
+                "IMG_PrecursorJar_Small",
+                "IMG_PrecursorJar_Tall",
+                "IMG_PrecursorJar_Pointed"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_38",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "hallway",
+              "findExact": "behind banner",
+              "findCount": [3,3,3],
+              "findSecret": true,
+              "orderNum": 45,
+              "orderImg": [
+                "IMG_PrecursorJar_Small",
+                "IMG_PrecursorJar_Tall",
+                "IMG_PrecursorJar_Pointed"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursormask",
+      "name": "ref_premask",
+      "img": [
+        "IMG_PrecursorMask_Brass",
+        "IMG_PrecursorMask_Wood",
+        "IMG_PrecursorMask_Sun"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_39",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "east shelf",
+              "findCount": [1,1,1],
+              "orderNum": 26,
+              "orderImg": [
+                "IMG_PrecursorMask_Brass"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "350goods",
+          "value": [0,0,350,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_40",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findNarrow": "vault",
+              "findExact": "east shelf",
+              "findCount": [2,2,2],
+              "orderNum": 55,
+              "orderImg": [
+                "IMG_PrecursorMask_Wood",
+                "IMG_PrecursorMask_Sun"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_precursortapestry",
+      "name": "ref_pretapestry",
+      "img": [
+        "IMG_PrecursorTapestry"
+      ],
+      "values": [
+        {
+          "id": "150goods",
+          "value": [0,0,150,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_41",
+              "findSimple": "findM",
+              "findArea": 1,
+              "findNarrow": "NE building",
+              "findExact": "back room",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 12,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_42",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "east shelf",
+              "findCount": [1,1,1],
+              "orderNum": 25,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_43",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "hallway",
+              "findExact": "behind banner",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 43,
+              "orderImg": [
+                "IMG_PrecursorTapestry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_purse",
+      "name": "ref_purse",
+      "img": [
+        "IMG_Purse"
+      ],
+      "values": [
+        {
+          "id": "50gold",
+          "value": [50,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_44",
+              "findSimple": "findE",
+              "findArea": 10,
+              "findNarrow": "east hall",
+              "findExact": "on thief swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 37,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "100gold",
+          "value": [100,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_45",
+              "findSimple": "findE",
+              "findArea": 2,
+              "findNarrow": "south bedroom",
+              "findExact": "dresser",
+              "findCount": [1,1,1],
+              "orderNum": 5,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_46",
+              "findSimple": "findM",
+              "findArea": 2,
+              "findNarrow": "east bedroom",
+              "findExact": "armoire",
+              "findCount": [1,1,1],
+              "orderNum": 9,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_47",
+              "findSimple": "findE",
+              "findArea": 1,
+              "findNarrow": "west street",
+              "findExact": "on purple swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 10,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_48",
+              "findSimple": "findM",
+              "findArea": 6,
+              "findNarrow": "bunkroom",
+              "findExact": "rafters",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "orderNum": 18,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_49",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "east shelf",
+              "findCount": [3,3,3],
+              "orderNum": 29,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_50",
+              "findSimple": "findM",
+              "findArea": 11,
+              "findNarrow": "waterway",
+              "findExact": "by Mike",
+              "findCount": [1,1,1],
+              "orderNum": 40,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_51",
+              "findSimple": "findE",
+              "findArea": 14,
+              "findNarrow": "north station",
+              "findExact": "on thief swordsman",
+              "findCountBox": [1,1,1],
+              "findPick": true,
+              "orderNum": 47,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_52",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 51,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "200gold",
+          "value": [200,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_53",
+              "findSimple": "findM",
+              "findArea": 4,
+              "findNarrow": "spider area",
+              "findExact": "on thief swordsman",
+              "findCount": [1,1,1],
+              "orderNum": 15,
+              "orderImg": [
+                "IMG_Purse"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_silvercoinstack",
+      "name": "ref_silvercoinstack",
+      "img": [
+        "IMG_SilverCoinStack"
+      ],
+      "values": [
+        {
+          "id": "12gold",
+          "value": [12,0,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_54",
+              "findSimple": "findM",
+              "findArea": 13,
+              "findNarrow": "south bedroom",
+              "findExact": "behind bed",
+              "findCount": [1,1,1],
+              "orderNum": 42,
+              "orderImg": [
+                "IMG_SilverCoinStack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_spicebag",
+      "name": "ref_spicebag",
+      "img": [
+        "IMG_SpiceBag"
+      ],
+      "values": [
+        {
+          "id": "40goods",
+          "value": [0,0,40,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_55",
+              "findSimple": "findE",
+              "findArea": 7,
+              "findExact": "counter",
+              "findCount": [3,3,3],
+              "orderNum": 20,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            },
+            {
+              "id": "fm_twostorms_loot_56",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "east shelf",
+              "findCount": [4,4,4],
+              "orderNum": 27,
+              "orderImg": [
+                "IMG_SpiceBag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_statuette",
+      "name": "ref_statuette",
+      "img": [
+        "IMG_Statuette_Nobleman",
+        "IMG_Statuette_Noblewoman"
+      ],
+      "values": [
+        {
+          "id": "15goods",
+          "value": [0,0,15,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_57",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "east shelf",
+              "findCount": [2,2,2],
+              "orderNum": 28,
+              "orderImg": [
+                "IMG_Statuette_Nobleman",
+                "IMG_Statuette_Noblewoman"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_tiara",
+      "name": "ref_tiara",
+      "img": [
+        "IMG_Tiara"
+      ],
+      "values": [
+        {
+          "id": "75gold50gems",
+          "value": [75,50,0,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_58",
+              "findSimple": "findM",
+              "findArea": 16,
+              "findExact": "safe",
+              "findCount": [1,1,1],
+              "orderNum": 50,
+              "orderImg": [
+                "IMG_Tiara"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot_treebeastmask",
+      "name": "ref_treebeastmask",
+      "img": [
+        "IMG_TreebeastMask"
+      ],
+      "values": [
+        {
+          "id": "50goods",
+          "value": [0,0,50,0],
+          "locations": [
+            {
+              "id": "fm_twostorms_loot_59",
+              "findSimple": "findE",
+              "findArea": 9,
+              "findExact": "footlocker",
+              "findCountBox": [1,1,1],
+              "findBox": true,
+              "orderNum": 23,
+              "orderImg": [
+                "IMG_TreebeastMask"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "items_melee",
+      "category": "Melee",
+      "catItems": [
+        {
+          "id": "item_sword",
+          "name": "ref_sword",
+          "img": [
+            "IMG_Sword"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_1",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "findNote": 0,
+              "loadout": "start"
+            },
+            {
+              "id": "fm_twostorms_item_2",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "findNote": 1,
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_blackjack",
+          "name": "ref_blackjack",
+          "img": [
+            "IMG_Blackjack"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_3",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "findNote": 0,
+              "loadout": "start"
+            },
+            {
+              "id": "fm_twostorms_item_4",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "findNote": 1,
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_arrows",
+      "category": "Arrows",
+      "catItems": [
+        {
+          "id": "item_broadheadarrow",
+          "name": "ref_broadheadarrow",
+          "img": [
+            "IMG_BroadheadArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_5",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "findNote": 0,
+              "loadout": "start"
+            },
+            {
+              "id": "fm_twostorms_item_6",
+              "findSimple": "find",
+              "findArea": 10,
+              "findNarrow": "east hall",
+              "findExact": "on thief archer",
+              "findCountBox": [0,0,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_twostorms_item_7",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "south station",
+              "findExact": "on thief archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            },
+            {
+              "id": "fm_twostorms_item_8",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "east tunnel",
+              "findExact": "on thief archer",
+              "findCountBox": [3,3,3],
+              "findPick": true
+            }
+          ]
+        },
+        {
+          "id": "item_waterarrow",
+          "name": "ref_waterarrow",
+          "img": [
+            "IMG_WaterArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_9",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [4,4,4],
+              "findNote": 0,
+              "loadout": "start"
+            },
+            {
+              "id": "fm_twostorms_item_10",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [5,5,5],
+              "findNote": 1,
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_mossarrow",
+          "name": "ref_mossarrow",
+          "img": [
+            "IMG_MossArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_11",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,1,2],
+              "findNote": 1,
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_ropearrow",
+          "name": "ref_ropearrow",
+          "img": [
+            "IMG_RopeArrow"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_12",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [3,3,3],
+              "findNote": 0,
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_crystals",
+      "category": "Crystals",
+      "catItems": [
+        {
+          "id": "item_watercrystal",
+          "name": "ref_watercrystal",
+          "img": [
+            "IMG_WaterCrystal"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_13",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "sink",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_twostorms_item_14",
+              "findSimple": "find",
+              "findArea": 11,
+              "findExact": "by north drainage",
+              "findCount": [1,1,1],
+              "findRecipe": "x1 every minute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_explosives",
+      "category": "Explosives",
+      "catItems": [
+        {
+          "id": "item_flashbomb",
+          "name": "ref_flashbomb",
+          "img": [
+            "IMG_FlashBomb"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_15",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "findNote": 0,
+              "loadout": "start"
+            },
+            {
+              "id": "fm_twostorms_item_16",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [2,2,2],
+              "findNote": 1,
+              "loadout": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_potions",
+      "category": "Potions",
+      "catItems": [
+        {
+          "id": "item_speedpotion",
+          "name": "ref_speedpotion",
+          "img": [
+            "IMG_PinkBottle"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_17",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "bunkroom",
+              "findExact": "blue chest",
+              "findCountBox": [1,1,1],
+              "findBox": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_liquids",
+      "category": "Liquids",
+      "catItems": [
+        {
+          "id": "item_fuel",
+          "name": "Fuel",
+          "img": [
+            "IMG_Fuel"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_18",
+              "findSimple": "find",
+              "findArea": 3,
+              "findNarrow": "turbine room",
+              "findCount": [1,1,1],
+              "findRecipe": "use Empty Jug on cask",
+              "findNote": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_containers",
+      "category": "Containers",
+      "catItems": [
+        {
+          "id": "item_emptyjug",
+          "name": "Empty Jug",
+          "img": [
+            "IMG_Fuel"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_19",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [1,1,1],
+              "findNote": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_keys",
+      "category": "Keys",
+      "catItems": [
+        {
+          "id": "item_lockpicksquare",
+          "name": "ref_squarepick",
+          "img": [
+            "IMG_Lockpick_Square"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_20",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "findNote": 0,
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_lockpicktriangle",
+          "name": "ref_trianglepick",
+          "img": [
+            "IMG_Lockpick_Triangle"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_21",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "findNote": 0,
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "ref_key_safe",
+          "img": [
+            "IMG_Key_Red"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_22",
+              "findSimple": "find",
+              "findArea": 11,
+              "findNarrow": "waterway",
+              "findExact": "by rubble",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "ref_key_vault",
+          "img": [
+            "IMG_Key_Black"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_23",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "safe",
+              "findCount": [1,0,0]
+            }
+          ]
+        },
+        {
+          "id": "item_key",
+          "name": "ref_key_master",
+          "img": [
+            "IMG_Key_Silver"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_24",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "safe",
+              "findCount": [1,0,0]
+            },
+            {
+              "id": "fm_twostorms_item_25",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "vault",
+              "findExact": "under shelf",
+              "findCount": [0,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_lights",
+      "category": "Lights",
+      "catItems": [
+        {
+          "id": "item_candle",
+          "name": "ref_candle",
+          "img": [
+            "IMG_Candle_Alt1"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_26",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "hallway",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_other",
+      "category": "Other Tools",
+      "catItems": [
+        {
+          "id": "item_compass",
+          "name": "ref_compass",
+          "img": [
+            "IMG_Compass"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_27",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "findNote": 0,
+              "loadout": "start"
+            },
+            {
+              "id": "fm_twostorms_item_28",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "findNote": 1,
+              "loadout": "start"
+            }
+          ]
+        },
+        {
+          "id": "item_skillet",
+          "name": "ref_skillet",
+          "img": [
+            "IMG_Skillet"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_29",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_wrench",
+          "name": "Wrench",
+          "img": [
+            "IMG_Wrench"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_30",
+              "findSimple": "find",
+              "findArea": 5,
+              "findNarrow": "basement",
+              "findExact": "anvil",
+              "findCount": [1,1,1],
+              "findNote": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_animals",
+      "category": "Animals",
+      "catItems": [
+        {
+          "id": "item_worm",
+          "name": "Worm",
+          "img": [
+            "IMG_Worm"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_31",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "bunkroom",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "shoot Water Arrow at potted plant"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_food",
+      "category": "Food",
+      "catItems": [
+        {
+          "id": "item_loaf",
+          "name": "ref_loaf",
+          "img": [
+            "IMG_Loaf"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_32",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "turbine room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_twostorms_item_33",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_twostorms_item_34",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "north station",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cucumber",
+          "name": "ref_cucumber",
+          "img": [
+            "IMG_Cucumber"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_35",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "ref_cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_36",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "east street",
+              "findExact": "behind east gate",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_twostorms_item_37",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_twostorms_item_38",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "hallway",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "item_cheese",
+          "name": "Magic Cheese",
+          "img": [
+            "IMG_Cheese"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_39",
+              "findSimple": "find",
+              "findArea": 12,
+              "findExact": "south corner table",
+              "findCount": [1,1,1],
+              "findSecret": true,
+              "findEaster": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_parchment",
+      "category": "Parchment",
+      "catItems": [
+        {
+          "id": "item_papyrus",
+          "name": "ref_papyrus",
+          "img": [
+            "IMG_Papyrus"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_40",
+              "findSimple": "find",
+              "findArea": 0,
+              "findCount": [1,1,1],
+              "findNote": 0,
+              "loadout": "start"
+            },
+            {
+              "id": "fm_twostorms_item_41",
+              "findSimple": "find",
+              "findArea": 16,
+              "findExact": "safe",
+              "findCount": [0,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_mechanist",
+      "category": "Mechanist Items",
+      "catItems": [
+        {
+          "id": "item_wax",
+          "name": "ref_wax",
+          "img": [
+            "IMG_JunkWax"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_42",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "oven",
+              "findCount": [1,1,1],
+              "findRecipe": "place Candle in Skillet & shoot Water Arrow at it"
+            }
+          ]
+        },
+        {
+          "id": "item_waximpression",
+          "name": "ref_waximpression",
+          "img": [
+            "IMG_WaxImpression"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_43",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "work table",
+              "findObj": true,
+              "findCount": [1,1,1],
+              "findRecipe": "use Wax on key"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items_treasure",
+      "category": "Treasure",
+      "catItems": [
+        {
+          "id": "item_jeweledscepter",
+          "name": "Jeweled Scepter",
+          "img": [
+            "IMG_JeweledScepter"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_item_44",
+              "findSimple": "find",
+              "findArea": 9,
+              "findNarrow": "vault",
+              "findExact": "shelf",
+              "findObj": true,
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "junk": [
+    {
+      "id": "junk_bowls",
+      "category": "Bowls and Plates",
+      "catJunk": [
+        {
+          "id": "junk_woodenbowl",
+          "name": "ref_woodenbowl",
+          "img": [
+            "IMG_WoodenBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_1",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_twostorms_junk_2",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "dining tables",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_twostorms_junk_3",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "serving table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalbowl",
+          "name": "ref_metalbowl",
+          "img": [
+            "IMG_MetalBowl"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_4",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalplate",
+          "name": "ref_metalplate",
+          "img": [
+            "IMG_MetalPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_5",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_twostorms_junk_6",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "dining tables",
+              "findCount": [16,16,16]
+            }
+          ]
+        },
+        {
+          "id": "junk_porcelainplate",
+          "name": "ref_porcelainplate",
+          "img": [
+            "IMG_PorcelainPlate"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_7",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "counter",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_cups",
+      "category": "Cups",
+      "catJunk": [
+        {
+          "id": "junk_woodengoblet",
+          "name": "ref_woodengoblet",
+          "img": [
+            "IMG_WoodenGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_8",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "bunkroom",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_twostorms_junk_9",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "counter",
+              "findCount": [3,3,3]
+            },
+            {
+              "id": "fm_twostorms_junk_10",
+              "findSimple": "find",
+              "findArea": 13,
+              "findNarrow": "hallway",
+              "findExact": "table",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_twostorms_junk_11",
+              "findSimple": "find",
+              "findArea": 14,
+              "findNarrow": "north station",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_metalgoblet",
+          "name": "ref_metalgoblet",
+          "img": [
+            "IMG_MetalGoblet"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_12",
+              "findSimple": "find",
+              "findArea": 2,
+              "findExact": "tables",
+              "findCount": [4,4,4]
+            },
+            {
+              "id": "fm_twostorms_junk_13",
+              "findSimple": "find",
+              "findArea": 2,
+              "findNarrow": "bar",
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_twostorms_junk_14",
+              "findSimple": "find",
+              "findArea": 4,
+              "findNarrow": "turbine room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            },
+            {
+              "id": "fm_twostorms_junk_15",
+              "findSimple": "find",
+              "findArea": 7,
+              "findExact": "counter",
+              "findCount": [2,2,2]
+            },
+            {
+              "id": "fm_twostorms_junk_16",
+              "findSimple": "find",
+              "findArea": 8,
+              "findExact": "dining tables",
+              "findCount": [16,16,16]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_personal",
+      "category": "Personal Items",
+      "catJunk": [
+        {
+          "id": "junk_hairbrush",
+          "name": "ref_hairbrush",
+          "img": [
+            "IMG_HairBrush"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_17",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "shower room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_handmirror",
+          "name": "ref_handmirror",
+          "img": [
+            "IMG_HandMirror"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_18",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "shower room",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_bedroll",
+          "name": "ref_bedroll",
+          "img": [
+            "IMG_Bedroll"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_19",
+              "findSimple": "find",
+              "findArea": 1,
+              "findNarrow": "east street",
+              "findExact": "by female Pagan",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_toys",
+      "category": "Toys",
+      "catJunk": [
+        {
+          "id": "junk_deckofcards",
+          "name": "ref_deckofcards",
+          "img": [
+            "IMG_DeckOfCards"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_20",
+              "findSimple": "find",
+              "findArea": 6,
+              "findNarrow": "bunkroom",
+              "findExact": "table",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_nautical",
+      "category": "Nautical Tools",
+      "catJunk": [
+        {
+          "id": "junk_chartcompass",
+          "name": "ref_chartcompass",
+          "img": [
+            "IMG_ChartCompass"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_21",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "west shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_sextant",
+          "name": "ref_sextant",
+          "img": [
+            "IMG_Sextant"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_22",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "west shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "junk_miscellaneous",
+      "category": "Miscellaneous",
+      "catJunk": [
+        {
+          "id": "junk_bunsenburner",
+          "name": "ref_bunsenburner",
+          "img": [
+            "IMG_BunsenBurner"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_23",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "work table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_glasstools",
+          "name": "ref_glasstools",
+          "img": [
+            "IMG_GlassTools"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_24",
+              "findSimple": "find",
+              "findArea": 13,
+              "findExact": "work table",
+              "findCount": [1,1,1]
+            }
+          ]
+        },
+        {
+          "id": "junk_divinghelmet",
+          "name": "ref_divinghelmet",
+          "img": [
+            "IMG_DivingHelmet"
+          ],
+          "locations": [
+            {
+              "id": "fm_twostorms_junk_25",
+              "findSimple": "find",
+              "findArea": 9,
+              "findExact": "west shelf",
+              "findCount": [1,1,1]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "id": "fm_twostorms_sec_1",
+      "number": 1,
+      "img": [
+        "SEC_fm_twostorms_01"
+      ],
+      "triggers": [
+        {
+          "id": "sec_1_a",
+          "findArea": 1,
+          "findNarrow": "north alley",
+          "findDiff": [1,1,1],
+          "method": "Climb the vines over the wall"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_1_1",
+          "rewardLoot": "ref_goldnugget",
+          "value": [137,0,0,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_1_2",
+          "rewardLoot": "ref_precanopicjar",
+          "value": [0,0,75,0],
+          "findCount": [2,2,2]
+        },
+        {
+          "id": "sec_1_3",
+          "rewardLoot": "ref_pretapestry",
+          "value": [0,0,150,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_twostorms_sec_2",
+      "number": 2,
+      "img": [
+        "SEC_fm_twostorms_02"
+      ],
+      "triggers": [
+        {
+          "id": "sec_2_a",
+          "findArea": 6,
+          "findNarrow": "bunkroom",
+          "findDiff": [1,1,1],
+          "method": "Shoot a rope arrow at the rafters above the west bed"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_2_1",
+          "rewardLoot": "ref_purse",
+          "value": [100,0,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_twostorms_sec_3",
+      "number": 3,
+      "img": [
+        "SEC_fm_twostorms_03"
+      ],
+      "triggers": [
+        {
+          "id": "sec_3_a",
+          "findArea": 11,
+          "findNarrow": "east tunnel",
+          "findDiff": [1,1,1],
+          "method": "Shoot a rope arrow at the dirt below the railing"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_3_1",
+          "rewardLoot": "ref_goldgoblet",
+          "value": [25,0,0,0],
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_3_2",
+          "rewardLoot": "ref_finewine",
+          "value": [0,0,50,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_3",
+          "rewardItem": "Magic Cheese",
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_3_4",
+          "rewardBonus": true,
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_twostorms_sec_4",
+      "number": 4,
+      "img": [
+        "SEC_fm_twostorms_04"
+      ],
+      "triggers": [
+        {
+          "id": "sec_4_a",
+          "findArea": 13,
+          "findNarrow": "hallway",
+          "findDiff": [1,1,1],
+          "method": "Cut the banner above the table"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_4_1",
+          "rewardLoot": "ref_prejar",
+          "value": [0,0,20,0],
+          "findCount": [3,3,3]
+        },
+        {
+          "id": "sec_4_2",
+          "rewardLoot": "ref_precanopicjar",
+          "value": [0,0,75,0],
+          "findCount": [1,1,1]
+        },
+        {
+          "id": "sec_4_3",
+          "rewardLoot": "ref_pretapestry",
+          "value": [0,0,150,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_twostorms_sec_5",
+      "number": 5,
+      "img": [
+        "SEC_fm_twostorms_05"
+      ],
+      "triggers": [
+        {
+          "id": "sec_5_a",
+          "findArea": 13,
+          "findNarrow": "east bedroom",
+          "findDiff": [1,1,1],
+          "method": "Shoot a rope arrow at the rafters"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_5_1",
+          "rewardLoot": "ref_necklace",
+          "value": [100,100,0,0],
+          "findCount": [1,1,1]
+        }
+      ]
+    },
+    {
+      "id": "fm_twostorms_sec_6",
+      "number": 6,
+      "img": [
+        "SEC_fm_twostorms_06"
+      ],
+      "triggers": [
+        {
+          "id": "sec_6_a",
+          "findArea": 15,
+          "findNarrow": "fountain",
+          "findDiff": [1,1,1],
+          "method": "Shoot a water arrow at the gargoyle"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "sec_6_1",
+          "rewardLoot": "ref_gemstone",
+          "value": [0,100,0,0],
+          "findCount": [4,4,4]
+        }
+      ]
+    }
+  ]
+}

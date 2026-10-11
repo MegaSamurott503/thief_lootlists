@@ -2,7 +2,8 @@ import { useTheme } from '@react-navigation/native';
 import {
   StyleSheet, Platform,
   Text, TouchableOpacity,
-  View, ScrollView
+  View, ScrollView,
+  useWindowDimensions
 } from 'react-native';
 import { useContext } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -25,6 +26,9 @@ export default function SettingsScreen() {
   // Access safe area context insets.
   const insets = useSafeAreaInsets();
 
+  // Access window size.
+  const { height, width } = useWindowDimensions();
+
   // Access theme colors.
   const { colors } = useTheme();
 
@@ -41,7 +45,8 @@ export default function SettingsScreen() {
     getShowListSec, setShowListSec,
     getSpoilerSec, setSpoilerSec,
     getSpoilerEgg, setSpoilerEgg,
-    getShowDebug, setShowDebug} =
+    getShowDebug, setShowDebug,
+    getLinkedMethod, setLinkedMethod} =
     useContext(SettingContext);
 
   // Variables for checkbox icon formatting.
@@ -105,6 +110,11 @@ export default function SettingsScreen() {
   function updateDebug(newDebug) {
     storeDebug(newDebug);
     setShowDebug(newDebug);
+  };
+
+  function updateLinkedMethod(newLinkedMethod) {
+    storeLinkedMethod(newLinkedMethod);
+    setLinkedMethod(newLinkedMethod);
   };
 
   // Send data to device storage.
@@ -186,6 +196,18 @@ export default function SettingsScreen() {
       const jsonSetting = JSON.stringify(newDebug);
       await AsyncStorage.setItem(`@setting_debug`, jsonSetting);
       //alert(`Saved setting_theme as ${newDebug}`);
+    } catch (e) {
+      // Error: Saving the data failed.
+      alert('Failed to save setting.');
+    }
+  };
+
+  const storeLinkedMethod = async (newLinkedMethod) => {
+    try {
+      // Convert setting's state to string.
+      //const jsonSetting = JSON.stringify(newLinkedMethod);
+      await AsyncStorage.setItem(`@setting_link_method`, newLinkedMethod);
+      //alert(`Saved setting_theme as ${newLinkedMethod}`);
     } catch (e) {
       // Error: Saving the data failed.
       alert('Failed to save setting.');
@@ -297,7 +319,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(width)
           ]}>
             <Text style={{color: colors.text}}>
               {`This site will ` +
@@ -355,7 +377,7 @@ export default function SettingsScreen() {
                 getDefaultDiffH !== true &&
                 {backgroundColor: colors.backDark}
               ]}
-              // Toggle whether difficulty is on by default.
+              // Toggle whether this difficulty is on by default.
               onPress={() => updateDefDiff("default_hard")}
             >
               {/* Change checkbox icon when toggled. */}
@@ -382,7 +404,7 @@ export default function SettingsScreen() {
                 getDefaultDiffX !== true &&
                 {backgroundColor: colors.backDark}
               ]}
-              // Toggle whether difficulty is on by default.
+              // Toggle whether this difficulty is on by default.
               onPress={() => updateDefDiff("default_expert")}
             >
               {/* Change checkbox icon when toggled. */}
@@ -404,7 +426,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(width)
           ]}>
             <Text style={{color: colors.text}}>
               {`By default, lootlists will ` +
@@ -448,7 +470,7 @@ export default function SettingsScreen() {
                 getLootSort !== "order" &&
                 {backgroundColor: colors.backDark}
               ]}
-              // Change the theme being used.
+              // Change how to sort the loot items.
               onPress={() => updateLootSort("order")}
             >
               {/* Change checkbox icon when toggled. */}
@@ -476,7 +498,7 @@ export default function SettingsScreen() {
                 getLootSort !== "value" &&
                 {backgroundColor: colors.backDark}
               ]}
-              // Change the theme being used.
+              // Change how to sort the loot items.
               onPress={() => updateLootSort("value")}
             >
               {/* Change checkbox icon when toggled. */}
@@ -499,7 +521,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(width)
           ]}>
             <Text style={{color: colors.text}}>
               {`Each mission's loot section will be sorted`}
@@ -642,7 +664,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(width)
           ]}>
             <Text style={{color: colors.text}}>
               {`Lootlists will ` +
@@ -717,6 +739,87 @@ export default function SettingsScreen() {
                 (getShowListItem && getShowListSec) ||
                 (getShowListJunk && getShowListSec))
                 ? `(where applicable).` : ' '
+              )}
+            </Text>
+          </View>
+
+          <SectionHeader headerName="Shared Container Select"/>
+          <View style={styles.settingRow}>
+            {/* Linked method setting: automatic. */}
+            <TouchableOpacity
+              // Change background color when toggled.
+              style={[styles.settingButton,
+                {backgroundColor: colors.backLight,
+                borderColor: colors.border},
+                getLinkedMethod !== "auto" &&
+                {backgroundColor: colors.backDark}
+              ]}
+              // Change how items in the same container are selected.
+              onPress={() => updateLinkedMethod("auto")}
+            >
+              {/* Change checkbox icon when toggled. */}
+              <Ionicons
+                name={getLinkedMethod === "auto"
+                  ? "checkbox" : "square-outline"}
+                size={checkSize}
+                color={getLinkedMethod === "auto"
+                  ? checkColorOn : checkColorOff}
+              />
+              <Text style={[
+                styles.settingButtonText,
+                {color: getLinkedMethod === "auto"
+                  ? colors.text : colors.textInvert}
+              ]}>
+                {` Automatic`}
+              </Text>
+            </TouchableOpacity>
+            {/* Linked method setting: manual. */}
+            <TouchableOpacity
+              // Change background color when toggled.
+              style={[styles.settingButton,
+                {backgroundColor: colors.backLight,
+                borderColor: colors.border},
+                getLinkedMethod !== "manual" &&
+                {backgroundColor: colors.backDark}
+              ]}
+              // Change how items in the same container are selected.
+              onPress={() => updateLinkedMethod("manual")}
+            >
+              {/* Change checkbox icon when toggled. */}
+              <Ionicons
+                name={getLinkedMethod === "manual"
+                  ? "checkbox" : "square-outline"}
+                size={checkSize}
+                color={getLinkedMethod === "manual"
+                  ? checkColorOn : checkColorOff}
+              />
+              <Text style={[
+                styles.settingButtonText,
+                {color: getLinkedMethod === "manual"
+                  ? colors.text : colors.textInvert}
+              ]}>
+                {` Manual`}
+              </Text>
+            </TouchableOpacity>
+          </View>
+          {/* Dynamic setting description. */}
+          <View style={[
+            styles.settingText,
+            styles.settingSpace(width)
+          ]}>
+            <Text style={{color: colors.text}}>
+              {`If a container has multiple different items,`}
+            </Text>
+            <Text style={{color: colors.text}}>
+              {(getLinkedMethod === "auto"
+                ? `selecting one item will automatically`
+                : (getLinkedMethod === "manual"
+                  ? `each item must be selected manually.` : '')
+              )}
+            </Text>
+            <Text style={{color: colors.text}}>
+              {(getLinkedMethod === "auto"
+                ? `select the others (after a brief delay).` : ''
               )}
             </Text>
           </View>
@@ -811,7 +914,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(width)
           ]}>
             <Text style={{color: colors.text}}>
               {`Secret items will ` +
@@ -923,7 +1026,7 @@ export default function SettingsScreen() {
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(width)
           ]}>
             <Text style={{color: colors.text}}>
               {`Easter Egg items will ` +
@@ -972,7 +1075,7 @@ export default function SettingsScreen() {
                 {color: getShowDebug
                   ? colors.text : colors.textInvert}
               ]}>
-                {` True`}
+                {` Show`}
               </Text>
             </TouchableOpacity>
             {/* Debug info setting: hide debug info. */}
@@ -1000,14 +1103,14 @@ export default function SettingsScreen() {
                 {color: !getShowDebug
                   ? colors.text : colors.textInvert}
               ]}>
-                {` False`}
+                {` Hide`}
               </Text>
             </TouchableOpacity>
           </View>
           {/* Dynamic setting description. */}
           <View style={[
             styles.settingText,
-            styles.settingSpace
+            styles.settingSpace(width)
           ]}>
             <Text style={{color: colors.text}}>
               {(getShowDebug
@@ -1034,13 +1137,13 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   settingText: {
-    flex: 1,
+    //flex: 1,
     //justifyContent: 'center',
     alignItems: 'center',
   },
-  settingSpace: {
-    paddingBottom: (Platform.OS === 'web') ? 28 : 12,
-  },
+  settingSpace: (width) => ({
+    paddingBottom: (width > 449) ? 28 : 12,
+  }),
   settingButton: {
     backgroundColor: 'lightgray',
     flexDirection: 'row',

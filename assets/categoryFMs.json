@@ -1,6 +1,50 @@
 {
   "allFMs": [
     {
+      "id": "fm_twostorms",
+      "name": "Among Two Storms",
+      "game": "game_t2",
+      "year": "y2010",
+      "authors": [
+        "auth_haplo"
+      ],
+      "protagonist": [
+        "protag_garrett",
+        "protag_other"
+      ],
+      "genres": [
+        "genre_heist",
+        "genre_assist",
+        "genre_investigate",
+        "genre_sabotage"
+      ],
+      "times": [
+        "time_night"
+      ],
+      "locations": [
+        "loc_streets",
+        "loc_hideout",
+        "loc_sewers"
+      ],
+      "enemies": [
+        "npc_guards",
+        "npc_thieves",
+        "npc_servants",
+        "npc_spiders",
+        "npc_nobles",
+        "npc_keepers"
+      ],
+      "characters": [
+        "char_downwind"
+      ],
+      "items": [
+        "ref_golddice",
+        "ref_largepremask",
+        "ref_diamonddrillbit"
+      ],
+      "imgAB": "A"
+    },
+    {
       "id": "fm_artthievery",
       "name": "The Art of Thievery",
       "game": "game_t2",
@@ -16,6 +60,10 @@
         "genre_heist",
         "genre_ghost"
       ],
+      "times": [
+        "time_dusk",
+        "time_summer"
+      ],
       "locations": [
         "loc_streets",
         "loc_mansion"
@@ -23,19 +71,21 @@
       "enemies": [
         "npc_mechanists",
         "npc_watch",
-        "npc_robots",
+        "npc_cameras",
+        "npc_bots",
+        "npc_turrets",
         "npc_nobles"
       ],
       "characters": [
         ""
       ],
       "items": [
-        "item_drillbit",
-        "item_talisman",
-        "item_rosary",
-        "item_flute",
-        "item_quintus",
-        "item_eye"
+        "ref_diamonddrillbit",
+        "ref_talismans",
+        "ref_rosarybeads",
+        "ref_silverflute",
+        "ref_hornofquintus",
+        "ref_theeye"
       ],
       "imgAB": "A"
     },
@@ -53,8 +103,12 @@
       "genres": [
         "genre_mystery",
         "genre_heist",
-        "genre_salvage",
-        "genre_holiday"
+        "genre_salvage"
+      ],
+      "times": [
+        "time_night",
+        "time_autumn",
+        "time_holiday"
       ],
       "locations": [
         "loc_cottage",
@@ -81,12 +135,65 @@
         ""
       ],
       "items": [
-        "item_consword",
-        "item_keepermedal",
-        "item_holyhammer",
-        "item_rosary"
+        "ref_consword",
+        "ref_keepermedallion",
+        "ref_holyhammer",
+        "ref_rosarybeads"
       ],
       "imgAB": "B"
+    },
+    {
+      "id": "fm_hangover",
+      "name": "Bad Hangover",
+      "game": "game_t2",
+      "year": "y2012",
+      "authors": [
+        "auth_brethren"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "contest": "con_reload2",
+      "genres": [
+        "genre_investigate",
+        "genre_salvage",
+        "genre_rescue",
+        "genre_escape"
+      ],
+      "times": [
+        "time_night",
+        "time_summer",
+        "time_rain",
+        "time_fog",
+        "time_storm"
+      ],
+      "locations": [
+        "loc_streets",
+        "loc_works",
+        "loc_police",
+        "loc_tavern",
+        "loc_factory",
+        "loc_warehouse",
+        "loc_docks",
+        "loc_ship"
+      ],
+      "enemies": [
+        "npc_zombies",
+        "npc_keepers"
+      ],
+      "characters": [
+        "char_basso"
+      ],
+      "items": [
+        "ref_silverfirepoker",
+        "ref_silverflute",
+        "ref_diamonddrillbit",
+        "ref_dewdrop",
+        "ref_explosivecharge",
+        "ref_naviglobe",
+        "ref_golddice"
+      ],
+      "imgAB": "A"
     },
     {
       "id": "fm_bennydead",
@@ -102,6 +209,10 @@
       "genres": [
         "genre_mystery",
         "genre_ghost"
+      ],
+      "times": [
+        "time_night",
+        "time_summer"
       ],
       "locations": [
         "loc_streets",
@@ -120,15 +231,17 @@
         "npc_monsters",
         "npc_spiders",
         "npc_guards",
-        "npc_robots"
+        "npc_cameras",
+        "npc_turrets",
+        "npc_bots"
       ],
       "characters": [
         "char_benny"
       ],
       "items": [
-        "item_rosary",
-        "item_dewdrop",
-        "item_dice"
+        "ref_rosarybeads",
+        "ref_dewdrop",
+        "ref_golddice"
       ],
       "imgAB": "B"
     },
@@ -148,6 +261,10 @@
         "genre_burglar",
         "genre_heist"
       ],
+      "times": [
+        "time_night",
+        "time_spring"
+      ],
       "locations": [
         "loc_hotel"
       ],
@@ -162,7 +279,7 @@
         "char_benny"
       ],
       "items": [
-        "item_poker"
+        "ref_silverfirepoker"
       ],
       "imgAB": "A"
     },
@@ -179,10 +296,17 @@
         "protag_garrett"
       ],
       "campaign": "cam_calendra",
+      "campaignSort": 1,
       "genres": [
         "genre_rendezvous",
         "genre_heist",
+        "genre_assist",
+        "genre_riddle",
         "genre_frame"
+      ],
+      "times": [
+        "time_night",
+        "time_autumn"
       ],
       "locations": [
         "loc_streets",
@@ -202,15 +326,15 @@
         "npc_spiders",
         "npc_zombies",
         "npc_haunts",
-        "npc_monsters",
-        "npc_beasts"
+        "npc_frogs",
+        "npc_monsters"
       ],
       "characters": [
         "char_downwind"
       ],
       "items": [
-        "item_sapphirevase",
-        "item_sunburst"
+        "ref_sapphirevase",
+        "ref_explosivecharge"
       ],
       "imgAB": "A"
     },
@@ -228,10 +352,18 @@
         "protag_garrett"
       ],
       "campaign": "cam_calendra",
+      "campaignSort": 2,
       "genres": [
         "genre_rendezvous",
         "genre_ghost",
-        "genre_daytime"
+        "genre_riddle"
+      ],
+      "times": [
+        "time_day",
+        "time_rain",
+        "time_fog",
+        "time_storm",
+        "time_autumn"
       ],
       "locations": [
         "loc_streets",
@@ -276,12 +408,17 @@
         "protag_garrett"
       ],
       "campaign": "cam_calendra",
+      "campaignSort": 3,
       "genres": [
         "genre_deliver",
         "genre_timed",
         "genre_heist",
-        "genre_sabotage",
+        "genre_destroy",
         "genre_ghost"
+      ],
+      "times": [
+        "time_night",
+        "time_autumn"
       ],
       "locations": [
         "loc_tavern",
@@ -306,14 +443,15 @@
         "npc_zombies",
         "npc_haunts",
         "npc_undead",
+        "npc_skeletons",
         "npc_monsters"
       ],
       "characters": [
         ""
       ],
       "items": [
-        "item_keepermedal",
-        "item_scepter"
+        "ref_keepermedallion",
+        "ref_silverscepter"
       ],
       "imgAB": "A",
       "boxSize": "1"
@@ -332,11 +470,19 @@
         "protag_garrett"
       ],
       "campaign": "cam_calendra",
+      "campaignSort": 4,
       "genres": [
         "genre_rendezvous",
         "genre_assassin",
+        "genre_assist",
         "genre_mystery",
         "genre_heist"
+      ],
+      "times": [
+        "time_night",
+        "time_snow",
+        "time_fog",
+        "time_winter"
       ],
       "locations": [
         "loc_streets",
@@ -358,11 +504,11 @@
         "char_gamall"
       ],
       "items": [
-        "item_holysymbol",
-        "item_dice",
-        "item_hand",
-        "item_holyhammer",
-        "item_basketball"
+        "ref_holysymbol",
+        "ref_golddice",
+        "ref_handofglory",
+        "ref_holyhammer",
+        "ref_basketball"
       ],
       "imgAB": "A",
       "boxSize": "1"
@@ -381,6 +527,11 @@
       "contest": "con_reload1",
       "genres": [
         "genre_heist"
+      ],
+      "times": [
+        "time_night",
+        "time_snow",
+        "time_winter"
       ],
       "locations": [
         "loc_ship",
@@ -406,10 +557,10 @@
         "char_bafford"
       ],
       "items": [
-        "item_dice",
-        "item_drillbit",
-        "item_dewdrop",
-        "item_flute"
+        "ref_golddice",
+        "ref_diamonddrillbit",
+        "ref_dewdrop",
+        "ref_silverflute"
       ],
       "imgAB": "A"
     },
@@ -425,11 +576,17 @@
         "protag_garrett"
       ],
       "campaign": "cam_spirit",
+      "campaignSort": 1,
       "genres": [
+        "genre_vanquish",
         "genre_assassin",
         "genre_heist",
         "genre_burglar",
-        "genre_sabotage"
+        "genre_destroy"
+      ],
+      "times": [
+        "time_night",
+        "time_autumn"
       ],
       "locations": [
         "loc_cityruins",
@@ -440,15 +597,16 @@
       "enemies": [
         "npc_thieves",
         "npc_zombies",
-        "npc_undead"
+        "npc_undead",
+        "npc_nobles"
       ],
       "characters": [
         "char_constantine"
       ],
       "items": [
-        "item_eye",
-        "item_sapphirevase",
-        "item_heartsoul"
+        "ref_theeye",
+        "ref_sapphirevase",
+        "ref_mysticsheartsoul"
       ],
       "imgAB": "B"
     },
@@ -464,7 +622,14 @@
         "protag_garrett"
       ],
       "genres": [
-        "genre_salvage"
+        "genre_heist",
+        "genre_salvage",
+        "genre_riddle"
+      ],
+      "times": [
+        "time_night",
+        "time_storm",
+        "time_spring"
       ],
       "locations": [
         "loc_streets",
@@ -485,9 +650,53 @@
         ""
       ],
       "items": [
-        "item_torc",
-        "item_goldbone",
-        "item_talisman"
+        "ref_serpentyletorc",
+        "ref_goldenbone",
+        "ref_talismans"
+      ],
+      "imgAB": "B"
+    },
+    {
+      "id": "fm_horrors-dance",
+      "name": "Dance with the Dead",
+      "game": "game_t2",
+      "year": "y2007",
+      "authors": [
+        "auth_yandros"
+      ],
+      "protagonist": [
+        "protag_garrett",
+        "protag_other"
+      ],
+      "campaign": "cam_horrors",
+      "campaignSort": 2,
+      "genres": [
+        "genre_heist",
+        "genre_salvage",
+        "genre_riddle",
+        "genre_vanquish",
+        "genre_horror"
+      ],
+      "times": [
+        "time_night",
+        "time_autumn",
+        "time_fog"
+      ],
+      "locations": [
+        "loc_catacombs"
+      ],
+      "enemies": [
+        "npc_skeletons",
+        "npc_haunts"
+      ],
+      "characters": [
+        "char_benny"
+      ],
+      "items": [
+        "ref_talismans",
+        "ref_serpentyletorc",
+        "ref_explosivecharge",
+        "ref_silverscepter"
       ],
       "imgAB": "B"
     },
@@ -505,8 +714,13 @@
       "genres": [
         "genre_investigate",
         "genre_heist",
+        "genre_destroy",
         "genre_sabotage",
         "genre_ghost"
+      ],
+      "times": [
+        "time_night",
+        "time_spring"
       ],
       "locations": [
         "loc_streets",
@@ -524,23 +738,27 @@
         "npc_servants",
         "npc_pagans",
         "npc_ghosts",
-        "npc_robots",
+        "npc_cameras",
         "npc_mechanists",
+        "npc_bots",
+        "npc_creatures",
+        "npc_robots",
         "npc_haunts",
         "npc_thieves",
         "npc_zombies",
         "npc_spiders",
-        "npc_beasts",
+        "npc_frogs",
         "npc_guards",
+        "npc_turrets",
         "npc_nobles"
       ],
       "characters": [
         ""
       ],
       "items": [
-        "item_gear",
-        "item_explosivecharge",
-        "item_quintus"
+        "ref_goldgear",
+        "ref_explosivecharge",
+        "ref_hornofquintus"
       ],
       "imgAB": "A"
     },
@@ -556,10 +774,15 @@
         "protag_garrett"
       ],
       "campaign": "cam_ashton",
+      "campaignSort": 3,
       "genres": [
         "genre_escape",
         "genre_investigate",
         "genre_heist"
+      ],
+      "times": [
+        "time_night",
+        "time_summer"
       ],
       "locations": [
         "loc_prison",
@@ -573,23 +796,66 @@
         "npc_thieves",
         "npc_servants",
         "npc_spiders",
-        "npc_robots"
+        "npc_bots"
       ],
       "characters": [
         "char_benny"
       ],
       "items": [
-        "item_spice",
-        "item_cylinder",
-        "item_dice",
-        "item_goldbone",
-        "item_bracelet",
-        "item_sapphirevase",
-        "item_magemedal",
-        "item_scepter",
-        "item_poker"
+        "ref_rarespicebag",
+        "ref_waxcylinder",
+        "ref_golddice",
+        "ref_goldenbone",
+        "ref_silverbracelet",
+        "ref_sapphirevase",
+        "ref_purplemedallion",
+        "ref_silverscepter",
+        "ref_silverfirepoker"
       ],
       "imgAB": "A"
+    },
+    {
+      "id": "fm_hammerhill",
+      "name": "Escape Hammer Hill",
+      "game": "game_t2",
+      "year": "y2010",
+      "authors": [
+        "auth_darthslair"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "contest": "con_svc",
+      "genres": [
+        "genre_rescue",
+        "genre_escape",
+        "genre_salvage",
+        "genre_heist",
+        "genre_investigate"
+      ],
+      "times": [
+        "time_night",
+        "time_summer"
+      ],
+      "locations": [
+        "loc_prison",
+        "loc_sewers"
+      ],
+      "enemies": [
+        "npc_hammerites",
+        "npc_servants",
+        "npc_nobles",
+        "npc_thieves"
+      ],
+      "characters": [
+        "char_basso"
+      ],
+      "items": [
+        "ref_golddice",
+        "ref_dewdrop",
+        "ref_silverfirepoker"
+      ],
+      "imgAB": "B"
     },
     {
       "id": "fm_equilibrium",
@@ -606,6 +872,9 @@
         "genre_investigate",
         "genre_escape"
       ],
+      "times": [
+        ""
+      ],
       "locations": [
         "loc_library"
       ],
@@ -613,8 +882,8 @@
         "npc_keepers"
       ],
       "items": [
-        "item_rosary",
-        "item_talisman"
+        "ref_rosarybeads",
+        "ref_talismans"
       ],
       "imgAB": "A"
     },
@@ -632,7 +901,12 @@
       "genres": [
         "genre_investigate",
         "genre_salvage",
+        "genre_heist",
         "genre_rendezvous"
+      ],
+      "times": [
+        "time_night",
+        "time_spring"
       ],
       "locations": [
         "loc_church",
@@ -642,19 +916,22 @@
         "loc_sewers"
       ],
       "enemies": [
+        "npc_bots",
         "npc_mechanists",
-        "npc_robots",
         "npc_nobles",
+        "npc_cameras",
+        "npc_turrets",
         "npc_haunts",
         "npc_pagans",
-        "npc_hammerites"
+        "npc_hammerites",
+        "npc_robots"
       ],
       "characters": [
         ""
       ],
       "items": [
-        "item_flute",
-        "item_holyhammer"
+        "ref_silverflute",
+        "ref_holyhammer"
       ],
       "imgAB": "A"
     },
@@ -675,6 +952,11 @@
         "genre_investigate",
         "genre_escape"
       ],
+      "times": [
+        "time_night",
+        "time_fog",
+        "time_summer"
+      ],
       "locations": [
         "loc_ship",
         "loc_cave"
@@ -687,7 +969,7 @@
         ""
       ],
       "items": [
-        "item_dice"
+        "ref_golddice"
       ],
       "imgAB": "B"
     },
@@ -703,10 +985,15 @@
         "protag_garrett"
       ],
       "campaign": "cam_spirit",
+      "campaignSort": 2,
       "genres": [
         "genre_salvage",
         "genre_investigate",
+        "genre_riddle",
         "genre_horror"
+      ],
+      "times": [
+        "time_night"
       ],
       "locations": [
         "loc_mountain",
@@ -721,7 +1008,6 @@
         "npc_zombies",
         "npc_haunts",
         "npc_ghosts",
-        "npc_hammerites",
         "npc_undead",
         "npc_spiders",
         "npc_burricks"
@@ -730,10 +1016,10 @@
         ""
       ],
       "items": [
-        "item_heartsoul",
-        "item_hand",
-        "item_scepter",
-        "item_torc"
+        "ref_mysticsheartsoul",
+        "ref_handofglory",
+        "ref_silverscepter",
+        "ref_serpentyletorc"
       ],
       "imgAB": "B"
     },
@@ -751,6 +1037,10 @@
       "genres": [
         "genre_heist"
       ],
+      "times": [
+        "time_night",
+        "time_summer"
+      ],
       "locations": [
         "loc_mountain",
         "loc_cave",
@@ -759,7 +1049,7 @@
       ],
       "enemies": [
         "npc_guards",
-        "npc_beasts",
+        "npc_apes",
         "npc_servants",
         "npc_nobles",
         "npc_watch"
@@ -768,13 +1058,173 @@
         "char_benny"
       ],
       "items": [
-        "item_dice",
-        "item_premask",
-        "item_goldbone",
-        "item_poker",
-        "item_torc"
+        "ref_golddice",
+        "ref_largepremask",
+        "ref_goldenbone",
+        "ref_silverfirepoker",
+        "ref_serpentyletorc"
       ],
       "imgAB": "A"
+    },
+    {
+      "id": "fm_forces-mirror1",
+      "name": "The Mirror of Return",
+      "subName": "Part 1",
+      "game": "game_t2",
+      "year": "y2010",
+      "authors": [
+        "auth_psymh"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_forces",
+      "campaignSort": 3,
+      "genres": [
+        "genre_rendezvous",
+        "genre_heist",
+        "genre_investigate"
+      ],
+      "times": [
+        "time_night"
+      ],
+      "locations": [
+        "loc_docks",
+        "loc_river",
+        "loc_mountain",
+        "loc_tower",
+        "loc_catacombs",
+        "loc_castle",
+        "loc_extra"
+      ],
+      "enemies": [
+        "npc_thieves",
+        "npc_guards",
+        "npc_keepers",
+        "npc_spiders",
+        "npc_servants",
+        "npc_zombies",
+        "npc_monsters"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "ref_goldenbone",
+        "ref_talismans",
+        "ref_serpentyletorc",
+        "ref_silverflute",
+        "ref_dewdrop",
+        "ref_keepermedallion"
+      ],
+      "imgAB": "A",
+      "boxSize": "1"
+    },
+    {
+      "id": "fm_forces-mirror2",
+      "name": "The Mirror of Return",
+      "subName": "Part 2",
+      "game": "game_t2",
+      "year": "y2010",
+      "authors": [
+        "auth_psymh"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_forces",
+      "campaignSort": 4,
+      "genres": [
+        "genre_investigate",
+        "genre_burglar",
+        "genre_salvage",
+        "genre_heist"
+      ],
+      "times": [
+        "time_night",
+        "time_fog"
+      ],
+      "locations": [
+        "loc_cave",
+        "loc_mountain",
+        "loc_village",
+        "loc_hotel",
+        "loc_tavern",
+        "loc_hideout",
+        "loc_ancient",
+        "loc_cemetery",
+        "loc_river",
+        "loc_tower"
+      ],
+      "enemies": [
+        "npc_zombies",
+        "npc_burricks",
+        "npc_spiders",
+        "npc_guards",
+        "npc_servants",
+        "npc_skeletons",
+        "npc_ghosts",
+        "npc_thieves",
+        "npc_monsters"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "ref_serpentyletorc",
+        "ref_handofglory"
+      ],
+      "imgAB": "B",
+      "boxSize": "1"
+    },
+    {
+      "id": "fm_forces-mirror3",
+      "name": "The Mirror of Return",
+      "subName": "Part 3",
+      "game": "game_t2",
+      "year": "y2010",
+      "authors": [
+        "auth_psymh"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_forces",
+      "campaignSort": 5,
+      "genres": [
+        "genre_vanquish",
+        "genre_rescue"
+      ],
+      "times": [
+        "time_dusk"
+      ],
+      "locations": [
+        "loc_mountain",
+        "loc_castle",
+        "loc_extra",
+        "loc_catacombs",
+        "loc_docks",
+        "loc_tower",
+        "loc_river"
+      ],
+      "enemies": [
+        "npc_zombies",
+        "npc_monsters",
+        "npc_thieves",
+        "npc_guards",
+        "npc_spiders",
+        "npc_keepers",
+        "npc_burricks",
+        "npc_elementals"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "ref_dewdrop"
+      ],
+      "imgAB": "B",
+      "boxSize": "1"
     },
     {
       "id": "fm_forces-invitation",
@@ -788,13 +1238,17 @@
         "protag_garrett"
       ],
       "campaign": "cam_forces",
+      "campaignSort": 1,
       "genres": [
         "genre_rescue",
         "genre_escape",
         "genre_investigate",
         "genre_heist",
-        "genre_ghost",
-        "genre_daytime"
+        "genre_ghost"
+      ],
+      "times": [
+        "time_day",
+        "time_summer"
       ],
       "locations": [
         "loc_mansion",
@@ -809,8 +1263,10 @@
         "npc_servants",
         "npc_thieves",
         "npc_spiders",
-        "npc_beasts",
-        "npc_robots",
+        "npc_frogs",
+        "npc_bots",
+        "npc_cameras",
+        "npc_turrets",
         "npc_hammerites",
         "npc_monsters"
       ],
@@ -818,9 +1274,9 @@
         ""
       ],
       "items": [
-        "item_consword",
-        "item_sapphirevase",
-        "item_flute"
+        "ref_consword",
+        "ref_sapphirevase",
+        "ref_silverflute"
       ],
       "imgAB": "A"
     },
@@ -838,8 +1294,13 @@
       "genres": [
         "genre_investigate",
         "genre_heist",
-        "genre_deliver",
-        "genre_holiday"
+        "genre_deliver"
+      ],
+      "times": [
+        "time_night",
+        "time_snow",
+        "time_winter",
+        "time_holiday"
       ],
       "locations": [
         "loc_streets",
@@ -860,8 +1321,8 @@
         ""
       ],
       "items": [
-        "item_dewdrop",
-        "item_basketball"
+        "ref_dewdrop",
+        "ref_basketball"
       ],
       "imgAB": "A"
     },
@@ -877,10 +1338,15 @@
         "protag_garrett"
       ],
       "campaign": "cam_ashton",
+      "campaignSort": 2,
       "genres": [
         "genre_burglar",
         "genre_heist",
         "genre_rendezvous"
+      ],
+      "times": [
+        "time_night",
+        "time_summer"
       ],
       "locations": [
         "loc_cemetery",
@@ -901,26 +1367,27 @@
         "npc_watch",
         "npc_servants",
         "npc_nobles",
+        "npc_zombies",
         "npc_thieves",
-        "npc_beasts",
+        "npc_frogs",
         "npc_hammerites"
       ],
       "characters": [
         ""
       ],
       "items": [
-        "item_rosary",
-        "item_drillbit",
-        "item_spice",
-        "item_torc",
-        "item_dice",
-        "item_magemedal",
-        "item_basketball",
-        "item_sapphirevase",
-        "item_flute",
-        "item_poker",
-        "item_holyhammer",
-        "item_holysymbol"
+        "ref_rosarybeads",
+        "ref_diamonddrillbit",
+        "ref_rarespicebag",
+        "ref_serpentyletorc",
+        "ref_golddice",
+        "ref_purplemedallion",
+        "ref_basketball",
+        "ref_sapphirevase",
+        "ref_silverflute",
+        "ref_silverfirepoker",
+        "ref_holyhammer",
+        "ref_holysymbol"
       ],
       "imgAB": "B"
     },
@@ -936,12 +1403,16 @@
         "protag_garrett"
       ],
       "campaign": "cam_triad",
+      "campaignSort": 1,
       "genres": [
         "genre_burglar",
         "genre_heist",
         "genre_investigate",
         "genre_escape",
-        "genre_sabotage"
+        "genre_destroy"
+      ],
+      "times": [
+        "time_night"
       ],
       "locations": [
         "loc_mansion",
@@ -968,12 +1439,58 @@
         "char_benny"
       ],
       "items": [
-        "item_scepter",
-        "item_quintus",
-        "item_goldbone",
-        "item_talisman"
+        "ref_silverscepter",
+        "ref_hornofquintus",
+        "ref_goldenbone",
+        "ref_talismans"
       ],
       "imgAB": "A"
+    },
+    {
+      "id": "fm_finals",
+      "name": "Prequel",
+      "subName": "Finals at the Academy",
+      "game": "game_t2",
+      "year": "y2011",
+      "authors": [
+        "auth_larryg"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "",
+      "genres": [
+        "genre_ghost",
+        "genre_heist",
+        "genre_salvage",
+        "genre_investigate",
+        "genre_riddle",
+        "genre_assist"
+      ],
+      "times": [
+        "time_spring"
+      ],
+      "locations": [
+        "loc_theater",
+        "loc_school",
+        "loc_catacombs",
+        "loc_ancient"
+      ],
+      "enemies": [
+        "npc_keepers",
+        "npc_spiders",
+        "npc_zombies",
+        "npc_undead",
+        "npc_skeletons",
+        "npc_creatures",
+        "npc_ghosts"
+      ],
+      "items": [
+        "ref_keepermedallion",
+        "ref_dewdrop"
+      ],
+      "imgAB": "A",
+      "boxSize": "1"
     },
     {
       "id": "fm_ashton-revenge",
@@ -987,8 +1504,14 @@
         "protag_garrett"
       ],
       "campaign": "cam_ashton",
+      "campaignSort": 4,
       "genres": [
         "genre_assassin"
+      ],
+      "times": [
+        "time_night",
+        "time_rain",
+        "time_summer"
       ],
       "locations": [
         "loc_streets",
@@ -1005,19 +1528,19 @@
         "npc_thieves",
         "npc_burricks",
         "npc_mechanists",
-        "npc_robots"
+        "npc_bots"
       ],
       "characters": [
         ""
       ],
       "items": [
-        "item_dice",
-        "item_spice",
-        "item_consword",
-        "item_sapphirevase",
-        "item_bracelet",
-        "item_torc",
-        "item_poker"
+        "ref_golddice",
+        "ref_rarespicebag",
+        "ref_consword",
+        "ref_sapphirevase",
+        "ref_silverbracelet",
+        "ref_serpentyletorc",
+        "ref_silverfirepoker"
       ],
       "imgAB": "B"
     },
@@ -1036,6 +1559,9 @@
         "genre_mystery",
         "genre_horror",
         "genre_modern"
+      ],
+      "times": [
+        "time_night"
       ],
       "locations": [
         "loc_mansion",
@@ -1066,7 +1592,12 @@
       ],
       "genres": [
         "genre_mystery",
+        "genre_vanquish",
         "genre_rescue"
+      ],
+      "times": [
+        "time_night",
+        "time_spring"
       ],
       "locations": [
         "loc_mansion",
@@ -1080,7 +1611,8 @@
         "npc_ghosts",
         "npc_nobles",
         "npc_guards",
-        "npc_beasts",
+        "npc_frogs",
+        "npc_trees",
         "npc_elementals",
         "npc_monsters",
         "npc_zombies",
@@ -1090,11 +1622,11 @@
         ""
       ],
       "items": [
-        "item_rosary",
-        "item_torc",
-        "item_goldbone",
-        "item_keepermedal",
-        "item_quintus"
+        "ref_rosarybeads",
+        "ref_serpentyletorc",
+        "ref_goldenbone",
+        "ref_keepermedallion",
+        "ref_hornofquintus"
       ],
       "imgAB": "A"
     },
@@ -1111,8 +1643,14 @@
         "protag_garrett"
       ],
       "campaign": "cam_seventh",
+      "campaignSort": 1,
       "genres": [
         "genre_heist"
+      ],
+      "times": [
+        "time_night",
+        "time_snow",
+        "time_winter"
       ],
       "locations": [
         "loc_mansion"
@@ -1125,10 +1663,10 @@
         ""
       ],
       "items": [
-        "item_poker",
-        "item_flute",
-        "item_rosary",
-        "item_basketball"
+        "ref_silverfirepoker",
+        "ref_silverflute",
+        "ref_rosarybeads",
+        "ref_basketball"
       ],
       "imgAB": "A",
       "boxSize": "1"
@@ -1146,9 +1684,14 @@
         "protag_garrett"
       ],
       "campaign": "cam_seventh",
+      "campaignSort": 2,
       "genres": [
         "genre_salvage",
         "genre_horror"
+      ],
+      "times": [
+        "time_night",
+        "time_winter"
       ],
       "locations": [
         "loc_catacombs"
@@ -1160,7 +1703,7 @@
         ""
       ],
       "items": [
-        "item_rosary"
+        "ref_rosarybeads"
       ],
       "imgAB": "B",
       "boxSize": "1"
@@ -1179,6 +1722,9 @@
       "genres": [
         "genre_salvage"
       ],
+      "times": [
+        "time_night"
+      ],
       "locations": [
         "loc_mansion",
         "loc_cave",
@@ -1187,8 +1733,9 @@
       ],
       "enemies": [
         "npc_guards",
-        "npc_robots",
+        "npc_cameras",
         "npc_nobles",
+        "npc_bots",
         "npc_spiders",
         "npc_zombies",
         "npc_ghosts",
@@ -1198,10 +1745,54 @@
         ""
       ],
       "items": [
-        "item_goldbone",
-        "item_holyhammer"
+        "ref_goldenbone",
+        "ref_holyhammer"
       ],
       "imgAB": "B"
+    },
+    {
+      "id": "fm_swamped",
+      "name": "Swamped",
+      "game": "game_t2",
+      "year": "y2002",
+      "authors": [
+        "auth_sharga"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "genres": [
+        "genre_salvage",
+        "genre_investigate"
+      ],
+      "times": [
+        "time_night",
+        "time_fog"
+      ],
+      "locations": [
+        "loc_forest",
+        "loc_ancient",
+        "loc_cave",
+        "loc_village",
+        "loc_cottage"
+      ],
+      "enemies": [
+        "npc_trees",
+        "npc_burricks",
+        "npc_craymen",
+        "npc_zombies",
+        "npc_ghosts",
+        "npc_frogs",
+        "npc_spiders"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "ref_largepremask",
+        "ref_serpentyletorc"
+      ],
+      "imgAB": "A"
     },
     {
       "id": "fm_cleft-ladytaker",
@@ -1216,11 +1807,15 @@
         "protag_garrett"
       ],
       "campaign": "cam_cleft",
+      "campaignSort": 2,
       "genres": [
         "genre_rescue",
         "genre_heist",
         "genre_mystery",
         "genre_deliver"
+      ],
+      "times": [
+        "time_night"
       ],
       "locations": [
         "loc_streets",
@@ -1242,21 +1837,22 @@
         "npc_hammerites",
         "npc_servants",
         "npc_pagans",
-        "npc_beasts",
+        "npc_apes",
         "npc_ghosts",
         "npc_mechanists",
+        "npc_frogs",
         "npc_elementals"
       ],
       "characters": [
         ""
       ],
       "items": [
-        "item_sunburst",
-        "item_ruby",
-        "item_holyhammer",
-        "item_dewdrop",
-        "item_rosary",
-        "item_dice"
+        "ref_explosivecharge",
+        "ref_rubystone",
+        "ref_holyhammer",
+        "ref_dewdrop",
+        "ref_rosarybeads",
+        "ref_golddice"
       ],
       "imgAB": "A",
       "boxSize": "1"
@@ -1274,11 +1870,16 @@
         "protag_garrett"
       ],
       "campaign": "cam_cleft",
+      "campaignSort": 1,
       "genres": [
         "genre_heist",
         "genre_investigate",
         "genre_mystery",
         "genre_ghost"
+      ],
+      "times": [
+        "time_night",
+        "time_summer"
       ],
       "locations": [
         "loc_mountain",
@@ -1288,21 +1889,23 @@
       ],
       "enemies": [
         "npc_mechanists",
-        "npc_robots",
+        "npc_cameras",
+        "npc_turrets",
         "npc_guards",
         "npc_servants",
         "npc_nobles",
-        "npc_beasts",
+        "npc_frogs",
+        "npc_zombies",
         "npc_hammerites"
       ],
       "characters": [
         "char_benny"
       ],
       "items": [
-        "item_dice",
-        "item_dewdrop",
-        "item_premask",
-        "item_globe"
+        "ref_golddice",
+        "ref_dewdrop",
+        "ref_largepremask",
+        "ref_naviglobe"
       ],
       "imgAB": "A",
       "boxSize": "1"
@@ -1322,6 +1925,9 @@
       "genres": [
         "genre_salvage",
         "genre_puzzle"
+      ],
+      "times": [
+        "time_day"
       ],
       "locations": [
         "loc_ancient"
@@ -1347,6 +1953,9 @@
         "genre_heist",
         "genre_ghost"
       ],
+      "times": [
+        "time_night"
+      ],
       "locations": [
         "loc_hotel",
         "loc_rooftops",
@@ -1365,7 +1974,7 @@
         "char_bafford"
       ],
       "items": [
-        "item_holyhammer"
+        "ref_holyhammer"
       ],
       "imgAB": "B"
     },
@@ -1384,14 +1993,19 @@
         "loc_cottage"
       ],
       "genres": [
-        "genre_puzzle",
-        "genre_holiday"
+        "genre_puzzle"
+      ],
+      "times": [
+        "time_winter",
+        "time_snow",
+        "time_holiday"
       ],
       "characters": [
         "char_basso",
         "char_jenivere"
       ],
       "items": [
+        ""
       ],
       "imgAB": "B"
     },
@@ -1409,6 +2023,9 @@
       "genres": [
         "genre_burglar"
       ],
+      "times": [
+        "time_night"
+      ],
       "locations": [
         "loc_rooftops",
         "loc_hotel",
@@ -1423,17 +2040,17 @@
         "npc_guards",
         "npc_nobles",
         "npc_servants",
-        "npc_robots"
+        "npc_bots"
       ],
       "characters": [
         "char_benny"
       ],
       "items": [
-        "item_sunburst",
-        "item_poker",
-        "item_quintus",
-        "item_gear",
-        "item_premask"
+        "ref_explosivecharge",
+        "ref_silverfirepoker",
+        "ref_hornofquintus",
+        "ref_goldgear",
+        "ref_largepremask"
       ],
       "imgAB": "A"
     },
@@ -1452,8 +2069,11 @@
       "genres": [
         "genre_investigate",
         "genre_burglar",
-        "genre_assassin",
+        "genre_vanquish",
         "genre_ghost"
+      ],
+      "times": [
+        "time_night"
       ],
       "locations": [
         "loc_factory",
@@ -1469,8 +2089,8 @@
         "char_downwind"
       ],
       "items": [
-        "item_torc",
-        "item_drillbit"
+        "ref_serpentyletorc",
+        "ref_diamonddrillbit"
       ],
       "imgAB": "B"
     },
@@ -1486,6 +2106,7 @@
         "protag_garrett"
       ],
       "campaign": "cam_forces",
+      "campaignSort": 2,
       "genres": [
         "genre_rendezvous",
         "genre_trail",
@@ -1493,8 +2114,11 @@
         "genre_assassin",
         "genre_salvage",
         "genre_heist",
-        "genre_sabotage",
-        "genre_dusk"
+        "genre_sabotage"
+      ],
+      "times": [
+        "time_dusk",
+        "time_summer"
       ],
       "locations": [
         "loc_sewers",
@@ -1510,6 +2134,7 @@
         "loc_castle",
         "loc_church",
         "loc_factory",
+        "loc_library",
         "loc_docks"
       ],
       "enemies": [
@@ -1529,8 +2154,8 @@
         ""
       ],
       "items": [
-        "item_goldbone",
-        "item_sunburst"
+        "ref_goldenbone",
+        "ref_explosivecharge"
       ],
       "imgAB": "A"
     },
@@ -1550,6 +2175,9 @@
         "genre_sabotage",
         "genre_salvage"
       ],
+      "times": [
+        "time_night"
+      ],
       "locations": [
         "loc_tower",
         "loc_rooftops",
@@ -1565,20 +2193,20 @@
         "npc_guards",
         "npc_servants",
         "npc_nobles",
-        "npc_robots",
+        "npc_cameras",
         "npc_mechanists",
         "npc_zombies",
-        "npc_undead",
+        "npc_skeletons",
         "npc_monsters"
       ],
       "characters": [
         ""
       ],
       "items": [
-        "item_dewdrop",
-        "item_gear",
-        "item_keepermedal",
-        "item_goldbone"
+        "ref_dewdrop",
+        "ref_goldgear",
+        "ref_keepermedallion",
+        "ref_goldenbone"
       ],
       "imgAB": "A"
     },
@@ -1596,8 +2224,12 @@
       "genres": [
         "genre_burglar",
         "genre_heist",
-        "genre_deliver",
-        "genre_holiday"
+        "genre_deliver"
+      ],
+      "times": [
+        "time_night",
+        "time_winter",
+        "time_holiday"
       ],
       "locations": [
         "loc_streets",
@@ -1619,20 +2251,22 @@
         "npc_nobles",
         "npc_mechanists",
         "npc_haunts",
-        "npc_robots",
+        "npc_cameras",
+        "npc_bots",
+        "npc_turrets",
         "npc_thieves"
       ],
       "characters": [
         "char_benny"
       ],
       "items": [
-        "item_dice",
-        "item_dewdrop",
-        "item_goldbone",
-        "item_quintus",
-        "item_torc",
-        "item_cylinder",
-        "item_globe"
+        "ref_golddice",
+        "ref_dewdrop",
+        "ref_goldenbone",
+        "ref_hornofquintus",
+        "ref_serpentyletorc",
+        "ref_waxcylinder",
+        "ref_naviglobe"
       ],
       "imgAB": "B"
     },
@@ -1648,9 +2282,14 @@
         "protag_garrett"
       ],
       "campaign": "cam_ashton",
+      "campaignSort": 1,
       "genres": [
         "genre_burglar",
         "genre_heist"
+      ],
+      "times": [
+        "time_night",
+        "time_summer"
       ],
       "locations": [
         "loc_mansion",
@@ -1660,23 +2299,23 @@
         "npc_guards",
         "npc_servants",
         "npc_nobles",
-        "npc_beasts"
+        "npc_trees"
       ],
       "characters": [
         "char_benny"
       ],
       "items": [
-        "item_dice",
-        "item_flute",
-        "item_cylinder",
-        "item_basketball",
-        "item_goldbone",
-        "item_dewdrop",
-        "item_torc",
-        "item_globe",
-        "item_hand",
-        "item_poker",
-        "item_premask"
+        "ref_golddice",
+        "ref_silverflute",
+        "ref_waxcylinder",
+        "ref_basketball",
+        "ref_goldenbone",
+        "ref_dewdrop",
+        "ref_serpentyletorc",
+        "ref_naviglobe",
+        "ref_handofglory",
+        "ref_silverfirepoker",
+        "ref_largepremask"
       ],
       "imgAB": "A"
     },
@@ -1698,6 +2337,10 @@
         "genre_assassin",
         "genre_ghost"
       ],
+      "times": [
+        "time_night",
+        "time_autumn"
+      ],
       "locations": [
         "loc_sewers",
         "loc_mansion"
@@ -1705,15 +2348,60 @@
       "enemies": [
         "npc_guards",
         "npc_servants",
-        "npc_robots"
+        "npc_cameras",
+        "npc_turrets"
       ],
       "characters": [
         ""
       ],
       "items": [
-        "item_chisel",
-        "item_quintus",
-        "item_torc"
+        "ref_builderschisel",
+        "ref_hornofquintus",
+        "ref_serpentyletorc"
+      ],
+      "imgAB": "B"
+    },
+    {
+      "id": "fm_horrors-below",
+      "name": "What Lies Below",
+      "game": "game_t2",
+      "year": "y2006",
+      "authors": [
+        "auth_yandros"
+      ],
+      "protagonist": [
+        "protag_garrett"
+      ],
+      "campaign": "cam_horrors",
+      "campaignSort": 1,
+      "contest": "con_water",
+      "genres": [
+        "genre_assist",
+        "genre_destroy",
+        "genre_horror"
+      ],
+      "times": [
+        "time_night",
+        "time_fog"
+      ],
+      "locations": [
+        "loc_sewers",
+        "loc_catacombs"
+      ],
+      "enemies": [
+        "npc_haunts",
+        "npc_ghosts",
+        "npc_undead",
+        "npc_zombies",
+        "npc_hammerites"
+      ],
+      "characters": [
+        ""
+      ],
+      "items": [
+        "ref_dewdrop",
+        "ref_serpentyletorc",
+        "ref_keepermedallion"
       ],
       "imgAB": "B"
     },
@@ -1730,8 +2418,12 @@
         ""
       ],
       "campaign": "",
+      "campaignSort": 1,
       "contest": "",
       "genres": [
+        ""
+      ],
+      "times": [
         ""
       ],
       "locations": [

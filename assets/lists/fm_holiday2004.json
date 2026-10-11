@@ -10,6 +10,10 @@
   ],
   "firstRelease": "December 2004",
   "latestVersion": "3.0",
+  "weblinks": {
+    "guild": "https://www.thiefguild.com/fanmissions/1864/a-thiefs-holiday-2004",
+    "ttlg": "https://www.ttlg.com/forums/showthread.php?t=91884"
+  },
   "diffNames": ["Normal","Hard","Expert"],
   "diffChanges": true,
   "markObj": true,
@@ -36,7 +40,7 @@
       "catItems": [
       {
           "id": "item_ropearrow",
-          "name": "Rope Arrow",
+          "name": "ref_ropearrow",
           "img": [
             "IMG_RopeArrow"
           ],
@@ -90,7 +94,7 @@
       "catItems": [
         {
           "id": "item_key",
-          "name": "Front Door Key",
+          "name": "ref_key_frontdoor",
           "img": [
             "IMG_Key_Silver"
           ],
@@ -275,7 +279,7 @@
       "catItems": [
         {
           "id": "item_apple",
-          "name": "Apple",
+          "name": "ref_apple",
           "img": [
             "IMG_Apple"
           ],

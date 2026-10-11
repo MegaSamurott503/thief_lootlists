@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   TouchableWithoutFeedback,
   View, Modal,
+  ActivityIndicator,
   useWindowDimensions
 } from 'react-native';
 import { useEffect, useState, useContext } from 'react';
@@ -91,9 +92,11 @@ export function FindMe(props) {
   // Used to update the total loot counts accordingly.
   const [getBuyCount, setBuyCount] = useState(1);
 
-  // ShowModal: tracks the purchase modal's visibility.
-  // Used to show or hide the modal for spending loot in-game.
-  const [getShowModal, setShowModal] = useState(false);
+  // ShowModal: tracks the visibility of modals.
+  // ShowBuy toggles the modal for spending loot in-game.
+  // ShowLink toggles the modal for auto-selecting linked items.
+  const [getShowBuyModal, setShowBuyModal] = useState(false);
+  const [getShowLinkModal, setShowLinkModal] = useState(false);
 
   // Fetch FoundLoot and FoundPocket states from context.
   const {accumLoot, accumPiece, accumPocket} =
@@ -127,7 +130,8 @@ export function FindMe(props) {
   const {scheme, device,
         getCurrentTheme, setCurrentTheme,
         getSpoilerSec, setSpoilerSec,
-        getSpoilerEgg, setSpoilerEgg} =
+        getSpoilerEgg, setSpoilerEgg,
+        getLinkedMethod, setLinkedMethod} =
     useContext(SettingContext);
 
   // Save & read item's 'found'/'not found' data in device storage.
@@ -215,7 +219,7 @@ export function FindMe(props) {
         // Show a modal to specify how many items were purchased.
         // Skip the modal if the item is being deselected.
         if (!getIsFound) {
-          setShowModal(true);
+          setShowBuyModal(true);
         } else {
           activateMe(getBuyCount);
         }
@@ -228,7 +232,7 @@ export function FindMe(props) {
 
   function confirmLootSpent(numBought) {
     // Close the purchase modal.
-    setShowModal(false);
+    setShowBuyModal(false);
     // Update the loot totals.
     activateMe(numBought);
   }
@@ -251,7 +255,9 @@ export function FindMe(props) {
           newBoxCount = 1;
         }
         // Increment gold, gems, goods, & special.
-        if (j < 4 && (props.value || props.findLink)) {
+        if (j < 4 && (props.value ||
+          (props.findLink && getLinkedMethod === 'auto')
+        )) {
           // If newly selected, add...
           if (newFound) {
             // ...the value of this loot...
@@ -262,7 +268,7 @@ export function FindMe(props) {
               );
             }
             // ...and the value of any linked loot.
-            if (props.findLink) {
+            if (props.findLink && getLinkedMethod === 'auto') {
               props.findLink.map((foundLinkKey, k) => {
                 if (foundLinkKey.value) {
                   newValue += (
@@ -282,7 +288,7 @@ export function FindMe(props) {
               );
             }
             // ...and the value of any linked loot.
-            if (props.findLink) {
+            if (props.findLink && getLinkedMethod === 'auto') {
               props.findLink.map((foundLinkKey, k) => {
                 if (foundLinkKey.value) {
                   newValue -= (
@@ -294,7 +300,9 @@ export function FindMe(props) {
             return newValue;
           }
         // Increment total loot.
-        } else if (j === 4 && (props.value || props.findLink)) {
+        } else if (j === 4 && (props.value ||
+          (props.findLink && getLinkedMethod === 'auto')
+        )) {
           // If newly selected, add...
           if (newFound) {
             // ...the value of this loot...
@@ -305,7 +313,7 @@ export function FindMe(props) {
               );
             }
             // ...and the value of any linked loot.
-            if (props.findLink) {
+            if (props.findLink && getLinkedMethod === 'auto') {
               props.findLink.map((allKey, l) => {
                 if (allKey.value) {
                   newValue += (
@@ -326,7 +334,7 @@ export function FindMe(props) {
               );
             }
             // ...and the value of any linked loot.
-            if (props.findLink) {
+            if (props.findLink && getLinkedMethod === 'auto') {
               props.findLink.map((allKey, l) => {
                 if (allKey.value) {
                   newValue -= (
@@ -341,8 +349,9 @@ export function FindMe(props) {
         }
       });
     });
-    if ((props.value || props.findLink) &&
-        (!props.carryValue || !props.carryValue.length)) {
+    if ((props.value || (props.findLink && getLinkedMethod === 'auto'))
+      && (!props.carryValue || !props.carryValue.length)
+    ) {
       //setFoundLoot(addFoundLoot);
       //alert(`${addFoundLoot}`);
       accumLoot.current = addFoundLoot;
@@ -354,13 +363,13 @@ export function FindMe(props) {
       // If newly selected, add...
       if (newFound) {
         // ...the number of loot pieces...
-        if (props.value && Math.max(...props.value) > 0) {
+        if (props.value && Math.max(...props.value) >= 0) {
           pieceDiffKey = pieceDiffKey += (
             findCount[e] * findCountBox[e] * findCountRecipe[e]
           );
         }
         // ...and the number of any linked loot pieces.
-        if (props.findLink) {
+        if (props.findLink && getLinkedMethod === 'auto') {
           props.findLink.map((foundLinkKey, k) => {
             if (foundLinkKey.value) {
               pieceDiffKey += (
@@ -373,13 +382,13 @@ export function FindMe(props) {
       // If newly deselected, subtract...
       } else {
         // ...the number of loot pieces...
-        if (props.value && Math.max(...props.value) > 0) {
+        if (props.value && Math.max(...props.value) >= 0) {
           pieceDiffKey = pieceDiffKey -= (
             findCount[e] * findCountBox[e] * findCountRecipe[e]
           );
         }
         // ...and the number of any linked loot pieces.
-        if (props.findLink) {
+        if (props.findLink && getLinkedMethod === 'auto') {
           props.findLink.map((foundLinkKey, k) => {
             if (foundLinkKey.value) {
               pieceDiffKey -= (
@@ -391,7 +400,9 @@ export function FindMe(props) {
         return pieceDiffKey;
       }
     });
-    if ((props.value || props.findLink) && props.loadout !== "start") {
+    if ((props.value || (props.findLink && getLinkedMethod === 'auto'))
+      && props.loadout !== "start"
+    ) {
       //setFoundPiece(addFoundPiece);
       //alert(`${addFoundPiece}`);
       accumPiece.current = addFoundPiece;
@@ -407,7 +418,9 @@ export function FindMe(props) {
           pocketDiffKey += 1;
         }
         // ...and another for every linked pickpocket.
-        if (props.findLink && props.findLink.length > 0) {
+        if ((props.findLink && getLinkedMethod === 'auto')
+          && props.findLink.length > 0
+        ) {
           props.findLink.map((pocketLinkKey, q) => {
             if (pocketLinkKey.findPick &&
               pocketLinkKey.findCount[p] > 0) {
@@ -423,7 +436,9 @@ export function FindMe(props) {
           pocketDiffKey -= 1;
         }
         // ...and another for every linked pickpocket.
-        if (props.findLink && props.findLink.length > 0) {
+        if ((props.findLink && getLinkedMethod === 'auto')
+          && props.findLink.length > 0
+        ) {
           props.findLink.map((pocketLinkKey, q) => {
             if (pocketLinkKey.findPick &&
               pocketLinkKey.findCount[p] > 0) {
@@ -456,8 +471,12 @@ export function FindMe(props) {
     }
 
     // Toggle any linked items.
-    if (props.findLink) {
-      setLinkedFind(props.findLink);
+    if (props.findLink && getLinkedMethod === 'auto') {
+      setShowLinkModal(true);
+      // Delay updating the global state so modal can show.
+      setTimeout(() => {
+        setLinkedFind(props.findLink);
+      }, 20);
     }
   };
 
@@ -569,6 +588,7 @@ export function FindMe(props) {
 
           }
         });
+        setShowLinkModal(false);
       }
     }
 
@@ -645,9 +665,43 @@ export function FindMe(props) {
         getFilterArea.includes(props.areas[props.findArea].value)
       ) &&
         <>
+          {/* Modal to show loading wheel for linked items. */}
+          {props.findLink &&
+            <Modal
+              animationType='none'
+              transparent={true}
+              statusBarTranslucent={true}
+              visible={getShowLinkModal}
+              onRequestClose={() => setShowLinkModal(false)}
+            >
+              {/* Semi-transparent background. */}
+              <View
+                style={stylesModal.modalView}
+                activeOpacity={1}
+              >
+                {/* Pop-up box containing the text. */}
+                <View style={[
+                  stylesModal.waitModal,
+                  {backgroundColor: colors.backLight,
+                  borderColor: colors.border}
+                ]}>
+                  <ActivityIndicator
+                    size='large'
+                    color='yellow'
+                  />
+                  <Text style={{color: colors.text}}>
+                    Selecting other items
+                  </Text>
+                  <Text style={{color: colors.text}}>
+                    in this container...
+                  </Text>
+                </View>
+              </View>
+            </Modal>
+          }
           <TouchableOpacity
             style={[
-              styles.find,
+              styles.find(width),
               {backgroundColor: colors.backLight,
               borderColor: colors.border},
             ]}
@@ -690,6 +744,7 @@ export function FindMe(props) {
                   getSpoilerSec === 'none' && getSpoilerEgg === 'none')) &&
                 <FindMePrecise
                   modeNames={props.modeNames}
+                  lootCats={props.lootCats}
                   value={props.value}
                   findNarrow={props.findNarrow}
                   findExact={props.findExact}
@@ -703,6 +758,7 @@ export function FindMe(props) {
                   findPick={props.findPick}
                   findSecret={props.findSecret}
                   findEaster={props.findEaster}
+                  findLink={props.findLink}
                   findUnable={props.findUnable}
                   findNote={props.notes[props.findNote]}
                   loadout={props.loadout}
@@ -713,16 +769,15 @@ export function FindMe(props) {
               {!getIsFound && !props.findEaster &&
                 props.findSecret && getSpoilerSec !== 'none' &&
                 <Text style={[
-                  stylesList.locText,
-                  {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                    color: colors.text},
+                  stylesList.locText(width),
+                  {color: colors.text},
                   props.findUnable && stylesList.locNoGet,
                 ]}>
-                  <Text style={{color: colors.locSecret}}>[[ </Text>
+                  <Text style={{color: colors.locSecret}}>⟨⟨ </Text>
                   <Text style={{fontWeight: 'bold'}}>
                     SECRET
                   </Text>
-                  <Text style={{color: colors.locSecret}}> ]]</Text>
+                  <Text style={{color: colors.locSecret}}> ⟩⟩</Text>
                   {/* Print the footnote icon for this item, if applicable. */}
                   {props.notes[props.findNote] && props.loadout !== "start" &&
                     <Text style={stylesList.locCount}>
@@ -739,18 +794,18 @@ export function FindMe(props) {
               }
               {/* Spoiler cover if easter egg locations are set to be hidden. */}
               {!getIsFound &&
-                props.findEaster && getSpoilerEgg !== 'none' &&
+                props.findEaster && (getSpoilerEgg !== 'none' ||
+                (props.findSecret && getSpoilerSec !== 'none')) &&
                 <Text style={[
-                  stylesList.locText,
-                  {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                    color: colors.text},
+                  stylesList.locText(width),
+                  {color: colors.text},
                   props.findUnable && stylesList.locNoGet,
                 ]}>
                   <Text style={{color: colors.locN}}>(</Text>
                   <Text style={{color: colors.locX}}>\</Text>
                   <Text style={{color: colors.locH}}>) </Text>
                   {props.findSecret &&
-                    <Text style={{color: colors.locSecret}}>[[ </Text>
+                    <Text style={{color: colors.locSecret}}>⟨⟨ </Text>
                   }
                   <Text style={{fontWeight: 'bold'}}>
                     {(props.findSecret ? `SECRET ` : '') +
@@ -758,7 +813,7 @@ export function FindMe(props) {
                     }
                   </Text>
                   {props.findSecret &&
-                    <Text style={{color: colors.locSecret}}> ]]</Text>
+                    <Text style={{color: colors.locSecret}}> ⟩⟩</Text>
                   }
                   <Text style={{color: colors.locH}}> (</Text>
                   <Text style={{color: colors.locX}}>/</Text>
@@ -786,36 +841,33 @@ export function FindMe(props) {
               animationType='fade'
               transparent={true}
               statusBarTranslucent={true}
-              visible={getShowModal === true}
-              onRequestClose={() => setShowModal(false)}
+              visible={getShowBuyModal}
+              onRequestClose={() => setShowBuyModal(false)}
             >
               {/* Semi-transparent background.
                   Tap the background to hide the modal. */}
               <TouchableOpacity
                 style={stylesModal.modalView}
                 activeOpacity={1}
-                onPressOut={() => setShowModal(false)}
+                onPressOut={() => setShowBuyModal(false)}
               >
                 {/* Pop-up box with buttons. */}
                 <TouchableWithoutFeedback>
                   <View style={[
-                    styles.buyModal,
+                    styles.buyModal(width),
                     {backgroundColor: colors.backMed,
                     borderColor: colors.border}
                   ]}>
-                    <Text style={[
-                      styles.buyModalText,
-                      {color: colors.text}
-                    ]}>
+                    <Text style={[styles.buyModalText(width), {color: colors.text}]}>
                       Purchased how many?
                     </Text>
-                    <View style={styles.buyModalCount}>
+                    <View style={styles.buyModalCount(width)}>
                       {/* left arrow button. */}
                       {/* Don't let BuyCount go below 1. */}
                       {(getBuyCount > 1) &&
                         <TouchableOpacity
                           style={[
-                            styles.arrowLeftButton,
+                            styles.arrowLeftButton(width),
                             {borderColor: colors.border}
                           ]}
                           onPress={() => setBuyCount(getBuyCount - 1)}
@@ -824,18 +876,18 @@ export function FindMe(props) {
                             source={(getCurrentTheme === 'dark' ||
                               (getCurrentTheme === 'default' && scheme === 'dark'))
                               ? arrowDark : arrowLight}
-                            style={stylesArrow.arrowLeft}
+                            style={stylesArrow.arrowLeft(width)}
                           />
                         </TouchableOpacity>
                       }
                       {(getBuyCount <= 1) &&
-                        <View style={styles.arrowEmpty}>
+                        <View style={styles.arrowEmpty(width)}>
                         </View>
                       }
                       {/* Number of items being bought. */}
                       <Text style={[
-                        styles.buyModalText,
-                        styles.buyNumber,
+                        styles.buyModalText(width),
+                        styles.buyNumber(width),
                         {color: colors.text}
                       ]}>
                         {`${getBuyCount}`}
@@ -845,7 +897,7 @@ export function FindMe(props) {
                       {(getBuyCount < Math.max(...props.findCount)) &&
                         <TouchableOpacity
                           style={[
-                            styles.arrowRightButton,
+                            styles.arrowRightButton(width),
                             {borderColor: colors.border}
                           ]}
                           onPress={() => setBuyCount(getBuyCount + 1)}
@@ -854,71 +906,59 @@ export function FindMe(props) {
                             source={(getCurrentTheme === 'dark' ||
                               (getCurrentTheme === 'default' && scheme === 'dark'))
                               ? arrowDark : arrowLight}
-                            style={stylesArrow.arrowRight}
+                            style={stylesArrow.arrowRight(width)}
                           />
                         </TouchableOpacity>
                       }
                       {(getBuyCount >= Math.max(...props.findCount)) &&
-                        <View style={styles.arrowEmpty}>
+                        <View style={styles.arrowEmpty(width)}>
                         </View>
                       }
                     </View>
                     {/* Amount of gold being spent. */}
                     {(props.value[0] !== 0) &&
-                      <Text style={[
-                        styles.buyModalPrice,
-                        {color: colors.text}
-                      ]}>
+                      <Text style={[styles.buyModalPrice(width), {color: colors.text}]}>
                         {`${props.value[0] * getBuyCount} `}
                         <Image
                           source={iconGold}
-                          style={stylesImg.imgLootIconBig}
+                          style={stylesImg.imgLootIconBig(width)}
                         />
                       </Text>
                     }
                     {/* Amount of gems being spent. */}
                     {(props.value[1] !== 0) &&
-                      <Text style={[
-                        styles.buyModalPrice,
-                        {color: colors.text}
-                      ]}>
+                      <Text style={[styles.buyModalPrice(width), {color: colors.text}]}>
                         {`${props.value[1] * getBuyCount} `}
                         <Image
                           source={iconGems}
-                          style={stylesImg.imgLootIconBig}
+                          style={stylesImg.imgLootIconBig(width)}
                         />
                       </Text>
                     }
                     {/* Amount of goods being spent. */}
                     {(props.value[2] !== 0) &&
-                      <Text style={[
-                        styles.buyModalPrice,
-                        {color: colors.text}
-                      ]}>
+                      <Text style={[styles.buyModalPrice(width), {color: colors.text}]}>
                         {`${props.value[2] * getBuyCount} `}
                         <Image
                           source={iconGoods}
-                          style={stylesImg.imgLootIconBig}
+                          style={stylesImg.imgLootIconBig(width)}
                         />
                       </Text>
                     }
                     {/* Amount of special being spent. */}
                     {(props.value[3] !== 0) &&
-                      <Text style={[
-                        styles.buyModalPrice,
-                        {color: colors.text}
-                      ]}>
+                      <Text style={[styles.buyModalPrice(width), {color: colors.text}]}>
                         {`${props.value[3] * getBuyCount} `}
                         <Image
                           source={iconSpecial}
-                          style={stylesImg.imgLootIconBig}
+                          style={stylesImg.imgLootIconBig(width)}
                         />
                       </Text>
                     }
                     {/* Button to confirm loot spent. */}
                     <TouchableOpacity
                       style={[
-                        styles.buyButton,
+                        styles.buyButton(width),
                         {backgroundColor: colors.backLight,
                         borderColor: colors.border}
                       ]}
@@ -941,51 +981,52 @@ export function FindMe(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  find: {
+  find: (width) => ({
     borderWidth: 1,
-    width: (Platform.OS === 'web') ? 228 : '50%',
-  },
-  buyModal: {
+    width: (width > 449) ? 228 :
+           (width > 389) ? 142 : width*0.365,
+  }),
+  buyModal: (width) => ({
     borderWidth: 1,
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    width: (Platform.OS === 'web') ? 240 : 200,
-    height: (Platform.OS === 'web') ? 180 : 160,
-  },
-  buyModalCount: {
+    width: (width > 617) ? 240 : 200,
+    height: (width > 617) ? 180 : 160,
+  }),
+  buyModalCount: (width) => ({
     flexDirection: 'row',
     alignItems: 'center',
-    marginVertical: (Platform.OS === 'web') ? 8 : 8,
-  },
-  buyModalText: {
-    fontSize: (Platform.OS === 'web') ? 20 : 14,
-  },
-  buyModalPrice: {
-    fontSize: (Platform.OS === 'web') ? 20 : 13,
-  },
-  buyNumber: {
-    marginHorizontal: (Platform.OS === 'web') ? 20 : 20,
-  },
-  buyButton: {
+    marginVertical: (width > 617) ? 8 : 8,
+  }),
+  buyModalText: (width) => ({
+    fontSize: (width > 617) ? 20 : 14,
+  }),
+  buyModalPrice: (width) => ({
+    fontSize: (width > 617) ? 20 : 13,
+  }),
+  buyNumber: (width) => ({
+    marginHorizontal: (width > 617) ? 20 : 20,
+  }),
+  buyButton: (width) => ({
     borderWidth: 1,
     borderRadius: 5,
     alignItems: 'center',
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
-    marginVertical: (Platform.OS === 'web') ? 10 : 5,
+    marginHorizontal: (width > 617) ? 10 : 5,
+    marginVertical: (width > 617) ? 10 : 5,
     paddingHorizontal: 4,
     paddingVertical: 2,
     width: 80,
-  },
-  arrowLeftButton: {
+  }),
+  arrowLeftButton: (width) => ({
     borderRightWidth: 1,
-    height: (Platform.OS === 'web') ? 42 : 34,
-  },
-  arrowRightButton: {
+    height: (width > 617) ? 42 : 34,
+  }),
+  arrowRightButton: (width) => ({
     borderLeftWidth: 1,
-    height: (Platform.OS === 'web') ? 42 : 34,
-  },
-  arrowEmpty: {
-    width: (Platform.OS === 'web') ? 21 : 21,
-  },
+    height: (width > 617) ? 42 : 34,
+  }),
+  arrowEmpty: (width) => ({
+    width: (width > 617) ? 21 : 21,
+  }),
 });

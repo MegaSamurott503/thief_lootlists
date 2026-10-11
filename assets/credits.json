@@ -1,4 +1,16 @@
 {
+  "upcoming": [
+    "T2X: Shadows of the Metal Age",
+    "Bad Debts",
+    "The Seven Sisters",
+    "Broken Triad",
+    "Augustine's Revenge",
+    "What've You Found, Little Fly?",
+    "Cathedral of St. Vincent",
+    "Between These Dark Walls",
+    "Lost in the Far Edges",
+    "Breaking the Stone"
+  ],
   "api": [
     {
       "name": "Expo",
@@ -64,6 +76,30 @@
     }
   ],
   "changelog": [
+    {
+      "version": "Alpha v0.0.11",
+      "date": "Oct 11, 2026",
+      "changes": [
+        "Added 10 FM lootlists.",
+        "Further improved element resizing on smaller screens.",
+        "Added time/weather filter to the FM selection screen.",
+        "Added \"any X\"/\"no X\" categories to the FM enemy filter.",
+        "Minor improvements to the FM campaign filter.",
+        "Added upcoming lootlists section to the about page.",
+        "Consolidated common item names into one reference file.",
+        "Fixed totals window sometimes using the wrong size.",
+        "Total box is now marked only when all loot pieces are selected.",
+        "In-game loot cost is no longer hard-coded to use the gold icon.",
+        "Fixed loot with a value of 0 no longer showing up.",
+        "Fixed dual spoiler cover not showing under certain settings.",
+        "Fixed desync when quickly selecting items in the same container.",
+        "Added option to toggle auto-selecting items in the same container.",
+        "Added indicator for items that share the same container.",
+        "Changed container, pickpocket, and secret indicators.",
+        "Various other fixes and corrections to several lootlists.",
+        "Tweaked some images."
+      ]
+    },
     {
       "version": "Alpha v0.0.10",
       "date": "June 30, 2026",

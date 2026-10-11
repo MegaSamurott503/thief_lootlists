@@ -7,10 +7,6 @@ import { LootlistEntry } from '@/components/lootlistEntry';
 
 import { myImages } from '@/constants/imgItems';
 
-// TODO: Time to replay all missions and list their loot in order!
-// TODO: Might as well redo screenshot backgrounds (just EP screens, not vanilla).
-// TODO: Double-check that all ordered lists have correct # of entries. (t1/t2 done)
-// TODO: Double-check that linked loot/items all work properly for ordered list.
 /* **************** */
 /*    LOOT ORDER    */
 /* **************** */

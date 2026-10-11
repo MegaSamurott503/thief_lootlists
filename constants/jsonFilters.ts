@@ -1,8 +1,5 @@
 // Add FM data for FM selection page here.
-export const myFMs = {
-  "sortAlpha": require('@/assets/categoryFMs.json'),
-  "sortChrono": require('@/assets/campaignFMs.json')
-}
+export const myFMs = require('@/assets/categoryFMs.json')
 
 // Add THIEF games here.
 export const myGames = {
@@ -87,14 +84,14 @@ export const myProtagonists = {
 
 // Add FM series & campaigns here.
 export const myCampaigns = {
-  "cam_calendra": "Calendra",
   "cam_spirit": "Spirit Stone",
+  "cam_calendra": "Calendra",
   "cam_seventh": "The Seventh Crystal",
   "cam_ashton": "Lord Ashton",
   "cam_triad": "Xedormicost",
   "cam_t2x": "T2X - Shadows of the Metal Age",
   "cam_forces": "Element of Three Forces",
-  "cam_below": "Hammer Relics",
+  "cam_horrors": "Hammerite Horrors",
   "cam_cleft": "Tales from the Cleft",
 }
 
@@ -121,6 +118,8 @@ export const myGenres = {
   "genre_heist": "Heist",
   "genre_salvage": "Salvage",
   "genre_assassin": "Assassination",
+  "genre_vanquish": "Vanquish",
+  "genre_destroy": "Destroy",
   "genre_sabotage": "Sabotage",
   "genre_frame": "Frame",
   "genre_blackmail": "Blackmail",
@@ -129,17 +128,32 @@ export const myGenres = {
   "genre_deliver": "Delivery",
   "genre_rendezvous": "Rendezvous",
   "genre_trail": "Trail",
+  "genre_assist": "Assist",
   "genre_rescue": "Rescue",
   "genre_escape": "Escape",
   "genre_ghost": "Ghost",
   "genre_timed": "Timed",
   "genre_puzzle": "Puzzle",
+  "genre_riddle": "Riddle",
   "genre_horror": "Horror",
   "genre_scifi": "Sci-Fi",
-  "genre_modern": "Modern",
-  "genre_daytime": "Daytime",
-  "genre_dusk": "Dusk",
-  "genre_holiday": "Holiday",
+  "genre_modern": "Modern"
+}
+
+// Add mission times and weather here.
+export const myTimes = {
+  "time_night": "Nighttime",
+  "time_dusk": "Dawn/Dusk",
+  "time_day": "Daytime",
+  "time_rain": "Rainfall",
+  "time_snow": "Snowfall",
+  "time_fog": "Fog",
+  "time_storm": "Lightning",
+  "time_spring": "Spring",
+  "time_summer": "Summer",
+  "time_autumn": "Autumn",
+  "time_winter": "Winter",
+  "time_holiday": "Holiday",
 }
 
 // Add mission locations here.
@@ -188,6 +202,16 @@ export const myLocations = {
 
 // Add enemy categories here.
 export const myEnemies = {
+  "npc_anyhumans": "~ Any Humans ~",
+  "npc_nohumans": "~ No Humans ~",
+  "npc_anyundead": "~ Any Undead ~",
+  "npc_noundead": "~ No Undead ~",
+  "npc_anycreatures": "~ Any Creatures ~",
+  "npc_nocreatures": "~ No Creatures ~",
+  "npc_anyrobots": "~ Any Robots ~",
+  "npc_norobots": "~ No Robots ~",
+  "npc_anymisc": "~ Any Miscellaneous ~",
+  "npc_nomisc": "~ No Miscellaneous ~",
   "npc_guards": "Guards",
   "npc_servants": "Servants",
   "npc_nobles": "Nobles",
@@ -200,16 +224,23 @@ export const myEnemies = {
   "npc_mages": "Mages",
   "npc_zombies": "Zombies",
   "npc_haunts": "Haunts",
+  "npc_skeletons": "Skeletons",
   "npc_ghosts": "Ghosts",
   "npc_undead": "Other Undead",
   "npc_spiders": "Spiders",
   "npc_burricks": "Burricks",
   "npc_craymen": "Craymen",
-  "npc_beasts": "Maw Beasts",
+  "npc_apes": "Apebeasts",
+  "npc_bugs": "Bugbeasts",
+  "npc_frogs": "Frogbeasts",
+  "npc_trees": "Treebeasts",
   "npc_creatures": "Other Creatures",
+  "npc_bots": "Bots",
+  "npc_cameras": "Cameras",
+  "npc_turrets": "Turrets",
+  "npc_robots": "Other Robots",
   "npc_monsters": "Monsters",
   "npc_elementals": "Elementals",
-  "npc_robots": "Robots",
 }
 
 // Add recurring characters here.
@@ -228,38 +259,354 @@ export const myCharacters = {
 
 // Add recurring items here.
 export const myItems = {
-  "item_basketball": "Basketball",
-  "item_scepter": "Silver Scepter",
-  "item_hand": "Hand of Glory",
-  "item_goldbone": "Golden Bone",
-  "item_heartsoul": "Mystic's Heart/Soul",
-  "item_quintus": "Horn of Quintus",
-  "item_poker": "Silver Fire Poker",
-  "item_bracelet": "Silver Bracelet",
-  "item_sapphirevase": "Sapphire Vase",
-  "item_consword": "Constantine's Sword",
-  "item_torc": "Serpentyle Torc",
-  "item_magemedal": "Purple Medallion",
-  "item_keepermedal": "Keeper Medallion",
-  "item_flute": "Silver Flute",
-  "item_holyhammer": "Holy Hammer",
-  "item_talisman": "Talismans",
-  "item_eye": "The Eye",
-  "item_rosary": "Rosary Beads",
-  "item_holysymbol": "Holy Symbol",
-  "item_sunburst": "Explosive Charge",
-  "item_chisel": "Builder's Chisel",
-  "item_dice": "Gold Dice",
-  "item_cylinder": "Wax Cylinder",
-  "item_spice": "Rare Spice Bag",
-  "item_dewdrop": "Dewdrop",
-  "item_ruby": "Ruby Stone",
-  "item_globe": "Navigation Globe",
-  "item_rustgas": "Rust Gas Canister",
-  "item_drillbit": "Diamond Drill Bit",
-  "item_premask": "Large Precursor Mask",
-  "item_cultivator": "Cultivator",
-  "item_gear": "Gold Gear",
+  // Purses & Coins
+  "ref_purse": "Purse",
+  "ref_coin": "Coin",
+  "ref_coppercoinstack": "Copper Coin Stack",
+  "ref_silvercoinstack": "Silver Coin Stack",
+  "ref_goldcoinstack": "Gold Coin Stack",
+  "ref_luckycoins": "Lucky Coins",
+  // loot
+  // item
+  // junk
+  // Rings
+  "ref_goldring": "Gold Ring",
+  "ref_gemring": "Gem Ring",
+  "ref_signetring": "Signet Ring",
+  "ref_weddingrings": "Wedding Rings",
+  // Jewelry
+  "ref_silverbracelet": "Silver Bracelet",
+  "ref_necklace": "Necklace",
+  "ref_medallion": "Medallion",
+  "ref_keepermedallion": "Keeper Medallion",
+  "ref_purplemedallion": "Purple Medallion",
+  "ref_serpentyletorc": "Serpentyle Torc",
+  "ref_tiara": "Tiara",
+  // Gemstone
+  "ref_gemstone": "Gemstone",
+  "ref_largegemstone": "Large Gemstone", // FMs
+  "ref_mysticsheart": "Mystic's Heart",
+  "ref_mysticssoul": "Mystic's Soul",
+  "ref_mysticsheartsoul": "Mystic's Heart/Soul", // for FM filter
+  "ref_pregem": "Precursor Gem",
+  "ref_rubystone": "Ruby Stone",
+  "ref_addoniziocrystal": "Addonizio Crystal",
+  "ref_theeye": "The Eye",
+  "ref_fakeeye": "Fake Eye",
+  // Elemental Crystals
+  "ref_watercrystal": "Water Crystal",
+  "ref_firecrystal": "Fire Crystal",
+  "ref_earthcrystal": "Earth Crystal",
+  "ref_aircrystal": "Air Crystal",
+  // Arrows
+  "ref_broadheadarrow": "Broadhead Arrow",
+  "ref_brokenarrow": "Broken Arrow",
+  "ref_waterarrow": "Water Arrow",
+  "ref_holywaterarrow": "Holy Water Arrow",
+  "ref_firearrow": "Fire Arrow",
+  "ref_mossarrow": "Moss Arrow",
+  "ref_gasarrow": "Gas Arrow",
+  "ref_ropearrow": "Rope Arrow",
+  "ref_vinearrow": "Vine Arrow",
+  "ref_noisemakerarrow": "Noisemaker Arrow",
+  // Swords
+  "ref_sword": "Sword",
+  "ref_consword": "Constantine's Sword",
+  "ref_jeweledsword": "Jeweled Sword",
+  "ref_jeweleddagger": "Jeweled Dagger",
+  "ref_swordhilt": "Sword Hilt",
+  // Hammers
+  "ref_warhammer": "Warhammer",
+  "ref_smallhammer": "Small Hammer",
+  "ref_stonehammer": "Stone Hammer",
+  "ref_ancienthammer": "Ancient Hammer",
+  "ref_goldhammer": "Gold Hammer",
+  "ref_holyhammer": "Holy Hammer",
+  "ref_holysymbol": "Holy Symbol",
+  "ref_blessholysymbol": "Blessed Holy Symbol",
+  // Blunt Weapons
+  "ref_blackjack": "Blackjack",
+  "ref_mechmace": "Mechanist Mace",
+  // Digging Tools
+  "ref_spade": "Spade",
+  "ref_pick": "Pick",
+  "ref_drillingmachine": "Drilling Machine",
+  "ref_diamonddrillbit": "Diamond Drill Bit",
+  // Stones
+  "ref_rubble": "Rubble",
+  "ref_boulder": "Boulder",
+  "ref_silvernugget": "Silver Nugget",
+  "ref_goldnugget": "Gold Nugget",
+  // Statues
+  "ref_statuefragment": "Statue Fragment",
+  "ref_statuette": "Statuette",
+  "ref_mechstatuette": "Mechanist Statuette",
+
+
+
+  // Liquids
+  "ref_bucketofwater": "Bucket of Water", // FMs
+  "ref_holywatervial": "Holy Water Vial",
+  // Potions
+  "ref_healingpotion": "Healing Potion",
+  "ref_speedpotion": "Speed Potion",
+  "ref_breathpotion": "Breath Potion",
+  "ref_invispotion": "Invisibility Potion",
+  "ref_slowfallpotion": "Slow-fall Potion",
+  // Bottles
+  "ref_greenbottle": "Green Bottle",
+  "ref_graybottle": "Gray Bottle",
+  "ref_finewine": "Fine Wine",
+  "ref_rarewine": "Rare Wine",
+  "ref_setofbottles": "Set of Bottles",
+  // Cups & Goblets
+  "ref_woodengoblet": "Wooden Goblet",
+  "ref_metalgoblet": "Metal Goblet",
+  "ref_purplegoblet": "Purple Goblet",
+  "ref_goldgoblet": "Gold Goblet",
+  "ref_mug": "Mug", // FMs
+  // Chalices
+  "ref_glasschalice": "Glass Chalice", // FMs
+  "ref_cylixofjortul": "Cylix of Jortul", // FMs
+  // Vases
+  "ref_vase": "Vase",
+  "ref_greenvase": "Green Vase",
+  "ref_purplevase": "Purple Vase",
+  "ref_goldvase": "Gold Vase",
+  "ref_indigovase": "Indigo Vase",
+  "ref_sapphirevase": "Sapphire Vase",
+  "ref_decorativevase": "Decorative Vase",
+  // Buckets & Barrels
+  "ref_metalbucket": "Metal Bucket",
+  "ref_barrel": "Barrel",
+  "ref_powderkeg": "Powder Keg",
+  // Crates
+  "ref_normalcrate": "Normal Crate",
+  "ref_oldcrate": "Old Crate",
+  "ref_toolcrate": "Tool Crate",
+  // Boxes
+  "ref_coinbox": "Coin Box",
+  "ref_footlocker": "Footlocker",
+  "ref_chest": "Chest",
+  "ref_strongbox": "Strongbox",
+  "ref_safe": "Safe",
+  // Bags
+  "ref_sandbag": "Sandbag",
+  "ref_spicebag": "Spice Bag",
+  "ref_rarespicebag": "Rare Spice Bag",
+  // Cookware
+  "ref_saucepan": "Saucepan",
+  "ref_cookingpot": "Cooking Pot",
+  "ref_skillet": "Skillet",
+  // Bowls & Plates
+  "ref_woodenbowl": "Wooden Bowl",
+  "ref_metalbowl": "Metal Bowl",
+  "ref_metalplate": "Metal Plate",
+  "ref_porcelainplate": "Porcelain Plate",
+  "ref_ornateplate": "Ornate Plate",
+  "ref_goldplate": "Gold Plate",
+  "ref_collectionplate": "Collection Plate",
+  "ref_decorativeplate": "Decorative Plate",
+  "ref_metaltray": "Metal Tray",
+  // Utensils
+  "ref_woodenspoon": "Wooden Spoon",
+  "ref_knife": "Knife",
+  "ref_cleaver": "Cleaver",
+  // Food
+  "ref_loaf": "Loaf",
+  "ref_carrot": "Carrot",
+  "ref_cabbage": "Cabbage", // FMs
+  "ref_cucumber": "Cucumber",
+  "ref_apple": "Apple",
+  "ref_fruit": "Fruit",
+  "ref_cheese": "Cheese",
+  "ref_sushi": "Sushi", // FMs
+  "ref_deerleg": "Deer Leg",
+  "ref_steak": "Steak", // FMs
+  // Plants
+  "ref_pottedplant": "Potted Plant",
+  "ref_leafyplant": "Leafy Plant",
+  // Parchment
+  "ref_papyrus": "Papyrus",
+  "ref_scroll": "Scroll",
+  "ref_rolledscroll": "Rolled Scroll",
+  "ref_prescroll": "Precursor Scroll",
+  "ref_blueprints": "Blueprints",
+  "ref_sheetofpaper": "Sheet of Paper", // FMs
+  "ref_crumpledpaper": "Crumpled Paper",
+  "ref_letter": "Letter",
+  "ref_playbill": "Playbill",
+  // Books
+  "ref_goldbook": "Gold Book",
+  "ref_diary": "Diary", // FMs
+
+
+
+
+  // Explosives
+  "ref_flashbomb": "Flash Bomb",
+  "ref_mine": "Mine",
+  "ref_gasmine": "Gas Mine",
+  "ref_flashmine": "Flash Mine",
+  "ref_explosivecharge": "Explosive Charge",
+  // Navigation Tools
+  "ref_compass": "Compass",
+  "ref_navicompass": "Navigator's Compass",
+  // Glasses
+  "ref_spectacles": "Spectacles",
+  "ref_readingglasses": "Reading Glasses",
+  "ref_goldglasses": "Gold Glasses",
+  "ref_operaglasses": "Opera Glasses",
+  // Toys
+  "ref_basketball": "Basketball",
+  "ref_deckofcards": "Deck of Cards",
+  "ref_pairofdice": "Pair of Dice",
+  "ref_golddice": "Gold Dice",
+  "ref_dewdrop": "Dewdrop",
+  // Personal Items
+  "ref_dress": "Dress",
+  "ref_handkerchief": "Handkerchief",
+  "ref_hairbrush": "Hair Brush",
+  "ref_handmirror": "Hand Mirror",
+  "ref_cigarettebox": "Cigarette Box", // FMs
+  "ref_pocketwatch": "Pocket Watch", // FMs
+  "ref_bedroll": "Bedroll",
+  // Nautical Tools
+  "ref_chartcompass": "Chart Compass",
+  "ref_sextant": "Sextant",
+  "ref_naviglobe": "Navigation Globe",
+  "ref_rowboat": "Rowboat",
+  "ref_anchor": "Anchor",
+  // Hammerite Items
+  "ref_rosarybeads": "Rosary Beads",
+  "ref_multimold": "Multimold",
+  "ref_builderschisel": "Builder's Chisel",
+  // Masks
+  "ref_decorativemask": "Decorative Mask",
+  "ref_premask": "Precursor Mask",
+  "ref_largepremask": "Large Precursor Mask", // for FM filter
+  "ref_treebeastmask": "Treebeast Mask",
+  // Gears
+  "ref_gear": "Gear",
+  "ref_metalgear": "Metal Gear",
+  "ref_silvergear": "Silver Gear",
+  "ref_bronzegear": "Bronze Gear",
+  "ref_goldgear": "Gold Gear",
+  // Musical Items
+  "ref_horn": "Horn",
+  "ref_hornofquintus": "Horn of Quintus",
+  "ref_flute": "Flute",
+  "ref_silverflute": "Silver Flute",
+  // Lights
+  "ref_lantern": "Lantern",
+  "ref_flare": "Flare",
+  // Candles
+  "ref_candle": "Candle",
+  "ref_goldcandlestick": "Gold Candlestick",
+  // Levers & Knobs
+  "ref_lever": "Lever",
+  "ref_leverhandle": "Lever Handle",
+  "ref_updownswitch": "Up/Down Switch",
+  "ref_doorknob": "Doorknob",
+  "ref_valveknob": "Valve Knob",
+  "ref_wheelpeg": "Wheel Peg",
+  // Animals
+  "ref_frozenfish": "Frozen Fish",
+  "ref_frogbeastegg": "Frogbeast Egg",
+  // Body Parts
+  "ref_monkeyhead": "Monkey Head",
+  // Bones
+  "ref_skull": "Skull",
+  "ref_ribcage": "Ribcage",
+  "ref_skeletalarm": "Skeletal Arm",
+  "ref_goldenbone": "Golden Bone",
+  // Talismans
+  "ref_talismans": "Talismans", // for FM filter
+  "ref_talismanofearth": "Talisman of Earth",
+  "ref_talismanoffire": "Talisman of Fire",
+  "ref_talismanofwater": "Talisman of Water",
+  "ref_talismanofair": "Talisman of Air",
+  // Mechanist Items
+  "ref_puttyknife": "Putty Knife",
+  "ref_wax": "Wax",
+  "ref_junkwax": "Junk Wax",
+  "ref_waximpression": "Wax Impression",
+  "ref_waxcylinder": "Wax Cylinder",
+  "ref_mechrecording": "Mechanist Recording",
+  "ref_signalbolt": "Signal Bolt",
+  "ref_stage1piece": "Stage 1 Piece",
+  "ref_stage2piece": "Stage 2 Piece",
+  "ref_stage3piece": "Stage 3 Piece",
+  "ref_guidingbeacon": "Guiding Beacon",
+  // Crafting Materials
+  "ref_acidicmixture": "Acidic Mixture",
+  "ref_quicklimemixture": "Quicklime Mixture",
+  "ref_flaremixture": "Flare Mixture",
+  "ref_steelplate": "Steel Plate",
+  "ref_ironchassis": "Iron Chassis",
+  "ref_gauge": "Gauge",
+  "ref_springwiring": "Spring Wiring",
+  "ref_bantamnode": "Bantam Node",
+  "ref_minebulb": "Mine Bulb",
+  "ref_fluxspheroid": "Flux Spheroid",
+  "ref_regulatinground": "Regulating Round",
+  // Staffs & Scepters
+  "ref_silverscepter": "Silver Scepter",
+  // Lockpicks
+  "ref_squarepick": "Square-tooth Lockpick",
+  "ref_trianglepick": "Triangle-tooth Lockpick",
+  // Keys
+  "ref_key_house": "House Key",
+  "ref_key_estate": "Estate Key",
+  "ref_key_mansion": "Mansion Key",
+  "ref_key_guard": "Guard Key",
+  "ref_key_frontdoor": "Front Door Key", // FMs
+  "ref_key_courtyard": "Courtyard Key",
+  "ref_key_basement": "Basement Key",
+  "ref_key_dungeon": "Dungeon Key",
+  "ref_key_library": "Library Key",
+  "ref_key_office": "Office Key",
+  "ref_key_master": "Master Key",
+  "ref_key_throneroom": "Throne Room Key",
+  "ref_key_safe": "Safe Key",
+  "ref_key_vault": "Vault Key", // FMs
+  "ref_key_bank": "Bank Key",
+  "ref_key_hotel": "Hotel Key", // FMs
+  "ref_key_chapel": "Chapel Key", // FMs
+  "ref_key_cemetery": "Cemetery Key",
+  "ref_key_powerstation": "Power Station Key", // FMs
+  "ref_key_water": "Water Key", // FMs
+  "ref_key_earth": "Earth Key",
+  "ref_key_air": "Air Key",
+  "ref_key_fire": "Fire Key",
+  "ref_key_portal": "Portal Key",
+  // Precursor Artifacts
+  "ref_prejar": "Precursor Jar",
+  "ref_precanopicjar": "Precursor Canopic Jar",
+  "ref_pretapestry": "Precursor Tapestry",
+  "ref_cultivator": "Cultivator",
+  // Unsorted
+  "ref_painting": "Painting",
+  "ref_silverfirepoker": "Silver Fire Poker",
+  "ref_canister": "Canister",
+  "ref_rustgascontainer": "Rust Gas Container",
+  "ref_scoutingorb": "Scouting Orb",
+  "ref_birdcall": "Birdcall",
+  "ref_broom": "Broom",
+  "ref_crookedpole": "Crooked Pole",
+  "ref_cuckoo": "Cuckoo",
+  "ref_shippinglabel": "Shipping Label",
+  "ref_scarecrow": "Scarecrow",
+  "ref_handofglory": "Hand of Glory",
+  "ref_woodenboard": "Wooden Board",
+  "ref_labequipment": "Laboratory Equipment",
+  "ref_bunsenburner": "Bunsen Burner",
+  "ref_glasstools": "Glass Tools",
+  "ref_divinghelmet": "Diving Helmet",
+  "ref_basket": "Basket", // FMs
+  "ref_redjar": "Red Jar", // FMs
+
+  "the_end": "The End"
 }
 
 // Add FM filter options here.
@@ -282,8 +629,8 @@ export const filterFM = {
     {"key": "9", "value": myYears.y2008},
     {"key": "10", "value": myYears.y2009},
     {"key": "11", "value": myYears.y2010},
-    {"key": "12", "value": myYears.y2011}
-    //{"key": "13", "value": myYears.y2012}
+    {"key": "12", "value": myYears.y2011},
+    {"key": "13", "value": myYears.y2012}
   ],
   "authors": [
     {"key": "0", "value": myAuthors.auth_asylum},
@@ -292,17 +639,17 @@ export const filterFM = {
     //{"key": "3", "value": myAuthors.auth_cardia},
     {"key": "4", "value": myAuthors.auth_christine},
     {"key": "5", "value": myAuthors.auth_darkshadow},
-    //{"key": "6", "value": myAuthors.auth_darthslair},
+    {"key": "6", "value": myAuthors.auth_darthslair},
     {"key": "7", "value": myAuthors.auth_eshaktaar},
     //{"key": "8", "value": myAuthors.auth_gaetane},
     {"key": "9", "value": myAuthors.auth_ghostshell},
     {"key": "10", "value": myAuthors.auth_gingerbreadman},
-    //{"key": "11", "value": myAuthors.auth_haplo},
+    {"key": "11", "value": myAuthors.auth_haplo},
     {"key": "12", "value": myAuthors.auth_intruder},
     {"key": "13", "value": myAuthors.auth_john9818a},
     {"key": "14", "value": myAuthors.auth_kozmala},
     {"key": "15", "value": myAuthors.auth_ladyrowena},
-    //{"key": "16", "value": myAuthors.auth_larryg},
+    {"key": "16", "value": myAuthors.auth_larryg},
     {"key": "17", "value": myAuthors.auth_mazur},
     {"key": "18", "value": myAuthors.auth_melan},
     {"key": "19", "value": myAuthors.auth_morrgan},
@@ -315,7 +662,7 @@ export const filterFM = {
     {"key": "26", "value": myAuthors.auth_rich},
     {"key": "27", "value": myAuthors.auth_saturnine},
     //{"key": "28", "value": myAuthors.auth_schwaa},
-    //{"key": "29", "value": myAuthors.auth_sharga},
+    {"key": "29", "value": myAuthors.auth_sharga},
     {"key": "30", "value": myAuthors.auth_silentsleep},
     //{"key": "31", "value": myAuthors.auth_skacky},
     {"key": "32", "value": myAuthors.auth_sledge},
@@ -338,14 +685,14 @@ export const filterFM = {
     {"key": "6", "value": myProtagonists.protag_other}
   ],
   "campaigns": [
-    {"key": "0", "value": myCampaigns.cam_calendra},
-    {"key": "1", "value": myCampaigns.cam_spirit},
+    {"key": "0", "value": myCampaigns.cam_spirit},
+    {"key": "1", "value": myCampaigns.cam_calendra},
     {"key": "2", "value": myCampaigns.cam_seventh},
     {"key": "3", "value": myCampaigns.cam_ashton},
     {"key": "4", "value": myCampaigns.cam_triad},
     //{"key": "5", "value": myCampaigns.cam_t2x},
     {"key": "6", "value": myCampaigns.cam_forces},
-    //{"key": "7", "value": myCampaigns.cam_below},
+    {"key": "7", "value": myCampaigns.cam_horrors},
     {"key": "8", "value": myCampaigns.cam_cleft}
   ],
   "contests": [
@@ -359,34 +706,49 @@ export const filterFM = {
     {"key": "7", "value": myContests.con_cte},
     {"key": "8", "value": myContests.con_anniv1_10},
     {"key": "9", "value": myContests.con_unpc},
-    //{"key": "10", "value": myContests.con_svc},
-    {"key": "11", "value": myContests.con_reload1}
-    //{"key": "12", "value": myContests.con_reload2}
+    {"key": "10", "value": myContests.con_svc},
+    {"key": "11", "value": myContests.con_reload1},
+    {"key": "12", "value": myContests.con_reload2}
   ],
   "genres": [
     {"key": "0", "value": myGenres.genre_burglar},
     {"key": "1", "value": myGenres.genre_heist},
     {"key": "2", "value": myGenres.genre_salvage},
     {"key": "3", "value": myGenres.genre_assassin},
-    {"key": "4", "value": myGenres.genre_sabotage},
-    {"key": "5", "value": myGenres.genre_frame},
-    //{"key": "6", "value": myGenres.genre_blackmail},
-    {"key": "7", "value": myGenres.genre_investigate},
-    {"key": "8", "value": myGenres.genre_mystery},
-    {"key": "9", "value": myGenres.genre_deliver},
-    {"key": "10", "value": myGenres.genre_rendezvous},
-    {"key": "11", "value": myGenres.genre_trail},
-    {"key": "12", "value": myGenres.genre_rescue},
-    {"key": "13", "value": myGenres.genre_escape},
-    {"key": "14", "value": myGenres.genre_ghost},
-    {"key": "15", "value": myGenres.genre_timed},
-    {"key": "16", "value": myGenres.genre_puzzle},
-    {"key": "17", "value": myGenres.genre_horror},
-    //{"key": "18", "value": myGenres.genre_scifi},
-    {"key": "19", "value": myGenres.genre_modern},
-    {"key": "20", "value": myGenres.genre_daytime},
-    {"key": "21", "value": myGenres.genre_dusk},
-    {"key": "22", "value": myGenres.genre_holiday}
+    {"key": "4", "value": myGenres.genre_vanquish},
+    {"key": "5", "value": myGenres.genre_destroy},
+    {"key": "6", "value": myGenres.genre_sabotage},
+    {"key": "7", "value": myGenres.genre_frame},
+    //{"key": "8", "value": myGenres.genre_blackmail},
+    {"key": "9", "value": myGenres.genre_investigate},
+    {"key": "10", "value": myGenres.genre_mystery},
+    {"key": "11", "value": myGenres.genre_deliver},
+    {"key": "12", "value": myGenres.genre_rendezvous},
+    {"key": "13", "value": myGenres.genre_trail},
+    {"key": "14", "value": myGenres.genre_assist},
+    {"key": "15", "value": myGenres.genre_rescue},
+    {"key": "16", "value": myGenres.genre_escape},
+    {"key": "17", "value": myGenres.genre_ghost},
+    {"key": "18", "value": myGenres.genre_timed},
+    {"key": "19", "value": myGenres.genre_puzzle},
+    {"key": "20", "value": myGenres.genre_riddle},
+    {"key": "21", "value": myGenres.genre_horror},
+    //{"key": "22", "value": myGenres.genre_scifi},
+    {"key": "23", "value": myGenres.genre_modern}
+  ],
+  "times": [
+    {"key": "0", "value": myTimes.time_night},
+    {"key": "1", "value": myTimes.time_dusk},
+    {"key": "2", "value": myTimes.time_day},
+    {"key": "3", "value": myTimes.time_rain},
+    {"key": "4", "value": myTimes.time_snow},
+    {"key": "5", "value": myTimes.time_fog},
+    {"key": "6", "value": myTimes.time_storm},
+    {"key": "7", "value": myTimes.time_spring},
+    {"key": "8", "value": myTimes.time_summer},
+    {"key": "9", "value": myTimes.time_autumn},
+    {"key": "10", "value": myTimes.time_winter},
+    {"key": "11", "value": myTimes.time_holiday}
   ],
   "locations": [
     {"key": "0", "value": myLocations.loc_mansion},
@@ -396,8 +758,8 @@ export const filterFM = {
     {"key": "4", "value": myLocations.loc_bank},
     {"key": "5", "value": myLocations.loc_museum},
     {"key": "6", "value": myLocations.loc_library},
-    //{"key": "7", "value": myLocations.loc_school},
-    //{"key": "8", "value": myLocations.loc_theater},
+    {"key": "7", "value": myLocations.loc_school},
+    {"key": "8", "value": myLocations.loc_theater},
     {"key": "9", "value": myLocations.loc_restaurant},
     {"key": "10", "value": myLocations.loc_tavern},
     {"key": "11", "value": myLocations.loc_hotel},
@@ -427,32 +789,49 @@ export const filterFM = {
     {"key": "35", "value": myLocations.loc_cottage},
     {"key": "36", "value": myLocations.loc_village},
     {"key": "37", "value": myLocations.loc_forest},
-    {"key": "38", "value": myLocations.loc_ancient}
-    //{"key": "39", "value": myLocations.loc_extra}
+    {"key": "38", "value": myLocations.loc_ancient},
+    {"key": "39", "value": myLocations.loc_extra}
   ],
   "enemies": [
-    {"key": "0", "value": myEnemies.npc_guards},
-    {"key": "1", "value": myEnemies.npc_servants},
-    {"key": "2", "value": myEnemies.npc_nobles},
-    {"key": "3", "value": myEnemies.npc_thieves},
-    {"key": "4", "value": myEnemies.npc_watch},
-    {"key": "5", "value": myEnemies.npc_hammerites},
-    {"key": "6", "value": myEnemies.npc_mechanists},
-    {"key": "7", "value": myEnemies.npc_pagans},
-    {"key": "8", "value": myEnemies.npc_keepers},
-    {"key": "9", "value": myEnemies.npc_mages},
-    {"key": "10", "value": myEnemies.npc_zombies},
-    {"key": "11", "value": myEnemies.npc_haunts},
-    {"key": "12", "value": myEnemies.npc_ghosts},
-    {"key": "13", "value": myEnemies.npc_undead},
-    {"key": "14", "value": myEnemies.npc_spiders},
-    {"key": "15", "value": myEnemies.npc_burricks},
-    {"key": "16", "value": myEnemies.npc_craymen},
-    {"key": "17", "value": myEnemies.npc_beasts},
-    {"key": "18", "value": myEnemies.npc_creatures},
-    {"key": "19", "value": myEnemies.npc_monsters},
-    {"key": "20", "value": myEnemies.npc_elementals},
-    {"key": "21", "value": myEnemies.npc_robots}
+    {"key": "0", "value": myEnemies.npc_anyhumans},
+    {"key": "1", "value": myEnemies.npc_nohumans},
+    {"key": "2", "value": myEnemies.npc_anyundead},
+    {"key": "3", "value": myEnemies.npc_noundead},
+    {"key": "4", "value": myEnemies.npc_anycreatures},
+    {"key": "5", "value": myEnemies.npc_nocreatures},
+    {"key": "6", "value": myEnemies.npc_anyrobots},
+    {"key": "7", "value": myEnemies.npc_norobots},
+    {"key": "8", "value": myEnemies.npc_anymisc},
+    {"key": "9", "value": myEnemies.npc_nomisc},
+    {"key": "10", "value": myEnemies.npc_guards},
+    {"key": "11", "value": myEnemies.npc_servants},
+    {"key": "12", "value": myEnemies.npc_nobles},
+    {"key": "13", "value": myEnemies.npc_thieves},
+    {"key": "14", "value": myEnemies.npc_watch},
+    {"key": "15", "value": myEnemies.npc_hammerites},
+    {"key": "16", "value": myEnemies.npc_mechanists},
+    {"key": "17", "value": myEnemies.npc_pagans},
+    {"key": "18", "value": myEnemies.npc_keepers},
+    {"key": "19", "value": myEnemies.npc_mages},
+    {"key": "20", "value": myEnemies.npc_zombies},
+    {"key": "21", "value": myEnemies.npc_skeletons},
+    {"key": "22", "value": myEnemies.npc_haunts},
+    {"key": "23", "value": myEnemies.npc_ghosts},
+    {"key": "24", "value": myEnemies.npc_undead},
+    {"key": "25", "value": myEnemies.npc_spiders},
+    {"key": "26", "value": myEnemies.npc_burricks},
+    {"key": "27", "value": myEnemies.npc_craymen},
+    {"key": "28", "value": myEnemies.npc_apes},
+    //{"key": "29", "value": myEnemies.npc_bugs},
+    {"key": "30", "value": myEnemies.npc_frogs},
+    {"key": "31", "value": myEnemies.npc_trees},
+    {"key": "32", "value": myEnemies.npc_creatures},
+    {"key": "33", "value": myEnemies.npc_bots},
+    {"key": "34", "value": myEnemies.npc_cameras},
+    {"key": "35", "value": myEnemies.npc_turrets},
+    {"key": "36", "value": myEnemies.npc_robots},
+    {"key": "37", "value": myEnemies.npc_monsters},
+    {"key": "38", "value": myEnemies.npc_elementals}
   ],
   "characters": [
     {"key": "0", "value": myCharacters.char_bafford},
@@ -467,37 +846,37 @@ export const filterFM = {
     {"key": "9", "value": myCharacters.char_gamall}
   ],
   "items": [
-    {"key": "0", "value": myItems.item_basketball},
-    {"key": "1", "value": myItems.item_scepter},
-    {"key": "2", "value": myItems.item_hand},
-    {"key": "3", "value": myItems.item_goldbone},
-    {"key": "4", "value": myItems.item_heartsoul},
-    {"key": "5", "value": myItems.item_quintus},
-    {"key": "6", "value": myItems.item_poker},
-    {"key": "7", "value": myItems.item_bracelet},
-    {"key": "8", "value": myItems.item_sapphirevase},
-    {"key": "9", "value": myItems.item_consword},
-    {"key": "10", "value": myItems.item_torc},
-    {"key": "11", "value": myItems.item_magemedal},
-    {"key": "12", "value": myItems.item_keepermedal},
-    {"key": "13", "value": myItems.item_flute},
-    {"key": "14", "value": myItems.item_holyhammer},
-    {"key": "15", "value": myItems.item_talisman},
-    {"key": "16", "value": myItems.item_eye},
-    {"key": "17", "value": myItems.item_rosary},
-    {"key": "18", "value": myItems.item_holysymbol},
-    {"key": "19", "value": myItems.item_sunburst},
-    {"key": "20", "value": myItems.item_chisel},
-    //{"key": "21", "value": myItems.item_dice},
-    //{"key": "22", "value": myItems.item_cylinder},
-    {"key": "23", "value": myItems.item_spice},
-    {"key": "24", "value": myItems.item_dewdrop},
-    {"key": "25", "value": myItems.item_ruby},
-    {"key": "26", "value": myItems.item_globe},
-    //{"key": "27", "value": myItems.item_rustgas},
-    {"key": "28", "value": myItems.item_drillbit},
-    {"key": "29", "value": myItems.item_premask},
-    //{"key": "30", "value": myItems.item_cultivator},
-    {"key": "31", "value": myItems.item_gear}
+    {"key": "0", "value": myItems.ref_basketball},
+    {"key": "1", "value": myItems.ref_silverscepter},
+    {"key": "2", "value": myItems.ref_handofglory},
+    {"key": "3", "value": myItems.ref_goldenbone},
+    {"key": "4", "value": myItems.ref_mysticsheartsoul},
+    {"key": "5", "value": myItems.ref_hornofquintus},
+    {"key": "6", "value": myItems.ref_silverfirepoker},
+    {"key": "7", "value": myItems.ref_silverbracelet},
+    {"key": "8", "value": myItems.ref_sapphirevase},
+    {"key": "9", "value": myItems.ref_consword},
+    {"key": "10", "value": myItems.ref_serpentyletorc},
+    {"key": "11", "value": myItems.ref_purplemedallion},
+    {"key": "12", "value": myItems.ref_keepermedallion},
+    {"key": "13", "value": myItems.ref_silverflute},
+    {"key": "14", "value": myItems.ref_holyhammer},
+    {"key": "15", "value": myItems.ref_talismans},
+    {"key": "16", "value": myItems.ref_theeye},
+    {"key": "17", "value": myItems.ref_rosarybeads},
+    {"key": "18", "value": myItems.ref_holysymbol},
+    {"key": "19", "value": myItems.ref_explosivecharge},
+    {"key": "20", "value": myItems.ref_builderschisel},
+    //{"key": "21", "value": myItems.ref_golddice},
+    //{"key": "22", "value": myItems.ref_waxcylinder},
+    {"key": "23", "value": myItems.ref_rarespicebag},
+    {"key": "24", "value": myItems.ref_dewdrop},
+    {"key": "25", "value": myItems.ref_rubystone},
+    {"key": "26", "value": myItems.ref_naviglobe},
+    //{"key": "27", "value": myItems.ref_rustgascontainer},
+    {"key": "28", "value": myItems.ref_diamonddrillbit},
+    {"key": "29", "value": myItems.ref_largepremask},
+    //{"key": "30", "value": myItems.ref_cultivator},
+    {"key": "31", "value": myItems.ref_goldgear}
   ],
 }

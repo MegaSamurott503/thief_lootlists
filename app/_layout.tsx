@@ -54,6 +54,9 @@ export default function RootLayout() {
   // ShowDebug: tracks if debug information is shown.
   const [getShowDebug, setShowDebug] = useState(false);
 
+  // LinkedMethod: tracks how to select items sharing a container.
+  const [getLinkedMethod, setLinkedMethod] = useState('auto');
+
   // Read settings from device storage.
   const readAllSettings = async () => {
     try {
@@ -66,7 +69,7 @@ export default function RootLayout() {
         `@setting_list_loot`, `@setting_list_item`,
         `@setting_list_junk`, `@setting_list_secret`,
         `@setting_spoiler_sec`, `@setting_spoiler_egg`,
-        `@setting_debug`]
+        `@setting_debug`, `@setting_link_method`]
       );
       // [0] is 'setting_theme'
       if (jsonValues[0][1] !== null) {
@@ -132,6 +135,10 @@ export default function RootLayout() {
       } else {
         setShowDebug(true);
       }
+      // [12] is 'setting_link_method'
+      if (jsonValues[12][1] !== null) {
+        setLinkedMethod(jsonValues[12][1]);
+      }
       //alert(`Loaded settings as ${jsonValues}`);
     } catch (e) {
       // Error: Reading the data failed.
@@ -160,7 +167,8 @@ export default function RootLayout() {
       getShowListSec, setShowListSec,
       getSpoilerSec, setSpoilerSec,
       getSpoilerEgg, setSpoilerEgg,
-      getShowDebug, setShowDebug}
+      getShowDebug, setShowDebug,
+      getLinkedMethod, setLinkedMethod}
     }>
       {/* Wrap app root in 'ThemeProvider' to use light/dark themes. */}
       <ThemeProvider

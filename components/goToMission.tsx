@@ -41,21 +41,7 @@ export function GoToMission(props) {
   return (
     <TouchableOpacity
       style={[
-        styles.buttonMission,
-        Platform.OS !== 'web' && {
-          width: '46%',
-          height: (props.boxSize)
-            ? width*0.64*0.46 + (props.boxSize*15)
-            : width*0.64*0.46,
-        },
-        Platform.OS === 'web' && {
-          width: (width > 618) ? 280 :
-                 (width > 410) ? 185 : '45%',
-          height: (width > 618)
-            ? ((props.boxSize) ? 175 + (props.boxSize*20) : 175)
-            : ((props.boxSize) ? width*0.6*0.45 + (props.boxSize*17)
-              : width*0.6*0.45),
-        },
+        styles.buttonMission(width, props.boxSize),
         {backgroundColor: colors.backLight,
         borderColor: colors.border}
       ]}
@@ -74,19 +60,7 @@ export function GoToMission(props) {
       }}
     >
       {props.missionID &&
-        <View
-          style={[
-            styles.buttonImage,
-            Platform.OS !== 'web' && {
-              width: '95%',
-              height: width*0.64*0.38,
-            },
-            Platform.OS === 'web' && {
-              width: (width > 618) ? 270 : '94%',
-              height: (width > 618) ? 150 : width*0.6*0.38,
-            }
-          ]}
-        >
+        <View style={styles.buttonImage(width)}>
           {/* ImageBackground lets you show elements in front of the image. */}
           <ImageBackground
             source={myScreens[screenAB]}
@@ -111,13 +85,7 @@ export function GoToMission(props) {
       {/* Use backquotes to denote parameters in a string. */}
       {props.missionName &&
         <Text style={[
-          styles.buttonText,
-          Platform.OS !== 'web' && {
-            fontSize: 11,
-          },
-          Platform.OS === 'web' && {
-            fontSize: (width > 618) ? 15 : width*0.024,
-          },
+          styles.buttonText(width),
           {color: colors.text}
         ]}>
           {`${props.missionName}`}
@@ -126,13 +94,7 @@ export function GoToMission(props) {
       }
       {props.subName &&
         <Text style={[
-          styles.buttonText,
-          Platform.OS !== 'web' && {
-            fontSize: 11,
-          },
-          Platform.OS === 'web' && {
-            fontSize: (width > 618) ? 15 : width*0.024,
-          },
+          styles.buttonText(width),
           {color: colors.text}
         ]}>
           {`${props.subName}`}
@@ -144,26 +106,46 @@ export function GoToMission(props) {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  buttonMission: {
+  buttonMission: (width, boxSize) => ({
     backgroundColor: 'lightgray',
     alignItems: 'center',
     justifyContent: 'flex-start',
     borderWidth: 1,
     borderRadius: 5,
     paddingTop: 2,
-    margin: (Platform.OS === 'web') ? 8 : 4,
-    //width: (Platform.OS === 'web') ? 280 : 190,
-    //height: (Platform.OS === 'web') ? 175 : 120,
-  },
-  buttonImage: {
-    //width: (Platform.OS === 'web') ? 270 : 180,
-    //height: (Platform.OS === 'web') ? 150 : 100,
-  },
-  buttonText: {
-    //fontSize: (Platform.OS === 'web') ? 15 : 11,
+    margin: (width > 449) ? 8 : 6,
+    width: (width > 1234) ? width*0.22 :
+      (width > 617) ? width*0.23 : width*0.45,
+    height: (width > 1199)
+      ? ((boxSize) ? width*0.14 + (boxSize*20)
+        : width*0.14)
+      : (width > 999)
+        ? ((boxSize) ? width*0.1425 + (boxSize*17)
+          : width*0.1425)
+        : (width > 699)
+          ? ((boxSize) ? width*0.145 + (boxSize*15)
+            : width*0.145)
+          : (width > 399)
+            ? ((boxSize) ? width*0.28 + (boxSize*15)
+              : width*0.28)
+            : ((boxSize) ? width*0.28 + (boxSize*11)
+              : width*0.28)
+  }),
+  buttonImage: (width, boxSize) => ({
+    width: (width > 617) ? '98%' : '95%',
+    height: (width > 617)
+      ? width*0.12
+      : width*0.235
+  }),
+  buttonText: (width) => ({
+    fontSize: (width > 1234)
+      ? width*0.011
+      : (width > 617)
+        ? width*0.013
+        : width*0.024,
     fontWeight: 'bold',
     textAlign: 'center',
-  },
+  }),
   centerWheel: {
     height: '100%',
     width: '100%',

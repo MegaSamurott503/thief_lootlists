@@ -41,39 +41,32 @@ export default function Index() {
       contentContainerStyle={{
         alignItems: 'center',
       }}>
-      <Text style={[
-        styles.homeTitle,
-        Platform.OS !== 'web' && {
-          fontSize: width*0.058,
-        },
-        Platform.OS === 'web' && {
-          fontSize: (width > 849) ? 40 : width*0.047,
-        },
-        {color: colors.text}
-      ]}>
-        {`THIEF Lootlists`}
+      <Text style={[stylesTitle.bigTitle(width), {color: colors.text}]}>
+        {/* Extra space around the title helps
+            prevent text from being cut off. */}
+        {`\u200B    THIEF Lootlists    \u200B`}
       </Text>
-      <Text style={[styles.explainText, {color: colors.text}]}>
+      <Text style={[styles.explainText(width), {color: colors.text}]}>
         {`for `}
         <Text style={stylesList.locCount}>
           {`THIEF: The Dark Project / Gold`}
         </Text>
         {`, `}
       </Text>
-      <Text style={[styles.explainText, {color: colors.text}]}>
+      <Text style={[styles.explainText(width), {color: colors.text}]}>
         <Text style={stylesList.locCount}>
           {`THIEF II: The Metal Age`}
         </Text>
         {`,`}
       </Text>
-      <Text style={[styles.explainText, {color: colors.text}]}>
+      <Text style={[styles.explainText(width), {color: colors.text}]}>
         {`and an ever-growing list of `}
         <Text style={stylesList.locCount}>
           {`fan missions`}
         </Text>
         {`.`}
       </Text>
-      <Text style={[styles.marginText, {color: colors.text}]}>
+      <Text style={[styles.marginText(width), {color: colors.text}]}>
         {`(`}
         <Text style={stylesList.locCount}>
           {`THIEF: Deadly Shadows`}
@@ -88,13 +81,15 @@ export default function Index() {
       {/* UI explanations. */}
       <SectionHeader headerName="Info"/>
       <View style={styles.explainArea}>
-        <View style={[styles.explain, styles.explainCenter]}>
+        <View style={[
+          styles.explain(width), styles.explainCenter
+        ]}>
 
           {/* Description of selected items. */}
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`Click on an item's location to mark it with a`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             <Text style={{backgroundColor: colors.found}}>
               {(getCurrentTheme === 'light' ||
                 (getCurrentTheme === 'default' && scheme === 'light')) &&
@@ -106,18 +101,16 @@ export default function Index() {
             </Text>
             {`. Selected items will be saved to your`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`device's memory, and the loot and pickpocket totals at`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`the bottom of the page will be updated automatically.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -129,16 +122,14 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`Lord Bafford's Bedroom`}
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`north table`}
               </Text>
@@ -146,15 +137,15 @@ export default function Index() {
           </View>
 
           {/* Description of background colors for loot. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`Unselected loot items have a colored background`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`to indicate (subjectively) how well-hidden they are.`}
           </Text>
 
           {/* Description of easy background color. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`A `}
             <Text style={{backgroundColor: colors.findE}}>
               {`curved `}
@@ -168,18 +159,16 @@ export default function Index() {
             </Text>
             {` indicates a loot item that`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {` is out in the open. As long as you try to visit every`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`obvious location in the mission, you should find it easily.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -191,16 +180,14 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`Butler's Quarters`}
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {'south room, north table '}
                 <Text style={stylesList.locCount}>
@@ -211,7 +198,7 @@ export default function Index() {
           </View>
 
           {/* Description of medium background color. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`A `}
             <Text style={{backgroundColor: colors.findM}}>
               {`slanted `}
@@ -225,18 +212,16 @@ export default function Index() {
             </Text>
             {` indicates a loot item that`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`is tucked away out of sight, or the passage/switch`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`that leads to it is easily overlooked. Keep your eyes open.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -248,16 +233,14 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`Narcotics Division`}
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`under southwest desk`}
               </Text>
@@ -265,7 +248,7 @@ export default function Index() {
           </View>
 
           {/* Description of hard background color. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`A `}
             <Text style={{backgroundColor: colors.findH}}>
               {`jagged `}
@@ -279,18 +262,16 @@ export default function Index() {
             </Text>
             {` indicates a loot item that`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`is very difficult to spot if you don't know it's there.`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`Be prepared to pixel hunt for it (or the switch revealing it).`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -302,16 +283,14 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`Ramirez's Quarters`}
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`bedroom, near footlocker`}
               </Text>
@@ -319,21 +298,19 @@ export default function Index() {
           </View>
 
           {/* Description of objective marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             <Text style={{fontWeight: 'bold', color: colors.locObj}}>
               {'✶'}
             </Text>
             {` An azure star indicates an item that triggers an objective`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`when it is picked up, used correctly, or delivered somewhere.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -345,41 +322,39 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 <Text style={{fontWeight: 'bold', color: colors.locObj}}>
                   {'✶'}
                 </Text>
-                {` Conservatory`}
+                {` Exhibition Room`}
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
-                {`1F, behind middle statue`}
+                {`aboved ringed pedestal`}
               </Text>
             </ImageBackground>
           </View>
 
           {/* Description of difficulty markers. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`A colored shape(s) indicates an item that is`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`available on one or two difficulties, but not all three.`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`You can use the filters at the top of a mission's page to`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`show or hide items based on difficulty (or other options).`}
           </Text>
 
           {/* Description of normal difficulty marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             <Text style={{fontWeight: 'bold', color: colors.locN}}>
               {'■'}
             </Text>
@@ -396,12 +371,10 @@ export default function Index() {
             </Text>
             {` square indicates Normal difficulty.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -413,9 +386,8 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 <Text style={{fontWeight: 'bold', color: colors.locN}}>
                   {'■'}
@@ -424,27 +396,35 @@ export default function Index() {
               </Text>
               <View style={styles.preciseRow}>
                 <Text style={[
-                  stylesList.locText,
-                  {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                    color: colors.text}
+                  stylesList.locText(width),
+                  {color: colors.text}
                 ]}>
                   {`spider cage, `}
-                </Text>
-                <Text style={[
-                  stylesList.locBox,
-                  stylesList.locText,
-                  {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                    color: colors.text,
-                    borderColor: colors.text}
-                ]}>
-                  {' coin box '}
+                  <Text style={{color: colors.locBox}}>
+                    {'['}
+                    <Text style={stylesList.locBox}>
+                      {'\u200B \u200B'}
+                    </Text>
+                  </Text>
+                  <Text style={[
+                    stylesList.locBox,
+                    {textDecorationColor: colors.locBox}
+                  ]}>
+                    {'coin box'}
+                  </Text>
+                  <Text style={{color: colors.locBox}}>
+                    <Text style={stylesList.locBox}>
+                      {'\u200B \u200B'}
+                    </Text>
+                    {']'}
+                  </Text>
                 </Text>
               </View>
             </ImageBackground>
           </View>
 
           {/* Description of hard difficulty marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             <Text style={{fontWeight: 'bold', color: colors.locH}}>
               {'▲'}
             </Text>
@@ -461,12 +441,10 @@ export default function Index() {
             </Text>
             {` triangle indicates Hard difficulty.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -478,9 +456,8 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 <Text style={{fontWeight: 'bold', color: colors.locH}}>
                   {'▲'}
@@ -488,9 +465,8 @@ export default function Index() {
                 {` Officers' Quarters`}
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`office, east bookshelf`}
               </Text>
@@ -498,7 +474,7 @@ export default function Index() {
           </View>
 
           {/* Description of expert difficulty marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             <Text style={{fontWeight: 'bold', color: colors.locX}}>
               {'◆'}
             </Text>
@@ -515,12 +491,10 @@ export default function Index() {
             </Text>
             {` diamond indicates Expert difficulty.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -532,9 +506,8 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 <Text style={{fontWeight: 'bold', color: colors.locX}}>
                   {'◆'}
@@ -542,9 +515,8 @@ export default function Index() {
                 {` Upper Sewer`}
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`Thom's quarters, bookcase`}
               </Text>
@@ -553,42 +525,30 @@ export default function Index() {
 
         </View>
         <View style={[
-          styles.explain,
-          styles.explainCenter
+          styles.explain(width), styles.explainCenter
         ]}>
 
-          {/* Description of container marker. */}
-          <View style={styles.preciseRow}>
-            <Text style={[styles.explainText, {color: colors.text}]}>
-              {`A `}
+          {/* Description of pickpocket marker. */}
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
+            {`An `}
+            <Text style={{color: colors.locPick}}>
+              {'{ '}
             </Text>
-            <Text style={[
-              styles.explainText,
-              stylesList.locBox,
-              {color: colors.text,
-                borderColor: colors.text}
-            ]}>
-              {' bordered '}
+            <Text style={stylesList.locPick}>
+              {'italicized'}
             </Text>
-            <Text style={[styles.explainText, {color: colors.text}]}>
-              {` location indicates an item that`}
+            <Text style={{color: colors.locPick}}>
+              {' }'}
             </Text>
-          </View>
-          <Text style={[styles.explainText, {color: colors.text}]}>
-            {`is obtained directly from a container.`}
+            {` location surrounded by curly braces`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
-            {`If a container gives you multiple items,`}
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
+            {`indicates an item that can be pickpocketed.`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
-            {`selecting one will instantly select the others.`}
-          </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -600,50 +560,129 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
+              ]}>
+                {`2F Southeast Offices`}
+              </Text>
+              <Text style={[
+                stylesList.locText(width),
+                {color: colors.text}
+              ]}>
+                {`Marin's office, `}
+                <Text style={{color: colors.locPick}}>
+                  {'{ '}
+                </Text>
+                <Text style={stylesList.locPick}>
+                  {'on red archer'}
+                </Text>
+                <Text style={{color: colors.locPick}}>
+                  {` }`}
+                </Text>
+              </Text>
+            </ImageBackground>
+          </View>
+
+          {/* Description of container marker. */}
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
+            {`An `}
+            <Text style={{color: colors.locBox}}>
+              {'['}
+              <Text style={stylesList.locBox}>
+                {'\u200B \u200B'}
+              </Text>
+            </Text>
+            <Text style={[
+              stylesList.locBox,
+              {textDecorationColor: colors.locBox}
+            ]}>
+              {'underlined'}
+            </Text>
+            <Text style={{color: colors.locBox}}>
+              <Text style={stylesList.locBox}>
+                {'\u200B \u200B'}
+              </Text>
+              {']'}
+            </Text>
+            <Text style={[styles.explainText(width), {color: colors.text}]}>
+              {` location surrounded by brackets`}
+            </Text>
+          </Text>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
+            {`indicates an item obtained directly from a container.`}
+          </Text>
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
+            <ImageBackground
+              source={(getCurrentTheme === 'dark' ||
+                (getCurrentTheme === 'default' && scheme === 'dark'))
+                ? bgDefaultDark : bgDefaultLight}
+              resizeMode="cover"
+              style={[
+                styles.explainBackground,
+                (Platform.OS === 'web') ? styles.explainBackgroundWeb : ''
+              ]}
+            >
+              <Text style={[
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`Terrace`}
               </Text>
               <View style={styles.preciseRow}>
                 <Text style={[
-                  stylesList.locText,
-                  {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                    color: colors.text}
+                  stylesList.locText(width),
+                  {color: colors.text}
                 ]}>
                   {`storage shed, `}
-                </Text>
-                <Text style={[
-                  stylesList.locBox,
-                  stylesList.locText,
-                  {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                    color: colors.text,
-                    borderColor: colors.text}
-                ]}>
-                  {' footlocker '}
+                  <Text style={{color: colors.locBox}}>
+                    {'['}
+                    <Text style={stylesList.locBox}>
+                      {'\u200B \u200B'}
+                    </Text>
+                  </Text>
+                  <Text style={[
+                    stylesList.locBox,
+                    {textDecorationColor: colors.locBox}
+                  ]}>
+                    {'footlocker'}
+                  </Text>
+                  <Text style={{color: colors.locBox}}>
+                    <Text style={stylesList.locBox}>
+                      {'\u200B \u200B'}
+                    </Text>
+                    {']'}
+                  </Text>
                 </Text>
               </View>
             </ImageBackground>
           </View>
 
-          {/* Description of pickpocket marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
-            {`An { `}
-            <Text style={stylesList.locPick}>
-              {'italicized'}
+          {/* Description of shared container marker. */}
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
+            <Text style={{fontWeight: 'bold', color: colors.locBox}}>
+              {'•••'}
             </Text>
-            {` } location surrounded by curly braces`}
+            {` An ellipsis indicates that the container`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
-            {`indicates an item that can be pickpocketed.`}
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
+            {`gives you multiple different items at once`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
+            {`(or its contents change based on difficulty),`}
+          </Text>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
+            {`and selecting one will also select the other(s).`}
+          </Text>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
+            {`This behavior can be disabled on the settings page.`}
+          </Text>
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -655,49 +694,59 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
-                {`2F Southeast Offices`}
+                {`Sparrow Street`}
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
-                {`Marin's office, { `}
-                <Text style={stylesList.locPick}>
-                  {'on red archer'}
+                {`apartment, `}
+                <Text style={{color: colors.locBox}}>
+                  {'['}
+                  <Text style={stylesList.locBox}>
+                    {'\u200B \u200B'}
+                  </Text>
                 </Text>
-                {` }`}
+                <Text style={[
+                  stylesList.locBox,
+                  {textDecorationColor: colors.locBox}
+                ]}>
+                  {'toolbox'}
+                </Text>
+                <Text style={{color: colors.locBox}}>
+                  <Text style={stylesList.locBox}>
+                    {'\u200B •••'}
+                  </Text>
+                  {']'}
+                </Text>
               </Text>
             </ImageBackground>
           </View>
 
           {/* Description of additional instructions. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`Some items have an additional requirement(s)`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`that must be met to spawn them into the mission`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`(e.g. a crafting recipe). Any such requirements`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`are printed after the location in `}
             <Text style={stylesList.locCount}>
               {`bold text`}
             </Text>
             {`.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -709,16 +758,14 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`Hammerite Crypts`}
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`lower level, `}
                 <Text style={stylesList.locCount}>
@@ -729,28 +776,26 @@ export default function Index() {
           </View>
 
           {/* Description of spending loot on items. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`Some FMs have items that require you to spend`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`loot to obtain them. The price of each item`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`is printed after the location in `}
             <Text style={stylesList.locCount}>
               {`bold text`}
             </Text>
             {`, and`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`the loot totals below will be updated automatically.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -762,23 +807,21 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`Farkus Outfitters`}
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`counter, `}
                 <Text style={stylesList.locCount}>
                   {`spend 500 `}
                   <Image
                     source={iconGold}
-                    style={stylesImg.imgLootIcon}
+                    style={stylesImg.imgLootIcon(width)}
                   />
                 </Text>
               </Text>
@@ -786,7 +829,7 @@ export default function Index() {
           </View>
 
           {/* Description of actual number available marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`A `}
             <Text style={stylesList.locCount}>
               {`number`}
@@ -796,24 +839,22 @@ export default function Index() {
               {`(number in parentheses)`}
             </Text>
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`indicates that the number of items made available`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`is different from the number of items obtainable.`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`This usually happens in the loadout store if there's`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`not enough money to buy an item's full stock.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -825,9 +866,8 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`Loadout Store `}
                 <Text style={stylesList.locCount}>
@@ -835,9 +875,8 @@ export default function Index() {
                 </Text>
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`Price: 300`}
               </Text>
@@ -845,28 +884,26 @@ export default function Index() {
           </View>
 
           {/* Description of unobtainable marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`A location with a `}
             <Text style={stylesList.locNoGet}>
               {'strikethrough'}
             </Text>
             {` indicates`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`an item that is in an unreachable location,`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`out of bounds, or cannot be collected without`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`failing an objective, becoming softlocked, or dying.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -878,17 +915,15 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`Hammer Cathedral`}
               </Text>
               <Text style={[
-                stylesList.locText,
+                stylesList.locText(width),
                 stylesList.locNoGet,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                {color: colors.text}
               ]}>
                 {`sanctuary, nave `}
                 <Text style={stylesList.locCount}>
@@ -898,40 +933,43 @@ export default function Index() {
             </ImageBackground>
           </View>
 
+        </View>
+        <View style={[
+          styles.explain(width), styles.explainCenter
+        ]}>
+
           {/* Description of spoiler settings. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`Secret and Easter Egg items can have their locations`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`partially or fully hidden while unselected to avoid spoilers.`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`Adjust these spoiler covers on the settings page.`}
           </Text>
 
           {/* Description of secret marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`A location surrounded by `}
             <Text style={{color: colors.locSecret}}>
-              {'[[ '}
+              {'⟨⟨ '}
             </Text>
-            {`red brackets`}
+            {`angle brackets`}
             <Text style={{color: colors.locSecret}}>
-              {' ]]'}
+              {' ⟩⟩'}
             </Text>
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`indicates an item found in a secret area,`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`or the item itself is the secret.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -943,30 +981,28 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 {`Truart Family Cemetery`}
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 <Text style={{color: colors.locSecret}}>
-                  {'[[ '}
+                  {'⟨⟨ '}
                 </Text>
                 {`behind dirt pile`}
                 <Text style={{color: colors.locSecret}}>
-                  {' ]]'}
+                  {' ⟩⟩'}
                 </Text>
               </Text>
             </ImageBackground>
           </View>
 
           {/* Description of Easter Egg marker. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`A location surrounded by `}
             <Text style={{color: colors.locN}}>(</Text>
             <Text style={{color: colors.locX}}>\</Text>
@@ -976,18 +1012,16 @@ export default function Index() {
             <Text style={{color: colors.locX}}>/</Text>
             <Text style={{color: colors.locN}}>)</Text>
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`indicates an item found in an Easter Egg area,`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`or the item itself is the Easter Egg.`}
           </Text>
-          <View
-            style={[
-              styles.explainBox,
-              {borderColor: colors.border},
-            ]}
-          >
+          <View style={[
+            styles.explainBox(width),
+            {borderColor: colors.border}
+          ]}>
             <ImageBackground
               source={(getCurrentTheme === 'dark' ||
                 (getCurrentTheme === 'default' && scheme === 'dark'))
@@ -999,9 +1033,8 @@ export default function Index() {
               ]}
             >
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 <Text style={{fontWeight: 'bold', color: colors.locX}}>
                   {'◆'}
@@ -1009,9 +1042,8 @@ export default function Index() {
                 {` Basketball Court`}
               </Text>
               <Text style={[
-                stylesList.locText,
-                {fontSize: (Platform.OS === 'web') ? 12 : width*0.019,
-                  color: colors.text}
+                stylesList.locText(width),
+                {color: colors.text}
               ]}>
                 <Text style={{color: colors.locN}}>(</Text>
                 <Text style={{color: colors.locX}}>\</Text>
@@ -1025,30 +1057,30 @@ export default function Index() {
           </View>
 
           {/* Description of bodies. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`Bodies and corpse parts are not included as junk items`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`to avoid having to list every NPC in the mission`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`(except if they are treated as an inventory item).`}
           </Text>
 
           {/* Description of secret list. */}
-          <Text style={[styles.marginText, {color: colors.text}]}>
+          <Text style={[styles.marginText(width), {color: colors.text}]}>
             {`A list of the mission's secrets (if any),`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`including images, instructions, and rewards,`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`is displayed at the bottom of the page.`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`Click the secret's location to mark it as found,`}
           </Text>
-          <Text style={[styles.explainText, {color: colors.text}]}>
+          <Text style={[styles.explainText(width), {color: colors.text}]}>
             {`and click the secret's image(s) to enlarge it.`}
           </Text>
 
@@ -1064,13 +1096,9 @@ export default function Index() {
 
 // Define various styles here.
 const styles = StyleSheet.create({
-  homeTitle: {
-    fontFamily: 'Thief',
-    textAlign: 'center',
-  },
-  explain: {
-    marginTop: (Platform.OS === 'web') ? 12 : 10,
-  },
+  explain: (width) => ({
+    marginTop: (width > 449) ? 12 : 10,
+  }),
   explainArea: {
     flex: 1,
     flexDirection: 'row',
@@ -1080,19 +1108,19 @@ const styles = StyleSheet.create({
   explainCenter: {
     alignItems: 'center',
   },
-  explainText: {
-    fontSize: (Platform.OS === 'web') ? 14 : 12,
-  },
-  marginText: {
-    fontSize: (Platform.OS === 'web') ? 14 : 12,
+  explainText: (width) => ({
+    fontSize: (width > 449) ? 14 : 12,
+  }),
+  marginText: (width) => ({
+    fontSize: (width > 449) ? 14 : 12,
     marginTop: 8,
-  },
-  explainBox: {
+  }),
+  explainBox: (width) => ({
     borderWidth: 1,
-    width: (Platform.OS === 'web') ? 228 : 156,
-    height: (Platform.OS === 'web') ? 84 : 56,
+    width: (width > 449) ? 228 : 156,
+    height: (width > 449) ? 84 : 56,
     marginBottom: 4,
-  },
+  }),
   preciseRow: {
     flexDirection: 'row',
     alignItems: 'center'

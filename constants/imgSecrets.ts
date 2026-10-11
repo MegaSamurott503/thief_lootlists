@@ -133,6 +133,13 @@ export const mySecrets = {
   'SEC_t2_guest_03': require('@/assets/images/secrets/t2_guest_03.png'),
   'SEC_t2_guest_04': require('@/assets/images/secrets/t2_guest_04.png'),
 
+  // FM: Among Two Storms
+  'SEC_fm_twostorms_01': require('@/assets/images/secrets/fm_twostorms_01.png'),
+  'SEC_fm_twostorms_02': require('@/assets/images/secrets/fm_twostorms_02.png'),
+  'SEC_fm_twostorms_03': require('@/assets/images/secrets/fm_twostorms_03.png'),
+  'SEC_fm_twostorms_04': require('@/assets/images/secrets/fm_twostorms_04.png'),
+  'SEC_fm_twostorms_05': require('@/assets/images/secrets/fm_twostorms_05.png'),
+  'SEC_fm_twostorms_06': require('@/assets/images/secrets/fm_twostorms_06.png'),
   // FM: The Art of Thievery
   'SEC_fm_artthievery_01': require('@/assets/images/secrets/fm_artthievery_01.png'),
   'SEC_fm_artthievery_02': require('@/assets/images/secrets/fm_artthievery_02.png'),
@@ -163,6 +170,11 @@ export const mySecrets = {
   'SEC_fm_artthievery_15': require('@/assets/images/secrets/fm_artthievery_15.png'),
   'SEC_fm_artthievery_16': require('@/assets/images/secrets/fm_artthievery_16.png'),
   'SEC_fm_artthievery_17': require('@/assets/images/secrets/fm_artthievery_17.png'),
+  // FM: Bad Hangover
+  'SEC_fm_hangover_01': require('@/assets/images/secrets/fm_hangover_01.png'),
+  'SEC_fm_hangover_02': require('@/assets/images/secrets/fm_hangover_02.png'),
+  'SEC_fm_hangover_03': require('@/assets/images/secrets/fm_hangover_03.png'),
+  'SEC_fm_hangover_04': require('@/assets/images/secrets/fm_hangover_04.png'),
   // FM: The Burrick's Head Inn
   'SEC_fm_burrickhead_01': require('@/assets/images/secrets/fm_burrickhead_01.png'),
   'SEC_fm_burrickhead_02': require('@/assets/images/secrets/fm_burrickhead_02.png'),
@@ -178,6 +190,16 @@ export const mySecrets = {
   'SEC_fm_cargo_07': require('@/assets/images/secrets/fm_cargo_07.png'),
   'SEC_fm_cargo_08': require('@/assets/images/secrets/fm_cargo_08.png'),
   'SEC_fm_cargo_09': require('@/assets/images/secrets/fm_cargo_09.png'),
+  // FM: Dance with the Dead
+  'SEC_fm_horrors-dance_01a': require('@/assets/images/secrets/fm_horrors-dance_01a.png'),
+  'SEC_fm_horrors-dance_01b': require('@/assets/images/secrets/fm_horrors-dance_01b.png'),
+  'SEC_fm_horrors-dance_01c': require('@/assets/images/secrets/fm_horrors-dance_01c.png'),
+  'SEC_fm_horrors-dance_01d': require('@/assets/images/secrets/fm_horrors-dance_01d.png'),
+  'SEC_fm_horrors-dance_02': require('@/assets/images/secrets/fm_horrors-dance_02.png'),
+  'SEC_fm_horrors-dance_03': require('@/assets/images/secrets/fm_horrors-dance_03.png'),
+  'SEC_fm_horrors-dance_04': require('@/assets/images/secrets/fm_horrors-dance_04.png'),
+  'SEC_fm_horrors-dance_05': require('@/assets/images/secrets/fm_horrors-dance_05.png'),
+  'SEC_fm_horrors-dance_06': require('@/assets/images/secrets/fm_horrors-dance_06.png'),
   // FM: Durant
   'SEC_fm_durant_01': require('@/assets/images/secrets/fm_durant_01.png'),
   'SEC_fm_durant_02': require('@/assets/images/secrets/fm_durant_02.png'),
@@ -196,6 +218,19 @@ export const mySecrets = {
   'SEC_fm_maelstrom_03': require('@/assets/images/secrets/fm_maelstrom_03.png'),
   // FM: The Inverted Manse
   'SEC_fm_spirit-manse_01': require('@/assets/images/secrets/fm_spirit-manse_01.png'),
+  // FM: The Mirror of Return - Part 1
+  'SEC_fm_forces-mirror1_01': require('@/assets/images/secrets/fm_forces-mirror1_01.png'),
+  'SEC_fm_forces-mirror1_02': require('@/assets/images/secrets/fm_forces-mirror1_02.png'),
+  'SEC_fm_forces-mirror1_03': require('@/assets/images/secrets/fm_forces-mirror1_03.png'),
+  'SEC_fm_forces-mirror1_04': require('@/assets/images/secrets/fm_forces-mirror1_04.png'),
+  'SEC_fm_forces-mirror1_05': require('@/assets/images/secrets/fm_forces-mirror1_05.png'),
+  'SEC_fm_forces-mirror1_06': require('@/assets/images/secrets/fm_forces-mirror1_06.png'),
+  'SEC_fm_forces-mirror1_07': require('@/assets/images/secrets/fm_forces-mirror1_07.png'),
+  'SEC_fm_forces-mirror1_08': require('@/assets/images/secrets/fm_forces-mirror1_08.png'),
+  'SEC_fm_forces-mirror1_09': require('@/assets/images/secrets/fm_forces-mirror1_09.png'),
+  'SEC_fm_forces-mirror1_10': require('@/assets/images/secrets/fm_forces-mirror1_10.png'),
+  'SEC_fm_forces-mirror1_11': require('@/assets/images/secrets/fm_forces-mirror1_11.png'),
+  'SEC_fm_forces-mirror1_12': require('@/assets/images/secrets/fm_forces-mirror1_12.png'),
   // FM: Lord James' Retreat
   'SEC_fm_retreat_01': require('@/assets/images/secrets/fm_retreat_01.png'),
   'SEC_fm_retreat_02': require('@/assets/images/secrets/fm_retreat_02.png'),
@@ -222,6 +257,20 @@ export const mySecrets = {
   'SEC_fm_xedormicost-bequest_06': require('@/assets/images/secrets/fm_xedormicost-bequest_06.png'),
   'SEC_fm_xedormicost-bequest_07': require('@/assets/images/secrets/fm_xedormicost-bequest_07.png'),
   'SEC_fm_xedormicost-bequest_08': require('@/assets/images/secrets/fm_xedormicost-bequest_08.png'),
+  // FM: Prequel - Finals at the Academy
+  'SEC_fm_finals_01': require('@/assets/images/secrets/fm_finals_01.png'),
+  'SEC_fm_finals_02a': require('@/assets/images/secrets/fm_finals_02a.png'),
+  'SEC_fm_finals_02b': require('@/assets/images/secrets/fm_finals_02b.png'),
+  'SEC_fm_finals_03a': require('@/assets/images/secrets/fm_finals_03a.png'),
+  'SEC_fm_finals_03b': require('@/assets/images/secrets/fm_finals_03b.png'),
+  'SEC_fm_finals_04': require('@/assets/images/secrets/fm_finals_04.png'),
+  'SEC_fm_finals_05': require('@/assets/images/secrets/fm_finals_05.png'),
+  'SEC_fm_finals_06a': require('@/assets/images/secrets/fm_finals_06a.png'),
+  'SEC_fm_finals_06b': require('@/assets/images/secrets/fm_finals_06b.png'),
+  'SEC_fm_finals_07a': require('@/assets/images/secrets/fm_finals_07a.png'),
+  'SEC_fm_finals_07b': require('@/assets/images/secrets/fm_finals_07b.png'),
+  'SEC_fm_finals_07c': require('@/assets/images/secrets/fm_finals_07c.png'),
+  'SEC_fm_finals_07d': require('@/assets/images/secrets/fm_finals_07d.png'),
   // FM: Revenge
   'SEC_fm_ashton-revenge_01': require('@/assets/images/secrets/fm_ashton-revenge_01.png'),
   'SEC_fm_ashton-revenge_02': require('@/assets/images/secrets/fm_ashton-revenge_02.png'),
@@ -247,6 +296,9 @@ export const mySecrets = {
   'SEC_fm_solong_05': require('@/assets/images/secrets/fm_solong_05.png'),
   'SEC_fm_solong_06': require('@/assets/images/secrets/fm_solong_06.png'),
   'SEC_fm_solong_07': require('@/assets/images/secrets/fm_solong_07.png'),
+  // FM: Swamped
+  'SEC_fm_swamped_01': require('@/assets/images/secrets/fm_swamped_01.png'),
+  'SEC_fm_swamped_02': require('@/assets/images/secrets/fm_swamped_02.png'),
   /// FM: Tales from the Cleft - Ladytaker
   'SEC_fm_cleft-ladytaker_01': require('@/assets/images/secrets/fm_cleft-ladytaker_01.png'),
   'SEC_fm_cleft-ladytaker_02': require('@/assets/images/secrets/fm_cleft-ladytaker_02.png'),
@@ -289,4 +341,8 @@ export const mySecrets = {
   'SEC_fm_links_03a': require('@/assets/images/secrets/fm_links_03a.png'),
   'SEC_fm_links_03b': require('@/assets/images/secrets/fm_links_03b.png'),
   'SEC_fm_links_04': require('@/assets/images/secrets/fm_links_04.png'),
+  // FM: What Lies Below
+  'SEC_fm_horrors-below_01': require('@/assets/images/secrets/fm_horrors-below_01.png'),
+  'SEC_fm_horrors-below_02': require('@/assets/images/secrets/fm_horrors-below_02.png'),
+  'SEC_fm_horrors-below_03': require('@/assets/images/secrets/fm_horrors-below_03.png'),
 }

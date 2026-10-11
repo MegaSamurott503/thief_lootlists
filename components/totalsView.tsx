@@ -15,7 +15,7 @@ import { LootIconPicker } from '@/components/lootIconPicker';
 
 import { stylesList } from '@/constants/stylesList';
 import { stylesTotal } from '@/constants/stylesTotal';
-import { stylesImg } from '@/constants/stylesImg';
+//import { stylesImg } from '@/constants/stylesImg';
 import {
   bgDefaultLight, bgDefaultDark,
   bgFoundLight, bgFoundDark,
@@ -347,16 +347,13 @@ export const TotalsView = memo(function TotalsView(props) {
             ? ((Platform.OS === 'web') ? '100%' : '16%')
             : ((Platform.OS === 'web') ? height*0.33 : '25%')
         }}
-        contentContainerStyle={styles.totalView}
+        contentContainerStyle={styles.totalView(width)}
       >
         {/* If loot carries over from the previous mission,
             allow user to input the total loot they found. */}
         {props.totals && props.carryLoot &&
           <View style={styles.carryView}>
-            <Text style={[
-              styles.carryText,
-              {color: colors.text}
-            ]}>
+            <Text style={[styles.carryText(width), {color: colors.text}]}>
               {`Enter previous loot: `}
             </Text>
             <TextInput
@@ -380,45 +377,39 @@ export const TotalsView = memo(function TotalsView(props) {
          (Math.max(...props.totals[0]) > 0 ||
           Math.max(...props.totals[1]) > 0 ||
           Math.max(...props.totals[2]) > 0) ) &&
-          <View style={styles.spacedView}>
+          <View style={styles.spacedView(width)}>
             <View style={styles.tableHeader}>
               <View style={[
-                styles.tableHeadBox,
-                styles.sizeRowStart,
+                styles.tableHeadBox(width),
+                styles.sizeRowStart(width),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>
+                <Text style={styles.tableHeadText(width)}>
                   Loot Totals
                   </Text>
               </View>
               {/* Column headers for gold / gems / goods / special / total. */}
               <View style={[
-                styles.tableHeadBox,
-                {width: (Platform.OS !== 'web')
-                        ? (width < 400) ? 48 : 66
-                        : (width < 626) ? 60 : 100,
-                backgroundColor: colors.backDark,
+                styles.tableHeadBox(width),
+                stylesTotal.tableHeadColumn(width),
+                {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
                 <LootIconPicker cat={props.lootCats[0]} />
               </View>
               <View style={[
-                styles.tableHeadBox,
-                {width: (Platform.OS !== 'web')
-                        ? (width < 400) ? 48 : 66
-                        : (width < 626) ? 60 : 100,
-                backgroundColor: colors.backDark,
+                styles.tableHeadBox(width),
+                stylesTotal.tableHeadColumn(width),
+                {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
                 <LootIconPicker cat={props.lootCats[1]} />
               </View>
               <View style={[
-                styles.tableHeadBox,
-                {width: (Platform.OS !== 'web')
-                        ? (width < 400) ? 48 : 66
-                        : (width < 626) ? 60 : 100,
-                backgroundColor: colors.backDark,
+                styles.tableHeadBox(width),
+                stylesTotal.tableHeadColumn(width),
+                {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
                 <LootIconPicker cat={props.lootCats[2]} />
@@ -427,43 +418,35 @@ export const TotalsView = memo(function TotalsView(props) {
                 props.totals[1][3] > 0 ||
                 props.totals[2][3] > 0) &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
-                          ? (width < 400) ? 48 : 66
-                          : (width < 626) ? 60 : 100,
-                  backgroundColor: colors.backDark,
+                  styles.tableHeadBox(width),
+                  stylesTotal.tableHeadColumn(width),
+                  {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
                   <LootIconPicker cat={props.lootCats[3]} />
                 </View>
               }
               <View style={[
-                styles.tableHeadBox,
-                {width: (Platform.OS !== 'web')
-                        ? (width < 400) ? 48 : 66
-                        : (width < 626) ? 60 : 100,
-                backgroundColor: colors.backDark,
+                styles.tableHeadBox(width),
+                stylesTotal.tableHeadColumn(width),
+                {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>
+                <Text style={styles.tableHeadText(width)}>
                   Total
                 </Text>
               </View>
               {/* Extra column if loot carries over. */}
               {props.carryLoot &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
-                          ? (width < 400) ? 48 : 66
-                          : (width < 626) ? 60 : 100,
-                  backgroundColor: colors.backDark,
+                  styles.tableHeadBox(width),
+                  stylesTotal.tableHeadColumn(width),
+                  {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
-                  <Text style={[
-                    styles.tableHeadText,
-                    {fontSize: (Platform.OS !== 'web') ? 8 :
-                                (width < 626) ? 10 : 14}
-                  ]}>+ Carryover</Text>
+                  <Text style={styles.tableHeadText(width)}>
+                    + Carryover
+                  </Text>
                 </View>
               }
             </View>
@@ -479,34 +462,26 @@ export const TotalsView = memo(function TotalsView(props) {
                     {Math.max(...outerKey) > 0 &&
                       <>
                         <View style={[
-                          styles.tableRowStart,
-                          styles.sizeRowStart,
+                          styles.tableRowStart(width),
+                          styles.sizeRowStart(width),
                           {backgroundColor: colors.backMed,
                           borderColor: colors.border}
                         ]}>
                           {/* All difficulties have the same total. */}
                           {a === 0 &&
                             getShareNH && getShareHX && getShareNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
                               All
                             </Text>
                           }
                           {/* Normal and Hard have the same total. */}
                           {a === 0 &&
                             getShareNH && !getShareHX && !getShareNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locN}
-                              ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
+                              <Text style={[stylesList.locCount, {color: colors.locN}]}>
                                 {props.diffNames[0]}
                               </Text>/
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locH}
-                              ]}>
+                              <Text style={[stylesList.locCount, {color: colors.locH}]}>
                                 {props.diffNames[1]}
                               </Text>
                             </Text>
@@ -514,17 +489,11 @@ export const TotalsView = memo(function TotalsView(props) {
                           {/* Hard and Expert have the same total. */}
                           {a === 1 &&
                             !getShareNH && getShareHX && !getShareNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locH}
-                              ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
+                              <Text style={[stylesList.locCount, {color: colors.locH}]}>
                                 {props.diffNames[1]}
                               </Text>/
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locX}
-                              ]}>
+                              <Text style={[stylesList.locCount, {color: colors.locX}]}>
                                 {props.diffNames[2]}
                               </Text>
                             </Text>
@@ -532,47 +501,35 @@ export const TotalsView = memo(function TotalsView(props) {
                           {/* Normal and Expert have the same total. */}
                           {a === 0 &&
                             !getShareNH && !getShareHX && getShareNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locN}
-                              ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
+                              <Text style={[stylesList.locCount, {color: colors.locN}]}>
                                 {props.diffNames[0]}
                               </Text>/
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locX}
-                              ]}>
+                              <Text style={[stylesList.locCount, {color: colors.locX}]}>
                                 {props.diffNames[2]}
                               </Text>
                             </Text>
                           }
                           {/* Normal has a different total. */}
                           {a === 0 && !getShareNH && !getShareNX &&
-                            <Text style={stylesTotal.tableRowText}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locN}
-                              ]}>
+                            <Text style={stylesTotal.tableRowText(width)}>
+                              <Text style={[stylesList.locCount, {color: colors.locN}]}>
                                 {props.diffNames[0]}
                               </Text>
                             </Text>
                           }
                           {/* Hard has a different total. */}
                           {a === 1 && !getShareNH && !getShareHX &&
-                            <Text style={stylesTotal.tableRowText}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locH}
-                              ]}>
+                            <Text style={stylesTotal.tableRowText(width)}>
+                              <Text style={[stylesList.locCount, {color: colors.locH}]}>
                                 {props.diffNames[1]}
                               </Text>
                             </Text>
                           }
                           {/* Expert has a different total. */}
                           {a === 2 && !getShareHX && !getShareNX &&
-                            <Text style={stylesTotal.tableRowText}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locX}
-                              ]}>
+                            <Text style={stylesTotal.tableRowText(width)}>
+                              <Text style={[stylesList.locCount, {color: colors.locX}]}>
                                 {props.diffNames[2]}
                               </Text>
                             </Text>
@@ -582,12 +539,10 @@ export const TotalsView = memo(function TotalsView(props) {
                         {outerKey.map((innerKey, b) => (
                           <View key={`inner_${b}`}>
                             {((b !== 3) || (b === 3 && innerKey > 0)) &&
-                              <View
-                                style={[stylesTotal.tableRowBox,
-                                  {width: (Platform.OS !== 'web')
-                                          ? (width < 400) ? 48 : 66
-                                          : (width < 626) ? 60 : 100,
-                                  borderColor: colors.border}
+                              <View style={[
+                                stylesTotal.tableRowBox(width),
+                                stylesTotal.tableHeadColumn(width),
+                                {borderColor: colors.border}
                               ]}>
                                 <ImageBackground
                                   source={(getCurrentTheme === 'dark' ||
@@ -595,27 +550,24 @@ export const TotalsView = memo(function TotalsView(props) {
                                     ? ((getFoundLoot[a][b] >= innerKey &&
                                         ( (b !== 4) || (b === 4 &&
                                           getFoundPiece[a] >= props.lootCount[a]) ))
-                                      ? ((Platform.OS === 'web' && width < 626)
+                                      ? ((width < 626)
                                         ? bgFoundDarkS : bgFoundDark)
                                       : bgDefaultDark)
                                     : ((getFoundLoot[a][b] >= innerKey &&
                                         ( (b !== 4) || (b === 4 &&
                                           getFoundPiece[a] >= props.lootCount[a]) ))
-                                      ? ((Platform.OS === 'web' && width < 626)
+                                      ? ((width < 626)
                                         ? bgFoundLightS : bgFoundLight)
                                       : bgDefaultLight)}
                                   resizeMode="cover"
                                   style={[
-                                    stylesTotal.totalBackground,
+                                    stylesTotal.totalBackground(width),
                                     (Platform.OS === 'web') ? stylesTotal.totalBackgroundWeb : ''
                                   ]}
                                 >
-                                  <Text style={[
-                                    stylesTotal.tableRowText, {color: colors.text}
-                                  ]}>
+                                  <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
                                     {getFoundLoot[a][b]}
-                                    {((Platform.OS !== 'web' && width < 400) ||
-                                      (Platform.OS === 'web' && width < 626)) &&
+                                    {(width <= 389) &&
                                       "\n"
                                     }
                                     {" / "}
@@ -628,35 +580,31 @@ export const TotalsView = memo(function TotalsView(props) {
                         ))}
                         {/* Carryover loot box if input is empty. */}
                         {props.carryLoot && getCarryLoot === '' &&
-                          <View style={[stylesTotal.tableRowBox,
-                            {width: (Platform.OS !== 'web')
-                                    ? (width < 400) ? 48 : 66
-                                    : (width < 626) ? 60 : 100,
-                            borderColor: colors.border}
+                          <View style={[
+                            stylesTotal.tableRowBox(width),
+                            stylesTotal.tableHeadColumn(width),
+                            {borderColor: colors.border}
                           ]}>
                             <ImageBackground
                               source={(getCurrentTheme === 'dark' ||
                                 (getCurrentTheme === 'default' && scheme === 'dark'))
                                 ? ((getFoundLoot[a][4] >= props.totals[a][4])
-                                  ? ((Platform.OS === 'web' && width < 626)
+                                  ? ((width < 626)
                                     ? bgFoundDarkS : bgFoundDark)
                                   : bgDefaultDark)
                                 : ((getFoundLoot[a][4] >= props.totals[a][4])
-                                  ? ((Platform.OS === 'web' && width < 626)
+                                  ? ((width < 626)
                                     ? bgFoundLightS : bgFoundLight)
                                   : bgDefaultLight)}
                               resizeMode="cover"
                               style={[
-                                stylesTotal.totalBackground,
+                                stylesTotal.totalBackground(width),
                                 (Platform.OS === 'web') ? stylesTotal.totalBackgroundWeb : ''
                               ]}
                             >
-                              <Text style={[
-                                stylesTotal.tableRowText, {color: colors.text}
-                              ]}>
+                              <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
                                 {getFoundLoot[a][4]}
-                                {((Platform.OS !== 'web' && width < 400) ||
-                                  (Platform.OS === 'web' && width < 626)) &&
+                                {(width <= 389) &&
                                   "\n"
                                 }
                                 {" / "}
@@ -667,11 +615,10 @@ export const TotalsView = memo(function TotalsView(props) {
                         }
                         {/* Carryover loot box if input is given. */}
                         {props.carryLoot && getCarryLoot !== '' &&
-                          <View style={[stylesTotal.tableRowBox,
-                            {width: (Platform.OS !== 'web')
-                                    ? (width < 400) ? 48 : 66
-                                    : (width < 626) ? 60 : 100,
-                            borderColor: colors.border},
+                          <View style={[
+                            stylesTotal.tableRowBox(width),
+                            stylesTotal.tableHeadColumn(width),
+                            {borderColor: colors.border},
                             (parseInt(getCarryLoot) + getFoundLoot[a][4]) >=
                             (parseInt(getCarryLoot) + props.totals[a][4]) &&
                             {backgroundColor: colors.found}
@@ -684,7 +631,7 @@ export const TotalsView = memo(function TotalsView(props) {
                                       (a === 2 && getCarryFoundX)) &&
                                   (parseInt(getCarryLoot) + getFoundLoot[a][4]) >=
                                   (parseInt(getCarryLoot) + props.totals[a][4]))
-                                  ? ((Platform.OS === 'web' && width < 626)
+                                  ? ((width < 626)
                                     ? bgFoundDarkS : bgFoundDark)
                                   : bgDefaultDark)
                                 : ( (((a === 0 && getCarryFoundN) ||
@@ -692,18 +639,16 @@ export const TotalsView = memo(function TotalsView(props) {
                                       (a === 2 && getCarryFoundX)) &&
                                   (parseInt(getCarryLoot) + getFoundLoot[a][4]) >=
                                   (parseInt(getCarryLoot) + props.totals[a][4]))
-                                  ? ((Platform.OS === 'web' && width < 626)
+                                  ? ((width < 626)
                                     ? bgFoundLightS : bgFoundLight)
                                   : bgDefaultLight)}
                               resizeMode="cover"
                               style={[
-                                stylesTotal.totalBackground,
+                                stylesTotal.totalBackground(width),
                                 (Platform.OS === 'web') ? stylesTotal.totalBackgroundWeb : ''
                               ]}
                             >
-                              <Text style={[
-                                stylesTotal.tableRowText, {color: colors.text}
-                              ]}>
+                              <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
                                 {((a === 0 && getCarryFoundN) ||
                                   (a === 1 && getCarryFoundH) ||
                                   (a === 2 && getCarryFoundX)) &&
@@ -712,8 +657,7 @@ export const TotalsView = memo(function TotalsView(props) {
                                    (a === 1 && getCarryFoundH) ||
                                    (a === 2 && getCarryFoundX)) &&
                                   getFoundLoot[a][4]}
-                                {((Platform.OS !== 'web' && width < 400) ||
-                                  (Platform.OS === 'web' && width < 626)) &&
+                                {(width <= 389) &&
                                   "\n"
                                 }
                                 {" / "}
@@ -735,26 +679,26 @@ export const TotalsView = memo(function TotalsView(props) {
             display a table of loot piece counts. */}
         {(props.totals && props.lootCount &&
          (Math.max(...props.lootCount) > 0) ) &&
-          <View style={styles.spacedView}>
+          <View style={styles.spacedView(width)}>
             <View style={styles.tableHeader}>
               <View style={[
-                styles.tableHeadBox,
-                styles.sizeRowStart,
+                styles.tableHeadBox(width),
+                styles.sizeRowStart(width),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>
+                <Text style={styles.tableHeadText(width)}>
                   Loot Pieces
                 </Text>
               </View>
               {/* Column header. */}
               <View style={[
-                styles.tableHeadBox,
-                styles.pieceRowBox,
+                styles.tableHeadBox(width),
+                styles.pieceRowBox(width),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>
+                <Text style={styles.tableHeadText(width)}>
                   Total
                 </Text>
               </View>
@@ -771,34 +715,26 @@ export const TotalsView = memo(function TotalsView(props) {
                     {pieceKey > 0 &&
                       <>
                         <View style={[
-                          styles.tableRowStart,
-                          styles.sizeRowStart,
+                          styles.tableRowStart(width),
+                          styles.sizeRowStart(width),
                           {backgroundColor: colors.backMed,
                           borderColor: colors.border}
                         ]}>
                           {/* All difficulties have the same loot. */}
                           {e === 0 &&
                             getShareNH && getShareHX && getShareNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
                               All
                             </Text>
                           }
                           {/* Normal and Hard have the same loot. */}
                           {e === 0 &&
                             getShareNH && !getShareHX && !getShareNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locN}
-                              ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
+                              <Text style={[stylesList.locCount, {color: colors.locN}]}>
                                 {props.diffNames[0]}
                               </Text>/
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locH}
-                              ]}>
+                              <Text style={[stylesList.locCount, {color: colors.locH}]}>
                                 {props.diffNames[1]}
                               </Text>
                             </Text>
@@ -806,17 +742,11 @@ export const TotalsView = memo(function TotalsView(props) {
                           {/* Hard and Expert have the same loot. */}
                           {e === 1 &&
                             !getShareNH && getShareHX && !getShareNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locH}
-                              ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
+                              <Text style={[stylesList.locCount, {color: colors.locH}]}>
                                 {props.diffNames[1]}
                               </Text>/
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locX}
-                              ]}>
+                              <Text style={[stylesList.locCount, {color: colors.locX}]}>
                                 {props.diffNames[2]}
                               </Text>
                             </Text>
@@ -824,44 +754,34 @@ export const TotalsView = memo(function TotalsView(props) {
                           {/* Normal and Expert have the same loot. */}
                           {e === 0 &&
                             !getShareNH && !getShareHX && getShareNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locN}
-                              ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
+                              <Text style={[stylesList.locCount, {color: colors.locN}]}>
                                 {props.diffNames[0]}
                               </Text>/
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locX}
-                              ]}>
+                              <Text style={[stylesList.locCount, {color: colors.locX}]}>
                                 {props.diffNames[2]}
                               </Text>
                             </Text>
                           }
                           {/* Normal has different loot. */}
                           {e === 0 && !getShareNH && !getShareNX &&
-                            <Text style={stylesTotal.tableRowText}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locN}
-                              ]}>
+                            <Text style={stylesTotal.tableRowText(width)}>
+                              <Text style={[stylesList.locCount, {color: colors.locN}]}>
                                 {props.diffNames[0]}
                               </Text>
                             </Text>
                           }
                           {/* Hard has different loot. */}
                           {e === 1 && !getShareNH && !getShareHX &&
-                            <Text style={stylesTotal.tableRowText}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locH}
-                              ]}>
+                            <Text style={stylesTotal.tableRowText(width)}>
+                              <Text style={[stylesList.locCount, {color: colors.locH}]}>
                                 {props.diffNames[1]}
                               </Text>
                             </Text>
                           }
                           {/* Expert has different loot. */}
                           {e === 2 && !getShareHX && !getShareNX &&
-                            <Text style={stylesTotal.tableRowText}>
+                            <Text style={stylesTotal.tableRowText(width)}>
                               <Text style={[
                                 stylesList.locCount, {color: colors.locX}
                               ]}>
@@ -872,28 +792,28 @@ export const TotalsView = memo(function TotalsView(props) {
                         </View>
                         {/* Display found loot pieces & max loot pieces. */}
                         <View style={[
-                          stylesTotal.tableRowBox,
-                          styles.pieceRowBox,
+                          stylesTotal.tableRowBox(width),
+                          styles.pieceRowBox(width),
                           {borderColor: colors.border}
                         ]}>
                           <ImageBackground
                             source={(getCurrentTheme === 'dark' ||
                               (getCurrentTheme === 'default' && scheme === 'dark'))
                               ? ((getFoundPiece[e] >= props.lootCount[e])
-                                ? ((Platform.OS === 'web' && width < 626)
+                                ? ((width < 626)
                                   ? bgFoundDarkS : bgFoundDark)
                                 : bgDefaultDark)
                               : ((getFoundPiece[e] >= props.lootCount[e])
-                                ? ((Platform.OS === 'web' && width < 626)
+                                ? ((width < 626)
                                   ? bgFoundLightS : bgFoundLight)
                                 : bgDefaultLight)}
                             resizeMode="cover"
                             style={[
-                              stylesTotal.totalBackground,
+                              stylesTotal.totalBackground(width),
                               (Platform.OS === 'web') ? stylesTotal.totalBackgroundWeb : ''
                             ]}
                           >
-                            <Text style={[stylesTotal.tableRowText, {color: colors.text}]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
                               {getFoundPiece[e]}{" / "}{props.lootCount[e]}
                             </Text>
                           </ImageBackground>
@@ -913,15 +833,15 @@ export const TotalsView = memo(function TotalsView(props) {
             Math.max(...props.goal1.total) > 0) ||
            (props.goal2 && props.goal2.total &&
             Math.max(...props.goal2.total) > 0) ) &&
-          <View style={styles.spacedView}>
+          <View style={styles.spacedView(width)}>
             <View style={styles.tableHeader}>
               <View style={[
-                styles.tableHeadBox,
-                styles.sizeRowStart,
+                styles.tableHeadBox(width),
+                styles.sizeRowStart(width),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>
+                <Text style={styles.tableHeadText(width)}>
                   Loot Goals
                 </Text>
               </View>
@@ -929,27 +849,25 @@ export const TotalsView = memo(function TotalsView(props) {
               {props.goal1 && props.goal1.total &&
                 Math.max(...props.goal1.total) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
-                          ? (width < 400) ? 48 : 66
-                          : (width < 626) ? 60 : 100,
-                  backgroundColor: colors.backDark,
+                  styles.tableHeadBox(width),
+                  stylesTotal.tableHeadColumn(width),
+                  {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
                   {/* Is this loot goal optional or a bonus? */}
                   {props.goal1.info !== "optional" &&
                    props.goal1.info !== "bonus" &&
-                    <Text style={styles.tableHeadText}>
+                    <Text style={styles.tableHeadText(width)}>
                       Required
                     </Text>
                   }
                   {props.goal1.info === "optional" &&
-                    <Text style={styles.tableHeadText}>
+                    <Text style={styles.tableHeadText(width)}>
                       (Optional)
                     </Text>
                   }
                   {props.goal1.info === "bonus" &&
-                    <Text style={styles.tableHeadText}>
+                    <Text style={styles.tableHeadText(width)}>
                       (Bonus)
                     </Text>
                   }
@@ -959,11 +877,9 @@ export const TotalsView = memo(function TotalsView(props) {
               {props.goal1 && props.goal1.gold &&
                 Math.max(...props.goal1.gold) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
-                          ? (width < 400) ? 48 : 66
-                          : (width < 626) ? 60 : 100,
-                  backgroundColor: colors.backDark,
+                  styles.tableHeadBox(width),
+                  stylesTotal.tableHeadColumn(width),
+                  {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
                   <LootIconPicker cat={props.lootCats[0]} />
@@ -973,11 +889,9 @@ export const TotalsView = memo(function TotalsView(props) {
               {props.goal1 && props.goal1.gems &&
                 Math.max(...props.goal1.gems) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
-                          ? (width < 400) ? 48 : 66
-                          : (width < 626) ? 60 : 100,
-                  backgroundColor: colors.backDark,
+                  styles.tableHeadBox(width),
+                  stylesTotal.tableHeadColumn(width),
+                  {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
                   <LootIconPicker cat={props.lootCats[1]} />
@@ -987,11 +901,9 @@ export const TotalsView = memo(function TotalsView(props) {
               {props.goal1 && props.goal1.goods &&
                 Math.max(...props.goal1.goods) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
-                          ? (width < 400) ? 48 : 66
-                          : (width < 626) ? 60 : 100,
-                  backgroundColor: colors.backDark,
+                  styles.tableHeadBox(width),
+                  stylesTotal.tableHeadColumn(width),
+                  {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
                   <LootIconPicker cat={props.lootCats[2]} />
@@ -1001,11 +913,9 @@ export const TotalsView = memo(function TotalsView(props) {
               {props.goal1 && props.goal1.special &&
                 Math.max(...props.goal1.special) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
-                          ? (width < 400) ? 48 : 66
-                          : (width < 626) ? 60 : 100,
-                  backgroundColor: colors.backDark,
+                  styles.tableHeadBox(width),
+                  stylesTotal.tableHeadColumn(width),
+                  {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
                   <LootIconPicker cat={props.lootCats[3]} />
@@ -1015,27 +925,25 @@ export const TotalsView = memo(function TotalsView(props) {
               {props.goal2 && props.goal2.total &&
                 Math.max(...props.goal2.total) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
-                          ? (width < 400) ? 48 : 66
-                          : (width < 626) ? 60 : 100,
-                  backgroundColor: colors.backDark,
+                  styles.tableHeadBox(width),
+                  stylesTotal.tableHeadColumn(width),
+                  {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
                   {/* Is this loot goal optional or a bonus? */}
                   {props.goal2.info !== "optional" &&
                    props.goal2.info !== "bonus" &&
-                    <Text style={styles.tableHeadText}>
+                    <Text style={styles.tableHeadText(width)}>
                       Required
                     </Text>
                   }
                   {props.goal2.info === "optional" &&
-                    <Text style={styles.tableHeadText}>
+                    <Text style={styles.tableHeadText(width)}>
                       (Optional)
                     </Text>
                   }
                   {props.goal2.info === "bonus" &&
-                    <Text style={styles.tableHeadText}>
+                    <Text style={styles.tableHeadText(width)}>
                       (Bonus)
                     </Text>
                   }
@@ -1045,11 +953,9 @@ export const TotalsView = memo(function TotalsView(props) {
               {props.goal2 && props.goal2.gold &&
                 Math.max(...props.goal2.gold) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
-                          ? (width < 400) ? 48 : 66
-                          : (width < 626) ? 60 : 100,
-                  backgroundColor: colors.backDark,
+                  styles.tableHeadBox(width),
+                  stylesTotal.tableHeadColumn(width),
+                  {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
                   <LootIconPicker cat={props.lootCats[0]} />
@@ -1059,11 +965,9 @@ export const TotalsView = memo(function TotalsView(props) {
               {props.goal2 && props.goal2.gems &&
                 Math.max(...props.goal2.gems) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
-                          ? (width < 400) ? 48 : 66
-                          : (width < 626) ? 60 : 100,
-                  backgroundColor: colors.backDark,
+                  styles.tableHeadBox(width),
+                  stylesTotal.tableHeadColumn(width),
+                  {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
                   <LootIconPicker cat={props.lootCats[1]} />
@@ -1073,11 +977,9 @@ export const TotalsView = memo(function TotalsView(props) {
               {props.goal2 && props.goal2.goods &&
                 Math.max(...props.goal2.goods) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
-                          ? (width < 400) ? 48 : 66
-                          : (width < 626) ? 60 : 100,
-                  backgroundColor: colors.backDark,
+                  styles.tableHeadBox(width),
+                  stylesTotal.tableHeadColumn(width),
+                  {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
                   <LootIconPicker cat={props.lootCats[2]} />
@@ -1087,11 +989,9 @@ export const TotalsView = memo(function TotalsView(props) {
               {props.goal2 && props.goal2.special &&
                 Math.max(...props.goal2.special) > 0 &&
                 <View style={[
-                  styles.tableHeadBox,
-                  {width: (Platform.OS !== 'web')
-                          ? (width < 400) ? 48 : 66
-                          : (width < 626) ? 60 : 100,
-                  backgroundColor: colors.backDark,
+                  styles.tableHeadBox(width),
+                  stylesTotal.tableHeadColumn(width),
+                  {backgroundColor: colors.backDark,
                   borderColor: colors.border}
                 ]}>
                   <LootIconPicker cat={props.lootCats[3]} />
@@ -1119,34 +1019,26 @@ export const TotalsView = memo(function TotalsView(props) {
                     ) &&
                       <>
                         <View style={[
-                          styles.tableRowStart,
-                          styles.sizeRowStart,
+                          styles.tableRowStart(width),
+                          styles.sizeRowStart(width),
                           {backgroundColor: colors.backMed,
                           borderColor: colors.border}
                         ]}>
                           {/* All difficulties have the same goal. */}
                           {g === 0 &&
                             getGoalNH && getGoalHX && getGoalNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
                               All
                             </Text>
                           }
                           {/* Normal and Hard have the same goal. */}
                           {g === 0 &&
                             getGoalNH && !getGoalHX && !getGoalNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locN}
-                              ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
+                              <Text style={[stylesList.locCount, {color: colors.locN}]}>
                                 {props.diffNames[0]}
                               </Text>/
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locH}
-                              ]}>
+                              <Text style={[stylesList.locCount, {color: colors.locH}]}>
                                 {props.diffNames[1]}
                               </Text>
                             </Text>
@@ -1154,17 +1046,11 @@ export const TotalsView = memo(function TotalsView(props) {
                           {/* Hard and Expert have the same goal. */}
                           {g === 1 &&
                             !getGoalNH && getGoalHX && !getGoalNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locH}
-                              ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
+                              <Text style={[stylesList.locCount, {color: colors.locH}]}>
                                 {props.diffNames[1]}
                               </Text>/
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locX}
-                              ]}>
+                              <Text style={[stylesList.locCount, {color: colors.locX}]}>
                                 {props.diffNames[2]}
                               </Text>
                             </Text>
@@ -1172,47 +1058,35 @@ export const TotalsView = memo(function TotalsView(props) {
                           {/* Normal and Expert have the same goal. */}
                           {g === 0 &&
                             !getGoalNH && !getGoalHX && getGoalNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locN}
-                              ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
+                              <Text style={[stylesList.locCount, {color: colors.locN}]}>
                                 {props.diffNames[0]}
                               </Text>/
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locX}
-                              ]}>
+                              <Text style={[stylesList.locCount, {color: colors.locX}]}>
                                 {props.diffNames[2]}
                               </Text>
                             </Text>
                           }
                           {/* Normal has a different goal. */}
                           {g === 0 && !getGoalNH && !getGoalNX &&
-                            <Text style={stylesTotal.tableRowText}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locN}
-                              ]}>
+                            <Text style={stylesTotal.tableRowText(width)}>
+                              <Text style={[stylesList.locCount, {color: colors.locN}]}>
                                 {props.diffNames[0]}
                               </Text>
                             </Text>
                           }
                           {/* Hard has a different goal. */}
                           {g === 1 && !getGoalNH && !getGoalHX &&
-                            <Text style={stylesTotal.tableRowText}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locH}
-                              ]}>
+                            <Text style={stylesTotal.tableRowText(width)}>
+                              <Text style={[stylesList.locCount, {color: colors.locH}]}>
                                 {props.diffNames[1]}
                               </Text>
                             </Text>
                           }
                           {/* Expert has a different goal. */}
                           {g === 2 && !getGoalHX && !getGoalNX &&
-                            <Text style={stylesTotal.tableRowText}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locX}
-                              ]}>
+                            <Text style={stylesTotal.tableRowText(width)}>
+                              <Text style={[stylesList.locCount, {color: colors.locX}]}>
                                 {props.diffNames[2]}
                               </Text>
                             </Text>
@@ -1320,26 +1194,26 @@ export const TotalsView = memo(function TotalsView(props) {
             display a table of pickpocket counts. */}
         {(props.pocketCount &&
          (Math.max(...props.pocketCount) > 0) ) &&
-          <View style={styles.spacedView}>
+          <View style={styles.spacedView(width)}>
             <View style={styles.tableHeader}>
               <View style={[
-                styles.tableHeadBox,
-                styles.sizeRowStart,
+                styles.tableHeadBox(width),
+                styles.sizeRowStart(width),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>
+                <Text style={styles.tableHeadText(width)}>
                   Pickpockets
                 </Text>
               </View>
               {/* Column header. */}
               <View style={[
-                styles.tableHeadBox,
-                styles.pocketRowBox,
+                styles.tableHeadBox(width),
+                styles.pocketRowBox(width),
                 {backgroundColor: colors.backDark,
                 borderColor: colors.border}
               ]}>
-                <Text style={styles.tableHeadText}>
+                <Text style={styles.tableHeadText(width)}>
                   Total
                 </Text>
               </View>
@@ -1356,34 +1230,26 @@ export const TotalsView = memo(function TotalsView(props) {
                     {pickKey > 0 &&
                       <>
                         <View style={[
-                          styles.tableRowStart,
-                          styles.sizeRowStart,
+                          styles.tableRowStart(width),
+                          styles.sizeRowStart(width),
                           {backgroundColor: colors.backMed,
                           borderColor: colors.border}
                         ]}>
                           {/* All difficulties have the same pickpockets. */}
                           {c === 0 &&
                             getPocketNH && getPocketHX && getPocketNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
                               All
                             </Text>
                           }
                           {/* Normal and Hard have the same pickpockets. */}
                           {c === 0 &&
                             getPocketNH && !getPocketHX && !getPocketNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locN}
-                              ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
+                              <Text style={[stylesList.locCount, {color: colors.locN}]}>
                                 {props.diffNames[0]}
                               </Text>/
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locH}
-                              ]}>
+                              <Text style={[stylesList.locCount, {color: colors.locH}]}>
                                 {props.diffNames[1]}
                               </Text>
                             </Text>
@@ -1391,17 +1257,11 @@ export const TotalsView = memo(function TotalsView(props) {
                           {/* Hard and Expert have the same pickpockets. */}
                           {c === 1 &&
                             !getPocketNH && getPocketHX && !getPocketNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locH}
-                              ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
+                              <Text style={[stylesList.locCount, {color: colors.locH}]}>
                                 {props.diffNames[1]}
                               </Text>/
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locX}
-                              ]}>
+                              <Text style={[stylesList.locCount, {color: colors.locX}]}>
                                 {props.diffNames[2]}
                               </Text>
                             </Text>
@@ -1409,47 +1269,35 @@ export const TotalsView = memo(function TotalsView(props) {
                           {/* Normal and Expert have the same pickpockets. */}
                           {c === 0 &&
                             !getPocketNH && !getPocketHX && getPocketNX &&
-                            <Text style={[
-                              stylesTotal.tableRowText, {color: colors.text}
-                            ]}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locN}
-                              ]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
+                              <Text style={[stylesList.locCount, {color: colors.locN}]}>
                                 {props.diffNames[0]}
                               </Text>/
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locX}
-                              ]}>
+                              <Text style={[stylesList.locCount, {color: colors.locX}]}>
                                 {props.diffNames[2]}
                               </Text>
                             </Text>
                           }
                           {/* Normal has different pickpockets. */}
                           {c === 0 && !getPocketNH && !getPocketNX &&
-                            <Text style={stylesTotal.tableRowText}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locN}
-                              ]}>
+                            <Text style={stylesTotal.tableRowText(width)}>
+                              <Text style={[stylesList.locCount, {color: colors.locN}]}>
                                 {props.diffNames[0]}
                               </Text>
                             </Text>
                           }
                           {/* Hard has different pickpockets. */}
                           {c === 1 && !getPocketNH && !getPocketHX &&
-                            <Text style={stylesTotal.tableRowText}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locH}
-                              ]}>
+                            <Text style={stylesTotal.tableRowText(width)}>
+                              <Text style={[stylesList.locCount, {color: colors.locH}]}>
                                 {props.diffNames[1]}
                               </Text>
                             </Text>
                           }
                           {/* Expert has different pickpockets. */}
                           {c === 2 && !getPocketHX && !getPocketNX &&
-                            <Text style={stylesTotal.tableRowText}>
-                              <Text style={[
-                                stylesList.locCount, {color: colors.locX}
-                              ]}>
+                            <Text style={stylesTotal.tableRowText(width)}>
+                              <Text style={[stylesList.locCount, {color: colors.locX}]}>
                                 {props.diffNames[2]}
                               </Text>
                             </Text>
@@ -1457,28 +1305,28 @@ export const TotalsView = memo(function TotalsView(props) {
                         </View>
                         {/* Display found pickpockets & max pickpockets. */}
                         <View style={[
-                          stylesTotal.tableRowBox,
-                          styles.pocketRowBox,
+                          stylesTotal.tableRowBox(width),
+                          styles.pocketRowBox(width),
                           {borderColor: colors.border}
                         ]}>
                           <ImageBackground
                             source={(getCurrentTheme === 'dark' ||
                               (getCurrentTheme === 'default' && scheme === 'dark'))
                               ? ((getFoundPocket[c] >= props.pocketCount[c])
-                                ? ((Platform.OS === 'web' && width < 626)
+                                ? ((width < 626)
                                   ? bgFoundDarkS : bgFoundDark)
                                 : bgDefaultDark)
                               : ((getFoundPocket[c] >= props.pocketCount[c])
-                                ? ((Platform.OS === 'web' && width < 626)
+                                ? ((width < 626)
                                   ? bgFoundLightS : bgFoundLight)
                                 : bgDefaultLight)}
                             resizeMode="cover"
                             style={[
-                              stylesTotal.totalBackground,
+                              stylesTotal.totalBackground(width),
                               (Platform.OS === 'web') ? stylesTotal.totalBackgroundWeb : ''
                             ]}
                           >
-                            <Text style={[stylesTotal.tableRowText, {color: colors.text}]}>
+                            <Text style={[stylesTotal.tableRowText(width), {color: colors.text}]}>
                               {getFoundPocket[c]}{" / "}{props.pocketCount[c]}
                             </Text>
                           </ImageBackground>
@@ -1518,18 +1366,18 @@ const styles = StyleSheet.create({
   totalBorder: {
     borderTopWidth: 3,
   },
-  totalView: {
-    marginHorizontal: (Platform.OS === 'web') ? 10 : 5,
+  totalView: (width) => ({
+    marginHorizontal: (width > 617) ? 10 : 5,
     marginBottom: 5,
-  },
+  }),
   carryView: {
     flexDirection: 'row',
     alignItems: 'center',
     margin: 5,
   },
-  carryText: {
-    fontSize: (Platform.OS === 'web') ? 15 : 12,
-  },
+  carryText: (width) => ({
+    fontSize: (width > 617) ? 15 : 12,
+  }),
   carryInput: {
     borderWidth: 1,
     paddingHorizontal: 5,
@@ -1538,39 +1386,39 @@ const styles = StyleSheet.create({
     height: 22,
     fontSize: 12,
   },
-  spacedView: {
-    marginVertical: (Platform.OS === 'web') ? 8 : 5,
-  },
+  spacedView: (width) => ({
+    marginVertical: (width > 617) ? 8 : 5,
+  }),
   tableHeader: {
     flexDirection: 'row',
   },
-  tableHeadBox: {
+  tableHeadBox: (width) => ({
     borderWidth: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    width: (Platform.OS === 'web') ? 100 : 70,
+    width: (width > 617) ? 100 : 70,
     padding: 2,
-  },
-  tableHeadText: {
+  }),
+  tableHeadText: (width) => ({
     color: 'white',
-    fontSize: (Platform.OS === 'web') ? 13 : 8,
-  },
+    fontSize: (width > 617) ? 13 : 8,
+  }),
   tableRow: {
     flexDirection: 'row',
   },
-  tableRowStart: {
+  tableRowStart: (width) => ({
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
-    padding: (Platform.OS === 'web') ? 4 : 2,
-  },
-  sizeRowStart: {
-    width: (Platform.OS === 'web') ? 100 : 70,
-  },
-  pieceRowBox: {
-    width: (Platform.OS === 'web') ? 80 : 50,
-  },
-  pocketRowBox: {
-    width: (Platform.OS === 'web') ? 60 : 40,
-  },
+    padding: (width > 617) ? 4 : 2,
+  }),
+  sizeRowStart: (width) => ({
+    width: (width > 617) ? 100 : 70,
+  }),
+  pieceRowBox: (width) => ({
+    width: (width > 617) ? 80 : 50,
+  }),
+  pocketRowBox: (width) => ({
+    width: (width > 617) ? 60 : 40,
+  }),
 });

@@ -55,7 +55,7 @@ export default function TabLayout() {
               <Ionicons
                 name = {focused
                   ? 'information-circle' : 'information-circle-outline'}
-                size={(Platform.OS === 'web') ? 30 : 30}
+                size={30}
               />
             ),
             //tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
@@ -111,7 +111,7 @@ export default function TabLayout() {
 // Define various styles here.
 const styles = StyleSheet.create({
   imgTabIcon: {
-    width: (Platform.OS === 'web') ? 24 : 24,
-    height: (Platform.OS === 'web') ? 24 : 24,
+    width: 24,
+    height: 24,
   },
 });
